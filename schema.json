@@ -22,8 +22,8 @@
         },
         "status": {
           "type": "string",
-          "enum": ["active", "eol"],
-          "description": "Whether the board is currently available or end-of-life."
+          "enum": ["active", "eol", "discontinued"],
+          "description": "Whether the board is currently available, end-of-life, or discontinued."
         },
         "url": {
           "type": "string",

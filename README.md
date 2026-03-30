@@ -38,7 +38,7 @@ Each board is a JSON object with the following required fields:
 |-------|------|-------------|
 | `id` | string | Unique identifier (URL-safe slug, e.g. `"Arty-A7-35T"`). |
 | `name` | string | Display name of the board. |
-| `status` | string | `"active"` or `"eol"` (end-of-life). |
+| `status` | string | `"active"`, `"eol"` (end-of-life), or `"discontinued"`. |
 | `url` | string | Product page URL. |
 | `vendor` | object | `{ "name": "Vendor Name", "url": "https://..." }` |
 | `price` | object | `{ "value": 129.00, "currency": "USD" }` |
@@ -124,7 +124,7 @@ Optional fields include `pcie`, `video`, `ethernet`, `networking`, `expansion`, 
 - Only include optional fields that have meaningful values. If a board has no PCIe, omit the `pcie` key entirely.
 - Use the ISO 4217 currency code for the `price.currency` field (e.g. `"USD"`, `"EUR"`, `"GBP"`).
 - The `id` should be unique and URL-safe (letters, numbers, hyphens).
-- Set `status` to `"active"` for boards that are currently available for purchase, or `"eol"` for discontinued boards.
+- Set `status` to `"active"` for boards currently available for purchase, `"eol"` for end-of-life boards, or `"discontinued"` for discontinued boards.
 
 ## Validation
 
