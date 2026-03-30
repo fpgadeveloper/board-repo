@@ -3624,5 +3624,44 @@
     "expansion": {
       "fmc_lpc": 1
     }
+  },
+  {
+    "id": "BZ10",
+    "name": "BZ10",
+    "status": "active",
+    "url": "https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-MPSoC/BZ10.html",
+    "vendor": "alinx",
+    "price": {
+      "value": 2995,
+      "currency": "USD"
+    },
+    "device": {
+      "type": "SoC",
+      "family": "Zynq UltraScale+",
+      "part": "XCZU7EV-2FFVC1156-I",
+      "vendor": "amd-xilinx"
+    },
+    "pcie": [
+      {
+        "type": "M.2 M-key",
+        "gen": 2,
+        "lanes": 1
+      }
+    ],
+    "video": {
+      "displayport": 1
+    },
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ],
+    "networking": {
+      "qsfp": 1
+    },
+    "expansion": {
+      "fmc_hpc": 4
+    }
   }
 ]
