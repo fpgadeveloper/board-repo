@@ -1,6 +1,6 @@
 # FPGA Board Repository
 
-This repository contains the community-maintained database of FPGA development boards used by [FPGA Board Finder](https://boards.fpgadeveloper.com). Contributions are welcome — if you know of an FPGA board that's missing, you can add it here.
+This repository contains the community-maintained database of FPGA development boards used by [FPGA Board Repository](https://boards.fpgadeveloper.com). Contributions are welcome — if you know of an FPGA board that's missing, you can add it here.
 
 ## Files
 
@@ -158,4 +158,4 @@ else:
 
 ## License
 
-This data is maintained by the community for use by [FPGA Board Finder](https://boards.fpgadeveloper.com).
+This data is maintained by the community for use by [FPGA Board Repository](https://boards.fpgadeveloper.com).
