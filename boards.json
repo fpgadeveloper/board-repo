@@ -960,7 +960,7 @@
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/zcu670.html",
     "vendor": "amd-xilinx",
     "price": {
-      "value": 16995.0,
+      "value": 16995,
       "currency": "USD"
     },
     "device": {
@@ -3179,8 +3179,8 @@
     }
   },
   {
-    "id": "EMC\u00c3\u201a\u00c2\u00b2-MPFS250",
-    "name": "EMC\u00c3\u201a\u00c2\u00b2-MPFS250",
+    "id": "EMCÃ‚Â²-MPFS250",
+    "name": "EMCÃ‚Â²-MPFS250",
     "status": "active",
     "url": "https://store.sundance.com/product/emc2-mpfs250/",
     "vendor": "sundance",
@@ -3218,8 +3218,8 @@
     }
   },
   {
-    "id": "EMC\u00c3\u201a\u00c2\u00b2-KU040",
-    "name": "EMC\u00c3\u201a\u00c2\u00b2-KU040",
+    "id": "EMCÃ‚Â²-KU040",
+    "name": "EMCÃ‚Â²-KU040",
     "status": "active",
     "url": "https://store.sundance.com/product/emc2-ku040/",
     "vendor": "sundance",
@@ -3257,8 +3257,8 @@
     }
   },
   {
-    "id": "EMC\u00c3\u201a\u00c2\u00b2-ZU5EV",
-    "name": "EMC\u00c3\u201a\u00c2\u00b2-ZU5EV",
+    "id": "EMCÃ‚Â²-ZU5EV",
+    "name": "EMCÃ‚Â²-ZU5EV",
     "status": "active",
     "url": "https://store.sundance.com/product/emc2-zu5ev/",
     "vendor": "sundance",
@@ -3296,8 +3296,8 @@
     }
   },
   {
-    "id": "EMC\u00c3\u201a\u00c2\u00b2-ZU2CG",
-    "name": "EMC\u00c3\u201a\u00c2\u00b2-ZU2CG",
+    "id": "EMCÃ‚Â²-ZU2CG",
+    "name": "EMCÃ‚Â²-ZU2CG",
     "status": "active",
     "url": "https://store.sundance.com/product/emc2-zu2cg/",
     "vendor": "sundance",
@@ -3591,6 +3591,38 @@
     ],
     "networking": {
       "qsfp": 4
+    }
+  },
+  {
+    "id": "TE0950",
+    "name": "TE0950",
+    "status": "active",
+    "url": "https://www.trenz-electronic.de/en/AMD-Versal-AI-Edge-Evalboard-with-VE2302-device-8-GB-DDR4-SDRAM-15-x12-cm/TE0950-03-EGBE21C",
+    "vendor": "trenz",
+    "price": {
+      "value": 958,
+      "currency": "USD"
+    },
+    "device": {
+      "type": "ACAP",
+      "family": "Versal AI Edge",
+      "part": "XCVE2302-1LSESFVA784",
+      "vendor": "amd-xilinx"
+    },
+    "video": {
+      "mipi_csi": 1
+    },
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ],
+    "networking": {
+      "qsfp": 1
+    },
+    "expansion": {
+      "fmc_lpc": 1
     }
   }
 ]
