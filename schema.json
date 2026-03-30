@@ -31,7 +31,8 @@
           "description": "Product page URL."
         },
         "vendor": {
-          "$ref": "#/$defs/vendor"
+          "type": "string",
+          "description": "Board vendor key (must match a key in vendors.json board_vendors)."
         },
         "price": {
           "$ref": "#/$defs/price"
@@ -123,15 +124,6 @@
         }
       }
     },
-    "vendor": {
-      "type": "object",
-      "required": ["name", "url"],
-      "additionalProperties": false,
-      "properties": {
-        "name": { "type": "string" },
-        "url": { "type": "string", "format": "uri" }
-      }
-    },
     "price": {
       "type": "object",
       "required": ["value", "currency"],
@@ -168,11 +160,7 @@
         },
         "vendor": {
           "type": "string",
-          "description": "FPGA silicon vendor (e.g. AMD Xilinx, Intel, Lattice)."
-        },
-        "vendor_url": {
-          "type": "string",
-          "format": "uri"
+          "description": "Silicon vendor key (must match a key in vendors.json silicon_vendors)."
         }
       }
     },

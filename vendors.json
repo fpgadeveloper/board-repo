@@ -1,0 +1,38 @@
+{
+  "board_vendors": {
+    "alinx": { "name": "Alinx", "url": "https://alinx.com" },
+    "amd-xilinx": { "name": "AMD Xilinx", "url": "https://www.amd.com" },
+    "avnet": { "name": "Avnet", "url": "https://www.avnet.com" },
+    "bittware": { "name": "BittWare", "url": "https://www.bittware.com" },
+    "digilent": { "name": "Digilent", "url": "https://digilent.com" },
+    "efinix": { "name": "Efinix", "url": "https://www.efinixinc.com" },
+    "hitech-global": { "name": "Hitech Global", "url": "http://www.hitechglobal.com" },
+    "imperix": { "name": "imperix", "url": "https://imperix.com" },
+    "invent-logics": { "name": "Invent Logics", "url": "https://allaboutfpga.com" },
+    "knjn": { "name": "KNJN", "url": "https://www.knjn.com" },
+    "krtkl": { "name": "Krtkl", "url": "https://krtkl.com" },
+    "lattice": { "name": "Lattice", "url": "https://www.latticesemi.com" },
+    "myir": { "name": "MYIR Tech", "url": "https://www.myirtech.com" },
+    "numato-lab": { "name": "Numato Lab", "url": "https://numato.com" },
+    "opal-kelly": { "name": "Opal Kelly", "url": "https://opalkelly.com" },
+    "real-digital": { "name": "Real Digital", "url": "https://www.realdigital.org" },
+    "redpitaya": { "name": "RedPitaya", "url": "https://www.redpitaya.com" },
+    "rhs-research": { "name": "RHS Research", "url": "https://rhsresearch.com" },
+    "sundance": { "name": "Sundance Multiprocessor Technology Ltd.", "url": "https://www.sundance.com" },
+    "terasic": { "name": "Terasic", "url": "https://www.terasic.com" },
+    "trenz": { "name": "Trenz Electronic", "url": "https://www.trenz-electronic.de/en" },
+    "tria": { "name": "Tria Technologies", "url": "https://www.tria-technologies.com" },
+    "tul": { "name": "TUL", "url": "https://www.tulembedded.com" }
+  },
+  "silicon_vendors": {
+    "amd-xilinx": { "name": "AMD Xilinx", "url": "https://www.amd.com" },
+    "efinix": { "name": "Efinix", "url": "https://www.efinixinc.com" },
+    "altera": { "name": "Altera", "url": "https://www.altera.com" },
+    "lattice": { "name": "Lattice", "url": "https://www.latticesemi.com" },
+    "microchip": { "name": "Microchip", "url": "https://www.microchip.com" },
+    "gowin": { "name": "Gowin Semiconductor", "url": "https://www.gowinsemi.com/en/" },
+    "quicklogic": { "name": "QuickLogic", "url": "https://www.quicklogic.com" },
+    "achronix": { "name": "Achronix", "url": "https://www.achronix.com" },
+    "cologne-chip": { "name": "Cologne Chip", "url": "https://www.colognechip.com" }
+  }
+}

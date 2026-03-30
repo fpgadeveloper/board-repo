@@ -4,10 +4,7 @@
     "name": "SP701",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/sp701.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 836,
       "currency": "USD"
@@ -16,8 +13,7 @@
       "type": "FPGA",
       "family": "Spartan-7",
       "part": "XC7S100-2FGGA676C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "hdmi_out": 1,
@@ -40,10 +36,7 @@
     "name": "AC701",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/ek-a7-ac701-g.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 1678,
       "currency": "USD"
@@ -52,8 +45,7 @@
       "type": "FPGA",
       "family": "Artix-7",
       "part": "XC7A200T-2FBG676C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -83,10 +75,7 @@
     "name": "KC705",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/ek-k7-kc705-g.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 2995,
       "currency": "USD"
@@ -95,8 +84,7 @@
       "type": "FPGA",
       "family": "Kintex-7",
       "part": "XC7K325T-2FFG900C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -127,10 +115,7 @@
     "name": "VC707",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/ek-v7-vc707-g.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 5995,
       "currency": "USD"
@@ -139,8 +124,7 @@
       "type": "FPGA",
       "family": "Virtex-7",
       "part": "XC7VX485T-2FFG1761C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -170,10 +154,7 @@
     "name": "VC709",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/dk-v7-vc709-g.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 8094,
       "currency": "USD"
@@ -182,8 +163,7 @@
       "type": "FPGA",
       "family": "Virtex-7",
       "part": "XC7VX690T-2FFG1761C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -204,10 +184,7 @@
     "name": "KCU105",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/kcu105.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 6495,
       "currency": "USD"
@@ -216,8 +193,7 @@
       "type": "FPGA",
       "family": "Kintex UltraScale",
       "part": "XCKU040-2FFVA1156-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -249,10 +225,7 @@
     "name": "KCU116",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/ek-u1-kcu116-g.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 6495,
       "currency": "USD"
@@ -261,8 +234,7 @@
       "type": "FPGA",
       "family": "Kintex UltraScale+",
       "part": "XCKU5P-2FFVB676-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -293,10 +265,7 @@
     "name": "VCU108",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/ek-u1-vcu108-g.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 11995,
       "currency": "USD"
@@ -305,8 +274,7 @@
       "type": "FPGA",
       "family": "Virtex UltraScale",
       "part": "XCVU095-2FFVA2104-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -338,10 +306,7 @@
     "name": "VCU118",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/vcu118.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 14995,
       "currency": "USD"
@@ -350,8 +315,7 @@
       "type": "FPGA",
       "family": "Virtex UltraScale+",
       "part": "XCVU9P-2LFLGA2104-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -380,17 +344,13 @@
     "name": "VCU128",
     "status": "discontinued",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/vcu128.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": null,
     "device": {
       "type": "FPGA",
       "family": "Virtex UltraScale+",
       "part": "XCVU37P-2LFSVH2892-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -417,17 +377,13 @@
     "name": "VCU129",
     "status": "discontinued",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/vcu129.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": null,
     "device": {
       "type": "FPGA",
       "family": "Virtex UltraScale+",
       "part": "XCVU29P-2LFSGA2577-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -453,10 +409,7 @@
     "name": "ZC702",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/ek-z7-zc702-g.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 1160,
       "currency": "USD"
@@ -465,8 +418,7 @@
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z020-1CLG484C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "hdmi_out": 1
@@ -487,10 +439,7 @@
     "name": "ZC706",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/ek-z7-zc706-g.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 3495,
       "currency": "USD"
@@ -499,8 +448,7 @@
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z045-2FFG900C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -531,10 +479,7 @@
     "name": "ZCU102",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/ek-u1-zcu102-g.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 3234,
       "currency": "USD"
@@ -543,8 +488,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU9EG-2FFVB1156-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -580,10 +524,7 @@
     "name": "ZCU104",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/zcu104.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 1678,
       "currency": "USD"
@@ -592,8 +533,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU7EV-2FFVC1156-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "hdmi_in": 1,
@@ -616,10 +556,7 @@
     "name": "ZCU106",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/zcu106.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 3234,
       "currency": "USD"
@@ -628,8 +565,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU7EV-2FFVC1156-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -669,10 +605,7 @@
     "name": "VHK158",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/vhk158.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 14995,
       "currency": "USD"
@@ -681,8 +614,7 @@
       "type": "ACAP",
       "family": "Versal HBM",
       "part": "XCVH1582-2MPVSVA3697-E-S",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -709,10 +641,7 @@
     "name": "VPK120",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/vpk120.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 11994,
       "currency": "USD"
@@ -721,8 +650,7 @@
       "type": "ACAP",
       "family": "Versal Premium",
       "part": "XCVP1202-2MPVSVA2785-E-S",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -752,10 +680,7 @@
     "name": "VPK180",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/vpk180.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 17995,
       "currency": "USD"
@@ -764,8 +689,7 @@
       "type": "ACAP",
       "family": "Versal Premium",
       "part": "XCVP1802-2MPLSVC4072-E-S",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "ethernet": [
       {
@@ -787,10 +711,7 @@
     "name": "VCK190",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/vck190.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 13195,
       "currency": "USD"
@@ -799,8 +720,7 @@
       "type": "ACAP",
       "family": "Versal AI",
       "part": "XCVC1902-2MPVSVA2197-E-S",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -832,10 +752,7 @@
     "name": "VMK180",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/vmk180.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 9345,
       "currency": "USD"
@@ -844,8 +761,7 @@
       "type": "ACAP",
       "family": "Versal Prime",
       "part": "XCVM1802-2MPVSVA2197-E-S",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -877,10 +793,7 @@
     "name": "VEK280",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/vek280.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 6995,
       "currency": "USD"
@@ -889,8 +802,7 @@
       "type": "ACAP",
       "family": "Versal AI",
       "part": "XCVE2802-2MPVSVH1760-E-S",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -922,10 +834,7 @@
     "name": "ZCU111",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/zcu111.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 14995,
       "currency": "USD"
@@ -934,8 +843,7 @@
       "type": "RFSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU28DR-2FFVG1517-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "displayport": 1
@@ -959,10 +867,7 @@
     "name": "ZCU208",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/zcu208.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 15995,
       "currency": "USD"
@@ -971,8 +876,7 @@
       "type": "RFSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU48DR-2FSVG1517-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "ethernet": [
       {
@@ -993,10 +897,7 @@
     "name": "ZCU216",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/zcu216.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 16995,
       "currency": "USD"
@@ -1005,8 +906,7 @@
       "type": "RFSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU49DR-2FFVF1760-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "ethernet": [
       {
@@ -1028,10 +928,7 @@
     "name": "ZCU670",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/zcu670.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 16995,
       "currency": "USD"
@@ -1040,8 +937,7 @@
       "type": "RFSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU67DR-2FSVE1156-I",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "ethernet": [
       {
@@ -1062,10 +958,7 @@
     "name": "ZCU670-LD",
     "status": "active",
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/zcu670.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 16995.0,
       "currency": "USD"
@@ -1074,8 +967,7 @@
       "type": "RFSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU57DR-2FSVE1156-I",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "ethernet": [
       {
@@ -1096,10 +988,7 @@
     "name": "Kria KV260",
     "status": "active",
     "url": "https://www.amd.com/en/products/system-on-modules/kria/k26/kv260-vision-starter-kit.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 249,
       "currency": "USD"
@@ -1108,8 +997,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCK26-2LVSFVC784-C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "hdmi_out": 1,
@@ -1131,10 +1019,7 @@
     "name": "Kria KR260",
     "status": "active",
     "url": "https://www.amd.com/en/products/system-on-modules/kria/k26/kr260-robotics-starter-kit.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 349,
       "currency": "USD"
@@ -1143,8 +1028,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCK26-2LVSFVC784-C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "displayport": 1
@@ -1168,10 +1052,7 @@
     "name": "TE0802",
     "status": "active",
     "url": "https://www.trenz-electronic.de/en/MPSoC-Development-Board-with-AMD-Zynq-UltraScale-ZU1EG-1E7100-1-GByte-LPDDR4/TE0802-02-1BEV2-A",
-    "vendor": {
-      "name": "Trenz Electronic",
-      "url": "https://www.trenz-electronic.de/en/"
-    },
+    "vendor": "trenz",
     "price": {
       "value": 357.28,
       "currency": "USD"
@@ -1180,8 +1061,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU1CG-1SBVA484-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "displayport": 1
@@ -1201,10 +1081,7 @@
     "name": "TE0890",
     "status": "active",
     "url": "https://www.trenz-electronic.de/en/Products/Trenz-Electronic/Open-Hardware/S7-Mini/",
-    "vendor": {
-      "name": "Trenz Electronic",
-      "url": "https://www.trenz-electronic.de/en/"
-    },
+    "vendor": "trenz",
     "price": {
       "value": 31.42,
       "currency": "USD"
@@ -1213,8 +1090,7 @@
       "type": "FPGA",
       "family": "Spartan-7",
       "part": "XC7S25-1FTGB196C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     }
   },
   {
@@ -1222,10 +1098,7 @@
     "name": "TE0807-03-7DE81-AS",
     "status": "active",
     "url": "https://www.trenz-electronic.de/en/Products/Trenz-Electronic/Starter-Kits/",
-    "vendor": {
-      "name": "Trenz Electronic",
-      "url": "https://www.trenz-electronic.de/en/"
-    },
+    "vendor": "trenz",
     "price": {
       "value": 2826.49,
       "currency": "USD"
@@ -1234,8 +1107,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU7EV-1FBVB900-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -1269,10 +1141,7 @@
     "name": "TE0803-04-3BE11-AS",
     "status": "active",
     "url": "https://www.trenz-electronic.de/en/Products/Trenz-Electronic/Starter-Kits/",
-    "vendor": {
-      "name": "Trenz Electronic",
-      "url": "https://www.trenz-electronic.de/en/"
-    },
+    "vendor": "trenz",
     "price": {
       "value": 1378.07,
       "currency": "USD"
@@ -1281,8 +1150,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU3EG-1SFVC784-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -1316,10 +1184,7 @@
     "name": "TE0808-05-9BE21-AS",
     "status": "active",
     "url": "https://www.trenz-electronic.de/en/Products/Trenz-Electronic/Starter-Kits/",
-    "vendor": {
-      "name": "Trenz Electronic",
-      "url": "https://www.trenz-electronic.de/en/"
-    },
+    "vendor": "trenz",
     "price": {
       "value": 1985.03,
       "currency": "USD"
@@ -1328,8 +1193,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU9EG-1FFVC900-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -1363,10 +1227,7 @@
     "name": "ZynqBerry 7007",
     "status": "active",
     "url": "https://www.trenz-electronic.de/en/Products/Trenz-Electronic/TE07XX-Zynq-SoC/TE0726-Zynq-SoC/",
-    "vendor": {
-      "name": "Trenz Electronic",
-      "url": "https://www.trenz-electronic.de/en/"
-    },
+    "vendor": "trenz",
     "price": {
       "value": 115.78,
       "currency": "USD"
@@ -1375,8 +1236,7 @@
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z007S-1CLG225C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "hdmi_out": 1,
@@ -1398,10 +1258,7 @@
     "name": "ZynqBerry 7010",
     "status": "active",
     "url": "https://www.trenz-electronic.de/en/Products/Trenz-Electronic/TE07XX-Zynq-SoC/TE0726-Zynq-SoC/",
-    "vendor": {
-      "name": "Trenz Electronic",
-      "url": "https://www.trenz-electronic.de/en/"
-    },
+    "vendor": "trenz",
     "price": {
       "value": 115.78,
       "currency": "USD"
@@ -1410,8 +1267,7 @@
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z010-1CLG225C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "hdmi_out": 1,
@@ -1433,10 +1289,7 @@
     "name": "Arty-A7",
     "status": "active",
     "url": "https://digilent.com/shop/arty-a7-100t-artix-7-fpga-development-board/",
-    "vendor": {
-      "name": "Digilent",
-      "url": "https://digilent.com"
-    },
+    "vendor": "digilent",
     "price": {
       "value": 299,
       "currency": "USD"
@@ -1445,8 +1298,7 @@
       "type": "FPGA",
       "family": "Artix-7",
       "part": "XC7A35TI-1LCSG324I",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "ethernet": [
       {
@@ -1464,10 +1316,7 @@
     "name": "USB104-A7",
     "status": "active",
     "url": "https://digilent.com/shop/usb104-a7-artix-7-fpga-development-board-with-syzygy-compatible-expansion/",
-    "vendor": {
-      "name": "Digilent",
-      "url": "https://digilent.com"
-    },
+    "vendor": "digilent",
     "price": {
       "value": 349,
       "currency": "USD"
@@ -1476,8 +1325,7 @@
       "type": "FPGA",
       "family": "Artix-7",
       "part": "XC7A100T-1CSG324I",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "expansion": {
       "pmod": 3,
@@ -1489,10 +1337,7 @@
     "name": "Nexys-Video",
     "status": "active",
     "url": "https://digilent.com/shop/nexys-video-artix-7-fpga-trainer-board-for-multimedia-applications/",
-    "vendor": {
-      "name": "Digilent",
-      "url": "https://digilent.com"
-    },
+    "vendor": "digilent",
     "price": {
       "value": 549,
       "currency": "USD"
@@ -1501,8 +1346,7 @@
       "type": "FPGA",
       "family": "Artix-7",
       "part": "XC7A200T-1SBG484C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "hdmi_in": 1,
@@ -1525,10 +1369,7 @@
     "name": "Genesys-2",
     "status": "active",
     "url": "https://digilent.com/shop/genesys-2-kintex-7-fpga-development-board/",
-    "vendor": {
-      "name": "Digilent",
-      "url": "https://digilent.com"
-    },
+    "vendor": "digilent",
     "price": {
       "value": 1099,
       "currency": "USD"
@@ -1537,8 +1378,7 @@
       "type": "FPGA",
       "family": "Kintex-7",
       "part": "XC7K325T-2FFG900C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "hdmi_in": 1,
@@ -1561,10 +1401,7 @@
     "name": "Cora-Z7",
     "status": "active",
     "url": "https://digilent.com/shop/cora-z7-zynq-7000-single-core-and-dual-core-options-for-arm-fpga-soc-development/",
-    "vendor": {
-      "name": "Digilent",
-      "url": "https://digilent.com"
-    },
+    "vendor": "digilent",
     "price": {
       "value": 149,
       "currency": "USD"
@@ -1573,8 +1410,7 @@
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z010-1CLG400C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "ethernet": [
       {
@@ -1592,10 +1428,7 @@
     "name": "Eclypse-Z7",
     "status": "active",
     "url": "https://digilent.com/shop/eclypse-z7-zynq-7000-soc-development-board-with-syzygy-compatible-expansion/",
-    "vendor": {
-      "name": "Digilent",
-      "url": "https://digilent.com"
-    },
+    "vendor": "digilent",
     "price": {
       "value": 499,
       "currency": "USD"
@@ -1604,8 +1437,7 @@
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z020-1CLG484C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "ethernet": [
       {
@@ -1623,10 +1455,7 @@
     "name": "Genesys-ZU",
     "status": "active",
     "url": "https://digilent.com/shop/genesys-zu-zynq-ultrascale-mpsoc-development-board/",
-    "vendor": {
-      "name": "Digilent",
-      "url": "https://digilent.com"
-    },
+    "vendor": "digilent",
     "price": {
       "value": 1995,
       "currency": "USD"
@@ -1635,8 +1464,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU5EV-1SFVC784-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "hdmi_in": 1,
@@ -1667,10 +1495,7 @@
     "name": "Nexys-A7",
     "status": "active",
     "url": "https://digilent.com/shop/nexys-a7-fpga-trainer-board-recommended-for-ece-curriculum/",
-    "vendor": {
-      "name": "Digilent",
-      "url": "https://digilent.com"
-    },
+    "vendor": "digilent",
     "price": {
       "value": 349,
       "currency": "USD"
@@ -1679,8 +1504,7 @@
       "type": "FPGA",
       "family": "Artix-7",
       "part": "XC7A100T-1CSG324C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "ethernet": [
       {
@@ -1697,10 +1521,7 @@
     "name": "Arty-S7",
     "status": "active",
     "url": "https://digilent.com/shop/arty-s7-spartan-7-fpga-development-board/",
-    "vendor": {
-      "name": "Digilent",
-      "url": "https://digilent.com"
-    },
+    "vendor": "digilent",
     "price": {
       "value": 119,
       "currency": "USD"
@@ -1709,8 +1530,7 @@
       "type": "FPGA",
       "family": "Spartan-7",
       "part": "XC7S25-1CSGA324C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "expansion": {
       "pmod": 4,
@@ -1722,17 +1542,13 @@
     "name": "NetFPGA-SUME",
     "status": "discontinued",
     "url": "https://netfpga.org/NetFPGA-SUME.html",
-    "vendor": {
-      "name": "Digilent",
-      "url": "https://digilent.com"
-    },
+    "vendor": "digilent",
     "price": null,
     "device": {
       "type": "FPGA",
       "family": "Virtex-7",
       "part": "XC7VX690T-3FFG1761C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -1757,10 +1573,7 @@
     "name": "Arty-Z7",
     "status": "active",
     "url": "https://digilent.com/shop/arty-z7-zynq-7000-soc-development-board/",
-    "vendor": {
-      "name": "Digilent",
-      "url": "https://digilent.com"
-    },
+    "vendor": "digilent",
     "price": {
       "value": 249,
       "currency": "USD"
@@ -1769,8 +1582,7 @@
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z010-1CLG400C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "hdmi_in": 1,
@@ -1792,10 +1604,7 @@
     "name": "PYNQ-Z1",
     "status": "active",
     "url": "https://digilent.com/shop/pynq-z1-python-productivity-for-zynq-7000-arm-fpga-soc/",
-    "vendor": {
-      "name": "Digilent",
-      "url": "https://digilent.com"
-    },
+    "vendor": "digilent",
     "price": {
       "value": 299,
       "currency": "USD"
@@ -1804,8 +1613,7 @@
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z020-1CLG400C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "hdmi_in": 1,
@@ -1827,10 +1635,7 @@
     "name": "Cmod A7-35T",
     "status": "active",
     "url": "https://digilent.com/shop/cmod-a7-35t-breadboardable-artix-7-fpga-module/",
-    "vendor": {
-      "name": "Digilent",
-      "url": "https://digilent.com"
-    },
+    "vendor": "digilent",
     "price": {
       "value": 99,
       "currency": "USD"
@@ -1839,8 +1644,7 @@
       "type": "FPGA",
       "family": "Artix-7",
       "part": "XC7A35T-1CPG236C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "expansion": {
       "pmod": 1
@@ -1851,10 +1655,7 @@
     "name": "Cmod S7",
     "status": "active",
     "url": "https://digilent.com/shop/cmod-s7-breadboardable-spartan-7-fpga-module/",
-    "vendor": {
-      "name": "Digilent",
-      "url": "https://digilent.com"
-    },
+    "vendor": "digilent",
     "price": {
       "value": 99,
       "currency": "USD"
@@ -1863,8 +1664,7 @@
       "type": "FPGA",
       "family": "Spartan-7",
       "part": "XC7S25-1CSGA225C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "expansion": {
       "pmod": 1
@@ -1875,10 +1675,7 @@
     "name": "LFCPNX-EVN",
     "status": "active",
     "url": "https://www.latticesemi.com/products/developmentboardsandkits/certuspro-nxevaluationboard",
-    "vendor": {
-      "name": "Lattice",
-      "url": "https://www.latticesemi.com"
-    },
+    "vendor": "lattice",
     "price": {
       "value": 200,
       "currency": "USD"
@@ -1887,8 +1684,7 @@
       "type": "FPGA",
       "family": "CertusPro-NX",
       "part": "LFCPNX-100-9LFG672C",
-      "vendor": "Lattice",
-      "vendor_url": "https://www.latticesemi.com"
+      "vendor": "lattice"
     },
     "expansion": {
       "fmc_hpc": 1,
@@ -1901,10 +1697,7 @@
     "name": "LFCPNX-VERSA-EVN",
     "status": "active",
     "url": "https://www.latticesemi.com/products/developmentboardsandkits/certuspro-nx-versa-board",
-    "vendor": {
-      "name": "Lattice",
-      "url": "https://www.latticesemi.com"
-    },
+    "vendor": "lattice",
     "price": {
       "value": 501,
       "currency": "USD"
@@ -1913,8 +1706,7 @@
       "type": "FPGA",
       "family": "CertusPro-NX",
       "part": "LFCPNX-100-9LFG672I",
-      "vendor": "Lattice",
-      "vendor_url": "https://www.latticesemi.com"
+      "vendor": "lattice"
     },
     "pcie": [
       {
@@ -1939,10 +1731,7 @@
     "name": "PYNQ-Z2",
     "status": "active",
     "url": "https://www.amd.com/en/corporate/university-program/aup-boards/pynq-z2.html",
-    "vendor": {
-      "name": "TUL",
-      "url": "https://www.tulembedded.com"
-    },
+    "vendor": "tul",
     "price": {
       "value": 129,
       "currency": "USD"
@@ -1951,8 +1740,7 @@
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z020-1CLG400C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "hdmi_in": 1,
@@ -1975,10 +1763,7 @@
     "name": "PYNQ-ZU",
     "status": "active",
     "url": "https://www.tulembedded.com/FPGA/ProductsPYNQ-ZU.html",
-    "vendor": {
-      "name": "TUL",
-      "url": "https://www.tulembedded.com"
-    },
+    "vendor": "tul",
     "price": {
       "value": 199,
       "currency": "USD"
@@ -1987,8 +1772,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU5EG-1SFVC784-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "hdmi_in": 1,
@@ -2012,10 +1796,7 @@
     "name": "HTG-K800",
     "status": "active",
     "url": "http://www.hitechglobal.com/boards/kintex-ultrascale.htm",
-    "vendor": {
-      "name": "Hitech Global",
-      "url": "http://www.hitechglobal.com"
-    },
+    "vendor": "hitech-global",
     "price": {
       "value": 4995,
       "currency": "USD"
@@ -2024,8 +1805,7 @@
       "type": "FPGA",
       "family": "Kintex UltraScale",
       "part": "XCKU115",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -2043,10 +1823,7 @@
     "name": "ZUBoard",
     "status": "active",
     "url": "https://www.avnet.com/wps/portal/us/products/avnet-boards/avnet-board-families/zuboard-1cg/zuboard-1cg",
-    "vendor": {
-      "name": "Avnet",
-      "url": "https://www.avnet.com"
-    },
+    "vendor": "avnet",
     "price": {
       "value": 159,
       "currency": "USD"
@@ -2055,8 +1832,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU1CG-1SBVA484E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "ethernet": [
       {
@@ -2073,10 +1849,7 @@
     "name": "AUBoard",
     "status": "active",
     "url": "https://www.avnet.com/americas/products/avnet-boards/avnet-board-families/auboard-15p-fpga-development-kit/",
-    "vendor": {
-      "name": "Avnet",
-      "url": "https://www.avnet.com"
-    },
+    "vendor": "avnet",
     "price": {
       "value": 699,
       "currency": "USD"
@@ -2085,8 +1858,7 @@
       "type": "FPGA",
       "family": "Artix UltraScale+",
       "part": "XCAU15P-2FFVB676-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -2116,10 +1888,7 @@
     "name": "UltraZed-EV Starter Kit",
     "status": "active",
     "url": "https://www.xilinx.com/products/boards-and-kits/1-y3n9v1.html",
-    "vendor": {
-      "name": "Avnet",
-      "url": "https://www.avnet.com"
-    },
+    "vendor": "avnet",
     "price": {
       "value": 1595,
       "currency": "USD"
@@ -2128,8 +1897,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU7EV-1FBVB900-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -2167,10 +1935,7 @@
     "name": "Ultra96v2",
     "status": "active",
     "url": "https://www.96boards.org/product/ultra96/",
-    "vendor": {
-      "name": "Avnet",
-      "url": "https://www.avnet.com"
-    },
+    "vendor": "avnet",
     "price": {
       "value": 249,
       "currency": "USD"
@@ -2179,8 +1944,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU3EG-1SFVA625-I",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "displayport": 1
@@ -2195,10 +1959,7 @@
     "name": "Snickerdoodle",
     "status": "active",
     "url": "https://krtkl.com/snickerdoodle/",
-    "vendor": {
-      "name": "Krtkl",
-      "url": "https://krtkl.com"
-    },
+    "vendor": "krtkl",
     "price": {
       "value": 115,
       "currency": "USD"
@@ -2207,8 +1968,7 @@
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z010-1CLG400C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "wireless": {
       "wifi": true,
@@ -2220,10 +1980,7 @@
     "name": "Snickerdoodle Black",
     "status": "active",
     "url": "https://krtkl.com/snickerdoodle/",
-    "vendor": {
-      "name": "Krtkl",
-      "url": "https://krtkl.com"
-    },
+    "vendor": "krtkl",
     "price": {
       "value": 245,
       "currency": "USD"
@@ -2232,8 +1989,7 @@
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z020-3CLG400E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "wireless": {
       "wifi": true,
@@ -2245,10 +2001,7 @@
     "name": "ZedBoard",
     "status": "active",
     "url": "https://www.avnet.com/americas/products/avnet-boards/avnet-board-families/zedboard/",
-    "vendor": {
-      "name": "Avnet",
-      "url": "https://www.avnet.com"
-    },
+    "vendor": "avnet",
     "price": {
       "value": 499,
       "currency": "USD"
@@ -2257,8 +2010,7 @@
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z020-1CLG484C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "hdmi_out": 1
@@ -2279,10 +2031,7 @@
     "name": "Zybo-Z7",
     "status": "active",
     "url": "https://digilent.com/shop/zybo-z7-zynq-7000-arm-fpga-soc-development-board/",
-    "vendor": {
-      "name": "Digilent",
-      "url": "https://digilent.com"
-    },
+    "vendor": "digilent",
     "price": {
       "value": 299,
       "currency": "USD"
@@ -2291,8 +2040,7 @@
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z010-1CLG400C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "hdmi_in": 1,
@@ -2313,10 +2061,7 @@
     "name": "MicroZed",
     "status": "active",
     "url": "https://www.tria-technologies.com/product/microzed/",
-    "vendor": {
-      "name": "Tria Technologies",
-      "url": "https://www.tria-technologies.com/"
-    },
+    "vendor": "tria",
     "price": {
       "value": 178,
       "currency": "USD"
@@ -2325,8 +2070,7 @@
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z010-1CLG400C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "ethernet": [
       {
@@ -2343,17 +2087,13 @@
     "name": "MiniZed",
     "status": "discontinued",
     "url": "https://www.avnet.com/americas/products/avnet-boards/avnet-board-families/minized/",
-    "vendor": {
-      "name": "Avnet",
-      "url": "https://www.avnet.com"
-    },
+    "vendor": "avnet",
     "price": null,
     "device": {
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z007S",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "expansion": {
       "pmod": 2,
@@ -2369,10 +2109,7 @@
     "name": "Brain-1",
     "status": "active",
     "url": "https://www.opalkelly.com/products/syzygy/brain-1",
-    "vendor": {
-      "name": "Opal Kelly",
-      "url": "https://opalkelly.com"
-    },
+    "vendor": "opal-kelly",
     "price": {
       "value": 449.95,
       "currency": "USD"
@@ -2381,8 +2118,7 @@
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z012S-1CLG485C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "ethernet": [
       {
@@ -2400,10 +2136,7 @@
     "name": "XEM7320",
     "status": "active",
     "url": "https://www.opalkelly.com/products/fpga-integration/xem7320",
-    "vendor": {
-      "name": "Opal Kelly",
-      "url": "https://opalkelly.com"
-    },
+    "vendor": "opal-kelly",
     "price": {
       "value": 749.95,
       "currency": "USD"
@@ -2412,8 +2145,7 @@
       "type": "FPGA",
       "family": "Artix-7",
       "part": "XC7A75T-1FGG484C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "expansion": {
       "syzygy": 2,
@@ -2425,10 +2157,7 @@
     "name": "XEM8320",
     "status": "active",
     "url": "https://www.opalkelly.com/products/fpga-integration/xem8320",
-    "vendor": {
-      "name": "Opal Kelly",
-      "url": "https://opalkelly.com"
-    },
+    "vendor": "opal-kelly",
     "price": {
       "value": 1499.95,
       "currency": "USD"
@@ -2437,8 +2166,7 @@
       "type": "FPGA",
       "family": "Artix UltraScale+",
       "part": "XCAU25P-2FFVB676-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "networking": {
       "sfp": 2
@@ -2453,10 +2181,7 @@
     "name": "XEM7350",
     "status": "active",
     "url": "https://www.opalkelly.com/products/fpga-integration/xem7350",
-    "vendor": {
-      "name": "Opal Kelly",
-      "url": "https://opalkelly.com"
-    },
+    "vendor": "opal-kelly",
     "price": {
       "value": 1599.95,
       "currency": "USD"
@@ -2465,8 +2190,7 @@
       "type": "FPGA",
       "family": "Kintex-7",
       "part": "XC7K70T-1FBG676C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "expansion": {
       "fmc_hpc": 1
@@ -2477,10 +2201,7 @@
     "name": "FOMD-ACV-A4",
     "status": "active",
     "url": "https://www.opalkelly.com/products/fpga-integration/fomd-acv",
-    "vendor": {
-      "name": "Opal Kelly",
-      "url": "https://opalkelly.com/"
-    },
+    "vendor": "opal-kelly",
     "price": {
       "value": 299.95,
       "currency": "USD"
@@ -2489,8 +2210,7 @@
       "type": "FPGA",
       "family": "Cyclone V E",
       "part": "5CEFA4F23C8N",
-      "vendor": "Intel",
-      "vendor_url": "https://www.intel.com/"
+      "vendor": "altera"
     }
   },
   {
@@ -2498,10 +2218,7 @@
     "name": "XEM7001",
     "status": "active",
     "url": "https://www.opalkelly.com/products/fpga-integration/xem7001",
-    "vendor": {
-      "name": "Opal Kelly",
-      "url": "https://opalkelly.com/"
-    },
+    "vendor": "opal-kelly",
     "price": {
       "value": 399.95,
       "currency": "USD"
@@ -2510,8 +2227,7 @@
       "type": "FPGA",
       "family": "Artix-7",
       "part": "XC7A15T-1FTG256C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     }
   },
   {
@@ -2519,10 +2235,7 @@
     "name": "XEM7010-A50",
     "status": "active",
     "url": "https://www.opalkelly.com/products/fpga-integration/xem7010",
-    "vendor": {
-      "name": "Opal Kelly",
-      "url": "https://opalkelly.com/"
-    },
+    "vendor": "opal-kelly",
     "price": {
       "value": 499.95,
       "currency": "USD"
@@ -2531,8 +2244,7 @@
       "type": "FPGA",
       "family": "Artix-7",
       "part": "XC7A75T-1FGG484C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     }
   },
   {
@@ -2540,10 +2252,7 @@
     "name": "XEM7305",
     "status": "active",
     "url": "https://www.opalkelly.com/products/fpga-integration/xem7305",
-    "vendor": {
-      "name": "Opal Kelly",
-      "url": "https://opalkelly.com/"
-    },
+    "vendor": "opal-kelly",
     "price": {
       "value": 449.95,
       "currency": "USD"
@@ -2552,8 +2261,7 @@
       "type": "FPGA",
       "family": "Spartan-7",
       "part": "XC7S50-1CSGA324C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     }
   },
   {
@@ -2561,10 +2269,7 @@
     "name": "XEM7310-A200",
     "status": "active",
     "url": "https://www.opalkelly.com/products/fpga-integration/xem7310",
-    "vendor": {
-      "name": "Opal Kelly",
-      "url": "https://opalkelly.com/"
-    },
+    "vendor": "opal-kelly",
     "price": {
       "value": 875.95,
       "currency": "USD"
@@ -2573,8 +2278,7 @@
       "type": "FPGA",
       "family": "Artix-7",
       "part": "XC7A200T-1FBG484C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     }
   },
   {
@@ -2582,10 +2286,7 @@
     "name": "XEM7310-A75",
     "status": "active",
     "url": "https://www.opalkelly.com/products/fpga-integration/xem7310",
-    "vendor": {
-      "name": "Opal Kelly",
-      "url": "https://opalkelly.com/"
-    },
+    "vendor": "opal-kelly",
     "price": {
       "value": 629.95,
       "currency": "USD"
@@ -2594,8 +2295,7 @@
       "type": "FPGA",
       "family": "Artix-7",
       "part": "XC7A75T-1FGG484C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     }
   },
   {
@@ -2603,10 +2303,7 @@
     "name": "XEM7310MT-A200",
     "status": "active",
     "url": "https://www.opalkelly.com/products/fpga-integration/xem7310mt",
-    "vendor": {
-      "name": "Opal Kelly",
-      "url": "https://opalkelly.com/"
-    },
+    "vendor": "opal-kelly",
     "price": {
       "value": 899.95,
       "currency": "USD"
@@ -2615,8 +2312,7 @@
       "type": "FPGA",
       "family": "Artix-7",
       "part": "XC7A200T-1FBG484C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     }
   },
   {
@@ -2624,10 +2320,7 @@
     "name": "XEM7310MT-A75",
     "status": "active",
     "url": "https://www.opalkelly.com/products/fpga-integration/xem7310mt",
-    "vendor": {
-      "name": "Opal Kelly",
-      "url": "https://opalkelly.com/"
-    },
+    "vendor": "opal-kelly",
     "price": {
       "value": 749.95,
       "currency": "USD"
@@ -2636,8 +2329,7 @@
       "type": "FPGA",
       "family": "Artix-7",
       "part": "XC7A75T-1FGG484C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     }
   },
   {
@@ -2645,10 +2337,7 @@
     "name": "XEM7360-K160T",
     "status": "active",
     "url": "https://www.opalkelly.com/products/fpga-integration/xem7360",
-    "vendor": {
-      "name": "Opal Kelly",
-      "url": "https://opalkelly.com/"
-    },
+    "vendor": "opal-kelly",
     "price": {
       "value": 1799.95,
       "currency": "USD"
@@ -2657,8 +2346,7 @@
       "type": "FPGA",
       "family": "Kintex-7",
       "part": "XC7K160T-1FFG676C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     }
   },
   {
@@ -2666,10 +2354,7 @@
     "name": "XEM7360-K410T",
     "status": "active",
     "url": "https://www.opalkelly.com/products/fpga-integration/xem7360",
-    "vendor": {
-      "name": "Opal Kelly",
-      "url": "https://opalkelly.com/"
-    },
+    "vendor": "opal-kelly",
     "price": {
       "value": 3899.95,
       "currency": "USD"
@@ -2678,8 +2363,7 @@
       "type": "FPGA",
       "family": "Kintex-7",
       "part": "XC7K410T-1FFG676C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     }
   },
   {
@@ -2687,10 +2371,7 @@
     "name": "XEM8310-AU25P",
     "status": "active",
     "url": "https://www.opalkelly.com/products/fpga-integration/xem8310",
-    "vendor": {
-      "name": "Opal Kelly",
-      "url": "https://opalkelly.com/"
-    },
+    "vendor": "opal-kelly",
     "price": {
       "value": 1299.95,
       "currency": "USD"
@@ -2699,8 +2380,7 @@
       "type": "FPGA",
       "family": "Artix UltraScale+",
       "part": "XCAU25P-2FFVB676-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     }
   },
   {
@@ -2708,10 +2388,7 @@
     "name": "XEM8350-KU060",
     "status": "active",
     "url": "https://www.opalkelly.com/products/fpga-integration/xem8350",
-    "vendor": {
-      "name": "Opal Kelly",
-      "url": "https://opalkelly.com/"
-    },
+    "vendor": "opal-kelly",
     "price": {
       "value": 5499.95,
       "currency": "USD"
@@ -2720,8 +2397,7 @@
       "type": "FPGA",
       "family": "Kintex UltraScale",
       "part": "XCKU060-1FFVA1517-C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     }
   },
   {
@@ -2729,10 +2405,7 @@
     "name": "XEM8350-KU115",
     "status": "active",
     "url": "https://www.opalkelly.com/products/fpga-integration/xem8350",
-    "vendor": {
-      "name": "Opal Kelly",
-      "url": "https://opalkelly.com/"
-    },
+    "vendor": "opal-kelly",
     "price": {
       "value": 9299.95,
       "currency": "USD"
@@ -2741,8 +2414,7 @@
       "type": "FPGA",
       "family": "Kintex UltraScale",
       "part": "XCKU115-1FLVA1517-C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     }
   },
   {
@@ -2750,10 +2422,7 @@
     "name": "ZEM5305",
     "status": "active",
     "url": "https://www.opalkelly.com/products/fpga-integration/zem5305",
-    "vendor": {
-      "name": "Opal Kelly",
-      "url": "https://opalkelly.com/"
-    },
+    "vendor": "opal-kelly",
     "price": {
       "value": 499.95,
       "currency": "USD"
@@ -2762,8 +2431,7 @@
       "type": "FPGA",
       "family": "Cyclone V E",
       "part": "5CEFA2U19C8N",
-      "vendor": "Intel",
-      "vendor_url": "https://www.intel.com/"
+      "vendor": "altera"
     }
   },
   {
@@ -2771,10 +2439,7 @@
     "name": "ZEM5310-A4",
     "status": "active",
     "url": "https://www.opalkelly.com/products/fpga-integration/zem5310",
-    "vendor": {
-      "name": "Opal Kelly",
-      "url": "https://opalkelly.com/"
-    },
+    "vendor": "opal-kelly",
     "price": {
       "value": 599.95,
       "currency": "USD"
@@ -2783,8 +2448,7 @@
       "type": "FPGA",
       "family": "Cyclone V E",
       "part": "5CEFA4F23C7N",
-      "vendor": "Intel",
-      "vendor_url": "https://www.intel.com/"
+      "vendor": "altera"
     }
   },
   {
@@ -2792,10 +2456,7 @@
     "name": "Z-Turn",
     "status": "active",
     "url": "https://www.myirtech.com/list.asp?id=502",
-    "vendor": {
-      "name": "MYIR Tech",
-      "url": "https://www.myirtech.com"
-    },
+    "vendor": "myir",
     "price": {
       "value": 99,
       "currency": "USD"
@@ -2804,8 +2465,7 @@
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z010-1CLG400C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "hdmi_out": 1
@@ -2822,10 +2482,7 @@
     "name": "MYD-CZU5EV",
     "status": "active",
     "url": "https://www.myirtech.com/list.asp?id=613",
-    "vendor": {
-      "name": "MYIR Tech",
-      "url": "https://www.myirtech.com"
-    },
+    "vendor": "myir",
     "price": {
       "value": 890,
       "currency": "USD"
@@ -2834,8 +2491,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU5EV-2SFVC784-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -2871,17 +2527,13 @@
     "name": "385A-SoC",
     "status": "discontinued",
     "url": "https://www.bittware.com/fpga/385a-soc/",
-    "vendor": {
-      "name": "BittWare",
-      "url": "https://www.bittware.com"
-    },
+    "vendor": "bittware",
     "price": null,
     "device": {
       "type": "SoC",
       "family": "Arria-10",
       "part": "10AS066N3F40E2SG",
-      "vendor": "Intel",
-      "vendor_url": "https://www.intel.com"
+      "vendor": "altera"
     },
     "pcie": [
       {
@@ -2899,10 +2551,7 @@
     "name": "Ti180 M484",
     "status": "active",
     "url": "https://www.efinixinc.com/products-devkits-titaniumti180m484.html",
-    "vendor": {
-      "name": "Efinix",
-      "url": "https://www.efinixinc.com"
-    },
+    "vendor": "efinix",
     "price": {
       "value": 850,
       "currency": "USD"
@@ -2911,8 +2560,7 @@
       "type": "FPGA",
       "family": "Titanium",
       "part": "Ti180M484I3",
-      "vendor": "Efinix",
-      "vendor_url": "https://www.efinixinc.com"
+      "vendor": "efinix"
     },
     "video": {
       "hdmi_out": 1,
@@ -2933,10 +2581,7 @@
     "name": "TR5",
     "status": "active",
     "url": "https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&No=1001",
-    "vendor": {
-      "name": "Terasic",
-      "url": "https://www.terasic.com.tw"
-    },
+    "vendor": "terasic",
     "price": {
       "value": 7835,
       "currency": "USD"
@@ -2945,8 +2590,7 @@
       "type": "FPGA",
       "family": "Stratix-V GX",
       "part": "5SGXEA7N2F45C2N",
-      "vendor": "Intel",
-      "vendor_url": "https://www.intel.com"
+      "vendor": "altera"
     },
     "pcie": [
       {
@@ -2968,10 +2612,7 @@
     "name": "Apollo S10",
     "status": "active",
     "url": "https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=248&No=1229",
-    "vendor": {
-      "name": "Terasic",
-      "url": "https://www.terasic.com.tw"
-    },
+    "vendor": "terasic",
     "price": {
       "value": 8995,
       "currency": "USD"
@@ -2980,8 +2621,7 @@
       "type": "SoC",
       "family": "Stratix-10",
       "part": "1SX280HU2F50E1VG",
-      "vendor": "Intel",
-      "vendor_url": "https://www.intel.com"
+      "vendor": "altera"
     },
     "ethernet": [
       {
@@ -2999,10 +2639,7 @@
     "name": "DE10-LITE",
     "status": "active",
     "url": "https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=218&No=1021#contents",
-    "vendor": {
-      "name": "Terasic",
-      "url": "https://www.terasic.com"
-    },
+    "vendor": "terasic",
     "price": {
       "value": 140,
       "currency": "USD"
@@ -3011,8 +2648,7 @@
       "type": "SoC",
       "family": "Max-10",
       "part": "10M50DA",
-      "vendor": "Intel",
-      "vendor_url": "https://www.intel.com"
+      "vendor": "altera"
     },
     "expansion": {
       "arduino": 1
@@ -3023,10 +2659,7 @@
     "name": "ACU9EG",
     "status": "active",
     "url": "https://www.alinx.com/en/detail/262",
-    "vendor": {
-      "name": "Alinx",
-      "url": "https://alinx.com"
-    },
+    "vendor": "alinx",
     "price": {
       "value": 2280,
       "currency": "USD"
@@ -3035,8 +2668,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU9EG-2FFVB1156-I",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "mipi_csi": 1
@@ -3062,10 +2694,7 @@
     "name": "AXU5EV-P",
     "status": "active",
     "url": "https://www.alinx.com/en/detail/224",
-    "vendor": {
-      "name": "Alinx",
-      "url": "https://alinx.com"
-    },
+    "vendor": "alinx",
     "price": {
       "value": 1660,
       "currency": "USD"
@@ -3074,8 +2703,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU5EV-2SFVC784-I",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -3108,10 +2736,7 @@
     "name": "Z19",
     "status": "active",
     "url": "https://www.alinx.com/en/detail/254",
-    "vendor": {
-      "name": "Alinx",
-      "url": "https://alinx.com"
-    },
+    "vendor": "alinx",
     "price": {
       "value": 12000,
       "currency": "USD"
@@ -3120,8 +2745,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU19EG-2FFVC1760-I",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -3155,10 +2779,7 @@
     "name": "Z19-P",
     "status": "active",
     "url": "https://www.alinx.com/en/detail/582",
-    "vendor": {
-      "name": "Alinx",
-      "url": "https://alinx.com"
-    },
+    "vendor": "alinx",
     "price": {
       "value": 12000,
       "currency": "USD"
@@ -3167,8 +2788,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU19EG-2FFVC1760-I",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -3195,10 +2815,7 @@
     "name": "AXU2CGA",
     "status": "active",
     "url": "https://www.alinx.com/en/detail/490",
-    "vendor": {
-      "name": "Alinx",
-      "url": "https://alinx.com"
-    },
+    "vendor": "alinx",
     "price": {
       "value": 340,
       "currency": "USD"
@@ -3207,8 +2824,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU2CG-1SFVC784-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -3233,10 +2849,7 @@
     "name": "AXAU15",
     "status": "active",
     "url": "https://www.en.alinx.com/Product/FPGA-Development-Boards/Artix-UltraScale-plus/AXAU15.html",
-    "vendor": {
-      "name": "Alinx",
-      "url": "https://alinx.com"
-    },
+    "vendor": "alinx",
     "price": {
       "value": 689,
       "currency": "USD"
@@ -3245,8 +2858,7 @@
       "type": "FPGA",
       "family": "Artix UltraScale+",
       "part": "XCAU15P-2FFVB676-I",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -3270,10 +2882,7 @@
     "name": "LiteFury",
     "status": "active",
     "url": "https://rhsresearch.com/collections/rhs-public/products/litefury",
-    "vendor": {
-      "name": "RHS Research",
-      "url": "https://rhsresearch.com"
-    },
+    "vendor": "rhs-research",
     "price": {
       "value": 109,
       "currency": "USD"
@@ -3282,8 +2891,7 @@
       "type": "FPGA",
       "family": "Artix-7",
       "part": "XC7A100T-2LFGG484E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -3298,10 +2906,7 @@
     "name": "NiteFury",
     "status": "active",
     "url": "https://www.crowdsupply.com/rhs-research/nitefury",
-    "vendor": {
-      "name": "RHS Research",
-      "url": "https://rhsresearch.com"
-    },
+    "vendor": "rhs-research",
     "price": {
       "value": 149,
       "currency": "USD"
@@ -3310,8 +2915,7 @@
       "type": "FPGA",
       "family": "Artix-7",
       "part": "XC7A200T-2FBG484C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -3326,10 +2930,7 @@
     "name": "Aller",
     "status": "active",
     "url": "https://numato.com/product/aller-artix-7-fpga-board-with-m-2-interface/",
-    "vendor": {
-      "name": "Numato Lab",
-      "url": "https://numato.com/"
-    },
+    "vendor": "numato-lab",
     "price": {
       "value": 499.99,
       "currency": "USD"
@@ -3338,8 +2939,7 @@
       "type": "FPGA",
       "family": "Artix-7",
       "part": "XC7A200T-2FBG484I",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -3353,10 +2953,7 @@
     "name": "B-BOARD PRO",
     "status": "active",
     "url": "https://imperix.com/products/control/inverter-control-board/",
-    "vendor": {
-      "name": "imperix",
-      "url": "https://imperix.com"
-    },
+    "vendor": "imperix",
     "price": {
       "value": 2400,
       "currency": "CHF"
@@ -3365,8 +2962,7 @@
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z030-3FBG676E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "networking": {
       "sfp": 3
@@ -3377,10 +2973,7 @@
     "name": "Callisto",
     "status": "active",
     "url": "https://numato.com/product/callisto-kintex-7-usb-3-1-fpga-module/",
-    "vendor": {
-      "name": "Numato Lab",
-      "url": "https://numato.com/"
-    },
+    "vendor": "numato-lab",
     "price": {
       "value": 949.99,
       "currency": "USD"
@@ -3389,8 +2982,7 @@
       "type": "FPGA",
       "family": "Kintex-7",
       "part": "XC7K160T-1FBG676C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     }
   },
   {
@@ -3398,10 +2990,7 @@
     "name": "Mimas A7",
     "status": "active",
     "url": "https://numato.com/product/mimas-a7-artix-7-fpga-development-board/",
-    "vendor": {
-      "name": "Numato Lab",
-      "url": "https://numato.com/"
-    },
+    "vendor": "numato-lab",
     "price": {
       "value": 229.99,
       "currency": "USD"
@@ -3410,8 +2999,7 @@
       "type": "FPGA",
       "family": "Artix-7",
       "part": "XC7A50T-1FGG484C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "hdmi_in": 1,
@@ -3430,10 +3018,7 @@
     "name": "Mimas A7 Mini",
     "status": "active",
     "url": "https://numato.com/product/mimas-a7-mini-fpga-development-board/",
-    "vendor": {
-      "name": "Numato Lab",
-      "url": "https://numato.com/"
-    },
+    "vendor": "numato-lab",
     "price": {
       "value": 148.99,
       "currency": "USD"
@@ -3442,8 +3027,7 @@
       "type": "FPGA",
       "family": "Artix-7",
       "part": "XC7A35T-1FTG256C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     },
     "expansion": {
       "pmod": 2
@@ -3454,10 +3038,7 @@
     "name": "Narvi",
     "status": "active",
     "url": "https://numato.com/product/narvi-spartan-7-fpga-module/",
-    "vendor": {
-      "name": "Numato Lab",
-      "url": "https://numato.com/"
-    },
+    "vendor": "numato-lab",
     "price": {
       "value": 199.99,
       "currency": "USD"
@@ -3466,8 +3047,7 @@
       "type": "FPGA",
       "family": "Spartan-7",
       "part": "XC7S50-1CSGA324C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     }
   },
   {
@@ -3475,10 +3055,7 @@
     "name": "Nereid",
     "status": "active",
     "url": "https://numato.com/product/nereid-kintex-7-pci-express-fpga-development-board/",
-    "vendor": {
-      "name": "Numato Lab",
-      "url": "https://numato.com/"
-    },
+    "vendor": "numato-lab",
     "price": {
       "value": 999.99,
       "currency": "USD"
@@ -3487,8 +3064,7 @@
       "type": "FPGA",
       "family": "Kintex-7",
       "part": "XC7K160T-1FBG676C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -3506,10 +3082,7 @@
     "name": "Neso",
     "status": "active",
     "url": "https://numato.com/product/neso-artix-7-fpga-development-board/",
-    "vendor": {
-      "name": "Numato Lab",
-      "url": "https://numato.com/"
-    },
+    "vendor": "numato-lab",
     "price": {
       "value": 299.99,
       "currency": "USD"
@@ -3518,8 +3091,7 @@
       "type": "FPGA",
       "family": "Artix-7",
       "part": "XC7A100T-2CSG324C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     }
   },
   {
@@ -3527,10 +3099,7 @@
     "name": "Proteus",
     "status": "active",
     "url": "https://numato.com/product/proteus-kintex-7-usb-3-1-development-board/",
-    "vendor": {
-      "name": "Numato Lab",
-      "url": "https://numato.com/"
-    },
+    "vendor": "numato-lab",
     "price": {
       "value": 999.99,
       "currency": "USD"
@@ -3539,8 +3108,7 @@
       "type": "FPGA",
       "family": "Kintex-7",
       "part": "XC7K160T-1FBG676C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     },
     "expansion": {
       "fmc_hpc": 1
@@ -3551,10 +3119,7 @@
     "name": "Skoll",
     "status": "active",
     "url": "https://numato.com/product/skoll-xilinx-kintex-7-usb-ready-to-go-fpga-module/",
-    "vendor": {
-      "name": "Numato Lab",
-      "url": "https://numato.com/"
-    },
+    "vendor": "numato-lab",
     "price": {
       "value": 299.99,
       "currency": "USD"
@@ -3563,8 +3128,7 @@
       "type": "FPGA",
       "family": "Kintex-7",
       "part": "XC7K70T-1FBG484C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     }
   },
   {
@@ -3572,10 +3136,7 @@
     "name": "Styx",
     "status": "active",
     "url": "https://numato.com/product/styx-zynq-7020-fpga-module/",
-    "vendor": {
-      "name": "Numato Lab",
-      "url": "https://numato.com/"
-    },
+    "vendor": "numato-lab",
     "price": {
       "value": 239.99,
       "currency": "USD"
@@ -3584,8 +3145,7 @@
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z020-1CLG484C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     }
   },
   {
@@ -3593,10 +3153,7 @@
     "name": "Tagus",
     "status": "active",
     "url": "https://numato.com/product/tagus-artix-7-pci-express-development-board/",
-    "vendor": {
-      "name": "Numato Lab",
-      "url": "https://numato.com/"
-    },
+    "vendor": "numato-lab",
     "price": {
       "value": 971.99,
       "currency": "USD"
@@ -3605,8 +3162,7 @@
       "type": "FPGA",
       "family": "Artix-7",
       "part": "XC7A200T-2FBG484I",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -3623,14 +3179,11 @@
     }
   },
   {
-    "id": "EMCÂ²-MPFS250",
-    "name": "EMCÂ²-MPFS250",
+    "id": "EMC\u00c3\u201a\u00c2\u00b2-MPFS250",
+    "name": "EMC\u00c3\u201a\u00c2\u00b2-MPFS250",
     "status": "active",
     "url": "https://store.sundance.com/product/emc2-mpfs250/",
-    "vendor": {
-      "name": "Sundance Multiprocessor Technology Ltd.",
-      "url": "https://www.sundance.com/"
-    },
+    "vendor": "sundance",
     "price": {
       "value": 1495,
       "currency": "GBP"
@@ -3639,8 +3192,7 @@
       "type": "FPGA",
       "family": "PolarFire",
       "part": "MPFS250T-FCVG484E",
-      "vendor": "Microchip",
-      "vendor_url": "https://www.microchip.com/"
+      "vendor": "microchip"
     },
     "pcie": [
       {
@@ -3666,14 +3218,11 @@
     }
   },
   {
-    "id": "EMCÂ²-KU040",
-    "name": "EMCÂ²-KU040",
+    "id": "EMC\u00c3\u201a\u00c2\u00b2-KU040",
+    "name": "EMC\u00c3\u201a\u00c2\u00b2-KU040",
     "status": "active",
     "url": "https://store.sundance.com/product/emc2-ku040/",
-    "vendor": {
-      "name": "Sundance Multiprocessor Technology Ltd.",
-      "url": "https://www.sundance.com/"
-    },
+    "vendor": "sundance",
     "price": {
       "value": 3495,
       "currency": "GBP"
@@ -3682,8 +3231,7 @@
       "type": "FPGA",
       "family": "Kintex UltraScale",
       "part": "XCKU040-1SFVA784-I",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -3709,14 +3257,11 @@
     }
   },
   {
-    "id": "EMCÂ²-ZU5EV",
-    "name": "EMCÂ²-ZU5EV",
+    "id": "EMC\u00c3\u201a\u00c2\u00b2-ZU5EV",
+    "name": "EMC\u00c3\u201a\u00c2\u00b2-ZU5EV",
     "status": "active",
     "url": "https://store.sundance.com/product/emc2-zu5ev/",
-    "vendor": {
-      "name": "Sundance Multiprocessor Technology Ltd.",
-      "url": "https://www.sundance.com/"
-    },
+    "vendor": "sundance",
     "price": {
       "value": 2650,
       "currency": "GBP"
@@ -3725,8 +3270,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU5EV-1SFVC784-I",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -3752,14 +3296,11 @@
     }
   },
   {
-    "id": "EMCÂ²-ZU2CG",
-    "name": "EMCÂ²-ZU2CG",
+    "id": "EMC\u00c3\u201a\u00c2\u00b2-ZU2CG",
+    "name": "EMC\u00c3\u201a\u00c2\u00b2-ZU2CG",
     "status": "active",
     "url": "https://store.sundance.com/product/emc2-zu2cg/",
-    "vendor": {
-      "name": "Sundance Multiprocessor Technology Ltd.",
-      "url": "https://www.sundance.com/"
-    },
+    "vendor": "sundance",
     "price": {
       "value": 1395,
       "currency": "GBP"
@@ -3768,8 +3309,7 @@
       "type": "MPSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU2CG-1SFVC784-I",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -3799,10 +3339,7 @@
     "name": "EDGE ZYNQ",
     "status": "active",
     "url": "https://allaboutfpga.com/product/edge-zynq-soc-fpga-development-board/",
-    "vendor": {
-      "name": "Invent Logics",
-      "url": "https://allaboutfpga.com/"
-    },
+    "vendor": "invent-logics",
     "price": {
       "value": 245,
       "currency": "USD"
@@ -3811,8 +3348,7 @@
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z010-1CLG400C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "hdmi_out": 1
@@ -3833,10 +3369,7 @@
     "name": "EDGE Artix-7",
     "status": "active",
     "url": "https://allaboutfpga.com/product/edge-artix-7-fpga-development-board/",
-    "vendor": {
-      "name": "Invent Logics",
-      "url": "https://allaboutfpga.com/"
-    },
+    "vendor": "invent-logics",
     "price": {
       "value": 193,
       "currency": "USD"
@@ -3845,8 +3378,7 @@
       "type": "FPGA",
       "family": "Artix-7",
       "part": "XC7A35T-1FTG256C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "hdmi_out": 1
@@ -3861,10 +3393,7 @@
     "name": "EDGE Spartan-7",
     "status": "active",
     "url": "https://allaboutfpga.com/product/edge-spartan-7-fpga-development-board/",
-    "vendor": {
-      "name": "Invent Logics",
-      "url": "https://allaboutfpga.com/"
-    },
+    "vendor": "invent-logics",
     "price": {
       "value": 147,
       "currency": "USD"
@@ -3873,8 +3402,7 @@
       "type": "FPGA",
       "family": "Spartan-7",
       "part": "XC7S15-1FTGB196C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     },
     "wireless": {
       "wifi": true,
@@ -3886,10 +3414,7 @@
     "name": "Boolean Board",
     "status": "active",
     "url": "https://www.realdigital.org/hardware/boolean",
-    "vendor": {
-      "name": "Real Digital",
-      "url": "https://www.realdigital.org/"
-    },
+    "vendor": "real-digital",
     "price": {
       "value": 84,
       "currency": "USD"
@@ -3898,8 +3423,7 @@
       "type": "FPGA",
       "family": "Spartan-7",
       "part": "XC7S50-1CSGA324C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "hdmi_out": 1
@@ -3916,10 +3440,7 @@
     "name": "Blackboard",
     "status": "active",
     "url": "https://www.realdigital.org/hardware/blackboard",
-    "vendor": {
-      "name": "Real Digital",
-      "url": "https://www.realdigital.org/"
-    },
+    "vendor": "real-digital",
     "price": {
       "value": 149,
       "currency": "USD"
@@ -3928,8 +3449,7 @@
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z007S-1CLG400C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "hdmi_out": 1
@@ -3947,10 +3467,7 @@
     "name": "RFSoC 4x2",
     "status": "active",
     "url": "https://www.realdigital.org/hardware/rfsoc-4x2",
-    "vendor": {
-      "name": "Real Digital",
-      "url": "https://www.realdigital.org/"
-    },
+    "vendor": "real-digital",
     "price": {
       "value": 2499,
       "currency": "USD"
@@ -3959,8 +3476,7 @@
       "type": "RFSoC",
       "family": "Zynq UltraScale+",
       "part": "XCZU48DR-1FFVG1517-E",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     },
     "video": {
       "displayport": 1
@@ -3978,10 +3494,7 @@
     "name": "Dragon-L FPGA board",
     "status": "active",
     "url": "https://www.knjn.com/ShopBoards_PCI.html",
-    "vendor": {
-      "name": "KNJN",
-      "url": "https://www.knjn.com/"
-    },
+    "vendor": "knjn",
     "price": {
       "value": 149.95,
       "currency": "USD"
@@ -3990,8 +3503,7 @@
       "type": "FPGA",
       "family": "Spartan-6",
       "part": "XC6SLX25T",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -4009,10 +3521,7 @@
     "name": "Dragon-E FPGA board",
     "status": "active",
     "url": "https://www.knjn.com/ShopBoards_PCI.html",
-    "vendor": {
-      "name": "KNJN",
-      "url": "https://www.knjn.com/"
-    },
+    "vendor": "knjn",
     "price": {
       "value": 249.95,
       "currency": "USD"
@@ -4021,8 +3530,7 @@
       "type": "FPGA",
       "family": "Virtex-5",
       "part": "XC5VLX20T",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.xilinx.com/"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {
@@ -4037,10 +3545,7 @@
     "name": "STEMlab 125-14",
     "status": "active",
     "url": "https://redpitaya.com/stemlab-125-14/",
-    "vendor": {
-      "name": "RedPitaya",
-      "url": "https://www.redpitaya.com/"
-    },
+    "vendor": "redpitaya",
     "price": {
       "value": 378,
       "currency": "EUR"
@@ -4049,8 +3554,7 @@
       "type": "SoC",
       "family": "Zynq-7000",
       "part": "XC7Z010-1CLG225C",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com/"
+      "vendor": "amd-xilinx"
     },
     "ethernet": [
       {
@@ -4067,10 +3571,7 @@
     "name": "Alveo V80",
     "status": "active",
     "url": "https://www.amd.com/en/products/accelerators/alveo/v80/a-v80-p64g-pq-g.html",
-    "vendor": {
-      "name": "AMD Xilinx",
-      "url": "https://www.amd.com"
-    },
+    "vendor": "amd-xilinx",
     "price": {
       "value": 9495,
       "currency": "USD"
@@ -4079,8 +3580,7 @@
       "type": "SoC",
       "family": "Versal HBM",
       "part": "XCV80-2MHPLSVA4737-E-S",
-      "vendor": "AMD Xilinx",
-      "vendor_url": "https://www.amd.com"
+      "vendor": "amd-xilinx"
     },
     "pcie": [
       {

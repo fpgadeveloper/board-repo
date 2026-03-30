@@ -7,6 +7,7 @@ This repository contains the community-maintained database of FPGA development b
 | File | Description |
 |------|-------------|
 | `boards.json` | The board database — an array of FPGA development board objects. |
+| `vendors.json` | Centralized registry of board vendors and silicon vendors. |
 | `schema.json` | JSON Schema (Draft 2020-12) that validates `boards.json`. |
 
 ## How to Add a Board
@@ -40,7 +41,7 @@ Each board is a JSON object with the following required fields:
 | `name` | string | Display name of the board. |
 | `status` | string | `"active"`, `"eol"` (end-of-life), or `"discontinued"`. |
 | `url` | string | Product page URL. |
-| `vendor` | object | `{ "name": "Vendor Name", "url": "https://..." }` |
+| `vendor` | string | Board vendor key (must match a key in `vendors.json` `board_vendors`). |
 | `price` | object | `{ "value": 129.00, "currency": "USD" }` |
 | `device` | object | FPGA/SoC device info (see below). |
 
@@ -50,8 +51,8 @@ The `device` object requires:
 |-------|------|-------------|
 | `type` | string | One of: `"FPGA"`, `"SoC"`, `"MPSoC"`, `"RFSoC"`, `"ACAP"`. |
 | `family` | string | Device family (e.g. `"Artix-7"`, `"Zynq UltraScale+"`). |
-| `part` | string | Full part number (e.g. `"XC7A35T-1CPG236C"`). |
-| `vendor` | string | Silicon vendor (e.g. `"AMD Xilinx"`, `"Intel"`, `"Lattice"`). |
+| `part` | string | Full orderable part number (e.g. `"XC7A35T-1CPG236C"`). |
+| `vendor` | string | Silicon vendor key (must match a key in `vendors.json` `silicon_vendors`). |
 
 Optional fields include `pcie`, `video`, `ethernet`, `networking`, `expansion`, `storage`, and `wireless`. See `schema.json` for full details on each.
 
@@ -63,10 +64,7 @@ Optional fields include `pcie`, `video`, `ethernet`, `networking`, `expansion`, 
   "name": "Arty A7-35T",
   "status": "active",
   "url": "https://digilent.com/shop/arty-a7-35t/",
-  "vendor": {
-    "name": "Digilent",
-    "url": "https://digilent.com/"
-  },
+  "vendor": "digilent",
   "price": {
     "value": 129.00,
     "currency": "USD"
@@ -75,8 +73,7 @@ Optional fields include `pcie`, `video`, `ethernet`, `networking`, `expansion`, 
     "type": "FPGA",
     "family": "Artix-7",
     "part": "XC7A35T-1CPG236C",
-    "vendor": "AMD Xilinx",
-    "vendor_url": "https://www.amd.com"
+    "vendor": "amd-xilinx"
   }
 }
 ```
@@ -89,10 +86,7 @@ Optional fields include `pcie`, `video`, `ethernet`, `networking`, `expansion`, 
   "name": "SP701",
   "status": "active",
   "url": "https://www.xilinx.com/sp701",
-  "vendor": {
-    "name": "AMD Xilinx",
-    "url": "https://www.amd.com"
-  },
+  "vendor": "amd-xilinx",
   "price": {
     "value": 774.00,
     "currency": "USD"
@@ -101,8 +95,7 @@ Optional fields include `pcie`, `video`, `ethernet`, `networking`, `expansion`, 
     "type": "FPGA",
     "family": "Spartan-7",
     "part": "XC7S100-2FGGA676C",
-    "vendor": "AMD Xilinx",
-    "vendor_url": "https://www.amd.com"
+    "vendor": "amd-xilinx"
   },
   "video": {
     "hdmi_out": 1,
@@ -118,6 +111,54 @@ Optional fields include `pcie`, `video`, `ethernet`, `networking`, `expansion`, 
   }
 }
 ```
+
+## Vendors
+
+Board and silicon vendors are defined in `vendors.json`. Each board references vendors by key rather than embedding vendor details inline.
+
+### Board Vendors
+
+| Key | Name |
+|-----|------|
+| `alinx` | Alinx |
+| `amd-xilinx` | AMD Xilinx |
+| `avnet` | Avnet |
+| `bittware` | BittWare |
+| `digilent` | Digilent |
+| `efinix` | Efinix |
+| `hitech-global` | Hitech Global |
+| `imperix` | imperix |
+| `invent-logics` | Invent Logics |
+| `knjn` | KNJN |
+| `krtkl` | Krtkl |
+| `lattice` | Lattice |
+| `myir` | MYIR Tech |
+| `numato-lab` | Numato Lab |
+| `opal-kelly` | Opal Kelly |
+| `real-digital` | Real Digital |
+| `redpitaya` | RedPitaya |
+| `rhs-research` | RHS Research |
+| `sundance` | Sundance Multiprocessor Technology Ltd. |
+| `terasic` | Terasic |
+| `trenz` | Trenz Electronic |
+| `tria` | Tria Technologies |
+| `tul` | TUL |
+
+### Silicon Vendors
+
+| Key | Name |
+|-----|------|
+| `achronix` | Achronix |
+| `altera` | Altera |
+| `amd-xilinx` | AMD Xilinx |
+| `cologne-chip` | Cologne Chip |
+| `efinix` | Efinix |
+| `gowin` | Gowin Semiconductor |
+| `lattice` | Lattice |
+| `microchip` | Microchip |
+| `quicklogic` | QuickLogic |
+
+To add a new vendor, add an entry to the appropriate section in `vendors.json` with a kebab-case key, display name, and URL.
 
 ### Tips
 
