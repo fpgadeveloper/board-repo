@@ -1058,6 +1058,40 @@
     }
   },
   {
+    "id": "ZCU670-LD",
+    "name": "ZCU670-LD",
+    "status": "active",
+    "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/zcu670.html",
+    "vendor": {
+      "name": "AMD Xilinx",
+      "url": "https://www.amd.com"
+    },
+    "price": {
+      "value": 16995.0,
+      "currency": "USD"
+    },
+    "device": {
+      "type": "RFSoC",
+      "family": "Zynq UltraScale+",
+      "part": "XCZU57DR-2FSVE1156-I",
+      "vendor": "AMD Xilinx",
+      "vendor_url": "https://www.amd.com"
+    },
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ],
+    "networking": {
+      "sfp": 4
+    },
+    "expansion": {
+      "fmcp": 1,
+      "rfmc": 2
+    }
+  },
+  {
     "id": "Kria KV260",
     "name": "Kria KV260",
     "status": "active",
