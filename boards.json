@@ -9,7 +9,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 836.0,
+      "value": 836,
       "currency": "USD"
     },
     "device": {
@@ -45,7 +45,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 1678.0,
+      "value": 1678,
       "currency": "USD"
     },
     "device": {
@@ -88,7 +88,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 2995.0,
+      "value": 2995,
       "currency": "USD"
     },
     "device": {
@@ -132,7 +132,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 5995.0,
+      "value": 5995,
       "currency": "USD"
     },
     "device": {
@@ -175,7 +175,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 8094.0,
+      "value": 8094,
       "currency": "USD"
     },
     "device": {
@@ -209,7 +209,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 6495.0,
+      "value": 6495,
       "currency": "USD"
     },
     "device": {
@@ -254,7 +254,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 6495.0,
+      "value": 6495,
       "currency": "USD"
     },
     "device": {
@@ -298,7 +298,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 11995.0,
+      "value": 11995,
       "currency": "USD"
     },
     "device": {
@@ -343,7 +343,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 14995.0,
+      "value": 14995,
       "currency": "USD"
     },
     "device": {
@@ -458,7 +458,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 1160.0,
+      "value": 1160,
       "currency": "USD"
     },
     "device": {
@@ -492,7 +492,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 3495.0,
+      "value": 3495,
       "currency": "USD"
     },
     "device": {
@@ -536,7 +536,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 3234.0,
+      "value": 3234,
       "currency": "USD"
     },
     "device": {
@@ -585,7 +585,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 1678.0,
+      "value": 1678,
       "currency": "USD"
     },
     "device": {
@@ -621,7 +621,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 3234.0,
+      "value": 3234,
       "currency": "USD"
     },
     "device": {
@@ -674,7 +674,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 14995.0,
+      "value": 14995,
       "currency": "USD"
     },
     "device": {
@@ -714,7 +714,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 11994.0,
+      "value": 11994,
       "currency": "USD"
     },
     "device": {
@@ -757,7 +757,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 17995.0,
+      "value": 17995,
       "currency": "USD"
     },
     "device": {
@@ -792,7 +792,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 13195.0,
+      "value": 13195,
       "currency": "USD"
     },
     "device": {
@@ -837,7 +837,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 9345.0,
+      "value": 9345,
       "currency": "USD"
     },
     "device": {
@@ -882,7 +882,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 6995.0,
+      "value": 6995,
       "currency": "USD"
     },
     "device": {
@@ -927,7 +927,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 14995.0,
+      "value": 14995,
       "currency": "USD"
     },
     "device": {
@@ -964,7 +964,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 15995.0,
+      "value": 15995,
       "currency": "USD"
     },
     "device": {
@@ -998,7 +998,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 16995.0,
+      "value": 16995,
       "currency": "USD"
     },
     "device": {
@@ -1033,7 +1033,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 16995.0,
+      "value": 16995,
       "currency": "USD"
     },
     "device": {
@@ -1067,7 +1067,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 249.0,
+      "value": 249,
       "currency": "USD"
     },
     "device": {
@@ -1102,7 +1102,7 @@
       "url": "https://www.amd.com"
     },
     "price": {
-      "value": 349.0,
+      "value": 349,
       "currency": "USD"
     },
     "device": {
@@ -1404,7 +1404,7 @@
       "url": "https://digilent.com"
     },
     "price": {
-      "value": 299.0,
+      "value": 299,
       "currency": "USD"
     },
     "device": {
@@ -1435,7 +1435,7 @@
       "url": "https://digilent.com"
     },
     "price": {
-      "value": 349.0,
+      "value": 349,
       "currency": "USD"
     },
     "device": {
@@ -1460,7 +1460,7 @@
       "url": "https://digilent.com"
     },
     "price": {
-      "value": 549.0,
+      "value": 549,
       "currency": "USD"
     },
     "device": {
@@ -1496,7 +1496,7 @@
       "url": "https://digilent.com"
     },
     "price": {
-      "value": 1099.0,
+      "value": 1099,
       "currency": "USD"
     },
     "device": {
@@ -1532,7 +1532,7 @@
       "url": "https://digilent.com"
     },
     "price": {
-      "value": 149.0,
+      "value": 149,
       "currency": "USD"
     },
     "device": {
@@ -1563,7 +1563,7 @@
       "url": "https://digilent.com"
     },
     "price": {
-      "value": 499.0,
+      "value": 499,
       "currency": "USD"
     },
     "device": {
@@ -1594,7 +1594,7 @@
       "url": "https://digilent.com"
     },
     "price": {
-      "value": 1995.0,
+      "value": 1995,
       "currency": "USD"
     },
     "device": {
@@ -1638,7 +1638,7 @@
       "url": "https://digilent.com"
     },
     "price": {
-      "value": 349.0,
+      "value": 349,
       "currency": "USD"
     },
     "device": {
@@ -1668,7 +1668,7 @@
       "url": "https://digilent.com"
     },
     "price": {
-      "value": 119.0,
+      "value": 119,
       "currency": "USD"
     },
     "device": {
@@ -1728,7 +1728,7 @@
       "url": "https://digilent.com"
     },
     "price": {
-      "value": 249.0,
+      "value": 249,
       "currency": "USD"
     },
     "device": {
@@ -1763,7 +1763,7 @@
       "url": "https://digilent.com"
     },
     "price": {
-      "value": 299.0,
+      "value": 299,
       "currency": "USD"
     },
     "device": {
@@ -1798,7 +1798,7 @@
       "url": "https://digilent.com"
     },
     "price": {
-      "value": 99.0,
+      "value": 99,
       "currency": "USD"
     },
     "device": {
@@ -1822,7 +1822,7 @@
       "url": "https://digilent.com"
     },
     "price": {
-      "value": 99.0,
+      "value": 99,
       "currency": "USD"
     },
     "device": {
@@ -1846,7 +1846,7 @@
       "url": "https://www.latticesemi.com"
     },
     "price": {
-      "value": 200.0,
+      "value": 200,
       "currency": "USD"
     },
     "device": {
@@ -1872,7 +1872,7 @@
       "url": "https://www.latticesemi.com"
     },
     "price": {
-      "value": 501.0,
+      "value": 501,
       "currency": "USD"
     },
     "device": {
@@ -1910,7 +1910,7 @@
       "url": "https://www.tulembedded.com"
     },
     "price": {
-      "value": 129.0,
+      "value": 129,
       "currency": "USD"
     },
     "device": {
@@ -1946,7 +1946,7 @@
       "url": "https://www.tulembedded.com"
     },
     "price": {
-      "value": 199.0,
+      "value": 199,
       "currency": "USD"
     },
     "device": {
@@ -1983,7 +1983,7 @@
       "url": "http://www.hitechglobal.com"
     },
     "price": {
-      "value": 4995.0,
+      "value": 4995,
       "currency": "USD"
     },
     "device": {
@@ -2014,7 +2014,7 @@
       "url": "https://www.avnet.com"
     },
     "price": {
-      "value": 159.0,
+      "value": 159,
       "currency": "USD"
     },
     "device": {
@@ -2044,7 +2044,7 @@
       "url": "https://www.avnet.com"
     },
     "price": {
-      "value": 699.0,
+      "value": 699,
       "currency": "USD"
     },
     "device": {
@@ -2087,7 +2087,7 @@
       "url": "https://www.avnet.com"
     },
     "price": {
-      "value": 1595.0,
+      "value": 1595,
       "currency": "USD"
     },
     "device": {
@@ -2138,7 +2138,7 @@
       "url": "https://www.avnet.com"
     },
     "price": {
-      "value": 249.0,
+      "value": 249,
       "currency": "USD"
     },
     "device": {
@@ -2166,7 +2166,7 @@
       "url": "https://krtkl.com"
     },
     "price": {
-      "value": 115.0,
+      "value": 115,
       "currency": "USD"
     },
     "device": {
@@ -2191,7 +2191,7 @@
       "url": "https://krtkl.com"
     },
     "price": {
-      "value": 245.0,
+      "value": 245,
       "currency": "USD"
     },
     "device": {
@@ -2216,7 +2216,7 @@
       "url": "https://www.avnet.com"
     },
     "price": {
-      "value": 499.0,
+      "value": 499,
       "currency": "USD"
     },
     "device": {
@@ -2250,7 +2250,7 @@
       "url": "https://digilent.com"
     },
     "price": {
-      "value": 299.0,
+      "value": 299,
       "currency": "USD"
     },
     "device": {
@@ -2284,7 +2284,7 @@
       "url": "https://www.tria-technologies.com/"
     },
     "price": {
-      "value": 178.0,
+      "value": 178,
       "currency": "USD"
     },
     "device": {
@@ -2763,7 +2763,7 @@
       "url": "https://www.myirtech.com"
     },
     "price": {
-      "value": 99.0,
+      "value": 99,
       "currency": "USD"
     },
     "device": {
@@ -2793,7 +2793,7 @@
       "url": "https://www.myirtech.com"
     },
     "price": {
-      "value": 890.0,
+      "value": 890,
       "currency": "USD"
     },
     "device": {
@@ -2870,7 +2870,7 @@
       "url": "https://www.efinixinc.com"
     },
     "price": {
-      "value": 850.0,
+      "value": 850,
       "currency": "USD"
     },
     "device": {
@@ -2904,7 +2904,7 @@
       "url": "https://www.terasic.com.tw"
     },
     "price": {
-      "value": 7835.0,
+      "value": 7835,
       "currency": "USD"
     },
     "device": {
@@ -2939,7 +2939,7 @@
       "url": "https://www.terasic.com.tw"
     },
     "price": {
-      "value": 8995.0,
+      "value": 8995,
       "currency": "USD"
     },
     "device": {
@@ -2970,7 +2970,7 @@
       "url": "https://www.terasic.com"
     },
     "price": {
-      "value": 140.0,
+      "value": 140,
       "currency": "USD"
     },
     "device": {
@@ -2994,7 +2994,7 @@
       "url": "https://alinx.com"
     },
     "price": {
-      "value": 2280.0,
+      "value": 2280,
       "currency": "USD"
     },
     "device": {
@@ -3033,7 +3033,7 @@
       "url": "https://alinx.com"
     },
     "price": {
-      "value": 1660.0,
+      "value": 1660,
       "currency": "USD"
     },
     "device": {
@@ -3079,7 +3079,7 @@
       "url": "https://alinx.com"
     },
     "price": {
-      "value": 12000.0,
+      "value": 12000,
       "currency": "USD"
     },
     "device": {
@@ -3126,7 +3126,7 @@
       "url": "https://alinx.com"
     },
     "price": {
-      "value": 12000.0,
+      "value": 12000,
       "currency": "USD"
     },
     "device": {
@@ -3166,7 +3166,7 @@
       "url": "https://alinx.com"
     },
     "price": {
-      "value": 340.0,
+      "value": 340,
       "currency": "USD"
     },
     "device": {
@@ -3204,7 +3204,7 @@
       "url": "https://alinx.com"
     },
     "price": {
-      "value": 689.0,
+      "value": 689,
       "currency": "USD"
     },
     "device": {
@@ -3241,7 +3241,7 @@
       "url": "https://rhsresearch.com"
     },
     "price": {
-      "value": 109.0,
+      "value": 109,
       "currency": "USD"
     },
     "device": {
@@ -3269,7 +3269,7 @@
       "url": "https://rhsresearch.com"
     },
     "price": {
-      "value": 149.0,
+      "value": 149,
       "currency": "USD"
     },
     "device": {
@@ -3324,7 +3324,7 @@
       "url": "https://imperix.com"
     },
     "price": {
-      "value": 2400.0,
+      "value": 2400,
       "currency": "CHF"
     },
     "device": {
@@ -3598,7 +3598,7 @@
       "url": "https://www.sundance.com/"
     },
     "price": {
-      "value": 1495.0,
+      "value": 1495,
       "currency": "GBP"
     },
     "device": {
@@ -3641,7 +3641,7 @@
       "url": "https://www.sundance.com/"
     },
     "price": {
-      "value": 3495.0,
+      "value": 3495,
       "currency": "GBP"
     },
     "device": {
@@ -3684,7 +3684,7 @@
       "url": "https://www.sundance.com/"
     },
     "price": {
-      "value": 2650.0,
+      "value": 2650,
       "currency": "GBP"
     },
     "device": {
@@ -3727,7 +3727,7 @@
       "url": "https://www.sundance.com/"
     },
     "price": {
-      "value": 1395.0,
+      "value": 1395,
       "currency": "GBP"
     },
     "device": {
@@ -3770,7 +3770,7 @@
       "url": "https://allaboutfpga.com/"
     },
     "price": {
-      "value": 245.0,
+      "value": 245,
       "currency": "USD"
     },
     "device": {
@@ -3804,7 +3804,7 @@
       "url": "https://allaboutfpga.com/"
     },
     "price": {
-      "value": 193.0,
+      "value": 193,
       "currency": "USD"
     },
     "device": {
@@ -3832,7 +3832,7 @@
       "url": "https://allaboutfpga.com/"
     },
     "price": {
-      "value": 147.0,
+      "value": 147,
       "currency": "USD"
     },
     "device": {
@@ -3857,7 +3857,7 @@
       "url": "https://www.realdigital.org/"
     },
     "price": {
-      "value": 84.0,
+      "value": 84,
       "currency": "USD"
     },
     "device": {
@@ -3887,7 +3887,7 @@
       "url": "https://www.realdigital.org/"
     },
     "price": {
-      "value": 149.0,
+      "value": 149,
       "currency": "USD"
     },
     "device": {
@@ -3918,7 +3918,7 @@
       "url": "https://www.realdigital.org/"
     },
     "price": {
-      "value": 2499.0,
+      "value": 2499,
       "currency": "USD"
     },
     "device": {
@@ -4008,7 +4008,7 @@
       "url": "https://www.redpitaya.com/"
     },
     "price": {
-      "value": 378.0,
+      "value": 378,
       "currency": "EUR"
     },
     "device": {
@@ -4026,6 +4026,37 @@
     ],
     "storage": {
       "sata": 2
+    }
+  },
+  {
+    "id": "Alveo-V80",
+    "name": "Alveo V80",
+    "status": "active",
+    "url": "https://www.amd.com/en/products/accelerators/alveo/v80/a-v80-p64g-pq-g.html",
+    "vendor": {
+      "name": "AMD Xilinx",
+      "url": "https://www.amd.com"
+    },
+    "price": {
+      "value": 9495,
+      "currency": "USD"
+    },
+    "device": {
+      "type": "SoC",
+      "family": "Versal HBM",
+      "part": "XCV80-2MHPLSVA4737-E-S",
+      "vendor": "AMD Xilinx",
+      "vendor_url": "https://www.amd.com"
+    },
+    "pcie": [
+      {
+        "type": "Edge",
+        "gen": 5,
+        "lanes": 16
+      }
+    ],
+    "networking": {
+      "qsfp": 4
     }
   }
 ]
