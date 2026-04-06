@@ -3456,5 +3456,22 @@
         "ports": 2
       }
     ]
+  },
+  {
+    "id": "EK-10M08E144",
+    "name": "MAX 10 FPGA 10M08",
+    "status": "active",
+    "url": "https://www.altera.com/products/devkit/po-3019/max-10-fpga-10m08-evaluation-kit-power-soln-1",
+    "vendor": "altera",
+    "price": {
+      "value": 50.95,
+      "currency": "USD"
+    },
+    "device": {
+      "type": "FPGA",
+      "family": "MAX 10",
+      "part": "10M08SAE144C8G",
+      "vendor": "altera"
+    }
   }
 ]
