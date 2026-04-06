@@ -4,6 +4,10 @@
       "name": "Alinx",
       "url": "https://alinx.com"
     },
+    "altera": {
+      "name": "Altera",
+      "url": "https://www.altera.com"
+    },
     "amd-xilinx": {
       "name": "AMD Xilinx",
       "url": "https://www.amd.com"
@@ -95,10 +99,6 @@
     "techway": {
       "name": "Techway",
       "url": "https://www.techway.com"
-    },
-    "altera": {
-      "name": "Altera",
-      "url": "https://www.altera.com"
     }
   },
   "silicon_vendors": {
