@@ -1,0 +1,29 @@
+{
+  "id": "TR5",
+  "name": "TR5",
+  "status": "active",
+  "url": "https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&No=1001",
+  "vendor": "terasic",
+  "price": {
+    "value": 7835,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "5SGXEA7N2F45C2N",
+    "vendor": "altera"
+  },
+  "pcie": [
+    {
+      "type": "iPass",
+      "lanes": 4,
+      "gen": 3
+    }
+  ],
+  "expansion": {
+    "fmc_hpc": 2,
+    "fmc_lpc": 2
+  },
+  "storage": {
+    "sata": 2
+  }
+}

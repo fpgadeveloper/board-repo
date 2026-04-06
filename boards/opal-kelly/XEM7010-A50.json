@@ -1,0 +1,15 @@
+{
+  "id": "XEM7010-A50",
+  "name": "XEM7010-A50",
+  "status": "active",
+  "url": "https://www.opalkelly.com/products/fpga-integration/xem7010",
+  "vendor": "opal-kelly",
+  "price": {
+    "value": 499.95,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7A75T-1FGG484C",
+    "vendor": "amd-xilinx"
+  }
+}

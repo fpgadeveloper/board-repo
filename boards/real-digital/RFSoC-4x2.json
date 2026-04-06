@@ -1,0 +1,25 @@
+{
+  "id": "RFSoC-4x2",
+  "name": "RFSoC 4x2",
+  "status": "active",
+  "url": "https://www.realdigital.org/hardware/rfsoc-4x2",
+  "vendor": "real-digital",
+  "price": {
+    "value": 2499,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU48DR-1FFVG1517E",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "displayport": 1
+  },
+  "networking": {
+    "qsfp": 1
+  },
+  "expansion": {
+    "pmod": 2,
+    "syzygy": 1
+  }
+}

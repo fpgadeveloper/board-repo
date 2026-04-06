@@ -1,0 +1,41 @@
+{
+  "id": "Z19",
+  "name": "Z19",
+  "status": "active",
+  "url": "https://www.alinx.com/en/detail/254",
+  "vendor": "alinx",
+  "price": {
+    "value": 12000,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU19EG-2FFVC1760I",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Slot",
+      "lanes": 8,
+      "gen": 2
+    }
+  ],
+  "video": {
+    "displayport": 1,
+    "mipi_csi": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 2
+    }
+  ],
+  "networking": {
+    "qsfp": 4
+  },
+  "expansion": {
+    "fmc_hpc": 2
+  },
+  "storage": {
+    "sata": 4
+  }
+}

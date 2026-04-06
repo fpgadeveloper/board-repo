@@ -1,0 +1,39 @@
+{
+  "id": "VEK280",
+  "name": "VEK280",
+  "status": "active",
+  "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/vek280.html",
+  "vendor": "amd-xilinx",
+  "price": {
+    "value": 6995,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCVE2802-2MSEVSVH1760",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 16,
+      "gen": 4
+    }
+  ],
+  "video": {
+    "hdmi_in": 1,
+    "hdmi_out": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 3
+    }
+  ],
+  "networking": {
+    "sfp": 1
+  },
+  "expansion": {
+    "fmcp": 1,
+    "pmod": 1
+  }
+}

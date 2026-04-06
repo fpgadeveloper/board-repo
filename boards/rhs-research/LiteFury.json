@@ -1,0 +1,22 @@
+{
+  "id": "LiteFury",
+  "name": "LiteFury",
+  "status": "active",
+  "url": "https://rhsresearch.com/collections/rhs-public/products/litefury",
+  "vendor": "rhs-research",
+  "price": {
+    "value": 109,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7A100T-2LFGG484E",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "M.2 M-key",
+      "lanes": 4,
+      "gen": 2
+    }
+  ]
+}

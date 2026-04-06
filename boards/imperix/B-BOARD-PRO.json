@@ -1,0 +1,18 @@
+{
+  "id": "B-BOARD-PRO",
+  "name": "B-BOARD PRO",
+  "status": "active",
+  "url": "https://imperix.com/products/control/inverter-control-board/",
+  "vendor": "imperix",
+  "price": {
+    "value": 2400,
+    "currency": "CHF"
+  },
+  "device": {
+    "part": "XC7Z030-3FBG676E",
+    "vendor": "amd-xilinx"
+  },
+  "networking": {
+    "sfp": 3
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "ZynqBerry-7007",
+  "name": "ZynqBerry 7007",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/Products/Trenz-Electronic/TE07XX-Zynq-SoC/TE0726-Zynq-SoC/",
+  "vendor": "trenz",
+  "price": {
+    "value": 115.78,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7Z007S-1CLG225C",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "hdmi_out": 1,
+    "mipi_dsi": 1,
+    "mipi_csi": 1
+  },
+  "ethernet": [
+    {
+      "speed": 100,
+      "ports": 1
+    }
+  ],
+  "expansion": {
+    "raspberry_pi": 1
+  }
+}

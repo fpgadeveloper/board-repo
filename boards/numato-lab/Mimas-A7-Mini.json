@@ -1,0 +1,18 @@
+{
+  "id": "Mimas-A7-Mini",
+  "name": "Mimas A7 Mini",
+  "status": "active",
+  "url": "https://numato.com/product/mimas-a7-mini-fpga-development-board/",
+  "vendor": "numato-lab",
+  "price": {
+    "value": 148.99,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7A35T-1FTG256C",
+    "vendor": "amd-xilinx"
+  },
+  "expansion": {
+    "pmod": 2
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "LFCPNX-VERSA-EVN",
+  "name": "LFCPNX-VERSA-EVN",
+  "status": "active",
+  "url": "https://www.latticesemi.com/products/developmentboardsandkits/certuspro-nx-versa-board",
+  "vendor": "lattice",
+  "price": {
+    "value": 501,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "LFCPNX-100-9LFG672I",
+    "vendor": "lattice"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 4,
+      "gen": 3
+    }
+  ],
+  "video": {
+    "mipi_csi": 1
+  },
+  "networking": {
+    "sfp": 4
+  },
+  "expansion": {
+    "pmod": 2,
+    "raspberry_pi": 1
+  }
+}

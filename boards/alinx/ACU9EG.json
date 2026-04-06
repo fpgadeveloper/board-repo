@@ -1,0 +1,33 @@
+{
+  "id": "ACU9EG",
+  "name": "ACU9EG",
+  "status": "active",
+  "url": "https://www.alinx.com/en/detail/262",
+  "vendor": "alinx",
+  "price": {
+    "value": 2280,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU9EG-2FFVB1156I",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "mipi_csi": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "networking": {
+    "sfp": 2
+  },
+  "expansion": {
+    "fmc_hpc": 1
+  },
+  "storage": {
+    "sata": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "ZC702",
+  "name": "ZC702",
+  "status": "active",
+  "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/ek-z7-zc702-g.html",
+  "vendor": "amd-xilinx",
+  "price": {
+    "value": 1160,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7Z020-1CLG484C",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "hdmi_out": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "expansion": {
+    "fmc_lpc": 2,
+    "pmod": 2
+  }
+}

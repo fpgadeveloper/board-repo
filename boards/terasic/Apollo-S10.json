@@ -1,0 +1,25 @@
+{
+  "id": "Apollo-S10",
+  "name": "Apollo S10",
+  "status": "active",
+  "url": "https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=248&No=1229",
+  "vendor": "terasic",
+  "price": {
+    "value": 8995,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "1SX280HU2F50E1VG",
+    "vendor": "altera"
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "expansion": {
+    "fmc_hpc": 1,
+    "fmcp": 1
+  }
+}

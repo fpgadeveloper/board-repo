@@ -1,0 +1,30 @@
+{
+  "id": "ZCU104",
+  "name": "ZCU104",
+  "status": "active",
+  "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/zcu104.html",
+  "vendor": "amd-xilinx",
+  "price": {
+    "value": 1678,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU7EV-2FFVC1156E",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "hdmi_in": 1,
+    "hdmi_out": 1,
+    "displayport": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "expansion": {
+    "fmc_lpc": 1,
+    "pmod": 3
+  }
+}

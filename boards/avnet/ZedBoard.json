@@ -1,0 +1,28 @@
+{
+  "id": "ZedBoard",
+  "name": "ZedBoard",
+  "status": "active",
+  "url": "https://www.avnet.com/americas/products/avnet-boards/avnet-board-families/zedboard/",
+  "vendor": "avnet",
+  "price": {
+    "value": 499,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7Z020-1CLG484C",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "hdmi_out": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "expansion": {
+    "fmc_lpc": 1,
+    "pmod": 5
+  }
+}

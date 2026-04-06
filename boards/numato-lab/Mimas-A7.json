@@ -1,0 +1,26 @@
+{
+  "id": "Mimas-A7",
+  "name": "Mimas A7",
+  "status": "active",
+  "url": "https://numato.com/product/mimas-a7-artix-7-fpga-development-board/",
+  "vendor": "numato-lab",
+  "price": {
+    "value": 229.99,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7A50T-1FGG484C",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "hdmi_in": 1,
+    "hdmi_out": 1,
+    "displayport": 2
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ]
+}

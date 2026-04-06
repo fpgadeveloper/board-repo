@@ -1,0 +1,29 @@
+{
+  "id": "Kria-KV260",
+  "name": "Kria KV260",
+  "status": "active",
+  "url": "https://www.amd.com/en/products/system-on-modules/kria/k26/kv260-vision-starter-kit.html",
+  "vendor": "amd-xilinx",
+  "price": {
+    "value": 249,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCK26-2LVSFVC784C",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "hdmi_out": 1,
+    "displayport": 1,
+    "mipi_csi": 3
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "expansion": {
+    "pmod": 1
+  }
+}

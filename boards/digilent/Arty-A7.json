@@ -1,0 +1,25 @@
+{
+  "id": "Arty-A7",
+  "name": "Arty-A7",
+  "status": "active",
+  "url": "https://digilent.com/shop/arty-a7-100t-artix-7-fpga-development-board/",
+  "vendor": "digilent",
+  "price": {
+    "value": 299,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7A35TI-1LCSG324I",
+    "vendor": "amd-xilinx"
+  },
+  "ethernet": [
+    {
+      "speed": 100,
+      "ports": 1
+    }
+  ],
+  "expansion": {
+    "pmod": 4,
+    "arduino": 1
+  }
+}

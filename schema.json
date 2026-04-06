@@ -142,18 +142,9 @@
     },
     "device": {
       "type": "object",
-      "required": ["type", "family", "part", "vendor"],
+      "required": ["part", "vendor"],
       "additionalProperties": false,
       "properties": {
-        "type": {
-          "type": "string",
-          "enum": ["FPGA", "SoC", "MPSoC", "RFSoC", "ACAP"],
-          "description": "Category of the FPGA device."
-        },
-        "family": {
-          "type": "string",
-          "description": "Device family name (e.g. Artix-7, Zynq UltraScale+)."
-        },
         "part": {
           "type": "string",
           "description": "Orderable manufacturer part number."

@@ -1,0 +1,24 @@
+{
+  "id": "STEMlab-125-14",
+  "name": "STEMlab 125-14",
+  "status": "active",
+  "url": "https://redpitaya.com/stemlab-125-14/",
+  "vendor": "redpitaya",
+  "price": {
+    "value": 378,
+    "currency": "EUR"
+  },
+  "device": {
+    "part": "XC7Z010-1CLG225C",
+    "vendor": "amd-xilinx"
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "storage": {
+    "sata": 2
+  }
+}

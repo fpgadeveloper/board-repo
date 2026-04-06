@@ -1,0 +1,21 @@
+{
+  "id": "Aller",
+  "name": "Aller",
+  "status": "active",
+  "url": "https://numato.com/product/aller-artix-7-fpga-board-with-m-2-interface/",
+  "vendor": "numato-lab",
+  "price": {
+    "value": 499.99,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7A200T-2FBG484I",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "M.2 M-key",
+      "lanes": 4
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "Blackboard",
+  "name": "Blackboard",
+  "status": "active",
+  "url": "https://www.realdigital.org/hardware/blackboard",
+  "vendor": "real-digital",
+  "price": {
+    "value": 149,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7Z007S-1CLG400C",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "hdmi_out": 1
+  },
+  "expansion": {
+    "pmod": 3
+  },
+  "wireless": {
+    "wifi": true,
+    "bluetooth": true
+  }
+}

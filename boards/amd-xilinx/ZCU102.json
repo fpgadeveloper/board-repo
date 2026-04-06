@@ -1,0 +1,43 @@
+{
+  "id": "ZCU102",
+  "name": "ZCU102",
+  "status": "active",
+  "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/ek-u1-zcu102-g.html",
+  "vendor": "amd-xilinx",
+  "price": {
+    "value": 3234,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU9EG-2FFVB1156E",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Slot",
+      "lanes": 4,
+      "gen": 2
+    }
+  ],
+  "video": {
+    "hdmi_in": 1,
+    "hdmi_out": 1,
+    "displayport": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "networking": {
+    "sfp": 4
+  },
+  "expansion": {
+    "fmc_hpc": 2,
+    "pmod": 2
+  },
+  "storage": {
+    "sata": 1
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "VCU128",
+  "name": "VCU128",
+  "status": "discontinued",
+  "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/vcu128.html",
+  "vendor": "amd-xilinx",
+  "price": null,
+  "device": {
+    "part": "XCVU37P-L2FSVH2892E",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 8,
+      "gen": 4
+    }
+  ],
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "networking": {
+    "qsfp": 4
+  },
+  "expansion": {
+    "fmcp": 1
+  }
+}

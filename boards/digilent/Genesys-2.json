@@ -1,0 +1,30 @@
+{
+  "id": "Genesys-2",
+  "name": "Genesys-2",
+  "status": "active",
+  "url": "https://digilent.com/shop/genesys-2-kintex-7-fpga-development-board/",
+  "vendor": "digilent",
+  "price": {
+    "value": 1099,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7K325T-2FFG900C",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "hdmi_in": 1,
+    "hdmi_out": 1,
+    "displayport": 2
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "expansion": {
+    "fmc_hpc": 1,
+    "pmod": 5
+  }
+}

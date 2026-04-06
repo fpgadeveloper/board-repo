@@ -1,0 +1,31 @@
+{
+  "id": "ZCU111",
+  "name": "ZCU111",
+  "status": "active",
+  "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/zcu111.html",
+  "vendor": "amd-xilinx",
+  "price": {
+    "value": 14995,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU28DR-2FFVG1517E",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "displayport": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "networking": {
+    "sfp": 4
+  },
+  "expansion": {
+    "fmcp": 1,
+    "rfmc": 2
+  }
+}

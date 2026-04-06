@@ -4,11 +4,11 @@ This repository contains the community-maintained database of FPGA development b
 
 ## Files
 
-| File | Description |
+| Path | Description |
 |------|-------------|
-| `boards.json` | The board database — an array of FPGA development board objects. |
+| `boards/` | Individual board JSON files, organized by vendor (e.g. `boards/amd-xilinx/ZCU102.json`). |
 | `vendors.json` | Centralized registry of board vendors and silicon vendors. |
-| `schema.json` | JSON Schema (Draft 2020-12) that validates `boards.json`. |
+| `schema.json` | JSON Schema (Draft 2020-12) that validates individual board objects. |
 
 ## How to Add a Board
 
@@ -22,12 +22,12 @@ Fill in the form and your submission will be reviewed and added to the database.
 
 ### Option 2: Submit a Pull Request
 
-If you prefer, you can add a board directly by editing `boards.json` and opening a pull request.
+If you prefer, you can add a board directly by creating a new JSON file and opening a pull request.
 
 #### Steps
 
 1. **Fork** this repository.
-2. **Edit** `boards.json` — add your board object to the array.
+2. **Create** a new file at `boards/<vendor-slug>/<board-id>.json` with your board object.
 3. **Validate** your changes against the schema (see [Validation](#validation) below).
 4. **Open a pull request** with a brief description of the board you're adding.
 
@@ -37,7 +37,7 @@ Each board is a JSON object with the following required fields:
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `id` | string | Unique identifier (URL-safe slug, e.g. `"Arty-A7-35T"`). |
+| `id` | string | Unique identifier, typically the ordering part number without spaces (e.g. `"ZCU102"`). |
 | `name` | string | Display name of the board. |
 | `status` | string | `"active"`, `"eol"` (end-of-life), or `"discontinued"`. |
 | `url` | string | Product page URL. |
@@ -49,36 +49,36 @@ The `device` object requires:
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `type` | string | One of: `"FPGA"`, `"SoC"`, `"MPSoC"`, `"RFSoC"`, `"ACAP"`. |
-| `family` | string | Device family (e.g. `"Artix-7"`, `"Zynq UltraScale+"`). |
 | `part` | string | Full orderable part number (e.g. `"XC7A35T-1CPG236C"`). |
 | `vendor` | string | Silicon vendor key (must match a key in `vendors.json` `silicon_vendors`). |
 
 Optional fields include `pcie`, `video`, `ethernet`, `networking`, `expansion`, `storage`, and `wireless`. See `schema.json` for full details on each.
 
-#### Minimal Example
+#### Example
+
+Create a file at `boards/digilent/Arty-A7.json`:
 
 ```json
 {
-  "id": "Arty-A7-35T",
-  "name": "Arty A7-35T",
+  "id": "Arty-A7",
+  "name": "Arty A7",
   "status": "active",
-  "url": "https://digilent.com/shop/arty-a7-35t/",
+  "url": "https://digilent.com/shop/arty-a7/",
   "vendor": "digilent",
   "price": {
     "value": 129.00,
     "currency": "USD"
   },
   "device": {
-    "type": "FPGA",
-    "family": "Artix-7",
     "part": "XC7A35T-1CPG236C",
     "vendor": "amd-xilinx"
   }
 }
 ```
 
-#### Full Example (with interfaces)
+#### Example with Interfaces
+
+`boards/amd-xilinx/SP701.json`:
 
 ```json
 {
@@ -92,8 +92,6 @@ Optional fields include `pcie`, `video`, `ethernet`, `networking`, `expansion`, 
     "currency": "USD"
   },
   "device": {
-    "type": "FPGA",
-    "family": "Spartan-7",
     "part": "XC7S100-2FGGA676C",
     "vendor": "amd-xilinx"
   },
@@ -164,36 +162,42 @@ To add a new vendor, add an entry to the appropriate section in `vendors.json` w
 
 - Only include optional fields that have meaningful values. If a board has no PCIe, omit the `pcie` key entirely.
 - Use the ISO 4217 currency code for the `price.currency` field (e.g. `"USD"`, `"EUR"`, `"GBP"`).
-- The `id` should be unique and URL-safe (letters, numbers, hyphens).
+- The `id` should be unique and contain only letters, numbers, hyphens, dots, and underscores.
+- The filename should match the board ID (e.g. board with `"id": "ZCU102"` goes in `ZCU102.json`).
 - Set `status` to `"active"` for boards currently available for purchase, `"eol"` for end-of-life boards, or `"discontinued"` for discontinued boards.
 
 ## Validation
 
-You can validate your changes against the schema:
+You can validate individual board files against the schema:
 
 ```bash
 pip install jsonschema referencing
 python -c "
-import json
+import json, glob
 from jsonschema import Draft202012Validator
 from referencing import Registry, Resource
 
 with open('schema.json') as f:
     schema = json.load(f)
-with open('boards.json') as f:
-    data = json.load(f)
 
+board_schema = schema['\$defs']['board']
 resource = Resource.from_contents(schema)
 registry = Registry().with_resource('', resource)
-validator = Draft202012Validator(schema, registry=registry)
+validator = Draft202012Validator(board_schema, registry=registry)
 
-errors = list(validator.iter_errors(data))
-if errors:
-    for e in errors:
-        print(f'  - {e.json_path}: {e.message}')
-    print(f'{len(errors)} validation error(s)')
-else:
-    print('Valid!')
+errors = 0
+files = sorted(glob.glob('boards/**/*.json', recursive=True))
+for path in files:
+    with open(path) as f:
+        board = json.load(f)
+    board_errors = list(validator.iter_errors(board))
+    if board_errors:
+        print(f'{path}:')
+        for e in board_errors:
+            print(f'  - {e.json_path}: {e.message}')
+        errors += len(board_errors)
+
+print(f'{len(files)} boards checked, {errors} error(s)' if errors else f'{len(files)} boards checked — all valid!')
 "
 ```
 

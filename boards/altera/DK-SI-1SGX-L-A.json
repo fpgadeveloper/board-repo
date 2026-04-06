@@ -1,0 +1,29 @@
+{
+  "id": "DK-SI-1SGX-L-A",
+  "name": "Stratix 10 GX Transceiver Signal Integrity",
+  "status": "active",
+  "url": "https://www.altera.com/products/devkit/po-3029/stratix-10-gx-fpga-signal-integrity-development-kit-l-tile",
+  "vendor": "altera",
+  "price": {
+    "value": 8500,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "1SG280LU2F50E2VG",
+    "vendor": "altera"
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "networking": {
+    "sfp": 2,
+    "qsfp": 2,
+    "cfp": 1
+  },
+  "expansion": {
+    "fmcp": 2
+  }
+}

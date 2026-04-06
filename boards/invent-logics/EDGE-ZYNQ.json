@@ -1,0 +1,28 @@
+{
+  "id": "EDGE-ZYNQ",
+  "name": "EDGE ZYNQ",
+  "status": "active",
+  "url": "https://allaboutfpga.com/product/edge-zynq-soc-fpga-development-board/",
+  "vendor": "invent-logics",
+  "price": {
+    "value": 245,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7Z010-1CLG400C",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "hdmi_out": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "wireless": {
+    "wifi": true,
+    "bluetooth": true
+  }
+}

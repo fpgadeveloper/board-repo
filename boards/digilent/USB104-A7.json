@@ -1,0 +1,19 @@
+{
+  "id": "USB104-A7",
+  "name": "USB104-A7",
+  "status": "active",
+  "url": "https://digilent.com/shop/usb104-a7-artix-7-fpga-development-board-with-syzygy-compatible-expansion/",
+  "vendor": "digilent",
+  "price": {
+    "value": 349,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7A100T-1CSG324I",
+    "vendor": "amd-xilinx"
+  },
+  "expansion": {
+    "pmod": 3,
+    "syzygy": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "Nereid",
+  "name": "Nereid",
+  "status": "active",
+  "url": "https://numato.com/product/nereid-kintex-7-pci-express-fpga-development-board/",
+  "vendor": "numato-lab",
+  "price": {
+    "value": 999.99,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7K160T-1FBG676C",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 4,
+      "gen": 2
+    }
+  ],
+  "expansion": {
+    "fmc_hpc": 1
+  }
+}

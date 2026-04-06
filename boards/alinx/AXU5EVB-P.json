@@ -1,0 +1,45 @@
+{
+  "id": "AXU5EVB-P",
+  "name": "AXU5EVB-P",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-MPSoC/AXU5EVB-P.html",
+  "vendor": "alinx",
+  "price": {
+    "value": 1288,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU5EV-2SFVC784I",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "gen": 3,
+      "lanes": 2
+    },
+    {
+      "type": "M.2 M-key",
+      "gen": 3,
+      "lanes": 4
+    }
+  ],
+  "video": {
+    "hdmi_in": 1,
+    "hdmi_out": 1,
+    "displayport": 1,
+    "mipi_csi": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 2
+    }
+  ],
+  "networking": {
+    "sfp": 2
+  },
+  "expansion": {
+    "fmc_lpc": 1
+  }
+}

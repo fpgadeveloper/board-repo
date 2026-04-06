@@ -1,0 +1,22 @@
+{
+  "id": "Ultra96v2",
+  "name": "Ultra96v2",
+  "status": "active",
+  "url": "https://www.96boards.org/product/ultra96/",
+  "vendor": "avnet",
+  "price": {
+    "value": 249,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU3EG-1SFVA625I",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "displayport": 1
+  },
+  "wireless": {
+    "wifi": true,
+    "bluetooth": true
+  }
+}

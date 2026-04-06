@@ -1,0 +1,24 @@
+{
+  "id": "Nexys-A7",
+  "name": "Nexys-A7",
+  "status": "active",
+  "url": "https://digilent.com/shop/nexys-a7-fpga-trainer-board-recommended-for-ece-curriculum/",
+  "vendor": "digilent",
+  "price": {
+    "value": 349,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7A100T-1CSG324C",
+    "vendor": "amd-xilinx"
+  },
+  "ethernet": [
+    {
+      "speed": 100,
+      "ports": 1
+    }
+  ],
+  "expansion": {
+    "pmod": 4
+  }
+}

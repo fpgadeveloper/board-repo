@@ -1,0 +1,24 @@
+{
+  "id": "Boolean-Board",
+  "name": "Boolean Board",
+  "status": "active",
+  "url": "https://www.realdigital.org/hardware/boolean",
+  "vendor": "real-digital",
+  "price": {
+    "value": 84,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7S50-1CSGA324C",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "hdmi_out": 1
+  },
+  "expansion": {
+    "pmod": 4
+  },
+  "wireless": {
+    "bluetooth": true
+  }
+}

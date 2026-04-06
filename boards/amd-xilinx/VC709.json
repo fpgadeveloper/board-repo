@@ -1,0 +1,28 @@
+{
+  "id": "VC709",
+  "name": "VC709",
+  "status": "active",
+  "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/dk-v7-vc709-g.html",
+  "vendor": "amd-xilinx",
+  "price": {
+    "value": 8094,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7VX690T-2FFG1761C",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 8,
+      "gen": 3
+    }
+  ],
+  "networking": {
+    "sfp": 4
+  },
+  "expansion": {
+    "fmc_hpc": 1
+  }
+}

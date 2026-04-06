@@ -1,0 +1,22 @@
+{
+  "id": "NiteFury",
+  "name": "NiteFury",
+  "status": "active",
+  "url": "https://www.crowdsupply.com/rhs-research/nitefury",
+  "vendor": "rhs-research",
+  "price": {
+    "value": 149,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7A200T-2FBG484C",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "M.2 M-key",
+      "lanes": 4,
+      "gen": 2
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "Arty-S7",
+  "name": "Arty-S7",
+  "status": "active",
+  "url": "https://digilent.com/shop/arty-s7-spartan-7-fpga-development-board/",
+  "vendor": "digilent",
+  "price": {
+    "value": 119,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7S25-1CSGA324C",
+    "vendor": "amd-xilinx"
+  },
+  "expansion": {
+    "pmod": 4,
+    "arduino": 1
+  }
+}

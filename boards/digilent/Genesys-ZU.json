@@ -1,0 +1,38 @@
+{
+  "id": "Genesys-ZU",
+  "name": "Genesys-ZU",
+  "status": "active",
+  "url": "https://digilent.com/shop/genesys-zu-zynq-ultrascale-mpsoc-development-board/",
+  "vendor": "digilent",
+  "price": {
+    "value": 1995,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU5EV-1SFVC784E",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "hdmi_in": 1,
+    "hdmi_out": 1,
+    "displayport": 1,
+    "mipi_csi": 2
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "networking": {
+    "sfp": 1
+  },
+  "expansion": {
+    "fmc_lpc": 1,
+    "pmod": 4,
+    "syzygy": 1
+  },
+  "wireless": {
+    "wifi": true
+  }
+}

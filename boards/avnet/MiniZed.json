@@ -1,0 +1,20 @@
+{
+  "id": "MiniZed",
+  "name": "MiniZed",
+  "status": "discontinued",
+  "url": "https://www.avnet.com/americas/products/avnet-boards/avnet-board-families/minized/",
+  "vendor": "avnet",
+  "price": null,
+  "device": {
+    "part": "XC7Z007S-1CLG225C",
+    "vendor": "amd-xilinx"
+  },
+  "expansion": {
+    "pmod": 2,
+    "arduino": 1
+  },
+  "wireless": {
+    "wifi": true,
+    "bluetooth": true
+  }
+}

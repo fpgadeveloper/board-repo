@@ -1,0 +1,37 @@
+{
+  "id": "EMC2-MPFS250",
+  "name": "EMC2-MPFS250",
+  "status": "active",
+  "url": "https://store.sundance.com/product/emc2-mpfs250/",
+  "vendor": "sundance",
+  "price": {
+    "value": 1495,
+    "currency": "GBP"
+  },
+  "device": {
+    "part": "MPFS250T-FCVG484E",
+    "vendor": "microchip"
+  },
+  "pcie": [
+    {
+      "type": "PCIe/104",
+      "lanes": 4,
+      "gen": 2
+    }
+  ],
+  "video": {
+    "hdmi_out": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "expansion": {
+    "fmc_lpc": 1
+  },
+  "storage": {
+    "sata": 1
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "ZCU106",
+  "name": "ZCU106",
+  "status": "active",
+  "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/zcu106.html",
+  "vendor": "amd-xilinx",
+  "price": {
+    "value": 3234,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU7EV-2FFVC1156E",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 4,
+      "gen": 3
+    }
+  ],
+  "video": {
+    "hdmi_in": 1,
+    "hdmi_out": 1,
+    "displayport": 1,
+    "sdi_in": 1,
+    "sdi_out": 1,
+    "aes_in": 1,
+    "aes_out": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "networking": {
+    "sfp": 2
+  },
+  "expansion": {
+    "fmc_hpc": 2,
+    "pmod": 2
+  },
+  "storage": {
+    "sata": 1
+  }
+}

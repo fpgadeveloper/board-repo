@@ -1,0 +1,43 @@
+{
+  "id": "MYD-CZU5EV",
+  "name": "MYD-CZU5EV",
+  "status": "active",
+  "url": "https://www.myirtech.com/list.asp?id=613",
+  "vendor": "myir",
+  "price": {
+    "value": 890,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU5EV-2SFVC784E",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Slot",
+      "lanes": 1,
+      "gen": 2
+    }
+  ],
+  "video": {
+    "hdmi_out": 1,
+    "displayport": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "networking": {
+    "sfp": 4
+  },
+  "expansion": {
+    "fmc_lpc": 1,
+    "pmod": 2,
+    "arduino": 1
+  },
+  "storage": {
+    "sata": 1
+  }
+}

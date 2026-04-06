@@ -1,0 +1,39 @@
+{
+  "id": "KCU105",
+  "name": "KCU105",
+  "status": "active",
+  "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/kcu105.html",
+  "vendor": "amd-xilinx",
+  "price": {
+    "value": 6495,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCKU040-2FFVA1156E",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 8,
+      "gen": 3
+    }
+  ],
+  "video": {
+    "hdmi_out": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "networking": {
+    "sfp": 2
+  },
+  "expansion": {
+    "fmc_hpc": 1,
+    "fmc_lpc": 1,
+    "pmod": 2
+  }
+}

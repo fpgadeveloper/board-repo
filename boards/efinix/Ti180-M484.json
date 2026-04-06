@@ -1,0 +1,28 @@
+{
+  "id": "Ti180-M484",
+  "name": "Ti180 M484",
+  "status": "active",
+  "url": "https://www.efinixinc.com/products-devkits-titaniumti180m484.html",
+  "vendor": "efinix",
+  "price": {
+    "value": 850,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "Ti180J484I3",
+    "vendor": "efinix"
+  },
+  "video": {
+    "hdmi_out": 1,
+    "mipi_csi": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "expansion": {
+    "fmc_lpc": 1
+  }
+}

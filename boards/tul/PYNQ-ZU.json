@@ -1,0 +1,31 @@
+{
+  "id": "PYNQ-ZU",
+  "name": "PYNQ-ZU",
+  "status": "active",
+  "url": "https://www.tulembedded.com/FPGA/ProductsPYNQ-ZU.html",
+  "vendor": "tul",
+  "price": {
+    "value": 199,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU5EG-1SFVC784E",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "hdmi_in": 1,
+    "hdmi_out": 1,
+    "displayport": 1,
+    "mipi_csi": 1
+  },
+  "expansion": {
+    "fmc_lpc": 1,
+    "pmod": 2,
+    "raspberry_pi": 1,
+    "syzygy": 2
+  },
+  "wireless": {
+    "wifi": true,
+    "bluetooth": true
+  }
+}

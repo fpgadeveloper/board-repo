@@ -1,0 +1,24 @@
+{
+  "id": "Z-Turn",
+  "name": "Z-Turn",
+  "status": "active",
+  "url": "https://www.myirtech.com/list.asp?id=502",
+  "vendor": "myir",
+  "price": {
+    "value": 99,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7Z010-1CLG400C",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "hdmi_out": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "EDGE-Artix-7",
+  "name": "EDGE Artix-7",
+  "status": "active",
+  "url": "https://allaboutfpga.com/product/edge-artix-7-fpga-development-board/",
+  "vendor": "invent-logics",
+  "price": {
+    "value": 193,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7A35T-1FTG256C",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "hdmi_out": 1
+  },
+  "wireless": {
+    "wifi": true,
+    "bluetooth": true
+  }
+}

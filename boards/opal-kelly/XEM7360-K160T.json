@@ -1,0 +1,15 @@
+{
+  "id": "XEM7360-K160T",
+  "name": "XEM7360-K160T",
+  "status": "active",
+  "url": "https://www.opalkelly.com/products/fpga-integration/xem7360",
+  "vendor": "opal-kelly",
+  "price": {
+    "value": 1799.95,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7K160T-1FFG676C",
+    "vendor": "amd-xilinx"
+  }
+}

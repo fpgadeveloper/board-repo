@@ -1,0 +1,25 @@
+{
+  "id": "PFP-KX7_Plus-310LC",
+  "name": "PFP-KX7_Plus-310LC",
+  "status": "active",
+  "url": "https://www.techway.com/p/fpga-board-pcie-with-fmc-slot/",
+  "vendor": "techway",
+  "price": {
+    "value": 2880,
+    "currency": "EUR"
+  },
+  "device": {
+    "part": "XC7K325T-1FBG676C",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "gen": 2,
+      "lanes": 4
+    }
+  ],
+  "expansion": {
+    "fmc_hpc": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "SP701",
+  "name": "SP701",
+  "status": "active",
+  "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/sp701.html",
+  "vendor": "amd-xilinx",
+  "price": {
+    "value": 836,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7S100-2FGGA676C",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "hdmi_out": 1,
+    "mipi_dsi": 1,
+    "mipi_csi": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 2
+    }
+  ],
+  "expansion": {
+    "fmc_lpc": 1,
+    "pmod": 6
+  }
+}

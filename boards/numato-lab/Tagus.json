@@ -1,0 +1,28 @@
+{
+  "id": "Tagus",
+  "name": "Tagus",
+  "status": "active",
+  "url": "https://numato.com/product/tagus-artix-7-pci-express-development-board/",
+  "vendor": "numato-lab",
+  "price": {
+    "value": 971.99,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7A200T-2FBG484I",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 1,
+      "gen": 2
+    }
+  ],
+  "networking": {
+    "sfp": 2
+  },
+  "expansion": {
+    "fmc_lpc": 1
+  }
+}

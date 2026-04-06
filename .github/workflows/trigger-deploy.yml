@@ -3,7 +3,10 @@ name: Trigger site rebuild
 on:
   push:
     branches: [main]
-    paths: [boards.json]
+    paths:
+      - "boards/**/*.json"
+      - "vendors.json"
+      - "vendors/**"
 
 jobs:
   trigger:

@@ -1,0 +1,22 @@
+{
+  "id": "385A-SoC",
+  "name": "385A-SoC",
+  "status": "discontinued",
+  "url": "https://www.bittware.com/fpga/385a-soc/",
+  "vendor": "bittware",
+  "price": null,
+  "device": {
+    "part": "10AS066N3F40E2SG",
+    "vendor": "altera"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 8,
+      "gen": 3
+    }
+  ],
+  "networking": {
+    "qsfp": 2
+  }
+}

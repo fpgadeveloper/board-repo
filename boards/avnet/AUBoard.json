@@ -1,0 +1,37 @@
+{
+  "id": "AUBoard",
+  "name": "AUBoard",
+  "status": "active",
+  "url": "https://www.avnet.com/americas/products/avnet-boards/avnet-board-families/auboard-15p-fpga-development-kit/",
+  "vendor": "avnet",
+  "price": {
+    "value": 699,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCAU15P-2FFVB676E",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 4
+    }
+  ],
+  "video": {
+    "hdmi_in": 1,
+    "hdmi_out": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "networking": {
+    "sfp": 1
+  },
+  "expansion": {
+    "fmc_hpc": 1
+  }
+}

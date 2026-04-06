@@ -1,0 +1,15 @@
+{
+  "id": "ZEM5310-A4",
+  "name": "ZEM5310-A4",
+  "status": "active",
+  "url": "https://www.opalkelly.com/products/fpga-integration/zem5310",
+  "vendor": "opal-kelly",
+  "price": {
+    "value": 599.95,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "5CEFA4F23C7N",
+    "vendor": "altera"
+  }
+}

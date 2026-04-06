@@ -1,0 +1,19 @@
+{
+  "id": "EDGE-Spartan-7",
+  "name": "EDGE Spartan-7",
+  "status": "active",
+  "url": "https://allaboutfpga.com/product/edge-spartan-7-fpga-development-board/",
+  "vendor": "invent-logics",
+  "price": {
+    "value": 147,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7S15-1FTGB196C",
+    "vendor": "amd-xilinx"
+  },
+  "wireless": {
+    "wifi": true,
+    "bluetooth": true
+  }
+}

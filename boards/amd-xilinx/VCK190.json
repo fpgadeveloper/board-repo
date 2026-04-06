@@ -1,0 +1,39 @@
+{
+  "id": "VCK190",
+  "name": "VCK190",
+  "status": "active",
+  "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/vck190.html",
+  "vendor": "amd-xilinx",
+  "price": {
+    "value": 13195,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCVC1902-2MSEVSVA2197",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 8,
+      "gen": 4
+    }
+  ],
+  "video": {
+    "hdmi_in": 1,
+    "hdmi_out": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 3
+    }
+  ],
+  "networking": {
+    "sfp": 2,
+    "qsfp": 1
+  },
+  "expansion": {
+    "fmcp": 2
+  }
+}

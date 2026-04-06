@@ -1,0 +1,38 @@
+{
+  "id": "KC705",
+  "name": "KC705",
+  "status": "active",
+  "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/ek-k7-kc705-g.html",
+  "vendor": "amd-xilinx",
+  "price": {
+    "value": 2995,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7K325T-2FFG900C",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 8,
+      "gen": 2
+    }
+  ],
+  "video": {
+    "hdmi_out": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "networking": {
+    "sfp": 1
+  },
+  "expansion": {
+    "fmc_hpc": 1,
+    "fmc_lpc": 1
+  }
+}

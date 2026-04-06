@@ -1,0 +1,41 @@
+{
+  "id": "TE0808-05-9BE21-AS",
+  "name": "TE0808-05-9BE21-AS",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/Products/Trenz-Electronic/Starter-Kits/",
+  "vendor": "trenz",
+  "price": {
+    "value": 1985.03,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU9EG-1FFVC900E",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Slot",
+      "lanes": 16,
+      "gen": 3
+    }
+  ],
+  "video": {
+    "displayport": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "networking": {
+    "sfp": 2
+  },
+  "expansion": {
+    "fmc_hpc": 1,
+    "pmod": 3
+  },
+  "storage": {
+    "sata": 1
+  }
+}

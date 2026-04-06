@@ -1,0 +1,34 @@
+{
+  "id": "TI375N1156C-DK",
+  "name": "Ti375 N1156",
+  "status": "active",
+  "url": "https://www.efinixinc.com/products-devkits-titaniumti375n1156.html",
+  "vendor": "efinix",
+  "price": {
+    "value": 1995,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "Ti375N1156C3",
+    "vendor": "efinix"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "gen": 4,
+      "lanes": 4
+    }
+  ],
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "networking": {
+    "sfp": 4
+  },
+  "expansion": {
+    "fmc_hpc": 2
+  }
+}

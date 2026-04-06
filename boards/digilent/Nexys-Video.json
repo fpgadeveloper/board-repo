@@ -1,0 +1,30 @@
+{
+  "id": "Nexys-Video",
+  "name": "Nexys-Video",
+  "status": "active",
+  "url": "https://digilent.com/shop/nexys-video-artix-7-fpga-trainer-board-for-multimedia-applications/",
+  "vendor": "digilent",
+  "price": {
+    "value": 549,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7A200T-1SBG484C",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "hdmi_in": 1,
+    "hdmi_out": 1,
+    "displayport": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "expansion": {
+    "fmc_lpc": 1,
+    "pmod": 4
+  }
+}

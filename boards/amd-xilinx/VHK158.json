@@ -1,0 +1,34 @@
+{
+  "id": "VHK158",
+  "name": "VHK158",
+  "status": "active",
+  "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/vhk158.html",
+  "vendor": "amd-xilinx",
+  "price": {
+    "value": 14995,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCVH1582-2MSEVSVA3697",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 16,
+      "gen": 5
+    }
+  ],
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "networking": {
+    "qsfp": 6
+  },
+  "expansion": {
+    "fmcp": 1
+  }
+}

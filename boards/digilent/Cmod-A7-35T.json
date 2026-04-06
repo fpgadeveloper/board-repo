@@ -1,0 +1,18 @@
+{
+  "id": "Cmod-A7-35T",
+  "name": "Cmod A7-35T",
+  "status": "active",
+  "url": "https://digilent.com/shop/cmod-a7-35t-breadboardable-artix-7-fpga-module/",
+  "vendor": "digilent",
+  "price": {
+    "value": 99,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7A35T-1CPG236C",
+    "vendor": "amd-xilinx"
+  },
+  "expansion": {
+    "pmod": 1
+  }
+}

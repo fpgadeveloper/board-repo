@@ -1,0 +1,15 @@
+{
+  "id": "Styx",
+  "name": "Styx",
+  "status": "active",
+  "url": "https://numato.com/product/styx-zynq-7020-fpga-module/",
+  "vendor": "numato-lab",
+  "price": {
+    "value": 239.99,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7Z020-1CLG484C",
+    "vendor": "amd-xilinx"
+  }
+}

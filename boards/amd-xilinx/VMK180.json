@@ -1,0 +1,39 @@
+{
+  "id": "VMK180",
+  "name": "VMK180",
+  "status": "active",
+  "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/vmk180.html",
+  "vendor": "amd-xilinx",
+  "price": {
+    "value": 9345,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCVM1802-2MSEVSVA2197",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 8,
+      "gen": 4
+    }
+  ],
+  "video": {
+    "hdmi_in": 1,
+    "hdmi_out": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 3
+    }
+  ],
+  "networking": {
+    "sfp": 2,
+    "qsfp": 1
+  },
+  "expansion": {
+    "fmcp": 2
+  }
+}
