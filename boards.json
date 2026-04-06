@@ -908,7 +908,7 @@
     "url": "https://www.amd.com/en/products/adaptive-socs-and-fpgas/evaluation-boards/zcu670.html",
     "vendor": "amd-xilinx",
     "price": {
-      "value": 16995.0,
+      "value": 16995,
       "currency": "USD"
     },
     "device": {
@@ -3295,5 +3295,176 @@
     "networking": {
       "qsfp": 4
     }
+  },
+  {
+    "id": "TE0950",
+    "name": "TE0950",
+    "status": "active",
+    "url": "https://www.trenz-electronic.de/en/AMD-Versal-AI-Edge-Evalboard-with-VE2302-device-8-GB-DDR4-SDRAM-15-x12-cm/TE0950-03-EGBE21C",
+    "vendor": "trenz",
+    "price": {
+      "value": 958,
+      "currency": "USD"
+    },
+    "device": {
+      "type": "ACAP",
+      "family": "Versal AI Edge",
+      "part": "XCVE2302-1LSESFVA784",
+      "vendor": "amd-xilinx"
+    },
+    "video": {
+      "mipi_csi": 1
+    },
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ],
+    "networking": {
+      "qsfp": 1
+    },
+    "expansion": {
+      "fmc_lpc": 1
+    }
+  },
+  {
+    "id": "BZ10",
+    "name": "BZ10",
+    "status": "active",
+    "url": "https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-MPSoC/BZ10.html",
+    "vendor": "alinx",
+    "price": {
+      "value": 2995,
+      "currency": "USD"
+    },
+    "device": {
+      "type": "SoC",
+      "family": "Zynq UltraScale+",
+      "part": "XCZU7EV-2FFVC1156-I",
+      "vendor": "amd-xilinx"
+    },
+    "pcie": [
+      {
+        "type": "M.2 M-key",
+        "gen": 2,
+        "lanes": 1
+      }
+    ],
+    "video": {
+      "displayport": 1
+    },
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ],
+    "networking": {
+      "qsfp": 1
+    },
+    "expansion": {
+      "fmc_hpc": 4
+    }
+  },
+  {
+    "id": "AXU5EVB-P",
+    "name": "AXU5EVB-P",
+    "status": "active",
+    "url": "https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-MPSoC/AXU5EVB-P.html",
+    "vendor": "alinx",
+    "price": {
+      "value": 1288,
+      "currency": "USD"
+    },
+    "device": {
+      "type": "SoC",
+      "family": "Zynq UltraScale+",
+      "part": "XCZU5EV-2SFVC784-I",
+      "vendor": "amd-xilinx"
+    },
+    "pcie": [
+      {
+        "type": "Edge",
+        "gen": 3,
+        "lanes": 2
+      },
+      {
+        "type": "M.2 M-key",
+        "gen": 3,
+        "lanes": 4
+      }
+    ],
+    "video": {
+      "hdmi_in": 1,
+      "hdmi_out": 1,
+      "displayport": 1,
+      "mipi_csi": 1
+    },
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 2
+      }
+    ],
+    "networking": {
+      "sfp": 2
+    },
+    "expansion": {
+      "fmc_lpc": 1
+    }
+  },
+  {
+    "id": "PFP-KX7_Plus-310LC",
+    "name": "PFP-KX7_Plus-310LC",
+    "status": "active",
+    "url": "https://www.techway.com/p/fpga-board-pcie-with-fmc-slot/",
+    "vendor": "techway",
+    "price": {
+      "value": 2880,
+      "currency": "EUR"
+    },
+    "device": {
+      "type": "FPGA",
+      "family": "Kintex-7",
+      "part": "XC7K325T-1FBG676C",
+      "vendor": "amd-xilinx"
+    },
+    "pcie": [
+      {
+        "type": "Edge",
+        "gen": 2,
+        "lanes": 4
+      }
+    ],
+    "expansion": {
+      "fmc_hpc": 1
+    }
+  },
+  {
+    "id": "AXW49",
+    "name": "AXW49",
+    "status": "active",
+    "url": "https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-RFSoC/AXW49.html",
+    "vendor": "alinx",
+    "price": {
+      "value": 23962,
+      "currency": "USD"
+    },
+    "device": {
+      "type": "RFSoC",
+      "family": "Zynq UltraScale+ RFSoC",
+      "part": "XCZU49DR-2FFVF1760-E",
+      "vendor": "amd-xilinx"
+    },
+    "video": {
+      "displayport": 1
+    },
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 2
+      }
+    ]
   }
 ]
