@@ -1,0 +1,89 @@
+[
+  {
+    "family": "EOS S3",
+    "description": "QuickLogic EOS S3 — ARM Cortex-M4F MCU with embedded FPGA (eFPGA) SoC. Simple ordering code format: QL-S3{variant}-{package_grade}{suffix}. QuickLogic has limited public documentation on ordering codes.",
+    "fields": [
+      {
+        "id": "prefix",
+        "label": "Prefix",
+        "description": "QuickLogic vendor prefix.",
+        "length": 2,
+        "type": "fixed",
+        "value": "QL"
+      },
+      {
+        "id": "sep1",
+        "label": "Separator",
+        "description": "Dash separator.",
+        "length": 1,
+        "type": "fixed",
+        "value": "-"
+      },
+      {
+        "id": "product",
+        "label": "Product",
+        "description": "Product family identifier for EOS S3.",
+        "length": 2,
+        "type": "fixed",
+        "value": "S3"
+      },
+      {
+        "id": "variant",
+        "label": "Variant",
+        "description": "Device variant identifier.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "B17",
+            "label": "B17",
+            "description": "Base EOS S3 variant — Cortex-M4F + eFPGA."
+          }
+        ]
+      },
+      {
+        "id": "sep2",
+        "label": "Separator",
+        "description": "Dash separator.",
+        "length": 1,
+        "type": "fixed",
+        "value": "-"
+      },
+      {
+        "id": "package_grade",
+        "label": "Package / Grade",
+        "description": "Package type and qualification grade.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "6",
+            "label": "6 (QFN88)",
+            "description": "88-pin QFN package, production grade."
+          },
+          {
+            "value": "0",
+            "label": "0 (Wafer)",
+            "description": "Known-good-die / wafer-level supply."
+          }
+        ]
+      },
+      {
+        "id": "suffix",
+        "label": "Suffix",
+        "description": "Optional RoHS / packaging suffix.",
+        "length": null,
+        "type": "select",
+        "required": false,
+        "options": [
+          {
+            "value": "G",
+            "label": "G (Green/RoHS)",
+            "description": "RoHS-compliant, green packaging."
+          }
+        ]
+      }
+    ],
+    "type": "SoC"
+  }
+]

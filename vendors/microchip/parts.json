@@ -1,0 +1,580 @@
+[
+  {
+    "family": "PolarFire",
+    "description": "Microchip PolarFire mid-range FPGA with low power, 12.7 Gbps SERDES transceivers, and high security. Format: MPF{density}{variant}-{package}{temp}.",
+    "fields": [
+      {
+        "id": "prefix",
+        "label": "Prefix",
+        "description": "Fixed prefix identifying the PolarFire family.",
+        "length": 3,
+        "type": "fixed",
+        "value": "MPF"
+      },
+      {
+        "id": "density",
+        "label": "Density",
+        "description": "Device logic density in thousands of logic elements.",
+        "length": 3,
+        "type": "select",
+        "options": [
+          {
+            "value": "050",
+            "label": "50K",
+            "description": "48K logic elements."
+          },
+          {
+            "value": "100",
+            "label": "100K",
+            "description": "100K logic elements."
+          },
+          {
+            "value": "200",
+            "label": "200K",
+            "description": "192K logic elements."
+          },
+          {
+            "value": "300",
+            "label": "300K",
+            "description": "300K logic elements."
+          },
+          {
+            "value": "500",
+            "label": "500K",
+            "description": "481K logic elements."
+          }
+        ]
+      },
+      {
+        "id": "variant",
+        "label": "Variant",
+        "description": "Device variant — standard, secure, or defense.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "T",
+            "label": "T",
+            "description": "Standard variant."
+          },
+          {
+            "value": "TS",
+            "label": "TS",
+            "description": "Secure variant with enhanced tamper protection."
+          },
+          {
+            "value": "KS",
+            "label": "KS",
+            "description": "Defense-grade secure variant."
+          }
+        ]
+      },
+      {
+        "id": "sep1",
+        "label": "Separator",
+        "description": "Dash separator after variant.",
+        "length": 1,
+        "type": "fixed",
+        "value": "-"
+      },
+      {
+        "id": "package",
+        "label": "Package",
+        "description": "Package type and pin/ball count.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "FCSG325",
+            "label": "FCSG325",
+            "description": "FCSG 325-ball."
+          },
+          {
+            "value": "FCG484",
+            "label": "FCG484",
+            "description": "FCG 484-ball."
+          },
+          {
+            "value": "FCVG484",
+            "label": "FCVG484",
+            "description": "FCVG 484-ball."
+          },
+          {
+            "value": "FCSG536",
+            "label": "FCSG536",
+            "description": "FCSG 536-ball."
+          },
+          {
+            "value": "FCG896",
+            "label": "FCG896",
+            "description": "FCG 896-ball."
+          },
+          {
+            "value": "FCG1152",
+            "label": "FCG1152",
+            "description": "FCG 1152-ball."
+          }
+        ]
+      },
+      {
+        "id": "temp",
+        "label": "Temperature Grade",
+        "description": "Operating temperature range.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "E",
+            "label": "Extended Commercial",
+            "description": "0 C to +100 C (standard/extended commercial)."
+          },
+          {
+            "value": "I",
+            "label": "Industrial",
+            "description": "-40 C to +100 C."
+          }
+        ]
+      }
+    ],
+    "type": "FPGA"
+  },
+  {
+    "family": "PolarFire SoC",
+    "description": "Microchip PolarFire SoC FPGA with integrated RISC-V processor subsystem. Format: MPFS{density}{variant}-{package}{temp}.",
+    "fields": [
+      {
+        "id": "prefix",
+        "label": "Prefix",
+        "description": "Fixed prefix identifying the PolarFire SoC family.",
+        "length": 4,
+        "type": "fixed",
+        "value": "MPFS"
+      },
+      {
+        "id": "density",
+        "label": "Density",
+        "description": "Device logic density in thousands of logic elements.",
+        "length": 3,
+        "type": "select",
+        "options": [
+          {
+            "value": "025",
+            "label": "25K",
+            "description": "23K logic elements."
+          },
+          {
+            "value": "060",
+            "label": "60K",
+            "description": "57K logic elements."
+          },
+          {
+            "value": "095",
+            "label": "95K",
+            "description": "92K logic elements."
+          },
+          {
+            "value": "160",
+            "label": "160K",
+            "description": "157K logic elements."
+          },
+          {
+            "value": "250",
+            "label": "250K",
+            "description": "254K logic elements."
+          },
+          {
+            "value": "460",
+            "label": "460K",
+            "description": "461K logic elements."
+          }
+        ]
+      },
+      {
+        "id": "variant",
+        "label": "Variant",
+        "description": "Device variant — standard or secure.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "T",
+            "label": "T",
+            "description": "Standard variant."
+          },
+          {
+            "value": "TS",
+            "label": "TS",
+            "description": "Secure variant with enhanced tamper protection."
+          }
+        ]
+      },
+      {
+        "id": "sep1",
+        "label": "Separator",
+        "description": "Dash separator after variant.",
+        "length": 1,
+        "type": "fixed",
+        "value": "-"
+      },
+      {
+        "id": "package",
+        "label": "Package",
+        "description": "Package type and ball count.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "FCSG325",
+            "label": "FCSG325",
+            "description": "FCSG 325-ball."
+          },
+          {
+            "value": "FCG484",
+            "label": "FCG484",
+            "description": "FCG 484-ball."
+          },
+          {
+            "value": "FCVG484",
+            "label": "FCVG484",
+            "description": "FCVG 484-ball."
+          },
+          {
+            "value": "FCSG536",
+            "label": "FCSG536",
+            "description": "FCSG 536-ball."
+          },
+          {
+            "value": "FCG1152",
+            "label": "FCG1152",
+            "description": "FCG 1152-ball."
+          }
+        ]
+      },
+      {
+        "id": "temp",
+        "label": "Temperature Grade",
+        "description": "Operating temperature range.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "E",
+            "label": "Extended Commercial",
+            "description": "0 C to +100 C (standard/extended commercial)."
+          },
+          {
+            "value": "I",
+            "label": "Industrial",
+            "description": "-40 C to +100 C."
+          }
+        ]
+      }
+    ],
+    "type": "SoC"
+  },
+  {
+    "family": "IGLOO2",
+    "description": "Microchip (Microsemi) IGLOO2 low-power flash-based FPGA. Format: M2GL{density}{variant}-{package}{temp}.",
+    "fields": [
+      {
+        "id": "prefix",
+        "label": "Prefix",
+        "description": "Fixed prefix identifying the IGLOO2 family.",
+        "length": 4,
+        "type": "fixed",
+        "value": "M2GL"
+      },
+      {
+        "id": "density",
+        "label": "Density",
+        "description": "Device logic density in thousands of logic elements.",
+        "length": 3,
+        "type": "select",
+        "options": [
+          {
+            "value": "005",
+            "label": "5K",
+            "description": "6K logic elements."
+          },
+          {
+            "value": "010",
+            "label": "10K",
+            "description": "12K logic elements."
+          },
+          {
+            "value": "025",
+            "label": "25K",
+            "description": "27K logic elements."
+          },
+          {
+            "value": "050",
+            "label": "50K",
+            "description": "56K logic elements."
+          },
+          {
+            "value": "090",
+            "label": "90K",
+            "description": "86K logic elements."
+          },
+          {
+            "value": "150",
+            "label": "150K",
+            "description": "147K logic elements."
+          }
+        ]
+      },
+      {
+        "id": "variant",
+        "label": "Variant",
+        "description": "Device variant — standard or secure.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "T",
+            "label": "T",
+            "description": "Standard variant."
+          },
+          {
+            "value": "TS",
+            "label": "TS",
+            "description": "Secure variant with enhanced tamper protection."
+          }
+        ]
+      },
+      {
+        "id": "sep1",
+        "label": "Separator",
+        "description": "Dash separator after variant.",
+        "length": 1,
+        "type": "fixed",
+        "value": "-"
+      },
+      {
+        "id": "package",
+        "label": "Package",
+        "description": "Package type and pin/ball count.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "VF256",
+            "label": "VF256",
+            "description": "VF 256-ball."
+          },
+          {
+            "value": "VF400",
+            "label": "VF400",
+            "description": "VF 400-ball."
+          },
+          {
+            "value": "FG256",
+            "label": "FG256",
+            "description": "FBGA 256-ball."
+          },
+          {
+            "value": "FG484",
+            "label": "FG484",
+            "description": "FBGA 484-ball."
+          },
+          {
+            "value": "FG896",
+            "label": "FG896",
+            "description": "FBGA 896-ball."
+          },
+          {
+            "value": "FGG484",
+            "label": "FGG484",
+            "description": "FBGA 484-ball (green package)."
+          },
+          {
+            "value": "FGG896",
+            "label": "FGG896",
+            "description": "FBGA 896-ball (green package)."
+          },
+          {
+            "value": "CS288",
+            "label": "CS288",
+            "description": "CS 288-ball."
+          }
+        ]
+      },
+      {
+        "id": "temp",
+        "label": "Temperature Grade",
+        "description": "Operating temperature range.",
+        "length": 1,
+        "type": "select",
+        "required": false,
+        "options": [
+          {
+            "value": "I",
+            "label": "Industrial",
+            "description": "-40 C to +100 C."
+          },
+          {
+            "value": "C",
+            "label": "Commercial",
+            "description": "0 C to +85 C."
+          }
+        ]
+      }
+    ],
+    "type": "FPGA"
+  },
+  {
+    "family": "SmartFusion2",
+    "description": "Microchip (Microsemi) SmartFusion2 SoC FPGA with integrated ARM Cortex-M3 processor. Format: M2S{density}{variant}-{package}{temp}.",
+    "fields": [
+      {
+        "id": "prefix",
+        "label": "Prefix",
+        "description": "Fixed prefix identifying the SmartFusion2 family.",
+        "length": 3,
+        "type": "fixed",
+        "value": "M2S"
+      },
+      {
+        "id": "density",
+        "label": "Density",
+        "description": "Device logic density in thousands of logic elements.",
+        "length": 3,
+        "type": "select",
+        "options": [
+          {
+            "value": "005",
+            "label": "5K",
+            "description": "6K logic elements."
+          },
+          {
+            "value": "010",
+            "label": "10K",
+            "description": "12K logic elements."
+          },
+          {
+            "value": "025",
+            "label": "25K",
+            "description": "27K logic elements."
+          },
+          {
+            "value": "050",
+            "label": "50K",
+            "description": "56K logic elements."
+          },
+          {
+            "value": "060",
+            "label": "60K",
+            "description": "57K logic elements."
+          },
+          {
+            "value": "090",
+            "label": "90K",
+            "description": "86K logic elements."
+          },
+          {
+            "value": "150",
+            "label": "150K",
+            "description": "147K logic elements."
+          }
+        ]
+      },
+      {
+        "id": "variant",
+        "label": "Variant",
+        "description": "Device variant — standard or secure.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "T",
+            "label": "T",
+            "description": "Standard variant."
+          },
+          {
+            "value": "TS",
+            "label": "TS",
+            "description": "Secure variant with enhanced tamper protection."
+          }
+        ]
+      },
+      {
+        "id": "sep1",
+        "label": "Separator",
+        "description": "Dash separator after variant.",
+        "length": 1,
+        "type": "fixed",
+        "value": "-"
+      },
+      {
+        "id": "package",
+        "label": "Package",
+        "description": "Package type and pin/ball count.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "TQ144",
+            "label": "TQ144",
+            "description": "TQFP 144-pin."
+          },
+          {
+            "value": "VF256",
+            "label": "VF256",
+            "description": "VF 256-ball."
+          },
+          {
+            "value": "VF400",
+            "label": "VF400",
+            "description": "VF 400-ball."
+          },
+          {
+            "value": "FG256",
+            "label": "FG256",
+            "description": "FBGA 256-ball."
+          },
+          {
+            "value": "FG484",
+            "label": "FG484",
+            "description": "FBGA 484-ball."
+          },
+          {
+            "value": "FG896",
+            "label": "FG896",
+            "description": "FBGA 896-ball."
+          },
+          {
+            "value": "FGG484",
+            "label": "FGG484",
+            "description": "FBGA 484-ball (green package)."
+          },
+          {
+            "value": "FGG896",
+            "label": "FGG896",
+            "description": "FBGA 896-ball (green package)."
+          }
+        ]
+      },
+      {
+        "id": "temp",
+        "label": "Temperature Grade",
+        "description": "Operating temperature range.",
+        "length": 1,
+        "type": "select",
+        "required": false,
+        "options": [
+          {
+            "value": "I",
+            "label": "Industrial",
+            "description": "-40 C to +100 C."
+          },
+          {
+            "value": "C",
+            "label": "Commercial",
+            "description": "0 C to +85 C."
+          }
+        ]
+      }
+    ],
+    "type": "SoC"
+  }
+]

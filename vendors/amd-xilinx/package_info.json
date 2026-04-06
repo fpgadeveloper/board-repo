@@ -1,0 +1,3306 @@
+{
+  "xc2ve3504ssva1440": {
+    "hd_io": 88,
+    "transceivers": {
+      "GTYP": 4
+    },
+    "xpio": 329
+  },
+  "xc2ve3504ssva2112": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTYP": 12
+    },
+    "xpio": 385
+  },
+  "xc2ve3558sfva1440": {
+    "hd_io": 88,
+    "transceivers": {
+      "GTYP": 4
+    },
+    "xpio": 329
+  },
+  "xc2ve3558ssva1440": {
+    "hd_io": 88,
+    "transceivers": {
+      "GTYP": 4
+    },
+    "xpio": 329
+  },
+  "xc2ve3558ssva2112": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTYP": 12
+    },
+    "xpio": 385
+  },
+  "xc2ve3804ssva2112": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTYP": 20
+    },
+    "xpio": 513
+  },
+  "xc2ve3858ssva2112": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTYP": 20
+    },
+    "xpio": 513
+  },
+  "xc2vm3558ssva1440": {
+    "hd_io": 88,
+    "transceivers": {
+      "GTYP": 4
+    },
+    "xpio": 329
+  },
+  "xc2vm3558ssva2112": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTYP": 12
+    },
+    "xpio": 385
+  },
+  "xc2vm3858ssva2112": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTYP": 20
+    },
+    "xpio": 513
+  },
+  "xc7a100tcsg324": {
+    "hr_io": 210
+  },
+  "xc7a100tfgg484": {
+    "hr_io": 285,
+    "transceivers": {
+      "GTP": 4
+    }
+  },
+  "xc7a100tfgg676": {
+    "hr_io": 300,
+    "transceivers": {
+      "GTP": 8
+    }
+  },
+  "xc7a100tftg256": {
+    "hr_io": 170
+  },
+  "xc7a12tcpg238": {
+    "hr_io": 112,
+    "transceivers": {
+      "GTP": 2
+    }
+  },
+  "xc7a12tcsg325": {
+    "hr_io": 150,
+    "transceivers": {
+      "GTP": 2
+    }
+  },
+  "xc7a15tcpg236": {
+    "hr_io": 106,
+    "transceivers": {
+      "GTP": 2
+    }
+  },
+  "xc7a15tcsg324": {
+    "hr_io": 210
+  },
+  "xc7a15tcsg325": {
+    "hr_io": 150,
+    "transceivers": {
+      "GTP": 4
+    }
+  },
+  "xc7a15tfgg484": {
+    "hr_io": 250,
+    "transceivers": {
+      "GTP": 4
+    }
+  },
+  "xc7a15tftg256": {
+    "hr_io": 170
+  },
+  "xc7a200tfbg484": {
+    "hr_io": 285,
+    "transceivers": {
+      "GTP": 4
+    }
+  },
+  "xc7a200tfbg676": {
+    "hr_io": 400,
+    "transceivers": {
+      "GTP": 8
+    }
+  },
+  "xc7a200tffg1156": {
+    "hr_io": 500,
+    "transceivers": {
+      "GTP": 16
+    }
+  },
+  "xc7a200tsbg484": {
+    "hr_io": 285,
+    "transceivers": {
+      "GTP": 4
+    }
+  },
+  "xc7a25tcpg238": {
+    "hr_io": 112,
+    "transceivers": {
+      "GTP": 2
+    }
+  },
+  "xc7a25tcsg325": {
+    "hr_io": 150,
+    "transceivers": {
+      "GTP": 4
+    }
+  },
+  "xc7a35tcpg236": {
+    "hr_io": 106,
+    "transceivers": {
+      "GTP": 2
+    }
+  },
+  "xc7a35tcsg324": {
+    "hr_io": 210
+  },
+  "xc7a35tcsg325": {
+    "hr_io": 150,
+    "transceivers": {
+      "GTP": 4
+    }
+  },
+  "xc7a35tfgg484": {
+    "hr_io": 250,
+    "transceivers": {
+      "GTP": 4
+    }
+  },
+  "xc7a35tftg256": {
+    "hr_io": 170
+  },
+  "xc7a50tcpg236": {
+    "hr_io": 106,
+    "transceivers": {
+      "GTP": 2
+    }
+  },
+  "xc7a50tcsg324": {
+    "hr_io": 210
+  },
+  "xc7a50tcsg325": {
+    "hr_io": 150,
+    "transceivers": {
+      "GTP": 4
+    }
+  },
+  "xc7a50tfgg484": {
+    "hr_io": 250,
+    "transceivers": {
+      "GTP": 4
+    }
+  },
+  "xc7a50tftg256": {
+    "hr_io": 170
+  },
+  "xc7a75tcsg324": {
+    "hr_io": 210
+  },
+  "xc7a75tfgg484": {
+    "hr_io": 285,
+    "transceivers": {
+      "GTP": 4
+    }
+  },
+  "xc7a75tfgg676": {
+    "hr_io": 300,
+    "transceivers": {
+      "GTP": 8
+    }
+  },
+  "xc7a75tftg256": {
+    "hr_io": 170
+  },
+  "xc7k160tfbg484": {
+    "hp_io": 100,
+    "hr_io": 185,
+    "transceivers": {
+      "GTX": 4
+    }
+  },
+  "xc7k160tfbg676": {
+    "hp_io": 150,
+    "hr_io": 250,
+    "transceivers": {
+      "GTX": 8
+    }
+  },
+  "xc7k160tffg676": {
+    "hp_io": 150,
+    "hr_io": 250,
+    "transceivers": {
+      "GTX": 8
+    }
+  },
+  "xc7k325tfbg676": {
+    "hp_io": 150,
+    "hr_io": 250,
+    "transceivers": {
+      "GTX": 8
+    }
+  },
+  "xc7k325tfbg900": {
+    "hp_io": 150,
+    "hr_io": 350,
+    "transceivers": {
+      "GTX": 16
+    }
+  },
+  "xc7k325tffg676": {
+    "hp_io": 150,
+    "hr_io": 250,
+    "transceivers": {
+      "GTX": 8
+    }
+  },
+  "xc7k325tffg900": {
+    "hp_io": 150,
+    "hr_io": 350,
+    "transceivers": {
+      "GTX": 16
+    }
+  },
+  "xc7k355tffg901": {
+    "hr_io": 300,
+    "transceivers": {
+      "GTX": 24
+    }
+  },
+  "xc7k410tfbg676": {
+    "hp_io": 150,
+    "hr_io": 250,
+    "transceivers": {
+      "GTX": 8
+    }
+  },
+  "xc7k410tfbg900": {
+    "hp_io": 150,
+    "hr_io": 350,
+    "transceivers": {
+      "GTX": 16
+    }
+  },
+  "xc7k410tffg676": {
+    "hp_io": 150,
+    "hr_io": 250,
+    "transceivers": {
+      "GTX": 8
+    }
+  },
+  "xc7k410tffg900": {
+    "hp_io": 150,
+    "hr_io": 350,
+    "transceivers": {
+      "GTX": 16
+    }
+  },
+  "xc7k420tffg1156": {
+    "hr_io": 400,
+    "transceivers": {
+      "GTX": 32
+    }
+  },
+  "xc7k420tffg901": {
+    "hr_io": 380,
+    "transceivers": {
+      "GTX": 28
+    }
+  },
+  "xc7k480tffg1156": {
+    "hr_io": 400,
+    "transceivers": {
+      "GTX": 32
+    }
+  },
+  "xc7k480tffg901": {
+    "hr_io": 380,
+    "transceivers": {
+      "GTX": 28
+    }
+  },
+  "xc7k70tfbg484": {
+    "hp_io": 100,
+    "hr_io": 185,
+    "transceivers": {
+      "GTX": 4
+    }
+  },
+  "xc7k70tfbg676": {
+    "hp_io": 100,
+    "hr_io": 200,
+    "transceivers": {
+      "GTX": 8
+    }
+  },
+  "xc7s100fgga484": {
+    "hr_io": 338
+  },
+  "xc7s100fgga676": {
+    "hr_io": 400
+  },
+  "xc7s15cpga196": {
+    "hr_io": 100
+  },
+  "xc7s15csga225": {
+    "hr_io": 100
+  },
+  "xc7s15ftgb196": {
+    "hr_io": 100
+  },
+  "xc7s25csga225": {
+    "hr_io": 150
+  },
+  "xc7s25csga324": {
+    "hr_io": 150
+  },
+  "xc7s25ftgb196": {
+    "hr_io": 100
+  },
+  "xc7s50csga324": {
+    "hr_io": 210
+  },
+  "xc7s50fgga484": {
+    "hr_io": 250
+  },
+  "xc7s50ftgb196": {
+    "hr_io": 100
+  },
+  "xc7s6cpga196": {
+    "hr_io": 100
+  },
+  "xc7s6csga225": {
+    "hr_io": 100
+  },
+  "xc7s6ftgb196": {
+    "hr_io": 100
+  },
+  "xc7s75fgga484": {
+    "hr_io": 338
+  },
+  "xc7s75fgga676": {
+    "hr_io": 400
+  },
+  "xc7v2000tfhg1761": {
+    "hp_io": 850,
+    "transceivers": {
+      "GTX": 36
+    }
+  },
+  "xc7v2000tflg1925": {
+    "hp_io": 1200,
+    "transceivers": {
+      "GTX": 16
+    }
+  },
+  "xc7v585tffg1157": {
+    "hp_io": 600,
+    "transceivers": {
+      "GTX": 20
+    }
+  },
+  "xc7v585tffg1761": {
+    "hp_io": 750,
+    "hr_io": 100,
+    "transceivers": {
+      "GTX": 36
+    }
+  },
+  "xc7vh580tflg1155pkg_xc7vh580thcg1155": {
+    "hp_io": 400,
+    "transceivers": {
+      "GTH": 24
+    }
+  },
+  "xc7vh580tflg1931pkg_xc7vh580thcg1931": {
+    "hp_io": 600,
+    "transceivers": {
+      "GTH": 48
+    }
+  },
+  "xc7vh870tflg1932pkg_xc7vh870thcg1932": {
+    "hp_io": 300,
+    "transceivers": {
+      "GTH": 72
+    }
+  },
+  "xc7vx1140tflg1926": {
+    "hp_io": 720,
+    "transceivers": {
+      "GTH": 64
+    }
+  },
+  "xc7vx1140tflg1928": {
+    "hp_io": 480,
+    "transceivers": {
+      "GTH": 96
+    }
+  },
+  "xc7vx1140tflg1930": {
+    "hp_io": 1100,
+    "transceivers": {
+      "GTH": 24
+    }
+  },
+  "xc7vx330tffg1157": {
+    "hp_io": 600,
+    "transceivers": {
+      "GTH": 20
+    }
+  },
+  "xc7vx330tffg1761": {
+    "hp_io": 650,
+    "hr_io": 50,
+    "transceivers": {
+      "GTH": 28
+    }
+  },
+  "xc7vx415tffg1157": {
+    "hp_io": 600,
+    "transceivers": {
+      "GTH": 20
+    }
+  },
+  "xc7vx415tffg1158": {
+    "hp_io": 350,
+    "transceivers": {
+      "GTH": 48
+    }
+  },
+  "xc7vx415tffg1927": {
+    "hp_io": 600,
+    "transceivers": {
+      "GTH": 48
+    }
+  },
+  "xc7vx485tffg1157": {
+    "hp_io": 600,
+    "transceivers": {
+      "GTX": 20
+    }
+  },
+  "xc7vx485tffg1158": {
+    "hp_io": 350,
+    "transceivers": {
+      "GTX": 48
+    }
+  },
+  "xc7vx485tffg1761": {
+    "hp_io": 700,
+    "transceivers": {
+      "GTX": 28
+    }
+  },
+  "xc7vx485tffg1927": {
+    "hp_io": 600,
+    "transceivers": {
+      "GTX": 56
+    }
+  },
+  "xc7vx485tffg1930": {
+    "hp_io": 700,
+    "transceivers": {
+      "GTX": 24
+    }
+  },
+  "xc7vx550tffg1158": {
+    "hp_io": 350,
+    "transceivers": {
+      "GTH": 48
+    }
+  },
+  "xc7vx550tffg1927": {
+    "hp_io": 600,
+    "transceivers": {
+      "GTH": 80
+    }
+  },
+  "xc7vx690tffg1157": {
+    "hp_io": 600,
+    "transceivers": {
+      "GTH": 20
+    }
+  },
+  "xc7vx690tffg1158": {
+    "hp_io": 350,
+    "transceivers": {
+      "GTH": 48
+    }
+  },
+  "xc7vx690tffg1761": {
+    "hp_io": 850,
+    "transceivers": {
+      "GTH": 36
+    }
+  },
+  "xc7vx690tffg1926": {
+    "hp_io": 720,
+    "transceivers": {
+      "GTH": 64
+    }
+  },
+  "xc7vx690tffg1927": {
+    "hp_io": 600,
+    "transceivers": {
+      "GTH": 80
+    }
+  },
+  "xc7vx690tffg1930": {
+    "hp_io": 1000,
+    "transceivers": {
+      "GTH": 24
+    }
+  },
+  "xc7vx980tffg1926": {
+    "hp_io": 720,
+    "transceivers": {
+      "GTH": 64
+    }
+  },
+  "xc7vx980tffg1928": {
+    "hp_io": 480,
+    "transceivers": {
+      "GTH": 72
+    }
+  },
+  "xc7vx980tffg1930": {
+    "hp_io": 900,
+    "transceivers": {
+      "GTH": 24
+    }
+  },
+  "xc7z007sclg225": {
+    "hr_io": 54
+  },
+  "xc7z007sclg400": {
+    "hr_io": 100
+  },
+  "xc7z010clg225": {
+    "hr_io": 54
+  },
+  "xc7z010clg400": {
+    "hr_io": 100
+  },
+  "xc7z012sclg485": {
+    "hr_io": 150,
+    "transceivers": {
+      "GTP": 4
+    }
+  },
+  "xc7z014sclg400": {
+    "hr_io": 125
+  },
+  "xc7z014sclg484": {
+    "hr_io": 200
+  },
+  "xc7z015clg485": {
+    "hr_io": 150,
+    "transceivers": {
+      "GTP": 4
+    }
+  },
+  "xc7z020clg400": {
+    "hr_io": 125
+  },
+  "xc7z020clg484": {
+    "hr_io": 200
+  },
+  "xc7z030fbg484": {
+    "hp_io": 63,
+    "hr_io": 100,
+    "transceivers": {
+      "GTX": 4
+    }
+  },
+  "xc7z030fbg676": {
+    "hp_io": 150,
+    "hr_io": 100,
+    "transceivers": {
+      "GTX": 4
+    }
+  },
+  "xc7z030ffg676": {
+    "hp_io": 150,
+    "hr_io": 100,
+    "transceivers": {
+      "GTX": 4
+    }
+  },
+  "xc7z030sbg485": {
+    "hp_io": 100,
+    "hr_io": 50,
+    "transceivers": {
+      "GTX": 4
+    }
+  },
+  "xc7z035fbg676": {
+    "hp_io": 150,
+    "hr_io": 100,
+    "transceivers": {
+      "GTX": 8
+    }
+  },
+  "xc7z035ffg676": {
+    "hp_io": 150,
+    "hr_io": 100,
+    "transceivers": {
+      "GTX": 8
+    }
+  },
+  "xc7z035ffg900": {
+    "hp_io": 150,
+    "hr_io": 212,
+    "transceivers": {
+      "GTX": 16
+    }
+  },
+  "xc7z045fbg676": {
+    "hp_io": 150,
+    "hr_io": 100,
+    "transceivers": {
+      "GTX": 8
+    }
+  },
+  "xc7z045ffg676": {
+    "hp_io": 150,
+    "hr_io": 100,
+    "transceivers": {
+      "GTX": 8
+    }
+  },
+  "xc7z045ffg900": {
+    "hp_io": 150,
+    "hr_io": 212,
+    "transceivers": {
+      "GTX": 16
+    }
+  },
+  "xc7z100ffg1156": {
+    "hp_io": 150,
+    "hr_io": 250,
+    "transceivers": {
+      "GTX": 16
+    }
+  },
+  "xc7z100ffg900": {
+    "hp_io": 150,
+    "hr_io": 212,
+    "transceivers": {
+      "GTX": 16
+    }
+  },
+  "xcau10pffvb676": {
+    "hd_io": 72,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 12
+    }
+  },
+  "xcau10psbvb484": {
+    "hd_io": 48,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 12
+    }
+  },
+  "xcau10pubva368": {
+    "hd_io": 24,
+    "hp_io": 106,
+    "transceivers": {
+      "GTH": 8
+    }
+  },
+  "xcau15pffvb676": {
+    "hd_io": 72,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 12
+    }
+  },
+  "xcau15psbvb484": {
+    "hd_io": 48,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 12
+    }
+  },
+  "xcau15pubva368": {
+    "hd_io": 24,
+    "hp_io": 106,
+    "transceivers": {
+      "GTH": 8
+    }
+  },
+  "xcau20pffvb676": {
+    "hd_io": 72,
+    "hp_io": 159,
+    "transceivers": {
+      "GTY": 12
+    }
+  },
+  "xcau20psfvb784": {
+    "hd_io": 72,
+    "hp_io": 159,
+    "transceivers": {
+      "GTY": 12
+    }
+  },
+  "xcau25pffvb676": {
+    "hd_io": 72,
+    "hp_io": 212,
+    "transceivers": {
+      "GTY": 12
+    }
+  },
+  "xcau25psfvb784": {
+    "hd_io": 96,
+    "hp_io": 212,
+    "transceivers": {
+      "GTY": 12
+    }
+  },
+  "xcau7pfcva289": {
+    "hd_io": 72,
+    "hp_io": 60,
+    "transceivers": {
+      "GTH": 4
+    }
+  },
+  "xcau7psbvc484": {
+    "hd_io": 144,
+    "hp_io": 106,
+    "transceivers": {
+      "GTH": 4
+    }
+  },
+  "xcku025ffva1156": {
+    "hp_io": 212,
+    "hr_io": 106,
+    "transceivers": {
+      "GTH": 12
+    }
+  },
+  "xcku035fbva676": {
+    "hp_io": 212,
+    "hr_io": 106,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xcku035fbva900": {
+    "hp_io": 371,
+    "hr_io": 106,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xcku035ffva1156": {
+    "hp_io": 424,
+    "hr_io": 106,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xcku035sfva784": {
+    "hp_io": 371,
+    "hr_io": 106,
+    "transceivers": {
+      "GTH": 8
+    }
+  },
+  "xcku040fbva676": {
+    "hp_io": 212,
+    "hr_io": 106,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xcku040fbva900": {
+    "hp_io": 371,
+    "hr_io": 106,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xcku040ffva1156": {
+    "hp_io": 424,
+    "hr_io": 106,
+    "transceivers": {
+      "GTH": 20
+    }
+  },
+  "xcku040sfva784": {
+    "hp_io": 371,
+    "hr_io": 106,
+    "transceivers": {
+      "GTH": 8
+    }
+  },
+  "xcku060ffva1156": {
+    "hp_io": 424,
+    "hr_io": 106,
+    "transceivers": {
+      "GTH": 28
+    }
+  },
+  "xcku060ffva1517": {
+    "hp_io": 530,
+    "hr_io": 106,
+    "transceivers": {
+      "GTH": 32
+    }
+  },
+  "xcku085flva1517": {
+    "hp_io": 530,
+    "hr_io": 106,
+    "transceivers": {
+      "GTH": 48
+    }
+  },
+  "xcku085flvb1760": {
+    "hp_io": 583,
+    "hr_io": 107,
+    "transceivers": {
+      "GTH": 44
+    }
+  },
+  "xcku085flvf1924": {
+    "hp_io": 530,
+    "hr_io": 106,
+    "transceivers": {
+      "GTH": 56
+    }
+  },
+  "xcku095ffva1156": {
+    "hp_io": 477,
+    "hr_io": 53,
+    "transceivers": {
+      "GTH": 20,
+      "GTY": 8
+    }
+  },
+  "xcku095ffvb1760": {
+    "hp_io": 663,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 32,
+      "GTY": 16
+    }
+  },
+  "xcku095ffvb2104": {
+    "hp_io": 663,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 32,
+      "GTY": 32
+    }
+  },
+  "xcku095ffvc1517": {
+    "hp_io": 477,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 20,
+      "GTY": 20
+    }
+  },
+  "xcku115flva1517": {
+    "hp_io": 530,
+    "hr_io": 106,
+    "transceivers": {
+      "GTH": 48
+    }
+  },
+  "xcku115flva2104": {
+    "hp_io": 689,
+    "hr_io": 160,
+    "transceivers": {
+      "GTH": 52
+    }
+  },
+  "xcku115flvb1760": {
+    "hp_io": 610,
+    "hr_io": 107,
+    "transceivers": {
+      "GTH": 52
+    }
+  },
+  "xcku115flvb2104": {
+    "hp_io": 610,
+    "hr_io": 107,
+    "transceivers": {
+      "GTH": 64
+    }
+  },
+  "xcku115flvd1517": {
+    "hp_io": 239,
+    "hr_io": 107,
+    "transceivers": {
+      "GTH": 64
+    }
+  },
+  "xcku115flvd1924": {
+    "hp_io": 689,
+    "hr_io": 160,
+    "transceivers": {
+      "GTH": 52
+    }
+  },
+  "xcku115flvf1924": {
+    "hp_io": 636,
+    "hr_io": 106,
+    "transceivers": {
+      "GTH": 64
+    }
+  },
+  "xcku11pffva1156": {
+    "hd_io": 48,
+    "hp_io": 424,
+    "transceivers": {
+      "GTH": 20,
+      "GTY": 8
+    }
+  },
+  "xcku11pffvd900": {
+    "hd_io": 96,
+    "hp_io": 318,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xcku11pffve1517": {
+    "hd_io": 96,
+    "hp_io": 424,
+    "transceivers": {
+      "GTH": 32,
+      "GTY": 20
+    }
+  },
+  "xcku13pffve900": {
+    "hd_io": 96,
+    "hp_io": 212,
+    "transceivers": {
+      "GTH": 28
+    }
+  },
+  "xcku15pffva1156": {
+    "hd_io": 48,
+    "hp_io": 477,
+    "transceivers": {
+      "GTH": 20,
+      "GTY": 8
+    }
+  },
+  "xcku15pffva1760": {
+    "hd_io": 96,
+    "hp_io": 424,
+    "transceivers": {
+      "GTH": 44,
+      "GTY": 32
+    }
+  },
+  "xcku15pffve1517": {
+    "hd_io": 96,
+    "hp_io": 424,
+    "transceivers": {
+      "GTH": 32,
+      "GTY": 24
+    }
+  },
+  "xcku15pffve1760": {
+    "hd_io": 96,
+    "hp_io": 583,
+    "transceivers": {
+      "GTH": 32,
+      "GTY": 24
+    }
+  },
+  "xcku19pffvb2104": {
+    "hd_io": 72,
+    "hp_io": 477,
+    "transceivers": {
+      "GTY": 32
+    }
+  },
+  "xcku19pffvj1760": {
+    "hd_io": 72,
+    "hp_io": 477,
+    "transceivers": {
+      "GTY": 32
+    }
+  },
+  "xcku3pffva676": {
+    "hd_io": 48,
+    "hp_io": 212,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xcku3pffvb676": {
+    "hd_io": 72,
+    "hp_io": 212,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xcku3pffvd900": {
+    "hd_io": 96,
+    "hp_io": 212,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xcku3psfvb784": {
+    "hd_io": 96,
+    "hp_io": 212,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xcku5pffva676": {
+    "hd_io": 48,
+    "hp_io": 212,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xcku5pffvb676": {
+    "hd_io": 72,
+    "hp_io": 212,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xcku5pffvd900": {
+    "hd_io": 96,
+    "hp_io": 212,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xcku5psfvb784": {
+    "hd_io": 96,
+    "hp_io": 212,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xcku9pffve900": {
+    "hd_io": 96,
+    "hp_io": 212,
+    "transceivers": {
+      "GTH": 28
+    }
+  },
+  "xcsu10pcmva361": {
+    "hd_io": 168,
+    "hp_io": 53
+  },
+  "xcsu10pcmva529": {
+    "hd_io": 252,
+    "hp_io": 53
+  },
+  "xcsu10psbvb625": {
+    "hd_io": 252,
+    "hp_io": 53
+  },
+  "xcsu25pcmva361": {
+    "hd_io": 168,
+    "hp_io": 53
+  },
+  "xcsu25pcmva529": {
+    "hd_io": 252,
+    "hp_io": 53
+  },
+  "xcsu25psbvb625": {
+    "hd_io": 252,
+    "hp_io": 53
+  },
+  "xcsu35pcmva361": {
+    "hd_io": 168,
+    "hp_io": 53
+  },
+  "xcsu35pcmva529": {
+    "hd_io": 252,
+    "hp_io": 53
+  },
+  "xcsu35psbvb625": {
+    "hd_io": 252,
+    "hp_io": 53
+  },
+  "xcvc1502nsvg1369": {
+    "hd_io": 22,
+    "transceivers": {
+      "GTY": 24
+    },
+    "xpio": 379
+  },
+  "xcvc1502vsva1596": {
+    "hd_io": 22,
+    "transceivers": {
+      "GTY": 32
+    },
+    "xpio": 379
+  },
+  "xcvc1502vsva2197": {
+    "hd_io": 22,
+    "transceivers": {
+      "GTY": 32
+    },
+    "xpio": 487
+  },
+  "xcvc1702nsvg1369": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 24
+    },
+    "xpio": 379
+  },
+  "xcvc1702vsva1596": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 32
+    },
+    "xpio": 379
+  },
+  "xcvc1702vsva2197": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 44
+    },
+    "xpio": 487
+  },
+  "xcvc1802viva1596": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 32
+    },
+    "xpio": 379
+  },
+  "xcvc1802vsva2197": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 44
+    },
+    "xpio": 649
+  },
+  "xcvc1802vsvd1760": {
+    "transceivers": {
+      "GTY": 24
+    },
+    "xpio": 649
+  },
+  "xcvc1902viva1596": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 32
+    },
+    "xpio": 379
+  },
+  "xcvc1902vsva2197": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 44
+    },
+    "xpio": 649
+  },
+  "xcvc1902vsvd1760": {
+    "transceivers": {
+      "GTY": 24
+    },
+    "xpio": 649
+  },
+  "xcvc2602nsvh1369": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTYP": 16
+    },
+    "xpio": 325
+  },
+  "xcvc2602vsvh1760": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTYP": 16
+    },
+    "xpio": 487
+  },
+  "xcvc2802nsvh1369": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTYP": 16
+    },
+    "xpio": 325
+  },
+  "xcvc2802vsvh1760": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTYP": 16
+    },
+    "xpio": 487
+  },
+  "xcve1752nsvg1369": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 24
+    },
+    "xpio": 379
+  },
+  "xcve1752vsva1596": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 32
+    },
+    "xpio": 379
+  },
+  "xcve1752vsva2197": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 44
+    },
+    "xpio": 487
+  },
+  "xcve2002sbva484": {
+    "xpio": 163
+  },
+  "xcve2002sbva625": {
+    "xpio": 217
+  },
+  "xcve2002sfva784": {
+    "xpio": 217
+  },
+  "xcve2102sbva484": {
+    "xpio": 163
+  },
+  "xcve2102sbva625": {
+    "xpio": 217
+  },
+  "xcve2102sfva784": {
+    "xpio": 217
+  },
+  "xcve2202sfva784": {
+    "hd_io": 22,
+    "transceivers": {
+      "GTYP": 8
+    },
+    "xpio": 217
+  },
+  "xcve2302sfva784": {
+    "hd_io": 22,
+    "transceivers": {
+      "GTYP": 8
+    },
+    "xpio": 217
+  },
+  "xcve2602nsvh1369": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTYP": 16
+    },
+    "xpio": 325
+  },
+  "xcve2602vsvh1760": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTYP": 16
+    },
+    "xpio": 487
+  },
+  "xcve2802nsvh1369": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTYP": 16
+    },
+    "xpio": 325
+  },
+  "xcve2802vsvh1760": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTYP": 16
+    },
+    "xpio": 487
+  },
+  "xcvh1522vsva3697": {
+    "transceivers": {
+      "GTM": 20,
+      "GTYP": 52
+    },
+    "xpio": 703
+  },
+  "xcvh1542lsva4737": {
+    "transceivers": {
+      "GTM": 20,
+      "GTYP": 52
+    },
+    "xpio": 703
+  },
+  "xcvh1542vsva3697": {
+    "transceivers": {
+      "GTM": 20,
+      "GTYP": 52
+    },
+    "xpio": 703
+  },
+  "xcvh1582lsva4737": {
+    "transceivers": {
+      "GTM": 20,
+      "GTYP": 52
+    },
+    "xpio": 703
+  },
+  "xcvh1582vsva3697": {
+    "transceivers": {
+      "GTM": 20,
+      "GTYP": 52
+    },
+    "xpio": 703
+  },
+  "xcvh1742lsva4737": {
+    "transceivers": {
+      "GTM": 60,
+      "GTYP": 52
+    },
+    "xpio": 703
+  },
+  "xcvh1782lsva4737": {
+    "transceivers": {
+      "GTM": 60,
+      "GTYP": 52
+    },
+    "xpio": 703
+  },
+  "xcvm1102sfva784": {
+    "hd_io": 22,
+    "transceivers": {
+      "GTYP": 8
+    },
+    "xpio": 217
+  },
+  "xcvm1302nbvb1024": {
+    "hd_io": 22,
+    "transceivers": {
+      "GTY": 16
+    },
+    "xpio": 217
+  },
+  "xcvm1302nsvf1369": {
+    "hd_io": 22,
+    "transceivers": {
+      "GTY": 8
+    },
+    "xpio": 326
+  },
+  "xcvm1302vfvc1596": {
+    "hd_io": 22,
+    "transceivers": {
+      "GTY": 24
+    },
+    "xpio": 434
+  },
+  "xcvm1302vsvd1760": {
+    "transceivers": {
+      "GTY": 16
+    },
+    "xpio": 325
+  },
+  "xcvm1402nbvb1024": {
+    "hd_io": 22,
+    "transceivers": {
+      "GTY": 16
+    },
+    "xpio": 325
+  },
+  "xcvm1402nsvf1369": {
+    "hd_io": 22,
+    "transceivers": {
+      "GTY": 8
+    },
+    "xpio": 650
+  },
+  "xcvm1402vfvc1596": {
+    "hd_io": 22,
+    "transceivers": {
+      "GTY": 24
+    },
+    "xpio": 650
+  },
+  "xcvm1402vsvd1760": {
+    "transceivers": {
+      "GTY": 16
+    },
+    "xpio": 649
+  },
+  "xcvm1502nfvb1369": {
+    "hd_io": 22,
+    "transceivers": {
+      "GTY": 16
+    },
+    "xpio": 379
+  },
+  "xcvm1502vfvc1760": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 44
+    },
+    "xpio": 379
+  },
+  "xcvm1502vsva2197": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 44
+    },
+    "xpio": 487
+  },
+  "xcvm1802vfvc1760": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 44
+    },
+    "xpio": 379
+  },
+  "xcvm1802vsva2197": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 44
+    },
+    "xpio": 649
+  },
+  "xcvm1802vsvd1760": {
+    "transceivers": {
+      "GTY": 24
+    },
+    "xpio": 649
+  },
+  "xcvm2152nfvd1024": {
+    "hd_io": 22,
+    "transceivers": {
+      "GTM": 8,
+      "GTYP": 8
+    },
+    "xpio": 257
+  },
+  "xcvm2152nfvm1369": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTM": 8,
+      "GTYP": 8
+    },
+    "xpio": 385
+  },
+  "xcvm2202nsvh1369": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTYP": 16
+    },
+    "xpio": 325
+  },
+  "xcvm2302vfvf1760": {
+    "transceivers": {
+      "GTM": 36,
+      "GTYP": 8
+    },
+    "xpio": 325
+  },
+  "xcvm2502vsvi1760": {
+    "xpio": 649
+  },
+  "xcvm2602vsvi1760": {
+    "xpio": 649
+  },
+  "xcvm2902vfvf1760": {
+    "hd_io": 22,
+    "transceivers": {
+      "GTM": 36,
+      "GTYP": 8
+    },
+    "xpio": 325
+  },
+  "xcvp1002nfvi1369": {
+    "transceivers": {
+      "GTM": 24,
+      "GTY": 8
+    },
+    "xpio": 163
+  },
+  "xcvp1002vfvf1760": {
+    "transceivers": {
+      "GTM": 24,
+      "GTY": 8
+    },
+    "xpio": 325
+  },
+  "xcvp1002vsvc2021": {
+    "transceivers": {
+      "GTM": 24,
+      "GTY": 20
+    },
+    "xpio": 379
+  },
+  "xcvp1052nfvi1369": {
+    "transceivers": {
+      "GTM": 36,
+      "GTY": 8
+    },
+    "xpio": 163
+  },
+  "xcvp1052sbvj1369": {
+    "transceivers": {
+      "GTM": 16,
+      "GTY": 8
+    },
+    "xpio": 325
+  },
+  "xcvp1052vfvf1760": {
+    "transceivers": {
+      "GTM": 36,
+      "GTY": 8
+    },
+    "xpio": 325
+  },
+  "xcvp1052vsvc2021": {
+    "transceivers": {
+      "GTM": 48,
+      "GTY": 20
+    },
+    "xpio": 379
+  },
+  "xcvp1102vfvf1760": {
+    "transceivers": {
+      "GTM": 36,
+      "GTYP": 8
+    },
+    "xpio": 325
+  },
+  "xcvp1102vsva2785": {
+    "transceivers": {
+      "GTM": 64,
+      "GTYP": 8
+    },
+    "xpio": 487
+  },
+  "xcvp1202vsva2785": {
+    "transceivers": {
+      "GTM": 20,
+      "GTYP": 12
+    },
+    "xpio": 703
+  },
+  "xcvp1202vsvi1760": {
+    "xpio": 649
+  },
+  "xcvp1402vfvf1760": {
+    "hd_io": 22,
+    "transceivers": {
+      "GTM": 36,
+      "GTYP": 8
+    },
+    "xpio": 325
+  },
+  "xcvp1402vsva2785": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTM": 80,
+      "GTYP": 8
+    },
+    "xpio": 487
+  },
+  "xcvp1402vsva3340": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTM": 96,
+      "GTYP": 8
+    },
+    "xpio": 487
+  },
+  "xcvp1402vsvd2197": {
+    "transceivers": {
+      "GTM": 96,
+      "GTYP": 8
+    },
+    "xpio": 55
+  },
+  "xcvp1502vsva2785": {
+    "transceivers": {
+      "GTM": 56,
+      "GTYP": 12
+    },
+    "xpio": 703
+  },
+  "xcvp1502vsva3340": {
+    "transceivers": {
+      "GTM": 60,
+      "GTYP": 12
+    },
+    "xpio": 487
+  },
+  "xcvp1552vsva2785": {
+    "transceivers": {
+      "GTM": 16,
+      "GTYP": 52
+    },
+    "xpio": 703
+  },
+  "xcvp1552vsva3340": {
+    "transceivers": {
+      "GTM": 20,
+      "GTYP": 52
+    },
+    "xpio": 487
+  },
+  "xcvp1702vsva3340": {
+    "transceivers": {
+      "GTM": 88,
+      "GTYP": 12
+    },
+    "xpio": 487
+  },
+  "xcvp1702vsva5601": {
+    "transceivers": {
+      "GTM": 100,
+      "GTYP": 12
+    },
+    "xpio": 703
+  },
+  "xcvp1802lsvc4072": {
+    "transceivers": {
+      "GTM": 140,
+      "GTYP": 12
+    },
+    "xpio": 703
+  },
+  "xcvp1802vsva5601": {
+    "transceivers": {
+      "GTM": 140,
+      "GTYP": 12
+    },
+    "xpio": 703
+  },
+  "xcvp1902vsva6865": {
+    "hd_io": 88,
+    "transceivers": {
+      "GTM": 32,
+      "GTYP": 64
+    },
+    "xpio": 2332
+  },
+  "xcvp1902vsvb6865": {
+    "hd_io": 88,
+    "transceivers": {
+      "GTM": 32,
+      "GTYP": 128
+    },
+    "xpio": 1894
+  },
+  "xcvp2502vsva5601": {
+    "transceivers": {
+      "GTM": 60,
+      "GTYP": 12
+    },
+    "xpio": 703
+  },
+  "xcvp2502vsvb3340": {
+    "transceivers": {
+      "GTM": 60,
+      "GTYP": 12
+    },
+    "xpio": 703
+  },
+  "xcvp2802vsva5601": {
+    "transceivers": {
+      "GTM": 140,
+      "GTYP": 12
+    },
+    "xpio": 703
+  },
+  "xcvu065ffvc1517": {
+    "hp_io": 477,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 20,
+      "GTY": 20
+    }
+  },
+  "xcvu080ffva2104": {
+    "hp_io": 795,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 28,
+      "GTY": 24
+    }
+  },
+  "xcvu080ffvb1760": {
+    "hp_io": 663,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 32,
+      "GTY": 16
+    }
+  },
+  "xcvu080ffvb2104": {
+    "hp_io": 663,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 32,
+      "GTY": 32
+    }
+  },
+  "xcvu080ffvc1517": {
+    "hp_io": 477,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 20,
+      "GTY": 20
+    }
+  },
+  "xcvu080ffvd1517": {
+    "hp_io": 292,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 32,
+      "GTY": 32
+    }
+  },
+  "xcvu095ffva2104": {
+    "hp_io": 795,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 28,
+      "GTY": 24
+    }
+  },
+  "xcvu095ffvb1760": {
+    "hp_io": 663,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 32,
+      "GTY": 16
+    }
+  },
+  "xcvu095ffvb2104": {
+    "hp_io": 663,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 32,
+      "GTY": 32
+    }
+  },
+  "xcvu095ffvc1517": {
+    "hp_io": 477,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 20,
+      "GTY": 20
+    }
+  },
+  "xcvu095ffvc2104": {
+    "hp_io": 371,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 32,
+      "GTY": 32
+    }
+  },
+  "xcvu095ffvd1517": {
+    "hp_io": 292,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 32,
+      "GTY": 32
+    }
+  },
+  "xcvu11pflga2577": {
+    "hp_io": 458,
+    "transceivers": {
+      "GTY": 96
+    }
+  },
+  "xcvu11pflgb2104": {
+    "hp_io": 583,
+    "transceivers": {
+      "GTY": 76
+    }
+  },
+  "xcvu11pflgc2104": {
+    "hp_io": 424,
+    "transceivers": {
+      "GTY": 96
+    }
+  },
+  "xcvu11pflgf1924": {
+    "hp_io": 636,
+    "transceivers": {
+      "GTY": 64
+    }
+  },
+  "xcvu11pfsgd2104": {
+    "hp_io": 583,
+    "transceivers": {
+      "GTY": 76
+    }
+  },
+  "xcvu125flva2104": {
+    "hp_io": 795,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 28,
+      "GTY": 24
+    }
+  },
+  "xcvu125flvb1760": {
+    "hp_io": 663,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 36,
+      "GTY": 12
+    }
+  },
+  "xcvu125flvb2104": {
+    "hp_io": 663,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 40,
+      "GTY": 36
+    }
+  },
+  "xcvu125flvc2104": {
+    "hp_io": 371,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 40,
+      "GTY": 40
+    }
+  },
+  "xcvu125flvd1517": {
+    "hp_io": 292,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 40,
+      "GTY": 32
+    }
+  },
+  "xcvu13pfhga2104": {
+    "hp_io": 848,
+    "transceivers": {
+      "GTY": 52
+    }
+  },
+  "xcvu13pfhgb2104": {
+    "hp_io": 716,
+    "transceivers": {
+      "GTY": 76
+    }
+  },
+  "xcvu13pfhgc2104": {
+    "hp_io": 424,
+    "transceivers": {
+      "GTY": 104
+    }
+  },
+  "xcvu13pfigd2104": {
+    "hp_io": 689,
+    "transceivers": {
+      "GTY": 76
+    }
+  },
+  "xcvu13pflga2577": {
+    "hp_io": 458,
+    "transceivers": {
+      "GTY": 128
+    }
+  },
+  "xcvu13pfsga2577": {
+    "hp_io": 458,
+    "transceivers": {
+      "GTY": 128
+    }
+  },
+  "xcvu160flgb2104": {
+    "hp_io": 663,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 40,
+      "GTY": 36
+    }
+  },
+  "xcvu160flgc2104": {
+    "hp_io": 371,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 52,
+      "GTY": 52
+    }
+  },
+  "xcvu190flga2577": {
+    "hp_io": 458,
+    "transceivers": {
+      "GTH": 60,
+      "GTY": 60
+    }
+  },
+  "xcvu190flgb2104": {
+    "hp_io": 663,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 40,
+      "GTY": 36
+    }
+  },
+  "xcvu190flgc2104": {
+    "hp_io": 371,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 52,
+      "GTY": 52
+    }
+  },
+  "xcvu19pfsva3824": {
+    "hd_io": 96,
+    "hp_io": 2014,
+    "transceivers": {
+      "GTY": 48
+    }
+  },
+  "xcvu19pfsvb3824": {
+    "hd_io": 96,
+    "hp_io": 1696,
+    "transceivers": {
+      "GTY": 80
+    }
+  },
+  "xcvu23pfsvj1760": {
+    "hd_io": 72,
+    "hp_io": 583,
+    "transceivers": {
+      "GTM": 4,
+      "GTY": 34
+    }
+  },
+  "xcvu23pvsva1365": {
+    "hp_io": 371,
+    "transceivers": {
+      "GTM": 4,
+      "GTY": 34
+    }
+  },
+  "xcvu27pfigd2104": {
+    "hp_io": 689,
+    "transceivers": {
+      "GTM": 30,
+      "GTY": 16
+    }
+  },
+  "xcvu27pfsga2577": {
+    "hp_io": 458,
+    "transceivers": {
+      "GTM": 48,
+      "GTY": 32
+    }
+  },
+  "xcvu29pfigd2104": {
+    "hp_io": 689,
+    "transceivers": {
+      "GTM": 30,
+      "GTY": 16
+    }
+  },
+  "xcvu29pfsga2577": {
+    "hp_io": 458,
+    "transceivers": {
+      "GTM": 48,
+      "GTY": 32
+    }
+  },
+  "xcvu31pfsvh1924": {
+    "hp_io": 212,
+    "transceivers": {
+      "GTY": 32
+    }
+  },
+  "xcvu33pfsvh2104": {
+    "hp_io": 212,
+    "transceivers": {
+      "GTY": 32
+    }
+  },
+  "xcvu35pfsvh2104": {
+    "hp_io": 424,
+    "transceivers": {
+      "GTY": 64
+    }
+  },
+  "xcvu35pfsvh2892": {
+    "hp_io": 424,
+    "transceivers": {
+      "GTY": 64
+    }
+  },
+  "xcvu37pfsvh2892": {
+    "hp_io": 636,
+    "transceivers": {
+      "GTY": 96
+    }
+  },
+  "xcvu3pffvc1517": {
+    "hp_io": 530,
+    "transceivers": {
+      "GTY": 40
+    }
+  },
+  "xcvu440flga2892": {
+    "hp_io": 1431,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 48
+    }
+  },
+  "xcvu440flgb2377": {
+    "hp_io": 1272,
+    "hr_io": 54,
+    "transceivers": {
+      "GTH": 36
+    }
+  },
+  "xcvu45pfsvh2104": {
+    "hp_io": 424,
+    "transceivers": {
+      "GTY": 64
+    }
+  },
+  "xcvu45pfsvh2892": {
+    "hp_io": 424,
+    "transceivers": {
+      "GTY": 64
+    }
+  },
+  "xcvu47pfsvh2892": {
+    "hp_io": 636,
+    "transceivers": {
+      "GTY": 96
+    }
+  },
+  "xcvu57pfsvk2892": {
+    "hp_io": 636,
+    "transceivers": {
+      "GTM": 32,
+      "GTY": 32
+    }
+  },
+  "xcvu5pflva2104": {
+    "hp_io": 848,
+    "transceivers": {
+      "GTY": 52
+    }
+  },
+  "xcvu5pflvb2104": {
+    "hp_io": 716,
+    "transceivers": {
+      "GTY": 76
+    }
+  },
+  "xcvu5pflvc2104": {
+    "hp_io": 424,
+    "transceivers": {
+      "GTY": 80
+    }
+  },
+  "xcvu7pflva2104": {
+    "hp_io": 848,
+    "transceivers": {
+      "GTY": 52
+    }
+  },
+  "xcvu7pflvb2104": {
+    "hp_io": 716,
+    "transceivers": {
+      "GTY": 76
+    }
+  },
+  "xcvu7pflvc2104": {
+    "hp_io": 424,
+    "transceivers": {
+      "GTY": 80
+    }
+  },
+  "xcvu9pflga2104": {
+    "hp_io": 848,
+    "transceivers": {
+      "GTY": 52
+    }
+  },
+  "xcvu9pflga2577": {
+    "hp_io": 458,
+    "transceivers": {
+      "GTY": 120
+    }
+  },
+  "xcvu9pflgb2104": {
+    "hp_io": 716,
+    "transceivers": {
+      "GTY": 76
+    }
+  },
+  "xcvu9pflgc2104": {
+    "hp_io": 424,
+    "transceivers": {
+      "GTY": 104
+    }
+  },
+  "xcvu9pfsgd2104": {
+    "hp_io": 689,
+    "transceivers": {
+      "GTY": 76
+    }
+  },
+  "xczu11egffvb1517": {
+    "hd_io": 72,
+    "hp_io": 424,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xczu11egffvc1156": {
+    "hd_io": 48,
+    "hp_io": 318,
+    "transceivers": {
+      "GTH": 20
+    }
+  },
+  "xczu11egffvc1760": {
+    "hd_io": 96,
+    "hp_io": 424,
+    "transceivers": {
+      "GTH": 32,
+      "GTY": 16
+    }
+  },
+  "xczu11egffvf1517": {
+    "hd_io": 48,
+    "hp_io": 424,
+    "transceivers": {
+      "GTH": 32
+    }
+  },
+  "xczu15egffvb1156": {
+    "hd_io": 120,
+    "hp_io": 212,
+    "transceivers": {
+      "GTH": 24
+    }
+  },
+  "xczu15egffvc900": {
+    "hd_io": 48,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xczu17egffvb1517": {
+    "hd_io": 72,
+    "hp_io": 583,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xczu17egffvc1760": {
+    "hd_io": 96,
+    "hp_io": 424,
+    "transceivers": {
+      "GTH": 32,
+      "GTY": 16
+    }
+  },
+  "xczu17egffvd1760": {
+    "hd_io": 48,
+    "hp_io": 265,
+    "transceivers": {
+      "GTH": 44,
+      "GTY": 28
+    }
+  },
+  "xczu17egffve1924": {
+    "hd_io": 96,
+    "hp_io": 583,
+    "transceivers": {
+      "GTH": 44
+    }
+  },
+  "xczu19egffvb1517": {
+    "hd_io": 72,
+    "hp_io": 583,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xczu19egffvc1760": {
+    "hd_io": 96,
+    "hp_io": 424,
+    "transceivers": {
+      "GTH": 32,
+      "GTY": 16
+    }
+  },
+  "xczu19egffvd1760": {
+    "hd_io": 48,
+    "hp_io": 265,
+    "transceivers": {
+      "GTH": 44,
+      "GTY": 28
+    }
+  },
+  "xczu19egffve1924": {
+    "hd_io": 96,
+    "hp_io": 583,
+    "transceivers": {
+      "GTH": 44
+    }
+  },
+  "xczu1cgsbva484": {
+    "hd_io": 24,
+    "hp_io": 60
+  },
+  "xczu1cgsfva625": {
+    "hd_io": 24,
+    "hp_io": 159
+  },
+  "xczu1cgsfvc784": {
+    "hd_io": 24,
+    "hp_io": 159
+  },
+  "xczu1cgubva494": {
+    "hd_io": 24,
+    "hp_io": 60
+  },
+  "xczu1egsbva484": {
+    "hd_io": 24,
+    "hp_io": 60
+  },
+  "xczu1egsfva625": {
+    "hd_io": 24,
+    "hp_io": 159
+  },
+  "xczu1egsfvc784": {
+    "hd_io": 24,
+    "hp_io": 159
+  },
+  "xczu1egubva494": {
+    "hd_io": 24,
+    "hp_io": 60
+  },
+  "xczu21drffvd1156": {
+    "hd_io": 72,
+    "hp_io": 212,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xczu21drfsvd1156": {
+    "hd_io": 72,
+    "hp_io": 212,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xczu25drffve1156": {
+    "hd_io": 48,
+    "hp_io": 106,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu25drffvg1517": {
+    "hd_io": 48,
+    "hp_io": 305,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu25drfsve1156": {
+    "hd_io": 48,
+    "hp_io": 106,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu25drfsvg1517": {
+    "hd_io": 48,
+    "hp_io": 305,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu27drffve1156": {
+    "hd_io": 48,
+    "hp_io": 106,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu27drffvg1517": {
+    "hd_io": 48,
+    "hp_io": 305,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xczu27drfsve1156": {
+    "hd_io": 48,
+    "hp_io": 106,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu27drfsvg1517": {
+    "hd_io": 48,
+    "hp_io": 305,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xczu28drffve1156": {
+    "hd_io": 48,
+    "hp_io": 106,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu28drffvg1517": {
+    "hd_io": 48,
+    "hp_io": 305,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xczu28drfsve1156": {
+    "hd_io": 48,
+    "hp_io": 106,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu28drfsvg1517": {
+    "hd_io": 48,
+    "hp_io": 305,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xczu29drffvf1760": {
+    "hd_io": 96,
+    "hp_io": 318,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xczu29drfsvf1760": {
+    "hd_io": 96,
+    "hp_io": 318,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xczu2cgsbva484": {
+    "hd_io": 24,
+    "hp_io": 60
+  },
+  "xczu2cgsfva625": {
+    "hd_io": 24,
+    "hp_io": 159
+  },
+  "xczu2cgsfvc784": {
+    "hd_io": 96,
+    "hp_io": 159
+  },
+  "xczu2cgubva530": {
+    "hd_io": 24,
+    "hp_io": 60
+  },
+  "xczu2egsbva484": {
+    "hd_io": 24,
+    "hp_io": 60
+  },
+  "xczu2egsfva625": {
+    "hd_io": 24,
+    "hp_io": 159
+  },
+  "xczu2egsfvc784": {
+    "hd_io": 96,
+    "hp_io": 159
+  },
+  "xczu2egubva530": {
+    "hd_io": 24,
+    "hp_io": 60
+  },
+  "xczu39drffvf1760": {
+    "hd_io": 96,
+    "hp_io": 318,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xczu39drfsvf1760": {
+    "hd_io": 96,
+    "hp_io": 318,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xczu3cgsbva484": {
+    "hd_io": 24,
+    "hp_io": 60
+  },
+  "xczu3cgsfva625": {
+    "hd_io": 24,
+    "hp_io": 159
+  },
+  "xczu3cgsfvc784": {
+    "hd_io": 96,
+    "hp_io": 159
+  },
+  "xczu3cgubva530": {
+    "hd_io": 24,
+    "hp_io": 60
+  },
+  "xczu3egsbva484": {
+    "hd_io": 24,
+    "hp_io": 60
+  },
+  "xczu3egsfva625": {
+    "hd_io": 24,
+    "hp_io": 159
+  },
+  "xczu3egsfvc784": {
+    "hd_io": 96,
+    "hp_io": 159
+  },
+  "xczu3egubva530": {
+    "hd_io": 24,
+    "hp_io": 60
+  },
+  "xczu3tcgsfvc784": {
+    "hd_io": 72,
+    "hp_io": 53,
+    "transceivers": {
+      "GTH": 4
+    }
+  },
+  "xczu3tcgsfvd784": {
+    "hd_io": 72,
+    "hp_io": 53,
+    "transceivers": {
+      "GTH": 8
+    }
+  },
+  "xczu3tegsfvc784": {
+    "hd_io": 72,
+    "hp_io": 53,
+    "transceivers": {
+      "GTH": 4
+    }
+  },
+  "xczu3tegsfvd784": {
+    "hd_io": 72,
+    "hp_io": 53,
+    "transceivers": {
+      "GTH": 8
+    }
+  },
+  "xczu42drffve1156": {
+    "hd_io": 24,
+    "hp_io": 133,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu42drfsve1156": {
+    "hd_io": 24,
+    "hp_io": 133,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu43drffve1156": {
+    "hd_io": 48,
+    "hp_io": 106,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu43drffvg1517": {
+    "hd_io": 48,
+    "hp_io": 305,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xczu43drfsve1156": {
+    "hd_io": 48,
+    "hp_io": 106,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu43drfsvg1517": {
+    "hd_io": 48,
+    "hp_io": 305,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xczu46drffvh1760": {
+    "hd_io": 48,
+    "hp_io": 318,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xczu46drfsvh1760": {
+    "hd_io": 48,
+    "hp_io": 318,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xczu47drffve1156": {
+    "hd_io": 48,
+    "hp_io": 106,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu47drffvg1517": {
+    "hd_io": 48,
+    "hp_io": 305,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xczu47drfsve1156": {
+    "hd_io": 48,
+    "hp_io": 106,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu47drfsvg1517": {
+    "hd_io": 48,
+    "hp_io": 305,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xczu48drffve1156": {
+    "hd_io": 48,
+    "hp_io": 106,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu48drffvg1517": {
+    "hd_io": 48,
+    "hp_io": 305,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xczu48drfsve1156": {
+    "hd_io": 48,
+    "hp_io": 106,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu48drfsvg1517": {
+    "hd_io": 48,
+    "hp_io": 305,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xczu49drffvf1760": {
+    "hd_io": 96,
+    "hp_io": 318,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xczu49drfsvf1760": {
+    "hd_io": 96,
+    "hp_io": 318,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xczu4cgfbvb900": {
+    "hd_io": 48,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xczu4cgsfvc784": {
+    "hd_io": 96,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 4
+    }
+  },
+  "xczu4cgsfve784": {
+    "hd_io": 72,
+    "hp_io": 60,
+    "transceivers": {
+      "GTH": 8
+    }
+  },
+  "xczu4egfbvb900": {
+    "hd_io": 48,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xczu4egsfvc784": {
+    "hd_io": 96,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 4
+    }
+  },
+  "xczu4egsfve784": {
+    "hd_io": 72,
+    "hp_io": 60,
+    "transceivers": {
+      "GTH": 8
+    }
+  },
+  "xczu4evfbvb900": {
+    "hd_io": 48,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xczu4evsfvc784": {
+    "hd_io": 96,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 4
+    }
+  },
+  "xczu4evsfve784": {
+    "hd_io": 72,
+    "hp_io": 60,
+    "transceivers": {
+      "GTH": 8
+    }
+  },
+  "xczu5cgfbvb900": {
+    "hd_io": 48,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xczu5cgsfvc784": {
+    "hd_io": 96,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 4
+    }
+  },
+  "xczu5cgsfve784": {
+    "hd_io": 72,
+    "hp_io": 60,
+    "transceivers": {
+      "GTH": 8
+    }
+  },
+  "xczu5egfbvb900": {
+    "hd_io": 48,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xczu5egsfvc784": {
+    "hd_io": 96,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 4
+    }
+  },
+  "xczu5egsfve784": {
+    "hd_io": 72,
+    "hp_io": 60,
+    "transceivers": {
+      "GTH": 8
+    }
+  },
+  "xczu5evfbvb900": {
+    "hd_io": 48,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xczu5evsfvc784": {
+    "hd_io": 96,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 4
+    }
+  },
+  "xczu5evsfve784": {
+    "hd_io": 72,
+    "hp_io": 60,
+    "transceivers": {
+      "GTH": 8
+    }
+  },
+  "xczu63drffve1156": {
+    "hd_io": 24,
+    "hp_io": 133,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu63drfsve1156": {
+    "hd_io": 24,
+    "hp_io": 133,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu64drffve1156": {
+    "hd_io": 24,
+    "hp_io": 133,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu64drfsve1156": {
+    "hd_io": 24,
+    "hp_io": 133,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu65drffve1156": {
+    "hd_io": 24,
+    "hp_io": 133,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu65drfsve1156": {
+    "hd_io": 24,
+    "hp_io": 133,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu67drffve1156": {
+    "hd_io": 24,
+    "hp_io": 133,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu67drfsve1156": {
+    "hd_io": 24,
+    "hp_io": 133,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xczu6cgffvb1156": {
+    "hd_io": 120,
+    "hp_io": 212,
+    "transceivers": {
+      "GTH": 24
+    }
+  },
+  "xczu6cgffvc900": {
+    "hd_io": 48,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xczu6egffvb1156": {
+    "hd_io": 120,
+    "hp_io": 212,
+    "transceivers": {
+      "GTH": 24
+    }
+  },
+  "xczu6egffvc900": {
+    "hd_io": 48,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xczu7cgfbvb900": {
+    "hd_io": 48,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xczu7cgffvc1156": {
+    "hd_io": 48,
+    "hp_io": 318,
+    "transceivers": {
+      "GTH": 20
+    }
+  },
+  "xczu7cgffvf1517": {
+    "hd_io": 48,
+    "hp_io": 424,
+    "transceivers": {
+      "GTH": 24
+    }
+  },
+  "xczu7egfbvb900": {
+    "hd_io": 48,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xczu7egffvc1156": {
+    "hd_io": 48,
+    "hp_io": 318,
+    "transceivers": {
+      "GTH": 20
+    }
+  },
+  "xczu7egffvf1517": {
+    "hd_io": 48,
+    "hp_io": 424,
+    "transceivers": {
+      "GTH": 24
+    }
+  },
+  "xczu7evfbvb900": {
+    "hd_io": 48,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xczu7evffvc1156": {
+    "hd_io": 48,
+    "hp_io": 318,
+    "transceivers": {
+      "GTH": 20
+    }
+  },
+  "xczu7evffvf1517": {
+    "hd_io": 48,
+    "hp_io": 424,
+    "transceivers": {
+      "GTH": 24
+    }
+  },
+  "xczu9cgffvb1156": {
+    "hd_io": 120,
+    "hp_io": 212,
+    "transceivers": {
+      "GTH": 24
+    }
+  },
+  "xczu9cgffvc900": {
+    "hd_io": 48,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xczu9egffvb1156": {
+    "hd_io": 120,
+    "hp_io": 212,
+    "transceivers": {
+      "GTH": 24
+    }
+  },
+  "xczu9egffvc900": {
+    "hd_io": 48,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xqku15pffra1156": {
+    "hd_io": 48,
+    "hp_io": 477,
+    "transceivers": {
+      "GTH": 20,
+      "GTY": 8
+    }
+  },
+  "xqku15pffre1517": {
+    "hd_io": 96,
+    "hp_io": 424,
+    "transceivers": {
+      "GTH": 32,
+      "GTY": 24
+    }
+  },
+  "xqku5pffrb676": {
+    "hd_io": 72,
+    "hp_io": 212,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xqku5psfrb784": {
+    "hd_io": 96,
+    "hp_io": 212,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xqrku060cna1509": {
+    "hp_io": 526,
+    "hr_io": 106,
+    "transceivers": {
+      "GTH": 32
+    }
+  },
+  "xqrvc1902vsra2197": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 44
+    },
+    "xpio": 649
+  },
+  "xqrve2302ssra784": {
+    "hd_io": 22,
+    "transceivers": {
+      "GTYP": 8
+    },
+    "xpio": 217
+  },
+  "xqvc1702nsrg1369": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 24
+    },
+    "xpio": 379
+  },
+  "xqvc1702vsra1596": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 32
+    },
+    "xpio": 379
+  },
+  "xqvc1702vsra2197": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 44
+    },
+    "xpio": 487
+  },
+  "xqvc1902vira1596": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 32
+    },
+    "xpio": 379
+  },
+  "xqvc1902vsra2197": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 44
+    },
+    "xpio": 649
+  },
+  "xqvc1902vsrd1760": {
+    "transceivers": {
+      "GTY": 24
+    },
+    "xpio": 649
+  },
+  "xqve2102sbra484": {
+    "xpio": 163
+  },
+  "xqve2102ssra784": {
+    "xpio": 217
+  },
+  "xqve2302ssra784": {
+    "hd_io": 22,
+    "transceivers": {
+      "GTYP": 8
+    },
+    "xpio": 217
+  },
+  "xqvm1102ssra784": {
+    "hd_io": 22,
+    "transceivers": {
+      "GTYP": 8
+    },
+    "xpio": 217
+  },
+  "xqvm1402vsrc1596": {
+    "hd_io": 22,
+    "transceivers": {
+      "GTY": 24
+    },
+    "xpio": 650
+  },
+  "xqvm1402vsrd1760": {
+    "transceivers": {
+      "GTY": 16
+    },
+    "xpio": 649
+  },
+  "xqvm1502vsra2197": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 44
+    },
+    "xpio": 487
+  },
+  "xqvm1802vsra2197": {
+    "hd_io": 44,
+    "transceivers": {
+      "GTY": 44
+    },
+    "xpio": 649
+  },
+  "xqvm1802vsrd1760": {
+    "transceivers": {
+      "GTY": 24
+    },
+    "xpio": 649
+  },
+  "xqvp1052sbrj1369": {
+    "transceivers": {
+      "GTM": 16,
+      "GTY": 8
+    },
+    "xpio": 325
+  },
+  "xqvp1202vsra2785": {
+    "transceivers": {
+      "GTM": 20,
+      "GTYP": 12
+    },
+    "xpio": 703
+  },
+  "xqvp1702vsra3340": {
+    "transceivers": {
+      "GTM": 88,
+      "GTYP": 12
+    },
+    "xpio": 487
+  },
+  "xqvp2502vsrb3340": {
+    "transceivers": {
+      "GTM": 60,
+      "GTYP": 12
+    },
+    "xpio": 703
+  },
+  "xqvu11pflrc2104": {
+    "hp_io": 424,
+    "transceivers": {
+      "GTY": 96
+    }
+  },
+  "xqvu3pffrc1517": {
+    "hp_io": 530,
+    "transceivers": {
+      "GTY": 40
+    }
+  },
+  "xqvu7pflra2104": {
+    "hp_io": 848,
+    "transceivers": {
+      "GTY": 52
+    }
+  },
+  "xqvu7pflrb2104": {
+    "hp_io": 716,
+    "transceivers": {
+      "GTY": 76
+    }
+  },
+  "xqzu11egffrc1156": {
+    "hd_io": 48,
+    "hp_io": 318,
+    "transceivers": {
+      "GTH": 20
+    }
+  },
+  "xqzu11egffrc1760": {
+    "hd_io": 96,
+    "hp_io": 424,
+    "transceivers": {
+      "GTH": 32,
+      "GTY": 16
+    }
+  },
+  "xqzu15egffrb1156": {
+    "hd_io": 120,
+    "hp_io": 212,
+    "transceivers": {
+      "GTH": 24
+    }
+  },
+  "xqzu15egffrc900": {
+    "hd_io": 48,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xqzu19egffrb1517": {
+    "hd_io": 72,
+    "hp_io": 583,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xqzu19egffrc1760": {
+    "hd_io": 96,
+    "hp_io": 424,
+    "transceivers": {
+      "GTH": 32,
+      "GTY": 16
+    }
+  },
+  "xqzu21drffrd1156": {
+    "hd_io": 72,
+    "hp_io": 212,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xqzu28drffre1156": {
+    "hd_io": 48,
+    "hp_io": 106,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xqzu28drffrg1517": {
+    "hd_io": 48,
+    "hp_io": 305,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xqzu29drffrf1760": {
+    "hd_io": 96,
+    "hp_io": 318,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xqzu3egsfra484": {
+    "hd_io": 24,
+    "hp_io": 60
+  },
+  "xqzu3egsfrc784": {
+    "hd_io": 96,
+    "hp_io": 159
+  },
+  "xqzu48drffre1156": {
+    "hd_io": 48,
+    "hp_io": 106,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xqzu48drfsre1156": {
+    "hd_io": 48,
+    "hp_io": 106,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xqzu48drfsrg1517": {
+    "hd_io": 48,
+    "hp_io": 305,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xqzu49drfsrf1760": {
+    "hd_io": 96,
+    "hp_io": 318,
+    "transceivers": {
+      "GTY": 16
+    }
+  },
+  "xqzu5evffrb900": {
+    "hd_io": 48,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xqzu5evsfrc784": {
+    "hd_io": 96,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 4
+    }
+  },
+  "xqzu65drffre1156": {
+    "hd_io": 24,
+    "hp_io": 133,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xqzu67drffre1156": {
+    "hd_io": 24,
+    "hp_io": 133,
+    "transceivers": {
+      "GTY": 8
+    }
+  },
+  "xqzu7evffrb900": {
+    "hd_io": 48,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 16
+    }
+  },
+  "xqzu7evffrc1156": {
+    "hd_io": 48,
+    "hp_io": 318,
+    "transceivers": {
+      "GTH": 20
+    }
+  },
+  "xqzu9egffrb1156": {
+    "hd_io": 120,
+    "hp_io": 212,
+    "transceivers": {
+      "GTH": 24
+    }
+  },
+  "xqzu9egffrc900": {
+    "hd_io": 48,
+    "hp_io": 159,
+    "transceivers": {
+      "GTH": 16
+    }
+  }
+}

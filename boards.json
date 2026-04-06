@@ -10,8 +10,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Spartan-7",
       "part": "XC7S100-2FGGA676C",
       "vendor": "amd-xilinx"
     },
@@ -42,8 +40,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix-7",
       "part": "XC7A200T-2FBG676C",
       "vendor": "amd-xilinx"
     },
@@ -81,8 +77,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Kintex-7",
       "part": "XC7K325T-2FFG900C",
       "vendor": "amd-xilinx"
     },
@@ -121,8 +115,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Virtex-7",
       "part": "XC7VX485T-2FFG1761C",
       "vendor": "amd-xilinx"
     },
@@ -160,8 +152,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Virtex-7",
       "part": "XC7VX690T-2FFG1761C",
       "vendor": "amd-xilinx"
     },
@@ -190,9 +180,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Kintex UltraScale",
-      "part": "XCKU040-2FFVA1156-E",
+      "part": "XCKU040-2FFVA1156E",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -231,9 +219,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Kintex UltraScale+",
-      "part": "XCKU5P-2FFVB676-E",
+      "part": "XCKU5P-2FFVB676E",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -271,9 +257,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Virtex UltraScale",
-      "part": "XCVU095-2FFVA2104-E",
+      "part": "XCVU095-2FFVA2104E",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -312,9 +296,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Virtex UltraScale+",
-      "part": "XCVU9P-2LFLGA2104-E",
+      "part": "XCVU9P-L2FLGA2104E",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -347,9 +329,7 @@
     "vendor": "amd-xilinx",
     "price": null,
     "device": {
-      "type": "FPGA",
-      "family": "Virtex UltraScale+",
-      "part": "XCVU37P-2LFSVH2892-E",
+      "part": "XCVU37P-L2FSVH2892E",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -380,9 +360,7 @@
     "vendor": "amd-xilinx",
     "price": null,
     "device": {
-      "type": "FPGA",
-      "family": "Virtex UltraScale+",
-      "part": "XCVU29P-2LFSGA2577-E",
+      "part": "XCVU29P-L2FSGA2577E",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -415,8 +393,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
       "part": "XC7Z020-1CLG484C",
       "vendor": "amd-xilinx"
     },
@@ -445,8 +421,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
       "part": "XC7Z045-2FFG900C",
       "vendor": "amd-xilinx"
     },
@@ -485,9 +459,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU9EG-2FFVB1156-E",
+      "part": "XCZU9EG-2FFVB1156E",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -530,9 +502,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU7EV-2FFVC1156-E",
+      "part": "XCZU7EV-2FFVC1156E",
       "vendor": "amd-xilinx"
     },
     "video": {
@@ -562,9 +532,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU7EV-2FFVC1156-E",
+      "part": "XCZU7EV-2FFVC1156E",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -611,9 +579,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "ACAP",
-      "family": "Versal HBM",
-      "part": "XCVH1582-2MPVSVA3697-E-S",
+      "part": "XCVH1582-2MSEVSVA3697",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -647,9 +613,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "ACAP",
-      "family": "Versal Premium",
-      "part": "XCVP1202-2MPVSVA2785-E-S",
+      "part": "XCVP1202-2MSEVSVA2785",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -686,9 +650,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "ACAP",
-      "family": "Versal Premium",
-      "part": "XCVP1802-2MPLSVC4072-E-S",
+      "part": "XCVP1802-2MSELSVC4072",
       "vendor": "amd-xilinx"
     },
     "ethernet": [
@@ -717,9 +679,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "ACAP",
-      "family": "Versal AI",
-      "part": "XCVC1902-2MPVSVA2197-E-S",
+      "part": "XCVC1902-2MSEVSVA2197",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -758,9 +718,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "ACAP",
-      "family": "Versal Prime",
-      "part": "XCVM1802-2MPVSVA2197-E-S",
+      "part": "XCVM1802-2MSEVSVA2197",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -799,9 +757,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "ACAP",
-      "family": "Versal AI",
-      "part": "XCVE2802-2MPVSVH1760-E-S",
+      "part": "XCVE2802-2MSEVSVH1760",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -840,9 +796,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "RFSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU28DR-2FFVG1517-E",
+      "part": "XCZU28DR-2FFVG1517E",
       "vendor": "amd-xilinx"
     },
     "video": {
@@ -873,9 +827,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "RFSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU48DR-2FSVG1517-E",
+      "part": "XCZU48DR-2FSVG1517E",
       "vendor": "amd-xilinx"
     },
     "ethernet": [
@@ -903,9 +855,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "RFSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU49DR-2FFVF1760-E",
+      "part": "XCZU49DR-2FFVF1760E",
       "vendor": "amd-xilinx"
     },
     "ethernet": [
@@ -934,9 +884,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "RFSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU67DR-2FSVE1156-I",
+      "part": "XCZU67DR-2FSVE1156I",
       "vendor": "amd-xilinx"
     },
     "ethernet": [
@@ -964,9 +912,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "RFSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU57DR-2FSVE1156-I",
+      "part": "XCZU57DR-2FSVE1156I",
       "vendor": "amd-xilinx"
     },
     "ethernet": [
@@ -994,9 +940,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCK26-2LVSFVC784-C",
+      "part": "XCK26-2LVSFVC784C",
       "vendor": "amd-xilinx"
     },
     "video": {
@@ -1025,9 +969,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCK26-2LVSFVC784-C",
+      "part": "XCK26-2LVSFVC784C",
       "vendor": "amd-xilinx"
     },
     "video": {
@@ -1058,9 +1000,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU1CG-1SBVA484-E",
+      "part": "XCZU1CG-1SBVA484E",
       "vendor": "amd-xilinx"
     },
     "video": {
@@ -1087,8 +1027,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Spartan-7",
       "part": "XC7S25-1FTGB196C",
       "vendor": "amd-xilinx"
     }
@@ -1104,9 +1042,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU7EV-1FBVB900-E",
+      "part": "XCZU7EV-1FBVB900E",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -1147,9 +1083,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU3EG-1SFVC784-E",
+      "part": "XCZU3EG-1SFVC784E",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -1190,9 +1124,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU9EG-1FFVC900-E",
+      "part": "XCZU9EG-1FFVC900E",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -1233,8 +1165,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
       "part": "XC7Z007S-1CLG225C",
       "vendor": "amd-xilinx"
     },
@@ -1264,8 +1194,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
       "part": "XC7Z010-1CLG225C",
       "vendor": "amd-xilinx"
     },
@@ -1295,8 +1223,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix-7",
       "part": "XC7A35TI-1LCSG324I",
       "vendor": "amd-xilinx"
     },
@@ -1322,8 +1248,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix-7",
       "part": "XC7A100T-1CSG324I",
       "vendor": "amd-xilinx"
     },
@@ -1343,8 +1267,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix-7",
       "part": "XC7A200T-1SBG484C",
       "vendor": "amd-xilinx"
     },
@@ -1375,8 +1297,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Kintex-7",
       "part": "XC7K325T-2FFG900C",
       "vendor": "amd-xilinx"
     },
@@ -1407,8 +1327,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
       "part": "XC7Z010-1CLG400C",
       "vendor": "amd-xilinx"
     },
@@ -1434,8 +1352,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
       "part": "XC7Z020-1CLG484C",
       "vendor": "amd-xilinx"
     },
@@ -1461,9 +1377,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU5EV-1SFVC784-E",
+      "part": "XCZU5EV-1SFVC784E",
       "vendor": "amd-xilinx"
     },
     "video": {
@@ -1501,8 +1415,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix-7",
       "part": "XC7A100T-1CSG324C",
       "vendor": "amd-xilinx"
     },
@@ -1527,8 +1439,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Spartan-7",
       "part": "XC7S25-1CSGA324C",
       "vendor": "amd-xilinx"
     },
@@ -1545,8 +1455,6 @@
     "vendor": "digilent",
     "price": null,
     "device": {
-      "type": "FPGA",
-      "family": "Virtex-7",
       "part": "XC7VX690T-3FFG1761C",
       "vendor": "amd-xilinx"
     },
@@ -1579,8 +1487,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
       "part": "XC7Z010-1CLG400C",
       "vendor": "amd-xilinx"
     },
@@ -1610,8 +1516,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
       "part": "XC7Z020-1CLG400C",
       "vendor": "amd-xilinx"
     },
@@ -1641,8 +1545,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix-7",
       "part": "XC7A35T-1CPG236C",
       "vendor": "amd-xilinx"
     },
@@ -1661,8 +1563,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Spartan-7",
       "part": "XC7S25-1CSGA225C",
       "vendor": "amd-xilinx"
     },
@@ -1681,8 +1581,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "CertusPro-NX",
       "part": "LFCPNX-100-9LFG672C",
       "vendor": "lattice"
     },
@@ -1703,8 +1601,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "CertusPro-NX",
       "part": "LFCPNX-100-9LFG672I",
       "vendor": "lattice"
     },
@@ -1737,8 +1633,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
       "part": "XC7Z020-1CLG400C",
       "vendor": "amd-xilinx"
     },
@@ -1769,9 +1663,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU5EG-1SFVC784-E",
+      "part": "XCZU5EG-1SFVC784E",
       "vendor": "amd-xilinx"
     },
     "video": {
@@ -1802,9 +1694,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Kintex UltraScale",
-      "part": "XCKU115",
+      "part": "XCKU115-2FLVA1517E",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -1829,8 +1719,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
       "part": "XCZU1CG-1SBVA484E",
       "vendor": "amd-xilinx"
     },
@@ -1855,9 +1743,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix UltraScale+",
-      "part": "XCAU15P-2FFVB676-E",
+      "part": "XCAU15P-2FFVB676E",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -1894,9 +1780,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU7EV-1FBVB900-E",
+      "part": "XCZU7EV-1FBVB900E",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -1941,9 +1825,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU3EG-1SFVA625-I",
+      "part": "XCZU3EG-1SFVA625I",
       "vendor": "amd-xilinx"
     },
     "video": {
@@ -1965,8 +1847,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
       "part": "XC7Z010-1CLG400C",
       "vendor": "amd-xilinx"
     },
@@ -1986,8 +1866,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
       "part": "XC7Z020-3CLG400E",
       "vendor": "amd-xilinx"
     },
@@ -2007,8 +1885,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
       "part": "XC7Z020-1CLG484C",
       "vendor": "amd-xilinx"
     },
@@ -2037,8 +1913,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
       "part": "XC7Z010-1CLG400C",
       "vendor": "amd-xilinx"
     },
@@ -2067,8 +1941,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
       "part": "XC7Z010-1CLG400C",
       "vendor": "amd-xilinx"
     },
@@ -2090,9 +1962,7 @@
     "vendor": "avnet",
     "price": null,
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
-      "part": "XC7Z007S",
+      "part": "XC7Z007S-1CLG225C",
       "vendor": "amd-xilinx"
     },
     "expansion": {
@@ -2115,8 +1985,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
       "part": "XC7Z012S-1CLG485C",
       "vendor": "amd-xilinx"
     },
@@ -2142,8 +2010,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix-7",
       "part": "XC7A75T-1FGG484C",
       "vendor": "amd-xilinx"
     },
@@ -2163,9 +2029,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix UltraScale+",
-      "part": "XCAU25P-2FFVB676-E",
+      "part": "XCAU25P-2FFVB676E",
       "vendor": "amd-xilinx"
     },
     "networking": {
@@ -2187,8 +2051,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Kintex-7",
       "part": "XC7K70T-1FBG676C",
       "vendor": "amd-xilinx"
     },
@@ -2207,8 +2069,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Cyclone V E",
       "part": "5CEFA4F23C8N",
       "vendor": "altera"
     }
@@ -2224,8 +2084,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix-7",
       "part": "XC7A15T-1FTG256C",
       "vendor": "amd-xilinx"
     }
@@ -2241,8 +2099,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix-7",
       "part": "XC7A75T-1FGG484C",
       "vendor": "amd-xilinx"
     }
@@ -2258,8 +2114,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Spartan-7",
       "part": "XC7S50-1CSGA324C",
       "vendor": "amd-xilinx"
     }
@@ -2275,8 +2129,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix-7",
       "part": "XC7A200T-1FBG484C",
       "vendor": "amd-xilinx"
     }
@@ -2292,8 +2144,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix-7",
       "part": "XC7A75T-1FGG484C",
       "vendor": "amd-xilinx"
     }
@@ -2309,8 +2159,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix-7",
       "part": "XC7A200T-1FBG484C",
       "vendor": "amd-xilinx"
     }
@@ -2326,8 +2174,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix-7",
       "part": "XC7A75T-1FGG484C",
       "vendor": "amd-xilinx"
     }
@@ -2343,8 +2189,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Kintex-7",
       "part": "XC7K160T-1FFG676C",
       "vendor": "amd-xilinx"
     }
@@ -2360,8 +2204,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Kintex-7",
       "part": "XC7K410T-1FFG676C",
       "vendor": "amd-xilinx"
     }
@@ -2377,9 +2219,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix UltraScale+",
-      "part": "XCAU25P-2FFVB676-E",
+      "part": "XCAU25P-2FFVB676E",
       "vendor": "amd-xilinx"
     }
   },
@@ -2394,9 +2234,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Kintex UltraScale",
-      "part": "XCKU060-1FFVA1517-C",
+      "part": "XCKU060-1FFVA1517C",
       "vendor": "amd-xilinx"
     }
   },
@@ -2411,9 +2249,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Kintex UltraScale",
-      "part": "XCKU115-1FLVA1517-C",
+      "part": "XCKU115-1FLVA1517C",
       "vendor": "amd-xilinx"
     }
   },
@@ -2428,8 +2264,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Cyclone V E",
       "part": "5CEFA2U19C8N",
       "vendor": "altera"
     }
@@ -2445,8 +2279,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Cyclone V E",
       "part": "5CEFA4F23C7N",
       "vendor": "altera"
     }
@@ -2462,8 +2294,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
       "part": "XC7Z010-1CLG400C",
       "vendor": "amd-xilinx"
     },
@@ -2488,9 +2318,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU5EV-2SFVC784-E",
+      "part": "XCZU5EV-2SFVC784E",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -2530,8 +2358,6 @@
     "vendor": "bittware",
     "price": null,
     "device": {
-      "type": "SoC",
-      "family": "Arria-10",
       "part": "10AS066N3F40E2SG",
       "vendor": "altera"
     },
@@ -2557,9 +2383,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Titanium",
-      "part": "Ti180M484I3",
+      "part": "Ti180J484I3",
       "vendor": "efinix"
     },
     "video": {
@@ -2587,8 +2411,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Stratix-V GX",
       "part": "5SGXEA7N2F45C2N",
       "vendor": "altera"
     },
@@ -2618,8 +2440,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Stratix-10",
       "part": "1SX280HU2F50E1VG",
       "vendor": "altera"
     },
@@ -2645,9 +2465,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Max-10",
-      "part": "10M50DA",
+      "part": "10M50DAF484C7G",
       "vendor": "altera"
     },
     "expansion": {
@@ -2665,9 +2483,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU9EG-2FFVB1156-I",
+      "part": "XCZU9EG-2FFVB1156I",
       "vendor": "amd-xilinx"
     },
     "video": {
@@ -2700,9 +2516,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU5EV-2SFVC784-I",
+      "part": "XCZU5EV-2SFVC784I",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -2742,9 +2556,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU19EG-2FFVC1760-I",
+      "part": "XCZU19EG-2FFVC1760I",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -2785,9 +2597,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU19EG-2FFVC1760-I",
+      "part": "XCZU19EG-2FFVC1760I",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -2821,9 +2631,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU2CG-1SFVC784-E",
+      "part": "XCZU2CG-1SFVC784E",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -2855,9 +2663,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix UltraScale+",
-      "part": "XCAU15P-2FFVB676-I",
+      "part": "XCAU15P-2FFVB676I",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -2888,8 +2694,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix-7",
       "part": "XC7A100T-2LFGG484E",
       "vendor": "amd-xilinx"
     },
@@ -2912,8 +2716,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix-7",
       "part": "XC7A200T-2FBG484C",
       "vendor": "amd-xilinx"
     },
@@ -2936,8 +2738,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix-7",
       "part": "XC7A200T-2FBG484I",
       "vendor": "amd-xilinx"
     },
@@ -2959,8 +2759,6 @@
       "currency": "CHF"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
       "part": "XC7Z030-3FBG676E",
       "vendor": "amd-xilinx"
     },
@@ -2979,8 +2777,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Kintex-7",
       "part": "XC7K160T-1FBG676C",
       "vendor": "amd-xilinx"
     }
@@ -2996,8 +2792,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix-7",
       "part": "XC7A50T-1FGG484C",
       "vendor": "amd-xilinx"
     },
@@ -3024,8 +2818,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix-7",
       "part": "XC7A35T-1FTG256C",
       "vendor": "amd-xilinx"
     },
@@ -3044,8 +2836,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Spartan-7",
       "part": "XC7S50-1CSGA324C",
       "vendor": "amd-xilinx"
     }
@@ -3061,8 +2851,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Kintex-7",
       "part": "XC7K160T-1FBG676C",
       "vendor": "amd-xilinx"
     },
@@ -3088,8 +2876,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix-7",
       "part": "XC7A100T-2CSG324C",
       "vendor": "amd-xilinx"
     }
@@ -3105,8 +2891,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Kintex-7",
       "part": "XC7K160T-1FBG676C",
       "vendor": "amd-xilinx"
     },
@@ -3125,8 +2909,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Kintex-7",
       "part": "XC7K70T-1FBG484C",
       "vendor": "amd-xilinx"
     }
@@ -3142,8 +2924,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
       "part": "XC7Z020-1CLG484C",
       "vendor": "amd-xilinx"
     }
@@ -3159,8 +2939,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix-7",
       "part": "XC7A200T-2FBG484I",
       "vendor": "amd-xilinx"
     },
@@ -3179,8 +2957,8 @@
     }
   },
   {
-    "id": "EMC\u00c3\u201a\u00c2\u00b2-MPFS250",
-    "name": "EMC\u00c3\u201a\u00c2\u00b2-MPFS250",
+    "id": "EMCÃ‚Â²-MPFS250",
+    "name": "EMCÃ‚Â²-MPFS250",
     "status": "active",
     "url": "https://store.sundance.com/product/emc2-mpfs250/",
     "vendor": "sundance",
@@ -3189,8 +2967,6 @@
       "currency": "GBP"
     },
     "device": {
-      "type": "FPGA",
-      "family": "PolarFire",
       "part": "MPFS250T-FCVG484E",
       "vendor": "microchip"
     },
@@ -3218,8 +2994,8 @@
     }
   },
   {
-    "id": "EMC\u00c3\u201a\u00c2\u00b2-KU040",
-    "name": "EMC\u00c3\u201a\u00c2\u00b2-KU040",
+    "id": "EMCÃ‚Â²-KU040",
+    "name": "EMCÃ‚Â²-KU040",
     "status": "active",
     "url": "https://store.sundance.com/product/emc2-ku040/",
     "vendor": "sundance",
@@ -3228,9 +3004,7 @@
       "currency": "GBP"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Kintex UltraScale",
-      "part": "XCKU040-1SFVA784-I",
+      "part": "XCKU040-1SFVA784I",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -3257,8 +3031,8 @@
     }
   },
   {
-    "id": "EMC\u00c3\u201a\u00c2\u00b2-ZU5EV",
-    "name": "EMC\u00c3\u201a\u00c2\u00b2-ZU5EV",
+    "id": "EMCÃ‚Â²-ZU5EV",
+    "name": "EMCÃ‚Â²-ZU5EV",
     "status": "active",
     "url": "https://store.sundance.com/product/emc2-zu5ev/",
     "vendor": "sundance",
@@ -3267,9 +3041,7 @@
       "currency": "GBP"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU5EV-1SFVC784-I",
+      "part": "XCZU5EV-1SFVC784I",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -3296,8 +3068,8 @@
     }
   },
   {
-    "id": "EMC\u00c3\u201a\u00c2\u00b2-ZU2CG",
-    "name": "EMC\u00c3\u201a\u00c2\u00b2-ZU2CG",
+    "id": "EMCÃ‚Â²-ZU2CG",
+    "name": "EMCÃ‚Â²-ZU2CG",
     "status": "active",
     "url": "https://store.sundance.com/product/emc2-zu2cg/",
     "vendor": "sundance",
@@ -3306,9 +3078,7 @@
       "currency": "GBP"
     },
     "device": {
-      "type": "MPSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU2CG-1SFVC784-I",
+      "part": "XCZU2CG-1SFVC784I",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -3345,8 +3115,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
       "part": "XC7Z010-1CLG400C",
       "vendor": "amd-xilinx"
     },
@@ -3375,8 +3143,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Artix-7",
       "part": "XC7A35T-1FTG256C",
       "vendor": "amd-xilinx"
     },
@@ -3399,8 +3165,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Spartan-7",
       "part": "XC7S15-1FTGB196C",
       "vendor": "amd-xilinx"
     },
@@ -3420,8 +3184,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Spartan-7",
       "part": "XC7S50-1CSGA324C",
       "vendor": "amd-xilinx"
     },
@@ -3446,8 +3208,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
       "part": "XC7Z007S-1CLG400C",
       "vendor": "amd-xilinx"
     },
@@ -3473,9 +3233,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "RFSoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU48DR-1FFVG1517-E",
+      "part": "XCZU48DR-1FFVG1517E",
       "vendor": "amd-xilinx"
     },
     "video": {
@@ -3490,57 +3248,6 @@
     }
   },
   {
-    "id": "Dragon-L FPGA board",
-    "name": "Dragon-L FPGA board",
-    "status": "active",
-    "url": "https://www.knjn.com/ShopBoards_PCI.html",
-    "vendor": "knjn",
-    "price": {
-      "value": 149.95,
-      "currency": "USD"
-    },
-    "device": {
-      "type": "FPGA",
-      "family": "Spartan-6",
-      "part": "XC6SLX25T",
-      "vendor": "amd-xilinx"
-    },
-    "pcie": [
-      {
-        "type": "Edge",
-        "lanes": 1,
-        "gen": 2
-      }
-    ],
-    "video": {
-      "hdmi_out": 3
-    }
-  },
-  {
-    "id": "Dragon-E FPGA board",
-    "name": "Dragon-E FPGA board",
-    "status": "active",
-    "url": "https://www.knjn.com/ShopBoards_PCI.html",
-    "vendor": "knjn",
-    "price": {
-      "value": 249.95,
-      "currency": "USD"
-    },
-    "device": {
-      "type": "FPGA",
-      "family": "Virtex-5",
-      "part": "XC5VLX20T",
-      "vendor": "amd-xilinx"
-    },
-    "pcie": [
-      {
-        "type": "Edge",
-        "lanes": 1,
-        "gen": 2
-      }
-    ]
-  },
-  {
     "id": "STEMlab 125-14",
     "name": "STEMlab 125-14",
     "status": "active",
@@ -3551,8 +3258,6 @@
       "currency": "EUR"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq-7000",
       "part": "XC7Z010-1CLG225C",
       "vendor": "amd-xilinx"
     },
@@ -3577,9 +3282,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Versal HBM",
-      "part": "XCV80-2MHPLSVA4737-E-S",
+      "part": "XCV80-2MSELSVA4737",
       "vendor": "amd-xilinx"
     },
     "pcie": [

@@ -1,0 +1,909 @@
+[
+  {
+    "family": "Trion",
+    "description": "Efinix Trion low-power FPGA family using Quantum fabric. Format: T{density}{package}[{sip}]{temp}{speed}.",
+    "fields": [
+      {
+        "id": "prefix",
+        "label": "Prefix",
+        "description": "Fixed prefix identifying the Trion family.",
+        "length": 1,
+        "type": "fixed",
+        "value": "T"
+      },
+      {
+        "id": "density",
+        "label": "Density",
+        "description": "Device logic density.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "4",
+            "label": "T4",
+            "description": "3,888 logic elements."
+          },
+          {
+            "value": "8",
+            "label": "T8",
+            "description": "7,384 logic elements."
+          },
+          {
+            "value": "13",
+            "label": "T13",
+            "description": "12,828 logic elements."
+          },
+          {
+            "value": "20",
+            "label": "T20",
+            "description": "19,728 logic elements."
+          },
+          {
+            "value": "35",
+            "label": "T35",
+            "description": "31,680 logic elements."
+          },
+          {
+            "value": "55",
+            "label": "T55",
+            "description": "54,195 logic elements."
+          },
+          {
+            "value": "85",
+            "label": "T85",
+            "description": "84,096 logic elements."
+          },
+          {
+            "value": "120",
+            "label": "T120",
+            "description": "112,128 logic elements."
+          }
+        ]
+      },
+      {
+        "id": "package",
+        "label": "Package",
+        "description": "Package type and pin count.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "F169",
+            "label": "F169",
+            "description": "FBGA 169-pin.",
+            "when": {
+              "density": [
+                "13",
+                "20"
+              ]
+            }
+          },
+          {
+            "value": "F256",
+            "label": "F256",
+            "description": "FBGA 256-pin.",
+            "when": {
+              "density": [
+                "13",
+                "20",
+                "35"
+              ]
+            }
+          },
+          {
+            "value": "F324",
+            "label": "F324",
+            "description": "FBGA 324-pin.",
+            "when": {
+              "density": [
+                "20",
+                "35",
+                "55",
+                "85",
+                "120"
+              ]
+            }
+          },
+          {
+            "value": "F400",
+            "label": "F400",
+            "description": "FBGA 400-pin.",
+            "when": {
+              "density": [
+                "20",
+                "35"
+              ]
+            }
+          },
+          {
+            "value": "F484",
+            "label": "F484",
+            "description": "FBGA 484-pin.",
+            "when": {
+              "density": [
+                "55",
+                "85",
+                "120"
+              ]
+            }
+          },
+          {
+            "value": "F49",
+            "label": "F49",
+            "description": "FBGA 49-pin.",
+            "when": {
+              "density": [
+                "4",
+                "8"
+              ]
+            }
+          },
+          {
+            "value": "F576",
+            "label": "F576",
+            "description": "FBGA 576-pin.",
+            "when": {
+              "density": [
+                "55",
+                "85",
+                "120"
+              ]
+            }
+          },
+          {
+            "value": "F81",
+            "label": "F81",
+            "description": "FBGA 81-pin.",
+            "when": {
+              "density": [
+                "4",
+                "8"
+              ]
+            }
+          },
+          {
+            "value": "Q100",
+            "label": "Q100",
+            "description": "LQFP 100-pin.",
+            "when": {
+              "density": [
+                "13",
+                "20"
+              ]
+            }
+          },
+          {
+            "value": "Q144",
+            "label": "Q144",
+            "description": "LQFP 144-pin.",
+            "when": {
+              "density": [
+                "8",
+                "20"
+              ]
+            }
+          },
+          {
+            "value": "W80",
+            "label": "W80",
+            "description": "WLCSP 80-pin.",
+            "when": {
+              "density": [
+                "20"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "sip",
+        "label": "System-in-Package",
+        "description": "Optional integrated flash module.",
+        "length": null,
+        "type": "select",
+        "required": false,
+        "options": [
+          {
+            "value": "F3",
+            "label": "F3",
+            "description": "SPI flash.",
+            "when": {
+              "package": [
+                "Q100"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "temp",
+        "label": "Temperature Grade",
+        "description": "Operating temperature range.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "C",
+            "label": "Commercial",
+            "description": "0°C to +85°C."
+          },
+          {
+            "value": "I",
+            "label": "Industrial",
+            "description": "-40°C to +100°C."
+          },
+          {
+            "value": "Q",
+            "label": "Automotive",
+            "description": "-40°C to +105°C.",
+            "when": {
+              "density": [
+                "13",
+                "20"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "speed",
+        "label": "Speed Grade",
+        "description": "Fabric speed grade. Higher numbers are faster.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "2",
+            "label": "Speed 2",
+            "description": "Base speed grade.",
+            "when": {
+              "density": [
+                "4",
+                "8"
+              ]
+            }
+          },
+          {
+            "value": "3",
+            "label": "Speed 3",
+            "description": "Standard speed grade.",
+            "when": {
+              "density": [
+                "8",
+                "13",
+                "20",
+                "35",
+                "55",
+                "85",
+                "120"
+              ]
+            }
+          },
+          {
+            "value": "4",
+            "label": "Speed 4",
+            "description": "Fastest speed grade.",
+            "when": {
+              "density": [
+                "8",
+                "13",
+                "20",
+                "35",
+                "55",
+                "85",
+                "120"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "type": "FPGA"
+  },
+  {
+    "family": "Titanium",
+    "description": "Efinix Titanium high-performance FPGA family with 16 nm process and integrated MIPI, LVDS, DDR hard IP. Format: Ti{density}{package}[{sip}]{temp}{speed}.",
+    "fields": [
+      {
+        "id": "prefix",
+        "label": "Prefix",
+        "description": "Fixed prefix identifying the Titanium family.",
+        "length": 2,
+        "type": "fixed",
+        "value": "Ti"
+      },
+      {
+        "id": "density",
+        "label": "Density",
+        "description": "Device logic density.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "35",
+            "label": "Ti35",
+            "description": "36,176 logic elements."
+          },
+          {
+            "value": "60",
+            "label": "Ti60",
+            "description": "62,016 logic elements."
+          },
+          {
+            "value": "85",
+            "label": "Ti85",
+            "description": "83,232 logic elements."
+          },
+          {
+            "value": "90",
+            "label": "Ti90",
+            "description": "92,534 logic elements."
+          },
+          {
+            "value": "120",
+            "label": "Ti120",
+            "description": "123,379 logic elements."
+          },
+          {
+            "value": "135",
+            "label": "Ti135",
+            "description": "132,192 logic elements."
+          },
+          {
+            "value": "165",
+            "label": "Ti165",
+            "description": "162,800 logic elements."
+          },
+          {
+            "value": "180",
+            "label": "Ti180",
+            "description": "176,256 logic elements."
+          },
+          {
+            "value": "240",
+            "label": "Ti240",
+            "description": "236,888 logic elements."
+          },
+          {
+            "value": "375",
+            "label": "Ti375",
+            "description": "370,137 logic elements."
+          }
+        ]
+      },
+      {
+        "id": "package",
+        "label": "Package",
+        "description": "Package type and pin count.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "C529",
+            "label": "C529",
+            "description": "FBGA 529-pin.",
+            "when": {
+              "density": [
+                "165",
+                "240",
+                "375"
+              ]
+            }
+          },
+          {
+            "value": "F100",
+            "label": "F100",
+            "description": "FBGA 100-pin.",
+            "when": {
+              "density": [
+                "35",
+                "60"
+              ]
+            }
+          },
+          {
+            "value": "F225",
+            "label": "F225",
+            "description": "FBGA 225-pin.",
+            "when": {
+              "density": [
+                "35",
+                "60"
+              ]
+            }
+          },
+          {
+            "value": "F256",
+            "label": "F256",
+            "description": "FBGA 256-pin.",
+            "when": {
+              "density": [
+                "35",
+                "60"
+              ]
+            }
+          },
+          {
+            "value": "G400",
+            "label": "G400",
+            "description": "FBGA 400-pin.",
+            "when": {
+              "density": [
+                "90",
+                "120",
+                "180"
+              ]
+            }
+          },
+          {
+            "value": "G529",
+            "label": "G529",
+            "description": "FBGA 529-pin.",
+            "when": {
+              "density": [
+                "90",
+                "120",
+                "180"
+              ]
+            }
+          },
+          {
+            "value": "J361",
+            "label": "J361",
+            "description": "FBGA 361-pin.",
+            "when": {
+              "density": [
+                "90",
+                "120",
+                "180"
+              ]
+            }
+          },
+          {
+            "value": "J484",
+            "label": "J484",
+            "description": "FBGA 484-pin.",
+            "when": {
+              "density": [
+                "90",
+                "120",
+                "180"
+              ]
+            }
+          },
+          {
+            "value": "N1156",
+            "label": "N1156",
+            "description": "FBGA 1156-pin.",
+            "when": {
+              "density": [
+                "165",
+                "240",
+                "375"
+              ]
+            }
+          },
+          {
+            "value": "N441",
+            "label": "N441",
+            "description": "FBGA 441-pin.",
+            "when": {
+              "density": [
+                "85",
+                "135"
+              ]
+            }
+          },
+          {
+            "value": "N484",
+            "label": "N484",
+            "description": "FBGA 484-pin.",
+            "when": {
+              "density": [
+                "85",
+                "135",
+                "165",
+                "240",
+                "375"
+              ]
+            }
+          },
+          {
+            "value": "N576",
+            "label": "N576",
+            "description": "FBGA 576-pin.",
+            "when": {
+              "density": [
+                "85",
+                "135"
+              ]
+            }
+          },
+          {
+            "value": "N676",
+            "label": "N676",
+            "description": "FBGA 676-pin.",
+            "when": {
+              "density": [
+                "85",
+                "135"
+              ]
+            }
+          },
+          {
+            "value": "N900",
+            "label": "N900",
+            "description": "FBGA 900-pin.",
+            "when": {
+              "density": [
+                "165",
+                "240",
+                "375"
+              ]
+            }
+          },
+          {
+            "value": "V64",
+            "label": "V64",
+            "description": "WLCSP 64-pin.",
+            "when": {
+              "density": [
+                "60"
+              ]
+            }
+          },
+          {
+            "value": "W64",
+            "label": "W64",
+            "description": "WLCSP 64-pin.",
+            "when": {
+              "density": [
+                "60"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "sip",
+        "label": "System-in-Package",
+        "description": "Optional integrated memory/flash module.",
+        "length": null,
+        "type": "select",
+        "required": false,
+        "options": [
+          {
+            "value": "S3F2",
+            "label": "S3F2",
+            "description": "HyperRAM and flash.",
+            "when": {
+              "density": [
+                "35",
+                "60"
+              ]
+            }
+          },
+          {
+            "value": "D1",
+            "label": "D1",
+            "description": "LPDDR4x SDRAM.",
+            "when": {
+              "density": [
+                "180"
+              ]
+            }
+          },
+          {
+            "value": "D2F4",
+            "label": "D2F4",
+            "description": "SPI flash and LPDDR4/4x DRAM.",
+            "when": {
+              "density": [
+                "135"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "temp",
+        "label": "Temperature Grade",
+        "description": "Operating temperature range.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "C",
+            "label": "Commercial",
+            "description": "0°C to +85°C."
+          },
+          {
+            "value": "I",
+            "label": "Industrial",
+            "description": "-40°C to +100°C."
+          },
+          {
+            "value": "Q",
+            "label": "Automotive",
+            "description": "-40°C to +125°C.",
+            "when": {
+              "density": [
+                "60",
+                "90",
+                "120",
+                "180"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "speed",
+        "label": "Speed Grade",
+        "description": "Fabric speed grade. Higher numbers are faster. L suffix indicates low power.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "3",
+            "label": "Speed 3",
+            "description": "Standard speed grade."
+          },
+          {
+            "value": "3L",
+            "label": "Speed 3L",
+            "description": "Standard speed, low power."
+          },
+          {
+            "value": "4",
+            "label": "Speed 4",
+            "description": "Fastest speed grade."
+          },
+          {
+            "value": "4L",
+            "label": "Speed 4L",
+            "description": "Fastest speed, low power."
+          }
+        ]
+      }
+    ],
+    "type": "FPGA"
+  },
+  {
+    "family": "Topaz",
+    "description": "Efinix Topaz high-performance FPGA family. Format: Tz{density}{package}{temp}{speed}.",
+    "fields": [
+      {
+        "id": "prefix",
+        "label": "Prefix",
+        "description": "Fixed prefix identifying the Topaz family.",
+        "length": 2,
+        "type": "fixed",
+        "value": "Tz"
+      },
+      {
+        "id": "density",
+        "label": "Density",
+        "description": "Device logic density.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "50",
+            "label": "Tz50",
+            "description": "52,160 logic elements."
+          },
+          {
+            "value": "75",
+            "label": "Tz75",
+            "description": "75,520 logic elements."
+          },
+          {
+            "value": "100",
+            "label": "Tz100",
+            "description": "101,440 logic elements."
+          },
+          {
+            "value": "110",
+            "label": "Tz110",
+            "description": "120,584 logic elements."
+          },
+          {
+            "value": "170",
+            "label": "Tz170",
+            "description": "161,008 logic elements."
+          },
+          {
+            "value": "200",
+            "label": "Tz200",
+            "description": "215,360 logic elements."
+          },
+          {
+            "value": "325",
+            "label": "Tz325",
+            "description": "326,080 logic elements."
+          }
+        ]
+      },
+      {
+        "id": "package",
+        "label": "Package",
+        "description": "FBGA package type and pin count.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "C529",
+            "label": "C529",
+            "description": "FBGA 529-pin.",
+            "when": {
+              "density": [
+                "200",
+                "325"
+              ]
+            }
+          },
+          {
+            "value": "F100",
+            "label": "F100",
+            "description": "FBGA 100-pin.",
+            "when": {
+              "density": [
+                "50"
+              ]
+            }
+          },
+          {
+            "value": "F225",
+            "label": "F225",
+            "description": "FBGA 225-pin.",
+            "when": {
+              "density": [
+                "50"
+              ]
+            }
+          },
+          {
+            "value": "F256",
+            "label": "F256",
+            "description": "FBGA 256-pin.",
+            "when": {
+              "density": [
+                "50"
+              ]
+            }
+          },
+          {
+            "value": "G400",
+            "label": "G400",
+            "description": "FBGA 400-pin.",
+            "when": {
+              "density": [
+                "110",
+                "170"
+              ]
+            }
+          },
+          {
+            "value": "J361",
+            "label": "J361",
+            "description": "FBGA 361-pin.",
+            "when": {
+              "density": [
+                "110",
+                "170"
+              ]
+            }
+          },
+          {
+            "value": "J484",
+            "label": "J484",
+            "description": "FBGA 484-pin.",
+            "when": {
+              "density": [
+                "110",
+                "170"
+              ]
+            }
+          },
+          {
+            "value": "N441",
+            "label": "N441",
+            "description": "FBGA 441-pin.",
+            "when": {
+              "density": [
+                "75",
+                "100"
+              ]
+            }
+          },
+          {
+            "value": "N484",
+            "label": "N484",
+            "description": "FBGA 484-pin.",
+            "when": {
+              "density": [
+                "75",
+                "100",
+                "200",
+                "325"
+              ]
+            }
+          },
+          {
+            "value": "N576",
+            "label": "N576",
+            "description": "FBGA 576-pin.",
+            "when": {
+              "density": [
+                "75",
+                "100"
+              ]
+            }
+          },
+          {
+            "value": "N676",
+            "label": "N676",
+            "description": "FBGA 676-pin.",
+            "when": {
+              "density": [
+                "75",
+                "100"
+              ]
+            }
+          },
+          {
+            "value": "N900",
+            "label": "N900",
+            "description": "FBGA 900-pin.",
+            "when": {
+              "density": [
+                "200",
+                "325"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "temp",
+        "label": "Temperature Grade",
+        "description": "Operating temperature range.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "C",
+            "label": "Commercial",
+            "description": "0°C to +85°C."
+          },
+          {
+            "value": "I",
+            "label": "Industrial",
+            "description": "-40°C to +100°C."
+          }
+        ]
+      },
+      {
+        "id": "speed",
+        "label": "Speed Grade",
+        "description": "Fabric speed grade. Higher numbers are faster.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "2",
+            "label": "Speed 2",
+            "description": "Standard speed grade."
+          },
+          {
+            "value": "3",
+            "label": "Speed 3",
+            "description": "Fastest speed grade."
+          }
+        ]
+      }
+    ],
+    "type": "FPGA"
+  }
+]

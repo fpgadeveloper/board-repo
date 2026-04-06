@@ -1,0 +1,85 @@
+{
+  "Versal": {
+    "gt_types": [
+      { "type": "GTY", "max_rate_gbps": 32.75, "max_count": 44 },
+      { "type": "GTYP", "max_rate_gbps": 32.75, "max_count": 52 },
+      { "type": "GTM", "max_rate_gbps": 58.0, "max_count": 52 }
+    ],
+    "peak_bandwidth_gbps": 6032
+  },
+  "Versal Premium": {
+    "gt_types": [
+      { "type": "GTY", "max_rate_gbps": 32.75, "max_count": 28 },
+      { "type": "GTYP", "max_rate_gbps": 32.75, "max_count": 28 },
+      { "type": "GTM", "max_rate_gbps": 112.0, "max_count": 70 }
+    ],
+    "peak_bandwidth_gbps": 9040
+  },
+  "Virtex UltraScale+": {
+    "gt_types": [
+      { "type": "GTY", "max_rate_gbps": 32.75, "max_count": 128 },
+      { "type": "GTM", "max_rate_gbps": 58.0, "max_count": 48 }
+    ],
+    "peak_bandwidth_gbps": 8384
+  },
+  "Kintex UltraScale+": {
+    "gt_types": [
+      { "type": "GTH", "max_rate_gbps": 16.3, "max_count": 44 },
+      { "type": "GTY", "max_rate_gbps": 32.75, "max_count": 32 }
+    ],
+    "peak_bandwidth_gbps": 3268
+  },
+  "Virtex UltraScale": {
+    "gt_types": [
+      { "type": "GTH", "max_rate_gbps": 16.3, "max_count": 60 },
+      { "type": "GTY", "max_rate_gbps": 30.5, "max_count": 60 }
+    ],
+    "peak_bandwidth_gbps": 5616
+  },
+  "Kintex UltraScale": {
+    "gt_types": [
+      { "type": "GTH", "max_rate_gbps": 16.3, "max_count": 64 }
+    ],
+    "peak_bandwidth_gbps": 2086
+  },
+  "Virtex-7": {
+    "gt_types": [
+      { "type": "GTX", "max_rate_gbps": 12.5, "max_count": 56 },
+      { "type": "GTH", "max_rate_gbps": 13.1, "max_count": 96 },
+      { "type": "GTZ", "max_rate_gbps": 28.05, "max_count": 16 }
+    ],
+    "peak_bandwidth_gbps": 2784
+  },
+  "Kintex-7": {
+    "gt_types": [
+      { "type": "GTX", "max_rate_gbps": 12.5, "max_count": 32 }
+    ],
+    "peak_bandwidth_gbps": 800
+  },
+  "Artix-7": {
+    "gt_types": [
+      { "type": "GTP", "max_rate_gbps": 6.6, "max_count": 16 }
+    ],
+    "peak_bandwidth_gbps": 211
+  },
+  "Zynq UltraScale+": {
+    "gt_types": [
+      { "type": "GTR", "max_rate_gbps": 6.0, "max_count": 4 },
+      { "type": "GTH", "max_rate_gbps": 16.3, "max_count": 44 },
+      { "type": "GTY", "max_rate_gbps": 32.75, "max_count": 28 }
+    ],
+    "peak_bandwidth_gbps": 3268
+  },
+  "Zynq-7000": {
+    "gt_types": [
+      { "type": "GTX", "max_rate_gbps": 12.5, "max_count": 16 }
+    ],
+    "peak_bandwidth_gbps": 400
+  },
+  "Spartan-6": {
+    "gt_types": [
+      { "type": "GTP", "max_rate_gbps": 3.2, "max_count": 8 }
+    ],
+    "peak_bandwidth_gbps": 51
+  }
+}

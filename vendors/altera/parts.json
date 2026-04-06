@@ -1,0 +1,2215 @@
+[
+  {
+    "family": "Agilex 7",
+    "description": "Altera Agilex 7 FPGA and SoC FPGA part number model. Fields are ordered as they appear in the part number string. Each field has a fixed length (in characters) and a list of valid options. Options may include a 'when' clause to restrict them based on a prior field selection — this drives conditional filtering in the UI.",
+    "fields": [
+      {
+        "id": "family_signature",
+        "label": "Family Signature",
+        "description": "Fixed prefix identifying the Agilex device family.",
+        "length": 2,
+        "type": "fixed",
+        "value": "AG"
+      },
+      {
+        "id": "series",
+        "label": "Series",
+        "description": "Identifies the device series, which determines the available transceiver tiles and memory options.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "F",
+            "label": "F-Series",
+            "description": "General-purpose FPGA with F-Tile, E-Tile, and P-Tile transceiver options."
+          },
+          {
+            "value": "I",
+            "label": "I-Series",
+            "description": "Networking-optimized FPGA with F-Tile and R-Tile transceivers."
+          },
+          {
+            "value": "M",
+            "label": "M-Series",
+            "description": "FPGA with integrated HBM2e high-bandwidth memory."
+          }
+        ]
+      },
+      {
+        "id": "fabric_spec",
+        "label": "Fabric Specification",
+        "description": "Identifies the specific fabric and tile configuration within the selected series.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "A",
+            "label": "Config A",
+            "description": "Base fabric configuration.",
+            "when": {
+              "series": [
+                "F",
+                "I",
+                "M"
+              ]
+            }
+          },
+          {
+            "value": "B",
+            "label": "Config B",
+            "description": "Standard multi-tile fabric configuration.",
+            "when": {
+              "series": [
+                "F",
+                "I"
+              ]
+            }
+          },
+          {
+            "value": "C",
+            "label": "Config C",
+            "description": "Alternate tile arrangement.",
+            "when": {
+              "series": [
+                "F"
+              ]
+            }
+          },
+          {
+            "value": "D",
+            "label": "Config D",
+            "description": "Extended tile configuration.",
+            "when": {
+              "series": [
+                "F",
+                "I"
+              ]
+            }
+          },
+          {
+            "value": "E",
+            "label": "Config E",
+            "description": "High-density tile arrangement.",
+            "when": {
+              "series": [
+                "F"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "density",
+        "label": "Density",
+        "description": "Three-digit code representing the device logic density (approximate ALM count).",
+        "length": 3,
+        "type": "select",
+        "options": [
+          {
+            "value": "014",
+            "label": "14K",
+            "description": "~14K ALMs",
+            "when": {
+              "series": [
+                "F"
+              ]
+            }
+          },
+          {
+            "value": "020",
+            "label": "20K",
+            "description": "~20K ALMs",
+            "when": {
+              "series": [
+                "F"
+              ]
+            }
+          },
+          {
+            "value": "027",
+            "label": "27K",
+            "description": "~27K ALMs",
+            "when": {
+              "series": [
+                "F",
+                "I"
+              ]
+            }
+          },
+          {
+            "value": "032",
+            "label": "32K",
+            "description": "~32K ALMs",
+            "when": {
+              "series": [
+                "F",
+                "I"
+              ]
+            }
+          },
+          {
+            "value": "047",
+            "label": "47K",
+            "description": "~47K ALMs",
+            "when": {
+              "series": [
+                "F",
+                "I",
+                "M"
+              ]
+            }
+          },
+          {
+            "value": "057",
+            "label": "57K",
+            "description": "~57K ALMs",
+            "when": {
+              "series": [
+                "F",
+                "I",
+                "M"
+              ]
+            }
+          },
+          {
+            "value": "085",
+            "label": "85K",
+            "description": "~85K ALMs",
+            "when": {
+              "series": [
+                "F",
+                "I",
+                "M"
+              ]
+            }
+          },
+          {
+            "value": "112",
+            "label": "112K",
+            "description": "~112K ALMs",
+            "when": {
+              "series": [
+                "F",
+                "I",
+                "M"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "package_code",
+        "label": "Package Code",
+        "description": "Single letter identifying the package type.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "R",
+            "label": "BGA",
+            "description": "Ball Grid Array package."
+          },
+          {
+            "value": "F",
+            "label": "FBGA",
+            "description": "Fine-pitch Ball Grid Array package."
+          },
+          {
+            "value": "H",
+            "label": "HBGA",
+            "description": "High-density Ball Grid Array package."
+          }
+        ]
+      },
+      {
+        "id": "package_size",
+        "label": "Package Size",
+        "description": "Two-digit code identifying the specific package size (ball count / body dimensions).",
+        "length": 2,
+        "type": "select",
+        "options": [
+          {
+            "value": "17",
+            "label": "17mm",
+            "description": "17mm body, smaller pin count package.",
+            "when": {
+              "package_code": [
+                "R",
+                "F"
+              ]
+            }
+          },
+          {
+            "value": "25",
+            "label": "25mm",
+            "description": "25mm body, mid-range pin count package.",
+            "when": {
+              "package_code": [
+                "R"
+              ]
+            }
+          },
+          {
+            "value": "35",
+            "label": "35mm",
+            "description": "35mm body, high pin count package.",
+            "when": {
+              "package_code": [
+                "R",
+                "H"
+              ]
+            }
+          },
+          {
+            "value": "45",
+            "label": "45mm",
+            "description": "45mm body, very high pin count package.",
+            "when": {
+              "package_code": [
+                "R",
+                "H"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "tile_speed_grade",
+        "label": "Tile Speed Grade",
+        "description": "Performance grade of the transceiver tiles. 1 is fastest, 3 is slowest.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "1",
+            "label": "Speed grade 1",
+            "description": "Fastest — highest transceiver performance."
+          },
+          {
+            "value": "2",
+            "label": "Speed grade 2",
+            "description": "Standard — balanced performance."
+          },
+          {
+            "value": "3",
+            "label": "Speed grade 3",
+            "description": "Economy — lowest transceiver performance."
+          }
+        ]
+      },
+      {
+        "id": "operating_temperature",
+        "label": "Operating Temperature",
+        "description": "Junction temperature range the device is rated for.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "I",
+            "label": "Industrial",
+            "description": "0°C to 100°C junction temperature."
+          },
+          {
+            "value": "C",
+            "label": "Commercial",
+            "description": "0°C to 85°C junction temperature."
+          },
+          {
+            "value": "E",
+            "label": "Extended Industrial",
+            "description": "–40°C to 125°C junction temperature."
+          }
+        ]
+      },
+      {
+        "id": "core_speed_power",
+        "label": "Core Speed / Power",
+        "description": "Performance and power grade of the core fabric. 1 is fastest/highest power, 3 is slowest/lowest power.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "1",
+            "label": "Grade 1",
+            "description": "Highest core performance, highest power."
+          },
+          {
+            "value": "2",
+            "label": "Grade 2",
+            "description": "Balanced core performance and power."
+          },
+          {
+            "value": "3",
+            "label": "Grade 3",
+            "description": "Lower power, reduced core performance."
+          }
+        ]
+      },
+      {
+        "id": "suffix",
+        "label": "Suffix",
+        "description": "Optional suffix providing additional product information. May be omitted.",
+        "length": null,
+        "type": "select",
+        "required": false,
+        "options": [
+          {
+            "value": "",
+            "label": "None",
+            "description": "No suffix."
+          },
+          {
+            "value": "ES",
+            "label": "Engineering Sample",
+            "description": "Pre-production engineering sample device."
+          },
+          {
+            "value": "V",
+            "label": "Pb-free",
+            "description": "RoHS-compliant, lead-free package."
+          }
+        ]
+      }
+    ],
+    "type": "FPGA"
+  },
+  {
+    "family": "Agilex 5",
+    "description": "Altera Agilex 5 FPGA and SoC FPGA part number model. Example: A5ED065BB32AE5SR0. Fields are ordered as they appear in the ordering code string.",
+    "fields": [
+      {
+        "id": "family_prefix",
+        "label": "Family Prefix",
+        "description": "Fixed prefix identifying the Agilex 5 device family.",
+        "length": 2,
+        "type": "fixed",
+        "value": "A5"
+      },
+      {
+        "id": "device_type",
+        "label": "Device Type",
+        "description": "Indicates whether the device is a standalone FPGA or a SoC with integrated hard processor system.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "E",
+            "label": "FPGA",
+            "description": "Standalone FPGA device."
+          },
+          {
+            "value": "S",
+            "label": "SoC FPGA",
+            "description": "System-on-Chip with integrated dual-core Arm Cortex-A76 and Cortex-A55 processors."
+          }
+        ]
+      },
+      {
+        "id": "sub_series",
+        "label": "Sub-Series",
+        "description": "Identifies the sub-series within the Agilex 5 family.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "D",
+            "label": "D-Series",
+            "description": "First generation Agilex 5 devices."
+          }
+        ]
+      },
+      {
+        "id": "density",
+        "label": "Density",
+        "description": "Three-digit code representing the device logic density (approximate K logic elements).",
+        "length": 3,
+        "type": "select",
+        "options": [
+          {
+            "value": "024",
+            "label": "24K",
+            "description": "~24K logic elements."
+          },
+          {
+            "value": "032",
+            "label": "32K",
+            "description": "~32K logic elements."
+          },
+          {
+            "value": "044",
+            "label": "44K",
+            "description": "~44K logic elements."
+          },
+          {
+            "value": "065",
+            "label": "65K",
+            "description": "~65K logic elements."
+          },
+          {
+            "value": "084",
+            "label": "84K",
+            "description": "~84K logic elements."
+          },
+          {
+            "value": "116",
+            "label": "116K",
+            "description": "~116K logic elements."
+          },
+          {
+            "value": "138",
+            "label": "138K",
+            "description": "~138K logic elements."
+          },
+          {
+            "value": "176",
+            "label": "176K",
+            "description": "~176K logic elements."
+          }
+        ]
+      },
+      {
+        "id": "feature_set",
+        "label": "Feature Set",
+        "description": "Identifies the feature tier of the device.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "A",
+            "label": "Base",
+            "description": "Base feature set."
+          },
+          {
+            "value": "B",
+            "label": "Enhanced",
+            "description": "Enhanced feature set with additional I/O and transceiver capabilities."
+          },
+          {
+            "value": "C",
+            "label": "Premium",
+            "description": "Premium feature set with maximum I/O and transceiver capabilities."
+          }
+        ]
+      },
+      {
+        "id": "package_code",
+        "label": "Package Code",
+        "description": "Single letter identifying the package type.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "B",
+            "label": "BGA",
+            "description": "Ball Grid Array package."
+          },
+          {
+            "value": "F",
+            "label": "FBGA",
+            "description": "Fine-pitch Ball Grid Array package."
+          }
+        ]
+      },
+      {
+        "id": "pin_count",
+        "label": "Pin Count",
+        "description": "Two-digit code representing the package body size in mm.",
+        "length": 2,
+        "type": "select",
+        "options": [
+          {
+            "value": "17",
+            "label": "17mm",
+            "description": "17mm body size package."
+          },
+          {
+            "value": "19",
+            "label": "19mm",
+            "description": "19mm body size package."
+          },
+          {
+            "value": "22",
+            "label": "22mm",
+            "description": "22mm body size package."
+          },
+          {
+            "value": "25",
+            "label": "25mm",
+            "description": "25mm body size package."
+          },
+          {
+            "value": "29",
+            "label": "29mm",
+            "description": "29mm body size package."
+          },
+          {
+            "value": "32",
+            "label": "32mm",
+            "description": "32mm body size package."
+          }
+        ]
+      },
+      {
+        "id": "tile_speed_grade",
+        "label": "Tile Speed Grade",
+        "description": "Two-character code indicating the transceiver tile performance grade. Higher number = faster.",
+        "length": 2,
+        "type": "select",
+        "options": [
+          {
+            "value": "E3",
+            "label": "E3",
+            "description": "Transceiver tile speed grade E3."
+          },
+          {
+            "value": "E4",
+            "label": "E4",
+            "description": "Transceiver tile speed grade E4."
+          },
+          {
+            "value": "E5",
+            "label": "E5",
+            "description": "Transceiver tile speed grade E5."
+          },
+          {
+            "value": "E6",
+            "label": "E6",
+            "description": "Transceiver tile speed grade E6."
+          }
+        ]
+      },
+      {
+        "id": "operating_temperature",
+        "label": "Operating Temperature",
+        "description": "Temperature grade the device is rated for.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "I",
+            "label": "Industrial",
+            "description": "Industrial temperature range."
+          },
+          {
+            "value": "C",
+            "label": "Commercial",
+            "description": "Commercial temperature range."
+          },
+          {
+            "value": "M",
+            "label": "Military",
+            "description": "Military temperature range."
+          }
+        ]
+      },
+      {
+        "id": "core_speed_grade",
+        "label": "Core Speed Grade",
+        "description": "Single digit indicating core fabric performance. Lower number = higher performance.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "1",
+            "label": "Grade 1",
+            "description": "Highest core performance."
+          },
+          {
+            "value": "2",
+            "label": "Grade 2",
+            "description": "Standard core performance."
+          },
+          {
+            "value": "3",
+            "label": "Grade 3",
+            "description": "Lower core performance."
+          },
+          {
+            "value": "4",
+            "label": "Grade 4",
+            "description": "Economy core performance."
+          }
+        ]
+      },
+      {
+        "id": "suffix",
+        "label": "Suffix",
+        "description": "Optional suffix for additional product information (e.g., SR0, V). May be omitted.",
+        "length": null,
+        "type": "select",
+        "required": false,
+        "options": [
+          {
+            "value": "",
+            "label": "None",
+            "description": "No suffix."
+          },
+          {
+            "value": "SR0",
+            "label": "SR0",
+            "description": "SR0 production variant."
+          },
+          {
+            "value": "V",
+            "label": "Pb-free",
+            "description": "RoHS-compliant, lead-free package."
+          },
+          {
+            "value": "ES",
+            "label": "Engineering Sample",
+            "description": "Pre-production engineering sample device."
+          }
+        ]
+      }
+    ],
+    "type": "FPGA"
+  },
+  {
+    "family": "Cyclone V",
+    "description": "Altera Cyclone V FPGA and SoC FPGA part number model. Format: 5C{sub_family}{density}{package}{pin_count}{speed}N. Example: 5CEFA4F23C8N.",
+    "fields": [
+      {
+        "id": "prefix",
+        "label": "Prefix",
+        "description": "Fixed prefix identifying the Cyclone V family.",
+        "length": 2,
+        "type": "fixed",
+        "value": "5C"
+      },
+      {
+        "id": "sub_family",
+        "label": "Sub-Family",
+        "description": "Identifies the Cyclone V sub-family and variant.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "EFA",
+            "label": "Cyclone V E (FA)",
+            "description": "Cyclone V E FPGA, FA variant — logic-optimized with no transceivers."
+          },
+          {
+            "value": "EBA",
+            "label": "Cyclone V E (BA)",
+            "description": "Cyclone V E FPGA, BA variant."
+          },
+          {
+            "value": "GXA",
+            "label": "Cyclone V GX",
+            "description": "Cyclone V GX FPGA with transceiver support."
+          },
+          {
+            "value": "GXB",
+            "label": "Cyclone V GX (B)",
+            "description": "Cyclone V GX FPGA, B variant with transceivers."
+          },
+          {
+            "value": "GXC",
+            "label": "Cyclone V GX (C)",
+            "description": "Cyclone V GX FPGA, C variant with transceivers."
+          },
+          {
+            "value": "SXA",
+            "label": "Cyclone V SX SoC",
+            "description": "Cyclone V SX SoC with ARM Cortex-A9 and transceivers."
+          },
+          {
+            "value": "SXB",
+            "label": "Cyclone V SX SoC (B)",
+            "description": "Cyclone V SX SoC, B variant."
+          },
+          {
+            "value": "SXC",
+            "label": "Cyclone V SX SoC (C)",
+            "description": "Cyclone V SX SoC, C variant."
+          },
+          {
+            "value": "SEA",
+            "label": "Cyclone V SE SoC",
+            "description": "Cyclone V SE SoC with ARM Cortex-A9, no transceivers."
+          },
+          {
+            "value": "SEB",
+            "label": "Cyclone V SE SoC (B)",
+            "description": "Cyclone V SE SoC, B variant."
+          },
+          {
+            "value": "STA",
+            "label": "Cyclone V ST SoC",
+            "description": "Cyclone V ST SoC with ARM Cortex-A9, standard feature set."
+          },
+          {
+            "value": "STB",
+            "label": "Cyclone V ST SoC (B)",
+            "description": "Cyclone V ST SoC, B variant."
+          }
+        ]
+      },
+      {
+        "id": "density",
+        "label": "Density",
+        "description": "Device density designator. Represents relative logic capacity within the sub-family.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "2",
+            "label": "Density 2",
+            "description": "Smallest density option."
+          },
+          {
+            "value": "4",
+            "label": "Density 4",
+            "description": "Low-mid density."
+          },
+          {
+            "value": "5",
+            "label": "Density 5",
+            "description": "Mid density."
+          },
+          {
+            "value": "6",
+            "label": "Density 6",
+            "description": "Mid-high density."
+          },
+          {
+            "value": "7",
+            "label": "Density 7",
+            "description": "High density."
+          },
+          {
+            "value": "9",
+            "label": "Density 9",
+            "description": "Highest density."
+          }
+        ]
+      },
+      {
+        "id": "package",
+        "label": "Package",
+        "description": "Package type and pin count code.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "F23",
+            "label": "FBGA 484-pin",
+            "description": "Fine-pitch BGA, 484 pins (23mm body)."
+          },
+          {
+            "value": "F27",
+            "label": "FBGA 672-pin",
+            "description": "Fine-pitch BGA, 672 pins (27mm body)."
+          },
+          {
+            "value": "F31",
+            "label": "FBGA 896-pin",
+            "description": "Fine-pitch BGA, 896 pins (31mm body)."
+          },
+          {
+            "value": "U15",
+            "label": "UBGA 169-pin",
+            "description": "Ultra-fine-pitch BGA, 169 pins (15mm body)."
+          },
+          {
+            "value": "U19",
+            "label": "UBGA 324-pin",
+            "description": "Ultra-fine-pitch BGA, 324 pins (19mm body)."
+          },
+          {
+            "value": "I7",
+            "label": "IBGA 176-pin",
+            "description": "Industrial BGA, 176 pins."
+          },
+          {
+            "value": "M13",
+            "label": "MBGA 256-pin",
+            "description": "Micro BGA, 256 pins (13mm body)."
+          },
+          {
+            "value": "H6",
+            "label": "BGA",
+            "description": "BGA package."
+          }
+        ]
+      },
+      {
+        "id": "speed_grade",
+        "label": "Speed Grade",
+        "description": "Temperature grade letter and speed grade number. Letter indicates temp range, number indicates performance.",
+        "length": 2,
+        "type": "select",
+        "options": [
+          {
+            "value": "C6",
+            "label": "Commercial, Speed 6",
+            "description": "Commercial temperature, fastest speed grade."
+          },
+          {
+            "value": "C7",
+            "label": "Commercial, Speed 7",
+            "description": "Commercial temperature, standard speed grade."
+          },
+          {
+            "value": "C8",
+            "label": "Commercial, Speed 8",
+            "description": "Commercial temperature, economy speed grade."
+          },
+          {
+            "value": "A7",
+            "label": "Automotive, Speed 7",
+            "description": "Automotive temperature, standard speed grade."
+          },
+          {
+            "value": "I7",
+            "label": "Industrial, Speed 7",
+            "description": "Industrial temperature, standard speed grade."
+          }
+        ]
+      },
+      {
+        "id": "trailing_n",
+        "label": "Trailing N",
+        "description": "Fixed trailing suffix character.",
+        "length": 1,
+        "type": "fixed",
+        "value": "N"
+      }
+    ],
+    "type": "FPGA"
+  },
+  {
+    "family": "Cyclone 10 LP",
+    "description": "Altera Cyclone 10 LP FPGA part number model. Format: 10CL{density}{package}{pin_count}{speed}{trailing}. Example: 10CL025YU256C8G.",
+    "fields": [
+      {
+        "id": "prefix",
+        "label": "Prefix",
+        "description": "Fixed prefix identifying the Cyclone 10 LP family.",
+        "length": 4,
+        "type": "fixed",
+        "value": "10CL"
+      },
+      {
+        "id": "density",
+        "label": "Density",
+        "description": "Three-digit code representing the device logic density in K logic elements.",
+        "length": 3,
+        "type": "select",
+        "options": [
+          {
+            "value": "006",
+            "label": "6K LE",
+            "description": "~6K logic elements."
+          },
+          {
+            "value": "010",
+            "label": "10K LE",
+            "description": "~10K logic elements."
+          },
+          {
+            "value": "016",
+            "label": "16K LE",
+            "description": "~16K logic elements."
+          },
+          {
+            "value": "025",
+            "label": "25K LE",
+            "description": "~25K logic elements."
+          },
+          {
+            "value": "040",
+            "label": "40K LE",
+            "description": "~40K logic elements."
+          },
+          {
+            "value": "055",
+            "label": "55K LE",
+            "description": "~55K logic elements."
+          },
+          {
+            "value": "080",
+            "label": "80K LE",
+            "description": "~80K logic elements."
+          },
+          {
+            "value": "120",
+            "label": "120K LE",
+            "description": "~120K logic elements."
+          }
+        ]
+      },
+      {
+        "id": "package",
+        "label": "Package",
+        "description": "Package type code.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "YU",
+            "label": "UBGA",
+            "description": "Ultra-fine-pitch BGA package."
+          },
+          {
+            "value": "ZU",
+            "label": "UBGA (variant)",
+            "description": "Ultra-fine-pitch BGA package variant."
+          },
+          {
+            "value": "F",
+            "label": "FBGA",
+            "description": "Fine-pitch BGA package."
+          }
+        ]
+      },
+      {
+        "id": "pin_count",
+        "label": "Pin Count",
+        "description": "Number of package pins.",
+        "length": 3,
+        "type": "select",
+        "options": [
+          {
+            "value": "256",
+            "label": "256 pins",
+            "description": "256-pin package."
+          },
+          {
+            "value": "324",
+            "label": "324 pins",
+            "description": "324-pin package."
+          },
+          {
+            "value": "484",
+            "label": "484 pins",
+            "description": "484-pin package."
+          },
+          {
+            "value": "672",
+            "label": "672 pins",
+            "description": "672-pin package."
+          }
+        ]
+      },
+      {
+        "id": "speed_grade",
+        "label": "Speed Grade",
+        "description": "Temperature grade letter and speed grade number.",
+        "length": 2,
+        "type": "select",
+        "options": [
+          {
+            "value": "C6",
+            "label": "Commercial, Speed 6",
+            "description": "Commercial temperature, fastest speed grade."
+          },
+          {
+            "value": "C8",
+            "label": "Commercial, Speed 8",
+            "description": "Commercial temperature, standard speed grade."
+          },
+          {
+            "value": "A7",
+            "label": "Automotive, Speed 7",
+            "description": "Automotive temperature range."
+          },
+          {
+            "value": "I7",
+            "label": "Industrial, Speed 7",
+            "description": "Industrial temperature range."
+          }
+        ]
+      },
+      {
+        "id": "trailing",
+        "label": "Trailing",
+        "description": "Optional trailing suffix character. G indicates lead-free.",
+        "length": null,
+        "type": "select",
+        "required": false,
+        "options": [
+          {
+            "value": "",
+            "label": "None",
+            "description": "No trailing suffix."
+          },
+          {
+            "value": "G",
+            "label": "Pb-free",
+            "description": "Lead-free (RoHS-compliant) package."
+          }
+        ]
+      }
+    ],
+    "type": "FPGA"
+  },
+  {
+    "family": "Cyclone 10 GX",
+    "description": "Altera Cyclone 10 GX FPGA part number model. Format: 10CX{density}{package}{pin_count}{speed}{trailing}. Example: 10CX085YU484I6G.",
+    "fields": [
+      {
+        "id": "prefix",
+        "label": "Prefix",
+        "description": "Fixed prefix identifying the Cyclone 10 GX family.",
+        "length": 4,
+        "type": "fixed",
+        "value": "10CX"
+      },
+      {
+        "id": "density",
+        "label": "Density",
+        "description": "Three-digit code representing the device logic density in K logic elements.",
+        "length": 3,
+        "type": "select",
+        "options": [
+          {
+            "value": "085",
+            "label": "85K LE",
+            "description": "~85K logic elements."
+          },
+          {
+            "value": "150",
+            "label": "150K LE",
+            "description": "~150K logic elements."
+          },
+          {
+            "value": "220",
+            "label": "220K LE",
+            "description": "~220K logic elements."
+          }
+        ]
+      },
+      {
+        "id": "package",
+        "label": "Package",
+        "description": "Package type code.",
+        "length": 2,
+        "type": "select",
+        "options": [
+          {
+            "value": "YF",
+            "label": "FBGA",
+            "description": "Fine-pitch BGA package."
+          },
+          {
+            "value": "YU",
+            "label": "UBGA",
+            "description": "Ultra-fine-pitch BGA package."
+          }
+        ]
+      },
+      {
+        "id": "pin_count",
+        "label": "Pin Count",
+        "description": "Number of package pins.",
+        "length": 3,
+        "type": "select",
+        "options": [
+          {
+            "value": "484",
+            "label": "484 pins",
+            "description": "484-pin package."
+          },
+          {
+            "value": "672",
+            "label": "672 pins",
+            "description": "672-pin package."
+          }
+        ]
+      },
+      {
+        "id": "speed_grade",
+        "label": "Speed Grade",
+        "description": "Temperature grade letter and speed grade number.",
+        "length": 2,
+        "type": "select",
+        "options": [
+          {
+            "value": "C5",
+            "label": "Commercial, Speed 5",
+            "description": "Commercial temperature, fastest speed grade."
+          },
+          {
+            "value": "C6",
+            "label": "Commercial, Speed 6",
+            "description": "Commercial temperature, standard speed grade."
+          },
+          {
+            "value": "I5",
+            "label": "Industrial, Speed 5",
+            "description": "Industrial temperature, fastest speed grade."
+          },
+          {
+            "value": "I6",
+            "label": "Industrial, Speed 6",
+            "description": "Industrial temperature, standard speed grade."
+          }
+        ]
+      },
+      {
+        "id": "trailing",
+        "label": "Trailing",
+        "description": "Trailing suffix character indicating lead-free package.",
+        "length": 1,
+        "type": "fixed",
+        "value": "G"
+      }
+    ],
+    "type": "FPGA"
+  },
+  {
+    "family": "MAX 10",
+    "description": "Altera MAX 10 FPGA part number model. Format: 10M{density}{feature}{package}{pin_count}{speed}{trailing}. Example: 10M50DAF484C8GES.",
+    "fields": [
+      {
+        "id": "prefix",
+        "label": "Prefix",
+        "description": "Fixed prefix identifying the MAX 10 family.",
+        "length": 3,
+        "type": "fixed",
+        "value": "10M"
+      },
+      {
+        "id": "density",
+        "label": "Density",
+        "description": "Two-digit code representing the device logic density in K logic elements.",
+        "length": 2,
+        "type": "select",
+        "options": [
+          {
+            "value": "02",
+            "label": "2K LE",
+            "description": "~2K logic elements."
+          },
+          {
+            "value": "04",
+            "label": "4K LE",
+            "description": "~4K logic elements."
+          },
+          {
+            "value": "08",
+            "label": "8K LE",
+            "description": "~8K logic elements."
+          },
+          {
+            "value": "16",
+            "label": "16K LE",
+            "description": "~16K logic elements."
+          },
+          {
+            "value": "25",
+            "label": "25K LE",
+            "description": "~25K logic elements."
+          },
+          {
+            "value": "40",
+            "label": "40K LE",
+            "description": "~40K logic elements."
+          },
+          {
+            "value": "50",
+            "label": "50K LE",
+            "description": "~50K logic elements."
+          }
+        ]
+      },
+      {
+        "id": "feature",
+        "label": "Feature",
+        "description": "Two-character feature code indicating flash configuration and analog capability.",
+        "length": 2,
+        "type": "select",
+        "options": [
+          {
+            "value": "DA",
+            "label": "Dual Analog",
+            "description": "Dual configuration flash with analog (ADC) support."
+          },
+          {
+            "value": "DF",
+            "label": "Dual Flash",
+            "description": "Dual configuration flash without analog (ADC)."
+          },
+          {
+            "value": "DC",
+            "label": "Dual Compact",
+            "description": "Dual configuration flash, compact device."
+          },
+          {
+            "value": "SA",
+            "label": "Single Analog",
+            "description": "Single configuration flash with analog (ADC) support."
+          },
+          {
+            "value": "SC",
+            "label": "Single Compact",
+            "description": "Single configuration flash, compact device."
+          }
+        ]
+      },
+      {
+        "id": "package",
+        "label": "Package",
+        "description": "Single-character package type code.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "F",
+            "label": "FBGA",
+            "description": "Fine-pitch BGA package."
+          },
+          {
+            "value": "U",
+            "label": "UBGA",
+            "description": "Ultra-fine-pitch BGA package."
+          },
+          {
+            "value": "E",
+            "label": "EQFP",
+            "description": "Enhanced Quad Flat Pack package."
+          }
+        ]
+      },
+      {
+        "id": "pin_count",
+        "label": "Pin Count",
+        "description": "Number of package pins.",
+        "length": 3,
+        "type": "select",
+        "options": [
+          {
+            "value": "144",
+            "label": "144 pins",
+            "description": "144-pin package."
+          },
+          {
+            "value": "256",
+            "label": "256 pins",
+            "description": "256-pin package."
+          },
+          {
+            "value": "324",
+            "label": "324 pins",
+            "description": "324-pin package."
+          },
+          {
+            "value": "484",
+            "label": "484 pins",
+            "description": "484-pin package."
+          },
+          {
+            "value": "672",
+            "label": "672 pins",
+            "description": "672-pin package."
+          }
+        ]
+      },
+      {
+        "id": "speed_grade",
+        "label": "Speed Grade",
+        "description": "Temperature grade letter and speed grade number.",
+        "length": 2,
+        "type": "select",
+        "options": [
+          {
+            "value": "C7",
+            "label": "Commercial, Speed 7",
+            "description": "Commercial temperature, standard speed grade."
+          },
+          {
+            "value": "C8",
+            "label": "Commercial, Speed 8",
+            "description": "Commercial temperature, economy speed grade."
+          },
+          {
+            "value": "A7",
+            "label": "Automotive, Speed 7",
+            "description": "Automotive temperature range."
+          },
+          {
+            "value": "I7",
+            "label": "Industrial, Speed 7",
+            "description": "Industrial temperature range."
+          }
+        ]
+      },
+      {
+        "id": "trailing",
+        "label": "Trailing",
+        "description": "Optional trailing suffix. G indicates lead-free, ES indicates engineering sample.",
+        "length": null,
+        "type": "select",
+        "required": false,
+        "options": [
+          {
+            "value": "",
+            "label": "None",
+            "description": "No trailing suffix."
+          },
+          {
+            "value": "G",
+            "label": "Pb-free",
+            "description": "Lead-free (RoHS-compliant) package."
+          },
+          {
+            "value": "GES",
+            "label": "Pb-free Engineering Sample",
+            "description": "Lead-free, engineering sample device."
+          },
+          {
+            "value": "ES",
+            "label": "Engineering Sample",
+            "description": "Pre-production engineering sample device."
+          }
+        ]
+      }
+    ],
+    "type": "FPGA"
+  },
+  {
+    "family": "Arria 10",
+    "description": "Altera Arria 10 FPGA and SoC FPGA part number model. Format: 10A{sub_family}{density}{feature}{qualifier}{package}{speed}{suffix}. Example: 10AS066N3F40E2SG.",
+    "fields": [
+      {
+        "id": "prefix",
+        "label": "Prefix",
+        "description": "Fixed prefix identifying the Arria 10 family.",
+        "length": 3,
+        "type": "fixed",
+        "value": "10A"
+      },
+      {
+        "id": "sub_family",
+        "label": "Sub-Family",
+        "description": "Identifies the Arria 10 device variant.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "S",
+            "label": "SX SoC",
+            "description": "Arria 10 SX SoC FPGA with dual-core ARM Cortex-A9."
+          },
+          {
+            "value": "X",
+            "label": "GX FPGA",
+            "description": "Arria 10 GX FPGA with transceivers."
+          },
+          {
+            "value": "T",
+            "label": "GT FPGA",
+            "description": "Arria 10 GT FPGA with high-speed transceivers."
+          }
+        ]
+      },
+      {
+        "id": "density",
+        "label": "Density",
+        "description": "Three-digit code representing the device logic density in K logic elements.",
+        "length": 3,
+        "type": "select",
+        "options": [
+          {
+            "value": "012",
+            "label": "12K LE",
+            "description": "~12K logic elements."
+          },
+          {
+            "value": "016",
+            "label": "16K LE",
+            "description": "~16K logic elements."
+          },
+          {
+            "value": "022",
+            "label": "22K LE",
+            "description": "~22K logic elements."
+          },
+          {
+            "value": "027",
+            "label": "27K LE",
+            "description": "~27K logic elements."
+          },
+          {
+            "value": "032",
+            "label": "32K LE",
+            "description": "~32K logic elements."
+          },
+          {
+            "value": "048",
+            "label": "48K LE",
+            "description": "~48K logic elements."
+          },
+          {
+            "value": "057",
+            "label": "57K LE",
+            "description": "~57K logic elements."
+          },
+          {
+            "value": "066",
+            "label": "66K LE",
+            "description": "~66K logic elements."
+          },
+          {
+            "value": "085",
+            "label": "85K LE",
+            "description": "~85K logic elements."
+          },
+          {
+            "value": "115",
+            "label": "115K LE",
+            "description": "~115K logic elements."
+          },
+          {
+            "value": "160",
+            "label": "160K LE",
+            "description": "~160K logic elements."
+          }
+        ]
+      },
+      {
+        "id": "feature",
+        "label": "Feature",
+        "description": "Single-character feature/packaging variant code.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "N",
+            "label": "Normal",
+            "description": "Standard feature set."
+          },
+          {
+            "value": "K",
+            "label": "K Variant",
+            "description": "K feature variant."
+          },
+          {
+            "value": "H",
+            "label": "H Variant",
+            "description": "H feature variant."
+          },
+          {
+            "value": "E",
+            "label": "E Variant",
+            "description": "E feature variant."
+          }
+        ]
+      },
+      {
+        "id": "qualifier",
+        "label": "Qualifier",
+        "description": "Single-digit routing/packaging qualifier.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "1",
+            "label": "Qualifier 1",
+            "description": "Routing/packaging variant 1."
+          },
+          {
+            "value": "2",
+            "label": "Qualifier 2",
+            "description": "Routing/packaging variant 2."
+          },
+          {
+            "value": "3",
+            "label": "Qualifier 3",
+            "description": "Routing/packaging variant 3."
+          }
+        ]
+      },
+      {
+        "id": "package",
+        "label": "Package",
+        "description": "Package type letter and pin count code.",
+        "length": 3,
+        "type": "select",
+        "options": [
+          {
+            "value": "F27",
+            "label": "FBGA 672-pin",
+            "description": "Fine-pitch BGA, 672 pins (27mm body)."
+          },
+          {
+            "value": "F29",
+            "label": "FBGA 780-pin",
+            "description": "Fine-pitch BGA, 780 pins (29mm body)."
+          },
+          {
+            "value": "F34",
+            "label": "FBGA 1152-pin",
+            "description": "Fine-pitch BGA, 1152 pins (34mm body)."
+          },
+          {
+            "value": "F40",
+            "label": "FBGA 1517-pin",
+            "description": "Fine-pitch BGA, 1517 pins (40mm body)."
+          },
+          {
+            "value": "F45",
+            "label": "FBGA 1932-pin",
+            "description": "Fine-pitch BGA, 1932 pins (45mm body)."
+          }
+        ]
+      },
+      {
+        "id": "speed_temp",
+        "label": "Speed / Temperature",
+        "description": "Two-character speed and temperature grade code. Letter indicates temperature range, digit indicates speed.",
+        "length": 2,
+        "type": "select",
+        "options": [
+          {
+            "value": "E1",
+            "label": "Extended, Speed 1",
+            "description": "Extended temperature, fastest speed grade."
+          },
+          {
+            "value": "E2",
+            "label": "Extended, Speed 2",
+            "description": "Extended temperature, standard speed grade."
+          },
+          {
+            "value": "E3",
+            "label": "Extended, Speed 3",
+            "description": "Extended temperature, economy speed grade."
+          },
+          {
+            "value": "E4",
+            "label": "Extended, Speed 4",
+            "description": "Extended temperature, lowest speed grade."
+          },
+          {
+            "value": "I1",
+            "label": "Industrial, Speed 1",
+            "description": "Industrial temperature, fastest speed grade."
+          },
+          {
+            "value": "I2",
+            "label": "Industrial, Speed 2",
+            "description": "Industrial temperature, standard speed grade."
+          },
+          {
+            "value": "I3",
+            "label": "Industrial, Speed 3",
+            "description": "Industrial temperature, economy speed grade."
+          },
+          {
+            "value": "I4",
+            "label": "Industrial, Speed 4",
+            "description": "Industrial temperature, lowest speed grade."
+          },
+          {
+            "value": "S1",
+            "label": "Commercial, Speed 1",
+            "description": "Commercial temperature, fastest speed grade."
+          },
+          {
+            "value": "S2",
+            "label": "Commercial, Speed 2",
+            "description": "Commercial temperature, standard speed grade."
+          },
+          {
+            "value": "S3",
+            "label": "Commercial, Speed 3",
+            "description": "Commercial temperature, economy speed grade."
+          }
+        ]
+      },
+      {
+        "id": "suffix",
+        "label": "Suffix",
+        "description": "Optional trailing suffix for additional product information.",
+        "length": null,
+        "type": "select",
+        "required": false,
+        "options": [
+          {
+            "value": "",
+            "label": "None",
+            "description": "No suffix."
+          },
+          {
+            "value": "G",
+            "label": "Pb-free",
+            "description": "Lead-free (RoHS-compliant) package."
+          },
+          {
+            "value": "SG",
+            "label": "SG",
+            "description": "SG variant, lead-free."
+          },
+          {
+            "value": "V",
+            "label": "V",
+            "description": "V variant."
+          },
+          {
+            "value": "VG",
+            "label": "VG",
+            "description": "V variant, lead-free."
+          }
+        ]
+      }
+    ],
+    "type": "FPGA"
+  },
+  {
+    "family": "Stratix V",
+    "description": "Altera Stratix V FPGA part number model. Format: 5S{sub_family}{device_id}{density}{feature}{qualifier}{package}{speed}N. Example: 5SGXEA7N2F45C2N.",
+    "fields": [
+      {
+        "id": "prefix",
+        "label": "Prefix",
+        "description": "Fixed prefix identifying the Stratix V family.",
+        "length": 2,
+        "type": "fixed",
+        "value": "5S"
+      },
+      {
+        "id": "sub_family",
+        "label": "Sub-Family",
+        "description": "Identifies the Stratix V device variant and transceiver type.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "GX",
+            "label": "GX",
+            "description": "Stratix V GX with up to 14.1 Gbps transceivers."
+          },
+          {
+            "value": "GT",
+            "label": "GT",
+            "description": "Stratix V GT with up to 28.05 Gbps transceivers."
+          },
+          {
+            "value": "GS",
+            "label": "GS",
+            "description": "Stratix V GS with embedded memory emphasis."
+          },
+          {
+            "value": "GSMD",
+            "label": "GS-MD",
+            "description": "Stratix V GS with M20K memory emphasis."
+          }
+        ]
+      },
+      {
+        "id": "device_id",
+        "label": "Device ID",
+        "description": "Two-character device designator within the sub-family.",
+        "length": 2,
+        "type": "select",
+        "options": [
+          {
+            "value": "EA",
+            "label": "EA",
+            "description": "EA device designator."
+          },
+          {
+            "value": "EB",
+            "label": "EB",
+            "description": "EB device designator."
+          },
+          {
+            "value": "MA",
+            "label": "MA",
+            "description": "MA device designator."
+          },
+          {
+            "value": "MB",
+            "label": "MB",
+            "description": "MB device designator."
+          },
+          {
+            "value": "HA",
+            "label": "HA",
+            "description": "HA device designator."
+          },
+          {
+            "value": "HB",
+            "label": "HB",
+            "description": "HB device designator."
+          },
+          {
+            "value": "AB",
+            "label": "AB",
+            "description": "AB device designator."
+          },
+          {
+            "value": "ME",
+            "label": "ME",
+            "description": "ME device designator."
+          }
+        ]
+      },
+      {
+        "id": "density",
+        "label": "Density",
+        "description": "Single-digit density designator within the sub-family.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "1",
+            "label": "Density 1",
+            "description": "Smallest density."
+          },
+          {
+            "value": "2",
+            "label": "Density 2",
+            "description": "Low density."
+          },
+          {
+            "value": "3",
+            "label": "Density 3",
+            "description": "Low-mid density."
+          },
+          {
+            "value": "4",
+            "label": "Density 4",
+            "description": "Mid density."
+          },
+          {
+            "value": "5",
+            "label": "Density 5",
+            "description": "Mid-high density."
+          },
+          {
+            "value": "7",
+            "label": "Density 7",
+            "description": "High density."
+          },
+          {
+            "value": "9",
+            "label": "Density 9",
+            "description": "Highest density."
+          }
+        ]
+      },
+      {
+        "id": "feature",
+        "label": "Feature",
+        "description": "Single-character feature code.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "N",
+            "label": "Standard",
+            "description": "Standard feature set."
+          },
+          {
+            "value": "H",
+            "label": "HardCopy",
+            "description": "HardCopy compatible variant."
+          }
+        ]
+      },
+      {
+        "id": "qualifier",
+        "label": "Qualifier",
+        "description": "Single-digit routing variant qualifier.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "1",
+            "label": "Variant 1",
+            "description": "Routing variant 1."
+          },
+          {
+            "value": "2",
+            "label": "Variant 2",
+            "description": "Routing variant 2."
+          },
+          {
+            "value": "3",
+            "label": "Variant 3",
+            "description": "Routing variant 3."
+          }
+        ]
+      },
+      {
+        "id": "package",
+        "label": "Package",
+        "description": "Package type and pin count code.",
+        "length": 3,
+        "type": "select",
+        "options": [
+          {
+            "value": "F23",
+            "label": "FBGA 484-pin",
+            "description": "Fine-pitch BGA, 484 pins (23mm body)."
+          },
+          {
+            "value": "F27",
+            "label": "FBGA 672-pin",
+            "description": "Fine-pitch BGA, 672 pins (27mm body)."
+          },
+          {
+            "value": "F31",
+            "label": "FBGA 896-pin",
+            "description": "Fine-pitch BGA, 896 pins (31mm body)."
+          },
+          {
+            "value": "F40",
+            "label": "FBGA 1517-pin",
+            "description": "Fine-pitch BGA, 1517 pins (40mm body)."
+          },
+          {
+            "value": "F45",
+            "label": "FBGA 1932-pin",
+            "description": "Fine-pitch BGA, 1932 pins (45mm body)."
+          }
+        ]
+      },
+      {
+        "id": "speed_grade",
+        "label": "Speed Grade",
+        "description": "Temperature grade letter and speed grade number.",
+        "length": 2,
+        "type": "select",
+        "options": [
+          {
+            "value": "C1",
+            "label": "Commercial, Speed 1",
+            "description": "Commercial temperature, fastest speed grade."
+          },
+          {
+            "value": "C2",
+            "label": "Commercial, Speed 2",
+            "description": "Commercial temperature, standard speed grade."
+          },
+          {
+            "value": "C3",
+            "label": "Commercial, Speed 3",
+            "description": "Commercial temperature, economy speed grade."
+          },
+          {
+            "value": "I1",
+            "label": "Industrial, Speed 1",
+            "description": "Industrial temperature, fastest speed grade."
+          },
+          {
+            "value": "I2",
+            "label": "Industrial, Speed 2",
+            "description": "Industrial temperature, standard speed grade."
+          },
+          {
+            "value": "I3",
+            "label": "Industrial, Speed 3",
+            "description": "Industrial temperature, economy speed grade."
+          }
+        ]
+      },
+      {
+        "id": "trailing_n",
+        "label": "Trailing N",
+        "description": "Fixed trailing suffix character.",
+        "length": 1,
+        "type": "fixed",
+        "value": "N"
+      }
+    ],
+    "type": "FPGA"
+  },
+  {
+    "family": "Stratix 10",
+    "description": "Altera Stratix 10 FPGA and SoC FPGA part number model. Format: 1S{sub_family}{density}{feature}{qualifier}{package}{speed}{suffix}. Example: 1SX280HU2F50E1VG.",
+    "fields": [
+      {
+        "id": "prefix",
+        "label": "Prefix",
+        "description": "Fixed prefix identifying the Stratix 10 family.",
+        "length": 2,
+        "type": "fixed",
+        "value": "1S"
+      },
+      {
+        "id": "sub_family",
+        "label": "Sub-Family",
+        "description": "Identifies the Stratix 10 device variant.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "X",
+            "label": "SX",
+            "description": "Stratix 10 SX SoC with embedded quad-core ARM Cortex-A53."
+          },
+          {
+            "value": "G",
+            "label": "GX",
+            "description": "Stratix 10 GX FPGA with transceivers."
+          },
+          {
+            "value": "D",
+            "label": "DX",
+            "description": "Stratix 10 DX FPGA with PCIe Gen4 and cache-coherent interconnect."
+          },
+          {
+            "value": "T",
+            "label": "TX",
+            "description": "Stratix 10 TX FPGA with 58G PAM4 transceivers."
+          },
+          {
+            "value": "M",
+            "label": "MX",
+            "description": "Stratix 10 MX FPGA with integrated HBM2 memory."
+          }
+        ]
+      },
+      {
+        "id": "density",
+        "label": "Density",
+        "description": "Density code representing the device logic capacity in K logic elements. Variable length.",
+        "length": null,
+        "type": "select",
+        "options": [
+          {
+            "value": "065",
+            "label": "65K LE",
+            "description": "~65K logic elements."
+          },
+          {
+            "value": "085",
+            "label": "85K LE",
+            "description": "~85K logic elements."
+          },
+          {
+            "value": "110",
+            "label": "110K LE",
+            "description": "~110K logic elements."
+          },
+          {
+            "value": "160",
+            "label": "160K LE",
+            "description": "~160K logic elements."
+          },
+          {
+            "value": "210",
+            "label": "210K LE",
+            "description": "~210K logic elements."
+          },
+          {
+            "value": "250",
+            "label": "250K LE",
+            "description": "~250K logic elements."
+          },
+          {
+            "value": "280",
+            "label": "280K LE",
+            "description": "~280K logic elements."
+          },
+          {
+            "value": "400",
+            "label": "400K LE",
+            "description": "~400K logic elements."
+          },
+          {
+            "value": "650",
+            "label": "650K LE",
+            "description": "~650K logic elements."
+          },
+          {
+            "value": "850",
+            "label": "850K LE",
+            "description": "~850K logic elements."
+          },
+          {
+            "value": "2100",
+            "label": "2100K LE",
+            "description": "~2.1M logic elements."
+          },
+          {
+            "value": "2800",
+            "label": "2800K LE",
+            "description": "~2.8M logic elements."
+          }
+        ]
+      },
+      {
+        "id": "feature",
+        "label": "Feature",
+        "description": "Single-character device/feature variant code.",
+        "length": 1,
+        "type": "select",
+        "options": [
+          {
+            "value": "H",
+            "label": "H Variant",
+            "description": "H device/feature variant."
+          },
+          {
+            "value": "L",
+            "label": "L Variant",
+            "description": "L device/feature variant (low power)."
+          },
+          {
+            "value": "N",
+            "label": "N Variant",
+            "description": "N device/feature variant (standard)."
+          },
+          {
+            "value": "S",
+            "label": "S Variant",
+            "description": "S device/feature variant."
+          }
+        ]
+      },
+      {
+        "id": "qualifier",
+        "label": "Qualifier",
+        "description": "Two-character qualifier indicating device revision or routing variant.",
+        "length": 2,
+        "type": "select",
+        "options": [
+          {
+            "value": "U1",
+            "label": "U1",
+            "description": "Routing/revision variant U1."
+          },
+          {
+            "value": "U2",
+            "label": "U2",
+            "description": "Routing/revision variant U2."
+          },
+          {
+            "value": "U3",
+            "label": "U3",
+            "description": "Routing/revision variant U3."
+          }
+        ]
+      },
+      {
+        "id": "package",
+        "label": "Package",
+        "description": "Package type letter and pin count code.",
+        "length": 3,
+        "type": "select",
+        "options": [
+          {
+            "value": "F23",
+            "label": "FBGA 484-pin",
+            "description": "Fine-pitch BGA, 484 pins (23mm body)."
+          },
+          {
+            "value": "F27",
+            "label": "FBGA 672-pin",
+            "description": "Fine-pitch BGA, 672 pins (27mm body)."
+          },
+          {
+            "value": "F29",
+            "label": "FBGA 780-pin",
+            "description": "Fine-pitch BGA, 780 pins (29mm body)."
+          },
+          {
+            "value": "F31",
+            "label": "FBGA 896-pin",
+            "description": "Fine-pitch BGA, 896 pins (31mm body)."
+          },
+          {
+            "value": "F35",
+            "label": "FBGA 1152-pin",
+            "description": "Fine-pitch BGA, 1152 pins (35mm body)."
+          },
+          {
+            "value": "F40",
+            "label": "FBGA 1517-pin",
+            "description": "Fine-pitch BGA, 1517 pins (40mm body)."
+          },
+          {
+            "value": "F45",
+            "label": "FBGA 1932-pin",
+            "description": "Fine-pitch BGA, 1932 pins (45mm body)."
+          },
+          {
+            "value": "F50",
+            "label": "FBGA 2397-pin",
+            "description": "Fine-pitch BGA, 2397 pins (50mm body)."
+          },
+          {
+            "value": "F55",
+            "label": "FBGA 2912-pin",
+            "description": "Fine-pitch BGA, 2912 pins (55mm body)."
+          }
+        ]
+      },
+      {
+        "id": "speed_temp",
+        "label": "Speed / Temperature",
+        "description": "Two-character speed and temperature grade code.",
+        "length": 2,
+        "type": "select",
+        "options": [
+          {
+            "value": "E1",
+            "label": "Enhanced, Speed 1",
+            "description": "Enhanced temperature, fastest speed grade."
+          },
+          {
+            "value": "E2",
+            "label": "Enhanced, Speed 2",
+            "description": "Enhanced temperature, standard speed grade."
+          },
+          {
+            "value": "E3",
+            "label": "Enhanced, Speed 3",
+            "description": "Enhanced temperature, economy speed grade."
+          },
+          {
+            "value": "I1",
+            "label": "Industrial, Speed 1",
+            "description": "Industrial temperature, fastest speed grade."
+          },
+          {
+            "value": "I2",
+            "label": "Industrial, Speed 2",
+            "description": "Industrial temperature, standard speed grade."
+          },
+          {
+            "value": "I3",
+            "label": "Industrial, Speed 3",
+            "description": "Industrial temperature, economy speed grade."
+          }
+        ]
+      },
+      {
+        "id": "suffix",
+        "label": "Suffix",
+        "description": "Optional trailing suffix for additional product information.",
+        "length": null,
+        "type": "select",
+        "required": false,
+        "options": [
+          {
+            "value": "",
+            "label": "None",
+            "description": "No suffix."
+          },
+          {
+            "value": "V",
+            "label": "V",
+            "description": "V variant."
+          },
+          {
+            "value": "VG",
+            "label": "VG",
+            "description": "V variant, lead-free."
+          },
+          {
+            "value": "SG",
+            "label": "SG",
+            "description": "SG variant."
+          }
+        ]
+      }
+    ],
+    "type": "FPGA"
+  }
+]

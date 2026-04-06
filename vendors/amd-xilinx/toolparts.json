@@ -1,0 +1,48 @@
+[
+  {
+    "description": "7-series Vivado tool part: device+package-speed, lowercase, no temp grade.",
+    "families": ["Spartan-7", "Artix-7", "Kintex-7", "Virtex-7", "Zynq-7000"],
+    "segments": [
+      { "fields": ["product_grade", "family", "density", "package"] },
+      { "fields": ["speed"] }
+    ],
+    "join": "-",
+    "transform": "lowercase"
+  },
+  {
+    "description": "UltraScale/UltraScale+ tool part: device-package-speed-temp, lowercase.",
+    "families": ["Artix UltraScale+", "Spartan UltraScale+", "Kintex UltraScale", "Kintex UltraScale+", "Virtex UltraScale", "Virtex UltraScale+"],
+    "segments": [
+      { "fields": ["product_grade", "family", "density"] },
+      { "fields": ["package"] },
+      { "fields": ["speed"] },
+      { "fields": ["temp"] }
+    ],
+    "join": "-",
+    "transform": "lowercase"
+  },
+  {
+    "description": "Zynq UltraScale+ tool part: device+type-package-speed-temp, lowercase.",
+    "families": ["Zynq UltraScale+ MPSoC", "Zynq UltraScale+ RFSoC"],
+    "segments": [
+      { "fields": ["product_grade", "family", "density", "device_type"] },
+      { "fields": ["package"] },
+      { "fields": ["speed"] },
+      { "fields": ["temp"] }
+    ],
+    "join": "-",
+    "transform": "lowercase"
+  },
+  {
+    "description": "Versal tool part: device-package-speed_voltage_screen-temp, lowercase. Package is ball_pitch+lid+rohs+footprint.",
+    "families": ["Versal AI Core", "Versal AI Edge", "Versal AI Edge Gen 2", "Versal HBM", "Versal Premium", "Versal Prime", "Versal Prime Gen 2"],
+    "segments": [
+      { "fields": ["product_grade", "versal", "series", "device_number"] },
+      { "fields": ["ball_pitch", "lid", "rohs", "footprint"] },
+      { "fields": ["speed_grade", "voltage", "static_screen"] },
+      { "fields": ["temp_grade"] }
+    ],
+    "join": "-",
+    "transform": "lowercase"
+  }
+]
