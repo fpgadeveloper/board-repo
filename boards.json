@@ -3504,5 +3504,25 @@
     "expansion": {
       "fmcp": 2
     }
+  },
+  {
+    "id": "TZ170J484C-DK",
+    "name": "Tz170 J484",
+    "status": "active",
+    "url": "https://www.efinixinc.com/products-devkits-topaztz170j484.html",
+    "vendor": "efinix",
+    "price": {
+      "value": 400,
+      "currency": "USD"
+    },
+    "device": {
+      "type": "FPGA",
+      "family": "Topaz",
+      "part": "Tz170J484C2",
+      "vendor": "efinix"
+    },
+    "expansion": {
+      "fmc_lpc": 1
+    }
   }
 ]
