@@ -3307,8 +3307,6 @@
       "currency": "USD"
     },
     "device": {
-      "type": "ACAP",
-      "family": "Versal AI Edge",
       "part": "XCVE2302-1LSESFVA784",
       "vendor": "amd-xilinx"
     },
@@ -3339,9 +3337,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU7EV-2FFVC1156-I",
+      "part": "XCZU7EV-2FFVC1156I",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -3378,9 +3374,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "SoC",
-      "family": "Zynq UltraScale+",
-      "part": "XCZU5EV-2SFVC784-I",
+      "part": "XCZU5EV-2SFVC784I",
       "vendor": "amd-xilinx"
     },
     "pcie": [
@@ -3425,8 +3419,6 @@
       "currency": "EUR"
     },
     "device": {
-      "type": "FPGA",
-      "family": "Kintex-7",
       "part": "XC7K325T-1FBG676C",
       "vendor": "amd-xilinx"
     },
@@ -3452,9 +3444,7 @@
       "currency": "USD"
     },
     "device": {
-      "type": "RFSoC",
-      "family": "Zynq UltraScale+ RFSoC",
-      "part": "XCZU49DR-2FFVF1760-E",
+      "part": "XCZU49DR-2FFVF1760E",
       "vendor": "amd-xilinx"
     },
     "video": {
