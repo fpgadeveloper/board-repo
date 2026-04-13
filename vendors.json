@@ -99,6 +99,10 @@
     "techway": {
       "name": "Techway",
       "url": "https://www.techway.com"
+    },
+    "brisbanesilicon": {
+      "name": "BrisbaneSilicon",
+      "url": "https://brisbanesilicon.com.au/"
     }
   },
   "silicon_vendors": {
