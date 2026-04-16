@@ -1,0 +1,396 @@
+{
+  "family": "Zynq UltraScale+ MPSoC",
+  "description": "Zynq UltraScale+ MPSoC (ARM Cortex-A53/R5 + FPGA). Part format: {prefix}{ZU}{density}{type}-{speed}{package}-{temp}",
+  "fields": [
+    {
+      "id": "product_grade",
+      "label": "Product Grade",
+      "description": "Product grade prefix indicating target market.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "XC",
+          "label": "XC",
+          "description": "Commercial"
+        },
+        {
+          "value": "XA",
+          "label": "XA",
+          "description": "Automotive"
+        },
+        {
+          "value": "XQ",
+          "label": "XQ",
+          "description": "Defense Grade"
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "label": "Family",
+      "description": "Zynq UltraScale+ family code.",
+      "length": 2,
+      "type": "fixed",
+      "value": "ZU"
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Device density.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "1",
+          "label": "1",
+          "description": "ZU1"
+        },
+        {
+          "value": "2",
+          "label": "2",
+          "description": "ZU2"
+        },
+        {
+          "value": "3",
+          "label": "3",
+          "description": "ZU3"
+        },
+        {
+          "value": "3T",
+          "label": "3T",
+          "description": "ZU3T"
+        },
+        {
+          "value": "4",
+          "label": "4",
+          "description": "ZU4"
+        },
+        {
+          "value": "5",
+          "label": "5",
+          "description": "ZU5"
+        },
+        {
+          "value": "6",
+          "label": "6",
+          "description": "ZU6"
+        },
+        {
+          "value": "7",
+          "label": "7",
+          "description": "ZU7"
+        },
+        {
+          "value": "9",
+          "label": "9",
+          "description": "ZU9"
+        },
+        {
+          "value": "11",
+          "label": "11",
+          "description": "ZU11"
+        },
+        {
+          "value": "15",
+          "label": "15",
+          "description": "ZU15"
+        },
+        {
+          "value": "17",
+          "label": "17",
+          "description": "ZU17"
+        },
+        {
+          "value": "19",
+          "label": "19",
+          "description": "ZU19"
+        }
+      ]
+    },
+    {
+      "id": "device_type",
+      "label": "Device Type",
+      "description": "Device type suffix: CG (cost-optimized), EG (full SoC), EV (SoC with video codec).",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "CG",
+          "label": "CG",
+          "description": "Cost-optimized, no GPU or video codec"
+        },
+        {
+          "value": "EG",
+          "label": "EG",
+          "description": "Full SoC with GPU"
+        },
+        {
+          "value": "EV",
+          "label": "EV",
+          "description": "Full SoC with GPU and video codec"
+        }
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Device speed grade.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "1",
+          "label": "1",
+          "description": "Speed grade -1",
+          "when": {
+            "product_grade": [
+              "XC",
+              "XA",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "1L",
+          "label": "1L",
+          "description": "Speed grade -1, low voltage",
+          "when": {
+            "product_grade": [
+              "XC",
+              "XA",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "1LV",
+          "label": "1LV",
+          "description": "Speed grade -1, low voltage variant",
+          "when": {
+            "product_grade": [
+              "XC",
+              "XA",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "2",
+          "label": "2",
+          "description": "Speed grade -2",
+          "when": {
+            "product_grade": [
+              "XC",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "2L",
+          "label": "2L",
+          "description": "Speed grade -2, low voltage",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "2LV",
+          "label": "2LV",
+          "description": "Speed grade -2, low voltage variant",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "3",
+          "label": "3",
+          "description": "Speed grade -3",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "1Q",
+          "label": "1Q",
+          "description": "Speed grade -1, automotive",
+          "when": {
+            "product_grade": [
+              "XA"
+            ]
+          }
+        },
+        {
+          "value": "1M",
+          "label": "1M",
+          "description": "Speed grade -1, military",
+          "when": {
+            "product_grade": [
+              "XQ"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Device package type.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "FBVB900",
+          "label": "FBVB900",
+          "description": "FBVB 900-pin"
+        },
+        {
+          "value": "FFVB1156",
+          "label": "FFVB1156",
+          "description": "FFVB 1156-pin"
+        },
+        {
+          "value": "FFVB1517",
+          "label": "FFVB1517",
+          "description": "FFVB 1517-pin"
+        },
+        {
+          "value": "FFVC1156",
+          "label": "FFVC1156",
+          "description": "FFVC 1156-pin"
+        },
+        {
+          "value": "FFVC1760",
+          "label": "FFVC1760",
+          "description": "FFVC 1760-pin"
+        },
+        {
+          "value": "FFVC900",
+          "label": "FFVC900",
+          "description": "FFVC 900-pin"
+        },
+        {
+          "value": "FFVD1760",
+          "label": "FFVD1760",
+          "description": "FFVD 1760-pin"
+        },
+        {
+          "value": "FFVE1924",
+          "label": "FFVE1924",
+          "description": "FFVE 1924-pin"
+        },
+        {
+          "value": "FFVF1517",
+          "label": "FFVF1517",
+          "description": "FFVF 1517-pin"
+        },
+        {
+          "value": "SBVA484",
+          "label": "SBVA484",
+          "description": "SBVA 484-pin"
+        },
+        {
+          "value": "SBVA625",
+          "label": "SBVA625",
+          "description": "SBVA 625-pin"
+        },
+        {
+          "value": "SBVB484",
+          "label": "SBVB484",
+          "description": "SBVB 484-pin"
+        },
+        {
+          "value": "SFVA625",
+          "label": "SFVA625",
+          "description": "SFVA 625-pin"
+        },
+        {
+          "value": "SFVC784",
+          "label": "SFVC784",
+          "description": "SFVC 784-pin"
+        },
+        {
+          "value": "SFVD784",
+          "label": "SFVD784",
+          "description": "SFVD 784-pin"
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "C",
+          "label": "C",
+          "description": "Commercial (0\u00b0C to 85\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "E",
+          "label": "E",
+          "description": "Extended (-40\u00b0C to 100\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "I",
+          "label": "I",
+          "description": "Industrial (-40\u00b0C to 100\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XC",
+              "XA",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "Q",
+          "label": "Q",
+          "description": "Automotive (-40\u00b0C to 125\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XA"
+            ]
+          }
+        },
+        {
+          "value": "M",
+          "label": "M",
+          "description": "Military (-55\u00b0C to 125\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XQ"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "type": "MPSoC"
+}

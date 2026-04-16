@@ -1,0 +1,26 @@
+{
+  "id": "LAV-G70-VERSA-EVN",
+  "name": "Avant-G Versa",
+  "status": "active",
+  "url": "https://www.latticesemi.com/products/developmentboardsandkits/avant-g-versa-board",
+  "vendor": "lattice",
+  "price": {
+    "value": 2447,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "LAV-AT-G70-3LFG1156C",
+    "vendor": "lattice"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 4,
+      "gen": 3
+    }
+  ],
+  "expansion": {
+    "fmc_hpc": 1,
+    "pmod": 2
+  }
+}

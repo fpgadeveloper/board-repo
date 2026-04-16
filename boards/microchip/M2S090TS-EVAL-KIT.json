@@ -1,0 +1,31 @@
+{
+  "id": "M2S090TS-EVAL-KIT",
+  "name": "SmartFusion2 Security Evaluation",
+  "status": "active",
+  "url": "https://www.microchip.com/en-us/development-tool/m2s090ts-eval-kit",
+  "vendor": "microchip",
+  "price": {
+    "value": 900,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "M2S090TS-FG484",
+    "vendor": "microchip"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 1,
+      "gen": 2
+    }
+  ],
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "expansion": {
+    "fmc_hpc": 1
+  }
+}

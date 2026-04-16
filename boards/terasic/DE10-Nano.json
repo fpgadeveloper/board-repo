@@ -1,0 +1,27 @@
+{
+  "id": "DE10-Nano",
+  "name": "DE10-Nano",
+  "status": "active",
+  "url": "https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=205&No=1046",
+  "vendor": "terasic",
+  "price": {
+    "value": 130,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "5CSEBA6U23I7N",
+    "vendor": "altera"
+  },
+  "video": {
+    "hdmi_out": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "expansion": {
+    "arduino": 1
+  }
+}

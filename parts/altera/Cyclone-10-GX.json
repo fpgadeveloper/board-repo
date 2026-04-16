@@ -1,0 +1,129 @@
+{
+  "family": "Cyclone 10 GX",
+  "description": "Altera Cyclone 10 GX FPGA part number model. Format: 10CX{density}{package}{pin_count}{speed}{trailing}. Example: 10CX085YU484I6G.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Fixed prefix identifying the Cyclone 10 GX family.",
+      "length": 4,
+      "type": "fixed",
+      "value": "10CX"
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Three-digit code representing the device logic density in K logic elements.",
+      "length": 3,
+      "type": "select",
+      "options": [
+        {
+          "value": "085",
+          "label": "85K LE",
+          "description": "~85K logic elements."
+        },
+        {
+          "value": "150",
+          "label": "150K LE",
+          "description": "~150K logic elements."
+        },
+        {
+          "value": "220",
+          "label": "220K LE",
+          "description": "~220K logic elements."
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type code.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "YF",
+          "label": "FBGA",
+          "description": "Fine-pitch BGA package."
+        },
+        {
+          "value": "YU",
+          "label": "UBGA",
+          "description": "Ultra-fine-pitch BGA package."
+        }
+      ]
+    },
+    {
+      "id": "pin_count",
+      "label": "Pin Count",
+      "description": "Number of package pins.",
+      "length": 3,
+      "type": "select",
+      "options": [
+        {
+          "value": "484",
+          "label": "484 pins",
+          "description": "484-pin package."
+        },
+        {
+          "value": "672",
+          "label": "672 pins",
+          "description": "672-pin package."
+        },
+        {
+          "value": "780",
+          "label": "780 pins",
+          "description": "780-pin package."
+        }
+      ]
+    },
+    {
+      "id": "speed_grade",
+      "label": "Speed Grade",
+      "description": "Temperature grade letter and speed grade number.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "C5",
+          "label": "Commercial, Speed 5",
+          "description": "Commercial temperature, fastest speed grade."
+        },
+        {
+          "value": "C6",
+          "label": "Commercial, Speed 6",
+          "description": "Commercial temperature, standard speed grade."
+        },
+        {
+          "value": "I5",
+          "label": "Industrial, Speed 5",
+          "description": "Industrial temperature, fastest speed grade."
+        },
+        {
+          "value": "I6",
+          "label": "Industrial, Speed 6",
+          "description": "Industrial temperature, standard speed grade."
+        },
+        {
+          "value": "E5",
+          "label": "Extended, Speed 5",
+          "description": "Extended temperature, fastest speed grade."
+        },
+        {
+          "value": "E6",
+          "label": "Extended, Speed 6",
+          "description": "Extended temperature, standard speed grade."
+        }
+      ]
+    },
+    {
+      "id": "trailing",
+      "label": "Trailing",
+      "description": "Trailing suffix character indicating lead-free package.",
+      "length": 1,
+      "type": "fixed",
+      "value": "G"
+    }
+  ],
+  "type": "FPGA"
+}

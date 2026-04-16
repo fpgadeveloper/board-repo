@@ -1,0 +1,21 @@
+{
+  "id": "DK-DEV-10M50",
+  "name": "MAX 10 FPGA",
+  "status": "active",
+  "url": "https://www.altera.com/products/devkit/po-3022/max-10-fpga-development-kit",
+  "vendor": "altera",
+  "price": {
+    "value": 299,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "10M50DAF484I6G",
+    "vendor": "altera"
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ]
+}

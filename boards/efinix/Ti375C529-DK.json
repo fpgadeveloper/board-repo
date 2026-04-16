@@ -1,0 +1,34 @@
+{
+  "id": "Ti375C529-DK",
+  "name": "Ti375 C529",
+  "status": "active",
+  "url": "https://www.efinixinc.com/products-devkits-titaniumti375c529.html",
+  "vendor": "efinix",
+  "price": {
+    "value": 995,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "Ti375C529I3",
+    "vendor": "efinix"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 4,
+      "gen": 4
+    }
+  ],
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "networking": {
+    "sfp": 2
+  },
+  "expansion": {
+    "fmc_hpc": 1
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "family": "Kintex UltraScale",
+  "description": "Kintex UltraScale FPGAs. Part format: {prefix}{KU}{density}-{speed}{package}-{temp}",
+  "fields": [
+    {
+      "id": "product_grade",
+      "label": "Product Grade",
+      "description": "Product grade prefix indicating target market.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "XC",
+          "label": "XC",
+          "description": "Commercial"
+        },
+        {
+          "value": "XQ",
+          "label": "XQ",
+          "description": "Defense Grade"
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "label": "Family",
+      "description": "Kintex UltraScale family code.",
+      "length": 2,
+      "type": "fixed",
+      "value": "KU"
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Device logic density (plain numbers, no P suffix).",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "025",
+          "label": "025",
+          "description": "KU 025 density"
+        },
+        {
+          "value": "035",
+          "label": "035",
+          "description": "KU 035 density"
+        },
+        {
+          "value": "040",
+          "label": "040",
+          "description": "KU 040 density"
+        },
+        {
+          "value": "060",
+          "label": "060",
+          "description": "KU 060 density"
+        },
+        {
+          "value": "085",
+          "label": "085",
+          "description": "KU 085 density"
+        },
+        {
+          "value": "095",
+          "label": "095",
+          "description": "KU 095 density"
+        },
+        {
+          "value": "115",
+          "label": "115",
+          "description": "KU 115 density"
+        }
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Device speed grade.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "1",
+          "label": "1",
+          "description": "Speed grade -1, slowest."
+        },
+        {
+          "value": "L1",
+          "label": "L1",
+          "description": "Speed grade -1, low power."
+        },
+        {
+          "value": "2",
+          "label": "2",
+          "description": "Speed grade -2, mid."
+        },
+        {
+          "value": "3",
+          "label": "3",
+          "description": "Speed grade -3, fastest."
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Device package type.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "FBVA676",
+          "label": "FBVA676",
+          "description": "FBVA 676-pin"
+        },
+        {
+          "value": "FBVA900",
+          "label": "FBVA900",
+          "description": "FBVA 900-pin"
+        },
+        {
+          "value": "FFVA1156",
+          "label": "FFVA1156",
+          "description": "FFVA 1156-pin"
+        },
+        {
+          "value": "FFVA1517",
+          "label": "FFVA1517",
+          "description": "FFVA 1517-pin"
+        },
+        {
+          "value": "FFVB1760",
+          "label": "FFVB1760",
+          "description": "FFVB 1760-pin"
+        },
+        {
+          "value": "FFVB2104",
+          "label": "FFVB2104",
+          "description": "FFVB 2104-pin"
+        },
+        {
+          "value": "FFVC1517",
+          "label": "FFVC1517",
+          "description": "FFVC 1517-pin"
+        },
+        {
+          "value": "FLVA1517",
+          "label": "FLVA1517",
+          "description": "FLVA 1517-pin"
+        },
+        {
+          "value": "FLVA2104",
+          "label": "FLVA2104",
+          "description": "FLVA 2104-pin"
+        },
+        {
+          "value": "FLVB1760",
+          "label": "FLVB1760",
+          "description": "FLVB 1760-pin"
+        },
+        {
+          "value": "FLVB2104",
+          "label": "FLVB2104",
+          "description": "FLVB 2104-pin"
+        },
+        {
+          "value": "FLVC1517",
+          "label": "FLVC1517",
+          "description": "FLVC 1517-pin"
+        },
+        {
+          "value": "SFVA784",
+          "label": "SFVA784",
+          "description": "SFVA 784-pin"
+        },
+        {
+          "value": "SFVC784",
+          "label": "SFVC784",
+          "description": "SFVC 784-pin"
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "C",
+          "label": "C",
+          "description": "Commercial (0\u00b0C to 85\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "E",
+          "label": "E",
+          "description": "Extended (-40\u00b0C to 100\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XC",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "I",
+          "label": "I",
+          "description": "Industrial (-40\u00b0C to 100\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XC",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "M",
+          "label": "M",
+          "description": "Military (-55\u00b0C to 125\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XQ"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

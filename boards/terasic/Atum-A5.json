@@ -1,0 +1,32 @@
+{
+  "id": "Atum-A5",
+  "name": "Atum A5",
+  "status": "active",
+  "url": "https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=2&No=1343",
+  "vendor": "terasic",
+  "price": {
+    "value": 1999,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "A5ED065BB32AE4SR0",
+    "vendor": "altera"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 4,
+      "gen": 3
+    }
+  ],
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "expansion": {
+    "fmc_hpc": 1,
+    "pmod": 2
+  }
+}

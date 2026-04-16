@@ -1,0 +1,15 @@
+{
+  "id": "LIFCL-33U-EVN",
+  "name": "CrossLinkU-NX Evaluation",
+  "status": "active",
+  "url": "https://www.latticesemi.com/products/developmentboardsandkits/crosslinku-nx-evaluation-board",
+  "vendor": "lattice",
+  "price": {
+    "value": 150,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "LIFCL-33U-7CTG104C",
+    "vendor": "lattice"
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "family": "Artix UltraScale+",
+  "description": "Artix UltraScale+ FPGAs. Part format: {prefix}{AU}{density}-{speed}{package}-{temp}",
+  "fields": [
+    {
+      "id": "product_grade",
+      "label": "Product Grade",
+      "description": "Product grade prefix indicating target market.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "XC",
+          "label": "XC",
+          "description": "Commercial"
+        },
+        {
+          "value": "XA",
+          "label": "XA",
+          "description": "Automotive"
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "label": "Family",
+      "description": "Artix UltraScale+ family code.",
+      "length": 2,
+      "type": "fixed",
+      "value": "AU"
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Device logic density.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "7P",
+          "label": "7P",
+          "description": "Smallest AU+ density"
+        },
+        {
+          "value": "10P",
+          "label": "10P",
+          "description": "AU+ 10P density"
+        },
+        {
+          "value": "15P",
+          "label": "15P",
+          "description": "AU+ 15P density"
+        },
+        {
+          "value": "20P",
+          "label": "20P",
+          "description": "AU+ 20P density",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "25P",
+          "label": "25P",
+          "description": "AU+ 25P density",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Device speed grade.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "1",
+          "label": "1",
+          "description": "Speed grade -1, slowest."
+        },
+        {
+          "value": "L1",
+          "label": "L1",
+          "description": "Speed grade -1, low power."
+        },
+        {
+          "value": "2",
+          "label": "2",
+          "description": "Speed grade -2, mid."
+        },
+        {
+          "value": "L2",
+          "label": "L2",
+          "description": "Speed grade -2, low power."
+        },
+        {
+          "value": "3",
+          "label": "3",
+          "description": "Speed grade -3, fastest."
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Device package type.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "FCVA289",
+          "label": "FCVA289",
+          "description": "FCVA 289-pin"
+        },
+        {
+          "value": "FFVB676",
+          "label": "FFVB676",
+          "description": "FFVB 676-pin"
+        },
+        {
+          "value": "SBVB484",
+          "label": "SBVB484",
+          "description": "SBVB 484-pin"
+        },
+        {
+          "value": "SBVC484",
+          "label": "SBVC484",
+          "description": "SBVC 484-pin"
+        },
+        {
+          "value": "SFVB784",
+          "label": "SFVB784",
+          "description": "SFVB 784-pin"
+        },
+        {
+          "value": "UBVA368",
+          "label": "UBVA368",
+          "description": "UBVA 368-pin"
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "E",
+          "label": "E",
+          "description": "Extended"
+        },
+        {
+          "value": "I",
+          "label": "I",
+          "description": "Industrial (-40\u00b0C to 100\u00b0C)"
+        },
+        {
+          "value": "Q",
+          "label": "Q",
+          "description": "Automotive (-40\u00b0C to 125\u00b0C)"
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

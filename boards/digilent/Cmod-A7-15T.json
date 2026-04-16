@@ -1,0 +1,18 @@
+{
+  "id": "Cmod-A7-15T",
+  "name": "Cmod A7-15T",
+  "status": "eol",
+  "url": "https://digilent.com/shop/cmod-a7-15t-breadboardable-artix-7-fpga-module/",
+  "vendor": "digilent",
+  "price": {
+    "value": 89,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7A15T-1CPG236C",
+    "vendor": "amd-xilinx"
+  },
+  "expansion": {
+    "pmod": 1
+  }
+}

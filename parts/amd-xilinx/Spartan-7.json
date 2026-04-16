@@ -1,0 +1,228 @@
+{
+  "family": "Spartan-7",
+  "description": "Spartan-7 FPGAs. Part format: {prefix}{7S}{density}-{speed}{package}{temp}",
+  "fields": [
+    {
+      "id": "product_grade",
+      "label": "Product Grade",
+      "description": "Product grade prefix indicating target market.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "XC",
+          "label": "XC",
+          "description": "Commercial"
+        },
+        {
+          "value": "XA",
+          "label": "XA",
+          "description": "Automotive"
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "label": "Family",
+      "description": "Spartan-7 family code.",
+      "length": 2,
+      "type": "fixed",
+      "value": "7S"
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Device logic density.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "6",
+          "label": "6",
+          "description": "6K logic cells"
+        },
+        {
+          "value": "15",
+          "label": "15",
+          "description": "15K logic cells"
+        },
+        {
+          "value": "25",
+          "label": "25",
+          "description": "25K logic cells"
+        },
+        {
+          "value": "50",
+          "label": "50",
+          "description": "50K logic cells"
+        },
+        {
+          "value": "75",
+          "label": "75",
+          "description": "75K logic cells"
+        },
+        {
+          "value": "100",
+          "label": "100",
+          "description": "100K logic cells"
+        }
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Device speed grade.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "1",
+          "label": "1",
+          "description": "Speed grade -1",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "2",
+          "label": "2",
+          "description": "Speed grade -2",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "1I",
+          "label": "1I",
+          "description": "Speed grade -1, industrial",
+          "when": {
+            "product_grade": [
+              "XA"
+            ]
+          }
+        },
+        {
+          "value": "1Q",
+          "label": "1Q",
+          "description": "Speed grade -1, defense",
+          "when": {
+            "product_grade": [
+              "XA"
+            ]
+          }
+        },
+        {
+          "value": "2I",
+          "label": "2I",
+          "description": "Speed grade -2, industrial",
+          "when": {
+            "product_grade": [
+              "XA"
+            ]
+          }
+        },
+        {
+          "value": "1L",
+          "label": "1L",
+          "description": "Speed grade -1, low voltage",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Device package type.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "CPGA196",
+          "label": "CPGA196",
+          "description": "CPGA 196-pin"
+        },
+        {
+          "value": "CSGA225",
+          "label": "CSGA225",
+          "description": "CSGA 225-pin"
+        },
+        {
+          "value": "CSGA324",
+          "label": "CSGA324",
+          "description": "CSGA 324-pin"
+        },
+        {
+          "value": "FGGA484",
+          "label": "FGGA484",
+          "description": "FGGA 484-pin"
+        },
+        {
+          "value": "FGGA676",
+          "label": "FGGA676",
+          "description": "FGGA 676-pin"
+        },
+        {
+          "value": "FTGB196",
+          "label": "FTGB196",
+          "description": "FTGB 196-pin"
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "C",
+          "label": "C",
+          "description": "Commercial (0\u00b0C to 85\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "I",
+          "label": "I",
+          "description": "Industrial (-40\u00b0C to 100\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XA"
+            ]
+          }
+        },
+        {
+          "value": "Q",
+          "label": "Q",
+          "description": "Automotive (-40\u00b0C to 125\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XA"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

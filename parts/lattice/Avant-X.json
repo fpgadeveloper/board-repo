@@ -1,0 +1,114 @@
+{
+  "family": "Avant-X",
+  "description": "Lattice Avant-X FPGAs — 16 nm FinFET platform for high-bandwidth applications. Format: LAV-AT-X{density}-{speed}{package}{temp}.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Lattice Avant-X platform and family code.",
+      "length": 8,
+      "type": "fixed",
+      "value": "LAV-AT-X"
+    },
+    {
+      "id": "density",
+      "label": "Logic Capacity",
+      "description": "Device logic capacity (System Logic Cells).",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "30",
+          "label": "30",
+          "description": "262k System Logic Cells."
+        },
+        {
+          "value": "50",
+          "label": "50",
+          "description": "409k System Logic Cells."
+        },
+        {
+          "value": "70",
+          "label": "70",
+          "description": "637k System Logic Cells."
+        }
+      ]
+    },
+    {
+      "id": "sep",
+      "label": "Separator",
+      "description": "Dash separator before speed grade.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Fabric speed grade. 1 = slowest, 3 = fastest.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "1",
+          "label": "Speed 1",
+          "description": "Slowest speed grade."
+        },
+        {
+          "value": "2",
+          "label": "Speed 2",
+          "description": "Mid-grade speed."
+        },
+        {
+          "value": "3",
+          "label": "Speed 3",
+          "description": "Fastest speed grade."
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type, ball count and pitch.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "ASG410",
+          "label": "ASG410",
+          "description": "410-ball, 0.5 mm pitch, FOWLP."
+        },
+        {
+          "value": "LFG676",
+          "label": "LFG676",
+          "description": "676-ball, 1.0 mm pitch, fcBGA lidless."
+        },
+        {
+          "value": "LFG1156",
+          "label": "LFG1156",
+          "description": "1156-ball, 1.0 mm pitch, fcBGA lidless."
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "C",
+          "label": "Commercial",
+          "description": "0 C to +85 C."
+        },
+        {
+          "value": "I",
+          "label": "Industrial",
+          "description": "-40 C to +100 C."
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "ICE40UP5K-B-EVN",
+  "name": "iCE40 UltraPlus Breakout",
+  "status": "active",
+  "url": "https://www.latticesemi.com/en/Products/DevelopmentBoardsAndKits/iCE40UltraPlusBreakoutBoard",
+  "vendor": "lattice",
+  "price": {
+    "value": 98,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "ICE40UP5K-SG48",
+    "vendor": "lattice"
+  }
+}

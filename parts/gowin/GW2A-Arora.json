@@ -1,0 +1,198 @@
+{
+  "family": "GW2A (Arora)",
+  "description": "Gowin Arora GW2A family \u2014 mid-range FPGAs with up to 55K LUT4s. Format: GW2A{sub}-{voltage}{density}{qualifier}{package}{speed}. Sub-variant R includes embedded SDRAM.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Gowin vendor prefix.",
+      "length": 2,
+      "type": "fixed",
+      "value": "GW"
+    },
+    {
+      "id": "family",
+      "label": "Family",
+      "description": "Arora family identifier.",
+      "length": 2,
+      "type": "fixed",
+      "value": "2A"
+    },
+    {
+      "id": "sub_variant",
+      "label": "Sub-Variant",
+      "description": "Optional sub-variant for embedded hard IP.",
+      "length": null,
+      "type": "select",
+      "required": false,
+      "options": [
+        {
+          "value": "R",
+          "label": "R (SDRAM)",
+          "description": "Embedded SDRAM (e.g. 64 Mbit PSRAM)."
+        }
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "voltage",
+      "label": "Core Voltage",
+      "description": "Core voltage variant. LV = 1.0V core (standard for GW2A).",
+      "length": null,
+      "type": "select",
+      "required": false,
+      "options": [
+        {
+          "value": "LV",
+          "label": "LV (Low Voltage)",
+          "description": "1.0V core voltage (standard for Arora)."
+        }
+      ]
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Logic density designation (approximate LUT4 count in thousands).",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "18",
+          "label": "18K",
+          "description": "~20,736 LUT4s."
+        },
+        {
+          "value": "55",
+          "label": "55K",
+          "description": "~55,296 LUT4s."
+        }
+      ]
+    },
+    {
+      "id": "qualifier",
+      "label": "Qualifier",
+      "description": "Optional package/feature qualifier character(s).",
+      "length": null,
+      "type": "select",
+      "required": false,
+      "options": [
+        {
+          "value": "C",
+          "label": "C",
+          "description": "Commercial qualifier."
+        },
+        {
+          "value": "P",
+          "label": "P",
+          "description": "Package variant qualifier."
+        },
+        {
+          "value": "K",
+          "label": "K",
+          "description": "Feature qualifier."
+        },
+        {
+          "value": "T",
+          "label": "T",
+          "description": "Tape-and-reel packaging."
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type and pin count.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "QN88",
+          "label": "QN88",
+          "description": "88-pin QFN package."
+        },
+        {
+          "value": "QN88P",
+          "label": "QN88P",
+          "description": "88-pin QFN package (P variant)."
+        },
+        {
+          "value": "LQ144P",
+          "label": "LQ144P",
+          "description": "144-pin LQFP package (P variant)."
+        },
+        {
+          "value": "PG256",
+          "label": "PG256",
+          "description": "256-ball PBGA package."
+        },
+        {
+          "value": "BG256",
+          "label": "BG256",
+          "description": "256-ball BGA package."
+        },
+        {
+          "value": "BG324",
+          "label": "BG324",
+          "description": "324-ball BGA package."
+        },
+        {
+          "value": "PG484",
+          "label": "PG484",
+          "description": "484-ball PBGA package."
+        },
+        {
+          "value": "BG484",
+          "label": "BG484",
+          "description": "484-ball BGA package."
+        }
+      ]
+    },
+    {
+      "id": "speed",
+      "label": "Speed / Temp Grade",
+      "description": "Temperature range and speed grade. C = commercial (0-85\u00b0C), I = industrial (-40 to 85\u00b0C). Higher number = slower speed.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "C6",
+          "label": "C6",
+          "description": "Commercial temp, speed grade 6."
+        },
+        {
+          "value": "C7",
+          "label": "C7",
+          "description": "Commercial temp, speed grade 7."
+        },
+        {
+          "value": "C8",
+          "label": "C8",
+          "description": "Commercial temp, speed grade 8."
+        },
+        {
+          "value": "I5",
+          "label": "I5",
+          "description": "Industrial temp, speed grade 5."
+        },
+        {
+          "value": "I6",
+          "label": "I6",
+          "description": "Industrial temp, speed grade 6."
+        },
+        {
+          "value": "I7",
+          "label": "I7",
+          "description": "Industrial temp, speed grade 7."
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

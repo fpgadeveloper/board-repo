@@ -1,0 +1,112 @@
+{
+  "family": "CertusPro-NX",
+  "description": "Lattice CertusPro-NX high-density general-purpose FPGA on the Nexus platform. Format: LFCPNX-{density}-{speed}{package}{temp}.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Fixed prefix identifying the CertusPro-NX family.",
+      "length": 6,
+      "type": "fixed",
+      "value": "LFCPNX"
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator after prefix.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Device logic density.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "100",
+          "label": "100K",
+          "description": "100K logic cells."
+        }
+      ]
+    },
+    {
+      "id": "sep2",
+      "label": "Separator",
+      "description": "Dash separator after density.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Fabric speed grade. 9 is fastest.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "7",
+          "label": "Speed 7",
+          "description": "Slowest speed grade."
+        },
+        {
+          "value": "8",
+          "label": "Speed 8",
+          "description": "Mid-range speed grade."
+        },
+        {
+          "value": "9",
+          "label": "Speed 9",
+          "description": "Fastest speed grade."
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type and ball count.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "ASC289",
+          "label": "ASC289",
+          "description": "WLCSP 289-ball."
+        },
+        {
+          "value": "BBG484",
+          "label": "BBG484",
+          "description": "caBGA 484-ball."
+        },
+        {
+          "value": "LFG672",
+          "label": "LFG672",
+          "description": "caBGA 672-ball."
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "C",
+          "label": "Commercial",
+          "description": "0 C to +85 C."
+        },
+        {
+          "value": "I",
+          "label": "Industrial",
+          "description": "-40 C to +100 C."
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

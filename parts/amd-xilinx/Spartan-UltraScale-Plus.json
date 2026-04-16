@@ -1,0 +1,132 @@
+{
+  "family": "Spartan UltraScale+",
+  "description": "Spartan UltraScale+ FPGAs. Part format: {prefix}{SU}{density}-{speed}{package}-{temp}",
+  "fields": [
+    {
+      "id": "product_grade",
+      "label": "Product Grade",
+      "description": "Product grade prefix indicating target market.",
+      "length": 2,
+      "type": "fixed",
+      "value": "XC"
+    },
+    {
+      "id": "family",
+      "label": "Family",
+      "description": "Spartan UltraScale+ family code.",
+      "length": 2,
+      "type": "fixed",
+      "value": "SU"
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Device logic density.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "10P",
+          "label": "10P",
+          "description": "SU+ 10P density"
+        },
+        {
+          "value": "25P",
+          "label": "25P",
+          "description": "SU+ 25P density"
+        },
+        {
+          "value": "35P",
+          "label": "35P",
+          "description": "SU+ 35P density"
+        }
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Device speed grade.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "1",
+          "label": "1",
+          "description": "Speed grade -1, slowest."
+        },
+        {
+          "value": "L1",
+          "label": "L1",
+          "description": "Speed grade -1, low power."
+        },
+        {
+          "value": "2",
+          "label": "2",
+          "description": "Speed grade -2, mid."
+        },
+        {
+          "value": "L2",
+          "label": "L2",
+          "description": "Speed grade -2, low power."
+        },
+        {
+          "value": "3",
+          "label": "3",
+          "description": "Speed grade -3, fastest."
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Device package type.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "CMVA361",
+          "label": "CMVA361",
+          "description": "CMVA 361-pin"
+        },
+        {
+          "value": "CMVA529",
+          "label": "CMVA529",
+          "description": "CMVA 529-pin"
+        },
+        {
+          "value": "SBVB625",
+          "label": "SBVB625",
+          "description": "SBVB 625-pin"
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "E",
+          "label": "E",
+          "description": "Extended"
+        },
+        {
+          "value": "I",
+          "label": "I",
+          "description": "Industrial (-40\u00b0C to 100\u00b0C)"
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

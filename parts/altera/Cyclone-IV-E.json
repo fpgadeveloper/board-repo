@@ -1,0 +1,95 @@
+{
+  "family": "Cyclone IV E",
+  "description": "Altera Cyclone IV E FPGA (enhanced logic/memory, no transceivers). Format: EP4CE{density}{package_type}{package_size}{temp}{speed}[suffix]. Example: EP4CE115F29C7N.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Family Signature",
+      "description": "Cyclone IV E family signature.",
+      "length": 5,
+      "type": "fixed",
+      "value": "EP4CE"
+    },
+    {
+      "id": "density",
+      "label": "Device Density",
+      "description": "Logic density (approximate LE count in thousands).",
+      "length": null,
+      "type": "select",
+      "options": [
+        {"value": "6", "label": "EP4CE6", "description": "6K logic elements."},
+        {"value": "10", "label": "EP4CE10", "description": "10K logic elements."},
+        {"value": "15", "label": "EP4CE15", "description": "15K logic elements."},
+        {"value": "22", "label": "EP4CE22", "description": "22K logic elements."},
+        {"value": "30", "label": "EP4CE30", "description": "30K logic elements."},
+        {"value": "40", "label": "EP4CE40", "description": "40K logic elements."},
+        {"value": "55", "label": "EP4CE55", "description": "55K logic elements."},
+        {"value": "75", "label": "EP4CE75", "description": "75K logic elements."},
+        {"value": "115", "label": "EP4CE115", "description": "115K logic elements."}
+      ]
+    },
+    {
+      "id": "package_type",
+      "label": "Package Type",
+      "description": "Package family.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "F", "label": "FBGA", "description": "FineLine BGA."},
+        {"value": "E", "label": "ETQFP", "description": "Enhanced Thin Quad Flat Pack."}
+      ]
+    },
+    {
+      "id": "package_size",
+      "label": "Package Size",
+      "description": "Two-digit package pin-count code.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {"value": "17", "label": "17 (FBGA 256)", "description": "FBGA, 256 pins."},
+        {"value": "22", "label": "22 (ETQFP 144)", "description": "Enhanced Thin QFP, 144 pins."},
+        {"value": "23", "label": "23 (FBGA 484)", "description": "FBGA, 484 pins."},
+        {"value": "29", "label": "29 (FBGA 780)", "description": "FBGA, 780 pins."}
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Operating Temperature",
+      "description": "Junction temperature range.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "C", "label": "Commercial", "description": "TJ = 0 to 85 C."},
+        {"value": "I", "label": "Industrial", "description": "TJ = -40 to 100 C."},
+        {"value": "A", "label": "Automotive", "description": "TJ = -40 to 125 C."}
+      ]
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Fabric speed grade. 6 = fastest.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "6", "label": "6", "description": "Fastest speed grade."},
+        {"value": "7", "label": "7", "description": "Speed grade 7."},
+        {"value": "8", "label": "8", "description": "Speed grade 8."},
+        {"value": "9", "label": "9", "description": "Slowest speed grade."}
+      ]
+    },
+    {
+      "id": "suffix",
+      "label": "Optional Suffix",
+      "description": "Optional shipment-method or low-voltage suffix.",
+      "length": null,
+      "type": "select",
+      "required": false,
+      "options": [
+        {"value": "N", "label": "N", "description": "Lead-free packaging."},
+        {"value": "L", "label": "L", "description": "Low-voltage device."},
+        {"value": "ES", "label": "ES", "description": "Engineering sample."}
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

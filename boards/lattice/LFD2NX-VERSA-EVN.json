@@ -1,0 +1,26 @@
+{
+  "id": "LFD2NX-VERSA-EVN",
+  "name": "Certus-NX Versa",
+  "status": "active",
+  "url": "https://www.latticesemi.com/products/developmentboardsandkits/certus_nx_versa_eval",
+  "vendor": "lattice",
+  "price": {
+    "value": 281,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "LFD2NX-40-8BG256C",
+    "vendor": "lattice"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 4,
+      "gen": 3
+    }
+  ],
+  "expansion": {
+    "pmod": 2,
+    "raspberry_pi": 1
+  }
+}

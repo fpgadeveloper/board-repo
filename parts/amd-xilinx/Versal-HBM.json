@@ -1,0 +1,350 @@
+{
+  "family": "Versal HBM",
+  "description": "Versal HBM series with integrated High Bandwidth Memory. Note: XCV80 omits the H series letter. Part format: {grade}V[{series}]{device}-{speed}{voltage}{screen}{pitch}{lid}{rohs}{footprint}-{temp}[-{stepping}]",
+  "fields": [
+    {
+      "id": "product_grade",
+      "label": "Product Grade",
+      "description": "Product grade prefix indicating target market.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "XC",
+          "label": "XC",
+          "description": "Commercial"
+        },
+        {
+          "value": "XA",
+          "label": "XA",
+          "description": "Automotive"
+        },
+        {
+          "value": "XQ",
+          "label": "XQ",
+          "description": "Defense Grade"
+        }
+      ]
+    },
+    {
+      "id": "versal",
+      "label": "Versal",
+      "description": "Versal platform identifier.",
+      "length": 1,
+      "type": "fixed",
+      "value": "V"
+    },
+    {
+      "id": "series",
+      "label": "Series",
+      "description": "Versal device series.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "H",
+          "label": "HBM",
+          "description": "HBM"
+        },
+        {
+          "value": "",
+          "label": "Base (XCV80)",
+          "description": "Base (XCV80)"
+        }
+      ]
+    },
+    {
+      "id": "device_number",
+      "label": "Device Number",
+      "description": "4-digit device identifier. Digits 1-3: value identifier, digit 4: number of primary cores.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "80",
+          "label": "80",
+          "description": "Device 80",
+          "when": {
+            "series": [
+              ""
+            ]
+          }
+        },
+        {
+          "value": "1522",
+          "label": "1522",
+          "description": "Value ID 152, 2 primary core(s)",
+          "when": {
+            "series": [
+              "H"
+            ]
+          }
+        },
+        {
+          "value": "1542",
+          "label": "1542",
+          "description": "Value ID 154, 2 primary core(s)",
+          "when": {
+            "series": [
+              "H"
+            ]
+          }
+        },
+        {
+          "value": "1582",
+          "label": "1582",
+          "description": "Value ID 158, 2 primary core(s)",
+          "when": {
+            "series": [
+              "H"
+            ]
+          }
+        },
+        {
+          "value": "1742",
+          "label": "1742",
+          "description": "Value ID 174, 2 primary core(s)",
+          "when": {
+            "series": [
+              "H"
+            ]
+          }
+        },
+        {
+          "value": "1782",
+          "label": "1782",
+          "description": "Value ID 178, 2 primary core(s)",
+          "when": {
+            "series": [
+              "H"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed_grade",
+      "label": "Speed Grade",
+      "description": "Device speed grade. 1 = slowest, 3 = highest performance.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "1",
+          "label": "Speed grade 1",
+          "description": "Slowest"
+        },
+        {
+          "value": "2",
+          "label": "Speed grade 2",
+          "description": "Mid",
+          "when": {
+            "product_grade": [
+              "XC",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "3",
+          "label": "Speed grade 3",
+          "description": "Highest",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "voltage",
+      "label": "Voltage",
+      "description": "Core voltage level.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "H",
+          "label": "High voltage",
+          "description": "High voltage",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "L",
+          "label": "Low voltage",
+          "description": "Low voltage"
+        },
+        {
+          "value": "M",
+          "label": "Mid voltage",
+          "description": "Mid voltage",
+          "when": {
+            "product_grade": [
+              "XC",
+              "XQ"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "static_screen",
+      "label": "Static Screen",
+      "description": "Static power screening level.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "S",
+          "label": "Standard",
+          "description": "Standard static screening."
+        },
+        {
+          "value": "L",
+          "label": "Low static",
+          "description": "Low static power screening."
+        }
+      ]
+    },
+    {
+      "id": "temp_grade",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "E",
+          "label": "E",
+          "description": "0\u00b0C to 110\u00b0C",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "I",
+          "label": "I",
+          "description": "-40\u00b0C to 110\u00b0C"
+        },
+        {
+          "value": "M",
+          "label": "M",
+          "description": "-55\u00b0C to 125\u00b0C",
+          "when": {
+            "product_grade": [
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "Q",
+          "label": "Q",
+          "description": "-40\u00b0C to 125\u00b0C",
+          "when": {
+            "product_grade": [
+              "XA"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ball_pitch",
+      "label": "Ball Pitch",
+      "description": "Ball grid array pitch and landing configuration.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "L",
+          "label": "1.0mm",
+          "description": "1.0mm"
+        },
+        {
+          "value": "V",
+          "label": "0.94mm w/ LSC",
+          "description": "0.94mm w/ LSC"
+        }
+      ]
+    },
+    {
+      "id": "lid",
+      "label": "Lid",
+      "description": "Package lid configuration.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "S",
+          "label": "Lidless w/ stiffener ring",
+          "description": "Lidless w/ stiffener ring"
+        }
+      ]
+    },
+    {
+      "id": "rohs",
+      "label": "RoHS6 Code",
+      "description": "RoHS compliance and ball material.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "R",
+          "label": "Ruggedized eutectic ball",
+          "description": "Ruggedized eutectic ball",
+          "when": {
+            "product_grade": [
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "V",
+          "label": "Pb-free ball",
+          "description": "Pb-free ball",
+          "when": {
+            "product_grade": [
+              "XC",
+              "XA"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "footprint",
+      "label": "Footprint",
+      "description": "Package footprint identifier (letter + pin count).",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "A3697",
+          "label": "A3697",
+          "description": "Footprint A3697"
+        },
+        {
+          "value": "A4737",
+          "label": "A4737",
+          "description": "Footprint A4737"
+        }
+      ]
+    }
+  ],
+  "type": "SoC"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "DE10-Standard",
+  "name": "DE10-Standard",
+  "status": "active",
+  "url": "https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&CategoryNo=165&No=1081",
+  "vendor": "terasic",
+  "price": {
+    "value": 499,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "5CSXFC6D6F31C6N",
+    "vendor": "altera"
+  },
+  "video": {
+    "hdmi_out": 1
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ]
+}

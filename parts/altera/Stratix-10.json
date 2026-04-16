@@ -1,0 +1,294 @@
+{
+  "family": "Stratix 10",
+  "description": "Altera Stratix 10 FPGA and SoC FPGA part number model. Format: 1S{sub_family}{density}{feature}{qualifier}{package}{speed}{suffix}. Example: 1SX280HU2F50E1VG.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Fixed prefix identifying the Stratix 10 family.",
+      "length": 2,
+      "type": "fixed",
+      "value": "1S"
+    },
+    {
+      "id": "sub_family",
+      "label": "Sub-Family",
+      "description": "Identifies the Stratix 10 device variant.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "X",
+          "label": "SX",
+          "description": "Stratix 10 SX SoC with embedded quad-core ARM Cortex-A53."
+        },
+        {
+          "value": "G",
+          "label": "GX",
+          "description": "Stratix 10 GX FPGA with transceivers."
+        },
+        {
+          "value": "D",
+          "label": "DX",
+          "description": "Stratix 10 DX FPGA with PCIe Gen4 and cache-coherent interconnect."
+        },
+        {
+          "value": "T",
+          "label": "TX",
+          "description": "Stratix 10 TX FPGA with 58G PAM4 transceivers."
+        },
+        {
+          "value": "M",
+          "label": "MX",
+          "description": "Stratix 10 MX FPGA with integrated HBM2 memory."
+        }
+      ]
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Density code representing the device logic capacity in K logic elements. Variable length.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "065",
+          "label": "65K LE",
+          "description": "~65K logic elements."
+        },
+        {
+          "value": "085",
+          "label": "85K LE",
+          "description": "~85K logic elements."
+        },
+        {
+          "value": "110",
+          "label": "110K LE",
+          "description": "~110K logic elements."
+        },
+        {
+          "value": "160",
+          "label": "160K LE",
+          "description": "~160K logic elements."
+        },
+        {
+          "value": "210",
+          "label": "210K LE",
+          "description": "~210K logic elements."
+        },
+        {
+          "value": "250",
+          "label": "250K LE",
+          "description": "~250K logic elements."
+        },
+        {
+          "value": "280",
+          "label": "280K LE",
+          "description": "~280K logic elements."
+        },
+        {
+          "value": "400",
+          "label": "400K LE",
+          "description": "~400K logic elements."
+        },
+        {
+          "value": "650",
+          "label": "650K LE",
+          "description": "~650K logic elements."
+        },
+        {
+          "value": "850",
+          "label": "850K LE",
+          "description": "~850K logic elements."
+        },
+        {
+          "value": "2100",
+          "label": "2100K LE",
+          "description": "~2.1M logic elements."
+        },
+        {
+          "value": "2800",
+          "label": "2800K LE",
+          "description": "~2.8M logic elements."
+        }
+      ]
+    },
+    {
+      "id": "feature",
+      "label": "Feature",
+      "description": "Single-character device/feature variant code.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "H",
+          "label": "H Variant",
+          "description": "H device/feature variant."
+        },
+        {
+          "value": "L",
+          "label": "L Variant",
+          "description": "L device/feature variant (low power)."
+        },
+        {
+          "value": "N",
+          "label": "N Variant",
+          "description": "N device/feature variant (standard)."
+        },
+        {
+          "value": "S",
+          "label": "S Variant",
+          "description": "S device/feature variant."
+        }
+      ]
+    },
+    {
+      "id": "qualifier",
+      "label": "Qualifier",
+      "description": "Two-character qualifier indicating device revision or routing variant.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "U1",
+          "label": "U1",
+          "description": "Routing/revision variant U1."
+        },
+        {
+          "value": "U2",
+          "label": "U2",
+          "description": "Routing/revision variant U2."
+        },
+        {
+          "value": "U3",
+          "label": "U3",
+          "description": "Routing/revision variant U3."
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type letter and pin count code.",
+      "length": 3,
+      "type": "select",
+      "options": [
+        {
+          "value": "F23",
+          "label": "FBGA 484-pin",
+          "description": "Fine-pitch BGA, 484 pins (23mm body)."
+        },
+        {
+          "value": "F27",
+          "label": "FBGA 672-pin",
+          "description": "Fine-pitch BGA, 672 pins (27mm body)."
+        },
+        {
+          "value": "F29",
+          "label": "FBGA 780-pin",
+          "description": "Fine-pitch BGA, 780 pins (29mm body)."
+        },
+        {
+          "value": "F31",
+          "label": "FBGA 896-pin",
+          "description": "Fine-pitch BGA, 896 pins (31mm body)."
+        },
+        {
+          "value": "F35",
+          "label": "FBGA 1152-pin",
+          "description": "Fine-pitch BGA, 1152 pins (35mm body)."
+        },
+        {
+          "value": "F40",
+          "label": "FBGA 1517-pin",
+          "description": "Fine-pitch BGA, 1517 pins (40mm body)."
+        },
+        {
+          "value": "F45",
+          "label": "FBGA 1932-pin",
+          "description": "Fine-pitch BGA, 1932 pins (45mm body)."
+        },
+        {
+          "value": "F50",
+          "label": "FBGA 2397-pin",
+          "description": "Fine-pitch BGA, 2397 pins (50mm body)."
+        },
+        {
+          "value": "F55",
+          "label": "FBGA 2912-pin",
+          "description": "Fine-pitch BGA, 2912 pins (55mm body)."
+        }
+      ]
+    },
+    {
+      "id": "speed_temp",
+      "label": "Speed / Temperature",
+      "description": "Two-character speed and temperature grade code.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "E1",
+          "label": "Enhanced, Speed 1",
+          "description": "Enhanced temperature, fastest speed grade."
+        },
+        {
+          "value": "E2",
+          "label": "Enhanced, Speed 2",
+          "description": "Enhanced temperature, standard speed grade."
+        },
+        {
+          "value": "E3",
+          "label": "Enhanced, Speed 3",
+          "description": "Enhanced temperature, economy speed grade."
+        },
+        {
+          "value": "I1",
+          "label": "Industrial, Speed 1",
+          "description": "Industrial temperature, fastest speed grade."
+        },
+        {
+          "value": "I2",
+          "label": "Industrial, Speed 2",
+          "description": "Industrial temperature, standard speed grade."
+        },
+        {
+          "value": "I3",
+          "label": "Industrial, Speed 3",
+          "description": "Industrial temperature, economy speed grade."
+        }
+      ]
+    },
+    {
+      "id": "suffix",
+      "label": "Suffix",
+      "description": "Optional trailing suffix for additional product information.",
+      "length": null,
+      "type": "select",
+      "required": false,
+      "options": [
+        {
+          "value": "",
+          "label": "None",
+          "description": "No suffix."
+        },
+        {
+          "value": "V",
+          "label": "V",
+          "description": "V variant."
+        },
+        {
+          "value": "VG",
+          "label": "VG",
+          "description": "V variant, lead-free."
+        },
+        {
+          "value": "SG",
+          "label": "SG",
+          "description": "SG variant."
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

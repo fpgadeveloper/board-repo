@@ -1,0 +1,15 @@
+{
+  "id": "LCMXO2-7000HE-B-EVN",
+  "name": "MachXO2 Breakout",
+  "status": "active",
+  "url": "https://www.latticesemi.com/products/developmentboardsandkits/machxo2breakoutboard",
+  "vendor": "lattice",
+  "price": {
+    "value": 142,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "LCMXO2-7000HE-4TG144C",
+    "vendor": "lattice"
+  }
+}

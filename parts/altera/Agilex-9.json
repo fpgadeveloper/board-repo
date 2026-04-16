@@ -1,0 +1,45 @@
+{
+  "family": "Agilex 9",
+  "description": "Altera Agilex 9 Direct RF-Series FPGAs with integrated 64 Gsps data converters. Wide-band (AGRW) and Medium-band (AGRM) variants. Ordering code format is preliminary — complete orderable part suffix (speed/package/temp) not yet documented publicly. Example devices: AGRW014, AGRW027, AGRM027.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Agilex 9 family signature.",
+      "length": 2,
+      "type": "fixed",
+      "value": "AG"
+    },
+    {
+      "id": "variant",
+      "label": "Series Variant",
+      "description": "R = Direct RF-Series.",
+      "length": 1,
+      "type": "fixed",
+      "value": "R"
+    },
+    {
+      "id": "band",
+      "label": "Band",
+      "description": "Frequency band configuration.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "W", "label": "W (Wide-band)", "description": "Wide-band variant (0.1-36 GHz RF range)."},
+        {"value": "M", "label": "M (Medium-band)", "description": "Medium-band variant (0.1-7.125 GHz RF range)."}
+      ]
+    },
+    {
+      "id": "density",
+      "label": "Logic Density",
+      "description": "Three-digit density code (approximate ALM count in thousands).",
+      "length": 3,
+      "type": "select",
+      "options": [
+        {"value": "014", "label": "014", "description": "~14K ALMs (Wide-band only)."},
+        {"value": "027", "label": "027", "description": "~27K ALMs."}
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

@@ -1,0 +1,368 @@
+{
+  "family": "Zynq-7000",
+  "description": "Zynq-7000 SoC (ARM Cortex-A9 + FPGA). Part format: {prefix}{7Z}{density}-{speed}{package}{temp}",
+  "fields": [
+    {
+      "id": "product_grade",
+      "label": "Product Grade",
+      "description": "Product grade prefix indicating target market.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "XC",
+          "label": "XC",
+          "description": "Commercial"
+        },
+        {
+          "value": "XA",
+          "label": "XA",
+          "description": "Automotive"
+        },
+        {
+          "value": "XQ",
+          "label": "XQ",
+          "description": "Defense Grade"
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "label": "Family",
+      "description": "Zynq-7000 family code.",
+      "length": 2,
+      "type": "fixed",
+      "value": "7Z"
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Device density/variant.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "007S",
+          "label": "007S",
+          "description": "Zynq-7000S single-core"
+        },
+        {
+          "value": "010",
+          "label": "010",
+          "description": "Zynq-7010"
+        },
+        {
+          "value": "012S",
+          "label": "012S",
+          "description": "Zynq-7000S single-core"
+        },
+        {
+          "value": "014S",
+          "label": "014S",
+          "description": "Zynq-7000S single-core"
+        },
+        {
+          "value": "015",
+          "label": "015",
+          "description": "Zynq-7015"
+        },
+        {
+          "value": "020",
+          "label": "020",
+          "description": "Zynq-7020"
+        },
+        {
+          "value": "030",
+          "label": "030",
+          "description": "Zynq-7030"
+        },
+        {
+          "value": "035",
+          "label": "035",
+          "description": "Zynq-7035"
+        },
+        {
+          "value": "045",
+          "label": "045",
+          "description": "Zynq-7045"
+        },
+        {
+          "value": "100",
+          "label": "100",
+          "description": "Zynq-7100"
+        }
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Device speed grade.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "1",
+          "label": "1",
+          "description": "Speed grade -1",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "2",
+          "label": "2",
+          "description": "Speed grade -2",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "3",
+          "label": "3",
+          "description": "Speed grade -3",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "1I",
+          "label": "1I",
+          "description": "Speed grade -1, industrial",
+          "when": {
+            "product_grade": [
+              "XA",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "1Q",
+          "label": "1Q",
+          "description": "Speed grade -1, defense",
+          "when": {
+            "product_grade": [
+              "XA",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "1IL",
+          "label": "1IL",
+          "description": "Speed grade -1, industrial low voltage",
+          "when": {
+            "product_grade": [
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "1QL",
+          "label": "1QL",
+          "description": "Speed grade -1, defense low voltage",
+          "when": {
+            "product_grade": [
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "2I",
+          "label": "2I",
+          "description": "Speed grade -2, industrial",
+          "when": {
+            "product_grade": [
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "2IL",
+          "label": "2IL",
+          "description": "Speed grade -2, industrial low voltage",
+          "when": {
+            "product_grade": [
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "1L",
+          "label": "1L",
+          "description": "Speed grade -1, low voltage",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Device package type.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "CLG225",
+          "label": "CLG225",
+          "description": "CLG 225-pin"
+        },
+        {
+          "value": "CLG400",
+          "label": "CLG400",
+          "description": "CLG 400-pin"
+        },
+        {
+          "value": "CLG484",
+          "label": "CLG484",
+          "description": "CLG 484-pin"
+        },
+        {
+          "value": "CLG485",
+          "label": "CLG485",
+          "description": "CLG 485-pin"
+        },
+        {
+          "value": "FBG484",
+          "label": "FBG484",
+          "description": "FBG 484-pin"
+        },
+        {
+          "value": "FBG676",
+          "label": "FBG676",
+          "description": "FBG 676-pin"
+        },
+        {
+          "value": "FBV484",
+          "label": "FBV484",
+          "description": "FBV 484-pin"
+        },
+        {
+          "value": "FBV676",
+          "label": "FBV676",
+          "description": "FBV 676-pin"
+        },
+        {
+          "value": "FFG1156",
+          "label": "FFG1156",
+          "description": "FFG 1156-pin"
+        },
+        {
+          "value": "FFG676",
+          "label": "FFG676",
+          "description": "FFG 676-pin"
+        },
+        {
+          "value": "FFG900",
+          "label": "FFG900",
+          "description": "FFG 900-pin"
+        },
+        {
+          "value": "FFV676",
+          "label": "FFV676",
+          "description": "FFV 676-pin"
+        },
+        {
+          "value": "FFV900",
+          "label": "FFV900",
+          "description": "FFV 900-pin"
+        },
+        {
+          "value": "SBG485",
+          "label": "SBG485",
+          "description": "SBG 485-pin"
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "C",
+          "label": "C",
+          "description": "Commercial (0\u00b0C to 85\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "I",
+          "label": "I",
+          "description": "Industrial (-40\u00b0C to 100\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XC",
+              "XA",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "Q",
+          "label": "Q",
+          "description": "Automotive/Defense (-40\u00b0C to 125\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XA",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "IL",
+          "label": "IL",
+          "description": "Industrial low voltage",
+          "when": {
+            "product_grade": [
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "QL",
+          "label": "QL",
+          "description": "Defense low voltage",
+          "when": {
+            "product_grade": [
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "E",
+          "label": "E",
+          "description": "Extended (-40\u00b0C to 100\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "type": "SoC"
+}

@@ -1,0 +1,168 @@
+{
+  "family": "Agilex 7",
+  "description": "Altera Agilex 7 FPGA and SoC FPGA family. Format: AG{series}{feature}{density}R{pkg_size}{pkg_variant}{fabric_speed}{device_grade}{speed}{power}[suffix]. Example: AGFD023R24C2E1VC.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Family signature identifying the Agilex device family.",
+      "length": 2,
+      "type": "fixed",
+      "value": "AG"
+    },
+    {
+      "id": "series",
+      "label": "Series",
+      "description": "Device series — determines transceiver tile and memory options.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "F", "label": "F-Series", "description": "General-purpose FPGA with F-Tile, E-Tile, and P-Tile transceivers."},
+        {"value": "I", "label": "I-Series", "description": "Networking-optimized FPGA with F-Tile and R-Tile transceivers."},
+        {"value": "M", "label": "M-Series", "description": "FPGA with integrated HBM2e high-bandwidth memory."}
+      ]
+    },
+    {
+      "id": "feature",
+      "label": "Feature Set",
+      "description": "Feature/configuration letter within the series.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "A", "label": "A", "description": "Feature set A."},
+        {"value": "B", "label": "B", "description": "Feature set B."},
+        {"value": "C", "label": "C", "description": "Feature set C."},
+        {"value": "D", "label": "D", "description": "Feature set D."},
+        {"value": "E", "label": "E", "description": "Feature set E."}
+      ]
+    },
+    {
+      "id": "density",
+      "label": "Logic Density",
+      "description": "Three-digit density code (approximate ALM count in thousands).",
+      "length": 3,
+      "type": "select",
+      "options": [
+        {"value": "006", "label": "006", "description": "~6K ALMs."},
+        {"value": "008", "label": "008", "description": "~8K ALMs."},
+        {"value": "012", "label": "012", "description": "~12K ALMs."},
+        {"value": "014", "label": "014", "description": "~14K ALMs."},
+        {"value": "019", "label": "019", "description": "~19K ALMs."},
+        {"value": "022", "label": "022", "description": "~22K ALMs."},
+        {"value": "023", "label": "023", "description": "~23K ALMs."},
+        {"value": "027", "label": "027", "description": "~27K ALMs."},
+        {"value": "035", "label": "035", "description": "~35K ALMs."},
+        {"value": "040", "label": "040", "description": "~40K ALMs."},
+        {"value": "041", "label": "041", "description": "~41K ALMs."},
+        {"value": "047", "label": "047", "description": "~47K ALMs."},
+        {"value": "057", "label": "057", "description": "~57K ALMs."},
+        {"value": "085", "label": "085", "description": "~85K ALMs."},
+        {"value": "112", "label": "112", "description": "~112K ALMs."}
+      ]
+    },
+    {
+      "id": "r_prefix",
+      "label": "Package Prefix",
+      "description": "Fixed 'R' before package code.",
+      "length": 1,
+      "type": "fixed",
+      "value": "R"
+    },
+    {
+      "id": "package_size",
+      "label": "Package Size",
+      "description": "Two-digit package size code (approximate body dimension in mm).",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {"value": "16", "label": "R16", "description": "16 mm body."},
+        {"value": "18", "label": "R18", "description": "18 mm body."},
+        {"value": "24", "label": "R24", "description": "24 mm body."},
+        {"value": "25", "label": "R25", "description": "25 mm body."},
+        {"value": "29", "label": "R29", "description": "29 mm body."},
+        {"value": "31", "label": "R31", "description": "31 mm body."},
+        {"value": "35", "label": "R35", "description": "35 mm body."},
+        {"value": "39", "label": "R39", "description": "39 mm body."},
+        {"value": "45", "label": "R45", "description": "45 mm body."}
+      ]
+    },
+    {
+      "id": "package_variant",
+      "label": "Package Variant",
+      "description": "Package variant letter — distinguishes tile configurations (R24A/B/C/D, R29A/D, etc.).",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "A", "label": "A", "description": "Package variant A."},
+        {"value": "B", "label": "B", "description": "Package variant B."},
+        {"value": "C", "label": "C", "description": "Package variant C."},
+        {"value": "D", "label": "D", "description": "Package variant D."}
+      ]
+    },
+    {
+      "id": "fabric_speed",
+      "label": "Fabric / Tile Speed Grade",
+      "description": "Performance grade of the transceiver tiles. 1 = fastest.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "1", "label": "1", "description": "Fastest transceiver performance."},
+        {"value": "2", "label": "2", "description": "Standard transceiver performance."},
+        {"value": "3", "label": "3", "description": "Economy transceiver performance."}
+      ]
+    },
+    {
+      "id": "device_grade",
+      "label": "Device Grade",
+      "description": "Operating temperature class.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "E", "label": "Extended", "description": "Extended temperature."},
+        {"value": "I", "label": "Industrial", "description": "Industrial temperature."}
+      ]
+    },
+    {
+      "id": "speed_grade",
+      "label": "Core Speed Grade",
+      "description": "Core fabric speed grade. 1 = fastest.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "1", "label": "1", "description": "Fastest core speed."},
+        {"value": "2", "label": "2", "description": "Mid core speed."},
+        {"value": "3", "label": "3", "description": "Standard core speed."},
+        {"value": "4", "label": "4", "description": "Lowest core speed."}
+      ]
+    },
+    {
+      "id": "power_option",
+      "label": "Power Option",
+      "description": "Power-option suffix: V = standard power (VID), E = lower power (VID), X = lowest power (VID), F = fixed voltage.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "V", "label": "V (standard power)", "description": "Standard power VID."},
+        {"value": "E", "label": "E (lower power)", "description": "Lower power VID."},
+        {"value": "X", "label": "X (lowest power)", "description": "Lowest power VID."},
+        {"value": "F", "label": "F (fixed voltage)", "description": "Fixed voltage."}
+      ]
+    },
+    {
+      "id": "suffix",
+      "label": "Optional Suffix",
+      "description": "Optional packaging or dev-kit-specific suffix letter.",
+      "length": null,
+      "type": "select",
+      "required": false,
+      "options": [
+        {"value": "C", "label": "C", "description": "Suffix C."},
+        {"value": "B", "label": "B", "description": "Suffix B."},
+        {"value": "R0", "label": "R0", "description": "Suffix R0."},
+        {"value": "R2", "label": "R2", "description": "Suffix R2."},
+        {"value": "ES", "label": "ES", "description": "Engineering sample."}
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

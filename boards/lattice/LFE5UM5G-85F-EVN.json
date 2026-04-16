@@ -1,0 +1,20 @@
+{
+  "id": "LFE5UM5G-85F-EVN",
+  "name": "LFE5UM5G-85F-EVN",
+  "status": "active",
+  "url": "https://www.latticesemi.com/products/developmentboardsandkits/ecp5evaluationboard",
+  "vendor": "lattice",
+  "price": {
+    "value": 99,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "LFE5UM5G-85F-8BG381C",
+    "vendor": "lattice"
+  },
+  "expansion": {
+    "pmod": 3,
+    "arduino": 1,
+    "raspberry_pi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "M2GL-EVAL-KIT",
+  "name": "IGLOO2 Evaluation",
+  "status": "active",
+  "url": "https://www.microchip.com/en-us/development-tool/m2gl-eval-kit",
+  "vendor": "microchip",
+  "price": {
+    "value": 299,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "M2GL010T-FGG484",
+    "vendor": "microchip"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 1,
+      "gen": 2
+    }
+  ],
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "LAV-E70-EVN",
+  "name": "Avant-E Evaluation",
+  "status": "active",
+  "url": "https://www.latticesemi.com/products/developmentboardsandkits/avant-e-evaluation-board",
+  "vendor": "lattice",
+  "price": {
+    "value": 300,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "LAV-AT-E70-2LFG1156C",
+    "vendor": "lattice"
+  },
+  "expansion": {
+    "fmc_hpc": 1,
+    "pmod": 3,
+    "raspberry_pi": 1
+  }
+}

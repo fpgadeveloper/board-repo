@@ -1,0 +1,170 @@
+{
+  "family": "ECP3",
+  "description": "LatticeECP3 FPGAs with embedded SERDES. Format: LFE3-{density}{voltage}-{speed}[L]{package}{temp}.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "LatticeECP3 device family prefix.",
+      "length": 4,
+      "type": "fixed",
+      "value": "LFE3"
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator after family prefix.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "density",
+      "label": "Logic Capacity",
+      "description": "Device logic density (LUT count in thousands, approximate).",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "17",
+          "label": "17",
+          "description": "17K LUTs."
+        },
+        {
+          "value": "35",
+          "label": "35",
+          "description": "33K LUTs."
+        },
+        {
+          "value": "70",
+          "label": "70",
+          "description": "67K LUTs."
+        },
+        {
+          "value": "95",
+          "label": "95",
+          "description": "92K LUTs."
+        },
+        {
+          "value": "150",
+          "label": "150",
+          "description": "149K LUTs."
+        }
+      ]
+    },
+    {
+      "id": "voltage",
+      "label": "Supply Voltage",
+      "description": "Core supply voltage. EA = 1.2 V.",
+      "length": 2,
+      "type": "fixed",
+      "value": "EA"
+    },
+    {
+      "id": "sep2",
+      "label": "Separator",
+      "description": "Dash separator before speed grade.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Fabric speed grade. 6 = slowest, 9 = fastest (-9 by Lattice sales request).",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "6",
+          "label": "Speed 6",
+          "description": "Slowest speed grade."
+        },
+        {
+          "value": "7",
+          "label": "Speed 7",
+          "description": "Mid speed grade."
+        },
+        {
+          "value": "8",
+          "label": "Speed 8",
+          "description": "Standard fastest speed grade."
+        },
+        {
+          "value": "9",
+          "label": "Speed 9",
+          "description": "Fastest speed grade (contact Lattice Sales)."
+        }
+      ]
+    },
+    {
+      "id": "power",
+      "label": "Power",
+      "description": "Optional low-power designation.",
+      "length": 1,
+      "type": "select",
+      "required": false,
+      "options": [
+        {
+          "value": "L",
+          "label": "Low Power",
+          "description": "Low-power variant."
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type and ball count.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "FTN256",
+          "label": "FTN256",
+          "description": "256-ball Lead-Free ftBGA."
+        },
+        {
+          "value": "MG328",
+          "label": "MG328",
+          "description": "328-ball Green csBGA."
+        },
+        {
+          "value": "FN484",
+          "label": "FN484",
+          "description": "484-ball Lead-Free fpBGA."
+        },
+        {
+          "value": "FN672",
+          "label": "FN672",
+          "description": "672-ball Lead-Free fpBGA."
+        },
+        {
+          "value": "FN1156",
+          "label": "FN1156",
+          "description": "1156-ball Lead-Free fpBGA."
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "C",
+          "label": "Commercial",
+          "description": "0 C to +85 C."
+        },
+        {
+          "value": "I",
+          "label": "Industrial",
+          "description": "-40 C to +100 C."
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

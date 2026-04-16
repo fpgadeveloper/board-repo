@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "boards/**/*.json"
+      - "parts/**/*.json"
       - "vendors.json"
       - "vendors/**"
 

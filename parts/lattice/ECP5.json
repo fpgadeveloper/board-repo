@@ -1,0 +1,172 @@
+{
+  "family": "ECP5",
+  "description": "Lattice ECP5 low-power FPGA with optional SERDES. Format: LFE5{sub_family}-{density}F-{speed}{package}{temp}.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Fixed prefix identifying the ECP5 family.",
+      "length": 4,
+      "type": "fixed",
+      "value": "LFE5"
+    },
+    {
+      "id": "sub_family",
+      "label": "Sub-family",
+      "description": "Identifies the ECP5 variant \u2014 base, with SERDES, or with 5G SERDES.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "U",
+          "label": "U",
+          "description": "Base ECP5 \u2014 no SERDES."
+        },
+        {
+          "value": "UM",
+          "label": "UM",
+          "description": "ECP5 with dual-channel SERDES (up to 3.125 Gbps)."
+        },
+        {
+          "value": "UM5G",
+          "label": "UM5G",
+          "description": "ECP5 with quad-channel 5G SERDES (up to 5 Gbps)."
+        }
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator after sub-family.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Device logic density. The trailing F is part of the density code.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "12F",
+          "label": "12F",
+          "description": "12K LUTs.",
+          "when": {
+            "sub_family": [
+              "U",
+              "UM"
+            ]
+          }
+        },
+        {
+          "value": "25F",
+          "label": "25F",
+          "description": "24K LUTs."
+        },
+        {
+          "value": "45F",
+          "label": "45F",
+          "description": "44K LUTs."
+        },
+        {
+          "value": "85F",
+          "label": "85F",
+          "description": "84K LUTs."
+        }
+      ]
+    },
+    {
+      "id": "sep2",
+      "label": "Separator",
+      "description": "Dash separator after density.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Fabric speed grade. 8 is fastest.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "6",
+          "label": "Speed 6",
+          "description": "Slowest speed grade."
+        },
+        {
+          "value": "7",
+          "label": "Speed 7",
+          "description": "Mid-range speed grade."
+        },
+        {
+          "value": "8",
+          "label": "Speed 8",
+          "description": "Fastest speed grade."
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type and ball count.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "BG256",
+          "label": "BG256",
+          "description": "caBGA 256-ball, 14x14 mm."
+        },
+        {
+          "value": "BG381",
+          "label": "BG381",
+          "description": "caBGA 381-ball, 17x17 mm."
+        },
+        {
+          "value": "BG554",
+          "label": "BG554",
+          "description": "caBGA 554-ball, 23x23 mm."
+        },
+        {
+          "value": "BG756",
+          "label": "BG756",
+          "description": "caBGA 756-ball, 27x27 mm."
+        },
+        {
+          "value": "MG285",
+          "label": "MG285",
+          "description": "csfBGA 285-ball."
+        },
+        {
+          "value": "CB285",
+          "label": "CB285",
+          "description": "csBGA 285-ball."
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "C",
+          "label": "Commercial",
+          "description": "0 C to +85 C."
+        },
+        {
+          "value": "I",
+          "label": "Industrial",
+          "description": "-40 C to +100 C."
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

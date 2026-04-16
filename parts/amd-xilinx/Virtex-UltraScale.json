@@ -1,0 +1,202 @@
+{
+  "family": "Virtex UltraScale",
+  "description": "Virtex UltraScale FPGAs. Part format: {prefix}{VU}{density}-{speed}{package}-{temp}",
+  "fields": [
+    {
+      "id": "product_grade",
+      "label": "Product Grade",
+      "description": "Product grade prefix indicating target market.",
+      "length": 2,
+      "type": "fixed",
+      "value": "XC"
+    },
+    {
+      "id": "family",
+      "label": "Family",
+      "description": "Virtex UltraScale family code.",
+      "length": 2,
+      "type": "fixed",
+      "value": "VU"
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Device logic density (plain numbers, no P suffix).",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "065",
+          "label": "065",
+          "description": "VU 065 density"
+        },
+        {
+          "value": "080",
+          "label": "080",
+          "description": "VU 080 density"
+        },
+        {
+          "value": "095",
+          "label": "095",
+          "description": "VU 095 density"
+        },
+        {
+          "value": "125",
+          "label": "125",
+          "description": "VU 125 density"
+        },
+        {
+          "value": "160",
+          "label": "160",
+          "description": "VU 160 density"
+        },
+        {
+          "value": "190",
+          "label": "190",
+          "description": "VU 190 density"
+        },
+        {
+          "value": "440",
+          "label": "440",
+          "description": "VU 440 density"
+        }
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Device speed grade.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "1",
+          "label": "1",
+          "description": "Speed grade -1, slowest."
+        },
+        {
+          "value": "H1",
+          "label": "H1",
+          "description": "Speed grade -1, high performance."
+        },
+        {
+          "value": "2",
+          "label": "2",
+          "description": "Speed grade -2, mid."
+        },
+        {
+          "value": "3",
+          "label": "3",
+          "description": "Speed grade -3, fastest."
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Device package type.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "FFVA2104",
+          "label": "FFVA2104",
+          "description": "FFVA 2104-pin"
+        },
+        {
+          "value": "FFVB1760",
+          "label": "FFVB1760",
+          "description": "FFVB 1760-pin"
+        },
+        {
+          "value": "FFVB2104",
+          "label": "FFVB2104",
+          "description": "FFVB 2104-pin"
+        },
+        {
+          "value": "FFVC1517",
+          "label": "FFVC1517",
+          "description": "FFVC 1517-pin"
+        },
+        {
+          "value": "FFVC2104",
+          "label": "FFVC2104",
+          "description": "FFVC 2104-pin"
+        },
+        {
+          "value": "FFVD1517",
+          "label": "FFVD1517",
+          "description": "FFVD 1517-pin"
+        },
+        {
+          "value": "FLGA2577",
+          "label": "FLGA2577",
+          "description": "FLGA 2577-pin"
+        },
+        {
+          "value": "FLGA2892",
+          "label": "FLGA2892",
+          "description": "FLGA 2892-pin"
+        },
+        {
+          "value": "FLGB2104",
+          "label": "FLGB2104",
+          "description": "FLGB 2104-pin"
+        },
+        {
+          "value": "FLGB2377",
+          "label": "FLGB2377",
+          "description": "FLGB 2377-pin"
+        },
+        {
+          "value": "FLGC2104",
+          "label": "FLGC2104",
+          "description": "FLGC 2104-pin"
+        },
+        {
+          "value": "FLVB2104",
+          "label": "FLVB2104",
+          "description": "FLVB 2104-pin"
+        },
+        {
+          "value": "FLVC1517",
+          "label": "FLVC1517",
+          "description": "FLVC 1517-pin"
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "C",
+          "label": "C",
+          "description": "Commercial (0\u00b0C to 85\u00b0C)"
+        },
+        {
+          "value": "E",
+          "label": "E",
+          "description": "Extended (-40\u00b0C to 100\u00b0C)"
+        },
+        {
+          "value": "I",
+          "label": "I",
+          "description": "Industrial (-40\u00b0C to 100\u00b0C)"
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

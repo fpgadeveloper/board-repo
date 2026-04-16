@@ -1,0 +1,322 @@
+{
+  "family": "Zynq UltraScale+ RFSoC",
+  "description": "Zynq UltraScale+ RFSoC (ARM + FPGA + RF data converters). Part format: {prefix}{ZU}{density}DR-{speed}{package}-{temp}",
+  "fields": [
+    {
+      "id": "product_grade",
+      "label": "Product Grade",
+      "description": "Product grade prefix indicating target market.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "XC",
+          "label": "XC",
+          "description": "Commercial"
+        },
+        {
+          "value": "XQ",
+          "label": "XQ",
+          "description": "Defense Grade"
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "label": "Family",
+      "description": "Zynq UltraScale+ family code.",
+      "length": 2,
+      "type": "fixed",
+      "value": "ZU"
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Device density.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "21",
+          "label": "21",
+          "description": "ZU21DR"
+        },
+        {
+          "value": "25",
+          "label": "25",
+          "description": "ZU25DR"
+        },
+        {
+          "value": "27",
+          "label": "27",
+          "description": "ZU27DR"
+        },
+        {
+          "value": "28",
+          "label": "28",
+          "description": "ZU28DR"
+        },
+        {
+          "value": "29",
+          "label": "29",
+          "description": "ZU29DR"
+        },
+        {
+          "value": "39",
+          "label": "39",
+          "description": "ZU39DR"
+        },
+        {
+          "value": "42",
+          "label": "42",
+          "description": "ZU42DR"
+        },
+        {
+          "value": "43",
+          "label": "43",
+          "description": "ZU43DR"
+        },
+        {
+          "value": "46",
+          "label": "46",
+          "description": "ZU46DR"
+        },
+        {
+          "value": "47",
+          "label": "47",
+          "description": "ZU47DR"
+        },
+        {
+          "value": "48",
+          "label": "48",
+          "description": "ZU48DR"
+        },
+        {
+          "value": "49",
+          "label": "49",
+          "description": "ZU49DR"
+        },
+        {
+          "value": "65",
+          "label": "65",
+          "description": "ZU65DR"
+        },
+        {
+          "value": "67",
+          "label": "67",
+          "description": "ZU67DR"
+        },
+        {
+          "value": "57",
+          "label": "57",
+          "description": "ZU57DR RFSoC"
+        }
+      ]
+    },
+    {
+      "id": "device_type",
+      "label": "Device Type",
+      "description": "RFSoC device type suffix.",
+      "length": 2,
+      "type": "fixed",
+      "value": "DR"
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Device speed grade.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "1",
+          "label": "1",
+          "description": "Speed grade -1",
+          "when": {
+            "product_grade": [
+              "XC",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "1L",
+          "label": "1L",
+          "description": "Speed grade -1, low voltage",
+          "when": {
+            "product_grade": [
+              "XC",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "1LV",
+          "label": "1LV",
+          "description": "Speed grade -1, low voltage variant",
+          "when": {
+            "product_grade": [
+              "XC",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "2",
+          "label": "2",
+          "description": "Speed grade -2",
+          "when": {
+            "product_grade": [
+              "XC",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "2L",
+          "label": "2L",
+          "description": "Speed grade -2, low voltage",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "2LV",
+          "label": "2LV",
+          "description": "Speed grade -2, low voltage variant",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "2LVI",
+          "label": "2LVI",
+          "description": "Speed grade -2, low voltage industrial",
+          "when": {
+            "product_grade": [
+              "XC",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "1M",
+          "label": "1M",
+          "description": "Speed grade -1, military",
+          "when": {
+            "product_grade": [
+              "XQ"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Device package type.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "FFVD1156",
+          "label": "FFVD1156",
+          "description": "FFVD 1156-pin"
+        },
+        {
+          "value": "FFVE1156",
+          "label": "FFVE1156",
+          "description": "FFVE 1156-pin"
+        },
+        {
+          "value": "FFVF1760",
+          "label": "FFVF1760",
+          "description": "FFVF 1760-pin"
+        },
+        {
+          "value": "FFVG1517",
+          "label": "FFVG1517",
+          "description": "FFVG 1517-pin"
+        },
+        {
+          "value": "FFVH1760",
+          "label": "FFVH1760",
+          "description": "FFVH 1760-pin"
+        },
+        {
+          "value": "FSVE1156",
+          "label": "FSVE1156",
+          "description": "FSVE 1156-pin"
+        },
+        {
+          "value": "FSVF1760",
+          "label": "FSVF1760",
+          "description": "FSVF 1760-pin"
+        },
+        {
+          "value": "FSVG1517",
+          "label": "FSVG1517",
+          "description": "FSVG 1517-pin"
+        },
+        {
+          "value": "FSVH1760",
+          "label": "FSVH1760",
+          "description": "FSVH 1760-pin"
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "E",
+          "label": "E",
+          "description": "Extended (-40\u00b0C to 100\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "I",
+          "label": "I",
+          "description": "Industrial (-40\u00b0C to 100\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XC",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "M",
+          "label": "M",
+          "description": "Military (-55\u00b0C to 125\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XQ"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "type": "RFSoC"
+}

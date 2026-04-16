@@ -1,0 +1,108 @@
+{
+  "family": "Certus-N2",
+  "description": "Lattice Certus-N2 general-purpose FPGAs on the Nexus 2 platform (16G SerDes, LPDDR4, PCIe Gen4). Format: LN2-CT-{density}[E]-{speed}{package}{temp}.",
+  "fields": [
+    {
+      "id": "platform",
+      "label": "Platform Code",
+      "description": "Lattice Nexus 2 platform prefix.",
+      "length": 3,
+      "type": "fixed",
+      "value": "LN2"
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator after platform.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "family_code",
+      "label": "Family Code",
+      "description": "CT = Certus-N2.",
+      "length": 2,
+      "type": "fixed",
+      "value": "CT"
+    },
+    {
+      "id": "sep2",
+      "label": "Separator",
+      "description": "Dash separator after family code.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "density",
+      "label": "Logic Capacity",
+      "description": "Device logic capacity.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {"value": "06", "label": "06", "description": "65k System Logic Cells."},
+        {"value": "10", "label": "10", "description": "100k System Logic Cells."},
+        {"value": "16", "label": "16", "description": "160k System Logic Cells."},
+        {"value": "20", "label": "20", "description": "220k System Logic Cells."}
+      ]
+    },
+    {
+      "id": "feature",
+      "label": "Feature",
+      "description": "Optional feature code. E = Entry (no SERDES).",
+      "length": 1,
+      "type": "select",
+      "required": false,
+      "options": [
+        {"value": "E", "label": "Entry (no SERDES)", "description": "Entry-level variant without SERDES."}
+      ]
+    },
+    {
+      "id": "sep3",
+      "label": "Separator",
+      "description": "Dash separator before speed grade.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Fabric speed grade. 3 = fastest.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "1", "label": "Speed 1", "description": "Slowest speed grade."},
+        {"value": "2", "label": "Speed 2", "description": "Mid-grade speed."},
+        {"value": "3", "label": "Speed 3", "description": "Fastest speed grade."}
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type, ball count and pitch.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {"value": "ASG273", "label": "ASG273", "description": "256-ball, 0.5 mm pitch, FOWLP."},
+        {"value": "ASG410", "label": "ASG410", "description": "410-ball, 0.5 mm pitch, FOWLP."},
+        {"value": "CBG256", "label": "CBG256", "description": "256-ball, 0.8 mm pitch, FCCSP."},
+        {"value": "CBG484", "label": "CBG484", "description": "484-ball, 0.8 mm pitch, FCCSP."},
+        {"value": "LFG676", "label": "LFG676", "description": "676-ball, 1.0 mm pitch, fcBGA lidless."}
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "C", "label": "Commercial", "description": "0 C to +85 C."},
+        {"value": "I", "label": "Industrial", "description": "-40 C to +100 C."}
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

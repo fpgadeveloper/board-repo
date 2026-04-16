@@ -1,0 +1,25 @@
+{
+  "id": "DK-DEV-AGF023FA",
+  "name": "Agilex 7 F-Series (2x F-Tile)",
+  "status": "active",
+  "url": "https://www.altera.com/products/devkit/po-3004/agilex-7-fpga-f-series-development-kit-2x-f-tile-agf023",
+  "vendor": "altera",
+  "price": {
+    "value": 8495,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "AGFD023R24C2E1VC",
+    "vendor": "altera"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 16,
+      "gen": 4
+    }
+  ],
+  "networking": {
+    "qsfp": 2
+  }
+}

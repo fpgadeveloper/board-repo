@@ -1,0 +1,166 @@
+{
+  "family": "Cyclone 10 LP",
+  "description": "Altera Cyclone 10 LP FPGA part number model. Format: 10CL{density}{package}{pin_count}{speed}{trailing}. Example: 10CL025YU256C8G.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Fixed prefix identifying the Cyclone 10 LP family.",
+      "length": 4,
+      "type": "fixed",
+      "value": "10CL"
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Three-digit code representing the device logic density in K logic elements.",
+      "length": 3,
+      "type": "select",
+      "options": [
+        {
+          "value": "006",
+          "label": "6K LE",
+          "description": "~6K logic elements."
+        },
+        {
+          "value": "010",
+          "label": "10K LE",
+          "description": "~10K logic elements."
+        },
+        {
+          "value": "016",
+          "label": "16K LE",
+          "description": "~16K logic elements."
+        },
+        {
+          "value": "025",
+          "label": "25K LE",
+          "description": "~25K logic elements."
+        },
+        {
+          "value": "040",
+          "label": "40K LE",
+          "description": "~40K logic elements."
+        },
+        {
+          "value": "055",
+          "label": "55K LE",
+          "description": "~55K logic elements."
+        },
+        {
+          "value": "080",
+          "label": "80K LE",
+          "description": "~80K logic elements."
+        },
+        {
+          "value": "120",
+          "label": "120K LE",
+          "description": "~120K logic elements."
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type code.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "YU",
+          "label": "UBGA",
+          "description": "Ultra-fine-pitch BGA package."
+        },
+        {
+          "value": "ZU",
+          "label": "UBGA (variant)",
+          "description": "Ultra-fine-pitch BGA package variant."
+        },
+        {
+          "value": "F",
+          "label": "FBGA",
+          "description": "Fine-pitch BGA package."
+        }
+      ]
+    },
+    {
+      "id": "pin_count",
+      "label": "Pin Count",
+      "description": "Number of package pins.",
+      "length": 3,
+      "type": "select",
+      "options": [
+        {
+          "value": "256",
+          "label": "256 pins",
+          "description": "256-pin package."
+        },
+        {
+          "value": "324",
+          "label": "324 pins",
+          "description": "324-pin package."
+        },
+        {
+          "value": "484",
+          "label": "484 pins",
+          "description": "484-pin package."
+        },
+        {
+          "value": "672",
+          "label": "672 pins",
+          "description": "672-pin package."
+        }
+      ]
+    },
+    {
+      "id": "speed_grade",
+      "label": "Speed Grade",
+      "description": "Temperature grade letter and speed grade number.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "C6",
+          "label": "Commercial, Speed 6",
+          "description": "Commercial temperature, fastest speed grade."
+        },
+        {
+          "value": "C8",
+          "label": "Commercial, Speed 8",
+          "description": "Commercial temperature, standard speed grade."
+        },
+        {
+          "value": "A7",
+          "label": "Automotive, Speed 7",
+          "description": "Automotive temperature range."
+        },
+        {
+          "value": "I7",
+          "label": "Industrial, Speed 7",
+          "description": "Industrial temperature range."
+        }
+      ]
+    },
+    {
+      "id": "trailing",
+      "label": "Trailing",
+      "description": "Optional trailing suffix character. G indicates lead-free.",
+      "length": null,
+      "type": "select",
+      "required": false,
+      "options": [
+        {
+          "value": "",
+          "label": "None",
+          "description": "No trailing suffix."
+        },
+        {
+          "value": "G",
+          "label": "Pb-free",
+          "description": "Lead-free (RoHS-compliant) package."
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

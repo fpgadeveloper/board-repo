@@ -1,0 +1,36 @@
+{
+  "id": "DK-SOC-10AS066S-A",
+  "name": "Arria 10 SoC",
+  "status": "active",
+  "url": "https://www.altera.com/products/devkit/po-3006/arria-10-sx-soc-development-kit",
+  "vendor": "altera",
+  "price": {
+    "value": 4495,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "10AS066N3F40E2SG",
+    "vendor": "altera"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 8,
+      "gen": 3
+    }
+  ],
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 2
+    }
+  ],
+  "networking": {
+    "sfp": 2,
+    "qsfp": 1
+  },
+  "expansion": {
+    "fmc_hpc": 1,
+    "fmc_lpc": 1
+  }
+}

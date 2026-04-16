@@ -12,6 +12,10 @@
       "name": "AMD Xilinx",
       "url": "https://www.amd.com"
     },
+    "critical-link": {
+      "name": "Critical Link",
+      "url": "https://www.criticallink.com"
+    },
     "avnet": {
       "name": "Avnet",
       "url": "https://www.avnet.com"
@@ -36,6 +40,10 @@
       "name": "imperix",
       "url": "https://imperix.com"
     },
+    "iwave": {
+      "name": "iWave Systems",
+      "url": "https://www.iwavesystems.com"
+    },
     "invent-logics": {
       "name": "Invent Logics",
       "url": "https://allaboutfpga.com"
@@ -51,6 +59,10 @@
     "lattice": {
       "name": "Lattice",
       "url": "https://www.latticesemi.com"
+    },
+    "microchip": {
+      "name": "Microchip",
+      "url": "https://www.microchip.com"
     },
     "myir": {
       "name": "MYIR Tech",

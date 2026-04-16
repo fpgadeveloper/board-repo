@@ -1,0 +1,150 @@
+{
+  "family": "PolarFire",
+  "description": "Microchip PolarFire mid-range FPGA with low power, 12.7 Gbps SERDES transceivers, and high security. Format: MPF{density}{variant}-{package}{temp}.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Fixed prefix identifying the PolarFire family.",
+      "length": 3,
+      "type": "fixed",
+      "value": "MPF"
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Device logic density in thousands of logic elements.",
+      "length": 3,
+      "type": "select",
+      "options": [
+        {
+          "value": "050",
+          "label": "50K",
+          "description": "48K logic elements."
+        },
+        {
+          "value": "100",
+          "label": "100K",
+          "description": "100K logic elements."
+        },
+        {
+          "value": "200",
+          "label": "200K",
+          "description": "192K logic elements."
+        },
+        {
+          "value": "300",
+          "label": "300K",
+          "description": "300K logic elements."
+        },
+        {
+          "value": "500",
+          "label": "500K",
+          "description": "481K logic elements."
+        }
+      ]
+    },
+    {
+      "id": "variant",
+      "label": "Variant",
+      "description": "Device variant \u2014 standard, secure, or defense.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "T",
+          "label": "T",
+          "description": "Standard variant."
+        },
+        {
+          "value": "TS",
+          "label": "TS",
+          "description": "Secure variant with enhanced tamper protection."
+        },
+        {
+          "value": "KS",
+          "label": "KS",
+          "description": "Defense-grade secure variant."
+        }
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator after variant.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Optional speed grade designator.",
+      "length": 1,
+      "type": "select",
+      "required": false,
+      "options": [
+        {"value": "1", "label": "1", "description": "Standard speed grade (STD)."}
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type and pin/ball count.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "FCSG325",
+          "label": "FCSG325",
+          "description": "FCSG 325-ball."
+        },
+        {
+          "value": "FCG484",
+          "label": "FCG484",
+          "description": "FCG 484-ball."
+        },
+        {
+          "value": "FCVG484",
+          "label": "FCVG484",
+          "description": "FCVG 484-ball."
+        },
+        {
+          "value": "FCSG536",
+          "label": "FCSG536",
+          "description": "FCSG 536-ball."
+        },
+        {
+          "value": "FCG896",
+          "label": "FCG896",
+          "description": "FCG 896-ball."
+        },
+        {
+          "value": "FCG1152",
+          "label": "FCG1152",
+          "description": "FCG 1152-ball."
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "E",
+          "label": "Extended Commercial",
+          "description": "0 C to +100 C (standard/extended commercial)."
+        },
+        {
+          "value": "I",
+          "label": "Industrial",
+          "description": "-40 C to +100 C."
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

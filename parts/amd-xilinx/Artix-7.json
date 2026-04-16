@@ -1,0 +1,367 @@
+{
+  "family": "Artix-7",
+  "description": "Artix-7 FPGAs. Part format: {prefix}{7A}{density}-{speed}{package}{temp}",
+  "fields": [
+    {
+      "id": "product_grade",
+      "label": "Product Grade",
+      "description": "Product grade prefix indicating target market.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "XC",
+          "label": "XC",
+          "description": "Commercial"
+        },
+        {
+          "value": "XA",
+          "label": "XA",
+          "description": "Automotive"
+        },
+        {
+          "value": "XQ",
+          "label": "XQ",
+          "description": "Defense Grade"
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "label": "Family",
+      "description": "Artix-7 family code.",
+      "length": 2,
+      "type": "fixed",
+      "value": "7A"
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Device logic density.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "12T",
+          "label": "12T",
+          "description": "~12K logic cells"
+        },
+        {
+          "value": "15T",
+          "label": "15T",
+          "description": "~15K logic cells"
+        },
+        {
+          "value": "25T",
+          "label": "25T",
+          "description": "~25K logic cells"
+        },
+        {
+          "value": "35T",
+          "label": "35T",
+          "description": "~33K logic cells"
+        },
+        {
+          "value": "50T",
+          "label": "50T",
+          "description": "~52K logic cells"
+        },
+        {
+          "value": "75T",
+          "label": "75T",
+          "description": "~75K logic cells"
+        },
+        {
+          "value": "100T",
+          "label": "100T",
+          "description": "~101K logic cells"
+        },
+        {
+          "value": "200T",
+          "label": "200T",
+          "description": "~215K logic cells"
+        },
+        {
+          "value": "35TI",
+          "label": "35TI",
+          "description": "~33K logic cells, industrial variant device name"
+        }
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Device speed grade.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "1",
+          "label": "1",
+          "description": "Speed grade -1",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "2",
+          "label": "2",
+          "description": "Speed grade -2",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "2L",
+          "label": "2L",
+          "description": "Speed grade -2, low voltage",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "3",
+          "label": "3",
+          "description": "Speed grade -3",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "1I",
+          "label": "1I",
+          "description": "Speed grade -1, industrial",
+          "when": {
+            "product_grade": [
+              "XA",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "1Q",
+          "label": "1Q",
+          "description": "Speed grade -1, defense",
+          "when": {
+            "product_grade": [
+              "XA"
+            ]
+          }
+        },
+        {
+          "value": "2I",
+          "label": "2I",
+          "description": "Speed grade -2, industrial",
+          "when": {
+            "product_grade": [
+              "XA",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "1IL",
+          "label": "1IL",
+          "description": "Speed grade -1, industrial low voltage",
+          "when": {
+            "product_grade": [
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "1M",
+          "label": "1M",
+          "description": "Speed grade -1, military",
+          "when": {
+            "product_grade": [
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "1L",
+          "label": "1L",
+          "description": "Speed grade -1, low voltage",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Device package type.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "CPG236",
+          "label": "CPG236",
+          "description": "CPG 236-pin"
+        },
+        {
+          "value": "CPG238",
+          "label": "CPG238",
+          "description": "CPG 238-pin"
+        },
+        {
+          "value": "CSG324",
+          "label": "CSG324",
+          "description": "CSG 324-pin"
+        },
+        {
+          "value": "CSG325",
+          "label": "CSG325",
+          "description": "CSG 325-pin"
+        },
+        {
+          "value": "FBG484",
+          "label": "FBG484",
+          "description": "FBG 484-pin"
+        },
+        {
+          "value": "FBG676",
+          "label": "FBG676",
+          "description": "FBG 676-pin"
+        },
+        {
+          "value": "FBV484",
+          "label": "FBV484",
+          "description": "FBV 484-pin"
+        },
+        {
+          "value": "FBV676",
+          "label": "FBV676",
+          "description": "FBV 676-pin"
+        },
+        {
+          "value": "FFG1156",
+          "label": "FFG1156",
+          "description": "FFG 1156-pin"
+        },
+        {
+          "value": "FFV1156",
+          "label": "FFV1156",
+          "description": "FFV 1156-pin"
+        },
+        {
+          "value": "FTG256",
+          "label": "FTG256",
+          "description": "FTG 256-pin"
+        },
+        {
+          "value": "FTGB196",
+          "label": "FTGB196",
+          "description": "FTGB 196-pin"
+        },
+        {
+          "value": "SBG484",
+          "label": "SBG484",
+          "description": "SBG 484-pin"
+        },
+        {
+          "value": "SBV484",
+          "label": "SBV484",
+          "description": "SBV 484-pin"
+        },
+        {
+          "value": "FGG484",
+          "label": "FGG484",
+          "description": "FGG 484-pin"
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "C",
+          "label": "C",
+          "description": "Commercial (0\u00b0C to 85\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "E",
+          "label": "E",
+          "description": "Extended (-40\u00b0C to 100\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "I",
+          "label": "I",
+          "description": "Industrial (-40\u00b0C to 100\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XC",
+              "XA",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "Q",
+          "label": "Q",
+          "description": "Automotive (-40\u00b0C to 125\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XA"
+            ]
+          }
+        },
+        {
+          "value": "IL",
+          "label": "IL",
+          "description": "Industrial low voltage",
+          "when": {
+            "product_grade": [
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "M",
+          "label": "M",
+          "description": "Military (-55\u00b0C to 125\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XQ"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

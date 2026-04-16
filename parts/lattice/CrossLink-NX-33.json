@@ -1,0 +1,111 @@
+{
+  "family": "CrossLink-NX-33",
+  "description": "Lattice CrossLink-NX-33 and CrossLink-NX-33U FPGAs (33k logic cells, optional hardened USB). Format: LIFCL-33[U]-{speed}{package}{temp}.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Fixed prefix identifying the CrossLink-NX family.",
+      "length": 5,
+      "type": "fixed",
+      "value": "LIFCL"
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator after prefix.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Logic capacity. Fixed at 33k logic cells for this family.",
+      "length": 2,
+      "type": "fixed",
+      "value": "33"
+    },
+    {
+      "id": "usb",
+      "label": "USB Variant",
+      "description": "Optional hardened USB designation. Present on CrossLink-NX-33U, absent on CrossLink-NX-33.",
+      "length": 1,
+      "type": "select",
+      "required": false,
+      "options": [
+        {
+          "value": "U",
+          "label": "Hardened USB",
+          "description": "CrossLink-NX-33U with hardened USB block."
+        }
+      ]
+    },
+    {
+      "id": "sep2",
+      "label": "Separator",
+      "description": "Dash separator before speed grade.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Fabric speed grade. 8 is fastest.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "7",
+          "label": "Speed 7",
+          "description": "Slowest speed grade (CTG104 package only)."
+        },
+        {
+          "value": "8",
+          "label": "Speed 8",
+          "description": "Fastest speed grade."
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type and ball count.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "USG84",
+          "label": "USG84",
+          "description": "Lead-free 84-ball WLCSP."
+        },
+        {
+          "value": "CTG104",
+          "label": "CTG104",
+          "description": "Lead-free 104-ball FCCSP. ECC available only on -8 speed grade."
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "C",
+          "label": "Commercial",
+          "description": "0 C to +85 C."
+        },
+        {
+          "value": "I",
+          "label": "Industrial",
+          "description": "-40 C to +100 C."
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

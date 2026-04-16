@@ -7,6 +7,8 @@ This repository contains the community-maintained database of FPGA development b
 | Path | Description |
 |------|-------------|
 | `boards/` | Individual board JSON files, organized by vendor (e.g. `boards/amd-xilinx/ZCU102.json`). |
+| `parts/` | Part-number decoder files, one per family (e.g. `parts/amd-xilinx/Spartan-7.json`). |
+| `vendors/` | Per-vendor reference data (tool part rules, device resources, transceivers, package info). |
 | `vendors.json` | Centralized registry of board vendors and silicon vendors. |
 | `schema.json` | JSON Schema (Draft 2020-12) that validates individual board objects. |
 
@@ -200,6 +202,35 @@ for path in files:
 print(f'{len(files)} boards checked, {errors} error(s)' if errors else f'{len(files)} boards checked — all valid!')
 "
 ```
+
+## Part Number Decoders
+
+Decoders live in `parts/{vendor}/{Family}.json` — one file per FPGA family. Splitting the decoders per family makes it easier to find, review, and contribute changes without wading through a single huge file.
+
+### File naming
+
+The filename is derived from the family name: take the family name, replace `+` with `-Plus`, then replace any run of non-alphanumeric characters with a single `-`. Examples:
+
+| Family | File |
+|--------|------|
+| `Spartan-7` | `parts/amd-xilinx/Spartan-7.json` |
+| `Agilex 7` | `parts/altera/Agilex-7.json` |
+| `Zynq UltraScale+ MPSoC` | `parts/amd-xilinx/Zynq-UltraScale-Plus-MPSoC.json` |
+| `GW1N (LittleBee)` | `parts/gowin/GW1N-LittleBee.json` |
+
+### Decoder format
+
+Each file is a single family object. Fields are consumed left-to-right through the part number string. Field types:
+
+- `fixed` — a literal substring (e.g. the family code `"7S"` in Spartan-7).
+- `select` — a set of options; the longest matching option wins. Options may include a `when` clause to restrict them based on earlier field selections.
+
+A field with `"required": false` is skipped if no option matches (used for optional speed grades, suffixes, etc.).
+
+### Adding or editing a decoder
+
+1. Edit the family file directly (e.g. `parts/lattice/ECP5.json`), or create a new file for a new family.
+2. Open a pull request. The website's build pipeline will merge the per-family files into the deployed site automatically.
 
 ## License
 

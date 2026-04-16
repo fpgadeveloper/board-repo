@@ -1,0 +1,207 @@
+{
+  "family": "Cyclone V E",
+  "description": "Altera Cyclone V E FPGA (enhanced logic/memory, no transceivers). Format: 5CE{hard_ip}A{density}{pkg_type}{pkg_pins}{temp}{fabric_speed}[N]. Example: 5CEFA7F31I7N.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Cyclone V family signature.",
+      "length": 2,
+      "type": "fixed",
+      "value": "5C"
+    },
+    {
+      "id": "variant",
+      "label": "Family Variant",
+      "description": "E: enhanced logic/memory.",
+      "length": 1,
+      "type": "fixed",
+      "value": "E"
+    },
+    {
+      "id": "hard_ip",
+      "label": "Embedded Hard IP",
+      "description": "Hard IP block configuration.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "B",
+          "label": "B",
+          "description": "No hard PCIe or hard memory controller."
+        },
+        {
+          "value": "F",
+          "label": "F",
+          "description": "No hard PCIe and maximum 2 hard memory controllers."
+        }
+      ]
+    },
+    {
+      "id": "member_letter",
+      "label": "Member Family Letter",
+      "description": "Member code prefix (A for E-series).",
+      "length": 1,
+      "type": "fixed",
+      "value": "A"
+    },
+    {
+      "id": "density",
+      "label": "Member Density",
+      "description": "Member code density digit.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "2",
+          "label": "A2",
+          "description": "25K logic elements."
+        },
+        {
+          "value": "4",
+          "label": "A4",
+          "description": "49K logic elements."
+        },
+        {
+          "value": "5",
+          "label": "A5",
+          "description": "77K logic elements."
+        },
+        {
+          "value": "7",
+          "label": "A7",
+          "description": "149.5K logic elements."
+        },
+        {
+          "value": "9",
+          "label": "A9",
+          "description": "301K logic elements."
+        }
+      ]
+    },
+    {
+      "id": "package_type",
+      "label": "Package Type",
+      "description": "Package family.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "F",
+          "label": "FBGA",
+          "description": "FineLine BGA."
+        },
+        {
+          "value": "U",
+          "label": "UBGA",
+          "description": "Ultra FineLine BGA."
+        },
+        {
+          "value": "M",
+          "label": "MBGA",
+          "description": "Micro FineLine BGA."
+        }
+      ]
+    },
+    {
+      "id": "package_pins",
+      "label": "Package Pins",
+      "description": "Package pin count code.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "17",
+          "label": "17 (FBGA 256)",
+          "description": "FineLine BGA, 256 pins.",
+          "when": {"package_type": ["F"]}
+        },
+        {
+          "value": "23",
+          "label": "23 (FBGA 484)",
+          "description": "FineLine BGA, 484 pins.",
+          "when": {"package_type": ["F"]}
+        },
+        {
+          "value": "27",
+          "label": "27 (FBGA 672)",
+          "description": "FineLine BGA, 672 pins.",
+          "when": {"package_type": ["F"]}
+        },
+        {
+          "value": "31",
+          "label": "31 (FBGA 896)",
+          "description": "FineLine BGA, 896 pins.",
+          "when": {"package_type": ["F"]}
+        },
+        {
+          "value": "15",
+          "label": "15 (UBGA 324 / MBGA 484)",
+          "description": "Ultra FineLine BGA 324 pins or Micro FineLine BGA 484 pins.",
+          "when": {"package_type": ["U", "M"]}
+        },
+        {
+          "value": "19",
+          "label": "19 (UBGA 484)",
+          "description": "Ultra FineLine BGA, 484 pins.",
+          "when": {"package_type": ["U"]}
+        },
+        {
+          "value": "13",
+          "label": "13 (MBGA 383)",
+          "description": "Micro FineLine BGA, 383 pins.",
+          "when": {"package_type": ["M"]}
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Operating Temperature",
+      "description": "Industrial case temperature range.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "C",
+          "label": "Commercial",
+          "description": "TJ = 0 to 85 C."
+        },
+        {
+          "value": "I",
+          "label": "Industrial",
+          "description": "TJ = -40 to 100 C."
+        },
+        {
+          "value": "A",
+          "label": "Automotive",
+          "description": "TJ = -40 to 125 C."
+        }
+      ]
+    },
+    {
+      "id": "fabric_speed",
+      "label": "FPGA Fabric Speed Grade",
+      "description": "Core fabric speed grade. 6 = fastest.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "6", "label": "Speed 6", "description": "Fastest speed grade."},
+        {"value": "7", "label": "Speed 7", "description": "Standard speed grade."},
+        {"value": "8", "label": "Speed 8", "description": "Economy speed grade."}
+      ]
+    },
+    {
+      "id": "suffix",
+      "label": "Optional Suffix",
+      "description": "Optional device-option or shipment-method suffix.",
+      "length": null,
+      "type": "select",
+      "required": false,
+      "options": [
+        {"value": "N", "label": "N", "description": "Lead-free packaging."},
+        {"value": "ES", "label": "ES", "description": "Engineering sample."}
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

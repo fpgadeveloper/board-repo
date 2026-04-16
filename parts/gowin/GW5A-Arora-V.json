@@ -1,0 +1,163 @@
+{
+  "family": "GW5A (Arora V)",
+  "description": "Gowin Arora V GW5A family \u2014 high-performance FPGAs with up to 138K LUT4s and optional hard ARM Cortex-A9 CPU. Format: GW5A{sub}-{voltage}{density}{qualifier}{package}{speed}.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Gowin vendor prefix.",
+      "length": 2,
+      "type": "fixed",
+      "value": "GW"
+    },
+    {
+      "id": "family",
+      "label": "Family",
+      "description": "Arora V family identifier.",
+      "length": 2,
+      "type": "fixed",
+      "value": "5A"
+    },
+    {
+      "id": "sub_variant",
+      "label": "Sub-Variant",
+      "description": "Optional sub-variant indicating hard CPU or feature set.",
+      "length": null,
+      "type": "select",
+      "required": false,
+      "options": [
+        {
+          "value": "ST",
+          "label": "ST (Hard CPU)",
+          "description": "Embedded hard ARM Cortex-A9 dual-core processor."
+        },
+        {
+          "value": "T",
+          "label": "T (Variant)",
+          "description": "Feature variant."
+        }
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "voltage",
+      "label": "Core Voltage",
+      "description": "Core voltage variant. LV is standard for GW5A.",
+      "length": null,
+      "type": "select",
+      "required": false,
+      "options": [
+        {
+          "value": "LV",
+          "label": "LV (Low Voltage)",
+          "description": "1.0V core voltage (standard for Arora V)."
+        }
+      ]
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Logic density designation (approximate LUT4 count in thousands).",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "25",
+          "label": "25K",
+          "description": "~25,920 LUT4s."
+        },
+        {
+          "value": "138",
+          "label": "138K",
+          "description": "~138,240 LUT4s."
+        }
+      ]
+    },
+    {
+      "id": "qualifier",
+      "label": "Qualifier",
+      "description": "Optional package/feature qualifier character(s).",
+      "length": null,
+      "type": "select",
+      "required": false,
+      "options": [
+        {
+          "value": "P",
+          "label": "P",
+          "description": "Package variant qualifier."
+        },
+        {
+          "value": "A",
+          "label": "A",
+          "description": "Feature qualifier."
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type and pin count.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "UG324",
+          "label": "UG324",
+          "description": "324-ball ultra-fine-pitch BGA package."
+        },
+        {
+          "value": "PG484",
+          "label": "PG484",
+          "description": "484-ball PBGA package."
+        },
+        {
+          "value": "PG484A",
+          "label": "PG484A",
+          "description": "484-ball PBGA package (A variant)."
+        },
+        {
+          "value": "BG676",
+          "label": "BG676",
+          "description": "676-ball BGA package."
+        }
+      ]
+    },
+    {
+      "id": "speed",
+      "label": "Speed / Temp Grade",
+      "description": "Temperature range and speed grade. C = commercial (0-85\u00b0C), I = industrial (-40 to 85\u00b0C). Lower number = faster speed.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "C1",
+          "label": "C1",
+          "description": "Commercial temp, speed grade 1 (fastest)."
+        },
+        {
+          "value": "C2",
+          "label": "C2",
+          "description": "Commercial temp, speed grade 2."
+        },
+        {
+          "value": "I1",
+          "label": "I1",
+          "description": "Industrial temp, speed grade 1 (fastest)."
+        },
+        {
+          "value": "I2",
+          "label": "I2",
+          "description": "Industrial temp, speed grade 2."
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

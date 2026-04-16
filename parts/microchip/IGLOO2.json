@@ -1,0 +1,161 @@
+{
+  "family": "IGLOO2",
+  "description": "Microchip (Microsemi) IGLOO2 low-power flash-based FPGA. Format: M2GL{density}{variant}-{package}{temp}.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Fixed prefix identifying the IGLOO2 family.",
+      "length": 4,
+      "type": "fixed",
+      "value": "M2GL"
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Device logic density in thousands of logic elements.",
+      "length": 3,
+      "type": "select",
+      "options": [
+        {
+          "value": "005",
+          "label": "5K",
+          "description": "6K logic elements."
+        },
+        {
+          "value": "010",
+          "label": "10K",
+          "description": "12K logic elements."
+        },
+        {
+          "value": "025",
+          "label": "25K",
+          "description": "27K logic elements."
+        },
+        {
+          "value": "050",
+          "label": "50K",
+          "description": "56K logic elements."
+        },
+        {
+          "value": "090",
+          "label": "90K",
+          "description": "86K logic elements."
+        },
+        {
+          "value": "150",
+          "label": "150K",
+          "description": "147K logic elements."
+        }
+      ]
+    },
+    {
+      "id": "variant",
+      "label": "Variant",
+      "description": "Device variant \u2014 standard or secure.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "T",
+          "label": "T",
+          "description": "Standard variant."
+        },
+        {
+          "value": "TS",
+          "label": "TS",
+          "description": "Secure variant with enhanced tamper protection."
+        }
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator after variant.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Optional speed grade. Blank = standard (PCIe Gen 1 only); 1 = 15% faster, supports PCIe Gen 1 and Gen 2.",
+      "length": 1,
+      "type": "select",
+      "required": false,
+      "options": [
+        {"value": "1", "label": "1", "description": "15% faster than standard; PCIe Gen 1 and Gen 2."}
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type and pin/ball count.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "VF256",
+          "label": "VF256",
+          "description": "VF 256-ball."
+        },
+        {
+          "value": "VF400",
+          "label": "VF400",
+          "description": "VF 400-ball."
+        },
+        {
+          "value": "FG256",
+          "label": "FG256",
+          "description": "FBGA 256-ball."
+        },
+        {
+          "value": "FG484",
+          "label": "FG484",
+          "description": "FBGA 484-ball."
+        },
+        {
+          "value": "FG896",
+          "label": "FG896",
+          "description": "FBGA 896-ball."
+        },
+        {
+          "value": "FGG484",
+          "label": "FGG484",
+          "description": "FBGA 484-ball (green package)."
+        },
+        {
+          "value": "FGG896",
+          "label": "FGG896",
+          "description": "FBGA 896-ball (green package)."
+        },
+        {
+          "value": "CS288",
+          "label": "CS288",
+          "description": "CS 288-ball."
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": 1,
+      "type": "select",
+      "required": false,
+      "options": [
+        {
+          "value": "I",
+          "label": "Industrial",
+          "description": "-40 C to +100 C."
+        },
+        {
+          "value": "C",
+          "label": "Commercial",
+          "description": "0 C to +85 C."
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

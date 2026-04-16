@@ -1,0 +1,246 @@
+{
+  "family": "iCE40",
+  "description": "Lattice iCE40 ultra-low-power FPGA family. Covers iCE40LP, iCE40HX, iCE40UltraLite, iCE40UltraPlus, and iCE40Ultra sub-families. Format: ICE40{sub_family}{density}-{package}{temp}.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Fixed prefix identifying the iCE40 family.",
+      "length": 5,
+      "type": "fixed",
+      "value": "ICE40"
+    },
+    {
+      "id": "sub_family",
+      "label": "Sub-family",
+      "description": "Identifies the iCE40 sub-family, which determines available densities and features.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "LP",
+          "label": "LP",
+          "description": "Low Power \u2014 optimized for lowest static power consumption."
+        },
+        {
+          "value": "HX",
+          "label": "HX",
+          "description": "High Performance \u2014 higher clock speeds and more I/O."
+        },
+        {
+          "value": "UL",
+          "label": "UltraLite",
+          "description": "Ultra-low density, smallest form factor, ultra-low power."
+        },
+        {
+          "value": "UP",
+          "label": "UltraPlus",
+          "description": "Enhanced with DSP blocks, extra SRAM, I2C/SPI hard IP."
+        }
+      ]
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Device logic density.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "384",
+          "label": "384",
+          "description": "384 LUTs.",
+          "when": {
+            "sub_family": [
+              "LP"
+            ]
+          }
+        },
+        {
+          "value": "640",
+          "label": "640",
+          "description": "640 LUTs.",
+          "when": {
+            "sub_family": [
+              "LP",
+              "HX"
+            ]
+          }
+        },
+        {
+          "value": "1K",
+          "label": "1K",
+          "description": "1,280 LUTs.",
+          "when": {
+            "sub_family": [
+              "LP",
+              "HX",
+              "UL"
+            ]
+          }
+        },
+        {
+          "value": "2K",
+          "label": "2K",
+          "description": "2,048 LUTs.",
+          "when": {
+            "sub_family": [
+              "LP",
+              "HX"
+            ]
+          }
+        },
+        {
+          "value": "4K",
+          "label": "4K",
+          "description": "3,520 LUTs.",
+          "when": {
+            "sub_family": [
+              "LP",
+              "HX"
+            ]
+          }
+        },
+        {
+          "value": "5K",
+          "label": "5K",
+          "description": "5,280 LUTs.",
+          "when": {
+            "sub_family": [
+              "UP"
+            ]
+          }
+        },
+        {
+          "value": "8K",
+          "label": "8K",
+          "description": "7,680 LUTs.",
+          "when": {
+            "sub_family": [
+              "LP",
+              "HX"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator between density and package.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type and pin count.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "SG48",
+          "label": "SG48",
+          "description": "QFN 48-pin, 7x7 mm."
+        },
+        {
+          "value": "UWG20",
+          "label": "UWG20",
+          "description": "WLCSP 20-ball, 1.4x1.48 mm."
+        },
+        {
+          "value": "SW25",
+          "label": "SW25",
+          "description": "WLCSP 25-ball."
+        },
+        {
+          "value": "QN32",
+          "label": "QN32",
+          "description": "QFN 32-pin, 5x5 mm."
+        },
+        {
+          "value": "QN48",
+          "label": "QN48",
+          "description": "QFN 48-pin."
+        },
+        {
+          "value": "CM36",
+          "label": "CM36",
+          "description": "ucBGA 36-ball, 4x4 mm."
+        },
+        {
+          "value": "CM49",
+          "label": "CM49",
+          "description": "ucBGA 49-ball, 4.5x4.5 mm."
+        },
+        {
+          "value": "CM81",
+          "label": "CM81",
+          "description": "ucBGA 81-ball, 5x5 mm."
+        },
+        {
+          "value": "CM121",
+          "label": "CM121",
+          "description": "ucBGA 121-ball, 6x6 mm."
+        },
+        {
+          "value": "CM225",
+          "label": "CM225",
+          "description": "ucBGA 225-ball, 8x8 mm."
+        },
+        {
+          "value": "CB81",
+          "label": "CB81",
+          "description": "csBGA 81-ball, 5x5 mm."
+        },
+        {
+          "value": "CB121",
+          "label": "CB121",
+          "description": "csBGA 121-ball, 6x6 mm."
+        },
+        {
+          "value": "CB132",
+          "label": "CB132",
+          "description": "csBGA 132-ball, 8x8 mm."
+        },
+        {
+          "value": "BG121",
+          "label": "BG121",
+          "description": "caBGA 121-ball."
+        },
+        {
+          "value": "TQ144",
+          "label": "TQ144",
+          "description": "TQFP 144-pin, 20x20 mm."
+        },
+        {
+          "value": "VQ100",
+          "label": "VQ100",
+          "description": "VQFP 100-pin, 14x14 mm."
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range. May be omitted for commercial default.",
+      "length": 1,
+      "type": "select",
+      "required": false,
+      "options": [
+        {
+          "value": "C",
+          "label": "Commercial",
+          "description": "0 C to +70 C."
+        },
+        {
+          "value": "I",
+          "label": "Industrial",
+          "description": "-40 C to +85 C."
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

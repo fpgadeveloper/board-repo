@@ -1,0 +1,28 @@
+{
+  "id": "LFE5UM-45F-VERSA-EVN",
+  "name": "LFE5UM-45F-VERSA-EVN",
+  "status": "active",
+  "url": "https://www.latticesemi.com/products/developmentboardsandkits/ecp5versadevelopmentkit",
+  "vendor": "lattice",
+  "price": {
+    "value": 387,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "LFE5UM-45F-8BG381C",
+    "vendor": "lattice"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 1,
+      "gen": 2
+    }
+  ],
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 2
+    }
+  ]
+}

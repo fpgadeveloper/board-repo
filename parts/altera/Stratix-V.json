@@ -1,0 +1,261 @@
+{
+  "family": "Stratix V",
+  "description": "Altera Stratix V FPGA part number model. Format: 5S{sub_family}{device_id}{density}{feature}{qualifier}{package}{speed}N. Example: 5SGXEA7N2F45C2N.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Fixed prefix identifying the Stratix V family.",
+      "length": 2,
+      "type": "fixed",
+      "value": "5S"
+    },
+    {
+      "id": "sub_family",
+      "label": "Sub-Family",
+      "description": "Identifies the Stratix V device variant and transceiver type.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "GX",
+          "label": "GX",
+          "description": "Stratix V GX with up to 14.1 Gbps transceivers."
+        },
+        {
+          "value": "GT",
+          "label": "GT",
+          "description": "Stratix V GT with up to 28.05 Gbps transceivers."
+        },
+        {
+          "value": "GS",
+          "label": "GS",
+          "description": "Stratix V GS with embedded memory emphasis."
+        },
+        {
+          "value": "GSMD",
+          "label": "GS-MD",
+          "description": "Stratix V GS with M20K memory emphasis."
+        }
+      ]
+    },
+    {
+      "id": "device_id",
+      "label": "Device ID",
+      "description": "Two-character device designator within the sub-family.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "EA",
+          "label": "EA",
+          "description": "EA device designator."
+        },
+        {
+          "value": "EB",
+          "label": "EB",
+          "description": "EB device designator."
+        },
+        {
+          "value": "MA",
+          "label": "MA",
+          "description": "MA device designator."
+        },
+        {
+          "value": "MB",
+          "label": "MB",
+          "description": "MB device designator."
+        },
+        {
+          "value": "HA",
+          "label": "HA",
+          "description": "HA device designator."
+        },
+        {
+          "value": "HB",
+          "label": "HB",
+          "description": "HB device designator."
+        },
+        {
+          "value": "AB",
+          "label": "AB",
+          "description": "AB device designator."
+        },
+        {
+          "value": "ME",
+          "label": "ME",
+          "description": "ME device designator."
+        }
+      ]
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Single-digit density designator within the sub-family.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "1",
+          "label": "Density 1",
+          "description": "Smallest density."
+        },
+        {
+          "value": "2",
+          "label": "Density 2",
+          "description": "Low density."
+        },
+        {
+          "value": "3",
+          "label": "Density 3",
+          "description": "Low-mid density."
+        },
+        {
+          "value": "4",
+          "label": "Density 4",
+          "description": "Mid density."
+        },
+        {
+          "value": "5",
+          "label": "Density 5",
+          "description": "Mid-high density."
+        },
+        {
+          "value": "7",
+          "label": "Density 7",
+          "description": "High density."
+        },
+        {
+          "value": "9",
+          "label": "Density 9",
+          "description": "Highest density."
+        }
+      ]
+    },
+    {
+      "id": "feature",
+      "label": "Feature",
+      "description": "Single-character feature code.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "N",
+          "label": "Standard",
+          "description": "Standard feature set."
+        },
+        {
+          "value": "H",
+          "label": "HardCopy",
+          "description": "HardCopy compatible variant."
+        }
+      ]
+    },
+    {
+      "id": "qualifier",
+      "label": "Qualifier",
+      "description": "Single-digit routing variant qualifier.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "1",
+          "label": "Variant 1",
+          "description": "Routing variant 1."
+        },
+        {
+          "value": "2",
+          "label": "Variant 2",
+          "description": "Routing variant 2."
+        },
+        {
+          "value": "3",
+          "label": "Variant 3",
+          "description": "Routing variant 3."
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type and pin count code.",
+      "length": 3,
+      "type": "select",
+      "options": [
+        {
+          "value": "F23",
+          "label": "FBGA 484-pin",
+          "description": "Fine-pitch BGA, 484 pins (23mm body)."
+        },
+        {
+          "value": "F27",
+          "label": "FBGA 672-pin",
+          "description": "Fine-pitch BGA, 672 pins (27mm body)."
+        },
+        {
+          "value": "F31",
+          "label": "FBGA 896-pin",
+          "description": "Fine-pitch BGA, 896 pins (31mm body)."
+        },
+        {
+          "value": "F40",
+          "label": "FBGA 1517-pin",
+          "description": "Fine-pitch BGA, 1517 pins (40mm body)."
+        },
+        {
+          "value": "F45",
+          "label": "FBGA 1932-pin",
+          "description": "Fine-pitch BGA, 1932 pins (45mm body)."
+        }
+      ]
+    },
+    {
+      "id": "speed_grade",
+      "label": "Speed Grade",
+      "description": "Temperature grade letter and speed grade number.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "C1",
+          "label": "Commercial, Speed 1",
+          "description": "Commercial temperature, fastest speed grade."
+        },
+        {
+          "value": "C2",
+          "label": "Commercial, Speed 2",
+          "description": "Commercial temperature, standard speed grade."
+        },
+        {
+          "value": "C3",
+          "label": "Commercial, Speed 3",
+          "description": "Commercial temperature, economy speed grade."
+        },
+        {
+          "value": "I1",
+          "label": "Industrial, Speed 1",
+          "description": "Industrial temperature, fastest speed grade."
+        },
+        {
+          "value": "I2",
+          "label": "Industrial, Speed 2",
+          "description": "Industrial temperature, standard speed grade."
+        },
+        {
+          "value": "I3",
+          "label": "Industrial, Speed 3",
+          "description": "Industrial temperature, economy speed grade."
+        }
+      ]
+    },
+    {
+      "id": "trailing_n",
+      "label": "Trailing N",
+      "description": "Fixed trailing suffix character.",
+      "length": 1,
+      "type": "fixed",
+      "value": "N"
+    }
+  ],
+  "type": "FPGA"
+}

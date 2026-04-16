@@ -1,0 +1,148 @@
+{
+  "family": "Cyclone V SE",
+  "description": "Altera Cyclone V SE SoC FPGA (ARM Cortex-A9 HPS, enhanced logic/memory, no transceivers). Format: 5CSE{hard_ip}A{density}{pkg_type}{pkg_pins}{temp}{fabric_speed}[S][N]. Example: 5CSEBA6U23I7N.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Cyclone V family signature.",
+      "length": 2,
+      "type": "fixed",
+      "value": "5C"
+    },
+    {
+      "id": "variant",
+      "label": "Family Variant",
+      "description": "SE: SoC with enhanced logic/memory.",
+      "length": 2,
+      "type": "fixed",
+      "value": "SE"
+    },
+    {
+      "id": "hard_ip",
+      "label": "Embedded Hard IP",
+      "description": "Hard IP block configuration.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "B",
+          "label": "B",
+          "description": "No hard PCIe or hard memory controller."
+        },
+        {
+          "value": "M",
+          "label": "M",
+          "description": "No hard PCIe and 1 hard memory controller."
+        }
+      ]
+    },
+    {
+      "id": "member_letter",
+      "label": "Member Family Letter",
+      "description": "Member code prefix (A for SE-series).",
+      "length": 1,
+      "type": "fixed",
+      "value": "A"
+    },
+    {
+      "id": "density",
+      "label": "Member Density",
+      "description": "Member code density digit.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "2", "label": "A2", "description": "25K logic elements."},
+        {"value": "4", "label": "A4", "description": "40K logic elements."},
+        {"value": "5", "label": "A5", "description": "85K logic elements."},
+        {"value": "6", "label": "A6", "description": "110K logic elements."}
+      ]
+    },
+    {
+      "id": "package_type",
+      "label": "Package Type",
+      "description": "Package family.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "F", "label": "FBGA", "description": "FineLine BGA."},
+        {"value": "U", "label": "UBGA", "description": "Ultra FineLine BGA."}
+      ]
+    },
+    {
+      "id": "package_pins",
+      "label": "Package Pins",
+      "description": "Package pin count code.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "31",
+          "label": "31 (FBGA 896)",
+          "description": "FineLine BGA, 896 pins.",
+          "when": {"package_type": ["F"]}
+        },
+        {
+          "value": "19",
+          "label": "19 (UBGA 484)",
+          "description": "Ultra FineLine BGA, 484 pins.",
+          "when": {"package_type": ["U"]}
+        },
+        {
+          "value": "23",
+          "label": "23 (UBGA 672)",
+          "description": "Ultra FineLine BGA, 672 pins.",
+          "when": {"package_type": ["U"]}
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Operating Temperature",
+      "description": "Industrial case temperature range.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "C", "label": "Commercial", "description": "TJ = 0 to 85 C."},
+        {"value": "I", "label": "Industrial", "description": "TJ = -40 to 100 C."},
+        {"value": "A", "label": "Automotive", "description": "TJ = -40 to 125 C."}
+      ]
+    },
+    {
+      "id": "fabric_speed",
+      "label": "FPGA Fabric Speed Grade",
+      "description": "Core fabric speed grade. 6 = fastest.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "6", "label": "Speed 6", "description": "Fastest speed grade."},
+        {"value": "7", "label": "Speed 7", "description": "Standard speed grade."},
+        {"value": "8", "label": "Speed 8", "description": "Economy speed grade."}
+      ]
+    },
+    {
+      "id": "processor_cores",
+      "label": "Processor Cores",
+      "description": "Optional processor-core designation. Omitted for dual-core, 'S' for single-core.",
+      "length": 1,
+      "type": "select",
+      "required": false,
+      "options": [
+        {"value": "S", "label": "Single-core", "description": "Single ARM Cortex-A9 core."}
+      ]
+    },
+    {
+      "id": "suffix",
+      "label": "Optional Suffix",
+      "description": "Optional device-option or shipment-method suffix.",
+      "length": null,
+      "type": "select",
+      "required": false,
+      "options": [
+        {"value": "N", "label": "N", "description": "Lead-free packaging."},
+        {"value": "ES", "label": "ES", "description": "Engineering sample."}
+      ]
+    }
+  ],
+  "type": "SoC"
+}

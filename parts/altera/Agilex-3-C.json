@@ -1,0 +1,111 @@
+{
+  "family": "Agilex 3 C",
+  "description": "Altera Agilex 3 C-Series FPGAs and SoC FPGAs (low-cost Agilex family). Format: A3C{variant}{density}{group}{package}{grade}{speed}S[suffix]. Example: A3CW135BM16AE6SR0.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Agilex 3 C-Series family prefix.",
+      "length": 3,
+      "type": "fixed",
+      "value": "A3C"
+    },
+    {
+      "id": "variant",
+      "label": "Variant",
+      "description": "Series variant letter. D = SoC with HPS; other letters indicate feature configurations.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "C", "label": "C", "description": "Standard FPGA variant."},
+        {"value": "D", "label": "D (SoC)", "description": "SoC with dual-core Arm Cortex-A55 hard processor system."},
+        {"value": "W", "label": "W", "description": "W variant."},
+        {"value": "Y", "label": "Y", "description": "Y variant."}
+      ]
+    },
+    {
+      "id": "density",
+      "label": "Logic Density",
+      "description": "Three-digit density code (approximate LE count).",
+      "length": 3,
+      "type": "select",
+      "options": [
+        {"value": "025", "label": "025", "description": "~25K LEs."},
+        {"value": "050", "label": "050", "description": "~50K LEs."},
+        {"value": "065", "label": "065", "description": "~65K LEs."},
+        {"value": "100", "label": "100", "description": "~100K LEs."},
+        {"value": "135", "label": "135", "description": "~135K LEs."}
+      ]
+    },
+    {
+      "id": "group",
+      "label": "Device Group",
+      "description": "Device group letter.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "A", "label": "A", "description": "Group A."},
+        {"value": "B", "label": "B", "description": "Group B."}
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type and body size.",
+      "length": 4,
+      "type": "select",
+      "options": [
+        {"value": "M16A", "label": "M16A", "description": "16 mm x 16 mm MBGA, 0.5 mm pitch."},
+        {"value": "B15A", "label": "B15A", "description": "15 mm x 15 mm VPBGA, variable pitch."},
+        {"value": "B18A", "label": "B18A", "description": "18 mm x 18 mm VPBGA, variable pitch."},
+        {"value": "B23A", "label": "B23A", "description": "23 mm x 23 mm VPBGA, variable pitch."}
+      ]
+    },
+    {
+      "id": "device_grade",
+      "label": "Device Grade",
+      "description": "Operating temperature class.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "E", "label": "Extended", "description": "Extended temperature."},
+        {"value": "I", "label": "Industrial", "description": "Industrial temperature."}
+      ]
+    },
+    {
+      "id": "speed_grade",
+      "label": "Speed Grade",
+      "description": "Core fabric speed grade. Lower = faster.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "3", "label": "3", "description": "Speed grade 3."},
+        {"value": "4", "label": "4", "description": "Speed grade 4."},
+        {"value": "5", "label": "5", "description": "Speed grade 5."},
+        {"value": "6", "label": "6", "description": "Speed grade 6."}
+      ]
+    },
+    {
+      "id": "power_option",
+      "label": "Power Option",
+      "description": "Power option. S = standard power.",
+      "length": 1,
+      "type": "fixed",
+      "value": "S"
+    },
+    {
+      "id": "suffix",
+      "label": "Optional Suffix",
+      "description": "Optional dev-kit or revision suffix.",
+      "length": null,
+      "type": "select",
+      "required": false,
+      "options": [
+        {"value": "CS", "label": "CS", "description": "CS suffix."},
+        {"value": "R0", "label": "R0", "description": "R0 revision."},
+        {"value": "ES", "label": "ES", "description": "Engineering sample."}
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

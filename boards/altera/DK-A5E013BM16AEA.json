@@ -1,0 +1,32 @@
+{
+  "id": "DK-A5E013BM16AEA",
+  "name": "Agilex 5 E-Series 013B",
+  "status": "active",
+  "url": "https://www.altera.com/products/devkit/po-3196/agilex-5-fpga-e-series-013b-development-kit",
+  "vendor": "altera",
+  "price": {
+    "value": 499,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "A5ED013BM16AE4SCS",
+    "vendor": "altera"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 4,
+      "gen": 3
+    }
+  ],
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "expansion": {
+    "fmc_lpc": 1,
+    "pmod": 1
+  }
+}

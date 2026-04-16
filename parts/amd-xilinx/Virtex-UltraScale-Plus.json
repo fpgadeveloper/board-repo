@@ -1,0 +1,319 @@
+{
+  "family": "Virtex UltraScale+",
+  "description": "Virtex UltraScale+ FPGAs. Includes plain VU+, 58G, and HBM sub-families. Part format: {prefix}{VU}{density}-{speed}{package}-{temp}",
+  "fields": [
+    {
+      "id": "product_grade",
+      "label": "Product Grade",
+      "description": "Product grade prefix indicating target market.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "XC",
+          "label": "XC",
+          "description": "Commercial"
+        },
+        {
+          "value": "XQ",
+          "label": "XQ",
+          "description": "Defense Grade"
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "label": "Family",
+      "description": "Virtex UltraScale+ family code (same as VU, distinguished by density P suffix).",
+      "length": 2,
+      "type": "fixed",
+      "value": "VU"
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Device density with P suffix. Includes plain VU+ (3P-19P), 58G (23P-29P), and HBM (31P-57P) sub-families.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "3P",
+          "label": "3P",
+          "description": "VU+ 3P"
+        },
+        {
+          "value": "5P",
+          "label": "5P",
+          "description": "VU+ 5P"
+        },
+        {
+          "value": "7P",
+          "label": "7P",
+          "description": "VU+ 7P"
+        },
+        {
+          "value": "9P",
+          "label": "9P",
+          "description": "VU+ 9P"
+        },
+        {
+          "value": "11P",
+          "label": "11P",
+          "description": "VU+ 11P"
+        },
+        {
+          "value": "13P",
+          "label": "13P",
+          "description": "VU+ 13P"
+        },
+        {
+          "value": "19P",
+          "label": "19P",
+          "description": "VU+ 19P"
+        },
+        {
+          "value": "23P",
+          "label": "23P",
+          "description": "VU+ 58G sub-family"
+        },
+        {
+          "value": "27P",
+          "label": "27P",
+          "description": "VU+ 58G sub-family"
+        },
+        {
+          "value": "29P",
+          "label": "29P",
+          "description": "VU+ 58G sub-family"
+        },
+        {
+          "value": "31P",
+          "label": "31P",
+          "description": "VU+ HBM sub-family"
+        },
+        {
+          "value": "33P",
+          "label": "33P",
+          "description": "VU+ HBM sub-family"
+        },
+        {
+          "value": "35P",
+          "label": "35P",
+          "description": "VU+ HBM sub-family"
+        },
+        {
+          "value": "37P",
+          "label": "37P",
+          "description": "VU+ HBM sub-family"
+        },
+        {
+          "value": "45P",
+          "label": "45P",
+          "description": "VU+ HBM sub-family"
+        },
+        {
+          "value": "47P",
+          "label": "47P",
+          "description": "VU+ HBM sub-family"
+        },
+        {
+          "value": "57P",
+          "label": "57P",
+          "description": "VU+ HBM sub-family"
+        }
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Device speed grade.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "1",
+          "label": "1",
+          "description": "Speed grade -1, slowest."
+        },
+        {
+          "value": "L1",
+          "label": "L1",
+          "description": "Speed grade -1, low power."
+        },
+        {
+          "value": "2",
+          "label": "2",
+          "description": "Speed grade -2, mid."
+        },
+        {
+          "value": "L2",
+          "label": "L2",
+          "description": "Speed grade -2, low power."
+        },
+        {
+          "value": "3",
+          "label": "3",
+          "description": "Speed grade -3, fastest."
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Device package type.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "FFVC1517",
+          "label": "FFVC1517",
+          "description": "FFVC 1517-pin"
+        },
+        {
+          "value": "FHGA2104",
+          "label": "FHGA2104",
+          "description": "FHGA 2104-pin"
+        },
+        {
+          "value": "FHGB2104",
+          "label": "FHGB2104",
+          "description": "FHGB 2104-pin"
+        },
+        {
+          "value": "FHGC2104",
+          "label": "FHGC2104",
+          "description": "FHGC 2104-pin"
+        },
+        {
+          "value": "FIGD2104",
+          "label": "FIGD2104",
+          "description": "FIGD 2104-pin"
+        },
+        {
+          "value": "FLGA2104",
+          "label": "FLGA2104",
+          "description": "FLGA 2104-pin"
+        },
+        {
+          "value": "FLGA2577",
+          "label": "FLGA2577",
+          "description": "FLGA 2577-pin"
+        },
+        {
+          "value": "FLGB2104",
+          "label": "FLGB2104",
+          "description": "FLGB 2104-pin"
+        },
+        {
+          "value": "FLGC2104",
+          "label": "FLGC2104",
+          "description": "FLGC 2104-pin"
+        },
+        {
+          "value": "FLGF1924",
+          "label": "FLGF1924",
+          "description": "FLGF 1924-pin"
+        },
+        {
+          "value": "FLRA2104",
+          "label": "FLRA2104",
+          "description": "FLRA 2104-pin"
+        },
+        {
+          "value": "FLRB2104",
+          "label": "FLRB2104",
+          "description": "FLRB 2104-pin"
+        },
+        {
+          "value": "FLRC2104",
+          "label": "FLRC2104",
+          "description": "FLRC 2104-pin"
+        },
+        {
+          "value": "FSGA2577",
+          "label": "FSGA2577",
+          "description": "FSGA 2577-pin"
+        },
+        {
+          "value": "FSVH1924",
+          "label": "FSVH1924",
+          "description": "FSVH 1924-pin"
+        },
+        {
+          "value": "FSVH2104",
+          "label": "FSVH2104",
+          "description": "FSVH 2104-pin"
+        },
+        {
+          "value": "FSVH2892",
+          "label": "FSVH2892",
+          "description": "FSVH 2892-pin"
+        },
+        {
+          "value": "FSVJ1760",
+          "label": "FSVJ1760",
+          "description": "FSVJ 1760-pin"
+        },
+        {
+          "value": "FSVK2892",
+          "label": "FSVK2892",
+          "description": "FSVK 2892-pin"
+        },
+        {
+          "value": "VSVA1365",
+          "label": "VSVA1365",
+          "description": "VSVA 1365-pin"
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "E",
+          "label": "E",
+          "description": "Extended (-40\u00b0C to 100\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "I",
+          "label": "I",
+          "description": "Industrial (-40\u00b0C to 100\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XC",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "M",
+          "label": "M",
+          "description": "Military (-55\u00b0C to 125\u00b0C)",
+          "when": {
+            "product_grade": [
+              "XQ"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "DK-DEV-10CX220",
+  "name": "Cyclone 10 GX",
+  "status": "active",
+  "url": "https://www.altera.com/products/devkit/po-3007/cyclone-10-gx-fpga-development-kit",
+  "vendor": "altera",
+  "price": {
+    "value": 1995,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "10CX220YF780E5G",
+    "vendor": "altera"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 4,
+      "gen": 2
+    }
+  ],
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "networking": {
+    "sfp": 2
+  },
+  "expansion": {
+    "fmc_lpc": 1
+  }
+}

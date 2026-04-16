@@ -1,0 +1,238 @@
+{
+  "family": "GW1N (LittleBee)",
+  "description": "Gowin LittleBee GW1N family \u2014 low-power, small-footprint FPGAs. Format: GW1N{sub}-{voltage}{density}{qualifier}{package}{speed}. Sub-variants include R (embedded SDRAM), S (embedded ARM), Z (low-power), and RF (BLE radio).",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Gowin vendor prefix.",
+      "length": 2,
+      "type": "fixed",
+      "value": "GW"
+    },
+    {
+      "id": "family",
+      "label": "Family",
+      "description": "LittleBee family identifier.",
+      "length": 2,
+      "type": "fixed",
+      "value": "1N"
+    },
+    {
+      "id": "sub_variant",
+      "label": "Sub-Variant",
+      "description": "Optional sub-variant indicating integrated hard IP or feature set.",
+      "length": null,
+      "type": "select",
+      "required": false,
+      "options": [
+        {
+          "value": "R",
+          "label": "R (SDRAM)",
+          "description": "Embedded SDRAM (e.g. 64 Mbit PSRAM)."
+        },
+        {
+          "value": "S",
+          "label": "S (ARM)",
+          "description": "Embedded ARM Cortex-M3 hard processor."
+        },
+        {
+          "value": "Z",
+          "label": "Z (Low-Power)",
+          "description": "Ultra-low-power variant."
+        },
+        {
+          "value": "RF",
+          "label": "RF (BLE)",
+          "description": "Embedded Bluetooth Low Energy radio."
+        }
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "voltage",
+      "label": "Core Voltage",
+      "description": "Core voltage variant. Blank for standard 1.2V core.",
+      "length": null,
+      "type": "select",
+      "required": false,
+      "options": [
+        {
+          "value": "LV",
+          "label": "LV (Low Voltage)",
+          "description": "1.0V core voltage."
+        },
+        {
+          "value": "UV",
+          "label": "UV (Ultra-Low Voltage)",
+          "description": "0.9V core voltage."
+        }
+      ]
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Logic density designation (approximate LUT4 count in thousands).",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "1",
+          "label": "1K",
+          "description": "~1,152 LUT4s."
+        },
+        {
+          "value": "2",
+          "label": "2K",
+          "description": "~2,304 LUT4s."
+        },
+        {
+          "value": "4",
+          "label": "4K",
+          "description": "~4,608 LUT4s."
+        },
+        {
+          "value": "9",
+          "label": "9K",
+          "description": "~8,640 LUT4s."
+        }
+      ]
+    },
+    {
+      "id": "qualifier",
+      "label": "Qualifier",
+      "description": "Optional qualifier character (e.g. C for commercial packaging variant).",
+      "length": null,
+      "type": "select",
+      "required": false,
+      "options": [
+        {
+          "value": "C",
+          "label": "C",
+          "description": "Commercial qualifier."
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type and pin count.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "PG32",
+          "label": "PG32",
+          "description": "32-pin QFN package."
+        },
+        {
+          "value": "QN32",
+          "label": "QN32",
+          "description": "32-pin QFN package."
+        },
+        {
+          "value": "MG49",
+          "label": "MG49",
+          "description": "49-ball CSP package."
+        },
+        {
+          "value": "UX5",
+          "label": "UX5",
+          "description": "5-pin ultra-small package."
+        },
+        {
+          "value": "QN48",
+          "label": "QN48",
+          "description": "48-pin QFN package."
+        },
+        {
+          "value": "QFN48P",
+          "label": "QFN48P",
+          "description": "48-pin QFN package (P variant)."
+        },
+        {
+          "value": "QN88",
+          "label": "QN88",
+          "description": "88-pin QFN package."
+        },
+        {
+          "value": "QN88P",
+          "label": "QN88P",
+          "description": "88-pin QFN package (P variant)."
+        },
+        {
+          "value": "QFN88P",
+          "label": "QFN88P",
+          "description": "88-pin QFN package (P variant)."
+        },
+        {
+          "value": "LQ100",
+          "label": "LQ100",
+          "description": "100-pin LQFP package."
+        },
+        {
+          "value": "EQ144",
+          "label": "EQ144",
+          "description": "144-pin EQFP package."
+        },
+        {
+          "value": "LQ144",
+          "label": "LQ144",
+          "description": "144-pin LQFP package."
+        },
+        {
+          "value": "LQ144P",
+          "label": "LQ144P",
+          "description": "144-pin LQFP package (P variant)."
+        }
+      ]
+    },
+    {
+      "id": "speed",
+      "label": "Speed / Temp Grade",
+      "description": "Temperature range and speed grade. C = commercial (0-85\u00b0C), I = industrial (-40 to 85\u00b0C). Higher number = slower speed.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "C5",
+          "label": "C5",
+          "description": "Commercial temp, speed grade 5."
+        },
+        {
+          "value": "C6",
+          "label": "C6",
+          "description": "Commercial temp, speed grade 6."
+        },
+        {
+          "value": "C7",
+          "label": "C7",
+          "description": "Commercial temp, speed grade 7."
+        },
+        {
+          "value": "I4",
+          "label": "I4",
+          "description": "Industrial temp, speed grade 4."
+        },
+        {
+          "value": "I5",
+          "label": "I5",
+          "description": "Industrial temp, speed grade 5."
+        },
+        {
+          "value": "I6",
+          "label": "I6",
+          "description": "Industrial temp, speed grade 6."
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

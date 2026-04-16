@@ -1,0 +1,215 @@
+{
+  "family": "MachXO3",
+  "description": "Lattice MachXO3 instant-on FPGA with integrated flash, available in flash-only and SERDES variants. Format: LCMXO3{variant}-{density}{sub_type}-{speed}{package}{temp}.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Fixed prefix identifying the MachXO3 family.",
+      "length": 6,
+      "type": "fixed",
+      "value": "LCMXO3"
+    },
+    {
+      "id": "variant",
+      "label": "Variant",
+      "description": "Device variant determining configuration and feature set.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "LF",
+          "label": "LF",
+          "description": "Flash-based configuration with integrated flash memory."
+        },
+        {
+          "value": "L",
+          "label": "L",
+          "description": "SRAM-based, requires external configuration."
+        },
+        {
+          "value": "D",
+          "label": "D",
+          "description": "With integrated SERDES."
+        }
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator after variant.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Device logic density in LUTs.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "640",
+          "label": "640",
+          "description": "640 LUTs."
+        },
+        {
+          "value": "1300",
+          "label": "1300",
+          "description": "1,280 LUTs."
+        },
+        {
+          "value": "2100",
+          "label": "2100",
+          "description": "2,064 LUTs."
+        },
+        {
+          "value": "4300",
+          "label": "4300",
+          "description": "4,320 LUTs."
+        },
+        {
+          "value": "6900",
+          "label": "6900",
+          "description": "6,864 LUTs."
+        },
+        {
+          "value": "9400",
+          "label": "9400",
+          "description": "9,400 LUTs."
+        }
+      ]
+    },
+    {
+      "id": "sub_type",
+      "label": "Sub-type",
+      "description": "Power and feature variant.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "C",
+          "label": "C",
+          "description": "Standard variant."
+        },
+        {
+          "value": "E",
+          "label": "E",
+          "description": "Enhanced I/O variant."
+        },
+        {
+          "value": "Z",
+          "label": "Z",
+          "description": "Zero-power standby variant."
+        }
+      ]
+    },
+    {
+      "id": "sep2",
+      "label": "Separator",
+      "description": "Dash separator after sub-type.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Fabric speed grade.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "5",
+          "label": "Speed 5",
+          "description": "Standard speed grade."
+        },
+        {
+          "value": "6",
+          "label": "Speed 6",
+          "description": "Fastest speed grade."
+        }
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type and pin/ball count.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "SG32",
+          "label": "SG32",
+          "description": "QFN 32-pin."
+        },
+        {
+          "value": "SG48",
+          "label": "SG48",
+          "description": "QFN 48-pin."
+        },
+        {
+          "value": "QN84",
+          "label": "QN84",
+          "description": "QFN 84-pin."
+        },
+        {
+          "value": "MG121",
+          "label": "MG121",
+          "description": "csfBGA 121-ball."
+        },
+        {
+          "value": "TG100",
+          "label": "TG100",
+          "description": "TQFP 100-pin."
+        },
+        {
+          "value": "TG144",
+          "label": "TG144",
+          "description": "TQFP 144-pin."
+        },
+        {
+          "value": "BG256",
+          "label": "BG256",
+          "description": "caBGA 256-ball."
+        },
+        {
+          "value": "BG324",
+          "label": "BG324",
+          "description": "caBGA 324-ball."
+        },
+        {
+          "value": "BG400",
+          "label": "BG400",
+          "description": "caBGA 400-ball."
+        },
+        {
+          "value": "BG484",
+          "label": "BG484",
+          "description": "caBGA 484-ball."
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "C",
+          "label": "Commercial",
+          "description": "0 C to +85 C."
+        },
+        {
+          "value": "I",
+          "label": "Industrial",
+          "description": "-40 C to +100 C."
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

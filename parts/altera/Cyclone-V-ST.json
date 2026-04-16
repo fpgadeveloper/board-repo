@@ -1,0 +1,137 @@
+{
+  "family": "Cyclone V ST",
+  "description": "Altera Cyclone V ST SoC FPGA (ARM Cortex-A9 HPS with 5-Gbps transceivers). Format: 5CST{hard_ip}D{density}{xcvr_count}{xcvr_speed}{pkg_type}{pkg_pins}{temp}{fabric_speed}[N]. Example: 5CSTFD6D5F31C6N.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Cyclone V family signature.",
+      "length": 2,
+      "type": "fixed",
+      "value": "5C"
+    },
+    {
+      "id": "variant",
+      "label": "Family Variant",
+      "description": "ST: SoC with 5-Gbps transceivers.",
+      "length": 2,
+      "type": "fixed",
+      "value": "ST"
+    },
+    {
+      "id": "hard_ip",
+      "label": "Embedded Hard IP",
+      "description": "Hard IP block configuration.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "F",
+          "label": "F",
+          "description": "2 hard PCIe controllers and 1 hard memory controller."
+        }
+      ]
+    },
+    {
+      "id": "member_letter",
+      "label": "Member Family Letter",
+      "description": "Member code prefix (D for ST-series).",
+      "length": 1,
+      "type": "fixed",
+      "value": "D"
+    },
+    {
+      "id": "density",
+      "label": "Member Density",
+      "description": "Member code density digit.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "5", "label": "D5", "description": "85K logic elements."},
+        {"value": "6", "label": "D6", "description": "110K logic elements."}
+      ]
+    },
+    {
+      "id": "xcvr_count",
+      "label": "Transceiver Count",
+      "description": "Number of 5-Gbps transceiver channels on the device.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "D", "label": "D (9)", "description": "9 transceivers."}
+      ]
+    },
+    {
+      "id": "xcvr_speed",
+      "label": "Transceiver Speed Grade",
+      "description": "Maximum transceiver data rate.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "5", "label": "5 (6.144 Gbps)", "description": "6.144 Gbps transceiver speed grade."}
+      ]
+    },
+    {
+      "id": "package_type",
+      "label": "Package Type",
+      "description": "Package family.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "F", "label": "FBGA", "description": "FineLine BGA."}
+      ]
+    },
+    {
+      "id": "package_pins",
+      "label": "Package Pins",
+      "description": "Package pin count code.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "31",
+          "label": "31 (FBGA 896)",
+          "description": "FineLine BGA, 896 pins.",
+          "when": {"package_type": ["F"]}
+        }
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Operating Temperature",
+      "description": "Industrial case temperature range.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "C", "label": "Commercial", "description": "TJ = 0 to 85 C."},
+        {"value": "I", "label": "Industrial", "description": "TJ = -40 to 100 C."},
+        {"value": "A", "label": "Automotive", "description": "TJ = -40 to 125 C."}
+      ]
+    },
+    {
+      "id": "fabric_speed",
+      "label": "FPGA Fabric Speed Grade",
+      "description": "Core fabric speed grade. 6 = fastest.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "6", "label": "Speed 6", "description": "Fastest speed grade."},
+        {"value": "7", "label": "Speed 7", "description": "Standard speed grade."},
+        {"value": "8", "label": "Speed 8", "description": "Economy speed grade."}
+      ]
+    },
+    {
+      "id": "suffix",
+      "label": "Optional Suffix",
+      "description": "Optional device-option or shipment-method suffix.",
+      "length": null,
+      "type": "select",
+      "required": false,
+      "options": [
+        {"value": "N", "label": "N", "description": "Lead-free packaging."},
+        {"value": "ES", "label": "ES", "description": "Engineering sample."}
+      ]
+    }
+  ],
+  "type": "SoC"
+}
