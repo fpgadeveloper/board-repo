@@ -1,0 +1,22 @@
+{
+  "mpn": "VP815",
+  "name": "VectorPath 815",
+  "status": "active",
+  "url": "https://www.bittware.com/products/vp815/",
+  "vendor": "bittware",
+  "price": null,
+  "device": {
+    "part": "AC7t1500FSG2457C",
+    "vendor": "achronix"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 16,
+      "gen": 5
+    }
+  ],
+  "networking": {
+    "qsfp": 2
+  }
+}

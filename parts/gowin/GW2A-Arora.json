@@ -78,32 +78,11 @@
     {
       "id": "qualifier",
       "label": "Qualifier",
-      "description": "Optional package/feature qualifier character(s).",
+      "description": "Optional feature qualifier character. Rarely used; left empty to avoid conflict with package prefixes.",
       "length": null,
       "type": "select",
       "required": false,
-      "options": [
-        {
-          "value": "C",
-          "label": "C",
-          "description": "Commercial qualifier."
-        },
-        {
-          "value": "P",
-          "label": "P",
-          "description": "Package variant qualifier."
-        },
-        {
-          "value": "K",
-          "label": "K",
-          "description": "Feature qualifier."
-        },
-        {
-          "value": "T",
-          "label": "T",
-          "description": "Tape-and-reel packaging."
-        }
-      ]
+      "options": []
     },
     {
       "id": "package",
@@ -161,36 +140,15 @@
       "length": null,
       "type": "select",
       "options": [
-        {
-          "value": "C6",
-          "label": "C6",
-          "description": "Commercial temp, speed grade 6."
-        },
-        {
-          "value": "C7",
-          "label": "C7",
-          "description": "Commercial temp, speed grade 7."
-        },
-        {
-          "value": "C8",
-          "label": "C8",
-          "description": "Commercial temp, speed grade 8."
-        },
-        {
-          "value": "I5",
-          "label": "I5",
-          "description": "Industrial temp, speed grade 5."
-        },
-        {
-          "value": "I6",
-          "label": "I6",
-          "description": "Industrial temp, speed grade 6."
-        },
-        {
-          "value": "I7",
-          "label": "I7",
-          "description": "Industrial temp, speed grade 7."
-        }
+        {"value": "C6I5", "label": "C6/I5", "description": "Dual-grade: commercial speed 6, industrial speed 5."},
+        {"value": "C7I6", "label": "C7/I6", "description": "Dual-grade: commercial speed 7, industrial speed 6."},
+        {"value": "C8I7", "label": "C8/I7", "description": "Dual-grade: commercial speed 8, industrial speed 7."},
+        {"value": "C6", "label": "C6", "description": "Commercial temp, speed grade 6."},
+        {"value": "C7", "label": "C7", "description": "Commercial temp, speed grade 7."},
+        {"value": "C8", "label": "C8", "description": "Commercial temp, speed grade 8."},
+        {"value": "I5", "label": "I5", "description": "Industrial temp, speed grade 5."},
+        {"value": "I6", "label": "I6", "description": "Industrial temp, speed grade 6."},
+        {"value": "I7", "label": "I7", "description": "Industrial temp, speed grade 7."}
       ]
     }
   ],

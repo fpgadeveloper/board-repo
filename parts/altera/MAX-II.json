@@ -1,0 +1,96 @@
+{
+  "family": "MAX II",
+  "description": "Altera MAX II CPLD (180 nm, flash-based non-volatile logic). Base (1.8V), G (3.3V), and Z (ultra-low-power) variants. Format: EPM{density}[G|Z]{package_type}{pins}{temp}{speed}[suffix]. Example: EPM240T100C5N.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Family Signature",
+      "description": "MAX II family signature.",
+      "length": 3,
+      "type": "fixed",
+      "value": "EPM"
+    },
+    {
+      "id": "density",
+      "label": "Density / Variant",
+      "description": "Device density with optional variant suffix. G = 3.3V I/O, Z = ultra-low-power.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {"value": "240G", "label": "EPM240G", "description": "240 LEs, 3.3V I/O variant."},
+        {"value": "240Z", "label": "EPM240Z", "description": "240 LEs, ultra-low-power variant."},
+        {"value": "240", "label": "EPM240", "description": "240 logic elements."},
+        {"value": "570G", "label": "EPM570G", "description": "570 LEs, 3.3V I/O variant."},
+        {"value": "570Z", "label": "EPM570Z", "description": "570 LEs, ultra-low-power variant."},
+        {"value": "570", "label": "EPM570", "description": "570 logic elements."},
+        {"value": "1270G", "label": "EPM1270G", "description": "1,270 LEs, 3.3V I/O variant."},
+        {"value": "1270", "label": "EPM1270", "description": "1,270 logic elements."},
+        {"value": "2210G", "label": "EPM2210G", "description": "2,210 LEs, 3.3V I/O variant."},
+        {"value": "2210", "label": "EPM2210", "description": "2,210 logic elements."}
+      ]
+    },
+    {
+      "id": "package_type",
+      "label": "Package Type",
+      "description": "Package family.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "T", "label": "TQFP", "description": "Thin Quad Flat Pack."},
+        {"value": "M", "label": "MBGA", "description": "Micro FineLine BGA."},
+        {"value": "F", "label": "FBGA", "description": "FineLine BGA."}
+      ]
+    },
+    {
+      "id": "pins",
+      "label": "Pin Count",
+      "description": "Number of package pins.",
+      "length": 3,
+      "type": "select",
+      "options": [
+        {"value": "100", "label": "100", "description": "100-pin package."},
+        {"value": "144", "label": "144", "description": "144-pin package."},
+        {"value": "256", "label": "256", "description": "256-pin package."},
+        {"value": "324", "label": "324", "description": "324-pin package."},
+        {"value": "484", "label": "484", "description": "484-pin package."}
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Operating Temperature",
+      "description": "Junction temperature range.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "C", "label": "Commercial", "description": "TJ = 0 to 85 C."},
+        {"value": "I", "label": "Industrial", "description": "TJ = -40 to 100 C."},
+        {"value": "A", "label": "Automotive", "description": "TJ = -40 to 125 C."}
+      ]
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Speed grade. 3 = fastest.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "3", "label": "3", "description": "Fastest speed grade."},
+        {"value": "4", "label": "4", "description": "Speed grade 4."},
+        {"value": "5", "label": "5", "description": "Slowest speed grade."}
+      ]
+    },
+    {
+      "id": "suffix",
+      "label": "Optional Suffix",
+      "description": "Optional shipment-method suffix.",
+      "length": null,
+      "type": "select",
+      "required": false,
+      "options": [
+        {"value": "N", "label": "N", "description": "Lead-free device."},
+        {"value": "ES", "label": "ES", "description": "Engineering sample."}
+      ]
+    }
+  ],
+  "type": "CPLD"
+}

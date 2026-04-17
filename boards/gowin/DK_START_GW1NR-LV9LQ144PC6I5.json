@@ -1,0 +1,18 @@
+{
+  "mpn": "DK_START_GW1NR-LV9LQ144PC6I5",
+  "name": "GW1NR-9 Starter Kit",
+  "status": "active",
+  "url": "https://www.gowinsemi.com/en/support/devkits_detail/16/",
+  "vendor": "gowin",
+  "price": {
+    "value": 456.62,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "GW1NR-LV9LQ144PC6I5",
+    "vendor": "gowin"
+  },
+  "video": {
+    "mipi_csi": 1
+  }
+}

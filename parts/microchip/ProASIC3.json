@@ -1,0 +1,122 @@
+{
+  "family": "ProASIC3",
+  "description": "Microchip (Microsemi/Actel) ProASIC3 flash-based FPGA. Format: [M1]A3P{density}[-{speed}]{package_type}[G]{pins}[Y]{temp}. Example: A3P1000-1FGG144YI.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "ProASIC3 family prefix. M1 prefix indicates Cortex-M1 variant.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {"value": "M1A3P", "label": "M1A3P (Cortex-M1)", "description": "ProASIC3 with integrated Cortex-M1 soft processor."},
+        {"value": "A3P", "label": "A3P", "description": "Standard ProASIC3 device."}
+      ]
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Device density in thousands of system gates.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {"value": "030", "label": "030", "description": "30K system gates."},
+        {"value": "060", "label": "060", "description": "60K system gates."},
+        {"value": "125", "label": "125", "description": "125K system gates."},
+        {"value": "250", "label": "250", "description": "250K system gates."},
+        {"value": "400", "label": "400", "description": "400K system gates."},
+        {"value": "600", "label": "600", "description": "600K system gates."},
+        {"value": "1000", "label": "1000", "description": "1M system gates."}
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator before speed grade.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Optional speed grade. Blank = standard; 1 = 15% faster; 2 = 25% faster.",
+      "length": 1,
+      "type": "select",
+      "required": false,
+      "options": [
+        {"value": "1", "label": "1", "description": "15% faster than standard."},
+        {"value": "2", "label": "2", "description": "25% faster than standard."}
+      ]
+    },
+    {
+      "id": "package_type",
+      "label": "Package Type",
+      "description": "Package family code.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {"value": "QN", "label": "QFN", "description": "Quad Flat Pack No Leads."},
+        {"value": "VQ", "label": "VQFP", "description": "Very Thin Quad Flat Pack, 0.5 mm pitch."},
+        {"value": "TQ", "label": "TQFP", "description": "Thin Quad Flat Pack, 0.5 mm pitch."},
+        {"value": "PQ", "label": "PQFP", "description": "Plastic Quad Flat Pack, 0.5 mm pitch."},
+        {"value": "FG", "label": "FBGA", "description": "Fine Pitch Ball Grid Array, 1.0 mm pitch."},
+        {"value": "CS", "label": "CSP", "description": "Chip Scale Package, 0.5 mm pitch."}
+      ]
+    },
+    {
+      "id": "lead_free",
+      "label": "Lead-Free Packaging",
+      "description": "Optional lead-free (RoHS) marker. G = Green/Pb-free.",
+      "length": 1,
+      "type": "select",
+      "required": false,
+      "options": [
+        {"value": "G", "label": "G (Pb-free)", "description": "RoHS-compliant (Green) packaging."}
+      ]
+    },
+    {
+      "id": "pins",
+      "label": "Package Pin Count",
+      "description": "Package pin/ball count.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {"value": "68", "label": "68", "description": "68-pin package."},
+        {"value": "100", "label": "100", "description": "100-pin package."},
+        {"value": "132", "label": "132", "description": "132-pin package."},
+        {"value": "144", "label": "144", "description": "144-pin package."},
+        {"value": "208", "label": "208", "description": "208-pin package."},
+        {"value": "256", "label": "256", "description": "256-pin package."},
+        {"value": "288", "label": "288", "description": "288-pin package."},
+        {"value": "484", "label": "484", "description": "484-pin package."}
+      ]
+    },
+    {
+      "id": "security",
+      "label": "Security Feature",
+      "description": "Optional CRI patent license marker (Y = licensed).",
+      "length": 1,
+      "type": "select",
+      "required": false,
+      "options": [
+        {"value": "Y", "label": "Y (CRI licensed)", "description": "Includes license to implement IP based on Cryptography Research, Inc. (CRI) Patent Portfolio."}
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Optional temperature/status grade.",
+      "length": null,
+      "type": "select",
+      "required": false,
+      "options": [
+        {"value": "I", "label": "Industrial", "description": "TJ = -40 to 100 C."},
+        {"value": "T", "label": "T (Tray)", "description": "Tray packaging."},
+        {"value": "PP", "label": "Pre-Production", "description": "Pre-production device."},
+        {"value": "ES", "label": "Engineering Sample", "description": "Engineering sample (room temperature only)."}
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

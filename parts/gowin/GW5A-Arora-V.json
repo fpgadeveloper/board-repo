@@ -26,16 +26,14 @@
       "type": "select",
       "required": false,
       "options": [
-        {
-          "value": "ST",
-          "label": "ST (Hard CPU)",
-          "description": "Embedded hard ARM Cortex-A9 dual-core processor."
-        },
-        {
-          "value": "T",
-          "label": "T (Variant)",
-          "description": "Feature variant."
-        }
+        {"value": "NRT", "label": "NRT", "description": "GW5ANRT variant."},
+        {"value": "NT", "label": "NT", "description": "GW5ANT variant."},
+        {"value": "ART", "label": "ART", "description": "GW5ART variant."},
+        {"value": "AR", "label": "AR", "description": "GW5AR variant."},
+        {"value": "ST", "label": "ST (RISC-V AE350_SOC)", "description": "Embedded RISC-V AE350_SOC hard-core processor, 12.5 Gbps SERDES, PCIe."},
+        {"value": "AS", "label": "AS", "description": "GW5AS variant with integrated ARM hard core."},
+        {"value": "T", "label": "T", "description": "GW5AT: 12.5 Gbps SERDES + PCIe hard core, MIPI D-PHY/C-PHY."},
+        {"value": "S", "label": "S", "description": "GW5AS variant."}
       ]
     },
     {
@@ -83,22 +81,11 @@
     {
       "id": "qualifier",
       "label": "Qualifier",
-      "description": "Optional package/feature qualifier character(s).",
+      "description": "Optional feature qualifier character(s). Rarely used.",
       "length": null,
       "type": "select",
       "required": false,
-      "options": [
-        {
-          "value": "P",
-          "label": "P",
-          "description": "Package variant qualifier."
-        },
-        {
-          "value": "A",
-          "label": "A",
-          "description": "Feature qualifier."
-        }
-      ]
+      "options": []
     },
     {
       "id": "package",

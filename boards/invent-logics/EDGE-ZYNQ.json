@@ -1,5 +1,5 @@
 {
-  "id": "EDGE-ZYNQ",
+  "mpn": "EDGE-ZYNQ",
   "name": "EDGE ZYNQ",
   "status": "active",
   "url": "https://allaboutfpga.com/product/edge-zynq-soc-fpga-development-board/",

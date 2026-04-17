@@ -29,7 +29,7 @@ If you prefer, you can add a board directly by creating a new JSON file and open
 #### Steps
 
 1. **Fork** this repository.
-2. **Create** a new file at `boards/<vendor-slug>/<board-id>.json` with your board object.
+2. **Create** a new file at `boards/<vendor-slug>/<mpn>.json` with your board object (filename matches the `mpn` field).
 3. **Validate** your changes against the schema (see [Validation](#validation) below).
 4. **Open a pull request** with a brief description of the board you're adding.
 
@@ -39,8 +39,8 @@ Each board is a JSON object with the following required fields:
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `id` | string | Unique identifier, typically the ordering part number without spaces (e.g. `"ZCU102"`). |
-| `name` | string | Display name of the board. |
+| `mpn` | string | **Manufacturer part number** (MPN / SKU) as published by the board vendor — e.g. `"ZCU102"`, `"DK-DEV-AGI027-RA-B"`, `"DK_START_GW1NR-LV9LQ144PC6I5"`. Must be unique across all boards. Some older entries predate this convention and use a short product name instead; new boards should use the vendor's MPN. |
+| `name` | string | Human-readable display name of the board (e.g. `"GW1NR-9 Starter Kit"`). Shown in listings and titles. |
 | `status` | string | `"active"`, `"eol"` (end-of-life), or `"discontinued"`. |
 | `url` | string | Product page URL. |
 | `vendor` | string | Board vendor key (must match a key in `vendors.json` `board_vendors`). |
@@ -62,7 +62,7 @@ Create a file at `boards/digilent/Arty-A7.json`:
 
 ```json
 {
-  "id": "Arty-A7",
+  "mpn": "Arty-A7",
   "name": "Arty A7",
   "status": "active",
   "url": "https://digilent.com/shop/arty-a7/",
@@ -84,7 +84,7 @@ Create a file at `boards/digilent/Arty-A7.json`:
 
 ```json
 {
-  "id": "SP701",
+  "mpn": "SP701",
   "name": "SP701",
   "status": "active",
   "url": "https://www.xilinx.com/sp701",
@@ -164,8 +164,8 @@ To add a new vendor, add an entry to the appropriate section in `vendors.json` w
 
 - Only include optional fields that have meaningful values. If a board has no PCIe, omit the `pcie` key entirely.
 - Use the ISO 4217 currency code for the `price.currency` field (e.g. `"USD"`, `"EUR"`, `"GBP"`).
-- The `id` should be unique and contain only letters, numbers, hyphens, dots, and underscores.
-- The filename should match the board ID (e.g. board with `"id": "ZCU102"` goes in `ZCU102.json`).
+- The `mpn` should be the manufacturer part number (MPN / SKU) as published by the board vendor. It must be unique and contain only letters, numbers, hyphens, dots, and underscores. Replace any spaces, slashes, or other unsupported characters with hyphens. Drop trailing PCB-revision suffixes (e.g. `_V3.1`) so the MPN stays stable across revisions.
+- The filename must match the `mpn` field (e.g. a board with `"mpn": "ZCU102"` goes in `ZCU102.json`).
 - Set `status` to `"active"` for boards currently available for purchase, `"eol"` for end-of-life boards, or `"discontinued"` for discontinued boards.
 
 ## Validation

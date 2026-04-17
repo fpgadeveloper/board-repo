@@ -1,0 +1,21 @@
+{
+  "mpn": "DK_START_GW2A-LV18PG256C8I7",
+  "name": "GW2A-18 Starter Kit",
+  "status": "active",
+  "url": "https://www.gowinsemi.com/en/support/devkits_detail/31/",
+  "vendor": "gowin",
+  "price": {
+    "value": 366.24,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "GW2A-LV18PG256C8I7",
+    "vendor": "gowin"
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 2
+    }
+  ]
+}

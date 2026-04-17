@@ -191,6 +191,11 @@
           "value": "LQ144P",
           "label": "LQ144P",
           "description": "144-pin LQFP package (P variant)."
+        },
+        {
+          "value": "FN32",
+          "label": "FN32",
+          "description": "32-pin FBGA package."
         }
       ]
     },
@@ -201,36 +206,16 @@
       "length": null,
       "type": "select",
       "options": [
-        {
-          "value": "C5",
-          "label": "C5",
-          "description": "Commercial temp, speed grade 5."
-        },
-        {
-          "value": "C6",
-          "label": "C6",
-          "description": "Commercial temp, speed grade 6."
-        },
-        {
-          "value": "C7",
-          "label": "C7",
-          "description": "Commercial temp, speed grade 7."
-        },
-        {
-          "value": "I4",
-          "label": "I4",
-          "description": "Industrial temp, speed grade 4."
-        },
-        {
-          "value": "I5",
-          "label": "I5",
-          "description": "Industrial temp, speed grade 5."
-        },
-        {
-          "value": "I6",
-          "label": "I6",
-          "description": "Industrial temp, speed grade 6."
-        }
+        {"value": "C5I4", "label": "C5/I4", "description": "Dual-grade: commercial speed 5, industrial speed 4."},
+        {"value": "C6I5", "label": "C6/I5", "description": "Dual-grade: commercial speed 6, industrial speed 5."},
+        {"value": "C7I6", "label": "C7/I6", "description": "Dual-grade: commercial speed 7, industrial speed 6."},
+        {"value": "C8I7", "label": "C8/I7", "description": "Dual-grade: commercial speed 8, industrial speed 7."},
+        {"value": "C5", "label": "C5", "description": "Commercial temp, speed grade 5."},
+        {"value": "C6", "label": "C6", "description": "Commercial temp, speed grade 6."},
+        {"value": "C7", "label": "C7", "description": "Commercial temp, speed grade 7."},
+        {"value": "I4", "label": "I4", "description": "Industrial temp, speed grade 4."},
+        {"value": "I5", "label": "I5", "description": "Industrial temp, speed grade 5."},
+        {"value": "I6", "label": "I6", "description": "Industrial temp, speed grade 6."}
       ]
     }
   ],

@@ -1,0 +1,21 @@
+{
+  "mpn": "DK_VIDEO_GW2A-LV18PG484C8I7",
+  "name": "GW2A-18 Video Development Kit (PG484)",
+  "status": "active",
+  "url": "https://www.gowinsemi.com/en/support/devkits_detail/21/",
+  "vendor": "gowin",
+  "price": {
+    "value": 962.67,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "GW2A-LV18PG484C8I7",
+    "vendor": "gowin"
+  },
+  "video": {
+    "hdmi_in": 2,
+    "hdmi_out": 2,
+    "mipi_csi": 1,
+    "mipi_dsi": 1
+  }
+}

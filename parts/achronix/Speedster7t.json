@@ -17,16 +17,10 @@
       "length": null,
       "type": "select",
       "options": [
-        {
-          "value": "800",
-          "label": "800K",
-          "description": "~692K 6-input LUTs."
-        },
-        {
-          "value": "1500",
-          "label": "1500K",
-          "description": "~1.46M 6-input LUTs."
-        }
+        {"value": "700", "label": "700", "description": "AC7t700 density."},
+        {"value": "800", "label": "800", "description": "AC7t800 density, ~692K 6-input LUTs."},
+        {"value": "1400", "label": "1400", "description": "AC7t1400 density."},
+        {"value": "1500", "label": "1500", "description": "AC7t1500 density, ~1.46M 6-input LUTs."}
       ]
     },
     {

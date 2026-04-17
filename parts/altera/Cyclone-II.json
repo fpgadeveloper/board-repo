@@ -1,0 +1,96 @@
+{
+  "family": "Cyclone II",
+  "description": "Altera Cyclone II FPGA (90 nm, low-cost). Format: EP2C{density}{package_type}{pins}{temp}{speed}[suffix]. Example: EP2C35F672C6N.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Family Signature",
+      "description": "Cyclone II family signature.",
+      "length": 4,
+      "type": "fixed",
+      "value": "EP2C"
+    },
+    {
+      "id": "density",
+      "label": "Device Density",
+      "description": "Logic density.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {"value": "5", "label": "EP2C5", "description": "4,608 logic elements."},
+        {"value": "8", "label": "EP2C8", "description": "8,256 logic elements."},
+        {"value": "15", "label": "EP2C15", "description": "14,448 logic elements."},
+        {"value": "20", "label": "EP2C20", "description": "18,752 logic elements."},
+        {"value": "35", "label": "EP2C35", "description": "33,216 logic elements."},
+        {"value": "50", "label": "EP2C50", "description": "50,528 logic elements."},
+        {"value": "70", "label": "EP2C70", "description": "68,416 logic elements."}
+      ]
+    },
+    {
+      "id": "package_type",
+      "label": "Package Type",
+      "description": "Package family.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "T", "label": "TQFP", "description": "Thin Quad Flat Pack."},
+        {"value": "Q", "label": "PQFP", "description": "Plastic Quad Flat Pack."},
+        {"value": "U", "label": "UBGA", "description": "Ultra FineLine BGA."},
+        {"value": "F", "label": "FBGA", "description": "FineLine BGA."}
+      ]
+    },
+    {
+      "id": "pins",
+      "label": "Pin Count",
+      "description": "Number of package pins.",
+      "length": 3,
+      "type": "select",
+      "options": [
+        {"value": "144", "label": "144", "description": "144-pin package."},
+        {"value": "208", "label": "208", "description": "208-pin package."},
+        {"value": "240", "label": "240", "description": "240-pin package."},
+        {"value": "256", "label": "256", "description": "256-pin package."},
+        {"value": "484", "label": "484", "description": "484-pin package."},
+        {"value": "672", "label": "672", "description": "672-pin package."},
+        {"value": "896", "label": "896", "description": "896-pin package."}
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Operating Temperature",
+      "description": "Junction temperature range.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "C", "label": "Commercial", "description": "TJ = 0 to 85 C."},
+        {"value": "I", "label": "Industrial", "description": "TJ = -40 to 100 C."},
+        {"value": "A", "label": "Automotive", "description": "TJ = -40 to 125 C."}
+      ]
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Fabric speed grade. 6 = fastest.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "6", "label": "6", "description": "Fastest speed grade."},
+        {"value": "7", "label": "7", "description": "Speed grade 7."},
+        {"value": "8", "label": "8", "description": "Slowest speed grade."}
+      ]
+    },
+    {
+      "id": "suffix",
+      "label": "Optional Suffix",
+      "description": "Optional shipment-method suffix.",
+      "length": null,
+      "type": "select",
+      "required": false,
+      "options": [
+        {"value": "N", "label": "N", "description": "Lead-free device."},
+        {"value": "ES", "label": "ES", "description": "Engineering sample."}
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

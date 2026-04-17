@@ -1,0 +1,100 @@
+{
+  "family": "Spartan-6",
+  "description": "Xilinx Spartan-6 FPGA (45 nm, dual-register 6-input LUT). LX = standard, LXT = with transceivers. Format: {prefix}6SLX{density}[T]-{speed}{package}{temp}. Example: XC6SLX100T-2FGG676C.",
+  "fields": [
+    {
+      "id": "product_grade",
+      "label": "Product Grade",
+      "description": "Product grade prefix indicating target market.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {"value": "XC", "label": "XC", "description": "Commercial"},
+        {"value": "XA", "label": "XA", "description": "Automotive"},
+        {"value": "XQ", "label": "XQ", "description": "Defense-grade (Spartan-6Q)"}
+      ]
+    },
+    {
+      "id": "family",
+      "label": "Family",
+      "description": "Spartan-6 family code (LX line).",
+      "length": 4,
+      "type": "fixed",
+      "value": "6SLX"
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Device logic density. Suffix T indicates LXT variant with GTP transceivers.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {"value": "4", "label": "4", "description": "3.8K logic cells."},
+        {"value": "9", "label": "9", "description": "9.2K logic cells."},
+        {"value": "16", "label": "16", "description": "14.6K logic cells."},
+        {"value": "25", "label": "25", "description": "24.1K logic cells."},
+        {"value": "25T", "label": "25T", "description": "24.1K logic cells with 2 GTP transceivers."},
+        {"value": "45", "label": "45", "description": "43.6K logic cells."},
+        {"value": "45T", "label": "45T", "description": "43.6K logic cells with 4 GTP transceivers."},
+        {"value": "75", "label": "75", "description": "74.6K logic cells."},
+        {"value": "75T", "label": "75T", "description": "74.6K logic cells with 8 GTP transceivers."},
+        {"value": "100", "label": "100", "description": "101.3K logic cells."},
+        {"value": "100T", "label": "100T", "description": "101.3K logic cells with 8 GTP transceivers."},
+        {"value": "150", "label": "150", "description": "147.4K logic cells."},
+        {"value": "150T", "label": "150T", "description": "147.4K logic cells with 8 GTP transceivers."}
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator before speed grade.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Fabric speed grade. -3 = fastest; -L1 = low-power; -N3 = -3 without MCB support.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {"value": "L1", "label": "L1 (low-power)", "description": "Low-power -1L speed grade (LX only)."},
+        {"value": "N3", "label": "N3", "description": "Speed grade -3 without MCB (memory controller) support."},
+        {"value": "1", "label": "1", "description": "Speed grade -1."},
+        {"value": "2", "label": "2", "description": "Speed grade -2."},
+        {"value": "3", "label": "3", "description": "Speed grade -3 (fastest)."}
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type and pin count. Trailing G indicates Pb-free (RoHS).",
+      "length": null,
+      "type": "select",
+      "options": [
+        {"value": "TQG144", "label": "TQG144", "description": "TQFP, 144 pins, Pb-free."},
+        {"value": "CPG196", "label": "CPG196", "description": "Chip-scale CP, 196 balls, Pb-free."},
+        {"value": "FTG256", "label": "FTG256", "description": "Fine-pitch BGA, 256 balls, Pb-free."},
+        {"value": "CSG225", "label": "CSG225", "description": "Chip-scale BGA, 225 balls, Pb-free."},
+        {"value": "CSG324", "label": "CSG324", "description": "Chip-scale BGA, 324 balls, Pb-free."},
+        {"value": "CSG484", "label": "CSG484", "description": "Chip-scale BGA, 484 balls, Pb-free."},
+        {"value": "FGG484", "label": "FGG484", "description": "Fine-pitch BGA, 484 balls, Pb-free."},
+        {"value": "FGG676", "label": "FGG676", "description": "Fine-pitch BGA, 676 balls, Pb-free."},
+        {"value": "FGG900", "label": "FGG900", "description": "Fine-pitch BGA, 900 balls, Pb-free."}
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "C", "label": "Commercial", "description": "TJ = 0 C to 85 C."},
+        {"value": "I", "label": "Industrial", "description": "TJ = -40 C to 100 C."}
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

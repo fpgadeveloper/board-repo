@@ -1,0 +1,107 @@
+{
+  "family": "Spartan-3E",
+  "description": "Xilinx Spartan-3E FPGA (90 nm, optimized for logic-intensive designs). Format: {prefix}3S{density}E-{speed}{package}{temp}[S{stepping}]. Example: XC3S500E-4FTG256C.",
+  "fields": [
+    {
+      "id": "product_grade",
+      "label": "Product Grade",
+      "description": "Product grade prefix indicating target market.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {"value": "XC", "label": "XC", "description": "Commercial"},
+        {"value": "XA", "label": "XA", "description": "Automotive (DS635)"}
+      ]
+    },
+    {
+      "id": "family",
+      "label": "Family",
+      "description": "Spartan-3 family code.",
+      "length": 2,
+      "type": "fixed",
+      "value": "3S"
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Device logic density with E suffix.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {"value": "100E", "label": "100E", "description": "100K system gates, 2,160 LCs."},
+        {"value": "250E", "label": "250E", "description": "250K system gates, 5,508 LCs."},
+        {"value": "500E", "label": "500E", "description": "500K system gates, 10,476 LCs."},
+        {"value": "1200E", "label": "1200E", "description": "1.2M system gates, 19,512 LCs."},
+        {"value": "1600E", "label": "1600E", "description": "1.6M system gates, 33,192 LCs."}
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator before speed grade.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Fabric speed grade. -5 Commercial only.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "4", "label": "-4 (Standard)", "description": "Standard performance speed grade."},
+        {"value": "5", "label": "-5 (High Performance)", "description": "High performance speed grade (Commercial only)."}
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type and pin count. G indicates Pb-free (RoHS).",
+      "length": null,
+      "type": "select",
+      "options": [
+        {"value": "VQ100", "label": "VQ100", "description": "VQFP, 100 pins (Pb)."},
+        {"value": "VQG100", "label": "VQG100", "description": "VQFP, 100 pins, Pb-free."},
+        {"value": "CP132", "label": "CP132", "description": "CSP, 132 balls (Pb)."},
+        {"value": "CPG132", "label": "CPG132", "description": "CSP, 132 balls, Pb-free."},
+        {"value": "TQ144", "label": "TQ144", "description": "TQFP, 144 pins (Pb)."},
+        {"value": "TQG144", "label": "TQG144", "description": "TQFP, 144 pins, Pb-free."},
+        {"value": "PQ208", "label": "PQ208", "description": "PQFP, 208 pins (Pb)."},
+        {"value": "PQG208", "label": "PQG208", "description": "PQFP, 208 pins, Pb-free."},
+        {"value": "FT256", "label": "FT256", "description": "FTBGA, 256 balls (Pb)."},
+        {"value": "FTG256", "label": "FTG256", "description": "FTBGA, 256 balls, Pb-free."},
+        {"value": "FG320", "label": "FG320", "description": "FBGA, 320 balls (Pb)."},
+        {"value": "FGG320", "label": "FGG320", "description": "FBGA, 320 balls, Pb-free."},
+        {"value": "FG400", "label": "FG400", "description": "FBGA, 400 balls (Pb)."},
+        {"value": "FGG400", "label": "FGG400", "description": "FBGA, 400 balls, Pb-free."},
+        {"value": "FG484", "label": "FG484", "description": "FBGA, 484 balls (Pb)."},
+        {"value": "FGG484", "label": "FGG484", "description": "FBGA, 484 balls, Pb-free."}
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating junction temperature range.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "C", "label": "Commercial", "description": "TJ = 0 C to 85 C."},
+        {"value": "I", "label": "Industrial", "description": "TJ = -40 C to 100 C."}
+      ]
+    },
+    {
+      "id": "stepping",
+      "label": "Stepping",
+      "description": "Optional production stepping code.",
+      "length": 2,
+      "type": "select",
+      "required": false,
+      "options": [
+        {"value": "S0", "label": "S0", "description": "Stepping 0."},
+        {"value": "S1", "label": "S1", "description": "Stepping 1."}
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

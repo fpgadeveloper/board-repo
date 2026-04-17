@@ -1,0 +1,107 @@
+{
+  "family": "Stratix IV GX",
+  "description": "Altera Stratix IV GX FPGA (40 nm, with 8.5-Gbps transceivers). Format: EP4SGX{density}{xcvr_count}{package_type}{ball_dim}{temp}{speed}[suffix]. Example: EP4SGX230KF40C2.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Family Signature",
+      "description": "Stratix IV GX family signature.",
+      "length": 6,
+      "type": "fixed",
+      "value": "EP4SGX"
+    },
+    {
+      "id": "density",
+      "label": "Device Density",
+      "description": "Logic density (approximate LE count in thousands).",
+      "length": 3,
+      "type": "select",
+      "options": [
+        {"value": "70", "label": "70", "description": "72K logic elements."},
+        {"value": "110", "label": "110", "description": "110K logic elements."},
+        {"value": "180", "label": "180", "description": "181K logic elements."},
+        {"value": "230", "label": "230", "description": "228K logic elements."},
+        {"value": "290", "label": "290", "description": "290K logic elements."},
+        {"value": "360", "label": "360", "description": "360K logic elements."},
+        {"value": "530", "label": "530", "description": "530K logic elements."},
+        {"value": "820", "label": "820", "description": "820K logic elements."}
+      ]
+    },
+    {
+      "id": "xcvr_count",
+      "label": "Transceiver Count",
+      "description": "Number of 8.5-Gbps transceiver channels.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "D", "label": "D (8)", "description": "8 transceivers."},
+        {"value": "F", "label": "F (16)", "description": "16 transceivers."},
+        {"value": "H", "label": "H (24)", "description": "24 transceivers."},
+        {"value": "K", "label": "K (36)", "description": "36 transceivers."},
+        {"value": "N", "label": "N (48)", "description": "48 transceivers."}
+      ]
+    },
+    {
+      "id": "package_type",
+      "label": "Package Type",
+      "description": "Package family.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "F", "label": "FBGA", "description": "FineLine BGA."},
+        {"value": "H", "label": "Hybrid FBGA", "description": "Hybrid FineLine BGA."}
+      ]
+    },
+    {
+      "id": "ball_dim",
+      "label": "Ball Array Dimension",
+      "description": "Package ball-array code (corresponds to pin count).",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {"value": "29", "label": "29 (780 pins)", "description": "780-pin package."},
+        {"value": "35", "label": "35 (1152 pins)", "description": "1,152-pin package."},
+        {"value": "40", "label": "40 (1517 pins)", "description": "1,517-pin package."},
+        {"value": "43", "label": "43 (1760 pins)", "description": "1,760-pin package."},
+        {"value": "45", "label": "45 (1932 pins)", "description": "1,932-pin package."}
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Operating Temperature",
+      "description": "Junction temperature range.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "C", "label": "Commercial", "description": "TJ = 0 to 85 C."},
+        {"value": "I", "label": "Industrial", "description": "TJ = -40 to 100 C."}
+      ]
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Fabric speed grade. 2 = fastest.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {"value": "2X", "label": "2x", "description": "Enhanced speed grade 2."},
+        {"value": "2", "label": "2", "description": "Fastest speed grade."},
+        {"value": "3", "label": "3", "description": "Speed grade 3."},
+        {"value": "4", "label": "4", "description": "Slowest speed grade."}
+      ]
+    },
+    {
+      "id": "suffix",
+      "label": "Optional Suffix",
+      "description": "Optional shipment-method suffix.",
+      "length": null,
+      "type": "select",
+      "required": false,
+      "options": [
+        {"value": "N", "label": "N", "description": "Lead-free device."},
+        {"value": "ES", "label": "ES", "description": "Engineering sample."}
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

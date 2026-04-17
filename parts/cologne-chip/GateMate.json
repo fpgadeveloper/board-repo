@@ -1,6 +1,6 @@
 {
   "family": "GateMate",
-  "description": "Cologne Chip GateMate Series \u2014 European-designed FPGAs based on Cologne Chip's proprietary Programmable Element (CPE) architecture. Format: CCGM1A{density}{package}{grade}{suffix}.",
+  "description": "Cologne Chip GateMate Series \u2014 European-designed FPGAs based on Cologne Chip's proprietary Programmable Element (CPE) architecture. Format: CCGM1A{density}-{package}[{grade}]{suffix}. Example: CCGM1A1-BGA324.",
   "fields": [
     {
       "id": "prefix",
@@ -13,41 +13,29 @@
     {
       "id": "density",
       "label": "Density",
-      "description": "Logic density in approximate thousands of Configurable Processing Elements (CPEs).",
-      "length": null,
+      "description": "Logic density designation (A1 = 20,480 CPEs, A2 = 40,960 CPEs).",
+      "length": 1,
       "type": "select",
       "options": [
         {
           "value": "1",
-          "label": "1K CPE",
-          "description": "~1,152 CPEs."
+          "label": "A1",
+          "description": "CCGM1A1 \u2014 20,480 Configurable Processing Elements (CPEs)."
         },
         {
           "value": "2",
-          "label": "2K CPE",
-          "description": "~2,304 CPEs."
-        },
-        {
-          "value": "4",
-          "label": "4K CPE",
-          "description": "~5,120 CPEs."
-        },
-        {
-          "value": "8",
-          "label": "8K CPE",
-          "description": "~10,240 CPEs."
-        },
-        {
-          "value": "16",
-          "label": "16K CPE",
-          "description": "~20,480 CPEs."
-        },
-        {
-          "value": "32",
-          "label": "32K CPE",
-          "description": "~40,960 CPEs."
+          "label": "A2",
+          "description": "CCGM1A2 \u2014 40,960 Configurable Processing Elements (CPEs)."
         }
       ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator before package code.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
     },
     {
       "id": "package",
@@ -57,28 +45,28 @@
       "type": "select",
       "options": [
         {
-          "value": "F48",
-          "label": "F48 (QFN48)",
+          "value": "QFN48",
+          "label": "QFN48",
           "description": "48-pin QFN package."
         },
         {
-          "value": "F100",
-          "label": "F100 (QFN100)",
+          "value": "QFN100",
+          "label": "QFN100",
           "description": "100-pin QFN package."
         },
         {
-          "value": "F256",
-          "label": "F256 (BGA256)",
+          "value": "BGA256",
+          "label": "BGA256",
           "description": "256-ball BGA package."
         },
         {
-          "value": "F324",
-          "label": "F324 (BGA324)",
+          "value": "BGA324",
+          "label": "BGA324",
           "description": "324-ball BGA package."
         },
         {
-          "value": "F484",
-          "label": "F484 (BGA484)",
+          "value": "BGA484",
+          "label": "BGA484",
           "description": "484-ball BGA package."
         }
       ]
@@ -86,9 +74,10 @@
     {
       "id": "grade",
       "label": "Grade",
-      "description": "Temperature / qualification grade.",
+      "description": "Optional temperature / qualification grade.",
       "length": 2,
       "type": "select",
+      "required": false,
       "options": [
         {
           "value": "C0",

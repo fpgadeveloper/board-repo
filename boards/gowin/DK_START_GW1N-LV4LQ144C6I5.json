@@ -1,0 +1,15 @@
+{
+  "mpn": "DK_START_GW1N-LV4LQ144C6I5",
+  "name": "GW1N-4 Starter Kit",
+  "status": "active",
+  "url": "https://www.gowinsemi.com/en/support/devkits_detail/1/",
+  "vendor": "gowin",
+  "price": {
+    "value": 338.05,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "GW1N-LV4LQ144C6I5",
+    "vendor": "gowin"
+  }
+}

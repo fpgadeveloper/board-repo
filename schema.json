@@ -9,12 +9,12 @@
   "$defs": {
     "board": {
       "type": "object",
-      "required": ["id", "name", "status", "url", "vendor", "price", "device"],
+      "required": ["mpn", "name", "status", "url", "vendor", "price", "device"],
       "additionalProperties": false,
       "properties": {
-        "id": {
+        "mpn": {
           "type": "string",
-          "description": "Unique identifier for the board (URL-safe slug recommended)."
+          "description": "Manufacturer part number (MPN / SKU) as published by the board vendor. Must be unique across all boards. URL-safe characters only (letters, digits, hyphens, dots, underscores). Replace spaces or slashes with hyphens; drop trailing PCB-revision suffixes so the MPN stays stable across revisions."
         },
         "name": {
           "type": "string",

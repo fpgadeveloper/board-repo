@@ -24,6 +24,10 @@
       "name": "BittWare",
       "url": "https://www.bittware.com"
     },
+    "cologne-chip": {
+      "name": "Cologne Chip",
+      "url": "https://colognechip.com"
+    },
     "digilent": {
       "name": "Digilent",
       "url": "https://digilent.com"
@@ -31,6 +35,10 @@
     "efinix": {
       "name": "Efinix",
       "url": "https://www.efinixinc.com"
+    },
+    "gowin": {
+      "name": "Gowin Semiconductor",
+      "url": "https://www.gowinsemi.com"
     },
     "hitech-global": {
       "name": "Hitech Global",

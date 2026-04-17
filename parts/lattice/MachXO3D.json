@@ -1,0 +1,108 @@
+{
+  "family": "MachXO3D",
+  "description": "Lattice MachXO3D secure-control FPGA (enhanced security, dual-boot flash). Format: L{C|A}MXO3D-{density}{power}{voltage}-{speed}{package}{grade}. Example: LCMXO3D-9400HC-5BG484C.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "MachXO3D family prefix. LC = Commercial/Industrial, LA = Automotive.",
+      "length": 7,
+      "type": "select",
+      "options": [
+        {"value": "LCMXO3D", "label": "LCMXO3D", "description": "Commercial/Industrial grade MachXO3D."},
+        {"value": "LAMXO3D", "label": "LAMXO3D", "description": "Automotive grade MachXO3D."}
+      ]
+    },
+    {
+      "id": "sep0",
+      "label": "Separator",
+      "description": "Dash separator after family prefix.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "density",
+      "label": "Logic Capacity",
+      "description": "Device logic density.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {"value": "4300U", "label": "4300U", "description": "4,320 LUTs, ultra-compact option."},
+        {"value": "4300", "label": "4300", "description": "4,320 LUTs."},
+        {"value": "9400", "label": "9400", "description": "9,400 LUTs."}
+      ]
+    },
+    {
+      "id": "power",
+      "label": "Power/Performance",
+      "description": "Power/performance class.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "Z", "label": "Z (Low Power)", "description": "Low-power variant."},
+        {"value": "H", "label": "H (High Performance)", "description": "High-performance variant."}
+      ]
+    },
+    {
+      "id": "voltage",
+      "label": "Supply Voltage",
+      "description": "Core supply voltage.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "C", "label": "C (2.5V/3.3V)", "description": "2.5V / 3.3V I/O."},
+        {"value": "E", "label": "E (1.2V)", "description": "1.2V core."}
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator before speed grade.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Speed grade. 2/3 for Low-Power variants, 5/6 for High-Performance.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "2", "label": "2 (Slowest, Low Power)", "description": "Slowest speed, low-power variant."},
+        {"value": "3", "label": "3 (Fastest, Low Power)", "description": "Fastest speed, low-power variant."},
+        {"value": "5", "label": "5 (Slowest, High Perf)", "description": "Slowest speed, high-performance variant."},
+        {"value": "6", "label": "6 (Fastest, High Perf)", "description": "Fastest speed, high-performance variant."}
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type and ball/pin count.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {"value": "UTG69", "label": "UTG69", "description": "69-pin Halogen-Free WLCSP, 0.65 mm pitch."},
+        {"value": "SG72", "label": "SG72", "description": "72-pin Halogen-Free QFN, 0.5 mm pitch."},
+        {"value": "BG256", "label": "BG256", "description": "256-ball Halogen-Free caBGA, 0.8 mm pitch."},
+        {"value": "BG400", "label": "BG400", "description": "400-ball Halogen-Free caBGA, 0.8 mm pitch."},
+        {"value": "BG484", "label": "BG484", "description": "484-ball Halogen-Free caBGA, 0.8 mm pitch."},
+        {"value": "FTG256", "label": "FTG256", "description": "256-ball Halogen-Free ftBGA, 1.0 mm pitch."}
+      ]
+    },
+    {
+      "id": "grade",
+      "label": "Temperature Grade",
+      "description": "Operating temperature grade.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "C", "label": "Commercial", "description": "Commercial temperature."},
+        {"value": "I", "label": "Industrial", "description": "Industrial temperature."},
+        {"value": "E", "label": "Automotive", "description": "Automotive temperature."}
+      ]
+    }
+  ],
+  "type": "FPGA"
+}

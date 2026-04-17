@@ -1,0 +1,116 @@
+{
+  "family": "Virtex-6",
+  "description": "Xilinx Virtex-6 FPGA (40 nm, third-gen ASMBL architecture). Sub-families: LX, LXT, SXT, HXT, CXT. Format: {prefix}6V{line}{density}[T]-{speed}{package}{temp}. Example: XC6VLX240T-1FFG1156C.",
+  "fields": [
+    {
+      "id": "product_grade",
+      "label": "Product Grade",
+      "description": "Product grade prefix indicating target market.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {"value": "XC", "label": "XC", "description": "Commercial"},
+        {"value": "XQ", "label": "XQ", "description": "Defense-grade."}
+      ]
+    },
+    {
+      "id": "family",
+      "label": "Family",
+      "description": "Virtex-6 family code.",
+      "length": 2,
+      "type": "fixed",
+      "value": "6V"
+    },
+    {
+      "id": "line",
+      "label": "Product Line",
+      "description": "Virtex-6 product line.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {"value": "LX", "label": "LX / LXT", "description": "Logic-optimized (LX) or LX with transceivers (LXT)."},
+        {"value": "SX", "label": "SXT", "description": "DSP-optimized with transceivers."},
+        {"value": "HX", "label": "HXT", "description": "High-bandwidth with GTH transceivers."},
+        {"value": "CX", "label": "CXT", "description": "Cost-optimized with transceivers."}
+      ]
+    },
+    {
+      "id": "density",
+      "label": "Density",
+      "description": "Device density. T suffix indicates GTX/GTH transceiver variant.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {"value": "75T", "label": "75T", "description": "~75K logic cells with transceivers."},
+        {"value": "130T", "label": "130T", "description": "~130K logic cells with transceivers."},
+        {"value": "195T", "label": "195T", "description": "~195K logic cells with transceivers."},
+        {"value": "240T", "label": "240T", "description": "~240K logic cells with transceivers."},
+        {"value": "250T", "label": "250T", "description": "~250K logic cells with transceivers (HXT)."},
+        {"value": "255T", "label": "255T", "description": "~255K logic cells with transceivers (HXT)."},
+        {"value": "315T", "label": "315T", "description": "~315K logic cells with transceivers (SXT)."},
+        {"value": "365T", "label": "365T", "description": "~365K logic cells with transceivers."},
+        {"value": "380T", "label": "380T", "description": "~380K logic cells with transceivers (HXT)."},
+        {"value": "475T", "label": "475T", "description": "~475K logic cells with transceivers (SXT)."},
+        {"value": "550T", "label": "550T", "description": "~550K logic cells with transceivers."},
+        {"value": "565T", "label": "565T", "description": "~565K logic cells with transceivers (HXT)."},
+        {"value": "760", "label": "760", "description": "~760K logic cells (LX only, no transceivers)."}
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator before speed grade.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Fabric speed grade. -3 = fastest; -L1 = low power (not available on HXT).",
+      "length": null,
+      "type": "select",
+      "options": [
+        {"value": "L1", "label": "L1 (low power)", "description": "Low-power -1L speed grade."},
+        {"value": "1", "label": "1", "description": "Speed grade -1."},
+        {"value": "2", "label": "2", "description": "Speed grade -2."},
+        {"value": "3", "label": "3", "description": "Speed grade -3 (fastest)."}
+      ]
+    },
+    {
+      "id": "package",
+      "label": "Package",
+      "description": "Package type and ball count. Trailing G indicates Pb-free.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {"value": "FF484", "label": "FF484", "description": "Flip-chip BGA, 484 balls (Pb)."},
+        {"value": "FFG484", "label": "FFG484", "description": "Flip-chip BGA, 484 balls, Pb-free."},
+        {"value": "FF676", "label": "FF676", "description": "Flip-chip BGA, 676 balls (Pb)."},
+        {"value": "FFG676", "label": "FFG676", "description": "Flip-chip BGA, 676 balls, Pb-free."},
+        {"value": "FF784", "label": "FF784", "description": "Flip-chip BGA, 784 balls (Pb)."},
+        {"value": "FFG784", "label": "FFG784", "description": "Flip-chip BGA, 784 balls, Pb-free."},
+        {"value": "FF1156", "label": "FF1156", "description": "Flip-chip BGA, 1156 balls (Pb)."},
+        {"value": "FFG1156", "label": "FFG1156", "description": "Flip-chip BGA, 1156 balls, Pb-free."},
+        {"value": "FF1759", "label": "FF1759", "description": "Flip-chip BGA, 1759 balls (Pb)."},
+        {"value": "FFG1759", "label": "FFG1759", "description": "Flip-chip BGA, 1759 balls, Pb-free."},
+        {"value": "FF1760", "label": "FF1760", "description": "Flip-chip BGA, 1760 balls (Pb)."},
+        {"value": "FFG1760", "label": "FFG1760", "description": "Flip-chip BGA, 1760 balls, Pb-free."},
+        {"value": "FF1923", "label": "FF1923", "description": "Flip-chip BGA, 1923 balls (Pb)."},
+        {"value": "FFG1923", "label": "FFG1923", "description": "Flip-chip BGA, 1923 balls, Pb-free."}
+      ]
+    },
+    {
+      "id": "temp",
+      "label": "Temperature Grade",
+      "description": "Operating junction temperature range.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {"value": "C", "label": "Commercial", "description": "TJ = 0 C to 85 C."},
+        {"value": "I", "label": "Industrial", "description": "TJ = -40 C to 100 C."}
+      ]
+    }
+  ],
+  "type": "FPGA"
+}
