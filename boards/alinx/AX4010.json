@@ -1,0 +1,15 @@
+{
+  "mpn": "AX4010",
+  "name": "AX4010",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/FPGA-Development-Boards/Altera-Cyclone-IV/AX4010.html",
+  "vendor": "alinx",
+  "price": {
+    "value": 124.99,
+    "currency": "GBP"
+  },
+  "device": {
+    "part": "EP4CE10F17C8N",
+    "vendor": "altera"
+  }
+}

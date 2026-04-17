@@ -1,0 +1,34 @@
+{
+  "mpn": "Z7-P",
+  "name": "Z7-P",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-MPSoC/Z7-P.html",
+  "vendor": "alinx",
+  "price": {
+    "value": 1913.99,
+    "currency": "GBP"
+  },
+  "device": {
+    "part": "XCZU7EV-2FFVC1156I",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 8,
+      "gen": 3
+    }
+  ],
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 2
+    }
+  ],
+  "video": {
+    "displayport": 1
+  },
+  "expansion": {
+    "fmc_hpc": 1
+  }
+}

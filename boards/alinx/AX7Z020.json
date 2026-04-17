@@ -1,0 +1,24 @@
+{
+  "mpn": "AX7Z020",
+  "name": "AX7Z020",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/SoC-development-Boards/Zynq-7000-SoC/AX7Z020.html",
+  "vendor": "alinx",
+  "price": {
+    "value": 246.99,
+    "currency": "GBP"
+  },
+  "device": {
+    "part": "XC7Z020-2CLG400I",
+    "vendor": "amd-xilinx"
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "video": {
+    "hdmi_out": 1
+  }
+}

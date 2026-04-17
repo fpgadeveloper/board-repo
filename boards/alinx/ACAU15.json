@@ -1,0 +1,22 @@
+{
+  "mpn": "ACAU15",
+  "name": "ACAU15",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/SoC-System-on-Modules/Artix-UltraScale-plus/ACAU15.html",
+  "vendor": "alinx",
+  "price": {
+    "value": 410.99,
+    "currency": "GBP"
+  },
+  "device": {
+    "part": "XCAU15P-2FFVB676I",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 4,
+      "gen": 4
+    }
+  ]
+}

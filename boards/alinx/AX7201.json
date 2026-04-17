@@ -1,0 +1,31 @@
+{
+  "mpn": "AX7201",
+  "name": "AX7201",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/FPGA-Development-Boards/Artix-7/AX7201.html",
+  "vendor": "alinx",
+  "price": {
+    "value": 410.99,
+    "currency": "GBP"
+  },
+  "device": {
+    "part": "XC7A200T-2FBG484I",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 1,
+      "gen": 2
+    }
+  ],
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 4
+    }
+  ],
+  "networking": {
+    "sfp": 4
+  }
+}

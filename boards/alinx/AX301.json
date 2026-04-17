@@ -1,0 +1,15 @@
+{
+  "mpn": "AX301",
+  "name": "AX301",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/FPGA-Development-Boards/Altera-Cyclone-IV/AX301.html",
+  "vendor": "alinx",
+  "price": {
+    "value": 109.99,
+    "currency": "GBP"
+  },
+  "device": {
+    "part": "EP4CE6F17C8N",
+    "vendor": "altera"
+  }
+}

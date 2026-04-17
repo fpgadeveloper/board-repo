@@ -1,0 +1,22 @@
+{
+  "mpn": "AC7200",
+  "name": "AC7200",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/SoC-System-on-Modules/Artix-7/AC7200.html",
+  "vendor": "alinx",
+  "price": {
+    "value": 274.99,
+    "currency": "GBP"
+  },
+  "device": {
+    "part": "XC7A200T-2FBG484I",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 4,
+      "gen": 2
+    }
+  ]
+}

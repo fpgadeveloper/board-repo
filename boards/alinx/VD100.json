@@ -1,0 +1,34 @@
+{
+  "mpn": "VD100",
+  "name": "VD100",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/FPGA-Development-Boards/Versal-AI-Edge/VD100.html",
+  "vendor": "alinx",
+  "price": {
+    "value": 1640.99,
+    "currency": "GBP"
+  },
+  "device": {
+    "part": "XCVE2302-1LSESFVA784",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 4,
+      "gen": 3
+    }
+  ],
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "networking": {
+    "sfp": 2
+  },
+  "video": {
+    "mipi_csi": 2
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "mpn": "AX7A035",
+  "name": "AX7A035",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/FPGA-Development-Boards/Artix-7/AX7A035.html",
+  "vendor": "alinx",
+  "price": {
+    "value": 274.99,
+    "currency": "GBP"
+  },
+  "device": {
+    "part": "XC7A35T-2FGG484I",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 2,
+      "gen": 2
+    }
+  ],
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "networking": {
+    "sfp": 2
+  },
+  "video": {
+    "hdmi_in": 1,
+    "hdmi_out": 1
+  }
+}

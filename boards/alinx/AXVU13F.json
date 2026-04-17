@@ -1,0 +1,28 @@
+{
+  "mpn": "AXVU13F",
+  "name": "AXVU13F",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/FPGA-Development-Boards/Virtex-UltraScale-plus/AXVU13F.html",
+  "vendor": "alinx",
+  "price": {
+    "value": 13658.99,
+    "currency": "GBP"
+  },
+  "device": {
+    "part": "XCVU13P-2FHGB2104I",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 16,
+      "gen": 3
+    }
+  ],
+  "networking": {
+    "qsfp": 4
+  },
+  "expansion": {
+    "fmcp": 4
+  }
+}

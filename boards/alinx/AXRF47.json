@@ -1,0 +1,28 @@
+{
+  "mpn": "AXRF47",
+  "name": "AXRF47",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-RFSoC/AXRF47.html",
+  "vendor": "alinx",
+  "price": {
+    "value": 13631.99,
+    "currency": "GBP"
+  },
+  "device": {
+    "part": "XCZU47DR-2FFVE1156I",
+    "vendor": "amd-xilinx"
+  },
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "networking": {
+    "sfp": 1,
+    "qsfp": 1
+  },
+  "storage": {
+    "sata": 1
+  }
+}

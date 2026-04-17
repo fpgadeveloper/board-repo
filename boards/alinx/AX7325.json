@@ -1,0 +1,29 @@
+{
+  "mpn": "AX7325",
+  "name": "AX7325",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/FPGA-Development-Boards/Kintex-7/AX7325.html",
+  "vendor": "alinx",
+  "price": {
+    "value": 739.99,
+    "currency": "GBP"
+  },
+  "device": {
+    "part": "XC7K325T-2FFG900I",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 8,
+      "gen": 2
+    }
+  ],
+  "networking": {
+    "sfp": 4,
+    "qsfp": 1
+  },
+  "expansion": {
+    "fmc_lpc": 1
+  }
+}

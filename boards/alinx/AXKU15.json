@@ -1,15 +1,15 @@
 {
-  "mpn": "Z19-P",
-  "name": "Z19-P",
+  "mpn": "AXKU15",
+  "name": "AXKU15",
   "status": "active",
-  "url": "https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-MPSoC/Z19-P.html",
+  "url": "https://www.en.alinx.com/Product/FPGA-Development-Boards/Kintex-UltraScale-plus/AXKU15.html",
   "vendor": "alinx",
   "price": {
-    "value": 12000,
-    "currency": "USD"
+    "value": 4917.99,
+    "currency": "GBP"
   },
   "device": {
-    "part": "XCZU19EG-2FFVC1760I",
+    "part": "XCKU15P-2FFVE1517I",
     "vendor": "amd-xilinx"
   },
   "pcie": [
@@ -19,15 +19,15 @@
       "gen": 3
     }
   ],
-  "video": {
-    "displayport": 1
-  },
   "ethernet": [
     {
       "speed": 1000,
       "ports": 1
     }
   ],
+  "networking": {
+    "qsfp": 2
+  },
   "expansion": {
     "fmc_hpc": 2
   }

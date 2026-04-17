@@ -1,0 +1,31 @@
+{
+  "mpn": "AXU2CGB",
+  "name": "AXU2CGB",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-MPSoC/AXU2CGB.html",
+  "vendor": "alinx",
+  "price": {
+    "value": 397.99,
+    "currency": "GBP"
+  },
+  "device": {
+    "part": "XCZU2CG-1SFVC784E",
+    "vendor": "amd-xilinx"
+  },
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 1,
+      "gen": 2
+    }
+  ],
+  "ethernet": [
+    {
+      "speed": 1000,
+      "ports": 1
+    }
+  ],
+  "video": {
+    "displayport": 1
+  }
+}
