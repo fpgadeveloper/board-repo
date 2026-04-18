@@ -1,7 +1,7 @@
 {
   "id": "transceivers",
   "label": "Transceivers",
-  "section": "Device",
+  "section": "Resources",
   "order": 140,
   "description": "GT transceiver banks on this device+package. Count (type, max line rate) \u2014 rate is speed-grade-specific.",
   "format": "lines",

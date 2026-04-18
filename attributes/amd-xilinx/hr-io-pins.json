@@ -1,7 +1,7 @@
 {
   "id": "hr_io",
   "label": "HR I/O Pins",
-  "section": "Device",
+  "section": "Resources",
   "order": 100,
   "description": "High-Range I/O pins (supports 3.3V) on this device+package.",
   "format": "number",

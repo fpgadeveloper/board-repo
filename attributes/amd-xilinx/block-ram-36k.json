@@ -1,7 +1,7 @@
 {
   "id": "bram36",
   "label": "Block RAM (36Kb)",
-  "section": "Device",
+  "section": "Resources",
   "order": 30,
   "description": "Number of 36Kb Block RAMs.",
   "format": "number",

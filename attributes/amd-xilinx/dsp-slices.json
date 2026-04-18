@@ -1,7 +1,7 @@
 {
   "id": "dsp",
   "label": "DSP Slices",
-  "section": "Device",
+  "section": "Resources",
   "order": 50,
   "description": "DSP slices (DSP48E1/E2).",
   "format": "number",

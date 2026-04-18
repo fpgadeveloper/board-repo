@@ -1,7 +1,7 @@
 {
   "id": "flip_flops",
   "label": "Flip-Flops",
-  "section": "Device",
+  "section": "Resources",
   "order": 20,
   "description": "Flip-flops in the device fabric.",
   "format": "number",

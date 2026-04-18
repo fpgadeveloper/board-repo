@@ -1,7 +1,7 @@
 {
   "id": "hd_io",
   "label": "HD I/O Pins",
-  "section": "Device",
+  "section": "Resources",
   "order": 120,
   "description": "High-Density I/O pins on this device+package.",
   "format": "number",

@@ -1,7 +1,7 @@
 {
   "id": "xpio",
   "label": "XPIO Pins",
-  "section": "Device",
+  "section": "Resources",
   "order": 130,
   "description": "XPIO (Extended-Performance I/O) pins on this device+package.",
   "format": "number",

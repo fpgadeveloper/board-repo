@@ -1,7 +1,7 @@
 {
   "id": "hp_io",
   "label": "HP I/O Pins",
-  "section": "Device",
+  "section": "Resources",
   "order": 110,
   "description": "High-Performance I/O pins on this device+package.",
   "format": "number",

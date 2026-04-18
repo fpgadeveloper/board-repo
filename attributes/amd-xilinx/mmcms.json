@@ -1,7 +1,7 @@
 {
   "id": "mmcm",
   "label": "MMCMs",
-  "section": "Device",
+  "section": "Resources",
   "order": 60,
   "description": "Mixed-Mode Clock Managers.",
   "format": "number",

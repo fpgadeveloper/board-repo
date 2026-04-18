@@ -1,7 +1,7 @@
 {
   "id": "uram",
   "label": "UltraRAM",
-  "section": "Device",
+  "section": "Resources",
   "order": 40,
   "description": "Number of UltraRAM blocks.",
   "format": "number",

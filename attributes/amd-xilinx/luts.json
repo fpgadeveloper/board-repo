@@ -1,7 +1,7 @@
 {
   "id": "luts",
   "label": "LUTs",
-  "section": "Device",
+  "section": "Resources",
   "order": 10,
   "description": "Lookup tables (LUTs) in the device fabric.",
   "format": "number",
