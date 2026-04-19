@@ -1,0 +1,79 @@
+name: Validate boards
+
+on:
+  pull_request:
+    paths:
+      - "boards/**/*.json"
+      - "schema.json"
+      - ".github/workflows/validate.yml"
+  push:
+    branches: [main]
+    paths:
+      - "boards/**/*.json"
+      - "schema.json"
+      - ".github/workflows/validate.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install jsonschema
+        run: pip install jsonschema referencing
+
+      - name: Validate boards against schema
+        run: |
+          python - <<'PY'
+          import json, glob, sys
+          from jsonschema import Draft202012Validator
+          from referencing import Registry, Resource
+
+          with open("schema.json") as f:
+              schema = json.load(f)
+          # Register the whole schema under a URN so internal $refs (e.g.
+          # #/$defs/price from the board sub-schema) resolve against it.
+          registry = Registry().with_resource("urn:root", Resource.from_contents(schema))
+          validator = Draft202012Validator({"$ref": "urn:root#/$defs/board"}, registry=registry)
+
+          errors = 0
+          files = sorted(glob.glob("boards/**/*.json", recursive=True))
+          for path in files:
+              with open(path) as f:
+                  board = json.load(f)
+              for e in validator.iter_errors(board):
+                  print(f"::error file={path}::{e.json_path}: {e.message}")
+                  errors += 1
+
+          print(f"{len(files)} boards checked, {errors} error(s)")
+          sys.exit(1 if errors else 0)
+          PY
+
+      - name: Check for duplicate MPNs
+        run: |
+          python - <<'PY'
+          import json, glob, sys
+          from collections import Counter
+
+          mpns = []
+          for path in sorted(glob.glob("boards/**/*.json", recursive=True)):
+              with open(path) as f:
+                  board = json.load(f)
+              mpn = board.get("mpn")
+              if mpn:
+                  mpns.append((mpn, path))
+
+          counts = Counter(m for m, _ in mpns)
+          dupes = [m for m, c in counts.items() if c > 1]
+          if dupes:
+              for mpn in dupes:
+                  paths = [p for m, p in mpns if m == mpn]
+                  for p in paths:
+                      print(f"::error file={p}::Duplicate MPN: {mpn}")
+              sys.exit(1)
+          print(f"{len(mpns)} MPNs, no duplicates")
+          PY
