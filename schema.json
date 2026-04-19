@@ -41,7 +41,11 @@
         },
         "price": {
           "title": "Price",
-          "$ref": "#/$defs/price"
+          "description": "Board price. Use null when the price is unknown or not published by the vendor.",
+          "anyOf": [
+            { "$ref": "#/$defs/price" },
+            { "type": "null" }
+          ]
         },
         "device": {
           "title": "Device",
