@@ -5,12 +5,18 @@ on:
     paths:
       - "boards/**/*.json"
       - "schema.json"
+      - "vendors.json"
+      - "README.md"
+      - "scripts/update-readme.py"
       - ".github/workflows/validate.yml"
   push:
     branches: [main]
     paths:
       - "boards/**/*.json"
       - "schema.json"
+      - "vendors.json"
+      - "README.md"
+      - "scripts/update-readme.py"
       - ".github/workflows/validate.yml"
 
 jobs:
@@ -52,6 +58,14 @@ jobs:
           print(f"{len(files)} boards checked, {errors} error(s)")
           sys.exit(1 if errors else 0)
           PY
+
+      - name: Check README.md vendor tables are in sync with vendors.json
+        run: |
+          python scripts/update-readme.py
+          if ! git diff --exit-code README.md; then
+            echo "::error file=README.md::README.md is out of sync with vendors.json. Run 'python scripts/update-readme.py' locally and commit the change."
+            exit 1
+          fi
 
       - name: Check for duplicate MPNs
         run: |
