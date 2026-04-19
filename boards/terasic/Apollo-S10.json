@@ -12,12 +12,14 @@
     "part": "1SX280HU2F50E1VG",
     "vendor": "altera"
   },
-  "ethernet": [
-    {
-      "speed": 1000,
-      "ports": 1
-    }
-  ],
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ]
+  },
   "expansion": {
     "fmc_hpc": 1,
     "fmcp": 1

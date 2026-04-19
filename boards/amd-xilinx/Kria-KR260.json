@@ -15,13 +15,13 @@
   "video": {
     "displayport": 1
   },
-  "ethernet": [
-    {
-      "speed": 1000,
-      "ports": 4
-    }
-  ],
   "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 4
+      }
+    ],
     "sfp": 1
   },
   "expansion": {

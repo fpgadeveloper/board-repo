@@ -12,10 +12,12 @@
     "part": "EP4CE30F23C8N",
     "vendor": "altera"
   },
-  "ethernet": [
-    {
-      "speed": 1000,
-      "ports": 1
-    }
-  ]
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ]
+  }
 }

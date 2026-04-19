@@ -15,12 +15,14 @@
   "video": {
     "hdmi_out": 1
   },
-  "ethernet": [
-    {
-      "speed": 1000,
-      "ports": 1
-    }
-  ],
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ]
+  },
   "expansion": {
     "fmc_lpc": 1,
     "pmod": 5

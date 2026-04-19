@@ -19,18 +19,18 @@
       "gen": 3
     }
   ],
-  "ethernet": [
-    {
-      "speed": 1000,
-      "ports": 2
-    }
-  ],
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1,
     "displayport": 1
   },
   "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 2
+      }
+    ],
     "sfp": 2
   },
   "expansion": {

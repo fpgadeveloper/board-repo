@@ -12,12 +12,14 @@
     "part": "XC7A35TI-1LCSG324I",
     "vendor": "amd-xilinx"
   },
-  "ethernet": [
-    {
-      "speed": 100,
-      "ports": 1
-    }
-  ],
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 100,
+        "ports": 1
+      }
+    ]
+  },
   "expansion": {
     "pmod": 4,
     "arduino": 1

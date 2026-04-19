@@ -19,13 +19,15 @@
       "gen": 3
     }
   ],
-  "ethernet": [
-    {
-      "speed": 1000,
-      "ports": 2
-    }
-  ],
   "video": {
     "displayport": 1
+  },
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 2
+      }
+    ]
   }
 }

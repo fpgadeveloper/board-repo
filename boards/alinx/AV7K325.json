@@ -19,12 +19,12 @@
       "gen": 2
     }
   ],
-  "networking": {
-    "sfp": 4
-  },
   "video": {
     "hdmi_in": 2,
     "hdmi_out": 2
+  },
+  "networking": {
+    "sfp": 4
   },
   "storage": {
     "sata": 2

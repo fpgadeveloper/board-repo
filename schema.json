@@ -14,34 +14,42 @@
       "properties": {
         "mpn": {
           "type": "string",
+          "title": "Part Number",
           "description": "Manufacturer part number (MPN / SKU) as published by the board vendor. Must be unique across all boards. URL-safe characters only (letters, digits, hyphens, dots, underscores). Replace spaces or slashes with hyphens; drop trailing PCB-revision suffixes so the MPN stays stable across revisions."
         },
         "name": {
           "type": "string",
+          "title": "Name",
           "description": "Display name of the board."
         },
         "status": {
           "type": "string",
+          "title": "Status",
           "enum": ["active", "eol", "discontinued"],
           "description": "Whether the board is currently available, end-of-life, or discontinued."
         },
         "url": {
           "type": "string",
+          "title": "Product Page",
           "format": "uri",
           "description": "Product page URL."
         },
         "vendor": {
           "type": "string",
+          "title": "Board Vendor",
           "description": "Board vendor key (must match a key in vendors.json board_vendors)."
         },
         "price": {
+          "title": "Price",
           "$ref": "#/$defs/price"
         },
         "device": {
+          "title": "Device",
           "$ref": "#/$defs/device"
         },
         "pcie": {
           "type": "array",
+          "title": "PCIe",
           "description": "PCIe interfaces on the board. Each entry is a separate physical interface (e.g. edge connector, M.2 slot).",
           "items": {
             "$ref": "#/$defs/pcie_interface"
@@ -50,75 +58,81 @@
         },
         "video": {
           "type": "object",
+          "title": "Video I/O",
           "description": "Video input/output interfaces. Only include keys with non-zero values.",
           "additionalProperties": false,
           "properties": {
-            "hdmi_in": { "type": "integer", "minimum": 1 },
-            "hdmi_out": { "type": "integer", "minimum": 1 },
-            "displayport": { "type": "integer", "minimum": 1 },
-            "sdi_in": { "type": "integer", "minimum": 1 },
-            "sdi_out": { "type": "integer", "minimum": 1 },
-            "aes_in": { "type": "integer", "minimum": 1 },
-            "aes_out": { "type": "integer", "minimum": 1 },
-            "mipi_dsi": { "type": "integer", "minimum": 1 },
-            "mipi_csi": { "type": "integer", "minimum": 1 }
+            "hdmi_in": { "type": "integer", "title": "HDMI In", "minimum": 1 },
+            "hdmi_out": { "type": "integer", "title": "HDMI Out", "minimum": 1 },
+            "displayport": { "type": "integer", "title": "DisplayPort", "minimum": 1 },
+            "sdi_in": { "type": "integer", "title": "SDI In", "minimum": 1 },
+            "sdi_out": { "type": "integer", "title": "SDI Out", "minimum": 1 },
+            "aes_in": { "type": "integer", "title": "AES3 In", "minimum": 1 },
+            "aes_out": { "type": "integer", "title": "AES3 Out", "minimum": 1 },
+            "mipi_dsi": { "type": "integer", "title": "MIPI DSI", "minimum": 1 },
+            "mipi_csi": { "type": "integer", "title": "MIPI CSI", "minimum": 1 }
           },
           "minProperties": 1
         },
-        "ethernet": {
-          "type": "array",
-          "description": "Ethernet interfaces grouped by speed. E.g. [{speed: 1000, ports: 2}, {speed: 100, ports: 1}].",
-          "items": {
-            "$ref": "#/$defs/ethernet_interface"
-          },
-          "minItems": 1
-        },
         "networking": {
           "type": "object",
-          "description": "High-speed optical/copper networking interfaces. Only include keys with non-zero values.",
+          "title": "Networking",
+          "description": "All networking interfaces — Ethernet ports plus high-speed optical/copper cages. Only include keys with non-zero / non-empty values.",
           "additionalProperties": false,
           "properties": {
-            "sfp": { "type": "integer", "minimum": 1 },
-            "qsfp": { "type": "integer", "minimum": 1 },
-            "osfp": { "type": "integer", "minimum": 1 },
-            "cfp": { "type": "integer", "minimum": 1 }
+            "ethernet": {
+              "type": "array",
+              "title": "Ethernet",
+              "description": "Ethernet interfaces grouped by speed. E.g. [{speed: 1000, ports: 2}, {speed: 100, ports: 1}].",
+              "items": {
+                "$ref": "#/$defs/ethernet_interface"
+              },
+              "minItems": 1
+            },
+            "sfp": { "type": "integer", "title": "SFP/SFP+", "minimum": 1 },
+            "qsfp": { "type": "integer", "title": "QSFP/QSFP+", "minimum": 1 },
+            "osfp": { "type": "integer", "title": "OSFP", "minimum": 1 },
+            "cfp": { "type": "integer", "title": "CFP", "minimum": 1 }
           },
           "minProperties": 1
         },
         "expansion": {
           "type": "object",
+          "title": "Expansion",
           "description": "Expansion connectors and headers. Only include keys with non-zero values.",
           "additionalProperties": false,
           "properties": {
-            "fmc_hpc": { "type": "integer", "minimum": 1 },
-            "fmc_lpc": { "type": "integer", "minimum": 1 },
-            "fmcp": { "type": "integer", "minimum": 1 },
-            "rfmc": { "type": "integer", "minimum": 1 },
-            "pmod": { "type": "integer", "minimum": 1 },
-            "arduino": { "type": "integer", "minimum": 1 },
-            "raspberry_pi": { "type": "integer", "minimum": 1 },
-            "click": { "type": "integer", "minimum": 1 },
-            "syzygy": { "type": "integer", "minimum": 1 },
-            "syzygy_trx": { "type": "integer", "minimum": 1 }
+            "fmc_hpc": { "type": "integer", "title": "FMC HPC", "minimum": 1 },
+            "fmc_lpc": { "type": "integer", "title": "FMC LPC", "minimum": 1 },
+            "fmcp": { "type": "integer", "title": "FMC+", "minimum": 1 },
+            "rfmc": { "type": "integer", "title": "RFMC", "minimum": 1 },
+            "pmod": { "type": "integer", "title": "Pmod", "minimum": 1 },
+            "arduino": { "type": "integer", "title": "Arduino", "minimum": 1 },
+            "raspberry_pi": { "type": "integer", "title": "Raspberry Pi", "minimum": 1 },
+            "click": { "type": "integer", "title": "Click", "minimum": 1 },
+            "syzygy": { "type": "integer", "title": "SYZYGY", "minimum": 1 },
+            "syzygy_trx": { "type": "integer", "title": "SYZYGY TRX", "minimum": 1 }
           },
           "minProperties": 1
         },
         "storage": {
           "type": "object",
+          "title": "Storage",
           "description": "Storage interfaces. Only include keys with non-zero values.",
           "additionalProperties": false,
           "properties": {
-            "sata": { "type": "integer", "minimum": 1 }
+            "sata": { "type": "integer", "title": "SATA", "minimum": 1 }
           },
           "minProperties": 1
         },
         "wireless": {
           "type": "object",
+          "title": "Wireless",
           "description": "Wireless connectivity.",
           "additionalProperties": false,
           "properties": {
-            "wifi": { "type": "boolean" },
-            "bluetooth": { "type": "boolean" }
+            "wifi": { "type": "boolean", "title": "WiFi" },
+            "bluetooth": { "type": "boolean", "title": "Bluetooth" }
           },
           "minProperties": 1
         }

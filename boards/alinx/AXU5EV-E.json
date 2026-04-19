@@ -19,14 +19,16 @@
       "gen": 2
     }
   ],
-  "ethernet": [
-    {
-      "speed": 1000,
-      "ports": 2
-    }
-  ],
   "video": {
     "displayport": 1
+  },
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 2
+      }
+    ]
   },
   "storage": {
     "sata": 1

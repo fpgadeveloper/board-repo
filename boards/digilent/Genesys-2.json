@@ -17,12 +17,14 @@
     "hdmi_out": 1,
     "displayport": 2
   },
-  "ethernet": [
-    {
-      "speed": 1000,
-      "ports": 1
-    }
-  ],
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ]
+  },
   "expansion": {
     "fmc_hpc": 1,
     "pmod": 5

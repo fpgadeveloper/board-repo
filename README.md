@@ -54,7 +54,7 @@ The `device` object requires:
 | `part` | string | Full orderable part number (e.g. `"XC7A35T-1CPG236C"`). |
 | `vendor` | string | Silicon vendor key (must match a key in `vendors.json` `silicon_vendors`). |
 
-Optional fields include `pcie`, `video`, `ethernet`, `networking`, `expansion`, `storage`, and `wireless`. See `schema.json` for full details on each.
+Optional fields include `pcie`, `video`, `networking`, `expansion`, `storage`, and `wireless`. See `schema.json` for full details on each.
 
 #### Example
 
@@ -102,9 +102,11 @@ Create a file at `boards/digilent/Arty-A7.json`:
     "mipi_dsi": 1,
     "mipi_csi": 1
   },
-  "ethernet": [
-    { "speed": 1000, "ports": 2 }
-  ],
+  "networking": {
+    "ethernet": [
+      { "speed": 1000, "ports": 2 }
+    ]
+  },
   "expansion": {
     "fmc_lpc": 1,
     "pmod": 6

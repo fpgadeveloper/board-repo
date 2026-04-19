@@ -19,13 +19,13 @@
       "gen": 4
     }
   ],
-  "ethernet": [
-    {
-      "speed": 1000,
-      "ports": 1
-    }
-  ],
   "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ],
     "qsfp": 2
   },
   "expansion": {

@@ -12,12 +12,14 @@
     "part": "XC7A100T-1CSG324C",
     "vendor": "amd-xilinx"
   },
-  "ethernet": [
-    {
-      "speed": 100,
-      "ports": 1
-    }
-  ],
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 100,
+        "ports": 1
+      }
+    ]
+  },
   "expansion": {
     "pmod": 4
   }

@@ -17,12 +17,14 @@
     "mipi_dsi": 1,
     "mipi_csi": 1
   },
-  "ethernet": [
-    {
-      "speed": 100,
-      "ports": 1
-    }
-  ],
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 100,
+        "ports": 1
+      }
+    ]
+  },
   "expansion": {
     "raspberry_pi": 1
   }

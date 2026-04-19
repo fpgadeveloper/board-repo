@@ -12,13 +12,13 @@
     "part": "1SG280LU2F50E2VG",
     "vendor": "altera"
   },
-  "ethernet": [
-    {
-      "speed": 1000,
-      "ports": 1
-    }
-  ],
   "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ],
     "sfp": 2,
     "qsfp": 2,
     "cfp": 1

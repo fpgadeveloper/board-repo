@@ -12,12 +12,14 @@
     "part": "XC7Z010-1CLG225C",
     "vendor": "amd-xilinx"
   },
-  "ethernet": [
-    {
-      "speed": 1000,
-      "ports": 1
-    }
-  ],
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ]
+  },
   "storage": {
     "sata": 2
   }

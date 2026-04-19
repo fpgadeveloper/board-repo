@@ -28,13 +28,13 @@
     "aes_in": 1,
     "aes_out": 1
   },
-  "ethernet": [
-    {
-      "speed": 1000,
-      "ports": 1
-    }
-  ],
   "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ],
     "sfp": 2
   },
   "expansion": {

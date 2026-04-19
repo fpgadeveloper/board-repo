@@ -12,10 +12,12 @@
     "part": "M2S010T-TQ144",
     "vendor": "microchip"
   },
-  "ethernet": [
-    {
-      "speed": 1000,
-      "ports": 1
-    }
-  ]
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ]
+  }
 }

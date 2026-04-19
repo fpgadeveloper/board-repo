@@ -23,10 +23,12 @@
     "displayport": 1,
     "mipi_csi": 2
   },
-  "ethernet": [
-    {
-      "speed": 1000,
-      "ports": 1
-    }
-  ]
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ]
+  }
 }
