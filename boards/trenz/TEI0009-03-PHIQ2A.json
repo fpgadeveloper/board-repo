@@ -1,0 +1,27 @@
+{
+  "mpn": "TEI0009-03-PHIQ2A",
+  "name": "Cyclone 10 LP RefKit 10CL055-I7",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/Altera-Cyclone-10-LP-RefKit-10CL055-I7-Dev.-Board-32-MB-SDRAM-16-MB-Flash/TEI0009-03-PHIQ2A",
+  "vendor": "trenz",
+  "price": {
+    "value": 258.31,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "10CL055YU484I7G",
+    "vendor": "altera"
+  },
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 100,
+        "ports": 1
+      }
+    ]
+  },
+  "expansion": {
+    "pmod": 6,
+    "arduino": 1
+  }
+}
