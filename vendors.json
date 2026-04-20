@@ -123,6 +123,10 @@
     "brisbanesilicon": {
       "name": "BrisbaneSilicon",
       "url": "https://brisbanesilicon.com.au/"
+    },
+    "adiuvo": {
+      "name": "Adiuvo",
+      "url": "https://www.adiuvoengineering.com"
     }
   },
   "silicon_vendors": {
