@@ -1,0 +1,18 @@
+{
+  "mpn": "Astria",
+  "name": "Astria",
+  "status": "active",
+  "url": "https://www.adiuvoengineering.com/product-page/astria-rpi-2040",
+  "vendor": "adiuvo",
+  "price": {
+    "value": 100,
+    "currency": "GBP"
+  },
+  "device": {
+    "part": "XC7S6-1FTGB196C",
+    "vendor": "amd-xilinx"
+  },
+  "expansion": {
+    "pmod": 4
+  }
+}
