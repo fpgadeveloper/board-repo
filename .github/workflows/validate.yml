@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - "boards/**/*.json"
+      - "notes/**/*.md"
       - "schema.json"
       - "vendors.json"
       - "README.md"
@@ -13,6 +14,7 @@ on:
     branches: [main]
     paths:
       - "boards/**/*.json"
+      - "notes/**/*.md"
       - "schema.json"
       - "vendors.json"
       - "README.md"
@@ -66,6 +68,31 @@ jobs:
             echo "::error file=README.md::README.md is out of sync with vendors.json. Run 'python scripts/update-readme.py' locally and commit the change."
             exit 1
           fi
+
+      - name: Check notes/ files match an existing board
+        run: |
+          python - <<'PY'
+          import glob, os, sys
+
+          orphans = []
+          for path in sorted(glob.glob("notes/**/*.md", recursive=True)):
+              # notes/<vendor>/<mpn>.md must have a matching boards/<vendor>/<mpn>.json.
+              # Skip top-level files (e.g. notes/README.md) — only files nested
+              # one folder deep are treated as board notes.
+              rel_parts = os.path.relpath(path, "notes").split(os.sep)
+              if len(rel_parts) != 2:
+                  continue
+              vendor, filename = rel_parts
+              board_path = os.path.join("boards", vendor, os.path.splitext(filename)[0] + ".json")
+              if not os.path.isfile(board_path):
+                  orphans.append((path, board_path))
+
+          for note, expected in orphans:
+              print(f"::error file={note}::Orphaned note: no matching board file at {expected}")
+          if orphans:
+              sys.exit(1)
+          print(f"All notes have matching board files.")
+          PY
 
       - name: Check for duplicate MPNs
         run: |
