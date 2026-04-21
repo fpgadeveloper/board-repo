@@ -1,0 +1,64 @@
+{
+  "family": "ForgeFPGA",
+  "description": "Renesas ForgeFPGA — small, low-power FPGA family with 5-input LUTs, DFFs, PLL, OTP-based configuration and SPI boot. Format: SLG47{model}{package_code}. Example: SLG47910V.",
+  "fields": [
+    {
+      "id": "prefix",
+      "label": "Prefix",
+      "description": "Renesas ForgeFPGA vendor prefix (legacy Silego/Dialog \"SLG\" prefix retained for the 47xxx ForgeFPGA series).",
+      "length": 5,
+      "type": "fixed",
+      "value": "SLG47"
+    },
+    {
+      "id": "model",
+      "label": "Model",
+      "description": "ForgeFPGA device model — selects logic capacity and GPIO count.",
+      "length": 3,
+      "type": "select",
+      "options": [
+        {
+          "value": "910",
+          "label": "SLG47910",
+          "description": "1120 5-bit LUTs / 1120 DFFs, 16 kb BRAM, 384 kb OTP. Up to 19 GPIO (STQFN-24) or 16 GPIO (WLCSP-20)."
+        },
+        {
+          "value": "912",
+          "label": "SLG47912",
+          "description": "1120 5-bit LUTs / 1120 DFFs, 16 kb BRAM, 384 kb OTP. 48-pin package with 40 GPIO."
+        },
+        {
+          "value": "920",
+          "label": "SLG47920",
+          "description": "2240 5-bit LUTs / 2240 DFFs. 40-pin LQFN with 32 GPIO (no WLCSP option)."
+        },
+        {
+          "value": "921",
+          "label": "SLG47921",
+          "description": "2240 5-bit LUTs / 2240 DFFs. 48-pin package with 40 GPIO."
+        }
+      ]
+    },
+    {
+      "id": "package_code",
+      "label": "Package",
+      "description": "Package-type suffix. All production parts are industrial temperature range (-40 °C to +85 °C).",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "V",
+          "label": "V (STQFN / LQFN)",
+          "description": "Plastic QFN-style package: STQFN-24 (3.0 x 3.0 mm, 0.4 P) on SLG47910; LQFN-40 (5.0 x 5.0 mm, 0.4 P) on SLG47920; LQFN-48 (6.0 x 6.0 mm, 0.4 P) on SLG47912 / SLG47921."
+        },
+        {
+          "value": "C",
+          "label": "C (WLCSP)",
+          "description": "Wafer-level chip-scale package: 20-ball (1.85 x 1.64 mm, 0.35 P) on SLG47910; 48-ball (3.24 x 2.57 mm, 0.35 P) on SLG47912 / SLG47921. Not offered on SLG47920.",
+          "when": {"model": ["910", "912", "921"]}
+        }
+      ]
+    }
+  ],
+  "type": "FPGA"
+}
