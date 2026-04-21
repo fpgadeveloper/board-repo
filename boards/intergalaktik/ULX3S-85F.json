@@ -1,0 +1,25 @@
+{
+  "mpn": "ULX3S-85F",
+  "name": "ULX3S-85F",
+  "status": "active",
+  "url": "https://www.envox.eu/product/ulx3s/",
+  "vendor": "intergalaktik",
+  "price": {
+    "value": 200,
+    "currency": "EUR"
+  },
+  "device": {
+    "part": "LFE5U-85F-6BG381C",
+    "vendor": "lattice"
+  },
+  "video": {
+    "hdmi_out": 1
+  },
+  "expansion": {
+    "pmod": 4
+  },
+  "wireless": {
+    "wifi": true,
+    "bluetooth": true
+  }
+}
