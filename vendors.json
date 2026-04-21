@@ -131,6 +131,10 @@
     "intergalaktik": {
       "name": "Intergalaktik",
       "url": "https://intergalaktik.eu/"
+    },
+    "vicharak": {
+      "name": "Vicharak",
+      "url": "https://vicharak.in"
     }
   },
   "silicon_vendors": {
@@ -169,6 +173,10 @@
     "cologne-chip": {
       "name": "Cologne Chip",
       "url": "https://www.colognechip.com"
+    },
+    "renesas": {
+      "name": "Renesas",
+      "url": "https://www.renesas.com/"
     }
   }
 }

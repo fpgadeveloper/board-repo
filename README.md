@@ -156,6 +156,7 @@ Board and silicon vendors are defined in `vendors.json`. Each board references v
 | `trenz` | Trenz Electronic |
 | `tria` | Tria Technologies |
 | `tul` | TUL |
+| `vicharak` | Vicharak |
 <!-- BOARD-VENDORS-END -->
 
 ### Silicon Vendors
@@ -172,6 +173,7 @@ Board and silicon vendors are defined in `vendors.json`. Each board references v
 | `lattice` | Lattice |
 | `microchip` | Microchip |
 | `quicklogic` | QuickLogic |
+| `renesas` | Renesas |
 <!-- SILICON-VENDORS-END -->
 
 To add a new vendor, add an entry to the appropriate section in `vendors.json` with a kebab-case key, display name, and URL, then run `python scripts/update-readme.py` to regenerate the tables above.
