@@ -1,0 +1,25 @@
+{
+  "mpn": "ULX3S-12F",
+  "name": "ULX3S-12F",
+  "status": "active",
+  "url": "https://www.envox.eu/product/ulx3s-12f/",
+  "vendor": "intergalaktik",
+  "price": {
+    "value": 130,
+    "currency": "EUR"
+  },
+  "device": {
+    "part": "LFE5U-12F-6BG381C",
+    "vendor": "lattice"
+  },
+  "video": {
+    "hdmi_out": 1
+  },
+  "expansion": {
+    "pmod": 4
+  },
+  "wireless": {
+    "wifi": true,
+    "bluetooth": true
+  }
+}
