@@ -137,6 +137,7 @@ Board and silicon vendors are defined in `vendors.json`. Each board references v
 | `gowin` | Gowin Semiconductor |
 | `hitech-global` | Hitech Global |
 | `imperix` | imperix |
+| `intergalaktik` | Intergalaktik |
 | `invent-logics` | Invent Logics |
 | `iwave` | iWave Systems |
 | `knjn` | KNJN |
