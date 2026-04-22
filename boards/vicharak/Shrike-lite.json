@@ -1,0 +1,18 @@
+{
+  "mpn": "Shrike-lite",
+  "name": "Shrike-lite",
+  "status": "active",
+  "url": "https://store.vicharak.in/?product=shrike",
+  "vendor": "vicharak",
+  "price": {
+    "value": 4,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "SLG47910C",
+    "vendor": "renesas"
+  },
+  "expansion": {
+    "pmod": 1
+  }
+}
