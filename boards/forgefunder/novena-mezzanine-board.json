@@ -1,0 +1,15 @@
+{
+  "mpn": "novena-mezzanine-board",
+  "name": "Novena ICE40 Mezzanine Board",
+  "status": "active",
+  "url": "https://forgefunder.com/novena-mezzanine-board/",
+  "vendor": "forgefunder",
+  "price": {
+    "value": 94,
+    "currency": "EUR"
+  },
+  "device": {
+    "part": "ICE40HX4K-TQ144",
+    "vendor": "lattice"
+  }
+}

@@ -134,6 +134,7 @@ Board and silicon vendors are defined in `vendors.json`. Each board references v
 | `critical-link` | Critical Link |
 | `digilent` | Digilent |
 | `efinix` | Efinix |
+| `forgefunder` | Forgefunder |
 | `gowin` | Gowin Semiconductor |
 | `hitech-global` | Hitech Global |
 | `imperix` | imperix |
