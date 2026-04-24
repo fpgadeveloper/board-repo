@@ -1,0 +1,18 @@
+{
+  "mpn": "TE0887-04-M",
+  "name": "icoBoard",
+  "status": "active",
+  "url": "http://icoboard.org/",
+  "vendor": "trenz",
+  "price": {
+    "value": 46,
+    "currency": "EUR"
+  },
+  "device": {
+    "part": "ICE40HX8K-CT256",
+    "vendor": "lattice"
+  },
+  "expansion": {
+    "pmod": 4
+  }
+}
