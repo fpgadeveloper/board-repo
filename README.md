@@ -159,6 +159,7 @@ Board and silicon vendors are defined in `vendors.json`. Each board references v
 | `tria` | Tria Technologies |
 | `tul` | TUL |
 | `vicharak` | Vicharak |
+| `vlsi-system-design` | VLSI System Design |
 <!-- BOARD-VENDORS-END -->
 
 ### Silicon Vendors

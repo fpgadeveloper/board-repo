@@ -138,11 +138,15 @@
     },
     "forgefunder": {
       "name": "Forgefunder",
-      "url": "https://forgefunder.com/novena-mezzanine-board/"
+      "url": "https://forgefunder.com"
     },
     "bunnie-studios": {
       "name": "Bunnie Studios",
-      "url": "https://www.crowdsupply.com/sutajio-kosagi/novena"
+      "url": "https://www.bunniestudios.com"
+    },
+    "vlsi-system-design": {
+      "name": "VLSI System Design",
+      "url": "https://www.vlsisystemdesign.com"
     }
   },
   "silicon_vendors": {
