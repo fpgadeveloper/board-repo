@@ -130,6 +130,7 @@ Board and silicon vendors are defined in `vendors.json`. Each board references v
 | `avnet` | Avnet |
 | `bittware` | BittWare |
 | `brisbanesilicon` | BrisbaneSilicon |
+| `bunnie-studios` | Bunnie Studios |
 | `cologne-chip` | Cologne Chip |
 | `critical-link` | Critical Link |
 | `digilent` | Digilent |
