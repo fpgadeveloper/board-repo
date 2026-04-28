@@ -1,0 +1,23 @@
+{
+  "mpn": "AUP-ZU3-4GB",
+  "name": "AUP-ZU3 4GB",
+  "status": "active",
+  "url": "https://www.realdigital.org/hardware/aup-zu3",
+  "vendor": "real-digital",
+  "price": {
+    "value": 299,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU3EG-2SFVC784E",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "displayport": 1,
+    "mipi_csi": 1
+  },
+  "expansion": {
+    "pmod": 2,
+    "raspberry_pi": 1
+  }
+}
