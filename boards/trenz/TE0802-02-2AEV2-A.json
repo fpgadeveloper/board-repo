@@ -1,0 +1,29 @@
+{
+  "mpn": "TE0802-02-2AEV2-A",
+  "name": "TE0802",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/MPSoC-Development-Board-with-AMD-Zynq-UltraScale-ZU2CG-1E-1-GByte-LPDDR4/TE0802-02-2AEV2-A",
+  "vendor": "trenz",
+  "price": {
+    "value": 279.92,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU2CG-1SBVA484E",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "displayport": 1
+  },
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ]
+  },
+  "expansion": {
+    "pmod": 2
+  }
+}
