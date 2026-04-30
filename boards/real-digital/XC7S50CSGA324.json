@@ -1,0 +1,15 @@
+{
+  "mpn": "XC7S50CSGA324",
+  "name": "Urbana Board",
+  "status": "active",
+  "url": "https://www.realdigital.org/hardware/urbana",
+  "vendor": "real-digital",
+  "price": {
+    "value": 169,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7S50-2CSGA324C",
+    "vendor": "amd-xilinx"
+  }
+}
