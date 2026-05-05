@@ -18,5 +18,13 @@
   "expansion": {
     "syzygy": 4,
     "syzygy_trx": 2
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Type-C",
+      "functions": [
+        "jtag"
+      ]
+    }
+  ]
 }

@@ -31,5 +31,13 @@
   "expansion": {
     "fmcp": 1,
     "fmc_hpc": 1
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Mini-B",
+      "functions": [
+        "uart"
+      ]
+    }
+  ]
 }

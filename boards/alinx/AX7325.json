@@ -25,5 +25,13 @@
   },
   "expansion": {
     "fmc_lpc": 1
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Mini-B",
+      "functions": [
+        "uart"
+      ]
+    }
+  ]
 }

@@ -22,5 +22,12 @@
         "ports": 1
       }
     ]
-  }
+  },
+  "usb": [
+    {
+      "connector": "Mini-B",
+      "speed": "2.0",
+      "role": "otg"
+    }
+  ]
 }

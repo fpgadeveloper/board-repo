@@ -23,5 +23,21 @@
   "expansion": {
     "pmod": 2,
     "syzygy": 2
-  }
+  },
+  "usb": [
+    {
+      "connector": "Micro-B",
+      "speed": "2.0",
+      "role": "otg"
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ]
 }

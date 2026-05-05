@@ -27,5 +27,11 @@
   "expansion": {
     "pmod": 4,
     "raspberry_pi": 1
-  }
+  },
+  "usb": [
+    { "connector": "Type-A", "speed": "3.0", "role": "host", "ports": 4 }
+  ],
+  "usb_bridge": [
+    { "connector": "Micro-B", "functions": ["uart"] }
+  ]
 }

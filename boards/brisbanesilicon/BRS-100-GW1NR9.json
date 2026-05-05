@@ -11,5 +11,8 @@
   "device": {
     "part": "GW1NR-LV9QFN88PC7",
     "vendor": "gowin"
-  }
+  },
+  "usb_bridge": [
+    { "connector": "Type-C", "functions": ["jtag", "uart"] }
+  ]
 }

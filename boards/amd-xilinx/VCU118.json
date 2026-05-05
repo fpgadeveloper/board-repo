@@ -32,5 +32,19 @@
     "fmc_hpc": 1,
     "fmcp": 1,
     "pmod": 2
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag"
+      ]
+    },
+    {
+      "connector": "Mini-B",
+      "functions": [
+        "uart"
+      ]
+    }
+  ]
 }

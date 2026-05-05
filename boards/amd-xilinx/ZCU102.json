@@ -39,5 +39,12 @@
   },
   "storage": {
     "sata": 1
-  }
+  },
+  "usb": [
+    { "connector": "Micro-B", "speed": "3.0", "role": "otg" }
+  ],
+  "usb_bridge": [
+    { "connector": "Micro-B", "functions": ["jtag"] },
+    { "connector": "Micro-B", "functions": ["uart"] }
+  ]
 }

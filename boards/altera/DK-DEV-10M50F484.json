@@ -23,5 +23,8 @@
   "expansion": {
     "arduino": 1,
     "pmod": 1
-  }
+  },
+  "usb_bridge": [
+    { "connector": "Mini-B", "functions": ["jtag"] }
+  ]
 }

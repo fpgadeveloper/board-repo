@@ -24,5 +24,20 @@
   },
   "expansion": {
     "fmcp": 2
-  }
+  },
+  "usb": [
+    {
+      "connector": "Type-A",
+      "speed": "3.2",
+      "role": "host"
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Type-C",
+      "functions": [
+        "uart"
+      ]
+    }
+  ]
 }

@@ -22,5 +22,13 @@
   "expansion": {
     "pmod": 2,
     "raspberry_pi": 1
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Mini-B",
+      "functions": [
+        "jtag"
+      ]
+    }
+  ]
 }

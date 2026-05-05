@@ -14,5 +14,14 @@
   },
   "expansion": {
     "pmod": 4
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ]
 }

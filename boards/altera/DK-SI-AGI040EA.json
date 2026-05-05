@@ -14,5 +14,8 @@
   },
   "networking": {
     "qsfp": 6
-  }
+  },
+  "usb_bridge": [
+    { "connector": "Type-B", "functions": ["jtag"] }
+  ]
 }

@@ -28,5 +28,21 @@
   "expansion": {
     "fmc_lpc": 1,
     "pmod": 3
-  }
+  },
+  "usb": [
+    {
+      "connector": "Micro-B",
+      "speed": "3.0",
+      "role": "host"
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ]
 }

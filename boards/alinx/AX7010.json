@@ -26,5 +26,26 @@
   },
   "expansion": {
     "pmod": 2
-  }
+  },
+  "usb": [
+    {
+      "connector": "Type-A",
+      "speed": "2.0",
+      "role": "host"
+    },
+    {
+      "connector": "Micro-B",
+      "speed": "2.0",
+      "role": "otg"
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Mini-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ]
 }

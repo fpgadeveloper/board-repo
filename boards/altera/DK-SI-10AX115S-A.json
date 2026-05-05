@@ -16,5 +16,8 @@
     "sfp": 2,
     "qsfp": 2,
     "cfp": 1
-  }
+  },
+  "usb_bridge": [
+    { "connector": "Type-B", "functions": ["jtag"] }
+  ]
 }

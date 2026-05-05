@@ -16,5 +16,13 @@
     "fmc_hpc": 1,
     "pmod": 3,
     "raspberry_pi": 1
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Mini-B",
+      "functions": [
+        "jtag"
+      ]
+    }
+  ]
 }

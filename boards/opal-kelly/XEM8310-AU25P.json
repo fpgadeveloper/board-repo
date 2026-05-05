@@ -11,5 +11,12 @@
   "device": {
     "part": "XCAU25P-2FFVB676E",
     "vendor": "amd-xilinx"
-  }
+  },
+  "usb": [
+    {
+      "connector": "Type-C",
+      "speed": "3.0",
+      "role": "device"
+    }
+  ]
 }

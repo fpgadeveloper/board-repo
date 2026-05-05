@@ -16,5 +16,13 @@
     "pmod": 3,
     "arduino": 1,
     "raspberry_pi": 1
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Mini-B",
+      "functions": [
+        "jtag"
+      ]
+    }
+  ]
 }

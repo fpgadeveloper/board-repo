@@ -21,5 +21,13 @@
   ],
   "expansion": {
     "fmcp": 3
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Mini-B",
+      "functions": [
+        "uart"
+      ]
+    }
+  ]
 }

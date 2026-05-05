@@ -39,5 +39,12 @@
   },
   "storage": {
     "sata": 1
-  }
+  },
+  "usb": [
+    {
+      "connector": "Type-C",
+      "speed": "3.0",
+      "role": "host"
+    }
+  ]
 }

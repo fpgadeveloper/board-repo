@@ -18,5 +18,10 @@
   "wireless": {
     "wifi": true,
     "bluetooth": true
-  }
+  },
+  "usb": [
+    { "connector": "Micro-B", "speed": "3.0", "role": "device" },
+    { "connector": "Type-A", "speed": "3.0", "role": "host", "ports": 2 },
+    { "connector": "Type-A", "speed": "2.0", "role": "host" }
+  ]
 }

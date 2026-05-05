@@ -11,5 +11,12 @@
   "device": {
     "part": "XC7A200T-1FBG484C",
     "vendor": "amd-xilinx"
-  }
+  },
+  "usb": [
+    {
+      "connector": "Type-C",
+      "speed": "3.0",
+      "role": "device"
+    }
+  ]
 }

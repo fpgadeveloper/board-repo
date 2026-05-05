@@ -31,5 +31,13 @@
       }
     ],
     "sfp": 2
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Mini-B",
+      "functions": [
+        "uart"
+      ]
+    }
+  ]
 }

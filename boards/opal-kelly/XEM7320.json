@@ -15,5 +15,12 @@
   "expansion": {
     "syzygy": 2,
     "syzygy_trx": 1
-  }
+  },
+  "usb": [
+    {
+      "connector": "Type-C",
+      "speed": "3.0",
+      "role": "device"
+    }
+  ]
 }

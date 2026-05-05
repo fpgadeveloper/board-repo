@@ -30,5 +30,12 @@
   "expansion": {
     "fmc_lpc": 1,
     "pmod": 1
-  }
+  },
+  "usb": [
+    { "connector": "Type-C", "speed": "2.0", "role": "otg" }
+  ],
+  "usb_bridge": [
+    { "connector": "Type-C", "functions": ["jtag"] },
+    { "connector": "Micro-B", "functions": ["uart"] }
+  ]
 }

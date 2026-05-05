@@ -11,5 +11,13 @@
   "device": {
     "part": "EP4CE10F17C8N",
     "vendor": "altera"
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Mini-B",
+      "functions": [
+        "uart"
+      ]
+    }
+  ]
 }

@@ -14,5 +14,13 @@
   },
   "expansion": {
     "arduino": 1
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Type-B",
+      "functions": [
+        "jtag"
+      ]
+    }
+  ]
 }

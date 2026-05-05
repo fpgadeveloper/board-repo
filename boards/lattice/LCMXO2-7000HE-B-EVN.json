@@ -11,5 +11,13 @@
   "device": {
     "part": "LCMXO2-7000HE-4TG144C",
     "vendor": "lattice"
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Mini-B",
+      "functions": [
+        "jtag"
+      ]
+    }
+  ]
 }

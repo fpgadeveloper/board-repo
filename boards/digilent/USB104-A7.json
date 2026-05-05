@@ -15,5 +15,14 @@
   "expansion": {
     "pmod": 3,
     "syzygy": 1
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Type-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ]
 }

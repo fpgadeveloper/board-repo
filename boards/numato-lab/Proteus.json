@@ -14,5 +14,12 @@
   },
   "expansion": {
     "fmc_hpc": 1
-  }
+  },
+  "usb": [
+    {
+      "connector": "Type-C",
+      "speed": "3.1",
+      "role": "device"
+    }
+  ]
 }

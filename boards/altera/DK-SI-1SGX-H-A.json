@@ -25,5 +25,8 @@
   },
   "expansion": {
     "fmcp": 2
-  }
+  },
+  "usb_bridge": [
+    { "connector": "Type-B", "functions": ["jtag"] }
+  ]
 }

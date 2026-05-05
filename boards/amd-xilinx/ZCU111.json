@@ -27,5 +27,21 @@
   "expansion": {
     "fmcp": 1,
     "rfmc": 2
-  }
+  },
+  "usb": [
+    {
+      "connector": "Type-A",
+      "speed": "3.0",
+      "role": "otg"
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ]
 }

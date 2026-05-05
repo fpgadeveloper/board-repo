@@ -27,5 +27,21 @@
   },
   "storage": {
     "sata": 1
-  }
+  },
+  "usb": [
+    {
+      "connector": "Type-A",
+      "speed": "3.0",
+      "role": "host"
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Type-C",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ]
 }

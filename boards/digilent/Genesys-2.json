@@ -28,5 +28,31 @@
   "expansion": {
     "fmc_hpc": 1,
     "pmod": 5
-  }
+  },
+  "usb": [
+    {
+      "connector": "Micro-B",
+      "speed": "2.0",
+      "role": "otg"
+    },
+    {
+      "connector": "Type-A",
+      "speed": "2.0",
+      "role": "host"
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag"
+      ]
+    },
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "uart"
+      ]
+    }
+  ]
 }

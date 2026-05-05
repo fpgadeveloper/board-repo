@@ -11,5 +11,12 @@
   "device": {
     "part": "5CEFA2U19C8N",
     "vendor": "altera"
-  }
+  },
+  "usb": [
+    {
+      "connector": "Micro-B",
+      "speed": "3.0",
+      "role": "device"
+    }
+  ]
 }

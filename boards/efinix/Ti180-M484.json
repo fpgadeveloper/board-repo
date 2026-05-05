@@ -26,5 +26,8 @@
   },
   "expansion": {
     "fmc_lpc": 1
-  }
+  },
+  "usb_bridge": [
+    { "connector": "Type-C", "functions": ["jtag", "uart"] }
+  ]
 }

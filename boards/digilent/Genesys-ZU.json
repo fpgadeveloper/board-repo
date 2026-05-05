@@ -34,5 +34,27 @@
   },
   "wireless": {
     "wifi": true
-  }
+  },
+  "usb": [
+    {
+      "connector": "Type-C",
+      "speed": "3.1",
+      "role": "otg"
+    },
+    {
+      "connector": "Type-A",
+      "speed": "2.0",
+      "role": "host",
+      "ports": 2
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ]
 }
