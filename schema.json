@@ -74,7 +74,8 @@
             "aes_in": { "type": "integer", "title": "AES3 In", "minimum": 1 },
             "aes_out": { "type": "integer", "title": "AES3 Out", "minimum": 1 },
             "mipi_dsi": { "type": "integer", "title": "MIPI DSI", "minimum": 1 },
-            "mipi_csi": { "type": "integer", "title": "MIPI CSI", "minimum": 1 }
+            "mipi_csi": { "type": "integer", "title": "MIPI CSI", "minimum": 1 },
+            "vga_out": { "type": "integer", "title": "VGA Out", "minimum": 1 }
           },
           "minProperties": 1
         },
@@ -99,6 +100,15 @@
             "cfp": { "type": "integer", "title": "CFP", "minimum": 1 }
           },
           "minProperties": 1
+        },
+        "usb": {
+          "type": "array",
+          "title": "USB",
+          "description": "USB interfaces accessible to the FPGA design (fabric or hard IP). Excludes USB-UART/JTAG bridge ports — those go in usb_bridge.",
+          "items": {
+            "$ref": "#/$defs/usb_interface"
+          },
+          "minItems": 1
         },
         "expansion": {
           "type": "object",
@@ -139,6 +149,15 @@
             "bluetooth": { "type": "boolean", "title": "Bluetooth" }
           },
           "minProperties": 1
+        },
+        "usb_bridge": {
+          "type": "array",
+          "title": "USB UART/JTAG",
+          "description": "USB-to-UART/JTAG bridge ports for board configuration and serial console (e.g. FT2232, CP2102, USB-Blaster). Not connected to the FPGA fabric.",
+          "items": {
+            "$ref": "#/$defs/usb_bridge_interface"
+          },
+          "minItems": 1
         }
       }
     },
@@ -209,6 +228,54 @@
           "type": "integer",
           "minimum": 1,
           "description": "Number of ports at this speed."
+        }
+      }
+    },
+    "usb_connector": {
+      "type": "string",
+      "enum": ["Type-A", "Type-B", "Type-C", "Mini-B", "Micro-B", "Header"],
+      "description": "Physical USB connector on the board."
+    },
+    "usb_interface": {
+      "type": "object",
+      "required": ["connector", "speed", "role"],
+      "additionalProperties": false,
+      "properties": {
+        "connector": { "$ref": "#/$defs/usb_connector" },
+        "speed": {
+          "type": "string",
+          "enum": ["1.1", "2.0", "3.0", "3.1", "3.2", "4"],
+          "description": "USB version (e.g. 2.0 = High-Speed 480 Mbps, 3.0 = SuperSpeed 5 Gbps)."
+        },
+        "role": {
+          "type": "string",
+          "enum": ["host", "device", "otg"],
+          "description": "host = peripherals plug in (Type-A), device = board acts as peripheral, otg = either."
+        },
+        "ports": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Number of physical ports of this kind. Defaults to 1 if omitted."
+        }
+      }
+    },
+    "usb_bridge_interface": {
+      "type": "object",
+      "required": ["connector", "functions"],
+      "additionalProperties": false,
+      "properties": {
+        "connector": { "$ref": "#/$defs/usb_connector" },
+        "functions": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["jtag", "uart"] },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "What the bridge does — typically [\"jtag\", \"uart\"] for combined chips like FT2232."
+        },
+        "ports": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Number of physical ports of this kind. Defaults to 1 if omitted."
         }
       }
     }

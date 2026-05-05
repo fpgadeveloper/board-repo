@@ -54,7 +54,7 @@ The `device` object requires:
 | `part` | string | Full orderable part number (e.g. `"XC7A35T-1CPG236C"`). |
 | `vendor` | string | Silicon vendor key (must match a key in `vendors.json` `silicon_vendors`). |
 
-Optional fields include `pcie`, `video`, `networking`, `expansion`, `storage`, and `wireless`. See `schema.json` for full details on each.
+Optional fields include `pcie`, `video`, `networking`, `usb`, `expansion`, `storage`, `wireless`, and `usb_bridge`. See `schema.json` for full details on each. `usb` covers USB ports accessible to the FPGA design (fabric or hard IP); `usb_bridge` covers USB-to-UART/JTAG ports for board configuration and serial console (e.g. FT2232, CP2102) — these are kept separate because bridge ports never reach the FPGA fabric.
 
 #### Example
 
@@ -107,10 +107,16 @@ Create a file at `boards/digilent/Arty-A7.json`:
       { "speed": 1000, "ports": 2 }
     ]
   },
+  "usb": [
+    { "connector": "Type-A", "speed": "2.0", "role": "host" }
+  ],
   "expansion": {
     "fmc_lpc": 1,
     "pmod": 6
-  }
+  },
+  "usb_bridge": [
+    { "connector": "Micro-B", "functions": ["jtag", "uart"] }
+  ]
 }
 ```
 
