@@ -1,21 +1,21 @@
 {
-  "mpn": "TE0807-03-7DE81-AS",
-  "name": "TE0807-03-7DE81-AS",
+  "mpn": "TE0818-02-9BE81-AS",
+  "name": "TE0818 Starter Kit",
   "status": "active",
   "url": "https://www.trenz-electronic.de/en/Products/Trenz-Electronic/Starter-Kits/",
   "vendor": "trenz",
   "price": {
-    "value": 2826.49,
+    "value": 1767.34,
     "currency": "USD"
   },
   "device": {
-    "part": "XCZU7EV-1FBVB900E",
+    "part": "XCZU9EG-1FFVC900E",
     "vendor": "amd-xilinx"
   },
   "pcie": [
     {
       "type": "Slot",
-      "lanes": 16,
+      "lanes": 1,
       "gen": 3
     }
   ],

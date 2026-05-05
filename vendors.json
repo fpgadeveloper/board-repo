@@ -139,6 +139,18 @@
     "vicharak": {
       "name": "Vicharak",
       "url": "https://vicharak.in"
+    },
+    "forgefunder": {
+      "name": "Forgefunder",
+      "url": "https://forgefunder.com"
+    },
+    "bunnie-studios": {
+      "name": "Bunnie Studios",
+      "url": "https://www.bunniestudios.com"
+    },
+    "vlsi-system-design": {
+      "name": "VLSI System Design",
+      "url": "https://www.vlsisystemdesign.com"
     }
   },
   "silicon_vendors": {

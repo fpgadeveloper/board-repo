@@ -1,0 +1,38 @@
+{
+  "mpn": "Novena",
+  "name": "Novena",
+  "status": "discontinued",
+  "url": "https://www.crowdsupply.com/sutajio-kosagi/novena",
+  "vendor": "bunnie-studios",
+  "price": {
+    "value": 500,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC6SLX45-3CSG324C",
+    "vendor": "amd-xilinx"
+  },
+  "video": {
+    "hdmi_out": 1,
+    "displayport": 1
+  },
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      },
+      {
+        "speed": 100,
+        "ports": 1
+      }
+    ]
+  },
+  "storage": {
+    "sata": 1
+  },
+  "wireless": {
+    "wifi": true,
+    "bluetooth": true
+  }
+}

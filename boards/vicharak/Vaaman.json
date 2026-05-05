@@ -1,0 +1,33 @@
+{
+  "mpn": "Vaaman",
+  "name": "Vaaman",
+  "status": "active",
+  "url": "https://vicharak.in/vaaman",
+  "vendor": "vicharak",
+  "price": {
+    "value": 212,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "T120F324C3",
+    "vendor": "efinix"
+  },
+  "video": {
+    "hdmi_out": 1,
+    "displayport": 1,
+    "mipi_dsi": 1,
+    "mipi_csi": 1
+  },
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ]
+  },
+  "wireless": {
+    "wifi": true,
+    "bluetooth": true
+  }
+}

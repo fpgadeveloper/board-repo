@@ -131,10 +131,12 @@ Board and silicon vendors are defined in `vendors.json`. Each board references v
 | `avnet` | Avnet |
 | `bittware` | BittWare |
 | `brisbanesilicon` | BrisbaneSilicon |
+| `bunnie-studios` | Bunnie Studios |
 | `cologne-chip` | Cologne Chip |
 | `critical-link` | Critical Link |
 | `digilent` | Digilent |
 | `efinix` | Efinix |
+| `forgefunder` | Forgefunder |
 | `gowin` | Gowin Semiconductor |
 | `hitech-global` | Hitech Global |
 | `imperix` | imperix |
@@ -158,6 +160,7 @@ Board and silicon vendors are defined in `vendors.json`. Each board references v
 | `tria` | Tria Technologies |
 | `tul` | TUL |
 | `vicharak` | Vicharak |
+| `vlsi-system-design` | VLSI System Design |
 <!-- BOARD-VENDORS-END -->
 
 ### Silicon Vendors
