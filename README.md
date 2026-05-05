@@ -41,7 +41,7 @@ Each board is a JSON object with the following required fields:
 |-------|------|-------------|
 | `mpn` | string | **Manufacturer part number** (MPN / SKU) as published by the board vendor — e.g. `"ZCU102"`, `"DK-DEV-AGI027-RA-B"`, `"DK_START_GW1NR-LV9LQ144PC6I5"`. Must be unique across all boards. Some older entries predate this convention and use a short product name instead; new boards should use the vendor's MPN. |
 | `name` | string | Human-readable display name of the board (e.g. `"GW1NR-9 Starter Kit"`). Shown in listings and titles. |
-| `status` | string | `"active"`, `"eol"` (end-of-life), or `"discontinued"`. |
+| `status` | string | `"active"`, `"nrnd"` (not recommended for new designs), `"eol"` (end-of-life), or `"discontinued"`. |
 | `url` | string | Product page URL. |
 | `vendor` | string | Board vendor key (must match a key in `vendors.json` `board_vendors`). |
 | `price` | object | `{ "value": 129.00, "currency": "USD" }` |
@@ -127,6 +127,7 @@ Board and silicon vendors are defined in `vendors.json`. Each board references v
 | `alinx` | Alinx |
 | `altera` | Altera |
 | `amd-xilinx` | AMD Xilinx |
+| `arrow` | Arrow |
 | `avnet` | Avnet |
 | `bittware` | BittWare |
 | `brisbanesilicon` | BrisbaneSilicon |
@@ -184,7 +185,7 @@ To add a new vendor, add an entry to the appropriate section in `vendors.json` w
 - Use the ISO 4217 currency code for the `price.currency` field (e.g. `"USD"`, `"EUR"`, `"GBP"`).
 - The `mpn` should be the manufacturer part number (MPN / SKU) as published by the board vendor. It must be unique and contain only letters, numbers, hyphens, dots, and underscores. Replace any spaces, slashes, or other unsupported characters with hyphens. Drop trailing PCB-revision suffixes (e.g. `_V3.1`) so the MPN stays stable across revisions.
 - The filename must match the `mpn` field (e.g. a board with `"mpn": "ZCU102"` goes in `ZCU102.json`).
-- Set `status` to `"active"` for boards currently available for purchase, `"eol"` for end-of-life boards, or `"discontinued"` for discontinued boards.
+- Set `status` to `"active"` for boards currently available for purchase, `"nrnd"` for boards that are still available but not recommended for new designs, `"eol"` for end-of-life boards, or `"discontinued"` for discontinued boards.
 
 ## Validation
 
