@@ -31,6 +31,15 @@
     ],
     "sfp": 1
   },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ],
   "expansion": {
     "fmc_hpc": 1
   }
