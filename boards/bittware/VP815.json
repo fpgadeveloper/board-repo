@@ -9,6 +9,14 @@
     "part": "AC7t1500FSG2457C",
     "vendor": "achronix"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 16384,
+      "width_bits": 72,
+      "ecc": true
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -18,5 +26,14 @@
   ],
   "networking": {
     "qsfp": 2
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ]
 }

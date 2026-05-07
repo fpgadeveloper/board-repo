@@ -12,6 +12,13 @@
     "part": "XCKU040-2FFVA1156E",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 2048,
+      "width_bits": 64
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -37,7 +44,17 @@
     "pmod": 2
   },
   "usb_bridge": [
-    { "connector": "Micro-B", "functions": ["jtag"] },
-    { "connector": "Micro-B", "functions": ["uart"] }
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag"
+      ]
+    },
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "uart"
+      ]
+    }
   ]
 }

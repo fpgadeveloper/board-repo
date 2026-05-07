@@ -12,6 +12,19 @@
     "part": "XCZU48DR-2FSVG1517E",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "form_factor": "sodimm",
+      "width_bits": 64
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "width_bits": 64
+    }
+  ],
   "networking": {
     "ethernet": [
       {
@@ -21,14 +34,24 @@
     ],
     "sfp": 4
   },
+  "usb": [
+    {
+      "connector": "Micro-B",
+      "speed": "3.0",
+      "role": "host"
+    }
+  ],
   "expansion": {
     "fmcp": 1,
     "rfmc": 2
   },
-  "usb": [
-    { "connector": "Micro-B", "speed": "3.0", "role": "host" }
-  ],
   "usb_bridge": [
-    { "connector": "Micro-B", "functions": ["jtag", "uart"] }
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
   ]
 }

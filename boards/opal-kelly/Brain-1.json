@@ -12,6 +12,12 @@
     "part": "XC7Z012S-1CLG485C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024
+    }
+  ],
   "networking": {
     "ethernet": [
       {

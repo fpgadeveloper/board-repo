@@ -12,10 +12,23 @@
     "part": "Tz170J484C2",
     "vendor": "efinix"
   },
+  "memory": [
+    {
+      "type": "LPDDR4",
+      "size_mb": 32,
+      "width_bits": 32
+    }
+  ],
   "expansion": {
     "fmc_lpc": 1
   },
   "usb_bridge": [
-    { "connector": "Type-C", "functions": ["jtag", "uart"] }
+    {
+      "connector": "Type-C",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
   ]
 }

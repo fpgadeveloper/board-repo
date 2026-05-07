@@ -12,6 +12,18 @@
     "part": "XCZU9EG-2FFVB1156I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "width_bits": 64
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 2048,
+      "width_bits": 32
+    }
+  ],
   "video": {
     "mipi_csi": 1
   },

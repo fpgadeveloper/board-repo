@@ -12,6 +12,23 @@
     "part": "XCZU47DR-2FFVE1156I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "width_bits": 64
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 2048,
+      "width_bits": 32
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 16384,
+      "width_bits": 64
+    }
+  ],
   "networking": {
     "ethernet": [
       {
@@ -22,9 +39,6 @@
     "sfp": 1,
     "qsfp": 2
   },
-  "storage": {
-    "sata": 1
-  },
   "usb": [
     {
       "connector": "Type-A",
@@ -32,6 +46,9 @@
       "role": "host"
     }
   ],
+  "storage": {
+    "sata": 1
+  },
   "usb_bridge": [
     {
       "connector": "Type-C",

@@ -12,6 +12,13 @@
     "part": "XC7Z020-1CLG484C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024,
+      "width_bits": 32
+    }
+  ],
   "video": {
     "hdmi_out": 1
   },
@@ -23,10 +30,6 @@
       }
     ]
   },
-  "expansion": {
-    "fmc_lpc": 2,
-    "pmod": 2
-  },
   "usb": [
     {
       "connector": "Mini-B",
@@ -34,6 +37,10 @@
       "role": "otg"
     }
   ],
+  "expansion": {
+    "fmc_lpc": 2,
+    "pmod": 2
+  },
   "usb_bridge": [
     {
       "connector": "Micro-B",

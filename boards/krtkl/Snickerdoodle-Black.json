@@ -12,6 +12,12 @@
     "part": "XC7Z020-3CLG400E",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 512
+    }
+  ],
   "wireless": {
     "wifi": true,
     "bluetooth": true

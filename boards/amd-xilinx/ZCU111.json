@@ -12,6 +12,19 @@
     "part": "XCZU28DR-2FFVG1517E",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "form_factor": "sodimm",
+      "width_bits": 64
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "width_bits": 64
+    }
+  ],
   "video": {
     "displayport": 1
   },
@@ -24,10 +37,6 @@
     ],
     "sfp": 4
   },
-  "expansion": {
-    "fmcp": 1,
-    "rfmc": 2
-  },
   "usb": [
     {
       "connector": "Type-A",
@@ -35,6 +44,10 @@
       "role": "otg"
     }
   ],
+  "expansion": {
+    "fmcp": 1,
+    "rfmc": 2
+  },
   "usb_bridge": [
     {
       "connector": "Micro-B",

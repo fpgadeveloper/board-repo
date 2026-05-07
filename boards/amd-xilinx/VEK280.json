@@ -12,6 +12,12 @@
     "part": "XCVE2802-2MSEVSVH1760",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "LPDDR4",
+      "size_mb": 12288
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

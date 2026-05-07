@@ -9,6 +9,13 @@
     "part": "XCVU29P-L2FSGA2577E",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 16384,
+      "form_factor": "dimm"
+    }
+  ],
   "pcie": [
     {
       "type": "iPass",
@@ -26,5 +33,13 @@
     "sfp": 10,
     "qsfp": 6,
     "osfp": 1
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag"
+      ]
+    }
+  ]
 }

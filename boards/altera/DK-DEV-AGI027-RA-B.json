@@ -12,6 +12,21 @@
     "part": "AGIB027R29A1E1VB",
     "vendor": "altera"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 32768,
+      "width_bits": 72,
+      "ecc": true
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 2048,
+      "form_factor": "dimm",
+      "width_bits": 72,
+      "ecc": true
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -23,6 +38,11 @@
     "qsfp": 4
   },
   "usb_bridge": [
-    { "connector": "Micro-B", "functions": ["jtag"] }
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag"
+      ]
+    }
   ]
 }

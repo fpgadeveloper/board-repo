@@ -12,6 +12,19 @@
     "part": "XCZU7EV-2FFVC1156E",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "form_factor": "sodimm",
+      "width_bits": 64
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 2048,
+      "width_bits": 64
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -37,6 +50,13 @@
     ],
     "sfp": 2
   },
+  "usb": [
+    {
+      "connector": "Type-A",
+      "speed": "3.0",
+      "role": "otg"
+    }
+  ],
   "expansion": {
     "fmc_hpc": 2,
     "pmod": 2
@@ -44,11 +64,18 @@
   "storage": {
     "sata": 1
   },
-  "usb": [
-    { "connector": "Type-A", "speed": "3.0", "role": "otg" }
-  ],
   "usb_bridge": [
-    { "connector": "Micro-B", "functions": ["jtag"] },
-    { "connector": "Micro-B", "functions": ["uart"] }
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag"
+      ]
+    },
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "uart"
+      ]
+    }
   ]
 }

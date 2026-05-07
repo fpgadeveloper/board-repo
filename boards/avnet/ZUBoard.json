@@ -12,6 +12,13 @@
     "part": "XCZU1CG-1SBVA484E",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "LPDDR4",
+      "size_mb": 1024,
+      "ecc": true
+    }
+  ],
   "networking": {
     "ethernet": [
       {

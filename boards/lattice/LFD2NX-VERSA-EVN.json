@@ -12,6 +12,13 @@
     "part": "LFD2NX-40-8BG256C",
     "vendor": "lattice"
   },
+  "memory": [
+    {
+      "type": "DDR3L",
+      "size_mb": 128,
+      "width_bits": 16
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

@@ -12,6 +12,13 @@
     "part": "XC7Z010-1CLG400C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3L",
+      "size_mb": 1024,
+      "width_bits": 32
+    }
+  ],
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1
@@ -24,9 +31,6 @@
       }
     ]
   },
-  "expansion": {
-    "pmod": 5
-  },
   "usb": [
     {
       "connector": "Micro-B",
@@ -34,6 +38,9 @@
       "role": "otg"
     }
   ],
+  "expansion": {
+    "pmod": 5
+  },
   "usb_bridge": [
     {
       "connector": "Micro-B",

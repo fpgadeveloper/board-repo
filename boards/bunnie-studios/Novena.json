@@ -12,6 +12,14 @@
     "part": "XC6SLX45-3CSG324C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 4096,
+      "form_factor": "sodimm",
+      "width_bits": 64
+    }
+  ],
   "video": {
     "hdmi_out": 1,
     "displayport": 1

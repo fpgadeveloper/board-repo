@@ -11,5 +11,13 @@
   "device": {
     "part": "ICE40UP5K-SG48",
     "vendor": "lattice"
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "uart"
+      ]
+    }
+  ]
 }

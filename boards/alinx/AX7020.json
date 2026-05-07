@@ -12,6 +12,13 @@
     "part": "XC7Z020-2CLG400I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024,
+      "width_bits": 32
+    }
+  ],
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1
@@ -23,9 +30,6 @@
         "ports": 1
       }
     ]
-  },
-  "expansion": {
-    "pmod": 2
   },
   "usb": [
     {
@@ -39,6 +43,9 @@
       "role": "otg"
     }
   ],
+  "expansion": {
+    "pmod": 2
+  },
   "usb_bridge": [
     {
       "connector": "Mini-B",

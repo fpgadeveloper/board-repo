@@ -12,12 +12,26 @@
     "part": "XCZU5EG-1SFVC784E",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "width_bits": 64
+    }
+  ],
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1,
     "displayport": 1,
     "mipi_csi": 1
   },
+  "usb": [
+    {
+      "connector": "Micro-B",
+      "speed": "3.0",
+      "role": "host"
+    }
+  ],
   "expansion": {
     "fmc_lpc": 1,
     "pmod": 2,
@@ -28,13 +42,6 @@
     "wifi": true,
     "bluetooth": true
   },
-  "usb": [
-    {
-      "connector": "Micro-B",
-      "speed": "3.0",
-      "role": "host"
-    }
-  ],
   "usb_bridge": [
     {
       "connector": "Micro-B",

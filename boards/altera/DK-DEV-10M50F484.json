@@ -12,6 +12,13 @@
     "part": "10M50DAF484I6G",
     "vendor": "altera"
   },
+  "memory": [
+    {
+      "type": "LPDDR2",
+      "size_mb": 128,
+      "width_bits": 16
+    }
+  ],
   "networking": {
     "ethernet": [
       {
@@ -25,6 +32,11 @@
     "pmod": 1
   },
   "usb_bridge": [
-    { "connector": "Mini-B", "functions": ["jtag"] }
+    {
+      "connector": "Mini-B",
+      "functions": [
+        "jtag"
+      ]
+    }
   ]
 }

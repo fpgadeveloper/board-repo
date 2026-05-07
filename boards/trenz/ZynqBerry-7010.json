@@ -12,6 +12,13 @@
     "part": "XC7Z010-1CLG225C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3L",
+      "size_mb": 512,
+      "ecc": true
+    }
+  ],
   "video": {
     "hdmi_out": 1,
     "mipi_dsi": 1,

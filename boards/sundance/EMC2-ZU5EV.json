@@ -12,6 +12,13 @@
     "part": "XCZU5EV-1SFVC784I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 2048,
+      "width_bits": 32
+    }
+  ],
   "pcie": [
     {
       "type": "PCIe/104",

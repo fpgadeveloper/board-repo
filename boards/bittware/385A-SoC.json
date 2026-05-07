@@ -9,6 +9,18 @@
     "part": "10AS066N3F40E2SG",
     "vendor": "altera"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "width_bits": 72,
+      "ecc": true
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 2048
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -18,5 +30,13 @@
   ],
   "networking": {
     "qsfp": 2
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag"
+      ]
+    }
+  ]
 }

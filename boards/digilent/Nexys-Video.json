@@ -12,6 +12,12 @@
     "part": "XC7A200T-1SBG484C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 512
+    }
+  ],
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1,
@@ -25,10 +31,6 @@
       }
     ]
   },
-  "expansion": {
-    "fmc_lpc": 1,
-    "pmod": 4
-  },
   "usb": [
     {
       "connector": "Type-A",
@@ -36,6 +38,10 @@
       "role": "host"
     }
   ],
+  "expansion": {
+    "fmc_lpc": 1,
+    "pmod": 4
+  },
   "usb_bridge": [
     {
       "connector": "Micro-B",

@@ -12,6 +12,13 @@
     "part": "XCKU5P-2FFVB676I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 2048,
+      "width_bits": 32
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

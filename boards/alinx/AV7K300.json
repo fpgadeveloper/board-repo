@@ -12,6 +12,13 @@
     "part": "XC7K325T-2FFG900I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 2048,
+      "width_bits": 64
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

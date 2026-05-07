@@ -12,6 +12,13 @@
     "part": "XC7Z020-1CLG400I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024,
+      "width_bits": 32
+    }
+  ],
   "networking": {
     "ethernet": [
       {
@@ -22,5 +29,19 @@
   },
   "expansion": {
     "pmod": 2
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Type-A",
+      "functions": [
+        "uart"
+      ]
+    },
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "uart"
+      ]
+    }
+  ]
 }

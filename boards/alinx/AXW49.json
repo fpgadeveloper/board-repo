@@ -12,6 +12,18 @@
     "part": "XCZU49DR-2FFVF1760E",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "width_bits": 64
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "width_bits": 64
+    }
+  ],
   "video": {
     "displayport": 1
   },

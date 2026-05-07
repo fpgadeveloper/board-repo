@@ -12,6 +12,18 @@
     "part": "XCZU19EG-2FFVC1760I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "width_bits": 64
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 16384,
+      "width_bits": 64
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -35,12 +47,6 @@
     ],
     "qsfp": 2
   },
-  "expansion": {
-    "fmc_hpc": 1
-  },
-  "storage": {
-    "sata": 1
-  },
   "usb": [
     {
       "connector": "Type-A",
@@ -48,6 +54,12 @@
       "role": "host"
     }
   ],
+  "expansion": {
+    "fmc_hpc": 1
+  },
+  "storage": {
+    "sata": 1
+  },
   "usb_bridge": [
     {
       "connector": "Mini-B",

@@ -12,6 +12,13 @@
     "part": "XCZU2CG-1SFVC784E",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 2048,
+      "width_bits": 64
+    }
+  ],
   "video": {
     "displayport": 1
   },

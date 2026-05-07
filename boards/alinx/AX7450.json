@@ -12,6 +12,18 @@
     "part": "XC7Z100-2FFG900I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024,
+      "width_bits": 32
+    },
+    {
+      "type": "DDR3",
+      "size_mb": 2048,
+      "width_bits": 64
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -27,9 +39,6 @@
       }
     ]
   },
-  "expansion": {
-    "fmc_hpc": 1
-  },
   "usb": [
     {
       "connector": "Type-A",
@@ -37,6 +46,9 @@
       "role": "host"
     }
   ],
+  "expansion": {
+    "fmc_hpc": 1
+  },
   "usb_bridge": [
     {
       "connector": "Mini-B",

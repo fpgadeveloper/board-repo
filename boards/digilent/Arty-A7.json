@@ -12,6 +12,13 @@
     "part": "XC7A35TI-1LCSG324I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3L",
+      "size_mb": 256,
+      "width_bits": 16
+    }
+  ],
   "networking": {
     "ethernet": [
       {

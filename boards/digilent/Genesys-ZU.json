@@ -12,6 +12,13 @@
     "part": "XCZU5EV-1SFVC784E",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "form_factor": "sodimm"
+    }
+  ],
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1,
@@ -27,14 +34,6 @@
     ],
     "sfp": 1
   },
-  "expansion": {
-    "fmc_lpc": 1,
-    "pmod": 4,
-    "syzygy": 1
-  },
-  "wireless": {
-    "wifi": true
-  },
   "usb": [
     {
       "connector": "Type-C",
@@ -48,6 +47,14 @@
       "ports": 2
     }
   ],
+  "expansion": {
+    "fmc_lpc": 1,
+    "pmod": 4,
+    "syzygy": 1
+  },
+  "wireless": {
+    "wifi": true
+  },
   "usb_bridge": [
     {
       "connector": "Micro-B",

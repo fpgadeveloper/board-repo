@@ -12,6 +12,18 @@
     "part": "XC7Z045-2FFG900C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024,
+      "width_bits": 32
+    },
+    {
+      "type": "DDR3",
+      "size_mb": 1024,
+      "form_factor": "sodimm"
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -31,10 +43,6 @@
     ],
     "sfp": 1
   },
-  "expansion": {
-    "fmc_hpc": 1,
-    "fmc_lpc": 1
-  },
   "usb": [
     {
       "connector": "Micro-B",
@@ -42,6 +50,10 @@
       "role": "otg"
     }
   ],
+  "expansion": {
+    "fmc_hpc": 1,
+    "fmc_lpc": 1
+  },
   "usb_bridge": [
     {
       "connector": "Micro-B",

@@ -11,5 +11,12 @@
   "device": {
     "part": "XCVE2302-1LSESFVA784",
     "vendor": "amd-xilinx"
-  }
+  },
+  "memory": [
+    {
+      "type": "LPDDR4",
+      "size_mb": 4096,
+      "width_bits": 32
+    }
+  ]
 }

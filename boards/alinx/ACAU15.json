@@ -12,6 +12,13 @@
     "part": "XCAU15P-2FFVB676I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 1024,
+      "width_bits": 16
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

@@ -12,6 +12,13 @@
     "part": "10M50DAF484I6G",
     "vendor": "altera"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 128,
+      "width_bits": 16
+    }
+  ],
   "networking": {
     "ethernet": [
       {
@@ -21,6 +28,12 @@
     ]
   },
   "usb_bridge": [
-    { "connector": "Mini-B", "functions": ["jtag", "uart"] }
+    {
+      "connector": "Mini-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
   ]
 }

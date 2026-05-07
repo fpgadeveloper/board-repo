@@ -12,6 +12,12 @@
     "part": "XCVP1202-2MSEVSVA2785",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "LPDDR4",
+      "size_mb": 12288
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -33,5 +39,13 @@
   },
   "storage": {
     "sata": 1
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag"
+      ]
+    }
+  ]
 }

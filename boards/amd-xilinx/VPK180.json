@@ -12,6 +12,12 @@
     "part": "XCVP1802-2MSELSVC4072",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "LPDDR4",
+      "size_mb": 12288
+    }
+  ],
   "networking": {
     "ethernet": [
       {
@@ -25,5 +31,13 @@
   },
   "expansion": {
     "fmcp": 1
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag"
+      ]
+    }
+  ]
 }

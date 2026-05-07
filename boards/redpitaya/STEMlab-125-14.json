@@ -12,6 +12,12 @@
     "part": "XC7Z010-1CLG225C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 512
+    }
+  ],
   "networking": {
     "ethernet": [
       {

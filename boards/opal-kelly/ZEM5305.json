@@ -12,6 +12,12 @@
     "part": "5CEFA2U19C8N",
     "vendor": "altera"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 512
+    }
+  ],
   "usb": [
     {
       "connector": "Micro-B",

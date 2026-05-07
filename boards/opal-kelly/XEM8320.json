@@ -12,9 +12,23 @@
     "part": "XCAU25P-2FFVB676E",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 1024,
+      "width_bits": 16
+    }
+  ],
   "networking": {
     "sfp": 2
   },
+  "usb": [
+    {
+      "connector": "Type-C",
+      "speed": "3.0",
+      "role": "host"
+    }
+  ],
   "expansion": {
     "syzygy": 4,
     "syzygy_trx": 2

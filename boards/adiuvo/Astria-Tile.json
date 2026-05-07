@@ -11,5 +11,13 @@
   "device": {
     "part": "XC7S25-1CSGA225C",
     "vendor": "amd-xilinx"
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag"
+      ]
+    }
+  ]
 }

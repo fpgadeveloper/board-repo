@@ -12,6 +12,13 @@
     "part": "XCVU13P-2FHGB2104I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 16384,
+      "form_factor": "sodimm"
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

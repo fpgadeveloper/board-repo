@@ -12,6 +12,12 @@
     "part": "XC7A100T-1CSG324C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR2",
+      "size_mb": 128
+    }
+  ],
   "networking": {
     "ethernet": [
       {
@@ -20,9 +26,6 @@
       }
     ]
   },
-  "expansion": {
-    "pmod": 4
-  },
   "usb": [
     {
       "connector": "Type-A",
@@ -30,6 +33,9 @@
       "role": "host"
     }
   ],
+  "expansion": {
+    "pmod": 4
+  },
   "usb_bridge": [
     {
       "connector": "Micro-B",

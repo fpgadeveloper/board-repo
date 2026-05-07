@@ -12,16 +12,36 @@
     "part": "XCZU3EG-1SFVA625I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "LPDDR4",
+      "size_mb": 2048,
+      "width_bits": 32
+    }
+  ],
   "video": {
     "displayport": 1
   },
+  "usb": [
+    {
+      "connector": "Micro-B",
+      "speed": "3.0",
+      "role": "device"
+    },
+    {
+      "connector": "Type-A",
+      "speed": "3.0",
+      "role": "host",
+      "ports": 2
+    },
+    {
+      "connector": "Type-A",
+      "speed": "2.0",
+      "role": "host"
+    }
+  ],
   "wireless": {
     "wifi": true,
     "bluetooth": true
-  },
-  "usb": [
-    { "connector": "Micro-B", "speed": "3.0", "role": "device" },
-    { "connector": "Type-A", "speed": "3.0", "role": "host", "ports": 2 },
-    { "connector": "Type-A", "speed": "2.0", "role": "host" }
-  ]
+  }
 }

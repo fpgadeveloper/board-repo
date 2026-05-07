@@ -12,6 +12,16 @@
     "part": "10AS066N3F40E2SG",
     "vendor": "altera"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 1024
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 2048
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -32,5 +42,13 @@
   "expansion": {
     "fmc_hpc": 1,
     "fmc_lpc": 1
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag"
+      ]
+    }
+  ]
 }

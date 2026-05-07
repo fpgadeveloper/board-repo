@@ -12,6 +12,20 @@
     "part": "XCZU49DR-2FFVF1760I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 5120,
+      "width_bits": 64,
+      "ecc": true
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 5120,
+      "width_bits": 72,
+      "ecc": true
+    }
+  ],
   "networking": {
     "ethernet": [
       {
@@ -21,12 +35,6 @@
     ],
     "qsfp": 2
   },
-  "expansion": {
-    "fmcp": 1
-  },
-  "storage": {
-    "sata": 1
-  },
   "usb": [
     {
       "connector": "Type-A",
@@ -34,6 +42,12 @@
       "role": "host"
     }
   ],
+  "expansion": {
+    "fmcp": 1
+  },
+  "storage": {
+    "sata": 1
+  },
   "usb_bridge": [
     {
       "connector": "Type-C",

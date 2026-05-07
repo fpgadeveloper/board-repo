@@ -12,6 +12,13 @@
     "part": "XC7S100-2FGGA676C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3L",
+      "size_mb": 512,
+      "width_bits": 16
+    }
+  ],
   "video": {
     "hdmi_out": 1,
     "mipi_dsi": 1,

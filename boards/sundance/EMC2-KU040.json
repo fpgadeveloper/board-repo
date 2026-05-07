@@ -12,6 +12,18 @@
     "part": "XCKU040-1SFVA784I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 1024,
+      "width_bits": 32
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 1024,
+      "width_bits": 32
+    }
+  ],
   "pcie": [
     {
       "type": "PCIe/104",

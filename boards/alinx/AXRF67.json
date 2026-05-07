@@ -12,6 +12,18 @@
     "part": "XCZU67DR-2FFVE1156I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "width_bits": 64
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 2048,
+      "width_bits": 32
+    }
+  ],
   "video": {
     "displayport": 1
   },
@@ -25,9 +37,6 @@
     "sfp": 1,
     "qsfp": 1
   },
-  "storage": {
-    "sata": 1
-  },
   "usb": [
     {
       "connector": "Type-A",
@@ -35,6 +44,9 @@
       "role": "host"
     }
   ],
+  "storage": {
+    "sata": 1
+  },
   "usb_bridge": [
     {
       "connector": "Type-C",

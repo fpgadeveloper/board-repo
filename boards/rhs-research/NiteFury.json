@@ -12,6 +12,13 @@
     "part": "XC7A200T-2FBG484C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 512,
+      "width_bits": 16
+    }
+  ],
   "pcie": [
     {
       "type": "M.2 M-key",

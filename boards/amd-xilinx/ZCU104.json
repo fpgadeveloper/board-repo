@@ -12,6 +12,13 @@
     "part": "XCZU7EV-2FFVC1156E",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 2048,
+      "width_bits": 64
+    }
+  ],
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1,
@@ -25,10 +32,6 @@
       }
     ]
   },
-  "expansion": {
-    "fmc_lpc": 1,
-    "pmod": 3
-  },
   "usb": [
     {
       "connector": "Micro-B",
@@ -36,6 +39,10 @@
       "role": "host"
     }
   ],
+  "expansion": {
+    "fmc_lpc": 1,
+    "pmod": 3
+  },
   "usb_bridge": [
     {
       "connector": "Micro-B",

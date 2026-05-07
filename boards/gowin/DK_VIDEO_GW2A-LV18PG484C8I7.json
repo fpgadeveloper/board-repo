@@ -12,6 +12,12 @@
     "part": "GW2A-LV18PG484C8I7",
     "vendor": "gowin"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 256
+    }
+  ],
   "video": {
     "hdmi_in": 2,
     "hdmi_out": 2,

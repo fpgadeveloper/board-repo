@@ -12,6 +12,13 @@
     "part": "Ti375C529I3",
     "vendor": "efinix"
   },
+  "memory": [
+    {
+      "type": "LPDDR4",
+      "size_mb": 1024,
+      "width_bits": 32
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -32,6 +39,12 @@
     "fmc_hpc": 1
   },
   "usb_bridge": [
-    { "connector": "Type-C", "functions": ["jtag", "uart"] }
+    {
+      "connector": "Type-C",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
   ]
 }

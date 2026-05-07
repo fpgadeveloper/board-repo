@@ -12,6 +12,13 @@
     "part": "LFE5UM-45F-8BG381C",
     "vendor": "lattice"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 128,
+      "width_bits": 16
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

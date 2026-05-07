@@ -12,6 +12,17 @@
     "part": "T120F324C3",
     "vendor": "efinix"
   },
+  "memory": [
+    {
+      "type": "LPDDR4",
+      "size_mb": 2048
+    },
+    {
+      "type": "DDR3L",
+      "size_mb": 1024,
+      "width_bits": 32
+    }
+  ],
   "video": {
     "hdmi_out": 1,
     "displayport": 1,
@@ -26,6 +37,23 @@
       }
     ]
   },
+  "usb": [
+    {
+      "connector": "Type-C",
+      "speed": "3.0",
+      "role": "host"
+    },
+    {
+      "connector": "Type-A",
+      "speed": "2.0",
+      "role": "host"
+    },
+    {
+      "connector": "Type-A",
+      "speed": "3.0",
+      "role": "host"
+    }
+  ],
   "wireless": {
     "wifi": true,
     "bluetooth": true

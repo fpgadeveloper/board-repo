@@ -12,6 +12,18 @@
     "part": "XCZU11EG-2FFVC1156I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "width_bits": 64
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "width_bits": 64
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -30,12 +42,6 @@
       }
     ]
   },
-  "expansion": {
-    "fmc_hpc": 1
-  },
-  "storage": {
-    "sata": 1
-  },
   "usb": [
     {
       "connector": "Type-A",
@@ -43,6 +49,12 @@
       "role": "host"
     }
   ],
+  "expansion": {
+    "fmc_hpc": 1
+  },
+  "storage": {
+    "sata": 1
+  },
   "usb_bridge": [
     {
       "connector": "Mini-B",

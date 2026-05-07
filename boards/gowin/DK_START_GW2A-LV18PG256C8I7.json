@@ -12,6 +12,13 @@
     "part": "GW2A-LV18PG256C8I7",
     "vendor": "gowin"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 256,
+      "width_bits": 16
+    }
+  ],
   "networking": {
     "ethernet": [
       {

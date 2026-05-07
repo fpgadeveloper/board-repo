@@ -12,6 +12,13 @@
     "part": "XC7Z010-1CLG400C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 512,
+      "width_bits": 16
+    }
+  ],
   "video": {
     "hdmi_out": 1
   },
@@ -26,5 +33,14 @@
   "wireless": {
     "wifi": true,
     "bluetooth": true
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ]
 }

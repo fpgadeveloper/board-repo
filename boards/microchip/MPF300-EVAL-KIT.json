@@ -12,6 +12,18 @@
     "part": "MPF300TS-1FCG1152I",
     "vendor": "microchip"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "width_bits": 32
+    },
+    {
+      "type": "DDR3",
+      "size_mb": 2048,
+      "width_bits": 16
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -28,10 +40,25 @@
     ],
     "sfp": 1
   },
+  "usb": [
+    {
+      "connector": "Mini-B",
+      "speed": "2.0",
+      "role": "device"
+    }
+  ],
   "expansion": {
     "fmc_hpc": 1
   },
   "storage": {
     "sata": 1
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "uart"
+      ]
+    }
+  ]
 }

@@ -12,6 +12,13 @@
     "part": "XCZU3EG-2SFVC784E",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "width_bits": 32
+    }
+  ],
   "video": {
     "displayport": 1,
     "mipi_csi": 1

@@ -12,6 +12,21 @@
     "part": "XCV80-2MSELSVA4737",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "HBM2E",
+      "size_mb": 32768
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 4096
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 32768,
+      "form_factor": "dimm"
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

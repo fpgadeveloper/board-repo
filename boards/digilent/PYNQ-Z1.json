@@ -12,6 +12,13 @@
     "part": "XC7Z020-1CLG400C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 512,
+      "width_bits": 16
+    }
+  ],
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1
@@ -24,10 +31,6 @@
       }
     ]
   },
-  "expansion": {
-    "pmod": 2,
-    "arduino": 1
-  },
   "usb": [
     {
       "connector": "Micro-B",
@@ -35,6 +38,10 @@
       "role": "host"
     }
   ],
+  "expansion": {
+    "pmod": 2,
+    "arduino": 1
+  },
   "usb_bridge": [
     {
       "connector": "Micro-B",

@@ -12,6 +12,13 @@
     "part": "MPFS250T-FCVG484E",
     "vendor": "microchip"
   },
+  "memory": [
+    {
+      "type": "LPDDR4",
+      "size_mb": 2048,
+      "width_bits": 32
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

@@ -12,6 +12,13 @@
     "part": "XCZU7EV-2FFVC1156I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "width_bits": 64
+    }
+  ],
   "pcie": [
     {
       "type": "M.2 M-key",
@@ -31,7 +38,22 @@
     ],
     "qsfp": 1
   },
+  "usb": [
+    {
+      "connector": "Type-C",
+      "speed": "3.0",
+      "role": "device"
+    }
+  ],
   "expansion": {
     "fmc_hpc": 4
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Type-C",
+      "functions": [
+        "uart"
+      ]
+    }
+  ]
 }

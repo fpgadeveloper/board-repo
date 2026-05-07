@@ -11,5 +11,12 @@
   "device": {
     "part": "XC7A75T-1FGG484C",
     "vendor": "amd-xilinx"
-  }
+  },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 512,
+      "width_bits": 16
+    }
+  ]
 }

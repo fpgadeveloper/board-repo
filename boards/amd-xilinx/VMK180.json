@@ -12,6 +12,17 @@
     "part": "XCVM1802-2MSEVSVA2197",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "form_factor": "dimm"
+    },
+    {
+      "type": "LPDDR4",
+      "size_mb": 8192
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

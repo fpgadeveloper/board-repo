@@ -23,15 +23,23 @@
       }
     ]
   },
-  "expansion": {
-    "arduino": 1
-  },
   "usb": [
     {
       "connector": "Type-A",
       "speed": "2.0",
       "role": "host",
       "ports": 2
+    }
+  ],
+  "expansion": {
+    "arduino": 1
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag"
+      ]
     }
   ]
 }

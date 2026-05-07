@@ -12,6 +12,12 @@
     "part": "XC7Z030-3FBG676E",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024
+    }
+  ],
   "networking": {
     "sfp": 3
   }

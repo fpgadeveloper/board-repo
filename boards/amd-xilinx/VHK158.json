@@ -12,6 +12,19 @@
     "part": "XCVH1582-2MSEVSVA3697",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "HBM2E",
+      "size_mb": 32768
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 32768,
+      "form_factor": "dimm",
+      "width_bits": 72,
+      "ecc": true
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -30,5 +43,13 @@
   },
   "expansion": {
     "fmcp": 1
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag"
+      ]
+    }
+  ]
 }

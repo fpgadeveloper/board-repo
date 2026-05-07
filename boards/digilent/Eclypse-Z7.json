@@ -12,6 +12,13 @@
     "part": "XC7Z020-1CLG484C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3L",
+      "size_mb": 1024,
+      "width_bits": 32
+    }
+  ],
   "networking": {
     "ethernet": [
       {
@@ -20,10 +27,6 @@
       }
     ]
   },
-  "expansion": {
-    "pmod": 2,
-    "syzygy": 2
-  },
   "usb": [
     {
       "connector": "Micro-B",
@@ -31,6 +34,10 @@
       "role": "otg"
     }
   ],
+  "expansion": {
+    "pmod": 2,
+    "syzygy": 2
+  },
   "usb_bridge": [
     {
       "connector": "Micro-B",

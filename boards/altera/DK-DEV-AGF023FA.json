@@ -12,6 +12,15 @@
     "part": "AGFD023R24C2E1VC",
     "vendor": "altera"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 1024,
+      "form_factor": "dimm",
+      "width_bits": 72,
+      "ecc": true
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -23,6 +32,11 @@
     "qsfp": 2
   },
   "usb_bridge": [
-    { "connector": "Micro-B", "functions": ["jtag"] }
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag"
+      ]
+    }
   ]
 }

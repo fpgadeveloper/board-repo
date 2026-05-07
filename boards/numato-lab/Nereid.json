@@ -12,6 +12,13 @@
     "part": "XC7K160T-1FBG676C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3L",
+      "size_mb": 4096,
+      "form_factor": "sodimm"
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -21,5 +28,13 @@
   ],
   "expansion": {
     "fmc_hpc": 1
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "uart"
+      ]
+    }
+  ]
 }

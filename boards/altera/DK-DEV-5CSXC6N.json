@@ -12,6 +12,18 @@
     "part": "5CSXFC6D6F31C6N",
     "vendor": "altera"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024,
+      "ecc": true
+    },
+    {
+      "type": "DDR3",
+      "size_mb": 1024,
+      "ecc": true
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

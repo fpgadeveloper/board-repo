@@ -12,6 +12,13 @@
     "part": "XCK26-2LVSFVC784C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "width_bits": 64
+    }
+  ],
   "video": {
     "displayport": 1
   },
@@ -24,14 +31,24 @@
     ],
     "sfp": 1
   },
+  "usb": [
+    {
+      "connector": "Type-A",
+      "speed": "3.0",
+      "role": "host",
+      "ports": 4
+    }
+  ],
   "expansion": {
     "pmod": 4,
     "raspberry_pi": 1
   },
-  "usb": [
-    { "connector": "Type-A", "speed": "3.0", "role": "host", "ports": 4 }
-  ],
   "usb_bridge": [
-    { "connector": "Micro-B", "functions": ["uart"] }
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "uart"
+      ]
+    }
   ]
 }

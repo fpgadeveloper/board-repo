@@ -29,5 +29,13 @@
       "speed": "2.0",
       "role": "host"
     }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag"
+      ]
+    }
   ]
 }

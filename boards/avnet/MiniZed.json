@@ -9,6 +9,12 @@
     "part": "XC7Z007S-1CLG225C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3L",
+      "size_mb": 512
+    }
+  ],
   "expansion": {
     "pmod": 2,
     "arduino": 1
@@ -16,5 +22,13 @@
   "wireless": {
     "wifi": true,
     "bluetooth": true
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag"
+      ]
+    }
+  ]
 }

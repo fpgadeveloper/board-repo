@@ -11,5 +11,20 @@
   "device": {
     "part": "XC7S50-1CSGA324C",
     "vendor": "amd-xilinx"
-  }
+  },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 256
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ]
 }

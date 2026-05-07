@@ -12,6 +12,13 @@
     "part": "XC7S25-1CSGA324C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3L",
+      "size_mb": 256,
+      "width_bits": 16
+    }
+  ],
   "expansion": {
     "pmod": 4,
     "arduino": 1

@@ -12,10 +12,37 @@
     "part": "AGIC040R39A1E1VC",
     "vendor": "altera"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 16384,
+      "form_factor": "dimm",
+      "width_bits": 72,
+      "ecc": true
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 16384,
+      "width_bits": 72,
+      "ecc": true
+    }
+  ],
   "networking": {
     "qsfp": 6
   },
+  "usb": [
+    {
+      "connector": "Type-B",
+      "speed": "2.0",
+      "role": "device"
+    }
+  ],
   "usb_bridge": [
-    { "connector": "Type-B", "functions": ["jtag"] }
+    {
+      "connector": "Type-B",
+      "functions": [
+        "jtag"
+      ]
+    }
   ]
 }

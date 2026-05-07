@@ -18,5 +18,14 @@
   "wireless": {
     "wifi": true,
     "bluetooth": true
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ]
 }

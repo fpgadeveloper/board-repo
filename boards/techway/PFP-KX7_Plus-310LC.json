@@ -12,6 +12,16 @@
     "part": "XC7K325T-1FBG676C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 512
+    },
+    {
+      "type": "DDR3",
+      "size_mb": 512
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

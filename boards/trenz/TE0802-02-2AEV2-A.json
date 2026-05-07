@@ -12,6 +12,12 @@
     "part": "XCZU2CG-1SBVA484E",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "LPDDR4",
+      "size_mb": 1024
+    }
+  ],
   "video": {
     "displayport": 1
   },
@@ -25,5 +31,19 @@
   },
   "expansion": {
     "pmod": 2
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Type-A",
+      "functions": [
+        "jtag"
+      ]
+    },
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag"
+      ]
+    }
+  ]
 }

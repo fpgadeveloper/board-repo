@@ -5,7 +5,7 @@
   "url": "https://www.trenz-electronic.de/en/Altera-Cyclone-10-LP-RefKit-10CL055-I7-Dev.-Board-32-MB-SDRAM-16-MB-Flash/TEI0009-03-PHIQ2A",
   "vendor": "trenz",
   "price": {
-    "value": 215.50,
+    "value": 215.5,
     "currency": "USD"
   },
   "device": {
@@ -23,5 +23,13 @@
   "expansion": {
     "pmod": 6,
     "arduino": 1
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag"
+      ]
+    }
+  ]
 }

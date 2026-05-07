@@ -11,5 +11,12 @@
   "device": {
     "part": "XCZU3EG-1SBVA625I",
     "vendor": "amd-xilinx"
-  }
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 2048,
+      "width_bits": 32
+    }
+  ]
 }

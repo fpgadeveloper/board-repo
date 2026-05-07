@@ -12,6 +12,13 @@
     "part": "LAV-AT-E70-2LFG1156C",
     "vendor": "lattice"
   },
+  "memory": [
+    {
+      "type": "LPDDR4",
+      "size_mb": 2048,
+      "width_bits": 32
+    }
+  ],
   "expansion": {
     "fmc_hpc": 1,
     "pmod": 3,

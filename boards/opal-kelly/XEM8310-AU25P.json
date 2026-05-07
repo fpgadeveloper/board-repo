@@ -12,6 +12,13 @@
     "part": "XCAU25P-2FFVB676E",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 2048,
+      "width_bits": 32
+    }
+  ],
   "usb": [
     {
       "connector": "Type-C",

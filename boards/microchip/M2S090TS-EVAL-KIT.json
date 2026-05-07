@@ -27,7 +27,22 @@
       }
     ]
   },
+  "usb": [
+    {
+      "connector": "Mini-B",
+      "speed": "2.0",
+      "role": "device"
+    }
+  ],
   "expansion": {
     "fmc_hpc": 1
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "uart"
+      ]
+    }
+  ]
 }

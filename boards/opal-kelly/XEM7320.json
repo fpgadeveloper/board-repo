@@ -12,15 +12,21 @@
     "part": "XC7A75T-1FGG484C",
     "vendor": "amd-xilinx"
   },
-  "expansion": {
-    "syzygy": 2,
-    "syzygy_trx": 1
-  },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024
+    }
+  ],
   "usb": [
     {
       "connector": "Type-C",
       "speed": "3.0",
       "role": "device"
     }
-  ]
+  ],
+  "expansion": {
+    "syzygy": 2,
+    "syzygy_trx": 1
+  }
 }

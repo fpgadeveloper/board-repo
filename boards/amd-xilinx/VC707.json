@@ -12,6 +12,13 @@
     "part": "XC7VX485T-2FFG1761C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024,
+      "form_factor": "sodimm"
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -31,9 +38,6 @@
     ],
     "sfp": 1
   },
-  "expansion": {
-    "fmc_hpc": 2
-  },
   "usb": [
     {
       "connector": "Mini-B",
@@ -41,6 +45,9 @@
       "role": "otg"
     }
   ],
+  "expansion": {
+    "fmc_hpc": 2
+  },
   "usb_bridge": [
     {
       "connector": "Micro-B",

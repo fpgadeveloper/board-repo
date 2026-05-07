@@ -11,5 +11,12 @@
   "device": {
     "part": "XC7Z015-1CLG485I",
     "vendor": "amd-xilinx"
-  }
+  },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024,
+      "width_bits": 32
+    }
+  ]
 }

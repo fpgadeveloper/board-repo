@@ -12,6 +12,12 @@
     "part": "XC7S50-1CSGA324C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 512
+    }
+  ],
   "usb": [
     {
       "connector": "Type-C",

@@ -12,6 +12,13 @@
     "part": "XC7Z010-1CLG400I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024,
+      "width_bits": 32
+    }
+  ],
   "video": {
     "hdmi_out": 1
   },

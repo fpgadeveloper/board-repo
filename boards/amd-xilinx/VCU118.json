@@ -12,6 +12,18 @@
     "part": "XCVU9P-L2FLGA2104E",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 2560,
+      "ecc": true
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 2560,
+      "ecc": true
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

@@ -12,6 +12,12 @@
     "part": "XCVU13P-2FHGB2104I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 20480
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -22,9 +28,6 @@
   "networking": {
     "qsfp": 4
   },
-  "expansion": {
-    "fmcp": 2
-  },
   "usb": [
     {
       "connector": "Type-A",
@@ -32,6 +35,9 @@
       "role": "host"
     }
   ],
+  "expansion": {
+    "fmcp": 2
+  },
   "usb_bridge": [
     {
       "connector": "Type-C",

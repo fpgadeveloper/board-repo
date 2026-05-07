@@ -12,6 +12,13 @@
     "part": "XCKU040-2FFVA1156I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "width_bits": 64
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

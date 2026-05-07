@@ -12,14 +12,21 @@
     "part": "XC7K160T-1FBG676C",
     "vendor": "amd-xilinx"
   },
-  "expansion": {
-    "fmc_hpc": 1
-  },
+  "memory": [
+    {
+      "type": "DDR3L",
+      "size_mb": 4096,
+      "form_factor": "sodimm"
+    }
+  ],
   "usb": [
     {
       "connector": "Type-C",
       "speed": "3.1",
       "role": "device"
     }
-  ]
+  ],
+  "expansion": {
+    "fmc_hpc": 1
+  }
 }

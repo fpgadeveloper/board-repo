@@ -12,6 +12,12 @@
     "part": "XC7A50T-1FGG484C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 256
+    }
+  ],
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1,

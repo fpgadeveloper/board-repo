@@ -11,5 +11,11 @@
   "device": {
     "part": "5CEFA4F23C8N",
     "vendor": "altera"
-  }
+  },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 512
+    }
+  ]
 }

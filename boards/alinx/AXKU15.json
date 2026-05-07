@@ -12,6 +12,12 @@
     "part": "XCKU15P-2FFVE1517I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 5120
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

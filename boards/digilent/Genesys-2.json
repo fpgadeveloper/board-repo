@@ -12,6 +12,13 @@
     "part": "XC7K325T-2FFG900C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024,
+      "width_bits": 32
+    }
+  ],
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1,
@@ -25,10 +32,6 @@
       }
     ]
   },
-  "expansion": {
-    "fmc_hpc": 1,
-    "pmod": 5
-  },
   "usb": [
     {
       "connector": "Micro-B",
@@ -41,6 +44,10 @@
       "role": "host"
     }
   ],
+  "expansion": {
+    "fmc_hpc": 1,
+    "pmod": 5
+  },
   "usb_bridge": [
     {
       "connector": "Micro-B",

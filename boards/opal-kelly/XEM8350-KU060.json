@@ -11,5 +11,20 @@
   "device": {
     "part": "XCKU060-1FFVA1517C",
     "vendor": "amd-xilinx"
-  }
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "width_bits": 72,
+      "ecc": true
+    }
+  ],
+  "usb": [
+    {
+      "connector": "Type-C",
+      "speed": "3.0",
+      "role": "device"
+    }
+  ]
 }

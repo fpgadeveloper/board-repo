@@ -51,6 +51,15 @@
           "title": "Device",
           "$ref": "#/$defs/device"
         },
+        "memory": {
+          "type": "array",
+          "title": "Memory",
+          "description": "On-board DRAM. List one entry per distinct memory bank (e.g. soldered DDR4 + a SODIMM slot is two entries).",
+          "items": {
+            "$ref": "#/$defs/memory_interface"
+          },
+          "minItems": 1
+        },
         "pcie": {
           "type": "array",
           "title": "PCIe",
@@ -110,6 +119,15 @@
           },
           "minItems": 1
         },
+        "usb_bridge": {
+          "type": "array",
+          "title": "USB UART/JTAG",
+          "description": "USB-to-UART/JTAG bridge ports for board configuration and serial console (e.g. FT2232, CP2102, USB-Blaster). Not connected to the FPGA fabric.",
+          "items": {
+            "$ref": "#/$defs/usb_bridge_interface"
+          },
+          "minItems": 1
+        },
         "expansion": {
           "type": "object",
           "title": "Expansion",
@@ -149,15 +167,6 @@
             "bluetooth": { "type": "boolean", "title": "Bluetooth" }
           },
           "minProperties": 1
-        },
-        "usb_bridge": {
-          "type": "array",
-          "title": "USB UART/JTAG",
-          "description": "USB-to-UART/JTAG bridge ports for board configuration and serial console (e.g. FT2232, CP2102, USB-Blaster). Not connected to the FPGA fabric.",
-          "items": {
-            "$ref": "#/$defs/usb_bridge_interface"
-          },
-          "minItems": 1
         }
       }
     },
@@ -276,6 +285,37 @@
           "type": "integer",
           "minimum": 1,
           "description": "Number of physical ports of this kind. Defaults to 1 if omitted."
+        }
+      }
+    },
+    "memory_interface": {
+      "type": "object",
+      "required": ["type", "size_mb"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["DDR2", "DDR3", "DDR3L", "DDR4", "DDR5", "LPDDR2", "LPDDR3", "LPDDR4", "LPDDR4X", "LPDDR5", "HBM2", "HBM2E", "HBM3", "QDR-II+", "QDR-IV"],
+          "description": "DRAM family. HBM variants are on-package, not strictly DDR — listed here because they fill the same role in spec sheets."
+        },
+        "size_mb": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Total capacity of this bank in megabytes. 4 GB → 4096."
+        },
+        "form_factor": {
+          "type": "string",
+          "enum": ["component", "sodimm", "dimm", "udimm", "rdimm", "lrdimm"],
+          "description": "Physical form. 'component' = soldered DRAM (default). Slot-based = sodimm / dimm / etc."
+        },
+        "width_bits": {
+          "type": "integer",
+          "enum": [16, 32, 64, 72, 128, 256],
+          "description": "Data bus width. 72 typically implies ECC."
+        },
+        "ecc": {
+          "type": "boolean",
+          "description": "True when this bank has ECC (error-correcting) support."
         }
       }
     }

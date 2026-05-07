@@ -12,6 +12,18 @@
     "part": "A5ED013BM16AE4SCS",
     "vendor": "altera"
   },
+  "memory": [
+    {
+      "type": "LPDDR4",
+      "size_mb": 2048,
+      "width_bits": 32
+    },
+    {
+      "type": "LPDDR4",
+      "size_mb": 2048,
+      "width_bits": 32
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -27,15 +39,29 @@
       }
     ]
   },
+  "usb": [
+    {
+      "connector": "Type-C",
+      "speed": "2.0",
+      "role": "otg"
+    }
+  ],
   "expansion": {
     "fmc_lpc": 1,
     "pmod": 1
   },
-  "usb": [
-    { "connector": "Type-C", "speed": "2.0", "role": "otg" }
-  ],
   "usb_bridge": [
-    { "connector": "Type-C", "functions": ["jtag"] },
-    { "connector": "Micro-B", "functions": ["uart"] }
+    {
+      "connector": "Type-C",
+      "functions": [
+        "jtag"
+      ]
+    },
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "uart"
+      ]
+    }
   ]
 }

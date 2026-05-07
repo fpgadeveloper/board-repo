@@ -12,6 +12,12 @@
     "part": "GW2A-LV55PG484C8I7",
     "vendor": "gowin"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 256
+    }
+  ],
   "video": {
     "mipi_csi": 1,
     "mipi_dsi": 1

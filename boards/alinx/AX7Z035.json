@@ -12,6 +12,18 @@
     "part": "XC7Z035-2FFG676I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024,
+      "width_bits": 32
+    },
+    {
+      "type": "DDR3",
+      "size_mb": 1024,
+      "width_bits": 32
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

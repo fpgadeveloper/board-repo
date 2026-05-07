@@ -12,6 +12,12 @@
     "part": "XC7Z010-1CLG400C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 512
+    }
+  ],
   "networking": {
     "ethernet": [
       {
@@ -20,10 +26,6 @@
       }
     ]
   },
-  "expansion": {
-    "pmod": 2,
-    "arduino": 1
-  },
   "usb": [
     {
       "connector": "Micro-B",
@@ -31,6 +33,10 @@
       "role": "host"
     }
   ],
+  "expansion": {
+    "pmod": 2,
+    "arduino": 1
+  },
   "usb_bridge": [
     {
       "connector": "Micro-B",

@@ -12,6 +12,13 @@
     "part": "XC7A100T-1CSG324I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3L",
+      "size_mb": 512,
+      "width_bits": 16
+    }
+  ],
   "expansion": {
     "pmod": 3,
     "syzygy": 1

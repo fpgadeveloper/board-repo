@@ -12,6 +12,12 @@
     "part": "EP4CE15F23C8N",
     "vendor": "altera"
   },
+  "memory": [
+    {
+      "type": "DDR2",
+      "size_mb": 128
+    }
+  ],
   "networking": {
     "ethernet": [
       {

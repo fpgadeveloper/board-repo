@@ -12,6 +12,12 @@
     "part": "XCVE2302-1LSESFVA784",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 8192
+    }
+  ],
   "video": {
     "mipi_csi": 1
   },
@@ -26,5 +32,13 @@
   },
   "expansion": {
     "fmc_lpc": 1
-  }
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag"
+      ]
+    }
+  ]
 }
