@@ -19,6 +19,12 @@
       "width_bits": 16
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    }
+  ],
   "expansion": {
     "pmod": 3,
     "syzygy": 1

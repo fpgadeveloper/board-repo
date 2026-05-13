@@ -18,6 +18,9 @@
   "expansion": {
     "pmod": 4
   },
+  "storage": {
+    "microsd": 1
+  },
   "wireless": {
     "wifi": true,
     "bluetooth": true

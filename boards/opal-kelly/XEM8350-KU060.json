@@ -20,6 +20,20 @@
       "ecc": true
     }
   ],
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 16
+    },
+    {
+      "type": "SPI",
+      "size_mb": 16
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ],
   "usb": [
     {
       "connector": "Type-C",

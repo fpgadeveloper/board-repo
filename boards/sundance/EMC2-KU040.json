@@ -24,6 +24,12 @@
       "width_bits": 32
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 64
+    }
+  ],
   "pcie": [
     {
       "type": "PCIe/104",

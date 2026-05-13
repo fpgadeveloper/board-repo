@@ -24,6 +24,16 @@
       "width_bits": 64
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    }
+  ],
   "video": {
     "displayport": 1
   },
@@ -50,5 +60,8 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "storage": {
+    "microsd": 1
+  }
 }

@@ -12,6 +12,12 @@
     "part": "XC7S15-1FTGB196C",
     "vendor": "amd-xilinx"
   },
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 8
+    }
+  ],
   "wireless": {
     "wifi": true,
     "bluetooth": true

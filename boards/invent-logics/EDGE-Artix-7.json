@@ -12,6 +12,12 @@
     "part": "XC7A35T-1FTG256C",
     "vendor": "amd-xilinx"
   },
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 8
+    }
+  ],
   "video": {
     "hdmi_out": 1
   },
@@ -27,5 +33,8 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "storage": {
+    "microsd": 1
+  }
 }

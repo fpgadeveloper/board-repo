@@ -41,5 +41,8 @@
   "expansion": {
     "fmcp": 1,
     "pmod": 1
+  },
+  "storage": {
+    "microsd": 1
   }
 }

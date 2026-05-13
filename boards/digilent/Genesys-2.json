@@ -48,6 +48,9 @@
     "fmc_hpc": 1,
     "pmod": 5
   },
+  "storage": {
+    "microsd": 1
+  },
   "usb_bridge": [
     {
       "connector": "Micro-B",

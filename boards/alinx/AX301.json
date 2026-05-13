@@ -12,6 +12,12 @@
     "part": "EP4CE6F17C8N",
     "vendor": "altera"
   },
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 2
+    }
+  ],
   "usb_bridge": [
     {
       "connector": "Mini-B",
@@ -19,5 +25,8 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "storage": {
+    "microsd": 1
+  }
 }

@@ -12,6 +12,12 @@
     "part": "M2GL010T-FGG484",
     "vendor": "microchip"
   },
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 8
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

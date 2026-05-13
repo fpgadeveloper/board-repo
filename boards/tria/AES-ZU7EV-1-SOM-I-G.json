@@ -23,5 +23,19 @@
       "size_mb": 1024,
       "width_bits": 16
     }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    }
   ]
 }

@@ -24,6 +24,13 @@
       "form_factor": "sodimm"
     }
   ],
+  "flash": [
+    {
+      "type": "BPI",
+      "size_mb": 128,
+      "width_bits": 16
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

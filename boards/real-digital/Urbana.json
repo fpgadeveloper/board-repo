@@ -18,5 +18,14 @@
       "size_mb": 128,
       "width_bits": 16
     }
-  ]
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    }
+  ],
+  "storage": {
+    "microsd": 1
+  }
 }

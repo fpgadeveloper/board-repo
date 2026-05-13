@@ -12,6 +12,12 @@
     "part": "LFE5UM5G-85F-8BG381C",
     "vendor": "lattice"
   },
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 16
+    }
+  ],
   "expansion": {
     "pmod": 3,
     "arduino": 1,

@@ -18,11 +18,20 @@
       "size_mb": 512
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    }
+  ],
   "video": {
     "hdmi_out": 1
   },
   "expansion": {
     "pmod": 3
+  },
+  "storage": {
+    "sd": 1
   },
   "wireless": {
     "wifi": true,

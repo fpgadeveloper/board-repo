@@ -38,6 +38,9 @@
     "raspberry_pi": 1,
     "syzygy": 2
   },
+  "storage": {
+    "microsd": 1
+  },
   "wireless": {
     "wifi": true,
     "bluetooth": true

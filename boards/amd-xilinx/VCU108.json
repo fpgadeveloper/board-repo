@@ -24,6 +24,13 @@
       "ecc": true
     }
   ],
+  "flash": [
+    {
+      "type": "BPI",
+      "size_mb": 128,
+      "width_bits": 16
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -47,6 +54,9 @@
   "expansion": {
     "fmc_hpc": 2,
     "pmod": 1
+  },
+  "storage": {
+    "microsd": 1
   },
   "usb_bridge": [
     {

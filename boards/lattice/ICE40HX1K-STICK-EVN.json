@@ -12,6 +12,12 @@
     "part": "ICE40HX1K-TQ144",
     "vendor": "lattice"
   },
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 4
+    }
+  ],
   "expansion": {
     "pmod": 1
   },

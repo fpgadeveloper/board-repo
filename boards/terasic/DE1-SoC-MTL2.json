@@ -35,5 +35,8 @@
         "jtag"
       ]
     }
-  ]
+  ],
+  "storage": {
+    "microsd": 1
+  }
 }

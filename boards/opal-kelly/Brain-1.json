@@ -29,5 +29,8 @@
   "expansion": {
     "syzygy": 3,
     "syzygy_trx": 1
+  },
+  "storage": {
+    "microsd": 1
   }
 }

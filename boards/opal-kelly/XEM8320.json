@@ -19,6 +19,16 @@
       "width_bits": 16
     }
   ],
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 16
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ],
   "networking": {
     "sfp": 2
   },

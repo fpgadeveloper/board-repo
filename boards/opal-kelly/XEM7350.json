@@ -18,6 +18,16 @@
       "size_mb": 512
     }
   ],
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 16
+    },
+    {
+      "type": "SPI",
+      "size_mb": 16
+    }
+  ],
   "expansion": {
     "fmc_hpc": 1
   }

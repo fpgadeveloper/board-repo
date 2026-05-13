@@ -21,6 +21,16 @@
       "ecc": true
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 256
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 256
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -38,5 +48,8 @@
         "jtag"
       ]
     }
-  ]
+  ],
+  "storage": {
+    "microsd": 1
+  }
 }

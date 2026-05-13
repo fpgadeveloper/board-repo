@@ -21,6 +21,16 @@
       "ecc": true
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

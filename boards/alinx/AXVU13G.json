@@ -18,6 +18,16 @@
       "size_mb": 20480
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -37,6 +47,9 @@
   "expansion": {
     "fmcp": 1,
     "fmc_hpc": 1
+  },
+  "storage": {
+    "microsd": 1
   },
   "usb_bridge": [
     {

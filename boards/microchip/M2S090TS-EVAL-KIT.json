@@ -12,6 +12,12 @@
     "part": "M2S090TS-FG484",
     "vendor": "microchip"
   },
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 8
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

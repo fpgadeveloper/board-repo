@@ -12,6 +12,12 @@
     "part": "10CL055YU484I7G",
     "vendor": "altera"
   },
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 16
+    }
+  ],
   "networking": {
     "ethernet": [
       {

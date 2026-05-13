@@ -19,6 +19,20 @@
       "width_bits": 32
     }
   ],
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 64
+    },
+    {
+      "type": "SPI",
+      "size_mb": 64
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -37,6 +51,9 @@
   },
   "expansion": {
     "fmc_hpc": 2
+  },
+  "storage": {
+    "microsd": 1
   },
   "usb_bridge": [
     {

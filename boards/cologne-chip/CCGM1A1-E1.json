@@ -12,6 +12,12 @@
     "part": "CCGM1A1-BGA324",
     "vendor": "cologne-chip"
   },
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 8
+    }
+  ],
   "expansion": {
     "pmod": 2
   },

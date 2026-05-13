@@ -24,6 +24,16 @@
       "form_factor": "sodimm"
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -53,6 +63,9 @@
   "expansion": {
     "fmc_hpc": 1,
     "fmc_lpc": 1
+  },
+  "storage": {
+    "sd": 1
   },
   "usb_bridge": [
     {

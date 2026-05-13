@@ -18,6 +18,12 @@
       "size_mb": 256
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    }
+  ],
   "usb_bridge": [
     {
       "connector": "Micro-B",

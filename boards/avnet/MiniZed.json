@@ -15,6 +15,16 @@
       "size_mb": 512
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    }
+  ],
   "expansion": {
     "pmod": 2,
     "arduino": 1

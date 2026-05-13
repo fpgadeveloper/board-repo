@@ -18,6 +18,12 @@
       "size_mb": 256
     }
   ],
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 16
+    }
+  ],
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1,
@@ -39,5 +45,8 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "storage": {
+    "microsd": 1
+  }
 }

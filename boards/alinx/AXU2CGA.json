@@ -19,6 +19,12 @@
       "width_bits": 32
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ],
   "pcie": [
     {
       "type": "Slot",
@@ -52,5 +58,8 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "storage": {
+    "microsd": 1
+  }
 }

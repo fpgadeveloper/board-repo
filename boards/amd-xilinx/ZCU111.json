@@ -25,6 +25,16 @@
       "width_bits": 64
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 256
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 256
+    }
+  ],
   "video": {
     "displayport": 1
   },
@@ -47,6 +57,9 @@
   "expansion": {
     "fmcp": 1,
     "rfmc": 2
+  },
+  "storage": {
+    "microsd": 1
   },
   "usb_bridge": [
     {

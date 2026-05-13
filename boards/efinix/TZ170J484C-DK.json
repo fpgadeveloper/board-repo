@@ -19,8 +19,21 @@
       "width_bits": 32
     }
   ],
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 32
+    },
+    {
+      "type": "SPI",
+      "size_mb": 32
+    }
+  ],
   "expansion": {
     "fmc_lpc": 1
+  },
+  "storage": {
+    "microsd": 1
   },
   "usb_bridge": [
     {

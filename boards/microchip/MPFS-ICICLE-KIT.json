@@ -19,6 +19,16 @@
       "width_bits": 32
     }
   ],
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 128
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -36,5 +46,8 @@
   },
   "expansion": {
     "raspberry_pi": 1
+  },
+  "storage": {
+    "sd": 1
   }
 }

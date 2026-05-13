@@ -12,6 +12,12 @@
     "part": "10CL025YU256C8G",
     "vendor": "altera"
   },
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    }
+  ],
   "networking": {
     "ethernet": [
       {

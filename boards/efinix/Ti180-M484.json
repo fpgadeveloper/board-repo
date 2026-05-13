@@ -19,6 +19,16 @@
       "width_bits": 16
     }
   ],
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 32
+    },
+    {
+      "type": "SPI",
+      "size_mb": 32
+    }
+  ],
   "video": {
     "hdmi_out": 1,
     "mipi_csi": 1
@@ -33,6 +43,9 @@
   },
   "expansion": {
     "fmc_lpc": 1
+  },
+  "storage": {
+    "microsd": 1
   },
   "usb_bridge": [
     {

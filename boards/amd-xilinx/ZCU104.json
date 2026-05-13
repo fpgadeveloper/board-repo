@@ -19,6 +19,12 @@
       "width_bits": 64
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 64
+    }
+  ],
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1,
@@ -42,6 +48,9 @@
   "expansion": {
     "fmc_lpc": 1,
     "pmod": 3
+  },
+  "storage": {
+    "microsd": 1
   },
   "usb_bridge": [
     {

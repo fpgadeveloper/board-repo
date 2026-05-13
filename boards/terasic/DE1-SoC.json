@@ -34,6 +34,9 @@
   "expansion": {
     "arduino": 1
   },
+  "storage": {
+    "microsd": 1
+  },
   "usb_bridge": [
     {
       "connector": "Micro-B",

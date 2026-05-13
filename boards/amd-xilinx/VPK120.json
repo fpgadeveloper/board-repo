@@ -38,7 +38,8 @@
     "fmcp": 1
   },
   "storage": {
-    "sata": 1
+    "sata": 1,
+    "microsd": 1
   },
   "usb_bridge": [
     {

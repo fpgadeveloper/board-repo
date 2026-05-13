@@ -12,6 +12,12 @@
     "part": "XC7S50-1CSGA324C",
     "vendor": "amd-xilinx"
   },
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    }
+  ],
   "video": {
     "hdmi_out": 1
   },

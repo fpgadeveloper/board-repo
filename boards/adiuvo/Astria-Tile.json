@@ -12,6 +12,12 @@
     "part": "XC7S25-1CSGA225C",
     "vendor": "amd-xilinx"
   },
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ],
   "usb_bridge": [
     {
       "connector": "Micro-B",

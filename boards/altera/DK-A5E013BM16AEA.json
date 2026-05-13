@@ -50,6 +50,9 @@
     "fmc_lpc": 1,
     "pmod": 1
   },
+  "storage": {
+    "microsd": 1
+  },
   "usb_bridge": [
     {
       "connector": "Type-C",

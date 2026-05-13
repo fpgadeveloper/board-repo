@@ -57,5 +57,8 @@
   "wireless": {
     "wifi": true,
     "bluetooth": true
+  },
+  "storage": {
+    "microsd": 1
   }
 }

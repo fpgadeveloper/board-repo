@@ -18,6 +18,12 @@
       "size_mb": 1024
     }
   ],
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 32
+    }
+  ],
   "video": {
     "displayport": 1
   },
@@ -31,6 +37,9 @@
   },
   "expansion": {
     "pmod": 2
+  },
+  "storage": {
+    "microsd": 1
   },
   "usb_bridge": [
     {

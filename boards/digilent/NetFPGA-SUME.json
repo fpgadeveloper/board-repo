@@ -36,6 +36,7 @@
     "pmod": 1
   },
   "storage": {
-    "sata": 2
+    "sata": 2,
+    "microsd": 1
   }
 }

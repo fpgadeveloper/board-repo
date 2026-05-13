@@ -38,5 +38,8 @@
     "fmcp": 1,
     "rfmc": 2,
     "pmod": 2
+  },
+  "storage": {
+    "microsd": 1
   }
 }

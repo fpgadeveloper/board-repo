@@ -18,6 +18,12 @@
       "size_mb": 128
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    }
+  ],
   "networking": {
     "ethernet": [
       {
@@ -33,5 +39,8 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "storage": {
+    "microsd": 1
+  }
 }

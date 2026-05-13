@@ -19,6 +19,16 @@
       "width_bits": 64
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -42,6 +52,9 @@
     "fmc_hpc": 1,
     "fmc_lpc": 1,
     "pmod": 2
+  },
+  "storage": {
+    "microsd": 1
   },
   "usb_bridge": [
     {

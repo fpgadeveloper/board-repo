@@ -19,6 +19,12 @@
       "form_factor": "sodimm"
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

@@ -12,6 +12,12 @@
     "part": "LFCPNX-100-9LFG672C",
     "vendor": "lattice"
   },
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 16
+    }
+  ],
   "expansion": {
     "fmc_hpc": 1,
     "pmod": 3,

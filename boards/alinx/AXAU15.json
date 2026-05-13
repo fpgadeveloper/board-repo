@@ -19,6 +19,12 @@
       "width_bits": 16
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ],
   "pcie": [
     {
       "type": "Slot",
@@ -36,6 +42,9 @@
   },
   "expansion": {
     "fmc_hpc": 1
+  },
+  "storage": {
+    "microsd": 1
   },
   "usb_bridge": [
     {

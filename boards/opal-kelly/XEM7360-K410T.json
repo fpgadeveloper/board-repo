@@ -18,5 +18,15 @@
       "size_mb": 2048,
       "width_bits": 32
     }
+  ],
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 16
+    },
+    {
+      "type": "SPI",
+      "size_mb": 16
+    }
   ]
 }

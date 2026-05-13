@@ -18,6 +18,12 @@
       "size_mb": 1024
     }
   ],
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 64
+    }
+  ],
   "pcie": [
     {
       "type": "PCIe/104",

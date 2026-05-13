@@ -19,6 +19,12 @@
       "width_bits": 16
     }
   ],
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 16
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

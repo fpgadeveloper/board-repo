@@ -12,6 +12,12 @@
     "part": "MPF300T-1FCG484E",
     "vendor": "microchip"
   },
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 128
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

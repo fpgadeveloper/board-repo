@@ -19,6 +19,12 @@
       "width_bits": 16
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    }
+  ],
   "video": {
     "hdmi_out": 1,
     "mipi_dsi": 1,

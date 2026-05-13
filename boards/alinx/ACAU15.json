@@ -19,6 +19,12 @@
       "width_bits": 16
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

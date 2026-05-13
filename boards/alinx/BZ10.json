@@ -19,6 +19,16 @@
       "width_bits": 64
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 64
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 32768
+    }
+  ],
   "pcie": [
     {
       "type": "M.2 M-key",
@@ -47,6 +57,9 @@
   ],
   "expansion": {
     "fmc_hpc": 4
+  },
+  "storage": {
+    "microsd": 1
   },
   "usb_bridge": [
     {

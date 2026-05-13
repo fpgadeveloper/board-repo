@@ -60,6 +60,15 @@
           },
           "minItems": 1
         },
+        "flash": {
+          "type": "array",
+          "title": "Flash",
+          "description": "On-board non-volatile flash memory. List one entry per distinct chip (e.g. dual-stacked QSPI is two entries). Excludes removable SD/microSD card slots.",
+          "items": {
+            "$ref": "#/$defs/flash_interface"
+          },
+          "minItems": 1
+        },
         "pcie": {
           "type": "array",
           "title": "PCIe",
@@ -150,10 +159,12 @@
         "storage": {
           "type": "object",
           "title": "Storage",
-          "description": "Storage interfaces. Only include keys with non-zero values.",
+          "description": "Storage sockets and ports — places where the user supplies the storage medium. Soldered flash chips live in the flash section, not here. Only include keys with non-zero values.",
           "additionalProperties": false,
           "properties": {
-            "sata": { "type": "integer", "title": "SATA", "minimum": 1 }
+            "sata": { "type": "integer", "title": "SATA", "minimum": 1 },
+            "sd": { "type": "integer", "title": "SD", "minimum": 1, "description": "Full-size SD card slot count." },
+            "microsd": { "type": "integer", "title": "microSD", "minimum": 1, "description": "Micro-SD card slot count." }
           },
           "minProperties": 1
         },
@@ -285,6 +296,28 @@
           "type": "integer",
           "minimum": 1,
           "description": "Number of physical ports of this kind. Defaults to 1 if omitted."
+        }
+      }
+    },
+    "flash_interface": {
+      "type": "object",
+      "required": ["type", "size_mb"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["QSPI", "OSPI", "SPI", "BPI", "eMMC", "NAND"],
+          "description": "Flash family. QSPI/OSPI/SPI/BPI are NOR (typically used for FPGA configuration + some user data). eMMC is managed NAND for Linux rootfs storage. NAND is raw NAND."
+        },
+        "size_mb": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Total capacity of this chip in megabytes. 1 GB → 1024."
+        },
+        "width_bits": {
+          "type": "integer",
+          "enum": [1, 2, 4, 8, 16],
+          "description": "Data bus width. Usually implicit from type (SPI=1, QSPI=4, OSPI=8). Useful to set for BPI (typically 16) and NAND (8 or 16)."
         }
       }
     },

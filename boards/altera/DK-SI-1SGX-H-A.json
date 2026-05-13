@@ -12,6 +12,18 @@
     "part": "1SG280HU1F50E2VG",
     "vendor": "altera"
   },
+  "flash": [
+    {
+      "type": "BPI",
+      "size_mb": 128,
+      "width_bits": 16
+    },
+    {
+      "type": "BPI",
+      "size_mb": 128,
+      "width_bits": 16
+    }
+  ],
   "networking": {
     "ethernet": [
       {
@@ -27,6 +39,11 @@
     "fmcp": 2
   },
   "usb_bridge": [
-    { "connector": "Type-B", "functions": ["jtag"] }
+    {
+      "connector": "Type-B",
+      "functions": [
+        "jtag"
+      ]
+    }
   ]
 }

@@ -19,6 +19,12 @@
       "form_factor": "sodimm"
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ],
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1,
@@ -51,6 +57,9 @@
     "fmc_lpc": 1,
     "pmod": 4,
     "syzygy": 1
+  },
+  "storage": {
+    "microsd": 1
   },
   "wireless": {
     "wifi": true

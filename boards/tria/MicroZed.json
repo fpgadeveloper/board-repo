@@ -19,6 +19,12 @@
       "width_bits": 32
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    }
+  ],
   "networking": {
     "ethernet": [
       {
@@ -29,6 +35,9 @@
   },
   "expansion": {
     "pmod": 1
+  },
+  "storage": {
+    "microsd": 1
   },
   "usb_bridge": [
     {

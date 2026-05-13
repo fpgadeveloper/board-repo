@@ -19,6 +19,12 @@
       "width_bits": 64
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 64
+    }
+  ],
   "video": {
     "hdmi_out": 1,
     "displayport": 1,
@@ -34,5 +40,8 @@
   },
   "expansion": {
     "pmod": 1
+  },
+  "storage": {
+    "microsd": 1
   }
 }

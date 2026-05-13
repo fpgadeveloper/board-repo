@@ -18,6 +18,12 @@
       "size_mb": 512
     }
   ],
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 16
+    }
+  ],
   "usb": [
     {
       "connector": "Type-C",

@@ -26,5 +26,8 @@
   "expansion": {
     "pmod": 2,
     "raspberry_pi": 1
+  },
+  "storage": {
+    "microsd": 1
   }
 }

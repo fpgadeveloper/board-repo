@@ -24,6 +24,16 @@
       "width_bits": 16
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -58,5 +68,8 @@
       ],
       "ports": 2
     }
-  ]
+  ],
+  "storage": {
+    "microsd": 1
+  }
 }

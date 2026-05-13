@@ -19,6 +19,12 @@
       "ecc": true
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ],
   "networking": {
     "ethernet": [
       {
@@ -29,5 +35,8 @@
   },
   "expansion": {
     "click": 1
+  },
+  "storage": {
+    "microsd": 1
   }
 }

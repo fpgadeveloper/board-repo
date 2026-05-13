@@ -19,6 +19,12 @@
       "width_bits": 32
     }
   ],
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 64
+    }
+  ],
   "expansion": {
     "fmc_hpc": 1,
     "pmod": 3,
