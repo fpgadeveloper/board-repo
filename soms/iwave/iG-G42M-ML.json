@@ -1,0 +1,35 @@
+{
+  "mpn": "iG-G42M-ML",
+  "name": "iG-G42M-ML — XQ ZU49DR MIL-Grade (FSRF1760)",
+  "status": "active",
+  "url": "https://www.iwavesystems.com/product/zynq-ultrascale-xq-rfsoc-49dr-mil-grade/",
+  "vendor": "iwave",
+  "price": null,
+  "device": {
+    "part": "XQZU49DR-1FSRF1760M",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "width_bits": 64,
+      "ecc": true
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "width_bits": 64
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 256
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 32768
+    }
+  ]
+}

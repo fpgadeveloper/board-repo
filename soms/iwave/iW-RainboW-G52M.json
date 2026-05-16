@@ -1,0 +1,29 @@
+{
+  "mpn": "iW-RainboW-G52M",
+  "name": "iW-RainboW-G52M — Virtex UltraScale+ VU13P (FHGB2104)",
+  "status": "active",
+  "url": "https://www.iwavesystems.com/product/virtex-ultrascale-soc/",
+  "vendor": "iwave",
+  "price": null,
+  "device": {
+    "part": "XCVU13P-1FHGB2104I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "ecc": true
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 2048
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    }
+  ]
+}

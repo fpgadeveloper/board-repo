@@ -1,0 +1,31 @@
+{
+  "mpn": "MA-XU3-2CG-1E-D10",
+  "name": "Mars XU3 — XCZU2CG",
+  "status": "active",
+  "url": "https://www.enclustra.com/en/products/system-on-chip-modules/mars-xu3/",
+  "vendor": "enclustra",
+  "price": {
+    "value": 406.0,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU2CG-1SBVA484E",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 1024
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 64
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 16384
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "carrier": "KRC-6000-KIT",
+  "compatible_soms": [
+    {
+      "som": "KRM-6ZU49DR-2E",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-6ZU49DR-2I",
+      "verified_by": "vendor"
+    }
+  ]
+}

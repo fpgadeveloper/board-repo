@@ -1,0 +1,33 @@
+{
+  "mpn": "iW-RainboW-G60M-28DR",
+  "name": "iW-RainboW-G60M — ZU28DR (FFVG1517)",
+  "status": "active",
+  "url": "https://www.iwavesystems.com/product/zynq-ultrascale-rfsoc-zu48-zu47-zu43-zu28-zu27-zu25dr/",
+  "vendor": "iwave",
+  "price": null,
+  "device": {
+    "part": "XCZU28DR-2FFVG1517I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "ecc": true
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 8192
+    }
+  ],
+  "flash": [
+    {
+      "type": "eMMC",
+      "size_mb": 32768
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 256
+    }
+  ]
+}

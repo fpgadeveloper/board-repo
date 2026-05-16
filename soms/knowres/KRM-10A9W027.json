@@ -1,0 +1,24 @@
+{
+  "mpn": "KRM-10A9W027",
+  "name": "KRM-10A9W027 RFSoC Module",
+  "status": "active",
+  "url": "https://www.knowres.com/product/krm-10a9w027/",
+  "vendor": "knowres",
+  "price": null,
+  "device": {
+    "part": "AGRW027",
+    "vendor": "altera"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 512
+    }
+  ]
+}

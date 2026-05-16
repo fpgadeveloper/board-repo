@@ -1,0 +1,31 @@
+{
+  "mpn": "KRM-3Z7045-I2-XDAB-F",
+  "name": "KRM-3Z7045 FFG SoC Module — I2 XDAB-F",
+  "status": "active",
+  "url": "https://www.knowres.com/product/krm-3z7045/",
+  "vendor": "knowres",
+  "price": {
+    "value": 1515.0,
+    "currency": "EUR"
+  },
+  "device": {
+    "part": "XC7Z045-2FFG676I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "LPDDR3",
+      "size_mb": 1024
+    },
+    {
+      "type": "LPDDR3",
+      "size_mb": 256
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ]
+}

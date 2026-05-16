@@ -1,0 +1,29 @@
+{
+  "mpn": "KRM-2ZU67DR-2i",
+  "name": "KRM-2ZU67DR RFSoC Module",
+  "status": "active",
+  "url": "https://www.knowres.com/product/krm-2zu67dr/",
+  "vendor": "knowres",
+  "price": null,
+  "device": {
+    "part": "XCZU67DR-2FSVE1156I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "ecc": true
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 6144
+    }
+  ],
+  "flash": [
+    {
+      "type": "eMMC",
+      "size_mb": 65536
+    }
+  ]
+}

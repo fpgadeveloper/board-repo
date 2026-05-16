@@ -1,0 +1,28 @@
+{
+  "mpn": "iW-RainboW-G28M",
+  "name": "iW-RainboW-G28M — Zynq 7000 SODIMM Z-7020 (CLG400)",
+  "status": "active",
+  "url": "https://www.iwavesystems.com/product/zynq-7000-sodimm/",
+  "vendor": "iwave",
+  "price": null,
+  "device": {
+    "part": "XC7Z020-1CLG400I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 512
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 2
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    }
+  ]
+}

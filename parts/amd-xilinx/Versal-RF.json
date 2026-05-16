@@ -1,0 +1,323 @@
+{
+  "family": "Versal RF",
+  "description": "Versal RF series with integrated 14-bit RF-ADCs/RF-DACs, AI Engines, and Direct RF capability. Part format: {grade}V{series}{device}-{speed}{voltage}{screen}{temp}{pitch}{lid}{rohs}{footprint}. Sourced from AMD Versal RF Series Product Selection Guide (XMP508, v1.3).",
+  "fields": [
+    {
+      "id": "product_grade",
+      "label": "Product Grade",
+      "description": "Product grade prefix indicating target market.",
+      "length": 2,
+      "type": "select",
+      "options": [
+        {
+          "value": "XC",
+          "label": "XC",
+          "description": "Commercial"
+        },
+        {
+          "value": "XA",
+          "label": "XA",
+          "description": "Automotive"
+        },
+        {
+          "value": "XQ",
+          "label": "XQ",
+          "description": "Defense Grade"
+        }
+      ]
+    },
+    {
+      "id": "versal",
+      "label": "Versal",
+      "description": "Versal platform identifier.",
+      "length": 1,
+      "type": "fixed",
+      "value": "V"
+    },
+    {
+      "id": "series",
+      "label": "Series",
+      "description": "Versal RF series.",
+      "length": 1,
+      "type": "fixed",
+      "value": "R"
+    },
+    {
+      "id": "device_number",
+      "label": "Device Number",
+      "description": "4-digit device identifier. Digits 1-3: value identifier, digit 4: number of primary cores.",
+      "length": 4,
+      "type": "select",
+      "options": [
+        {
+          "value": "1602",
+          "label": "1602",
+          "description": "VR1602 — 16x 8 GSPS RF-ADC, 16x 16 GSPS RF-DAC, 126 AIE tiles, 1.2M logic cells"
+        },
+        {
+          "value": "1652",
+          "label": "1652",
+          "description": "VR1652 — 4x 32 GSPS RF-ADC, 8x 16 GSPS RF-DAC, 126 AIE tiles, 1.2M logic cells"
+        },
+        {
+          "value": "1902",
+          "label": "1902",
+          "description": "VR1902 — 16x 8 GSPS RF-ADC, 16x 16 GSPS RF-DAC, 120 AIE tiles, 2.5M logic cells"
+        },
+        {
+          "value": "1952",
+          "label": "1952",
+          "description": "VR1952 — 8x 32 GSPS RF-ADC, 16x 16 GSPS RF-DAC, 120 AIE tiles, 2.5M logic cells"
+        }
+      ]
+    },
+    {
+      "id": "sep1",
+      "label": "Separator",
+      "description": "Dash separator.",
+      "length": 1,
+      "type": "fixed",
+      "value": "-"
+    },
+    {
+      "id": "speed_grade",
+      "label": "Speed Grade",
+      "description": "Device speed grade. 1 = slowest, 3 = highest performance.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "1",
+          "label": "Speed grade 1",
+          "description": "Slowest"
+        },
+        {
+          "value": "2",
+          "label": "Speed grade 2",
+          "description": "Mid",
+          "when": {
+            "product_grade": [
+              "XC",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "3",
+          "label": "Speed grade 3",
+          "description": "Highest",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "voltage",
+      "label": "Voltage",
+      "description": "Core voltage level.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "L",
+          "label": "Low voltage",
+          "description": "Low voltage"
+        },
+        {
+          "value": "M",
+          "label": "Mid voltage",
+          "description": "Mid voltage"
+        },
+        {
+          "value": "H",
+          "label": "High voltage",
+          "description": "High voltage — only present in -2HSI ordering combination per PSG."
+        }
+      ]
+    },
+    {
+      "id": "static_screen",
+      "label": "Static Screen",
+      "description": "Static power screening level. S = standard, L = low static.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "S",
+          "label": "Standard",
+          "description": "Standard static screening."
+        },
+        {
+          "value": "L",
+          "label": "Low static",
+          "description": "Low static power screening."
+        }
+      ]
+    },
+    {
+      "id": "temp_grade",
+      "label": "Temperature Grade",
+      "description": "Operating temperature range.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "E",
+          "label": "Extended",
+          "description": "0°C to 110°C (operation at 110°C limited to 3% of device lifetime)",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
+        },
+        {
+          "value": "I",
+          "label": "Industrial",
+          "description": "-40°C to 110°C",
+          "when": {
+            "product_grade": [
+              "XC",
+              "XQ"
+            ]
+          }
+        },
+        {
+          "value": "Q",
+          "label": "Automotive",
+          "description": "-40°C to 125°C",
+          "when": {
+            "product_grade": [
+              "XA"
+            ]
+          }
+        },
+        {
+          "value": "M",
+          "label": "Military",
+          "description": "-55°C to 125°C",
+          "when": {
+            "product_grade": [
+              "XQ"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ball_pitch",
+      "label": "Ball Pitch",
+      "description": "Ball grid array pitch and landing configuration.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "V",
+          "label": "0.92mm w/ LSC",
+          "description": "0.92mm pitch with Lid Stiffener Ring"
+        },
+        {
+          "value": "N",
+          "label": "0.92mm no LSC",
+          "description": "0.92mm pitch, no Lid Stiffener Ring"
+        },
+        {
+          "value": "S",
+          "label": "0.8mm",
+          "description": "0.8mm pitch"
+        },
+        {
+          "value": "L",
+          "label": "1.0mm",
+          "description": "1.0mm pitch"
+        }
+      ]
+    },
+    {
+      "id": "lid",
+      "label": "Lid",
+      "description": "Package lid configuration.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "S",
+          "label": "Lidless w/ stiffener ring",
+          "description": "Lidless with stiffener ring"
+        },
+        {
+          "value": "F",
+          "label": "Lidded",
+          "description": "Lidded"
+        },
+        {
+          "value": "B",
+          "label": "Lidless, no stiffener",
+          "description": "Lidless, no stiffener ring"
+        },
+        {
+          "value": "H",
+          "label": "Lidded overhang",
+          "description": "Lidded overhang"
+        },
+        {
+          "value": "I",
+          "label": "Lidless overhang w/ stiffener",
+          "description": "Lidless overhang with stiffener ring"
+        }
+      ]
+    },
+    {
+      "id": "rohs",
+      "label": "RoHS6 Code",
+      "description": "RoHS compliance and ball material.",
+      "length": 1,
+      "type": "select",
+      "options": [
+        {
+          "value": "V",
+          "label": "Pb-free ball",
+          "description": "Pb-free ball"
+        },
+        {
+          "value": "Q",
+          "label": "Eutectic ball",
+          "description": "Eutectic ball"
+        },
+        {
+          "value": "R",
+          "label": "Ruggedized eutectic",
+          "description": "Ruggedized eutectic ball",
+          "when": {
+            "product_grade": [
+              "XQ"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "footprint",
+      "label": "Footprint",
+      "description": "Package footprint identifier (letter + pin count). VR1602/VR1652 offered in G1596 (37.5x37.5mm) and A2488 (47.5x47.5mm); VR1902/VR1952 only in A2488.",
+      "length": null,
+      "type": "select",
+      "options": [
+        {
+          "value": "G1596",
+          "label": "G1596",
+          "description": "37.5 x 37.5 mm package (VSVG1596) — VR1602 / VR1652"
+        },
+        {
+          "value": "A2488",
+          "label": "A2488",
+          "description": "47.5 x 47.5 mm package (VSVA2488) — all VR devices"
+        }
+      ]
+    }
+  ],
+  "type": "Adaptive SoC"
+}

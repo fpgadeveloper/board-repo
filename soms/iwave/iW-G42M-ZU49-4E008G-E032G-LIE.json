@@ -1,0 +1,25 @@
+{
+  "mpn": "iW-G42M-ZU49-4E008G-E032G-LIE",
+  "name": "iG-G42M — ZU49DR (FFVF1760)",
+  "status": "active",
+  "url": "https://www.iwavesystems.com/product/zynq-ultrascale-rfsoc-som/",
+  "vendor": "iwave",
+  "price": null,
+  "device": {
+    "part": "XCZU49DR-1FFVF1760I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "ecc": true
+    }
+  ],
+  "flash": [
+    {
+      "type": "eMMC",
+      "size_mb": 32768
+    }
+  ]
+}

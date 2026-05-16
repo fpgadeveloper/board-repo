@@ -97,6 +97,16 @@
           "description": "ZU49DR"
         },
         {
+          "value": "63",
+          "label": "63",
+          "description": "ZU63DR"
+        },
+        {
+          "value": "64",
+          "label": "64",
+          "description": "ZU64DR"
+        },
+        {
           "value": "65",
           "label": "65",
           "description": "ZU65DR"
@@ -264,6 +274,11 @@
           "value": "FSVF1760",
           "label": "FSVF1760",
           "description": "FSVF 1760-pin"
+        },
+        {
+          "value": "FSRF1760",
+          "label": "FSRF1760",
+          "description": "FSRF 1760-pin — defense-grade ruggedized variant of FSVF1760 (XQ RFSoC parts)."
         },
         {
           "value": "FSVG1517",

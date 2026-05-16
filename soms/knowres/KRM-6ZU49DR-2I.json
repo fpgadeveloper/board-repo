@@ -1,0 +1,34 @@
+{
+  "mpn": "KRM-6ZU49DR-2I",
+  "name": "KRM-6ZU49DR RFSoC Module — 2I",
+  "status": "active",
+  "url": "https://www.knowres.com/product/krm-6zu49dr/",
+  "vendor": "knowres",
+  "price": null,
+  "device": {
+    "part": "XCZU49DR-2FFVF1760I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "ecc": true
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 16384,
+      "ecc": true
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    }
+  ]
+}

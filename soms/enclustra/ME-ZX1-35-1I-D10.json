@@ -1,0 +1,35 @@
+{
+  "mpn": "ME-ZX1-35-1I-D10",
+  "name": "Mercury ZX1 — XC7Z035",
+  "status": "active",
+  "url": "https://www.enclustra.com/en/products/system-on-chip-modules/mercury-zx1/",
+  "vendor": "enclustra",
+  "price": {
+    "value": 1421.0,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7Z035-1FBG676I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR3L",
+      "size_mb": 1024
+    },
+    {
+      "type": "DDR3L",
+      "size_mb": 256
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 64
+    },
+    {
+      "type": "NAND",
+      "size_mb": 512
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "mpn": "iW-G30M-C4CG-4E002G-E008G-BIA",
+  "name": "iG-G30M — ZU4CG (FBVB900)",
+  "status": "active",
+  "url": "https://www.iwavesystems.com/product/zu7-zu5-zu4-zynq-ultrascale-mpsocsom/",
+  "vendor": "iwave",
+  "price": null,
+  "device": {
+    "part": "XCZU4CG-1FBVB900I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 2048,
+      "ecc": true
+    }
+  ],
+  "flash": [
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    }
+  ]
+}

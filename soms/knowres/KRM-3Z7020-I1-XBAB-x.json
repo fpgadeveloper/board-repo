@@ -1,0 +1,32 @@
+{
+  "mpn": "KRM-3Z7020-I1-XBAB-x",
+  "name": "KRM-3Z7020 CLG SoC Module — I1 XBAB-x",
+  "status": "active",
+  "url": "https://www.knowres.com/product/krm-3z7020/",
+  "vendor": "knowres",
+  "price": {
+    "value": 357.0,
+    "currency": "EUR"
+  },
+  "device": {
+    "part": "XC7Z020-1CLG484I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "LPDDR3",
+      "size_mb": 1024,
+      "width_bits": 32
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    }
+  ]
+}

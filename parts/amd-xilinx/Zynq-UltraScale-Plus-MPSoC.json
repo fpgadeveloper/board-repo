@@ -279,6 +279,11 @@
           "description": "FFVC 1760-pin"
         },
         {
+          "value": "FFRC1760",
+          "label": "FFRC1760",
+          "description": "FFRC 1760-pin — defense-grade ruggedized variant of FFVC1760 (XQ MPSoC parts)."
+        },
+        {
           "value": "FFVC900",
           "label": "FFVC900",
           "description": "FFVC 900-pin"

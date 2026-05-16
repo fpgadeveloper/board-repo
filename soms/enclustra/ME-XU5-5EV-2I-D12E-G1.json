@@ -1,0 +1,36 @@
+{
+  "mpn": "ME-XU5-5EV-2I-D12E-G1",
+  "name": "Mercury XU5 — XCZU5EV (G1)",
+  "status": "active",
+  "url": "https://www.enclustra.com/en/products/system-on-chip-modules/mercury-xu5/",
+  "vendor": "enclustra",
+  "price": {
+    "value": 1775.0,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU5EV-2SFVC784I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "ecc": true
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 1024
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 64
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 16384
+    }
+  ]
+}

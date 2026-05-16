@@ -1,0 +1,28 @@
+{
+  "mpn": "KRM-9VH1582-2MSEL-32G",
+  "name": "KRM-9VH1X82 Versal HBM — 1582-2MSEL-32G",
+  "status": "active",
+  "url": "https://www.knowres.com/product/krm-9vh1x82/",
+  "vendor": "knowres",
+  "price": null,
+  "device": {
+    "part": "XCVH1582-2MSELSVA4737",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "LPDDR4",
+      "size_mb": 16384
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 256
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 32768
+    }
+  ]
+}

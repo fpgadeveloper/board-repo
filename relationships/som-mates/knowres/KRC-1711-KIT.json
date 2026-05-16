@@ -1,0 +1,9 @@
+{
+  "carrier": "KRC-1711-KIT",
+  "compatible_soms": [
+    {
+      "som": "KRM-Z7010-C1-XBAC-x",
+      "verified_by": "vendor"
+    }
+  ]
+}

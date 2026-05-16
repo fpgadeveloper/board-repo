@@ -1,0 +1,29 @@
+{
+  "mpn": "iG-RainboW-G71M",
+  "name": "iG-RainboW-G71M — Agilex 3 SoC FPGA (M16A)",
+  "status": "active",
+  "url": "https://www.iwavesystems.com/product/agilex-3-soc-fpga/",
+  "vendor": "iwave",
+  "price": null,
+  "device": {
+    "part": "A3CD135AM16AE6SR0",
+    "vendor": "altera"
+  },
+  "memory": [
+    {
+      "type": "LPDDR4",
+      "size_mb": 4096,
+      "width_bits": 32
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 32768
+    }
+  ]
+}

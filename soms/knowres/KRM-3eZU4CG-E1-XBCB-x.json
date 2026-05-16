@@ -1,0 +1,32 @@
+{
+  "mpn": "KRM-3eZU4CG-E1-XBCB-x",
+  "name": "KRM-3eZU4CG MPSOC Module — E1 XBCB-x (4GB PS RAM, 1GB PL RAM)",
+  "status": "active",
+  "url": "https://www.knowres.com/product/krm-3ezu4cg/",
+  "vendor": "knowres",
+  "price": null,
+  "device": {
+    "part": "XCZU4CG-1SFVC784E",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 8192
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 2048
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ]
+}

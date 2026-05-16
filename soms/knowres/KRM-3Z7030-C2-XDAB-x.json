@@ -1,0 +1,31 @@
+{
+  "mpn": "KRM-3Z7030-C2-XDAB-x",
+  "name": "KRM-3Z7030 FFG SoC Module — C2 XDAB-x",
+  "status": "active",
+  "url": "https://www.knowres.com/product/krm-3z7030/",
+  "vendor": "knowres",
+  "price": {
+    "value": 650.0,
+    "currency": "EUR"
+  },
+  "device": {
+    "part": "XC7Z030-2FFG676C",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "LPDDR3",
+      "size_mb": 1024
+    },
+    {
+      "type": "LPDDR3",
+      "size_mb": 256
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ]
+}

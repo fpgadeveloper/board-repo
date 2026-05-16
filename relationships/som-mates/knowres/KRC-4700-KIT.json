@@ -1,0 +1,49 @@
+{
+  "carrier": "KRC-4700-KIT",
+  "compatible_soms": [
+    {
+      "som": "KRM-4ZU25DR-1HY",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-4ZU27DR-1E",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-4ZU27DR-1I",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-4ZU27DR-2E",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-4ZU27DR-2I",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-4ZU47DR-1E",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-4ZU47DR-1I",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-4ZU47DR-2E",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-4ZU47DR-2I",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-4ZU48DR-2E",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-4ZU48DR-2I",
+      "verified_by": "vendor"
+    }
+  ]
+}

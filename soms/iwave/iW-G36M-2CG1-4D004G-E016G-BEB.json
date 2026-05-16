@@ -1,0 +1,24 @@
+{
+  "mpn": "iW-G36M-2CG1-4D004G-E016G-BEB",
+  "name": "iG-G36M — ZU2CG (SFVC784)",
+  "status": "active",
+  "url": "https://www.iwavesystems.com/product/zynq-ultrascale-mpsoc-zu5-zu4-zu3t-zu3-zu2-zu1-system-on-module/",
+  "vendor": "iwave",
+  "price": null,
+  "device": {
+    "part": "XCZU2CG-1SFVC784E",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096
+    }
+  ],
+  "flash": [
+    {
+      "type": "eMMC",
+      "size_mb": 16384
+    }
+  ]
+}

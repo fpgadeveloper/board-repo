@@ -223,6 +223,31 @@
           "description": "FLGF 1924-pin"
         },
         {
+          "value": "FLVA2104",
+          "label": "FLVA2104",
+          "description": "FLVA 2104-pin (1.0mm pitch, Lid SSI, RoHS Pb-free)"
+        },
+        {
+          "value": "FLVB2104",
+          "label": "FLVB2104",
+          "description": "FLVB 2104-pin (1.0mm pitch, Lid SSI, RoHS Pb-free) — used on iWave VU7P SoM"
+        },
+        {
+          "value": "FLVC2104",
+          "label": "FLVC2104",
+          "description": "FLVC 2104-pin (1.0mm pitch, Lid SSI, RoHS Pb-free)"
+        },
+        {
+          "value": "FLVD2104",
+          "label": "FLVD2104",
+          "description": "FLVD 2104-pin (1.0mm pitch, Lid SSI, RoHS Pb-free)"
+        },
+        {
+          "value": "FLVH2104",
+          "label": "FLVH2104",
+          "description": "FLVH 2104-pin (1.0mm pitch, Lid SSI, RoHS Pb-free)"
+        },
+        {
           "value": "FLRA2104",
           "label": "FLRA2104",
           "description": "FLRA 2104-pin"

@@ -1,0 +1,32 @@
+{
+  "mpn": "KRM-4ZU48DR-2I",
+  "name": "KRM-4ZU48DR RFSoC Module — 2I",
+  "status": "active",
+  "url": "https://www.knowres.com/product/krm-4zu48dr-rfsoc-gen3-module/",
+  "vendor": "knowres",
+  "price": null,
+  "device": {
+    "part": "XCZU48DR-2FFVG1517I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 16384
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 8192
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    }
+  ]
+}

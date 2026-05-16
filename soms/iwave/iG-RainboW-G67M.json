@@ -1,0 +1,36 @@
+{
+  "mpn": "iG-RainboW-G67M",
+  "name": "iG-RainboW-G67M — Agilex 9 R17B Direct RF",
+  "status": "active",
+  "url": "https://www.iwavesystems.com/product/agilex-9-r17b-direct-rf/",
+  "vendor": "iwave",
+  "price": null,
+  "device": {
+    "part": "AGRW014",
+    "vendor": "altera"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "width_bits": 72,
+      "ecc": true
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "width_bits": 72,
+      "ecc": true
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 32768
+    }
+  ]
+}

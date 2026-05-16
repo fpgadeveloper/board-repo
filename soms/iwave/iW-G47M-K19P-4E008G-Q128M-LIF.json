@@ -1,0 +1,25 @@
+{
+  "mpn": "iW-G47M-K19P-4E008G-Q128M-LIF",
+  "name": "iG-G47M — KU19P (FFVB2104)",
+  "status": "active",
+  "url": "https://www.iwavesystems.com/product/ku19p-fpga-system-on-module/",
+  "vendor": "iwave",
+  "price": null,
+  "device": {
+    "part": "XCKU19P-2FFVB2104I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "ecc": true
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    }
+  ]
+}

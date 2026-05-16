@@ -1,0 +1,33 @@
+{
+  "mpn": "iG-RainboW-G79M-65DR",
+  "name": "iG-RainboW-G79M — ZU65DR (FFVE1156)",
+  "status": "active",
+  "url": "https://www.iwavesystems.com/product/zynq-ultrascale-rfsoc-zu67-zu65-zu64-zu63dr/",
+  "vendor": "iwave",
+  "price": null,
+  "device": {
+    "part": "XCZU65DR-2FFVE1156I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "ecc": true
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 4096
+    }
+  ],
+  "flash": [
+    {
+      "type": "eMMC",
+      "size_mb": 32768
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 256
+    }
+  ]
+}

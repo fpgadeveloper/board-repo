@@ -1,0 +1,32 @@
+{
+  "mpn": "iG-RainboW-G77M-VM",
+  "name": "iG-RainboW-G77M — Versal Prime Gen 2 (SSVA2112)",
+  "status": "active",
+  "url": "https://www.iwavesystems.com/product/versal-prime-gen2/",
+  "vendor": "iwave",
+  "price": null,
+  "device": {
+    "part": "XC2VM3558-1MSESSVA2112",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "LPDDR5X",
+      "size_mb": 4096
+    },
+    {
+      "type": "LPDDR5X",
+      "size_mb": 4096
+    }
+  ],
+  "flash": [
+    {
+      "type": "eMMC",
+      "size_mb": 32768
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 256
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "carrier": "KRC-3701-KIT",
+  "compatible_soms": [
+    {
+      "som": "KRM-3Z7020-C1-XBAB-x",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-3Z7020-C2-XBAB-x",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-3Z7020-I1-XBAB-x",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-3Z7020-I2-XBAB-x",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-3Z7030-C1-XDAB-x",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-3Z7030-C2-XDAB-x",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-3Z7030-I1-XDAB-x",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-3Z7030-I2-XDAB-x",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-3Z7045-C1-XDAB-F",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-3Z7045-C2-XDAB-F",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-3Z7045-I1-XDAB-F",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-3Z7045-I2-XDAB-F",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-3eZU4CG-E1-XBCB-x",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "KRM-3eZU4CG-E1-XCCB-x",
+      "verified_by": "vendor"
+    }
+  ]
+}

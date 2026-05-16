@@ -1,0 +1,32 @@
+{
+  "mpn": "ME-XU6-4CG-1E-D13",
+  "name": "Mercury XU6 — XCZU4CG 8GB",
+  "status": "active",
+  "url": "https://www.enclustra.com/en/products/system-on-chip-modules/mercury-xu6/",
+  "vendor": "enclustra",
+  "price": {
+    "value": 1012.0,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU4CG-1SFVC784E",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "ecc": true
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 64
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 16384
+    }
+  ]
+}

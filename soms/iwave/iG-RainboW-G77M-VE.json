@@ -1,0 +1,32 @@
+{
+  "mpn": "iG-RainboW-G77M-VE",
+  "name": "iG-RainboW-G77M — Versal AI Edge Gen 2 (SSVA2112)",
+  "status": "active",
+  "url": "https://www.iwavesystems.com/product/versal-ai-edge-gen2/",
+  "vendor": "iwave",
+  "price": null,
+  "device": {
+    "part": "XC2VE3504-1MSESSVA2112",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "LPDDR5X",
+      "size_mb": 4096
+    },
+    {
+      "type": "LPDDR5X",
+      "size_mb": 4096
+    }
+  ],
+  "flash": [
+    {
+      "type": "eMMC",
+      "size_mb": 32768
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 256
+    }
+  ]
+}

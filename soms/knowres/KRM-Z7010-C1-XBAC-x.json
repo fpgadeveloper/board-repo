@@ -1,0 +1,32 @@
+{
+  "mpn": "KRM-Z7010-C1-XBAC-x",
+  "name": "KRM-1Z7010 Module",
+  "status": "active",
+  "url": "https://www.knowres.com/product/krm-1z7010/",
+  "vendor": "knowres",
+  "price": {
+    "value": 148.0,
+    "currency": "EUR"
+  },
+  "device": {
+    "part": "XC7Z010-1CLG400C",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "LPDDR3",
+      "size_mb": 1024,
+      "width_bits": 32
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    }
+  ]
+}

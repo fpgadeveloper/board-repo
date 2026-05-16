@@ -1,0 +1,36 @@
+{
+  "mpn": "ME-XU7-6EG-1I-D11E",
+  "name": "Mercury XU7 — XCZU6EG",
+  "status": "active",
+  "url": "https://www.enclustra.com/en/products/system-on-chip-modules/mercury-xu7/",
+  "vendor": "enclustra",
+  "price": {
+    "value": 2014.0,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU6EG-1FFVC900I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 2048,
+      "ecc": true
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 1024
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 64
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 16384
+    }
+  ]
+}

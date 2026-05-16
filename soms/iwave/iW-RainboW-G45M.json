@@ -1,0 +1,40 @@
+{
+  "mpn": "iW-RainboW-G45M",
+  "name": "iW-RainboW-G45M — Stratix 10 SX SoC (F45)",
+  "status": "active",
+  "url": "https://www.iwavesystems.com/product/stratix-10-soc-fpga/",
+  "vendor": "iwave",
+  "price": null,
+  "device": {
+    "part": "1SX280HU2F45E2VG",
+    "vendor": "altera"
+  },
+  "flash": [
+    {
+      "type": "eMMC",
+      "size_mb": 32768
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 1024
+    }
+  ],
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "width_bits": 72,
+      "ecc": true
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "width_bits": 64
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "width_bits": 64
+    }
+  ]
+}

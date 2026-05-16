@@ -1,0 +1,25 @@
+{
+  "mpn": "iG65M-15EG02-4E004G-E032G-IAA",
+  "name": "iG-G65M — ZU15EG (FFVC900)",
+  "status": "active",
+  "url": "https://www.iwavesystems.com/product/zu15-zu9-zu6-zynq-ultrascale-mpsoc-system-on-module/",
+  "vendor": "iwave",
+  "price": null,
+  "device": {
+    "part": "XCZU15EG-2FFVC900I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "ecc": true
+    }
+  ],
+  "flash": [
+    {
+      "type": "eMMC",
+      "size_mb": 32768
+    }
+  ]
+}

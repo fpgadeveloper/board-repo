@@ -1,0 +1,29 @@
+{
+  "mpn": "iW-RainboW-G64M",
+  "name": "iW-RainboW-G64M — Achronix Speedster7t AC7t1500",
+  "status": "active",
+  "url": "https://www.iwavesystems.com/product/achronix-speedster7t/",
+  "vendor": "iwave",
+  "price": null,
+  "device": {
+    "part": "AC7t1500FSG2457SI",
+    "vendor": "achronix"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "ecc": true
+    },
+    {
+      "type": "GDDR6",
+      "size_mb": 14336
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 256
+    }
+  ]
+}

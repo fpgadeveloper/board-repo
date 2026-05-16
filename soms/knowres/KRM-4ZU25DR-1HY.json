@@ -1,0 +1,33 @@
+{
+  "mpn": "KRM-4ZU25DR-1HY",
+  "name": "KRM-4ZU25DR RFSoC Module",
+  "status": "active",
+  "url": "https://www.knowres.com/product/krm-4zu25dr-rfsoc-gen1-module/",
+  "vendor": "knowres",
+  "price": null,
+  "device": {
+    "part": "XCZU25DR-1FFVG1517I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 8192
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "ecc": true
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    }
+  ]
+}

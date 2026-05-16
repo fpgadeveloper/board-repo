@@ -1,0 +1,36 @@
+{
+  "mpn": "ME-XU8-5EV-1I-D12E",
+  "name": "Mercury XU8 — XCZU5EV",
+  "status": "active",
+  "url": "https://www.enclustra.com/en/products/system-on-chip-modules/mercury-xu8/",
+  "vendor": "enclustra",
+  "price": {
+    "value": 2407.0,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU5EV-1FBVB900I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "ecc": true
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 2048
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 64
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 16384
+    }
+  ]
+}

@@ -409,7 +409,7 @@
       "properties": {
         "type": {
           "type": "string",
-          "enum": ["DDR2", "DDR3", "DDR3L", "DDR4", "DDR5", "LPDDR2", "LPDDR3", "LPDDR4", "LPDDR4X", "LPDDR5", "HBM2", "HBM2E", "HBM3", "QDR-II+", "QDR-IV"],
+          "enum": ["DDR2", "DDR3", "DDR3L", "DDR4", "DDR5", "LPDDR2", "LPDDR3", "LPDDR4", "LPDDR4X", "LPDDR5", "LPDDR5X", "GDDR5", "GDDR5X", "GDDR6", "GDDR6X", "HBM2", "HBM2E", "HBM3", "QDR-II+", "QDR-IV"],
           "description": "DRAM family. HBM variants are on-package, not strictly DDR — listed here because they fill the same role in spec sheets."
         },
         "size_mb": {
@@ -424,8 +424,8 @@
         },
         "width_bits": {
           "type": "integer",
-          "enum": [16, 32, 64, 72, 128, 256],
-          "description": "Data bus width. 72 typically implies ECC."
+          "enum": [16, 18, 32, 36, 64, 72, 128, 256],
+          "description": "Data bus width. 72 typically implies ECC. 18/36 are common for QDR-II+ / QDR-IV high-bandwidth SRAM."
         },
         "ecc": {
           "type": "boolean",

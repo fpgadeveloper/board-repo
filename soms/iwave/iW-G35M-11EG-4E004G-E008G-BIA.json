@@ -1,0 +1,25 @@
+{
+  "mpn": "iW-G35M-11EG-4E004G-E008G-BIA",
+  "name": "iG-G35M — ZU11EG (FFVC1760)",
+  "status": "active",
+  "url": "https://www.iwavesystems.com/product/zu19-zu17-zu11-zynq-ultrascale-mpsocsom/",
+  "vendor": "iwave",
+  "price": null,
+  "device": {
+    "part": "XCZU11EG-1FFVC1760I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "ecc": true
+    }
+  ],
+  "flash": [
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    }
+  ]
+}

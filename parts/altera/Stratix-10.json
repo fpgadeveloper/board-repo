@@ -1,6 +1,6 @@
 {
   "family": "Stratix 10",
-  "description": "Altera Stratix 10 FPGA and SoC FPGA part number model. Format: 1S{sub_family}{density}{feature}{qualifier}{package}{speed}{suffix}. Example: 1SX280HU2F50E1VG.",
+  "description": "Altera Stratix 10 FPGA and SoC FPGA part number model. Format: 1S{sub_family}{density}{feature}{qualifier}{package}{speed}{suffix}. Examples: 1SX280HU2F50E1VG (Stratix 10 SX SoC); 1SA28HU2F50E1VG (Stratix 10 AX Direct RF). Stratix 10 AX-Series support sourced from Altera Direct RF-Series FPGAs and SoCs Product Table (Gen-1086-1.0, 2025.09.29).",
   "fields": [
     {
       "id": "prefix",
@@ -41,6 +41,11 @@
           "value": "M",
           "label": "MX",
           "description": "Stratix 10 MX FPGA with integrated HBM2 memory."
+        },
+        {
+          "value": "A",
+          "label": "AX",
+          "description": "Stratix 10 AX-Series Direct RF FPGA with integrated 64 GSPS 10-bit RF-ADC/RF-DAC."
         }
       ]
     },
@@ -110,6 +115,16 @@
           "value": "2800",
           "label": "2800K LE",
           "description": "~2.8M logic elements."
+        },
+        {
+          "value": "28",
+          "label": "28 (AX)",
+          "description": "Stratix 10 AX-Series Direct RF — 2.75M ALMs, 8x 64 GSPS RF-ADC/DAC. Used as `1SA28…`.",
+          "when": {
+            "sub_family": [
+              "A"
+            ]
+          }
         }
       ]
     },

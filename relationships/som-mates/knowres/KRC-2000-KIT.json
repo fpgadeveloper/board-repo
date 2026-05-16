@@ -1,0 +1,9 @@
+{
+  "carrier": "KRC-2000-KIT",
+  "compatible_soms": [
+    {
+      "som": "KRM-2ZU67DR-2i",
+      "verified_by": "vendor"
+    }
+  ]
+}

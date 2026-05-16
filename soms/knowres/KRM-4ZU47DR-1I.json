@@ -1,0 +1,33 @@
+{
+  "mpn": "KRM-4ZU47DR-1I",
+  "name": "KRM-4ZU47DR RFSoC Module — 1I",
+  "status": "active",
+  "url": "https://www.knowres.com/product/krm-4zu47dr-rfsoc-gen3-module/",
+  "vendor": "knowres",
+  "price": null,
+  "device": {
+    "part": "XCZU47DR-1FFVG1517I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 8192
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "ecc": true
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "mpn": "KRM-4ZU27DR-2E",
+  "name": "KRM-4ZU27DR RFSoC Module — 2E",
+  "status": "active",
+  "url": "https://www.knowres.com/product/krm-4zu27dr-rfsoc-gen1-module/",
+  "vendor": "knowres",
+  "price": null,
+  "device": {
+    "part": "XCZU27DR-2FFVG1517E",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 8192
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 8192
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    }
+  ]
+}
