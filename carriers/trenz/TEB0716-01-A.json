@@ -1,0 +1,26 @@
+{
+  "mpn": "TEB0716-01-A",
+  "name": "TEB0716-01-A Carrier",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/Baseboard-for-TE0716/TEB0716-01-A",
+  "vendor": "trenz",
+  "price": {
+    "value": 165.9,
+    "currency": "USD"
+  },
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ]
+  },
+  "usb": [
+    {
+      "connector": "Micro-B",
+      "speed": "2.0",
+      "role": "otg"
+    }
+  ]
+}

@@ -33,7 +33,12 @@
     }
   ],
   "expansion": {
-    "fmc_hpc": 1
+    "fmc": [
+      {
+        "slot": "HPC",
+        "type": "hpc"
+      }
+    ]
   },
   "storage": {
     "microsd": 1

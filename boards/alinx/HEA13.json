@@ -45,12 +45,6 @@
       "role": "host"
     }
   ],
-  "expansion": {
-    "fmcp": 2
-  },
-  "storage": {
-    "microsd": 2
-  },
   "usb_bridge": [
     {
       "connector": "Type-C",
@@ -58,5 +52,20 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "FMCP0",
+        "type": "fmcp"
+      },
+      {
+        "slot": "FMCP1",
+        "type": "fmcp"
+      }
+    ]
+  },
+  "storage": {
+    "microsd": 2
+  }
 }

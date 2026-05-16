@@ -1,0 +1,17 @@
+{
+  "mpn": "OP068",
+  "name": "RPi Camera FMC",
+  "status": "active",
+  "url": "https://opsero.com/product/rpi-camera-fmc",
+  "vendor": "opsero",
+  "price": {
+    "value": 299,
+    "currency": "USD"
+  },
+  "connector_type": "lpc",
+  "vadj_min": 1.2,
+  "vadj_max": 1.2,
+  "video": {
+    "mipi_csi": 4
+  }
+}

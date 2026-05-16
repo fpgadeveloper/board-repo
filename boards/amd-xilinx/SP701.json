@@ -38,10 +38,6 @@
       }
     ]
   },
-  "expansion": {
-    "fmc_lpc": 1,
-    "pmod": 6
-  },
   "usb_bridge": [
     {
       "connector": "Micro-B",
@@ -50,5 +46,16 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "LPC",
+        "type": "lpc",
+        "vadj_min": 1.8,
+        "vadj_max": 3.3
+      }
+    ],
+    "pmod": 6
+  }
 }

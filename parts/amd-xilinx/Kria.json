@@ -87,12 +87,17 @@
         {
           "value": "SFVC784",
           "label": "SFVC784",
-          "description": "SFVC 784-pin."
+          "description": "SFVC 784-pin (used by K26)."
         },
         {
           "value": "SBVA484",
           "label": "SBVA484",
           "description": "SBVA 484-pin."
+        },
+        {
+          "value": "UBVA530",
+          "label": "UBVA530",
+          "description": "UBVA 530-pin (used by K24)."
         }
       ]
     },

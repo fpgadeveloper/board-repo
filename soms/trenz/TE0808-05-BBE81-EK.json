@@ -1,0 +1,31 @@
+{
+  "mpn": "TE0808-05-BBE81-EK",
+  "name": "TE0808 \u2014 ZU15EG-1E, 4 GB DDR4",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/UltraSOM-MPSoC-Module-with-AMD-Zynq-UltraScale-ZU15EG-1E-incl.-Heat-Spreader/TE0808-05-BBE81-EK",
+  "vendor": "trenz",
+  "price": {
+    "value": 2117.62,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU15EG-1FFVC900E",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    },
+    {
+      "type": "SPI",
+      "size_mb": 64
+    }
+  ]
+}

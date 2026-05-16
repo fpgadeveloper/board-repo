@@ -1,0 +1,9 @@
+{
+  "carrier": "TEB0729-04-A",
+  "compatible_soms": [
+    {
+      "som": "TE0729-03-62I63MA",
+      "verified_by": "vendor"
+    }
+  ]
+}

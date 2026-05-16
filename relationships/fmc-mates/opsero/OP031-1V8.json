@@ -1,0 +1,109 @@
+{
+  "fmc_card": "OP031-1V8",
+  "compatible_hosts": [
+    {
+      "host": "AES-ZU7EV-1-CC-FMC-G",
+      "host_type": "carrier",
+      "verified_by": "vendor",
+      "target_slot": "HPC"
+    },
+    {
+      "host": "KCU105",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC"
+    },
+    {
+      "host": "KCU105",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC"
+    },
+    {
+      "host": "VC707",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC1"
+    },
+    {
+      "host": "VC707",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC2"
+    },
+    {
+      "host": "VC709",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC"
+    },
+    {
+      "host": "VCU108",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC0"
+    },
+    {
+      "host": "VCU108",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC1"
+    },
+    {
+      "host": "VCU118",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP"
+    },
+    {
+      "host": "VCU118",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC"
+    },
+    {
+      "host": "ZCU102",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC0"
+    },
+    {
+      "host": "ZCU102",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC1",
+      "notes": "Port 2 unusable \u2014 HPC1 routes LA18_CC/LA17_CC to separate I/O banks."
+    },
+    {
+      "host": "ZCU104",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC"
+    },
+    {
+      "host": "ZCU106",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC0"
+    },
+    {
+      "host": "ZCU106",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC1",
+      "notes": "Only ports 0 and 1 work \u2014 HPC1 has only LA00\u2013LA16 routed."
+    },
+    {
+      "host": "ZCU111",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP"
+    },
+    {
+      "host": "ZCU208",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP"
+    }
+  ]
+}

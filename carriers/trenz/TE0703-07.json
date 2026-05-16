@@ -1,0 +1,38 @@
+{
+  "mpn": "TE0703-07",
+  "name": "TE0703-07 Carrier",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/TE0703-Carrier-board-for-Trenz-Electronic-modules-with-4-x-5-cm-form-factor/TE0703-07",
+  "vendor": "trenz",
+  "price": {
+    "value": 138.01,
+    "currency": "USD"
+  },
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ]
+  },
+  "usb": [
+    {
+      "connector": "Type-A",
+      "speed": "2.0",
+      "role": "host"
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Mini-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ],
+  "storage": {
+    "microsd": 1
+  }
+}

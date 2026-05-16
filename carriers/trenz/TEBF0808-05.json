@@ -1,0 +1,66 @@
+{
+  "mpn": "TEBF0808-05",
+  "name": "TEBF0808-05 Carrier",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/UltraITX-Baseboard-for-Trenz-Electronic-TE080X-UltraSOM/TEBF0808-05",
+  "vendor": "trenz",
+  "price": {
+    "value": 653.83,
+    "currency": "USD"
+  },
+  "pcie": [
+    {
+      "type": "Slot",
+      "lanes": 1
+    }
+  ],
+  "video": {
+    "displayport": 1
+  },
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ],
+    "sfp": 2
+  },
+  "usb": [
+    {
+      "connector": "Type-A",
+      "speed": "3.0",
+      "role": "host",
+      "ports": 2
+    },
+    {
+      "connector": "Header",
+      "speed": "3.0",
+      "role": "host",
+      "ports": 2
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ],
+      "ports": 2
+    }
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "HPC",
+        "type": "hpc"
+      }
+    ],
+    "pmod": 3
+  },
+  "storage": {
+    "sata": 1,
+    "microsd": 1
+  }
+}

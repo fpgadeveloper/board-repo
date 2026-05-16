@@ -35,13 +35,6 @@
       }
     ]
   },
-  "expansion": {
-    "fmc_lpc": 1,
-    "pmod": 5
-  },
-  "storage": {
-    "sd": 1
-  },
   "usb_bridge": [
     {
       "connector": "Micro-B",
@@ -50,5 +43,17 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "LPC",
+        "type": "lpc"
+      }
+    ],
+    "pmod": 5
+  },
+  "storage": {
+    "sd": 1
+  }
 }

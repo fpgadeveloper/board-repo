@@ -1,0 +1,27 @@
+{
+  "mpn": "TE0820-04-4DI21MA",
+  "name": "TE0820 \u2014 ZU4EV-1I, 2 GB DDR4",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/MPSoC-Module-with-AMD-Zynq-UltraScale-ZU4EV-1I-2-GByte-DDR4-SDRAM-4-x-5-cm/TE0820-04-4DI21MA",
+  "vendor": "trenz",
+  "price": {
+    "value": 821.12,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU4EV-1SFVC784I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 2048
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    }
+  ]
+}

@@ -43,13 +43,6 @@
       "role": "otg"
     }
   ],
-  "expansion": {
-    "fmc_lpc": 2,
-    "pmod": 2
-  },
-  "storage": {
-    "sd": 1
-  },
   "usb_bridge": [
     {
       "connector": "Micro-B",
@@ -63,5 +56,25 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "LPC1",
+        "type": "lpc",
+        "vadj_min": 1.8,
+        "vadj_max": 3.3
+      },
+      {
+        "slot": "LPC2",
+        "type": "lpc",
+        "vadj_min": 1.8,
+        "vadj_max": 3.3
+      }
+    ],
+    "pmod": 2
+  },
+  "storage": {
+    "sd": 1
+  }
 }

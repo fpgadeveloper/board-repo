@@ -1,0 +1,27 @@
+{
+  "mpn": "TE0710-03-42I21-A",
+  "name": "TE0710 \u2014 7A35T-2I, 512 MB DDR3L",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/Dual-fast-Ethernet-FPGA-Module-with-AMD-Artix-7A35T-2I-512-MB-DDR3L-4-x-5-cm/TE0710-03-42I21-A",
+  "vendor": "trenz",
+  "price": {
+    "value": 165.9,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7A35T-2CSG324I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR3L",
+      "size_mb": 512
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ]
+}

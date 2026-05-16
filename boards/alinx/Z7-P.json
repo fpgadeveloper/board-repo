@@ -63,12 +63,6 @@
       "role": "host"
     }
   ],
-  "expansion": {
-    "fmc_hpc": 1
-  },
-  "storage": {
-    "microsd": 1
-  },
   "usb_bridge": [
     {
       "connector": "Mini-B",
@@ -76,5 +70,16 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "HPC",
+        "type": "hpc"
+      }
+    ]
+  },
+  "storage": {
+    "microsd": 1
+  }
 }

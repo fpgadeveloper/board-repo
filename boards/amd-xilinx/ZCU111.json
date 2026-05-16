@@ -54,13 +54,6 @@
       "role": "otg"
     }
   ],
-  "expansion": {
-    "fmcp": 1,
-    "rfmc": 2
-  },
-  "storage": {
-    "microsd": 1
-  },
   "usb_bridge": [
     {
       "connector": "Micro-B",
@@ -69,5 +62,19 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "FMCP",
+        "type": "fmcp",
+        "vadj_min": 1.2,
+        "vadj_max": 1.8
+      }
+    ],
+    "rfmc": 2
+  },
+  "storage": {
+    "microsd": 1
+  }
 }

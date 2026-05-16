@@ -1,0 +1,31 @@
+{
+  "mpn": "TE0807-04-7AI81-A",
+  "name": "TE0807 \u2014 ZU7CG-1I, 4 GB DDR4",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/MPSoC-Module-with-AMD-Zynq-UltraScale-ZU7CG-1I-4-GByte-DDR4-5.2-x-7.6-cm/TE0807-04-7AI81-A",
+  "vendor": "trenz",
+  "price": {
+    "value": 2835.57,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU7CG-1FBVB900I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 64
+    }
+  ]
+}

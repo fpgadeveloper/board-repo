@@ -1,0 +1,31 @@
+{
+  "mpn": "TE0729-03-62I63MA",
+  "name": "TE0729 \u2014 7Z020-2I, 512 MB DDR3L",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/SoC-Module-with-AMD-Zynq-7020-2I-512-MByte-DDR3L-3-x-Ethernet/TE0729-03-62I63MA",
+  "vendor": "trenz",
+  "price": {
+    "value": 347.13,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7Z020-2CLG484I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR3L",
+      "size_mb": 512
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    }
+  ]
+}

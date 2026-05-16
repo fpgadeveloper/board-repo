@@ -53,17 +53,6 @@
       "ports": 2
     }
   ],
-  "expansion": {
-    "fmc_lpc": 1,
-    "pmod": 4,
-    "syzygy": 1
-  },
-  "storage": {
-    "microsd": 1
-  },
-  "wireless": {
-    "wifi": true
-  },
   "usb_bridge": [
     {
       "connector": "Micro-B",
@@ -72,5 +61,21 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "LPC",
+        "type": "lpc"
+      }
+    ],
+    "pmod": 4,
+    "syzygy": 1
+  },
+  "storage": {
+    "microsd": 1
+  },
+  "wireless": {
+    "wifi": true
+  }
 }

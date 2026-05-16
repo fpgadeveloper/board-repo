@@ -1,0 +1,27 @@
+{
+  "mpn": "TE0724-04-41I33-A",
+  "name": "TE0724 \u2014 7Z010-1I, 1 GB DDR3L",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/SoC-Module-with-AMD-Zynq-7010-1I-1-GByte-DDR3L-64-MByte-Flash-4-x-6-cm/TE0724-04-41I33-A",
+  "vendor": "trenz",
+  "price": {
+    "value": 200.75,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7Z010-1CLG400I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR3L",
+      "size_mb": 1024
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 64
+    }
+  ]
+}

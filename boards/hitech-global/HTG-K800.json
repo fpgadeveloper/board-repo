@@ -28,6 +28,15 @@
     }
   ],
   "expansion": {
-    "fmc_hpc": 2
+    "fmc": [
+      {
+        "slot": "HPC0",
+        "type": "hpc"
+      },
+      {
+        "slot": "HPC1",
+        "type": "hpc"
+      }
+    ]
   }
 }

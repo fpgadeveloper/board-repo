@@ -1,0 +1,31 @@
+{
+  "mpn": "TEI0022-03",
+  "name": "TEI0022 \u2014 5CSEMA5F31C8N, 1 GB DDR3",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/DataStorm-DAQ-M-Board-FMC-Carrier-for-M-Series-Precision-Converters/TEI0022-03",
+  "vendor": "trenz",
+  "price": {
+    "value": 430.77,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "5CSEMA5F31C8N",
+    "vendor": "altera"
+  },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    },
+    {
+      "type": "SPI",
+      "size_mb": 32
+    }
+  ]
+}

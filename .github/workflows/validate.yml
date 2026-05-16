@@ -1,9 +1,14 @@
-name: Validate boards
+name: Validate entities
 
 on:
   pull_request:
     paths:
       - "boards/**/*.json"
+      - "soms/**/*.json"
+      - "carriers/**/*.json"
+      - "kits/**/*.json"
+      - "fmc-cards/**/*.json"
+      - "relationships/**/*.json"
       - "notes/**/*.md"
       - "schema.json"
       - "vendors.json"
@@ -14,6 +19,11 @@ on:
     branches: [main]
     paths:
       - "boards/**/*.json"
+      - "soms/**/*.json"
+      - "carriers/**/*.json"
+      - "kits/**/*.json"
+      - "fmc-cards/**/*.json"
+      - "relationships/**/*.json"
       - "notes/**/*.md"
       - "schema.json"
       - "vendors.json"
@@ -34,30 +44,108 @@ jobs:
       - name: Install jsonschema
         run: pip install jsonschema referencing
 
-      - name: Validate boards against schema
+      - name: Validate entities and relationships against schema
         run: |
           python - <<'PY'
-          import json, glob, sys
+          import json, glob, os, sys
           from jsonschema import Draft202012Validator
           from referencing import Registry, Resource
 
           with open("schema.json") as f:
               schema = json.load(f)
-          # Register the whole schema under a URN so internal $refs (e.g.
-          # #/$defs/price from the board sub-schema) resolve against it.
           registry = Registry().with_resource("urn:root", Resource.from_contents(schema))
-          validator = Draft202012Validator({"$ref": "urn:root#/$defs/board"}, registry=registry)
+
+          ENTITY_FOLDERS = {
+              "boards": "standalone",
+              "soms": "som",
+              "carriers": "carrier",
+              "kits": "kit",
+              "fmc-cards": "fmc_card",
+          }
+          RELATIONSHIP_FOLDERS = {
+              "som-mates": "som_mates",
+              "fmc-mates": "fmc_mates",
+          }
+
+          validators = {
+              defname: Draft202012Validator({"$ref": f"urn:root#/$defs/{defname}"}, registry=registry)
+              for defname in set(ENTITY_FOLDERS.values()) | set(RELATIONSHIP_FOLDERS.values())
+          }
 
           errors = 0
-          files = sorted(glob.glob("boards/**/*.json", recursive=True))
-          for path in files:
-              with open(path) as f:
-                  board = json.load(f)
-              for e in validator.iter_errors(board):
-                  print(f"::error file={path}::{e.json_path}: {e.message}")
+          entities = {t: {} for t in ENTITY_FOLDERS.values()}
+
+          for folder, defname in ENTITY_FOLDERS.items():
+              for path in sorted(glob.glob(f"{folder}/**/*.json", recursive=True)):
+                  with open(path) as f:
+                      rec = json.load(f)
+                  for e in validators[defname].iter_errors(rec):
+                      print(f"::error file={path}::{e.json_path}: {e.message}")
+                      errors += 1
+                  # Filename / folder / mpn / vendor consistency.
+                  stem = os.path.splitext(os.path.basename(path))[0]
+                  parent = os.path.basename(os.path.dirname(path))
+                  if rec.get("mpn") != stem:
+                      print(f"::error file={path}::filename stem {stem!r} does not match mpn {rec.get('mpn')!r}")
+                      errors += 1
+                  if rec.get("vendor") != parent:
+                      print(f"::error file={path}::vendor field {rec.get('vendor')!r} does not match folder {parent!r}")
+                      errors += 1
+                  entities[defname][rec.get("mpn")] = rec
+
+          # Cross-ref: kit compositions must point at existing SoM + carrier.
+          for mpn, kit in entities["kit"].items():
+              comp = kit.get("composition") or {}
+              if comp.get("som") not in entities["som"]:
+                  print(f"::error file=kits/{kit.get('vendor')}/{mpn}.json::composition.som {comp.get('som')!r} not in soms/")
+                  errors += 1
+              if comp.get("carrier") not in entities["carrier"]:
+                  print(f"::error file=kits/{kit.get('vendor')}/{mpn}.json::composition.carrier {comp.get('carrier')!r} not in carriers/")
                   errors += 1
 
-          print(f"{len(files)} boards checked, {errors} error(s)")
+          # Cross-ref: relationship bundles must point at existing entities;
+          # filename stem must match the bundle key (fmc_card or carrier);
+          # parent folder must match the owning entity's vendor.
+          host_lookups = {"standalone": entities["standalone"], "kit": entities["kit"], "carrier": entities["carrier"]}
+          owner_entity_type = {"som_mates": "carrier", "fmc_mates": "fmc_card"}
+          for folder, defname in RELATIONSHIP_FOLDERS.items():
+              for path in sorted(glob.glob(f"relationships/{folder}/**/*.json", recursive=True)):
+                  with open(path) as f:
+                      bundle = json.load(f)
+                  for e in validators[defname].iter_errors(bundle):
+                      print(f"::error file={path}::{e.json_path}: {e.message}")
+                      errors += 1
+                  stem = os.path.splitext(os.path.basename(path))[0]
+                  parent = os.path.basename(os.path.dirname(path))
+                  if defname == "som_mates":
+                      key = bundle.get("carrier")
+                      if key not in entities["carrier"]:
+                          print(f"::error file={path}::carrier {key!r} not in carriers/")
+                          errors += 1
+                      for i, entry in enumerate(bundle.get("compatible_soms", [])):
+                          if entry.get("som") not in entities["som"]:
+                              print(f"::error file={path}::compatible_soms[{i}].som {entry.get('som')!r} not in soms/")
+                              errors += 1
+                  elif defname == "fmc_mates":
+                      key = bundle.get("fmc_card")
+                      if key not in entities["fmc_card"]:
+                          print(f"::error file={path}::fmc_card {key!r} not in fmc-cards/")
+                          errors += 1
+                      for i, entry in enumerate(bundle.get("compatible_hosts", [])):
+                          host_type = entry.get("host_type")
+                          if entry.get("host") not in host_lookups.get(host_type, {}):
+                              print(f"::error file={path}::compatible_hosts[{i}].host {entry.get('host')!r} not in {host_type}s/")
+                              errors += 1
+                  if key is not None and stem != key:
+                      print(f"::error file={path}::filename stem {stem!r} does not match bundle key {key!r}")
+                      errors += 1
+                  owner = entities[owner_entity_type[defname]].get(key)
+                  if owner is not None and owner.get("vendor") != parent:
+                      print(f"::error file={path}::parent folder {parent!r} does not match {key!r} vendor {owner.get('vendor')!r}")
+                      errors += 1
+
+          total = sum(len(v) for v in entities.values())
+          print(f"{total} entities checked, {errors} error(s)")
           sys.exit(1 if errors else 0)
           PY
 
@@ -69,44 +157,44 @@ jobs:
             exit 1
           fi
 
-      - name: Check notes/ files match an existing board
+      - name: Check notes/ files match an existing entity
         run: |
           python - <<'PY'
           import glob, os, sys
 
+          # Notes can attach to any entity type — look across all entity folders.
+          ENTITY_FOLDERS = ["boards", "soms", "carriers", "kits", "fmc-cards"]
           orphans = []
           for path in sorted(glob.glob("notes/**/*.md", recursive=True)):
-              # notes/<vendor>/<mpn>.md must have a matching boards/<vendor>/<mpn>.json.
-              # Skip top-level files (e.g. notes/README.md) — only files nested
-              # one folder deep are treated as board notes.
               rel_parts = os.path.relpath(path, "notes").split(os.sep)
               if len(rel_parts) != 2:
                   continue
               vendor, filename = rel_parts
-              board_path = os.path.join("boards", vendor, os.path.splitext(filename)[0] + ".json")
-              if not os.path.isfile(board_path):
-                  orphans.append((path, board_path))
+              mpn = os.path.splitext(filename)[0]
+              if not any(os.path.isfile(os.path.join(f, vendor, f"{mpn}.json")) for f in ENTITY_FOLDERS):
+                  orphans.append((path, vendor, mpn))
 
-          for note, expected in orphans:
-              print(f"::error file={note}::Orphaned note: no matching board file at {expected}")
+          for note, vendor, mpn in orphans:
+              print(f"::error file={note}::Orphaned note: no entity {vendor}/{mpn}.json found in boards/, soms/, carriers/, kits/, or fmc-cards/")
           if orphans:
               sys.exit(1)
-          print(f"All notes have matching board files.")
+          print("All notes have matching entity files.")
           PY
 
-      - name: Check for duplicate MPNs
+      - name: Check for duplicate MPNs across entity folders
         run: |
           python - <<'PY'
           import json, glob, sys
           from collections import Counter
 
           mpns = []
-          for path in sorted(glob.glob("boards/**/*.json", recursive=True)):
-              with open(path) as f:
-                  board = json.load(f)
-              mpn = board.get("mpn")
-              if mpn:
-                  mpns.append((mpn, path))
+          for folder in ["boards", "soms", "carriers", "kits", "fmc-cards"]:
+              for path in sorted(glob.glob(f"{folder}/**/*.json", recursive=True)):
+                  with open(path) as f:
+                      rec = json.load(f)
+                  mpn = rec.get("mpn")
+                  if mpn:
+                      mpns.append((mpn, path))
 
           counts = Counter(m for m, _ in mpns)
           dupes = [m for m, c in counts.items() if c > 1]
@@ -116,5 +204,5 @@ jobs:
                   for p in paths:
                       print(f"::error file={p}::Duplicate MPN: {mpn}")
               sys.exit(1)
-          print(f"{len(mpns)} MPNs, no duplicates")
+          print(f"{len(mpns)} MPNs across all entity folders, no duplicates")
           PY

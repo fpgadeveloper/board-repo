@@ -1,0 +1,194 @@
+{
+  "fmc_card": "OP103",
+  "compatible_hosts": [
+    {
+      "host": "AES-ZU7EV-1-CC-FMC-G",
+      "host_type": "carrier",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "Both channels x4."
+    },
+    {
+      "host": "KC705",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "Both channels x4."
+    },
+    {
+      "host": "KC705",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC",
+      "notes": "Channel A x1 only."
+    },
+    {
+      "host": "KCU105",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "Both channels x4."
+    },
+    {
+      "host": "VC707",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC1",
+      "notes": "Both channels x4."
+    },
+    {
+      "host": "VC707",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC2",
+      "notes": "Both channels x4."
+    },
+    {
+      "host": "VC709",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "Both channels x4."
+    },
+    {
+      "host": "VCK190",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP1",
+      "notes": "Both channels x4."
+    },
+    {
+      "host": "VCK190",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP2",
+      "notes": "Both channels x4."
+    },
+    {
+      "host": "VCU108",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC0",
+      "notes": "Both channels x4."
+    },
+    {
+      "host": "VCU108",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC1",
+      "notes": "Both channels x4."
+    },
+    {
+      "host": "VCU118",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "Both channels x4 (FMC+ only \u2014 HPC not supported)."
+    },
+    {
+      "host": "VEK280",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "Both channels x4."
+    },
+    {
+      "host": "VHK158",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "Channel A x4 only; Channel B unsupported."
+    },
+    {
+      "host": "VMK180",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP1",
+      "notes": "Both channels x4."
+    },
+    {
+      "host": "VMK180",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP2",
+      "notes": "Both channels x4."
+    },
+    {
+      "host": "VPK120",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "Channel A x4 only; Channel B unsupported."
+    },
+    {
+      "host": "VPK180",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "Channel A x4 only; Channel B unsupported."
+    },
+    {
+      "host": "ZC706",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "Channel A x4."
+    },
+    {
+      "host": "ZC706",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC",
+      "notes": "Channel A x1 only."
+    },
+    {
+      "host": "ZCU102",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC0",
+      "notes": "Both channels x4."
+    },
+    {
+      "host": "ZCU102",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC1",
+      "notes": "Both channels x4."
+    },
+    {
+      "host": "ZCU104",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC",
+      "notes": "Channel A x1 only."
+    },
+    {
+      "host": "ZCU106",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC0",
+      "notes": "Both channels x4."
+    },
+    {
+      "host": "ZCU106",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC1",
+      "notes": "Channel A x1 only."
+    },
+    {
+      "host": "ZCU111",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "Both channels x4."
+    },
+    {
+      "host": "ZCU208",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "Both channels x4."
+    }
+  ]
+}

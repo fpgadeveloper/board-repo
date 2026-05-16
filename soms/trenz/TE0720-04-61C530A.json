@@ -1,0 +1,27 @@
+{
+  "mpn": "TE0720-04-61C530A",
+  "name": "TE0720 \u2014 7Z020-1C, 256 MB DDR3L",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/SoC-Module-with-AMD-Zynq-7020-1C-256-MByte-DDR3L-32-MByte-Flash-4-x-5-cm/TE0720-04-61C530A",
+  "vendor": "trenz",
+  "price": {
+    "value": 284.39,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7Z020-1CLG484C",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR3L",
+      "size_mb": 256
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ]
+}

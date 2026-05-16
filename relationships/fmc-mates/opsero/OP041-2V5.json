@@ -1,0 +1,47 @@
+{
+  "fmc_card": "OP041-2V5",
+  "compatible_hosts": [
+    {
+      "host": "AC701",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC"
+    },
+    {
+      "host": "KC705",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC"
+    },
+    {
+      "host": "KC705",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC"
+    },
+    {
+      "host": "ZC702",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC1"
+    },
+    {
+      "host": "ZC702",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC2"
+    },
+    {
+      "host": "ZC706",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC"
+    },
+    {
+      "host": "ZedBoard",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC"
+    }
+  ]
+}

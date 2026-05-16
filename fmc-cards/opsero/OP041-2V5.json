@@ -1,0 +1,22 @@
+{
+  "mpn": "OP041-2V5",
+  "name": "Robust Ethernet FMC 2.5V",
+  "status": "active",
+  "url": "https://opsero.com/product/robust-ethernet-fmc-2v5",
+  "vendor": "opsero",
+  "price": {
+    "value": 590,
+    "currency": "USD"
+  },
+  "connector_type": "lpc",
+  "vadj_min": 2.5,
+  "vadj_max": 2.5,
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 4
+      }
+    ]
+  }
+}

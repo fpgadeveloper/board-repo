@@ -1,0 +1,31 @@
+{
+  "mpn": "TE0715-05-52I33-A",
+  "name": "TE0715 \u2014 7Z015-2I, 1 GB DDR3L",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/SoC-Module-with-AMD-Zynq-7015-2I-1-GByte-DDR3L-32-MByte-Flash-4-x-5-cm/TE0715-05-52I33-A",
+  "vendor": "trenz",
+  "price": {
+    "value": 430.77,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7Z015-2CLG485I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR3L",
+      "size_mb": 1024
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    },
+    {
+      "type": "SPI",
+      "size_mb": 32
+    }
+  ]
+}

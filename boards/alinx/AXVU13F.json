@@ -41,9 +41,6 @@
   "networking": {
     "qsfp": 4
   },
-  "expansion": {
-    "fmcp": 4
-  },
   "usb_bridge": [
     {
       "connector": "Mini-B",
@@ -51,5 +48,25 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "FMCP0",
+        "type": "fmcp"
+      },
+      {
+        "slot": "FMCP1",
+        "type": "fmcp"
+      },
+      {
+        "slot": "FMCP2",
+        "type": "fmcp"
+      },
+      {
+        "slot": "FMCP3",
+        "type": "fmcp"
+      }
+    ]
+  }
 }

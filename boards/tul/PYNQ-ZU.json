@@ -32,19 +32,6 @@
       "role": "host"
     }
   ],
-  "expansion": {
-    "fmc_lpc": 1,
-    "pmod": 2,
-    "raspberry_pi": 1,
-    "syzygy": 2
-  },
-  "storage": {
-    "microsd": 1
-  },
-  "wireless": {
-    "wifi": true,
-    "bluetooth": true
-  },
   "usb_bridge": [
     {
       "connector": "Micro-B",
@@ -58,5 +45,23 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "LPC",
+        "type": "lpc"
+      }
+    ],
+    "pmod": 2,
+    "raspberry_pi": 1,
+    "syzygy": 2
+  },
+  "storage": {
+    "microsd": 1
+  },
+  "wireless": {
+    "wifi": true,
+    "bluetooth": true
+  }
 }

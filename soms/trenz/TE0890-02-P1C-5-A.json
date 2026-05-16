@@ -1,0 +1,21 @@
+{
+  "mpn": "TE0890-02-P1C-5-A",
+  "name": "TE0890 \u2014 7S25-1C",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/S7-Mini-Fully-Open-Source-Module-with-AMD-Spartan-7S25-1C-64-Mbit-HyperRAM/TE0890-02-P1C-5-A",
+  "vendor": "trenz",
+  "price": {
+    "value": 47.4,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7S25-1FTGB196C",
+    "vendor": "amd-xilinx"
+  },
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 8
+    }
+  ]
+}

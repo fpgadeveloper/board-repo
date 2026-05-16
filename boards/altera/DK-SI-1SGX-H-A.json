@@ -35,9 +35,6 @@
     "qsfp": 2,
     "cfp": 1
   },
-  "expansion": {
-    "fmcp": 2
-  },
   "usb_bridge": [
     {
       "connector": "Type-B",
@@ -45,5 +42,17 @@
         "jtag"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "FMCP0",
+        "type": "fmcp"
+      },
+      {
+        "slot": "FMCP1",
+        "type": "fmcp"
+      }
+    ]
+  }
 }

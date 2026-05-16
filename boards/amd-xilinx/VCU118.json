@@ -50,14 +50,6 @@
     ],
     "qsfp": 2
   },
-  "expansion": {
-    "fmc_hpc": 1,
-    "fmcp": 1,
-    "pmod": 2
-  },
-  "storage": {
-    "microsd": 1
-  },
   "usb_bridge": [
     {
       "connector": "Micro-B",
@@ -71,5 +63,25 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "HPC",
+        "type": "hpc",
+        "vadj_min": 1.2,
+        "vadj_max": 1.8
+      },
+      {
+        "slot": "FMCP",
+        "type": "fmcp",
+        "vadj_min": 1.2,
+        "vadj_max": 1.8
+      }
+    ],
+    "pmod": 2
+  },
+  "storage": {
+    "microsd": 1
+  }
 }

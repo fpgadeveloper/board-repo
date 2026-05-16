@@ -45,13 +45,6 @@
       "role": "host"
     }
   ],
-  "expansion": {
-    "fmc_lpc": 1,
-    "pmod": 3
-  },
-  "storage": {
-    "microsd": 1
-  },
   "usb_bridge": [
     {
       "connector": "Micro-B",
@@ -60,5 +53,19 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "LPC",
+        "type": "lpc",
+        "vadj_min": 1.2,
+        "vadj_max": 1.8
+      }
+    ],
+    "pmod": 3
+  },
+  "storage": {
+    "microsd": 1
+  }
 }

@@ -45,7 +45,16 @@
     "qsfp": 1
   },
   "expansion": {
-    "fmcp": 2
+    "fmc": [
+      {
+        "slot": "FMCP1",
+        "type": "fmcp"
+      },
+      {
+        "slot": "FMCP2",
+        "type": "fmcp"
+      }
+    ]
   },
   "storage": {
     "microsd": 1

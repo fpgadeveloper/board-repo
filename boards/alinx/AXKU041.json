@@ -45,13 +45,6 @@
     ],
     "sfp": 2
   },
-  "expansion": {
-    "fmc_hpc": 1,
-    "fmc_lpc": 2
-  },
-  "storage": {
-    "microsd": 1
-  },
   "usb_bridge": [
     {
       "connector": "Mini-B",
@@ -59,5 +52,24 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "HPC",
+        "type": "hpc"
+      },
+      {
+        "slot": "LPC0",
+        "type": "lpc"
+      },
+      {
+        "slot": "LPC1",
+        "type": "lpc"
+      }
+    ]
+  },
+  "storage": {
+    "microsd": 1
+  }
 }

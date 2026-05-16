@@ -52,12 +52,6 @@
       "role": "otg"
     }
   ],
-  "expansion": {
-    "fmc_hpc": 2
-  },
-  "storage": {
-    "sd": 1
-  },
   "usb_bridge": [
     {
       "connector": "Micro-B",
@@ -71,5 +65,24 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "HPC1",
+        "type": "hpc",
+        "vadj_min": 1.2,
+        "vadj_max": 1.8
+      },
+      {
+        "slot": "HPC2",
+        "type": "hpc",
+        "vadj_min": 1.2,
+        "vadj_max": 1.8
+      }
+    ]
+  },
+  "storage": {
+    "sd": 1
+  }
 }

@@ -1,0 +1,208 @@
+{
+  "fmc_card": "OP073",
+  "compatible_hosts": [
+    {
+      "host": "AES-ZU7EV-1-CC-FMC-G",
+      "host_type": "carrier",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "Gen3 PCIe, both slots."
+    },
+    {
+      "host": "KC705",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "Gen2 PCIe x4 on Slot 1."
+    },
+    {
+      "host": "KC705",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC",
+      "notes": "Gen2 PCIe x1 on Slot 1."
+    },
+    {
+      "host": "KCU105",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "Gen3 PCIe, both slots."
+    },
+    {
+      "host": "KCU105",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC",
+      "notes": "Gen3 PCIe x1 on Slot 1 only."
+    },
+    {
+      "host": "VC707",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC1",
+      "notes": "Gen2 PCIe, both slots."
+    },
+    {
+      "host": "VC707",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC2",
+      "notes": "Gen2 PCIe, both slots."
+    },
+    {
+      "host": "VC709",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "Gen3 PCIe, both slots."
+    },
+    {
+      "host": "VCK190",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP1",
+      "notes": "Gen4 PCIe, both slots."
+    },
+    {
+      "host": "VCK190",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP2",
+      "notes": "Gen4 PCIe, both slots."
+    },
+    {
+      "host": "VCU108",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC0",
+      "notes": "Gen3 PCIe, both slots \u2014 no reference design."
+    },
+    {
+      "host": "VCU108",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC1",
+      "notes": "Gen3 PCIe, both slots \u2014 no reference design."
+    },
+    {
+      "host": "VCU118",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "Gen3 PCIe, both slots."
+    },
+    {
+      "host": "VCU118",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "Neither slot supported \u2014 use FMC+."
+    },
+    {
+      "host": "VEK280",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "Gen4 PCIe, both slots \u2014 reference design coming soon."
+    },
+    {
+      "host": "VHK158",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "Gen4 PCIe x4 on Slot 1 only."
+    },
+    {
+      "host": "VMK180",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP1",
+      "notes": "Gen4 PCIe, both slots."
+    },
+    {
+      "host": "VMK180",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP2",
+      "notes": "Gen4 PCIe, both slots."
+    },
+    {
+      "host": "VPK120",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "Gen4 PCIe x4 on Slot 1 only."
+    },
+    {
+      "host": "VPK180",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "Gen4 PCIe x4 on Slot 1 only."
+    },
+    {
+      "host": "ZC706",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "Gen2 PCIe x4 on Slot 1 only."
+    },
+    {
+      "host": "ZC706",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC",
+      "notes": "Gen2 PCIe x1 on Slot 1 only."
+    },
+    {
+      "host": "ZCU102",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC0",
+      "notes": "Gen3 PCIe, both slots \u2014 no reference design."
+    },
+    {
+      "host": "ZCU102",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC1",
+      "notes": "Gen3 PCIe, both slots \u2014 no reference design."
+    },
+    {
+      "host": "ZCU104",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC",
+      "notes": "Gen3 PCIe x1 on Slot 1 only."
+    },
+    {
+      "host": "ZCU106",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC0",
+      "notes": "Gen3 PCIe, both slots."
+    },
+    {
+      "host": "ZCU106",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC1",
+      "notes": "Gen3 PCIe x1 on Slot 1 only."
+    },
+    {
+      "host": "ZCU111",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "Gen3 PCIe, both slots."
+    },
+    {
+      "host": "ZCU208",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "Gen3 PCIe, both slots."
+    }
+  ]
+}

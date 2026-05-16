@@ -46,13 +46,6 @@
       "role": "otg"
     }
   ],
-  "expansion": {
-    "fmc_lpc": 1,
-    "pmod": 1
-  },
-  "storage": {
-    "microsd": 1
-  },
   "usb_bridge": [
     {
       "connector": "Type-C",
@@ -66,5 +59,17 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "LPC",
+        "type": "lpc"
+      }
+    ],
+    "pmod": 1
+  },
+  "storage": {
+    "microsd": 1
+  }
 }

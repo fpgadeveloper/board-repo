@@ -1,0 +1,208 @@
+{
+  "fmc_card": "OP081",
+  "compatible_hosts": [
+    {
+      "host": "AES-ZU7EV-1-CC-FMC-G",
+      "host_type": "carrier",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "4 ports."
+    },
+    {
+      "host": "KC705",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "4 ports."
+    },
+    {
+      "host": "KC705",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC",
+      "notes": "1 port only."
+    },
+    {
+      "host": "KCU105",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "4 ports."
+    },
+    {
+      "host": "KCU105",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC",
+      "notes": "1 port only."
+    },
+    {
+      "host": "VC707",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC1",
+      "notes": "4 ports."
+    },
+    {
+      "host": "VC707",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC2",
+      "notes": "4 ports."
+    },
+    {
+      "host": "VC709",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "4 ports."
+    },
+    {
+      "host": "VCK190",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP1",
+      "notes": "4 ports."
+    },
+    {
+      "host": "VCK190",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP2",
+      "notes": "4 ports."
+    },
+    {
+      "host": "VCU108",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC0",
+      "notes": "4 ports."
+    },
+    {
+      "host": "VCU108",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC1",
+      "notes": "4 ports."
+    },
+    {
+      "host": "VCU118",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "FMC+ only \u2014 HPC not supported."
+    },
+    {
+      "host": "VEK280",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "4 ports."
+    },
+    {
+      "host": "VHK158",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "4 ports."
+    },
+    {
+      "host": "VMK180",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP1",
+      "notes": "4 ports."
+    },
+    {
+      "host": "VMK180",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP2",
+      "notes": "4 ports."
+    },
+    {
+      "host": "VPK120",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "4 ports."
+    },
+    {
+      "host": "VPK180",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "4 ports."
+    },
+    {
+      "host": "ZC706",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "4 ports."
+    },
+    {
+      "host": "ZC706",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC",
+      "notes": "1 port only."
+    },
+    {
+      "host": "ZCU102",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC0",
+      "notes": "4 ports."
+    },
+    {
+      "host": "ZCU102",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC1",
+      "notes": "4 ports."
+    },
+    {
+      "host": "ZCU104",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC",
+      "notes": "1 port only."
+    },
+    {
+      "host": "ZCU106",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC0",
+      "notes": "4 ports."
+    },
+    {
+      "host": "ZCU106",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC1",
+      "notes": "1 port only."
+    },
+    {
+      "host": "ZCU111",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "4 ports."
+    },
+    {
+      "host": "ZCU208",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "4 ports."
+    },
+    {
+      "host": "ZCU216",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "4 ports."
+    }
+  ]
+}

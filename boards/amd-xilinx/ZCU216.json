@@ -35,9 +35,14 @@
     "sfp": 4
   },
   "expansion": {
-    "fmcp": 1,
-    "rfmc": 2,
-    "pmod": 2
+    "fmc": [
+      {
+        "slot": "FMCP",
+        "type": "fmcp"
+      }
+    ],
+    "pmod": 2,
+    "rfmc": 2
   },
   "storage": {
     "microsd": 1

@@ -1,0 +1,31 @@
+{
+  "mpn": "TE0808-05-6BE81-E",
+  "name": "TE0808 \u2014 ZU6EG-1E, 4 GB DDR4",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/UltraSOM-MPSoC-Module-with-AMD-Zynq-UltraScale-ZU6EG-1E-4-GByte-DDR4/TE0808-05-6BE81-E",
+  "vendor": "trenz",
+  "price": {
+    "value": 1399.66,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU6EG-1FFVC900E",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    },
+    {
+      "type": "SPI",
+      "size_mb": 64
+    }
+  ]
+}

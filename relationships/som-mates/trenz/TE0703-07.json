@@ -1,0 +1,13 @@
+{
+  "carrier": "TE0703-07",
+  "compatible_soms": [
+    {
+      "som": "TE0720-04-61C33MA",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "TE0820-05-4DE81MA",
+      "verified_by": "vendor"
+    }
+  ]
+}

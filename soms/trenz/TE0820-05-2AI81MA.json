@@ -1,0 +1,31 @@
+{
+  "mpn": "TE0820-05-2AI81MA",
+  "name": "TE0820 \u2014 ZU2CG-1I, 2 GB DDR4",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/MPSoC-Module-with-AMD-Zynq-UltraScale-ZU2CG-1I-2-GByte-DDR4-SDRAM-4-x-5-cm/TE0820-05-2AI81MA",
+  "vendor": "trenz",
+  "price": {
+    "value": 535.33,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU2CG-1SFVC784I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 2048
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    }
+  ]
+}

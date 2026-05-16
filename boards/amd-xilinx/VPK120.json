@@ -34,13 +34,6 @@
     ],
     "qsfp": 2
   },
-  "expansion": {
-    "fmcp": 1
-  },
-  "storage": {
-    "sata": 1,
-    "microsd": 1
-  },
   "usb_bridge": [
     {
       "connector": "Micro-B",
@@ -48,5 +41,17 @@
         "jtag"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "FMCP",
+        "type": "fmcp"
+      }
+    ]
+  },
+  "storage": {
+    "sata": 1,
+    "microsd": 1
+  }
 }

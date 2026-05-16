@@ -1,0 +1,15 @@
+{
+  "mpn": "TE0813-02-3BE81-AS",
+  "name": "TE0813 Starter Kit",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/Starter-Kit-with-AMD-Zynq-UltraScale-ZU3EG-1E-MPSoC-Module/TE0813-02-3BE81-AS",
+  "vendor": "trenz",
+  "price": {
+    "value": 1392.69,
+    "currency": "USD"
+  },
+  "composition": {
+    "som": "TE0813-02-3BE81-A",
+    "carrier": "TEBF0818-02A"
+  }
+}

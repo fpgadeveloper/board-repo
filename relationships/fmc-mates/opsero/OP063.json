@@ -1,0 +1,208 @@
+{
+  "fmc_card": "OP063",
+  "compatible_hosts": [
+    {
+      "host": "AES-ZU7EV-1-CC-FMC-G",
+      "host_type": "carrier",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "Gen3 PCIe, dual SSD."
+    },
+    {
+      "host": "KC705",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "Gen2 PCIe x4 to SSD1."
+    },
+    {
+      "host": "KC705",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC",
+      "notes": "Gen2 PCIe x1 to SSD1 \u2014 limited support."
+    },
+    {
+      "host": "KCU105",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "Gen3 PCIe, dual SSD."
+    },
+    {
+      "host": "KCU105",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC",
+      "notes": "Gen3 PCIe x1, limited support."
+    },
+    {
+      "host": "VC707",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC1",
+      "notes": "Gen2 PCIe, dual SSD."
+    },
+    {
+      "host": "VC707",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC2",
+      "notes": "Gen2 PCIe, dual SSD."
+    },
+    {
+      "host": "VC709",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "Gen3 PCIe, dual SSD."
+    },
+    {
+      "host": "VCK190",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP1",
+      "notes": "Gen4 PCIe, dual SSD."
+    },
+    {
+      "host": "VCK190",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP2",
+      "notes": "Gen4 PCIe, dual SSD."
+    },
+    {
+      "host": "VCU108",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC0",
+      "notes": "Gen3 PCIe, no reference design."
+    },
+    {
+      "host": "VCU108",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC1",
+      "notes": "Gen3 PCIe, no reference design."
+    },
+    {
+      "host": "VCU118",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "Gen3 PCIe, dual SSD."
+    },
+    {
+      "host": "VCU118",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "No reference design."
+    },
+    {
+      "host": "VEK280",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "Gen4 PCIe \u2014 reference design coming soon."
+    },
+    {
+      "host": "VHK158",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "Gen4 PCIe, single SSD only."
+    },
+    {
+      "host": "VMK180",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP1",
+      "notes": "Gen4 PCIe, dual SSD."
+    },
+    {
+      "host": "VMK180",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP2",
+      "notes": "Gen4 PCIe, dual SSD."
+    },
+    {
+      "host": "VPK120",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "Gen4 PCIe, single SSD only."
+    },
+    {
+      "host": "VPK180",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "Gen4 PCIe, single SSD only."
+    },
+    {
+      "host": "ZC706",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "Gen2 PCIe, single SSD."
+    },
+    {
+      "host": "ZC706",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC",
+      "notes": "Gen2 PCIe, limited support."
+    },
+    {
+      "host": "ZCU102",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC0",
+      "notes": "Gen3 PCIe, no reference design."
+    },
+    {
+      "host": "ZCU102",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC1",
+      "notes": "Gen3 PCIe, no reference design."
+    },
+    {
+      "host": "ZCU104",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC",
+      "notes": "Gen3 PCIe x1, limited support."
+    },
+    {
+      "host": "ZCU106",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC0",
+      "notes": "Gen3 PCIe, dual SSD."
+    },
+    {
+      "host": "ZCU106",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC1",
+      "notes": "Gen3 PCIe, single SSD only."
+    },
+    {
+      "host": "ZCU111",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "Gen3 PCIe, dual SSD."
+    },
+    {
+      "host": "ZCU208",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "FMCP",
+      "notes": "Gen3 PCIe, dual SSD."
+    }
+  ]
+}

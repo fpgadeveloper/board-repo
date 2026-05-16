@@ -52,12 +52,6 @@
     ],
     "sfp": 2
   },
-  "expansion": {
-    "fmc_lpc": 1
-  },
-  "storage": {
-    "microsd": 1
-  },
   "usb_bridge": [
     {
       "connector": "Micro-B",
@@ -65,5 +59,16 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "LPC",
+        "type": "lpc"
+      }
+    ]
+  },
+  "storage": {
+    "microsd": 1
+  }
 }

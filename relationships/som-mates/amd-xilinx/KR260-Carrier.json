@@ -1,0 +1,9 @@
+{
+  "carrier": "KR260-Carrier",
+  "compatible_soms": [
+    {
+      "som": "SM-K26-XCL2GC",
+      "verified_by": "vendor"
+    }
+  ]
+}

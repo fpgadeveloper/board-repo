@@ -1,0 +1,21 @@
+{
+  "mpn": "TE0741-05-B2C-1-AF",
+  "name": "TE0741 \u2014 7K160T-2C",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/FPGA-Module-with-AMD-Kintex-7K160T-2C-32-MByte-QSPI-Flash-4-x-5-cm/TE0741-05-B2C-1-AF",
+  "vendor": "trenz",
+  "price": {
+    "value": 1267.22,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7K160T-2FFG676C",
+    "vendor": "amd-xilinx"
+  },
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ]
+}

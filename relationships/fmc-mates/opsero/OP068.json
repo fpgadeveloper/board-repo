@@ -1,0 +1,35 @@
+{
+  "fmc_card": "OP068",
+  "compatible_hosts": [
+    {
+      "host": "AES-ZU7EV-1-CC-FMC-G",
+      "host_type": "carrier",
+      "verified_by": "vendor"
+    },
+    {
+      "host": "Genesys-ZU",
+      "host_type": "standalone",
+      "verified_by": "vendor"
+    },
+    {
+      "host": "PYNQ-ZU",
+      "host_type": "standalone",
+      "verified_by": "vendor"
+    },
+    {
+      "host": "ZCU102",
+      "host_type": "standalone",
+      "verified_by": "vendor"
+    },
+    {
+      "host": "ZCU104",
+      "host_type": "standalone",
+      "verified_by": "vendor"
+    },
+    {
+      "host": "ZCU106",
+      "host_type": "standalone",
+      "verified_by": "vendor"
+    }
+  ]
+}

@@ -56,15 +56,6 @@
       "role": "host"
     }
   ],
-  "expansion": {
-    "fmc_lpc": 1,
-    "pmod": 2,
-    "arduino": 1
-  },
-  "storage": {
-    "sata": 1,
-    "microsd": 1
-  },
   "usb_bridge": [
     {
       "connector": "Type-C",
@@ -72,5 +63,19 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "LPC",
+        "type": "lpc"
+      }
+    ],
+    "pmod": 2,
+    "arduino": 1
+  },
+  "storage": {
+    "sata": 1,
+    "microsd": 1
+  }
 }

@@ -1,0 +1,66 @@
+{
+  "mpn": "TEBF0818-02A",
+  "name": "TEBF0818-02A Carrier",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/UltraITX-Basisboard-for-Trenz-Electronic-TE081X-UltraSOM/TEBF0818-02A",
+  "vendor": "trenz",
+  "price": {
+    "value": 598.06,
+    "currency": "USD"
+  },
+  "pcie": [
+    {
+      "type": "Slot",
+      "lanes": 1
+    }
+  ],
+  "video": {
+    "displayport": 1
+  },
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ],
+    "sfp": 2
+  },
+  "usb": [
+    {
+      "connector": "Type-A",
+      "speed": "3.0",
+      "role": "host",
+      "ports": 2
+    },
+    {
+      "connector": "Header",
+      "speed": "3.0",
+      "role": "host",
+      "ports": 2
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ],
+      "ports": 2
+    }
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "HPC",
+        "type": "hpc"
+      }
+    ],
+    "pmod": 3
+  },
+  "storage": {
+    "sata": 1,
+    "microsd": 1
+  }
+}

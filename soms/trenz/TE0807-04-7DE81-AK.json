@@ -1,0 +1,31 @@
+{
+  "mpn": "TE0807-04-7DE81-AK",
+  "name": "TE0807 \u2014 ZU7EV-1E, 4 GB DDR4",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/MPSoC-Module-with-AMD-Zynq-UltraScale-ZU7EV-1E-incl.-Heat-Spreader/TE0807-04-7DE81-AK",
+  "vendor": "trenz",
+  "price": {
+    "value": 2480.08,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU7EV-1FBVB900E",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 64
+    }
+  ]
+}

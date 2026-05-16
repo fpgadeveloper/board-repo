@@ -1,0 +1,21 @@
+{
+  "mpn": "TE0726-04-41C94-A",
+  "name": "TE0726 \u2014 7Z010-1C",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/ZynqBerry-SoC-Module-with-AMD-Zynq-7010-1C-Raspberry-Pi-3-compatible/TE0726-04-41C94-A",
+  "vendor": "trenz",
+  "price": {
+    "value": 151.96,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7Z010-1CLG225C",
+    "vendor": "amd-xilinx"
+  },
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    }
+  ]
+}

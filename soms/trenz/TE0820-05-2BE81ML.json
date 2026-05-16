@@ -1,0 +1,31 @@
+{
+  "mpn": "TE0820-05-2BE81ML",
+  "name": "TE0820 \u2014 ZU2EG-1E, 2 GB DDR4",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/MPSoC-Module-with-AMD-Zynq-UltraScale-ZU2EG-1E-2-GByte-DDR4-4-x-5-cm-LP/TE0820-05-2BE81ML",
+  "vendor": "trenz",
+  "price": {
+    "value": 549.27,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU2EG-1SFVC784E",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 2048
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    }
+  ]
+}

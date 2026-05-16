@@ -1,0 +1,35 @@
+{
+  "mpn": "TE0821-02-4DE91ML",
+  "name": "TE0821 \u2014 ZU4EV-1E, 4 GB DDR4",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/MPSoC-Module-with-AMD-Zynq-UltraScale-ZU4EV-1E-4-GByte-DDR4-low-profile/TE0821-02-4DE91ML",
+  "vendor": "trenz",
+  "price": {
+    "value": 995.38,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU4EV-1SFVC784E",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    },
+    {
+      "type": "SPI",
+      "size_mb": 64
+    }
+  ]
+}

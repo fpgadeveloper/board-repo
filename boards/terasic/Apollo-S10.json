@@ -20,10 +20,6 @@
       }
     ]
   },
-  "expansion": {
-    "fmc_hpc": 1,
-    "fmcp": 1
-  },
   "usb_bridge": [
     {
       "connector": "Micro-B",
@@ -31,5 +27,17 @@
         "jtag"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "HPC",
+        "type": "hpc"
+      },
+      {
+        "slot": "FMCP",
+        "type": "fmcp"
+      }
+    ]
+  }
 }

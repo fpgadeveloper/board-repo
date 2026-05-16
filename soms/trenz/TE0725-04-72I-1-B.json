@@ -1,0 +1,21 @@
+{
+  "mpn": "TE0725-04-72I-1-B",
+  "name": "TE0725 \u2014 7A100T-2I",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/FPGA-Module-with-AMD-Artix-7A100T-2I-2-x-50-Pin-Header-3.5-x-7.3-cm/TE0725-04-72I-1-B",
+  "vendor": "trenz",
+  "price": {
+    "value": 235.6,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7A100T-2CSG324I",
+    "vendor": "amd-xilinx"
+  },
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ]
+}

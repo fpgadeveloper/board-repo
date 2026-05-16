@@ -39,7 +39,12 @@
     "sfp": 1
   },
   "expansion": {
-    "fmcp": 1,
+    "fmc": [
+      {
+        "slot": "FMCP",
+        "type": "fmcp"
+      }
+    ],
     "pmod": 1
   },
   "storage": {

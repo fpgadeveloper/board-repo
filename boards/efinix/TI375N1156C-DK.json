@@ -49,12 +49,6 @@
     ],
     "sfp": 4
   },
-  "expansion": {
-    "fmc_hpc": 2
-  },
-  "storage": {
-    "microsd": 1
-  },
   "usb_bridge": [
     {
       "connector": "Type-C",
@@ -63,5 +57,24 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "HPC0",
+        "type": "hpc",
+        "vadj_min": 1.8,
+        "vadj_max": 1.8
+      },
+      {
+        "slot": "HPC1",
+        "type": "hpc",
+        "vadj_min": 1.8,
+        "vadj_max": 1.8
+      }
+    ]
+  },
+  "storage": {
+    "microsd": 1
+  }
 }

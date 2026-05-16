@@ -1,0 +1,35 @@
+{
+  "mpn": "TE0865-02-AGI81MA",
+  "name": "TE0865 \u2014 ZU11EG-2I, 4 GB DDR4",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/MPSoC-Module-with-Zynq-UltraScale-ZU11EG-1I-4GB-DDR4-ECC-PS-4GB-DDR4-PL/TE0865-02-AGI81MA",
+  "vendor": "trenz",
+  "price": {
+    "value": 8641.93,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU11EG-2FFVC1760I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    },
+    {
+      "type": "SPI",
+      "size_mb": 64
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    }
+  ]
+}

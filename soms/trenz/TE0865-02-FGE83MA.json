@@ -1,0 +1,35 @@
+{
+  "mpn": "TE0865-02-FGE83MA",
+  "name": "TE0865 \u2014 ZU19EG-2E, 4 GB DDR4",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/MPSoC-Module-with-Zynq-UltraScale-ZU19EG-2E-4-GB-DDR4-PS-4-GB-DDR4-PL/TE0865-02-FGE83MA",
+  "vendor": "trenz",
+  "price": {
+    "value": 6460.19,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU19EG-2FFVC1760E",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 256
+    },
+    {
+      "type": "SPI",
+      "size_mb": 128
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    }
+  ]
+}

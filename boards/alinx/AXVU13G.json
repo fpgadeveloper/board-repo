@@ -44,13 +44,6 @@
     ],
     "qsfp": 9
   },
-  "expansion": {
-    "fmcp": 1,
-    "fmc_hpc": 1
-  },
-  "storage": {
-    "microsd": 1
-  },
   "usb_bridge": [
     {
       "connector": "Mini-B",
@@ -58,5 +51,20 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "HPC",
+        "type": "hpc"
+      },
+      {
+        "slot": "FMCP",
+        "type": "fmcp"
+      }
+    ]
+  },
+  "storage": {
+    "microsd": 1
+  }
 }

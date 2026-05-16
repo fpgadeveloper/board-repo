@@ -1,0 +1,21 @@
+{
+  "mpn": "TE0741-05-A2C-1-A",
+  "name": "TE0741 \u2014 7K70T-2C",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/FPGA-Module-with-AMD-Kintex-7K70T-2C-32-MByte-QSPI-Flash-4-x-5-cm/TE0741-05-A2C-1-A",
+  "vendor": "trenz",
+  "price": {
+    "value": 612.0,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7K70T-2FBG676C",
+    "vendor": "amd-xilinx"
+  },
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ]
+}

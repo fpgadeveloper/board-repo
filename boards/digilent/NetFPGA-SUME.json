@@ -32,7 +32,12 @@
     "sfp": 4
   },
   "expansion": {
-    "fmc_hpc": 1,
+    "fmc": [
+      {
+        "slot": "HPC",
+        "type": "hpc"
+      }
+    ],
     "pmod": 1
   },
   "storage": {

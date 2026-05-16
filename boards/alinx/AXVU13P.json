@@ -36,9 +36,6 @@
       "gen": 3
     }
   ],
-  "expansion": {
-    "fmcp": 3
-  },
   "usb_bridge": [
     {
       "connector": "Mini-B",
@@ -46,5 +43,21 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "FMCP0",
+        "type": "fmcp"
+      },
+      {
+        "slot": "FMCP1",
+        "type": "fmcp"
+      },
+      {
+        "slot": "FMCP2",
+        "type": "fmcp"
+      }
+    ]
+  }
 }

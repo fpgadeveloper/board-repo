@@ -1,0 +1,27 @@
+{
+  "mpn": "TE0803-04-3BE11-A",
+  "name": "TE0803 \u2014 ZU3EG-1E, 2 GB DDR4",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/MPSoC-Module-with-AMD-Zynq-UltraScale-ZU3EG-1E-2-GByte-DDR4-5.2-x-7.6-cm/TE0803-04-3BE11-A",
+  "vendor": "trenz",
+  "price": {
+    "value": 612.0,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU3EG-1SFVC784E",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 2048
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    }
+  ]
+}

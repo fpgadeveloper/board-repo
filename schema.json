@@ -1,186 +1,266 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "FPGA Development Boards",
-  "description": "A collection of FPGA development boards with their specifications and features.",
-  "type": "array",
-  "items": {
-    "$ref": "#/$defs/board"
-  },
+  "title": "FPGA Boards Catalog",
+  "description": "Schemas for entities (standalone boards, SoMs, carriers, kits, FMC cards) and their relationships. Each entity type has its own folder under board-repo (boards/, soms/, carriers/, kits/, fmc-cards/); relationships live under relationships/<type>/. The build script validates every file in those folders against the matching $def.",
   "$defs": {
-    "board": {
+
+    "standalone": {
       "type": "object",
+      "title": "Standalone Board",
+      "description": "A complete FPGA development board with on-board user I/O — not a SoM, not part of a kit.",
       "required": ["mpn", "name", "status", "url", "vendor", "price", "device"],
       "additionalProperties": false,
       "properties": {
-        "mpn": {
-          "type": "string",
-          "title": "Part Number",
-          "description": "Manufacturer part number (MPN / SKU) as published by the board vendor. Must be unique across all boards. URL-safe characters only (letters, digits, hyphens, dots, underscores). Replace spaces or slashes with hyphens; drop trailing PCB-revision suffixes so the MPN stays stable across revisions."
-        },
-        "name": {
-          "type": "string",
-          "title": "Name",
-          "description": "Display name of the board."
-        },
-        "status": {
-          "type": "string",
-          "title": "Status",
-          "enum": ["active", "nrnd", "eol", "discontinued"],
-          "description": "Whether the board is currently available, not recommended for new designs, end-of-life, or discontinued."
-        },
-        "url": {
-          "type": "string",
-          "title": "Product Page",
-          "format": "uri",
-          "description": "Product page URL."
-        },
-        "vendor": {
-          "type": "string",
-          "title": "Board Vendor",
-          "description": "Board vendor key (must match a key in vendors.json board_vendors)."
-        },
-        "price": {
-          "title": "Price",
-          "description": "Board price. Use null when the price is unknown or not published by the vendor.",
-          "anyOf": [
-            { "$ref": "#/$defs/price" },
-            { "type": "null" }
-          ]
-        },
-        "device": {
-          "title": "Device",
-          "$ref": "#/$defs/device"
-        },
-        "memory": {
-          "type": "array",
-          "title": "Memory",
-          "description": "On-board DRAM. List one entry per distinct memory bank (e.g. soldered DDR4 + a SODIMM slot is two entries).",
-          "items": {
-            "$ref": "#/$defs/memory_interface"
-          },
-          "minItems": 1
-        },
-        "flash": {
-          "type": "array",
-          "title": "Flash",
-          "description": "On-board non-volatile flash memory. List one entry per distinct chip (e.g. dual-stacked QSPI is two entries). Excludes removable SD/microSD card slots.",
-          "items": {
-            "$ref": "#/$defs/flash_interface"
-          },
-          "minItems": 1
-        },
-        "pcie": {
-          "type": "array",
-          "title": "PCIe",
-          "description": "PCIe interfaces on the board. Each entry is a separate physical interface (e.g. edge connector, M.2 slot).",
-          "items": {
-            "$ref": "#/$defs/pcie_interface"
-          },
-          "minItems": 1
-        },
-        "video": {
+        "mpn": { "$ref": "#/$defs/mpn" },
+        "name": { "$ref": "#/$defs/name" },
+        "status": { "$ref": "#/$defs/status" },
+        "url": { "$ref": "#/$defs/url" },
+        "vendor": { "$ref": "#/$defs/vendor" },
+        "price": { "$ref": "#/$defs/price_or_null" },
+        "device": { "$ref": "#/$defs/device" },
+        "memory": { "type": "array", "title": "Memory", "description": "On-board DRAM. List one entry per distinct memory bank.", "items": { "$ref": "#/$defs/memory_interface" }, "minItems": 1 },
+        "flash": { "type": "array", "title": "Flash", "description": "On-board non-volatile flash memory. List one entry per distinct chip.", "items": { "$ref": "#/$defs/flash_interface" }, "minItems": 1 },
+        "pcie": { "type": "array", "title": "PCIe", "description": "PCIe interfaces on the board.", "items": { "$ref": "#/$defs/pcie_interface" }, "minItems": 1 },
+        "video": { "$ref": "#/$defs/video" },
+        "networking": { "$ref": "#/$defs/networking" },
+        "usb": { "type": "array", "title": "USB", "description": "USB interfaces accessible to the FPGA design.", "items": { "$ref": "#/$defs/usb_interface" }, "minItems": 1 },
+        "usb_bridge": { "type": "array", "title": "USB UART/JTAG", "description": "USB-to-UART/JTAG bridge ports.", "items": { "$ref": "#/$defs/usb_bridge_interface" }, "minItems": 1 },
+        "expansion": { "$ref": "#/$defs/expansion" },
+        "storage": { "$ref": "#/$defs/storage" },
+        "wireless": { "$ref": "#/$defs/wireless" }
+      }
+    },
+
+    "som": {
+      "type": "object",
+      "title": "System-on-Module",
+      "description": "A System-on-Module (SoM) — an FPGA + memory + flash on a small board designed to plug into a carrier via board-to-board mating connectors. Some SoMs include on-board debug peripherals (Ethernet, microSD, USB-UART) that are usable without a carrier.",
+      "required": ["mpn", "name", "status", "url", "vendor", "price", "device"],
+      "additionalProperties": false,
+      "properties": {
+        "mpn": { "$ref": "#/$defs/mpn" },
+        "name": { "$ref": "#/$defs/name" },
+        "status": { "$ref": "#/$defs/status" },
+        "url": { "$ref": "#/$defs/url" },
+        "vendor": { "$ref": "#/$defs/vendor" },
+        "price": { "$ref": "#/$defs/price_or_null" },
+        "device": { "$ref": "#/$defs/device" },
+        "memory": { "type": "array", "title": "Memory", "description": "On-SoM DRAM. List one entry per distinct memory bank.", "items": { "$ref": "#/$defs/memory_interface" }, "minItems": 1 },
+        "flash": { "type": "array", "title": "Flash", "description": "On-SoM non-volatile flash memory.", "items": { "$ref": "#/$defs/flash_interface" }, "minItems": 1 },
+        "networking": { "$ref": "#/$defs/networking" },
+        "usb": { "type": "array", "title": "USB", "description": "USB interfaces accessible to the FPGA design.", "items": { "$ref": "#/$defs/usb_interface" }, "minItems": 1 },
+        "usb_bridge": { "type": "array", "title": "USB UART/JTAG", "description": "USB-to-UART/JTAG bridge ports.", "items": { "$ref": "#/$defs/usb_bridge_interface" }, "minItems": 1 },
+        "expansion": { "$ref": "#/$defs/expansion" },
+        "storage": { "$ref": "#/$defs/storage" },
+        "wireless": { "$ref": "#/$defs/wireless" }
+      }
+    },
+
+    "carrier": {
+      "type": "object",
+      "title": "SoM Carrier",
+      "description": "A carrier board that mates with one or more SoMs to provide user I/O. Has no FPGA of its own — the FPGA comes from the SoM. Compatibility with SoMs is recorded as som-mates relationships, not in the carrier file.",
+      "required": ["mpn", "name", "status", "url", "vendor", "price"],
+      "additionalProperties": false,
+      "properties": {
+        "mpn": { "$ref": "#/$defs/mpn" },
+        "name": { "$ref": "#/$defs/name" },
+        "status": { "$ref": "#/$defs/status" },
+        "url": { "$ref": "#/$defs/url" },
+        "vendor": { "$ref": "#/$defs/vendor" },
+        "price": { "$ref": "#/$defs/price_or_null" },
+        "pcie": { "type": "array", "title": "PCIe", "items": { "$ref": "#/$defs/pcie_interface" }, "minItems": 1 },
+        "video": { "$ref": "#/$defs/video" },
+        "networking": { "$ref": "#/$defs/networking" },
+        "usb": { "type": "array", "title": "USB", "items": { "$ref": "#/$defs/usb_interface" }, "minItems": 1 },
+        "usb_bridge": { "type": "array", "title": "USB UART/JTAG", "items": { "$ref": "#/$defs/usb_bridge_interface" }, "minItems": 1 },
+        "expansion": { "$ref": "#/$defs/expansion" },
+        "storage": { "$ref": "#/$defs/storage" },
+        "wireless": { "$ref": "#/$defs/wireless" }
+      }
+    },
+
+    "kit": {
+      "type": "object",
+      "title": "Kit (SoM + Carrier)",
+      "description": "A bundled product comprising a SoM and a carrier (and possibly extras). All feature data is inherited from the composed entities at build time — kit files only contain identity, price, composition, and optional extras.",
+      "required": ["mpn", "name", "status", "url", "vendor", "price", "composition"],
+      "additionalProperties": false,
+      "properties": {
+        "mpn": { "$ref": "#/$defs/mpn" },
+        "name": { "$ref": "#/$defs/name" },
+        "status": { "$ref": "#/$defs/status" },
+        "url": { "$ref": "#/$defs/url" },
+        "vendor": { "$ref": "#/$defs/vendor" },
+        "price": { "$ref": "#/$defs/price_or_null" },
+        "composition": {
           "type": "object",
-          "title": "Video I/O",
-          "description": "Video input/output interfaces. Only include keys with non-zero values.",
+          "title": "Composition",
+          "description": "MPN references to the SoM and carrier that compose this kit. Both must exist as entities in soms/ and carriers/. The build script flattens the kit by merging SoM + carrier features into a single resolved record.",
+          "required": ["som", "carrier"],
           "additionalProperties": false,
           "properties": {
-            "hdmi_in": { "type": "integer", "title": "HDMI In", "minimum": 1 },
-            "hdmi_out": { "type": "integer", "title": "HDMI Out", "minimum": 1 },
-            "displayport": { "type": "integer", "title": "DisplayPort", "minimum": 1 },
-            "sdi_in": { "type": "integer", "title": "SDI In", "minimum": 1 },
-            "sdi_out": { "type": "integer", "title": "SDI Out", "minimum": 1 },
-            "aes_in": { "type": "integer", "title": "AES3 In", "minimum": 1 },
-            "aes_out": { "type": "integer", "title": "AES3 Out", "minimum": 1 },
-            "mipi_dsi": { "type": "integer", "title": "MIPI DSI", "minimum": 1 },
-            "mipi_csi": { "type": "integer", "title": "MIPI CSI", "minimum": 1 },
-            "vga_out": { "type": "integer", "title": "VGA Out", "minimum": 1 }
-          },
-          "minProperties": 1
+            "som": { "type": "string", "title": "SoM MPN", "description": "MPN of the SoM in soms/<vendor>/<mpn>.json." },
+            "carrier": { "type": "string", "title": "Carrier MPN", "description": "MPN of the carrier in carriers/<vendor>/<mpn>.json." }
+          }
         },
-        "networking": {
-          "type": "object",
-          "title": "Networking",
-          "description": "All networking interfaces — Ethernet ports plus high-speed optical/copper cages. Only include keys with non-zero / non-empty values.",
-          "additionalProperties": false,
-          "properties": {
-            "ethernet": {
-              "type": "array",
-              "title": "Ethernet",
-              "description": "Ethernet interfaces grouped by speed. E.g. [{speed: 1000, ports: 2}, {speed: 100, ports: 1}].",
-              "items": {
-                "$ref": "#/$defs/ethernet_interface"
-              },
-              "minItems": 1
-            },
-            "sfp": { "type": "integer", "title": "SFP/SFP+", "minimum": 1 },
-            "qsfp": { "type": "integer", "title": "QSFP/QSFP+", "minimum": 1 },
-            "osfp": { "type": "integer", "title": "OSFP", "minimum": 1 },
-            "cfp": { "type": "integer", "title": "CFP", "minimum": 1 }
-          },
-          "minProperties": 1
-        },
-        "usb": {
+        "extras": {
           "type": "array",
-          "title": "USB",
-          "description": "USB interfaces accessible to the FPGA design (fabric or hard IP). Excludes USB-UART/JTAG bridge ports — those go in usb_bridge.",
-          "items": {
-            "$ref": "#/$defs/usb_interface"
-          },
+          "title": "Extras",
+          "description": "Additional items bundled with the kit beyond the SoM and carrier (cables, PSUs, antennas, etc.).",
+          "items": { "type": "string" },
           "minItems": 1
-        },
-        "usb_bridge": {
-          "type": "array",
-          "title": "USB UART/JTAG",
-          "description": "USB-to-UART/JTAG bridge ports for board configuration and serial console (e.g. FT2232, CP2102, USB-Blaster). Not connected to the FPGA fabric.",
-          "items": {
-            "$ref": "#/$defs/usb_bridge_interface"
-          },
-          "minItems": 1
-        },
-        "expansion": {
-          "type": "object",
-          "title": "Expansion",
-          "description": "Expansion connectors and headers. Only include keys with non-zero values.",
-          "additionalProperties": false,
-          "properties": {
-            "fmc_hpc": { "type": "integer", "title": "FMC HPC", "minimum": 1 },
-            "fmc_lpc": { "type": "integer", "title": "FMC LPC", "minimum": 1 },
-            "fmcp": { "type": "integer", "title": "FMC+", "minimum": 1 },
-            "rfmc": { "type": "integer", "title": "RFMC", "minimum": 1 },
-            "pmod": { "type": "integer", "title": "Pmod", "minimum": 1 },
-            "arduino": { "type": "integer", "title": "Arduino", "minimum": 1 },
-            "raspberry_pi": { "type": "integer", "title": "Raspberry Pi", "minimum": 1 },
-            "click": { "type": "integer", "title": "Click", "minimum": 1 },
-            "syzygy": { "type": "integer", "title": "SYZYGY", "minimum": 1 },
-            "syzygy_trx": { "type": "integer", "title": "SYZYGY TRX", "minimum": 1 }
-          },
-          "minProperties": 1
-        },
-        "storage": {
-          "type": "object",
-          "title": "Storage",
-          "description": "Storage sockets and ports — places where the user supplies the storage medium. Soldered flash chips live in the flash section, not here. Only include keys with non-zero values.",
-          "additionalProperties": false,
-          "properties": {
-            "sata": { "type": "integer", "title": "SATA", "minimum": 1 },
-            "sd": { "type": "integer", "title": "SD", "minimum": 1, "description": "Full-size SD card slot count." },
-            "microsd": { "type": "integer", "title": "microSD", "minimum": 1, "description": "Micro-SD card slot count." }
-          },
-          "minProperties": 1
-        },
-        "wireless": {
-          "type": "object",
-          "title": "Wireless",
-          "description": "Wireless connectivity.",
-          "additionalProperties": false,
-          "properties": {
-            "wifi": { "type": "boolean", "title": "WiFi" },
-            "bluetooth": { "type": "boolean", "title": "Bluetooth" }
-          },
-          "minProperties": 1
         }
       }
     },
+
+    "fmc_card": {
+      "type": "object",
+      "title": "FMC Card",
+      "description": "An FPGA Mezzanine Card (FMC LPC / HPC / FMC+) that plugs into an FMC site on a board or carrier. Compatibility is recorded as fmc-mates relationships, not in the card file. vadj range will live here once we model it — schema reserves the spot.",
+      "required": ["mpn", "name", "status", "url", "vendor", "price", "connector_type"],
+      "additionalProperties": false,
+      "properties": {
+        "mpn": { "$ref": "#/$defs/mpn" },
+        "name": { "$ref": "#/$defs/name" },
+        "status": { "$ref": "#/$defs/status" },
+        "url": { "$ref": "#/$defs/url" },
+        "vendor": { "$ref": "#/$defs/vendor" },
+        "price": { "$ref": "#/$defs/price_or_null" },
+        "connector_type": {
+          "type": "string",
+          "title": "FMC Connector Type",
+          "enum": ["lpc", "hpc", "fmcp"],
+          "description": "LPC (160-pin VITA 57.1), HPC (400-pin VITA 57.1), or FMC+ (560-pin VITA 57.4)."
+        },
+        "vadj_min": {
+          "type": "number",
+          "title": "VADJ Min (V)",
+          "description": "Minimum VADJ supply voltage the card accepts. For fixed-voltage cards (e.g. 1.8V-only variants), set vadj_min == vadj_max."
+        },
+        "vadj_max": {
+          "type": "number",
+          "title": "VADJ Max (V)",
+          "description": "Maximum VADJ supply voltage the card accepts."
+        },
+        "pcie": { "type": "array", "title": "PCIe", "items": { "$ref": "#/$defs/pcie_interface" }, "minItems": 1 },
+        "video": { "$ref": "#/$defs/video" },
+        "networking": { "$ref": "#/$defs/networking" },
+        "usb": { "type": "array", "title": "USB", "items": { "$ref": "#/$defs/usb_interface" }, "minItems": 1 },
+        "storage": { "$ref": "#/$defs/storage" }
+      }
+    },
+
+    "som_mates": {
+      "type": "object",
+      "title": "SoM Compatibility Bundle",
+      "description": "One file per carrier listing all SoMs that physically and electrically mate with it. Filename: relationships/som-mates/<carrier-vendor>/<carrier-mpn>.json — the parent folder matches the carrier's vendor (mirrors carriers/<vendor>/<mpn>.json), and the filename stem must match the top-level `carrier` field.",
+      "required": ["carrier", "compatible_soms"],
+      "additionalProperties": false,
+      "properties": {
+        "carrier": { "type": "string", "title": "Carrier MPN", "description": "MPN of the carrier in carriers/<vendor>/<mpn>.json. Must match the filename." },
+        "compatible_soms": {
+          "type": "array",
+          "title": "Compatible SoMs",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["som"],
+            "additionalProperties": false,
+            "properties": {
+              "som": { "type": "string", "title": "SoM MPN", "description": "MPN of the SoM in soms/<vendor>/<mpn>.json." },
+              "verified_by": { "$ref": "#/$defs/verified_by" },
+              "notes": { "$ref": "#/$defs/relationship_notes" }
+            }
+          }
+        }
+      }
+    },
+
+    "fmc_mates": {
+      "type": "object",
+      "title": "FMC Card Compatibility Bundle",
+      "description": "One file per FMC card listing all hosts (standalone boards, kits, or carriers) it mates with. Filename: relationships/fmc-mates/<fmc-card-vendor>/<fmc-card-mpn>.json — the parent folder matches the card's vendor (mirrors fmc-cards/<vendor>/<mpn>.json), and the filename stem must match the top-level `fmc_card` field.",
+      "required": ["fmc_card", "compatible_hosts"],
+      "additionalProperties": false,
+      "properties": {
+        "fmc_card": { "type": "string", "title": "FMC Card MPN", "description": "MPN of the FMC card in fmc-cards/<vendor>/<mpn>.json. Must match the filename." },
+        "compatible_hosts": {
+          "type": "array",
+          "title": "Compatible Hosts",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["host", "host_type"],
+            "additionalProperties": false,
+            "properties": {
+              "host": { "type": "string", "title": "Host MPN", "description": "MPN of the host (standalone board, kit, or carrier)." },
+              "host_type": {
+                "type": "string",
+                "title": "Host Type",
+                "enum": ["standalone", "kit", "carrier"],
+                "description": "Which entity folder the host lives in. Drives where the build script looks for the host file."
+              },
+              "target_slot": {
+                "type": "string",
+                "title": "Target Slot",
+                "description": "Name of the specific FMC slot on the host (matches a slot name in the host's fmc[] array). Omit if the relationship applies to any slot on the host. One entry per slot, so a host with multiple compatible sites gets multiple entries."
+              },
+              "verified_by": { "$ref": "#/$defs/verified_by" },
+              "notes": { "$ref": "#/$defs/relationship_notes" }
+            }
+          }
+        }
+      }
+    },
+
+    "mpn": {
+      "type": "string",
+      "title": "Part Number",
+      "description": "Manufacturer part number (MPN / SKU). Must be unique within its entity type. URL-safe characters only (letters, digits, hyphens, dots, underscores). For non-buyable carriers (e.g. the KV260's carrier, which is only sold inside the kit), invent a stable MPN like <kit-mpn>-Carrier."
+    },
+    "name": {
+      "type": "string",
+      "title": "Name",
+      "description": "Display name."
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": ["active", "nrnd", "eol", "discontinued"],
+      "description": "Lifecycle status of the entity."
+    },
+    "url": {
+      "type": "string",
+      "title": "Product Page",
+      "format": "uri",
+      "description": "Product page URL. For carriers that are not sold standalone, point at the parent kit's URL."
+    },
+    "vendor": {
+      "type": "string",
+      "title": "Vendor",
+      "description": "Vendor key (must match a key in vendors.json board_vendors)."
+    },
+    "price_or_null": {
+      "title": "Price",
+      "description": "Price. Use null when the price is unknown, not published, or the entity is not sold standalone.",
+      "anyOf": [
+        { "$ref": "#/$defs/price" },
+        { "type": "null" }
+      ]
+    },
+    "verified_by": {
+      "type": "string",
+      "title": "Verified By",
+      "enum": ["vendor", "user"],
+      "description": "Who asserts this compatibility. 'vendor' = officially supported by the vendor. 'user' = community / user-reported. A future 'fpgadeveloper' value will indicate automated verification from vadj range + pin assignment data."
+    },
+    "relationship_notes": {
+      "type": "string",
+      "title": "Notes",
+      "description": "Free-text caveats specific to this combination (e.g. 'Only port 0 is usable on HPC1', 'Requires Vivado 2022.1+', 'Needs cooling modification')."
+    },
+
     "price": {
       "type": "object",
       "required": ["value", "currency"],
@@ -199,6 +279,7 @@
     },
     "device": {
       "type": "object",
+      "title": "Device",
       "required": ["part", "vendor"],
       "additionalProperties": false,
       "properties": {
@@ -219,8 +300,8 @@
       "properties": {
         "type": {
           "type": "string",
-          "enum": ["Edge", "Slot", "M.2 M-key", "M.2 E-key", "M.2 B-key", "PCIe/104", "iPass"],
-          "description": "Physical form factor of the PCIe interface."
+          "enum": ["Edge", "Slot", "M.2 M-key", "M.2 E-key", "M.2 B-key", "PCIe/104", "iPass", "MCIO"],
+          "description": "Physical form factor of the PCIe interface. MCIO is the SFF-TA-1016 cabled PCIe connector (Mini Cool Edge IO)."
         },
         "lanes": {
           "type": "integer",
@@ -351,6 +432,124 @@
           "description": "True when this bank has ECC (error-correcting) support."
         }
       }
+    },
+
+    "video": {
+      "type": "object",
+      "title": "Video I/O",
+      "description": "Video input/output interfaces. Only include keys with non-zero values.",
+      "additionalProperties": false,
+      "properties": {
+        "hdmi_in": { "type": "integer", "title": "HDMI In", "minimum": 1 },
+        "hdmi_out": { "type": "integer", "title": "HDMI Out", "minimum": 1 },
+        "displayport": { "type": "integer", "title": "DisplayPort", "minimum": 1 },
+        "sdi_in": { "type": "integer", "title": "SDI In", "minimum": 1 },
+        "sdi_out": { "type": "integer", "title": "SDI Out", "minimum": 1 },
+        "aes_in": { "type": "integer", "title": "AES3 In", "minimum": 1 },
+        "aes_out": { "type": "integer", "title": "AES3 Out", "minimum": 1 },
+        "mipi_dsi": { "type": "integer", "title": "MIPI DSI", "minimum": 1 },
+        "mipi_csi": { "type": "integer", "title": "MIPI CSI", "minimum": 1 },
+        "vga_out": { "type": "integer", "title": "VGA Out", "minimum": 1 }
+      },
+      "minProperties": 1
+    },
+    "networking": {
+      "type": "object",
+      "title": "Networking",
+      "description": "All networking interfaces — Ethernet ports plus high-speed optical/copper cages.",
+      "additionalProperties": false,
+      "properties": {
+        "ethernet": {
+          "type": "array",
+          "title": "RJ45",
+          "description": "Wired Ethernet ports (RJ45 connectors), grouped by link speed. Separate from optical/copper SFP/QSFP cages which sit alongside this in the same `networking` object.",
+          "items": {
+            "$ref": "#/$defs/ethernet_interface"
+          },
+          "minItems": 1
+        },
+        "sfp": { "type": "integer", "title": "SFP/SFP+", "minimum": 1 },
+        "qsfp": { "type": "integer", "title": "QSFP/QSFP+", "minimum": 1 },
+        "osfp": { "type": "integer", "title": "OSFP", "minimum": 1 },
+        "cfp": { "type": "integer", "title": "CFP", "minimum": 1 }
+      },
+      "minProperties": 1
+    },
+    "fmc_slot": {
+      "type": "object",
+      "title": "FMC Slot",
+      "description": "A single FMC site on a host. vadj_min/vadj_max are reserved for future automated compatibility checking.",
+      "required": ["slot", "type"],
+      "additionalProperties": false,
+      "properties": {
+        "slot": {
+          "type": "string",
+          "title": "Slot Name",
+          "description": "Name the vendor prints on the silkscreen (e.g. HPC0, HPC1, LPC, J3). Used by fmc-mates relationships to target a specific slot."
+        },
+        "type": {
+          "type": "string",
+          "title": "Connector Type",
+          "enum": ["lpc", "hpc", "fmcp"],
+          "description": "LPC (160-pin), HPC (400-pin), or FMC+ (560-pin)."
+        },
+        "vadj_min": {
+          "type": "number",
+          "title": "VADJ Min (V)",
+          "description": "Minimum VADJ voltage supported by this slot. Reserved for future fpgadeveloper-validated compatibility."
+        },
+        "vadj_max": {
+          "type": "number",
+          "title": "VADJ Max (V)",
+          "description": "Maximum VADJ voltage supported by this slot."
+        }
+      }
+    },
+    "expansion": {
+      "type": "object",
+      "title": "Expansion",
+      "description": "Expansion connectors and headers. RFMC is kept as a count for now — it will be promoted to a richer first-class form once we model RFMC mezzanine cards.",
+      "additionalProperties": false,
+      "properties": {
+        "fmc": {
+          "type": "array",
+          "title": "FMC",
+          "description": "FMC sites on the board/carrier/kit. One entry per slot. Each slot is a {slot, type} object — slot names appear on the silkscreen and are referenced by fmc-mates relationships.",
+          "items": { "$ref": "#/$defs/fmc_slot" },
+          "minItems": 1
+        },
+        "pmod": { "type": "integer", "title": "Pmod", "minimum": 1 },
+        "arduino": { "type": "integer", "title": "Arduino", "minimum": 1 },
+        "raspberry_pi": { "type": "integer", "title": "Raspberry Pi", "minimum": 1 },
+        "click": { "type": "integer", "title": "Click", "minimum": 1 },
+        "syzygy": { "type": "integer", "title": "SYZYGY", "minimum": 1 },
+        "syzygy_trx": { "type": "integer", "title": "SYZYGY TRX", "minimum": 1 },
+        "rfmc": { "type": "integer", "title": "RFMC", "minimum": 1 }
+      },
+      "minProperties": 1
+    },
+    "storage": {
+      "type": "object",
+      "title": "Storage",
+      "description": "Storage sockets and ports.",
+      "additionalProperties": false,
+      "properties": {
+        "sata": { "type": "integer", "title": "SATA", "minimum": 1 },
+        "sd": { "type": "integer", "title": "SD", "minimum": 1, "description": "Full-size SD card slot count." },
+        "microsd": { "type": "integer", "title": "microSD", "minimum": 1, "description": "Micro-SD card slot count." }
+      },
+      "minProperties": 1
+    },
+    "wireless": {
+      "type": "object",
+      "title": "Wireless",
+      "description": "Wireless connectivity.",
+      "additionalProperties": false,
+      "properties": {
+        "wifi": { "type": "boolean", "title": "WiFi" },
+        "bluetooth": { "type": "boolean", "title": "Bluetooth" }
+      },
+      "minProperties": 1
     }
   }
 }

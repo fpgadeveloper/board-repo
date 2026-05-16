@@ -29,12 +29,6 @@
       "size_mb": 32
     }
   ],
-  "expansion": {
-    "fmc_lpc": 1
-  },
-  "storage": {
-    "microsd": 1
-  },
   "usb_bridge": [
     {
       "connector": "Type-C",
@@ -43,5 +37,16 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "LPC",
+        "type": "lpc"
+      }
+    ]
+  },
+  "storage": {
+    "microsd": 1
+  }
 }

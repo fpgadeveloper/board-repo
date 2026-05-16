@@ -1,0 +1,27 @@
+{
+  "mpn": "TE0712-03-72C36-A",
+  "name": "TE0712 \u2014 7A100T-2C, 1 GB DDR3L",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/FPGA-Module-with-AMD-Artix-7A100T-2C-1-GByte-DDR3L-32-MByte-Flash-4-x-5-cm/TE0712-03-72C36-A",
+  "vendor": "trenz",
+  "price": {
+    "value": 333.19,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7A100T-2FGG484C",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR3L",
+      "size_mb": 1024
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ]
+}

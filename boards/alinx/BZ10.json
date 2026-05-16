@@ -55,12 +55,6 @@
       "role": "device"
     }
   ],
-  "expansion": {
-    "fmc_hpc": 4
-  },
-  "storage": {
-    "microsd": 1
-  },
   "usb_bridge": [
     {
       "connector": "Type-C",
@@ -68,5 +62,28 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "HPC0",
+        "type": "hpc"
+      },
+      {
+        "slot": "HPC1",
+        "type": "hpc"
+      },
+      {
+        "slot": "HPC2",
+        "type": "hpc"
+      },
+      {
+        "slot": "HPC3",
+        "type": "hpc"
+      }
+    ]
+  },
+  "storage": {
+    "microsd": 1
+  }
 }

@@ -1,0 +1,21 @@
+{
+  "mpn": "OP103",
+  "name": "MCIO PCIe FMC",
+  "status": "active",
+  "url": "https://opsero.com/product/mcio-pcie-fmc",
+  "vendor": "opsero",
+  "price": {
+    "value": 595,
+    "currency": "USD"
+  },
+  "connector_type": "hpc",
+  "vadj_min": 1.2,
+  "vadj_max": 3.3,
+  "pcie": [
+    {
+      "type": "MCIO",
+      "lanes": 8,
+      "gen": 4
+    }
+  ]
+}

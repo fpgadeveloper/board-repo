@@ -23,6 +23,11 @@
     "sfp": 2
   },
   "expansion": {
-    "fmc_lpc": 1
+    "fmc": [
+      {
+        "slot": "LPC",
+        "type": "lpc"
+      }
+    ]
   }
 }

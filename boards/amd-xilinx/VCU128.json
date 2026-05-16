@@ -36,9 +36,6 @@
     ],
     "qsfp": 4
   },
-  "expansion": {
-    "fmcp": 1
-  },
   "usb_bridge": [
     {
       "connector": "Micro-B",
@@ -46,5 +43,13 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "FMCP",
+        "type": "fmcp"
+      }
+    ]
+  }
 }

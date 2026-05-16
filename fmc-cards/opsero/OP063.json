@@ -1,0 +1,26 @@
+{
+  "mpn": "OP063",
+  "name": "FPGA Drive FMC Gen4",
+  "status": "active",
+  "url": "https://opsero.com/product/fpga-drive-fmc-gen4",
+  "vendor": "opsero",
+  "price": {
+    "value": 499,
+    "currency": "USD"
+  },
+  "connector_type": "hpc",
+  "vadj_min": 1.2,
+  "vadj_max": 3.3,
+  "pcie": [
+    {
+      "type": "M.2 M-key",
+      "lanes": 4,
+      "gen": 4
+    },
+    {
+      "type": "M.2 M-key",
+      "lanes": 4,
+      "gen": 4
+    }
+  ]
+}

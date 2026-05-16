@@ -1,0 +1,42 @@
+{
+  "mpn": "TEB0729-03A",
+  "name": "TEB0729-03A Carrier",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/Carrier-board-for-TE0729-Zynq-7020-SoC-with-USB-A-Host-Connector/TEB0729-03A",
+  "vendor": "trenz",
+  "price": {
+    "value": 124.07,
+    "currency": "USD"
+  },
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 100,
+        "ports": 2
+      },
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ]
+  },
+  "usb": [
+    {
+      "connector": "Type-A",
+      "speed": "2.0",
+      "role": "host"
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ],
+  "storage": {
+    "microsd": 1
+  }
+}

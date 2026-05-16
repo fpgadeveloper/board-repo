@@ -27,10 +27,6 @@
       }
     ]
   },
-  "expansion": {
-    "fmc_hpc": 1,
-    "pmod": 2
-  },
   "usb_bridge": [
     {
       "connector": "Type-C",
@@ -38,5 +34,14 @@
         "jtag"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "HPC",
+        "type": "hpc"
+      }
+    ],
+    "pmod": 2
+  }
 }

@@ -1,0 +1,54 @@
+{
+  "fmc_card": "OP031-2V5",
+  "compatible_hosts": [
+    {
+      "host": "AC701",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC"
+    },
+    {
+      "host": "KC705",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC"
+    },
+    {
+      "host": "KC705",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC"
+    },
+    {
+      "host": "ZC702",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC1"
+    },
+    {
+      "host": "ZC702",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC2"
+    },
+    {
+      "host": "ZC706",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "HPC",
+      "notes": "Ports 2 and 3 limited \u2014 LA18_CC/LA17_CC routed to non-clock-capable pins."
+    },
+    {
+      "host": "ZC706",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC"
+    },
+    {
+      "host": "ZedBoard",
+      "host_type": "standalone",
+      "verified_by": "vendor",
+      "target_slot": "LPC"
+    }
+  ]
+}

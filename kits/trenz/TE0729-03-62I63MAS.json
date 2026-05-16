@@ -1,0 +1,15 @@
+{
+  "mpn": "TE0729-03-62I63MAS",
+  "name": "TE0729 Starter Kit",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/Starter-Kit-with-AMD-Zynq-7020-2I-with-mounted-heat-spreader/TE0729-03-62I63MAS",
+  "vendor": "trenz",
+  "price": {
+    "value": 458.65,
+    "currency": "USD"
+  },
+  "composition": {
+    "som": "TE0729-03-62I63MA",
+    "carrier": "TEB0729-04-A"
+  }
+}

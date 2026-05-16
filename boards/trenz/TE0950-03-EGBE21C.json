@@ -40,12 +40,6 @@
     ],
     "qsfp": 1
   },
-  "expansion": {
-    "fmc_lpc": 1
-  },
-  "storage": {
-    "microsd": 1
-  },
   "usb_bridge": [
     {
       "connector": "Micro-B",
@@ -53,5 +47,16 @@
         "jtag"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "LPC",
+        "type": "lpc"
+      }
+    ]
+  },
+  "storage": {
+    "microsd": 1
+  }
 }

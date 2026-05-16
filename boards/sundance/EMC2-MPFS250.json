@@ -43,7 +43,12 @@
     ]
   },
   "expansion": {
-    "fmc_lpc": 1
+    "fmc": [
+      {
+        "slot": "LPC",
+        "type": "lpc"
+      }
+    ]
   },
   "storage": {
     "sata": 1

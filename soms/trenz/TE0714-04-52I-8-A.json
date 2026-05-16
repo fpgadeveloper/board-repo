@@ -1,0 +1,21 @@
+{
+  "mpn": "TE0714-04-52I-8-A",
+  "name": "TE0714 \u2014 7A50T-2I",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/FPGA-Module-with-AMD-Artix-7A50T-2I-16-MByte-Flash-1.8V-Config.-3-x-4-cm/TE0714-04-52I-8-A",
+  "vendor": "trenz",
+  "price": {
+    "value": 158.93,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XC7A50T-2CSG325I",
+    "vendor": "amd-xilinx"
+  },
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    }
+  ]
+}

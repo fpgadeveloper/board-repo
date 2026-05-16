@@ -1,0 +1,31 @@
+{
+  "mpn": "TE0818-02-9GI81-AK",
+  "name": "TE0818 \u2014 ZU9EG-2I, 4 GB DDR4",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/UltraSOM-MPSoC-Module-with-AMD-Zynq-UltraScale-ZU9EG-2I-incl.-Heat-Spreader/TE0818-02-9GI81-AK",
+  "vendor": "trenz",
+  "price": {
+    "value": 1796.98,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU9EG-2FFVC900I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    },
+    {
+      "type": "SPI",
+      "size_mb": 128
+    }
+  ]
+}

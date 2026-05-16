@@ -1,0 +1,27 @@
+{
+  "mpn": "TE0841-03-41I31-L",
+  "name": "TE0841 \u2014 KU040-1I, 2 GB DDR4",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/Micromodule-with-AMD-Kintex-UltraScale-KU040-2-GB-DDR4-4-x-5-low-profile/TE0841-03-41I31-L",
+  "vendor": "trenz",
+  "price": {
+    "value": 2375.52,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCKU040-1SFVA784I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 2048
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 64
+    }
+  ]
+}

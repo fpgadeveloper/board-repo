@@ -1,0 +1,21 @@
+{
+  "carrier": "TEBF0818-02A",
+  "compatible_soms": [
+    {
+      "som": "TE0813-02-3BE81-A",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "TE0817-02-7DE81-A",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "TE0818-02-9BE81-A",
+      "verified_by": "vendor"
+    },
+    {
+      "som": "TE0818-02-9GI81-A",
+      "verified_by": "vendor"
+    }
+  ]
+}

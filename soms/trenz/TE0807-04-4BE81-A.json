@@ -1,0 +1,31 @@
+{
+  "mpn": "TE0807-04-4BE81-A",
+  "name": "TE0807 \u2014 ZU4EG-1E, 4 GB DDR4",
+  "status": "active",
+  "url": "https://www.trenz-electronic.de/en/MPSoC-Module-with-AMD-Zynq-UltraScale-ZU4EG-1E-4-GByte-DDR4-5.2-x-7.6-cm/TE0807-04-4BE81-A",
+  "vendor": "trenz",
+  "price": {
+    "value": 1239.34,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "XCZU4EG-1FBVB900E",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 64
+    }
+  ]
+}
