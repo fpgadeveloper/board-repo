@@ -12,24 +12,11 @@
     "part": "XC7A200T-2FBG676C",
     "vendor": "amd-xilinx"
   },
-  "memory": [
-    {
-      "type": "DDR3",
-      "size_mb": 1024,
-      "form_factor": "sodimm"
-    }
-  ],
-  "flash": [
-    {
-      "type": "QSPI",
-      "size_mb": 32
-    }
-  ],
   "pcie": [
     {
       "type": "Edge",
-      "lanes": 4,
-      "gen": 2
+      "gen": 2,
+      "lanes": 4
     }
   ],
   "video": {
@@ -58,17 +45,20 @@
       ]
     }
   ],
-  "expansion": {
-    "fmc": [
-      {
-        "slot": "HPC",
-        "type": "hpc",
-        "vadj_min": 1.8,
-        "vadj_max": 3.3
-      }
-    ]
-  },
   "storage": {
     "sd": 1
-  }
+  },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024,
+      "form_factor": "sodimm"
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ]
 }
