@@ -8,10 +8,11 @@
     "value": 660,
     "currency": "USD"
   },
+  "networking": {
+    "sfp": 1,
+    "qsfp28": 2
+  },
   "connector_type": "hpc",
   "vadj_min": 1.2,
-  "vadj_max": 3.3,
-  "networking": {
-    "qsfp28": 2
-  }
+  "vadj_max": 3.3
 }
