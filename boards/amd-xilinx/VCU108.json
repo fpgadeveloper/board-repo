@@ -48,8 +48,8 @@
         "ports": 1
       }
     ],
-    "qsfp": 1,
-    "cfp": 1
+    "qsfp28": 1,
+    "cfp2": 1
   },
   "usb_bridge": [
     {

@@ -41,7 +41,7 @@
     }
   ],
   "networking": {
-    "qsfp": 4
+    "qsfp_dd": 4
   },
   "usb_bridge": [
     {

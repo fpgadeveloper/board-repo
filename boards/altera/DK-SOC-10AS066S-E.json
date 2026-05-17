@@ -1,6 +1,6 @@
 {
-  "mpn": "DK-SOC-10AS066S-A",
-  "name": "Arria 10 SoC",
+  "mpn": "DK-SOC-10AS066S-E",
+  "name": "Arria 10 SX SoC Development Kit",
   "status": "active",
   "url": "https://www.altera.com/products/devkit/po-3006/arria-10-sx-soc-development-kit",
   "vendor": "altera",
@@ -36,8 +36,7 @@
         "ports": 2
       }
     ],
-    "sfp": 2,
-    "qsfp": 1
+    "sfp_plus": 2
   },
   "usb_bridge": [
     {

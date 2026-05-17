@@ -339,6 +339,7 @@ Board and silicon vendors are defined in `vendors.json`. Each entity references 
 | `critical-link` | Critical Link |
 | `digilent` | Digilent |
 | `efinix` | Efinix |
+| `enclustra` | Enclustra |
 | `forgefunder` | Forgefunder |
 | `gowin` | Gowin Semiconductor |
 | `hitech-global` | Hitech Global |
@@ -347,6 +348,7 @@ Board and silicon vendors are defined in `vendors.json`. Each entity references 
 | `invent-logics` | Invent Logics |
 | `iwave` | iWave Systems |
 | `knjn` | KNJN |
+| `knowres` | Knowledge Resources |
 | `krtkl` | Krtkl |
 | `lattice` | Lattice |
 | `microchip` | Microchip |

@@ -25,6 +25,15 @@
       "size_mb": 64
     }
   ],
+  "m2": [
+    {
+      "key": "M-key",
+      "direction": "socket",
+      "interfaces": [
+        "SATA"
+      ]
+    }
+  ],
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1,

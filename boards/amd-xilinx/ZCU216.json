@@ -32,7 +32,7 @@
         "ports": 1
       }
     ],
-    "sfp": 4
+    "sfp28": 4
   },
   "expansion": {
     "fmc": [
@@ -46,5 +46,14 @@
   },
   "storage": {
     "microsd": 1
-  }
+  },
+  "m2": [
+    {
+      "key": "M-key",
+      "direction": "socket",
+      "interfaces": [
+        "SATA"
+      ]
+    }
+  ]
 }

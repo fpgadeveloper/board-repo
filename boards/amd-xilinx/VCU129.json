@@ -30,9 +30,11 @@
         "ports": 1
       }
     ],
-    "sfp": 10,
-    "qsfp": 6,
-    "osfp": 1
+    "osfp": 1,
+    "sfp56": 4,
+    "sfp28": 6,
+    "qsfp_dd": 2,
+    "qsfp28": 2
   },
   "usb_bridge": [
     {

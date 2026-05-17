@@ -19,6 +19,6 @@
     }
   ],
   "networking": {
-    "sfp": 3
+    "sfp_plus": 3
   }
 }

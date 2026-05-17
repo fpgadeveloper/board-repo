@@ -32,7 +32,7 @@
         "ports": 2
       }
     ],
-    "qsfp": 2
+    "qsfp_dd": 2
   },
   "usb_bridge": [
     {

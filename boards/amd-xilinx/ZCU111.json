@@ -35,6 +35,15 @@
       "size_mb": 256
     }
   ],
+  "m2": [
+    {
+      "key": "M-key",
+      "direction": "socket",
+      "interfaces": [
+        "SATA"
+      ]
+    }
+  ],
   "video": {
     "displayport": 1
   },
@@ -45,7 +54,7 @@
         "ports": 1
       }
     ],
-    "sfp": 4
+    "sfp28": 4
   },
   "usb": [
     {

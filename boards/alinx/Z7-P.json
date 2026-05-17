@@ -45,6 +45,16 @@
       "gen": 3
     }
   ],
+  "m2": [
+    {
+      "key": "M-key",
+      "direction": "socket",
+      "interfaces": [
+        "PCIe"
+      ],
+      "lanes": 1
+    }
+  ],
   "video": {
     "displayport": 1
   },

@@ -35,6 +35,6 @@
     }
   ],
   "networking": {
-    "qsfp": 4
+    "qsfp56": 4
   }
 }

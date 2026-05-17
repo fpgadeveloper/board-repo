@@ -30,7 +30,7 @@
     }
   ],
   "networking": {
-    "sfp": 2
+    "sfp_plus": 2
   },
   "usb": [
     {

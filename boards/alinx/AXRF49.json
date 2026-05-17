@@ -47,7 +47,7 @@
         "ports": 1
       }
     ],
-    "qsfp": 2
+    "qsfp28": 2
   },
   "usb": [
     {
@@ -76,5 +76,15 @@
   "storage": {
     "sata": 1,
     "microsd": 1
-  }
+  },
+  "m2": [
+    {
+      "key": "M-key",
+      "direction": "socket",
+      "interfaces": [
+        "PCIe"
+      ],
+      "lanes": 2
+    }
+  ]
 }

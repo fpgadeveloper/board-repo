@@ -39,7 +39,7 @@
     }
   ],
   "networking": {
-    "sfp": 4
+    "sfp_plus": 4
   },
   "usb_bridge": [
     {

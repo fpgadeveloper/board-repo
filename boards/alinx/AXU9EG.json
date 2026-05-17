@@ -45,6 +45,15 @@
       "gen": 2
     }
   ],
+  "m2": [
+    {
+      "key": "M-key",
+      "direction": "socket",
+      "interfaces": [
+        "PCIe"
+      ]
+    }
+  ],
   "video": {
     "displayport": 1
   },
@@ -55,7 +64,7 @@
         "ports": 2
       }
     ],
-    "sfp": 2
+    "sfp_plus": 2
   },
   "usb": [
     {

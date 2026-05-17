@@ -37,7 +37,7 @@
     "hdmi_out": 2
   },
   "networking": {
-    "sfp": 4
+    "sfp_plus": 4
   },
   "storage": {
     "sata": 2,

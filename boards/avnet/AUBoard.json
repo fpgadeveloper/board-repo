@@ -42,7 +42,7 @@
         "ports": 1
       }
     ],
-    "sfp": 1
+    "sfp_plus": 1
   },
   "usb_bridge": [
     {

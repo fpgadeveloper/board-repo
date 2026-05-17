@@ -42,7 +42,8 @@
         "ports": 1
       }
     ],
-    "qsfp": 9
+    "qsfp_dd": 2,
+    "qsfp28": 7
   },
   "usb_bridge": [
     {

@@ -34,6 +34,16 @@
       "size_mb": 64
     }
   ],
+  "m2": [
+    {
+      "key": "M-key",
+      "direction": "socket",
+      "interfaces": [
+        "PCIe"
+      ],
+      "lanes": 1
+    }
+  ],
   "video": {
     "displayport": 1
   },
@@ -44,8 +54,8 @@
         "ports": 1
       }
     ],
-    "sfp": 1,
-    "qsfp": 1
+    "sfp_plus": 1,
+    "qsfp28": 1
   },
   "usb": [
     {

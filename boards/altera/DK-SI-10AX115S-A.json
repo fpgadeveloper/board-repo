@@ -13,11 +13,16 @@
     "vendor": "altera"
   },
   "networking": {
-    "sfp": 2,
-    "qsfp": 2,
-    "cfp": 1
+    "sfp_plus": 2,
+    "qsfp_plus": 2,
+    "cfp2": 1
   },
   "usb_bridge": [
-    { "connector": "Type-B", "functions": ["jtag"] }
+    {
+      "connector": "Type-B",
+      "functions": [
+        "jtag"
+      ]
+    }
   ]
 }

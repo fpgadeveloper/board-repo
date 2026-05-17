@@ -55,7 +55,7 @@
         "ports": 1
       }
     ],
-    "sfp": 4
+    "sfp_plus": 4
   },
   "usb": [
     {

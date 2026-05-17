@@ -24,9 +24,13 @@
       "size_mb": 64
     }
   ],
-  "pcie": [
+  "m2": [
     {
-      "type": "M.2 M-key",
+      "key": "M-key",
+      "direction": "form-factor",
+      "interfaces": [
+        "PCIe"
+      ],
       "lanes": 4
     }
   ]

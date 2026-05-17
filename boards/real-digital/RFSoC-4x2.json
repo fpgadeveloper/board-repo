@@ -28,7 +28,7 @@
     "displayport": 1
   },
   "networking": {
-    "qsfp": 1
+    "qsfp28": 1
   },
   "expansion": {
     "pmod": 2,

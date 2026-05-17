@@ -41,8 +41,8 @@
         "ports": 3
       }
     ],
-    "sfp": 2,
-    "qsfp": 1
+    "sfp28": 2,
+    "qsfp28": 1
   },
   "expansion": {
     "fmc": [

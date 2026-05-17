@@ -29,7 +29,7 @@
     "mipi_csi": 1
   },
   "networking": {
-    "sfp": 4
+    "sfp_plus": 4
   },
   "expansion": {
     "pmod": 2,

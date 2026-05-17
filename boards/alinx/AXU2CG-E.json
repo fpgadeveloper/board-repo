@@ -29,6 +29,15 @@
       "size_mb": 8192
     }
   ],
+  "m2": [
+    {
+      "key": "M-key",
+      "direction": "socket",
+      "interfaces": [
+        "PCIe"
+      ]
+    }
+  ],
   "video": {
     "displayport": 1
   },

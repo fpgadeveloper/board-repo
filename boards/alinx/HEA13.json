@@ -36,7 +36,7 @@
     }
   ],
   "networking": {
-    "qsfp": 4
+    "qsfp28": 4
   },
   "usb": [
     {
@@ -67,5 +67,22 @@
   },
   "storage": {
     "microsd": 2
-  }
+  },
+  "m2": [
+    {
+      "key": "M-key",
+      "direction": "socket",
+      "interfaces": [
+        "PCIe"
+      ]
+    },
+    {
+      "key": "E-key",
+      "direction": "socket",
+      "interfaces": [
+        "PCIe",
+        "USB"
+      ]
+    }
+  ]
 }

@@ -48,7 +48,7 @@
         "ports": 1
       }
     ],
-    "qsfp": 2
+    "qsfp_plus": 2
   },
   "usb_bridge": [
     {

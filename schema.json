@@ -20,7 +20,8 @@
         "device": { "$ref": "#/$defs/device" },
         "memory": { "type": "array", "title": "Memory", "description": "On-board DRAM. List one entry per distinct memory bank.", "items": { "$ref": "#/$defs/memory_interface" }, "minItems": 1 },
         "flash": { "type": "array", "title": "Flash", "description": "On-board non-volatile flash memory. List one entry per distinct chip.", "items": { "$ref": "#/$defs/flash_interface" }, "minItems": 1 },
-        "pcie": { "type": "array", "title": "PCIe", "description": "PCIe interfaces on the board.", "items": { "$ref": "#/$defs/pcie_interface" }, "minItems": 1 },
+        "pcie": { "type": "array", "title": "PCIe", "description": "PCIe interfaces on the board (Edge connector, slot, PCIe/104, iPass, MCIO). M.2 sockets and M.2 form-factor boards live in the separate `m2` array.", "items": { "$ref": "#/$defs/pcie_interface" }, "minItems": 1 },
+        "m2": { "type": "array", "title": "M.2", "description": "M.2 sockets the board provides, or the board's own M.2 edge connector if it is itself an M.2 module.", "items": { "$ref": "#/$defs/m2_interface" }, "minItems": 1 },
         "video": { "$ref": "#/$defs/video" },
         "networking": { "$ref": "#/$defs/networking" },
         "usb": { "type": "array", "title": "USB", "description": "USB interfaces accessible to the FPGA design.", "items": { "$ref": "#/$defs/usb_interface" }, "minItems": 1 },
@@ -47,6 +48,7 @@
         "device": { "$ref": "#/$defs/device" },
         "memory": { "type": "array", "title": "Memory", "description": "On-SoM DRAM. List one entry per distinct memory bank.", "items": { "$ref": "#/$defs/memory_interface" }, "minItems": 1 },
         "flash": { "type": "array", "title": "Flash", "description": "On-SoM non-volatile flash memory.", "items": { "$ref": "#/$defs/flash_interface" }, "minItems": 1 },
+        "m2": { "type": "array", "title": "M.2", "description": "M.2 sockets on the SoM (rare, but some SoMs include them for SSD storage or WiFi).", "items": { "$ref": "#/$defs/m2_interface" }, "minItems": 1 },
         "networking": { "$ref": "#/$defs/networking" },
         "usb": { "type": "array", "title": "USB", "description": "USB interfaces accessible to the FPGA design.", "items": { "$ref": "#/$defs/usb_interface" }, "minItems": 1 },
         "usb_bridge": { "type": "array", "title": "USB UART/JTAG", "description": "USB-to-UART/JTAG bridge ports.", "items": { "$ref": "#/$defs/usb_bridge_interface" }, "minItems": 1 },
@@ -70,6 +72,7 @@
         "vendor": { "$ref": "#/$defs/vendor" },
         "price": { "$ref": "#/$defs/price_or_null" },
         "pcie": { "type": "array", "title": "PCIe", "items": { "$ref": "#/$defs/pcie_interface" }, "minItems": 1 },
+        "m2": { "type": "array", "title": "M.2", "items": { "$ref": "#/$defs/m2_interface" }, "minItems": 1 },
         "video": { "$ref": "#/$defs/video" },
         "networking": { "$ref": "#/$defs/networking" },
         "usb": { "type": "array", "title": "USB", "items": { "$ref": "#/$defs/usb_interface" }, "minItems": 1 },
@@ -144,6 +147,7 @@
           "description": "Maximum VADJ supply voltage the card accepts."
         },
         "pcie": { "type": "array", "title": "PCIe", "items": { "$ref": "#/$defs/pcie_interface" }, "minItems": 1 },
+        "m2": { "type": "array", "title": "M.2", "items": { "$ref": "#/$defs/m2_interface" }, "minItems": 1 },
         "video": { "$ref": "#/$defs/video" },
         "networking": { "$ref": "#/$defs/networking" },
         "usb": { "type": "array", "title": "USB", "items": { "$ref": "#/$defs/usb_interface" }, "minItems": 1 },
@@ -300,8 +304,8 @@
       "properties": {
         "type": {
           "type": "string",
-          "enum": ["Edge", "Slot", "M.2 M-key", "M.2 E-key", "M.2 B-key", "PCIe/104", "iPass", "MCIO"],
-          "description": "Physical form factor of the PCIe interface. MCIO is the SFF-TA-1016 cabled PCIe connector (Mini Cool Edge IO)."
+          "enum": ["Edge", "Slot", "PCIe/104", "iPass", "MCIO"],
+          "description": "Physical form factor of the PCIe interface. M.2 sockets and M.2 form-factor boards live in a separate `m2` array, not here — M.2 is a multi-protocol form factor (PCIe / SATA / USB), so modelling it under `pcie` was misleading. MCIO is the SFF-TA-1016 cabled PCIe connector (Mini Cool Edge IO)."
         },
         "lanes": {
           "type": "integer",
@@ -313,6 +317,47 @@
           "minimum": 1,
           "maximum": 6,
           "description": "PCIe generation (1-6)."
+        }
+      }
+    },
+    "m2_interface": {
+      "type": "object",
+      "required": ["key", "direction"],
+      "additionalProperties": false,
+      "description": "An M.2 connector — either a socket the board provides, or the M.2 edge-connector of a board that IS an M.2 module. M.2 is a physical form factor, not an interface, so the protocols routed to the connector are listed separately in `interfaces`.",
+      "properties": {
+        "key": {
+          "type": "string",
+          "enum": ["M-key", "E-key", "B-key", "B+M-key"],
+          "description": "M.2 keying. M-key = PCIe x4 NVMe (the common storage slot), E-key = WiFi/BT modules (PCIe x1 + USB + SDIO), B-key = WWAN / older SATA SSDs, B+M-key = double-keyed card / socket compatible with both."
+        },
+        "direction": {
+          "type": "string",
+          "enum": ["socket", "form-factor"],
+          "description": "socket = the board PROVIDES an M.2 receptacle (you plug a module into it — e.g. Alinx AXU5EVB-P). form-factor = the BOARD itself is in M.2 form factor and its edge connector plugs into a host (e.g. RHS Research LiteFury / NiteFury)."
+        },
+        "interfaces": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["PCIe", "SATA", "USB"] },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "Protocols actually routed to this M.2 connector. Most M-key sockets carry PCIe (NVMe); the Xilinx ZCU series carry SATA only; E-key sockets typically carry PCIe + USB. When omitted, defaults are inferred by key (M-key/B+M-key → PCIe, E-key → PCIe+USB, B-key → USB)."
+        },
+        "lanes": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Number of PCIe lanes routed (only meaningful when `interfaces` includes PCIe)."
+        },
+        "gen": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 6,
+          "description": "PCIe generation (1-6). Only meaningful when `interfaces` includes PCIe."
+        },
+        "length": {
+          "type": "string",
+          "enum": ["2230", "2242", "2260", "2280", "22110"],
+          "description": "Module length in M.2 nomenclature (WWLL, where WW=width=22mm, LL=length in mm). 2280 is the dominant size for NVMe SSDs; 2230 is common for WiFi modules."
         }
       }
     },
@@ -468,10 +513,23 @@
           },
           "minItems": 1
         },
-        "sfp": { "type": "integer", "title": "SFP/SFP+", "minimum": 1 },
-        "qsfp": { "type": "integer", "title": "QSFP/QSFP+", "minimum": 1 },
-        "osfp": { "type": "integer", "title": "OSFP", "minimum": 1 },
-        "cfp": { "type": "integer", "title": "CFP", "minimum": 1 }
+        "sfp":         { "type": "integer", "title": "SFP",         "minimum": 1, "description": "SFP cage, 1x1G — original 1 GbE generation." },
+        "sfp_plus":    { "type": "integer", "title": "SFP+",        "minimum": 1, "description": "SFP+ cage, 1x10G — 10 GbE." },
+        "sfp28":       { "type": "integer", "title": "SFP28",       "minimum": 1, "description": "SFP28 cage, 1x25G — 25 GbE / 32G FC." },
+        "sfp56":       { "type": "integer", "title": "SFP56",       "minimum": 1, "description": "SFP56 cage, 1x50G PAM4 — 50 GbE." },
+        "sfp_dd":      { "type": "integer", "title": "SFP-DD",      "minimum": 1, "description": "SFP-DD double-density cage, 2x50G PAM4 — 100 GbE." },
+        "qsfp":        { "type": "integer", "title": "QSFP",        "minimum": 1, "description": "QSFP cage, 4x1G — 4 GbE (rare on FPGA boards)." },
+        "qsfp_plus":   { "type": "integer", "title": "QSFP+",       "minimum": 1, "description": "QSFP+ cage, 4x10G — 40 GbE." },
+        "qsfp28":      { "type": "integer", "title": "QSFP28",      "minimum": 1, "description": "QSFP28 cage, 4x25G — 100 GbE / 32G FC." },
+        "qsfp56":      { "type": "integer", "title": "QSFP56",      "minimum": 1, "description": "QSFP56 cage, 4x50G PAM4 — 200 GbE." },
+        "qsfp_dd":     { "type": "integer", "title": "QSFP-DD",     "minimum": 1, "description": "QSFP-DD double-density cage, 8x50G PAM4 — 400 GbE." },
+        "qsfp_dd800":  { "type": "integer", "title": "QSFP-DD800",  "minimum": 1, "description": "QSFP-DD800 cage, 8x100G PAM4 — 800 GbE." },
+        "osfp":        { "type": "integer", "title": "OSFP",        "minimum": 1, "description": "OSFP cage, 8 lanes — 400/800 GbE." },
+        "osfp_xd":     { "type": "integer", "title": "OSFP-XD",     "minimum": 1, "description": "OSFP-XD extended-density cage, 16 lanes — 1.6 TbE." },
+        "cfp":         { "type": "integer", "title": "CFP",         "minimum": 1, "description": "CFP (CFP1) cage — legacy 100 GbE." },
+        "cfp2":        { "type": "integer", "title": "CFP2",        "minimum": 1, "description": "CFP2 cage — 100/200 GbE." },
+        "cfp4":        { "type": "integer", "title": "CFP4",        "minimum": 1, "description": "CFP4 cage — 100 GbE (smaller body)." },
+        "cfp8":        { "type": "integer", "title": "CFP8",        "minimum": 1, "description": "CFP8 cage — 400 GbE." }
       },
       "minProperties": 1
     },

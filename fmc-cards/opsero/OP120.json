@@ -12,6 +12,6 @@
   "vadj_min": 1.2,
   "vadj_max": 3.3,
   "networking": {
-    "qsfp": 2
+    "qsfp28": 2
   }
 }

@@ -34,6 +34,16 @@
       "size_mb": 128
     }
   ],
+  "m2": [
+    {
+      "key": "M-key",
+      "direction": "socket",
+      "interfaces": [
+        "PCIe"
+      ],
+      "lanes": 4
+    }
+  ],
   "video": {
     "displayport": 1
   },

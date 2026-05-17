@@ -42,8 +42,8 @@
         "ports": 1
       }
     ],
-    "sfp": 1,
-    "qsfp": 2
+    "sfp_plus": 1,
+    "qsfp_plus": 2
   },
   "usb": [
     {
@@ -63,6 +63,16 @@
         "jtag",
         "uart"
       ]
+    }
+  ],
+  "m2": [
+    {
+      "key": "M-key",
+      "direction": "socket",
+      "interfaces": [
+        "PCIe"
+      ],
+      "lanes": 4
     }
   ]
 }
