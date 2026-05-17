@@ -1,0 +1,22 @@
+{
+  "mpn": "TESTBOARD",
+  "name": "Test board",
+  "status": "active",
+  "url": "https://www.efinixinc.com/products-devkits-topaztz170j484.html",
+  "vendor": "efinix",
+  "price": {
+    "value": 123,
+    "currency": "USD"
+  },
+  "device": {
+    "part": "AC7t700FSG1517SIES1",
+    "vendor": "achronix"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 1000,
+      "width_bits": 16
+    }
+  ]
+}
