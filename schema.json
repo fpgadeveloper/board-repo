@@ -20,15 +20,25 @@
         "device": { "$ref": "#/$defs/device" },
         "memory": { "type": "array", "title": "Memory", "description": "On-board DRAM. List one entry per distinct memory bank.", "items": { "$ref": "#/$defs/memory_interface" }, "minItems": 1 },
         "flash": { "type": "array", "title": "Flash", "description": "On-board non-volatile flash memory. List one entry per distinct chip.", "items": { "$ref": "#/$defs/flash_interface" }, "minItems": 1 },
-        "pcie": { "type": "array", "title": "PCIe", "description": "PCIe interfaces on the board (Edge connector, slot, PCIe/104, iPass, MCIO). M.2 sockets and M.2 form-factor boards live in the separate `m2` array.", "items": { "$ref": "#/$defs/pcie_interface" }, "minItems": 1 },
+        "eeprom": { "type": "array", "title": "EEPROM", "description": "Small on-board EEPROMs (MAC address, board UID, board identification, user data). One entry per chip.", "items": { "$ref": "#/$defs/eeprom_chip" }, "minItems": 1 },
+        "analog": { "type": "array", "title": "Analog", "description": "Discrete ADCs, DACs, RF transceivers, and AFEs soldered to the board. Excludes FPGA-internal XADC/SYSMON and anything on daughter cards.", "items": { "$ref": "#/$defs/analog_chip" }, "minItems": 1 },
+        "sensors": { "type": "array", "title": "Sensors", "description": "On-board sensor chips (IMU, temperature, light, etc.).", "items": { "$ref": "#/$defs/sensor" }, "minItems": 1 },
+        "audio": { "$ref": "#/$defs/audio" },
+        "clocking": { "$ref": "#/$defs/clocking" },
+        "pcie": { "type": "array", "title": "PCIe", "description": "PCIe interfaces on the board (Edge connector, slot, PCIe/104, iPass, MCIO, MiniPCIe). M.2 sockets and M.2 form-factor boards live in the separate `m2` array.", "items": { "$ref": "#/$defs/pcie_interface" }, "minItems": 1 },
         "m2": { "type": "array", "title": "M.2", "description": "M.2 sockets the board provides, or the board's own M.2 edge connector if it is itself an M.2 module.", "items": { "$ref": "#/$defs/m2_interface" }, "minItems": 1 },
+        "high_speed_io": { "$ref": "#/$defs/high_speed_io" },
         "video": { "$ref": "#/$defs/video" },
+        "display": { "$ref": "#/$defs/display" },
         "networking": { "$ref": "#/$defs/networking" },
+        "serial": { "$ref": "#/$defs/serial" },
         "usb": { "type": "array", "title": "USB", "description": "USB interfaces accessible to the FPGA design.", "items": { "$ref": "#/$defs/usb_interface" }, "minItems": 1 },
         "usb_bridge": { "type": "array", "title": "USB UART/JTAG", "description": "USB-to-UART/JTAG bridge ports.", "items": { "$ref": "#/$defs/usb_bridge_interface" }, "minItems": 1 },
         "expansion": { "$ref": "#/$defs/expansion" },
         "storage": { "$ref": "#/$defs/storage" },
-        "wireless": { "$ref": "#/$defs/wireless" }
+        "user_io": { "$ref": "#/$defs/user_io" },
+        "wireless": { "$ref": "#/$defs/wireless" },
+        "features": { "$ref": "#/$defs/features" }
       }
     },
 
@@ -48,13 +58,21 @@
         "device": { "$ref": "#/$defs/device" },
         "memory": { "type": "array", "title": "Memory", "description": "On-SoM DRAM. List one entry per distinct memory bank.", "items": { "$ref": "#/$defs/memory_interface" }, "minItems": 1 },
         "flash": { "type": "array", "title": "Flash", "description": "On-SoM non-volatile flash memory.", "items": { "$ref": "#/$defs/flash_interface" }, "minItems": 1 },
+        "eeprom": { "type": "array", "title": "EEPROM", "description": "On-SoM EEPROMs (typically MAC address, unique board ID). One entry per chip. Useful regardless of carrier — flattens into the kit at build time.", "items": { "$ref": "#/$defs/eeprom_chip" }, "minItems": 1 },
+        "analog": { "type": "array", "title": "Analog", "description": "Discrete ADCs, DACs, RF transceivers, and AFEs soldered to the SoM.", "items": { "$ref": "#/$defs/analog_chip" }, "minItems": 1 },
+        "sensors": { "type": "array", "title": "Sensors", "description": "On-SoM sensor chips.", "items": { "$ref": "#/$defs/sensor" }, "minItems": 1 },
+        "audio": { "$ref": "#/$defs/audio" },
+        "clocking": { "$ref": "#/$defs/clocking" },
         "m2": { "type": "array", "title": "M.2", "description": "M.2 sockets on the SoM (rare, but some SoMs include them for SSD storage or WiFi).", "items": { "$ref": "#/$defs/m2_interface" }, "minItems": 1 },
         "networking": { "$ref": "#/$defs/networking" },
+        "serial": { "$ref": "#/$defs/serial" },
         "usb": { "type": "array", "title": "USB", "description": "USB interfaces accessible to the FPGA design.", "items": { "$ref": "#/$defs/usb_interface" }, "minItems": 1 },
         "usb_bridge": { "type": "array", "title": "USB UART/JTAG", "description": "USB-to-UART/JTAG bridge ports.", "items": { "$ref": "#/$defs/usb_bridge_interface" }, "minItems": 1 },
         "expansion": { "$ref": "#/$defs/expansion" },
         "storage": { "$ref": "#/$defs/storage" },
-        "wireless": { "$ref": "#/$defs/wireless" }
+        "user_io": { "$ref": "#/$defs/user_io" },
+        "wireless": { "$ref": "#/$defs/wireless" },
+        "features": { "$ref": "#/$defs/features" }
       }
     },
 
@@ -71,15 +89,26 @@
         "url": { "$ref": "#/$defs/url" },
         "vendor": { "$ref": "#/$defs/vendor" },
         "price": { "$ref": "#/$defs/price_or_null" },
+        "flash": { "type": "array", "title": "Flash", "description": "On-carrier non-volatile flash. Less common than SoM-side flash (the SoM usually owns configuration + Linux rootfs flash), but some carriers carry their own on-board eMMC or QSPI for application data. One entry per chip. Flattened kits get the union of SoM-side and carrier-side flash.", "items": { "$ref": "#/$defs/flash_interface" }, "minItems": 1 },
+        "eeprom": { "type": "array", "title": "EEPROM", "description": "On-carrier EEPROMs (rare — the SoM typically owns the identity EEPROM, but some carriers have their own user-data EEPROM).", "items": { "$ref": "#/$defs/eeprom_chip" }, "minItems": 1 },
+        "analog": { "type": "array", "title": "Analog", "description": "Discrete ADCs, DACs, RF transceivers, and AFEs soldered to the carrier.", "items": { "$ref": "#/$defs/analog_chip" }, "minItems": 1 },
+        "sensors": { "type": "array", "title": "Sensors", "description": "On-board sensor chips.", "items": { "$ref": "#/$defs/sensor" }, "minItems": 1 },
+        "audio": { "$ref": "#/$defs/audio" },
+        "clocking": { "$ref": "#/$defs/clocking" },
         "pcie": { "type": "array", "title": "PCIe", "items": { "$ref": "#/$defs/pcie_interface" }, "minItems": 1 },
         "m2": { "type": "array", "title": "M.2", "items": { "$ref": "#/$defs/m2_interface" }, "minItems": 1 },
+        "high_speed_io": { "$ref": "#/$defs/high_speed_io" },
         "video": { "$ref": "#/$defs/video" },
+        "display": { "$ref": "#/$defs/display" },
         "networking": { "$ref": "#/$defs/networking" },
+        "serial": { "$ref": "#/$defs/serial" },
         "usb": { "type": "array", "title": "USB", "items": { "$ref": "#/$defs/usb_interface" }, "minItems": 1 },
         "usb_bridge": { "type": "array", "title": "USB UART/JTAG", "items": { "$ref": "#/$defs/usb_bridge_interface" }, "minItems": 1 },
         "expansion": { "$ref": "#/$defs/expansion" },
         "storage": { "$ref": "#/$defs/storage" },
-        "wireless": { "$ref": "#/$defs/wireless" }
+        "user_io": { "$ref": "#/$defs/user_io" },
+        "wireless": { "$ref": "#/$defs/wireless" },
+        "features": { "$ref": "#/$defs/features" }
       }
     },
 
@@ -146,12 +175,21 @@
           "title": "VADJ Max (V)",
           "description": "Maximum VADJ supply voltage the card accepts."
         },
+        "eeprom": { "type": "array", "title": "EEPROM", "description": "On-card EEPROMs (VITA 57.1 IPMI EEPROM holds board ID and is common on FMC cards).", "items": { "$ref": "#/$defs/eeprom_chip" }, "minItems": 1 },
+        "analog": { "type": "array", "title": "Analog", "description": "Discrete ADCs, DACs, RF transceivers, and AFEs on the FMC card.", "items": { "$ref": "#/$defs/analog_chip" }, "minItems": 1 },
+        "sensors": { "type": "array", "title": "Sensors", "description": "On-card sensor chips.", "items": { "$ref": "#/$defs/sensor" }, "minItems": 1 },
+        "audio": { "$ref": "#/$defs/audio" },
+        "clocking": { "$ref": "#/$defs/clocking" },
         "pcie": { "type": "array", "title": "PCIe", "items": { "$ref": "#/$defs/pcie_interface" }, "minItems": 1 },
         "m2": { "type": "array", "title": "M.2", "items": { "$ref": "#/$defs/m2_interface" }, "minItems": 1 },
+        "high_speed_io": { "$ref": "#/$defs/high_speed_io" },
         "video": { "$ref": "#/$defs/video" },
         "networking": { "$ref": "#/$defs/networking" },
+        "serial": { "$ref": "#/$defs/serial" },
         "usb": { "type": "array", "title": "USB", "items": { "$ref": "#/$defs/usb_interface" }, "minItems": 1 },
-        "storage": { "$ref": "#/$defs/storage" }
+        "storage": { "$ref": "#/$defs/storage" },
+        "user_io": { "$ref": "#/$defs/user_io" },
+        "features": { "$ref": "#/$defs/features" }
       }
     },
 
@@ -304,8 +342,8 @@
       "properties": {
         "type": {
           "type": "string",
-          "enum": ["Edge", "Slot", "PCIe/104", "iPass", "MCIO"],
-          "description": "Physical form factor of the PCIe interface. M.2 sockets and M.2 form-factor boards live in a separate `m2` array, not here — M.2 is a multi-protocol form factor (PCIe / SATA / USB), so modelling it under `pcie` was misleading. MCIO is the SFF-TA-1016 cabled PCIe connector (Mini Cool Edge IO)."
+          "enum": ["Edge", "Slot", "PCIe/104", "iPass", "MCIO", "MiniPCIe-Half", "MiniPCIe-Full"],
+          "description": "Physical form factor of the PCIe interface. M.2 sockets and M.2 form-factor boards live in a separate `m2` array, not here — M.2 is a multi-protocol form factor (PCIe / SATA / USB), so modelling it under `pcie` was misleading. MCIO is the SFF-TA-1016 cabled PCIe connector (Mini Cool Edge IO). MiniPCIe slots are PCIe x1 + USB + (optionally) mSATA — use `msata_capable: true` to mark slots that also accept mSATA SSDs."
         },
         "lanes": {
           "type": "integer",
@@ -317,6 +355,10 @@
           "minimum": 1,
           "maximum": 6,
           "description": "PCIe generation (1-6)."
+        },
+        "msata_capable": {
+          "type": "boolean",
+          "description": "Set on MiniPCIe slots that also accept mSATA SSDs (the slot is electrically multiplexed). Not a separate storage entry — the physical socket is one connector."
         }
       }
     },
@@ -579,10 +621,12 @@
         "pmod": { "type": "integer", "title": "Pmod", "minimum": 1 },
         "arduino": { "type": "integer", "title": "Arduino", "minimum": 1 },
         "raspberry_pi": { "type": "integer", "title": "Raspberry Pi", "minimum": 1 },
-        "click": { "type": "integer", "title": "Click", "minimum": 1 },
+        "click": { "type": "integer", "title": "Click", "minimum": 1, "description": "Mikroe Click / mikroBUS sockets." },
         "syzygy": { "type": "integer", "title": "SYZYGY", "minimum": 1 },
         "syzygy_trx": { "type": "integer", "title": "SYZYGY TRX", "minimum": 1 },
-        "rfmc": { "type": "integer", "title": "RFMC", "minimum": 1 }
+        "rfmc": { "type": "integer", "title": "RFMC", "minimum": 1 },
+        "gpio_header": { "type": "integer", "title": "GPIO Header", "minimum": 1, "description": "Count of generic GPIO breakout headers (no standardised pinout — pin count varies)." },
+        "xadc_header": { "type": "integer", "title": "XADC Header", "minimum": 1, "description": "Count of XADC / SYSMON / SmartVIO analog-channel breakout headers (common on Xilinx 7-series and Ultrascale eval boards)." }
       },
       "minProperties": 1
     },
@@ -608,6 +652,186 @@
         "bluetooth": { "type": "boolean", "title": "Bluetooth" }
       },
       "minProperties": 1
+    },
+    "analog_chip": {
+      "type": "object",
+      "title": "Analog Chip",
+      "description": "A discrete ADC, DAC, RF transceiver, or analog front-end soldered to the board — distinct from the FPGA's built-in XADC/SYSMON, and from chips on FMC/expansion daughter cards.",
+      "required": ["role"],
+      "additionalProperties": false,
+      "properties": {
+        "role": {
+          "type": "string",
+          "title": "Role",
+          "enum": ["adc", "dac", "rf_transceiver", "afe"],
+          "description": "Chip's function. adc/dac = standalone sample-rate-and-bits chip; rf_transceiver = wideband RF AFE (AD9361 etc.); afe = generic analog conditioning frontend."
+        },
+        "part": {
+          "type": "string",
+          "title": "Part Number",
+          "description": "Manufacturer part number (e.g. LTC2387, AD9361). Optional but recommended — lets users search by chip."
+        },
+        "channels": { "type": "integer", "minimum": 1, "title": "Channels", "description": "Number of channels on this chip." },
+        "resolution_bits": { "type": "integer", "minimum": 1, "title": "Resolution (bits)", "description": "Sample resolution. ADC/DAC only." },
+        "sample_rate_msps": { "type": "number", "minimum": 0, "title": "Sample Rate (MSPS)", "description": "Maximum sample rate. ADC/DAC only." },
+        "frequency_min_mhz": { "type": "number", "minimum": 0, "title": "Min Frequency (MHz)", "description": "Minimum RF operating frequency. RF transceiver / AFE only." },
+        "frequency_max_mhz": { "type": "number", "minimum": 0, "title": "Max Frequency (MHz)", "description": "Maximum RF operating frequency. RF transceiver / AFE only." }
+      }
+    },
+    "sensor": {
+      "type": "object",
+      "title": "Sensor",
+      "description": "An on-board sensor chip. One entry per sensor.",
+      "required": ["type"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "title": "Sensor Type",
+          "enum": ["imu", "accelerometer", "gyroscope", "magnetometer", "temperature", "pressure", "humidity", "light", "proximity", "microphone"],
+          "description": "Sensor category. 'imu' implies combined accelerometer + gyroscope (and usually magnetometer)."
+        },
+        "part": {
+          "type": "string",
+          "title": "Part Number",
+          "description": "Manufacturer part number (e.g. MPU-9250, TMP102). Optional but recommended."
+        }
+      }
+    },
+    "audio": {
+      "type": "object",
+      "title": "Audio",
+      "description": "On-board audio I/O. Distinct from analog[] — captures user-facing audio jacks and the codec routing them.",
+      "additionalProperties": false,
+      "properties": {
+        "codec": { "type": "string", "title": "Codec Part", "description": "Audio codec chip part number (e.g. SSM2603, WM8731, TLV320AIC23)." },
+        "line_in": { "type": "integer", "title": "Line In", "minimum": 1 },
+        "line_out": { "type": "integer", "title": "Line Out", "minimum": 1 },
+        "headphone_jack": { "type": "integer", "title": "Headphone", "minimum": 1 },
+        "microphone": { "type": "integer", "title": "Microphone", "minimum": 1 },
+        "speaker": { "type": "boolean", "title": "Speaker", "description": "On-board speaker." }
+      },
+      "minProperties": 1
+    },
+    "clocking": {
+      "type": "object",
+      "title": "Clocking",
+      "description": "Reference-clock features beyond the FPGA's own internal oscillators.",
+      "additionalProperties": false,
+      "properties": {
+        "programmable": { "type": "boolean", "title": "Programmable Clock", "description": "Board includes a programmable clock generator (Si5xxx, IDT FemtoClock, etc.)." },
+        "sma_clock_in": { "type": "integer", "title": "Clock Input SMA", "minimum": 1, "description": "Count of SMA connectors for external reference-clock inputs." },
+        "sma_clock_out": { "type": "integer", "title": "Clock Output SMA", "minimum": 1 },
+        "gps_disciplined": { "type": "boolean", "title": "GPS-Disciplined Oscillator", "description": "Board has an on-board GPSDO for time-locked operation." }
+      },
+      "minProperties": 1
+    },
+    "high_speed_io": {
+      "type": "object",
+      "title": "High-Speed I/O",
+      "description": "Raw transceiver fan-outs and high-speed cabled connectors that expose the FPGA's GTX/GTH/GTY lanes without the PCIe protocol wrapper.",
+      "additionalProperties": false,
+      "properties": {
+        "sma_transceiver_pairs": { "type": "integer", "title": "SMA Transceiver Pairs", "minimum": 1, "description": "Count of SMA pairs (TX+RX) routed to FPGA transceivers." },
+        "firefly": { "type": "integer", "title": "Samtec FireFly", "minimum": 1, "description": "Count of Samtec FireFly module slots." },
+        "slimsas": { "type": "integer", "title": "SlimSAS", "minimum": 1, "description": "Count of SlimSAS cabled connectors (typically PCIe over cable)." }
+      },
+      "minProperties": 1
+    },
+    "serial": {
+      "type": "object",
+      "title": "Serial",
+      "description": "Industrial / automotive serial interfaces with on-board transceivers. The USB-bridged UART/JTAG ports live in usb_bridge, not here.",
+      "additionalProperties": false,
+      "properties": {
+        "can": { "type": "integer", "title": "CAN", "minimum": 1, "description": "Count of CAN 2.0 / CAN-FD transceiver ports." },
+        "rs485": { "type": "integer", "title": "RS-485", "minimum": 1 },
+        "rs232": { "type": "integer", "title": "RS-232", "minimum": 1 },
+        "lin": { "type": "integer", "title": "LIN", "minimum": 1 }
+      },
+      "minProperties": 1
+    },
+    "user_io": {
+      "type": "object",
+      "title": "User I/O",
+      "description": "On-board user I/O elements. Counts only — for boot-mode DIP switches and other config-only inputs, use board notes.",
+      "additionalProperties": false,
+      "properties": {
+        "leds": { "type": "integer", "title": "LEDs", "minimum": 1, "description": "Count of user-controllable single-colour LEDs (excludes power/status LEDs and excludes RGB LEDs — those go in rgb_leds)." },
+        "rgb_leds": { "type": "integer", "title": "RGB LEDs", "minimum": 1, "description": "Count of user-controllable RGB / multi-colour LEDs. Counted separately from plain leds because they take 3 FPGA pins each." },
+        "pushbuttons": { "type": "integer", "title": "Pushbuttons", "minimum": 1, "description": "Count of user pushbuttons (excludes reset)." },
+        "dip_switches": { "type": "integer", "title": "DIP Switches", "minimum": 1, "description": "Count of user DIP switch positions (excludes boot-mode switches)." },
+        "seven_segment": { "type": "integer", "title": "7-Segment Displays", "minimum": 1 },
+        "rotary_encoders": { "type": "integer", "title": "Rotary Encoders", "minimum": 1 }
+      },
+      "minProperties": 1
+    },
+    "features": {
+      "type": "object",
+      "title": "Features",
+      "description": "Boolean capability flags that don't warrant their own structured section.",
+      "additionalProperties": false,
+      "properties": {
+        "power_monitoring": { "type": "boolean", "title": "Power Monitoring", "description": "On-board PMBus / INA-class power-rail monitoring." },
+        "programmable_vadj": { "type": "boolean", "title": "Programmable VADJ", "description": "User can adjust VADJ / core voltage rails (typically via I2C / PMBus)." },
+        "battery_backed_rtc": { "type": "boolean", "title": "Battery-Backed RTC", "description": "RTC backed by coin cell or supercap." },
+        "secure_element": { "type": "boolean", "title": "Secure Element", "description": "Discrete TPM / ATECC / equivalent cryptographic chip." },
+        "tamper_detection": { "type": "boolean", "title": "Tamper Detection", "description": "On-board tamper-detection circuitry." }
+      },
+      "minProperties": 1
+    },
+    "display": {
+      "type": "object",
+      "title": "Display",
+      "description": "Small on-board display panels (character LCD, OLED). Distinct from `video` — video covers source/sink ports to external screens (HDMI, DisplayPort, VGA), `display` covers indicator-class panels soldered to the board.",
+      "additionalProperties": false,
+      "properties": {
+        "character_lcd": {
+          "type": "string",
+          "title": "Character LCD",
+          "description": "HD44780-class character LCD, expressed as 'ROWSxCOLS' (e.g. '2x16', '4x20')."
+        },
+        "oled": {
+          "type": "string",
+          "title": "OLED",
+          "description": "Monochrome / RGB OLED panel resolution as 'WIDTHxHEIGHT' pixels (e.g. '128x32', '128x64', '64x48')."
+        }
+      },
+      "minProperties": 1
+    },
+    "eeprom_chip": {
+      "type": "object",
+      "title": "EEPROM",
+      "description": "A small on-board EEPROM (typically I2C/SPI, used for MAC address, board UID, board identification, or user configuration). One entry per chip.",
+      "required": ["purpose"],
+      "additionalProperties": false,
+      "properties": {
+        "purpose": {
+          "type": "array",
+          "title": "Purpose",
+          "items": { "type": "string", "enum": ["mac_address", "unique_id", "board_id", "user_data"] },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "What this EEPROM stores. SoMs typically combine `mac_address` + `unique_id`. FMC cards typically use `board_id` (VITA 57.1 IPMI EEPROM). `user_data` is for general-purpose EEPROMs available to the FPGA design."
+        },
+        "interface": {
+          "type": "string",
+          "title": "Interface",
+          "enum": ["I2C", "SPI", "1-Wire"],
+          "description": "Bus the EEPROM hangs off."
+        },
+        "size_kbits": {
+          "type": "integer",
+          "minimum": 1,
+          "title": "Size (Kbits)",
+          "description": "Capacity in kilobits (1 Kb = 128 bytes). Common values: 2, 4, 8, 16, 32, 64."
+        },
+        "part": {
+          "type": "string",
+          "title": "Part Number",
+          "description": "Manufacturer part number (e.g. 24LC04, AT24C512, M24C32). Optional."
+        }
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 {
   "mpn": "TE0712-03-82I36-A",
-  "name": "TE0712 \u2014 7A200T-2I, 1 GB DDR3L",
+  "name": "TE0712 — 7A200T-2I, 1 GB DDR3L",
   "status": "active",
   "url": "https://www.trenz-electronic.de/en/FPGA-Module-with-AMD-Artix-7A200T-2I-1-GByte-DDR3L-32-MByte-Flash-4-x-5-cm/TE0712-03-82I36-A",
   "vendor": "trenz",
@@ -15,7 +15,8 @@
   "memory": [
     {
       "type": "DDR3L",
-      "size_mb": 1024
+      "size_mb": 1024,
+      "width_bits": 32
     }
   ],
   "flash": [
@@ -23,5 +24,23 @@
       "type": "QSPI",
       "size_mb": 32
     }
-  ]
+  ],
+  "eeprom": [
+    {
+      "purpose": ["mac_address"],
+      "interface": "I2C"
+    }
+  ],
+  "sensors": [
+    {
+      "type": "imu",
+      "part": "LSM303D"
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  },
+  "user_io": {
+    "leds": 2
+  }
 }

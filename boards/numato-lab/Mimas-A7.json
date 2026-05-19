@@ -26,8 +26,7 @@
   ],
   "video": {
     "hdmi_in": 1,
-    "hdmi_out": 1,
-    "displayport": 2
+    "hdmi_out": 1
   },
   "networking": {
     "ethernet": [

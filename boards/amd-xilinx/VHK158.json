@@ -29,14 +29,17 @@
     {
       "type": "Edge",
       "lanes": 16,
-      "gen": 5
+      "gen": 4
     }
   ],
+  "clocking": {
+    "programmable": true
+  },
   "networking": {
     "ethernet": [
       {
         "speed": 1000,
-        "ports": 1
+        "ports": 2
       }
     ],
     "qsfp_dd": 2,
@@ -60,5 +63,13 @@
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 2,
+    "dip_switches": 4
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

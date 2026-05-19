@@ -80,5 +80,9 @@
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 5
   }
 }

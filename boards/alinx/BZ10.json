@@ -52,6 +52,9 @@
     ],
     "qsfp_plus": 1
   },
+  "serial": {
+    "can": 1
+  },
   "usb": [
     {
       "connector": "Type-C",
@@ -89,5 +92,8 @@
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 2
   }
 }

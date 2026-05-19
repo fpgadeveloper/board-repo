@@ -5,7 +5,7 @@
   "url": "https://www.amd.com/en/products/system-on-modules/kria/k24.html",
   "vendor": "amd-xilinx",
   "price": {
-    "value": 312.50,
+    "value": 312.5,
     "currency": "USD"
   },
   "device": {
@@ -28,5 +28,19 @@
       "type": "eMMC",
       "size_mb": 32768
     }
-  ]
+  ],
+  "eeprom": [
+    {
+      "purpose": [
+        "board_id",
+        "unique_id"
+      ],
+      "interface": "I2C",
+      "size_kbits": 64
+    }
+  ],
+  "features": {
+    "battery_backed_rtc": true,
+    "secure_element": true
+  }
 }

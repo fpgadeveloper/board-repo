@@ -9,7 +9,7 @@
     "currency": "USD"
   },
   "device": {
-    "part": "XC7A75T-1FGG484C",
+    "part": "XC7A50T-1FGG484C",
     "vendor": "amd-xilinx"
   },
   "memory": [
@@ -18,5 +18,14 @@
       "size_mb": 512,
       "width_bits": 16
     }
-  ]
+  ],
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 4
+    }
+  ],
+  "user_io": {
+    "leds": 8
+  }
 }

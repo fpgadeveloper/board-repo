@@ -28,5 +28,8 @@
       "type": "SPI",
       "size_mb": 16
     }
-  ]
+  ],
+  "features": {
+    "power_monitoring": true
+  }
 }

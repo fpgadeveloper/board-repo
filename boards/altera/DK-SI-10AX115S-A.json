@@ -12,6 +12,9 @@
     "part": "10AX115S2F45I1SG",
     "vendor": "altera"
   },
+  "clocking": {
+    "programmable": true
+  },
   "networking": {
     "sfp_plus": 2,
     "qsfp_plus": 2,
@@ -24,5 +27,8 @@
         "jtag"
       ]
     }
-  ]
+  ],
+  "features": {
+    "power_monitoring": true
+  }
 }

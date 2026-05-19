@@ -18,10 +18,16 @@
       "size_mb": 4
     }
   ],
+  "sensors": [
+    {
+      "type": "temperature"
+    }
+  ],
   "usb_bridge": [
     {
       "connector": "Micro-B",
       "functions": [
+        "jtag",
         "uart"
       ]
     }

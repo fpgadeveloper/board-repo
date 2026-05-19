@@ -34,6 +34,10 @@
       "size_mb": 16
     }
   ],
+  "clocking": {
+    "programmable": true,
+    "sma_clock_in": 2
+  },
   "pcie": [
     {
       "type": "Edge",
@@ -41,6 +45,9 @@
       "gen": 2
     }
   ],
+  "high_speed_io": {
+    "sma_transceiver_pairs": 1
+  },
   "video": {
     "hdmi_out": 1
   },
@@ -52,6 +59,9 @@
       }
     ],
     "sfp_plus": 1
+  },
+  "serial": {
+    "can": 1
   },
   "usb": [
     {
@@ -88,9 +98,19 @@
         "vadj_min": 1.8,
         "vadj_max": 3.3
       }
-    ]
+    ],
+    "pmod": 3,
+    "xadc_header": 1
   },
   "storage": {
     "sd": 1
+  },
+  "user_io": {
+    "leds": 10,
+    "pushbuttons": 5,
+    "dip_switches": 2
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

@@ -22,6 +22,9 @@
       "size_mb": 512
     }
   ],
+  "clocking": {
+    "programmable": true
+  },
   "pcie": [
     {
       "type": "Edge",
@@ -29,6 +32,9 @@
       "lanes": 4
     }
   ],
+  "high_speed_io": {
+    "firefly": 1
+  },
   "expansion": {
     "fmc": [
       {
@@ -36,5 +42,8 @@
         "type": "hpc"
       }
     ]
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

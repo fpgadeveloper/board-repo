@@ -27,5 +27,14 @@
       "type": "SPI",
       "size_mb": 128
     }
-  ]
+  ],
+  "sensors": [
+    {
+      "type": "imu",
+      "part": "LSM303D"
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  }
 }

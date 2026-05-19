@@ -31,7 +31,15 @@
       "interfaces": [
         "PCIe"
       ],
-      "lanes": 4
+      "lanes": 4,
+      "gen": 2,
+      "length": "2280"
     }
-  ]
+  ],
+  "user_io": {
+    "rgb_leds": 1
+  },
+  "features": {
+    "secure_element": true
+  }
 }

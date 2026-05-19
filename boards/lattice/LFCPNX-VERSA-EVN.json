@@ -25,11 +25,14 @@
       "gen": 3
     }
   ],
+  "high_speed_io": {
+    "sma_transceiver_pairs": 2
+  },
   "video": {
     "mipi_csi": 1
   },
   "networking": {
-    "sfp_plus": 4
+    "sfp_plus": 2
   },
   "expansion": {
     "pmod": 2,

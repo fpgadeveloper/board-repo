@@ -47,5 +47,8 @@
         "type": "hpc"
       }
     ]
+  },
+  "user_io": {
+    "rgb_leds": 1
   }
 }

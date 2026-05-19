@@ -25,6 +25,9 @@
       "size_mb": 64
     }
   ],
+  "clocking": {
+    "programmable": true
+  },
   "m2": [
     {
       "key": "M-key",
@@ -46,6 +49,9 @@
         "ports": 1
       }
     ]
+  },
+  "serial": {
+    "can": 1
   },
   "usb": [
     {
@@ -76,5 +82,12 @@
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "pushbuttons": 4
+  },
+  "features": {
+    "power_monitoring": true,
+    "programmable_vadj": true
   }
 }

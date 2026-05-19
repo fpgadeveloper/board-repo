@@ -25,10 +25,6 @@
       "size_mb": 16
     }
   ],
-  "expansion": {
-    "pmod": 3,
-    "syzygy": 1
-  },
   "usb_bridge": [
     {
       "connector": "Type-B",
@@ -37,5 +33,13 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "pmod": 3,
+    "syzygy": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 2
+  }
 }

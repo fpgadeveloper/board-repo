@@ -11,6 +11,9 @@
   "connector_type": "hpc",
   "vadj_min": 1.2,
   "vadj_max": 3.3,
+  "clocking": {
+    "programmable": true
+  },
   "networking": {
     "sfp28": 4
   }

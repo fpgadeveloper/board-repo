@@ -26,6 +26,13 @@
       }
     ]
   },
+  "usb": [
+    {
+      "connector": "Type-C",
+      "speed": "2.0",
+      "role": "otg"
+    }
+  ],
   "expansion": {
     "syzygy": 3,
     "syzygy_trx": 1

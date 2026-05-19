@@ -25,6 +25,9 @@
       "size_mb": 128
     }
   ],
+  "clocking": {
+    "programmable": true
+  },
   "video": {
     "hdmi_out": 1,
     "mipi_dsi": 1,
@@ -57,5 +60,13 @@
       }
     ],
     "pmod": 6
+  },
+  "user_io": {
+    "leds": 8,
+    "pushbuttons": 5,
+    "dip_switches": 16
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

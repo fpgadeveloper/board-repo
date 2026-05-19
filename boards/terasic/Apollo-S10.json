@@ -12,6 +12,18 @@
     "part": "1SX280HU2F50E1VG",
     "vendor": "altera"
   },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 32768,
+      "ecc": true
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 32768,
+      "ecc": true
+    }
+  ],
   "networking": {
     "ethernet": [
       {

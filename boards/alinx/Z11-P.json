@@ -38,6 +38,12 @@
       "size_mb": 32768
     }
   ],
+  "sensors": [
+    {
+      "type": "temperature",
+      "part": "LM75"
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -66,11 +72,14 @@
       }
     ]
   },
+  "serial": {
+    "can": 1
+  },
   "usb": [
     {
-      "connector": "Type-A",
+      "connector": "Type-C",
       "speed": "3.0",
-      "role": "host"
+      "role": "otg"
     }
   ],
   "usb_bridge": [
@@ -78,7 +87,8 @@
       "connector": "Mini-B",
       "functions": [
         "uart"
-      ]
+      ],
+      "ports": 2
     }
   ],
   "expansion": {
@@ -92,5 +102,9 @@
   "storage": {
     "sata": 1,
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 2
   }
 }

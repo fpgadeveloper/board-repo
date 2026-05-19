@@ -24,9 +24,6 @@
       "size_mb": 16
     }
   ],
-  "expansion": {
-    "pmod": 2
-  },
   "usb_bridge": [
     {
       "connector": "Micro-B",
@@ -35,5 +32,12 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "pmod": 2
+  },
+  "user_io": {
+    "leds": 8,
+    "pushbuttons": 4
+  }
 }

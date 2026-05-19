@@ -1,0 +1,68 @@
+{
+  "mpn": "HEA13-Carrier",
+  "name": "HEA13 Base Board",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/FPGA-Development-Boards/Virtex-UltraScale-plus/HEA13.html",
+  "vendor": "alinx",
+  "price": null,
+  "pcie": [
+    {
+      "type": "Edge",
+      "lanes": 16,
+      "gen": 3
+    }
+  ],
+  "m2": [
+    {
+      "key": "M-key",
+      "direction": "socket",
+      "interfaces": [
+        "PCIe"
+      ]
+    },
+    {
+      "key": "E-key",
+      "direction": "socket",
+      "interfaces": [
+        "PCIe",
+        "USB"
+      ]
+    }
+  ],
+  "networking": {
+    "qsfp28": 4
+  },
+  "usb": [
+    {
+      "connector": "Type-A",
+      "speed": "3.2",
+      "role": "host"
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Type-C",
+      "functions": [
+        "uart"
+      ]
+    }
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "FMCP0",
+        "type": "fmcp"
+      },
+      {
+        "slot": "FMCP1",
+        "type": "fmcp"
+      }
+    ]
+  },
+  "storage": {
+    "microsd": 2
+  },
+  "user_io": {
+    "pushbuttons": 2
+  }
+}

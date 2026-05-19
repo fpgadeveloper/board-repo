@@ -18,5 +18,25 @@
       "size_mb": 1024,
       "width_bits": 32
     }
-  ]
+  ],
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 16
+    },
+    {
+      "type": "SPI",
+      "size_mb": 16
+    }
+  ],
+  "usb": [
+    {
+      "connector": "Type-C",
+      "speed": "3.0",
+      "role": "device"
+    }
+  ],
+  "user_io": {
+    "leds": 8
+  }
 }

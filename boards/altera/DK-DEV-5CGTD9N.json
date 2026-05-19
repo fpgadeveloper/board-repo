@@ -12,6 +12,9 @@
     "part": "5CGXFC9E7F27C7N",
     "vendor": "altera"
   },
+  "clocking": {
+    "programmable": true
+  },
   "pcie": [
     {
       "type": "Edge",
@@ -26,5 +29,16 @@
         "ports": 1
       }
     ]
+  },
+  "usb_bridge": [
+    {
+      "connector": "Mini-B",
+      "functions": [
+        "jtag"
+      ]
+    }
+  ],
+  "features": {
+    "power_monitoring": true
   }
 }

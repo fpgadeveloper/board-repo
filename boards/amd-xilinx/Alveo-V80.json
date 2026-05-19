@@ -30,8 +30,8 @@
   "pcie": [
     {
       "type": "Edge",
-      "gen": 5,
-      "lanes": 16
+      "lanes": 16,
+      "gen": 4
     }
   ],
   "networking": {

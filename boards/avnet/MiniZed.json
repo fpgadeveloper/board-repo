@@ -25,20 +25,47 @@
       "size_mb": 8192
     }
   ],
-  "expansion": {
-    "pmod": 2,
-    "arduino": 1
-  },
-  "wireless": {
-    "wifi": true,
-    "bluetooth": true
-  },
+  "sensors": [
+    {
+      "type": "accelerometer",
+      "part": "LIS2DS12"
+    },
+    {
+      "type": "temperature",
+      "part": "LIS2DS12"
+    },
+    {
+      "type": "microphone",
+      "part": "MP34DT05"
+    }
+  ],
+  "usb": [
+    {
+      "connector": "Type-A",
+      "speed": "2.0",
+      "role": "host"
+    }
+  ],
   "usb_bridge": [
     {
       "connector": "Micro-B",
       "functions": [
-        "jtag"
+        "jtag",
+        "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "pmod": 2,
+    "arduino": 1
+  },
+  "user_io": {
+    "leds": 2,
+    "pushbuttons": 1,
+    "dip_switches": 1
+  },
+  "wireless": {
+    "wifi": true,
+    "bluetooth": true
+  }
 }

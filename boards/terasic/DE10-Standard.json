@@ -12,8 +12,14 @@
     "part": "5CSXFC6D6F31C6N",
     "vendor": "altera"
   },
+  "sensors": [
+    {
+      "type": "accelerometer"
+    }
+  ],
   "video": {
-    "hdmi_out": 1
+    "hdmi_out": 1,
+    "vga_out": 1
   },
   "networking": {
     "ethernet": [
@@ -38,6 +44,9 @@
       ]
     }
   ],
+  "expansion": {
+    "gpio_header": 1
+  },
   "storage": {
     "microsd": 1
   }

@@ -12,18 +12,17 @@
     "part": "LFE5U-85F-6BG381C",
     "vendor": "lattice"
   },
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    }
+  ],
+  "audio": {
+    "headphone_jack": 1
+  },
   "video": {
     "hdmi_out": 1
-  },
-  "expansion": {
-    "pmod": 4
-  },
-  "storage": {
-    "microsd": 1
-  },
-  "wireless": {
-    "wifi": true,
-    "bluetooth": true
   },
   "usb_bridge": [
     {
@@ -32,6 +31,29 @@
         "jtag",
         "uart"
       ]
+    }
+  ],
+  "expansion": {
+    "pmod": 4
+  },
+  "storage": {
+    "microsd": 1
+  },
+  "user_io": {
+    "leds": 8,
+    "pushbuttons": 6
+  },
+  "wireless": {
+    "wifi": true,
+    "bluetooth": true
+  },
+  "features": {
+    "battery_backed_rtc": true
+  },
+  "analog": [
+    {
+      "role": "adc",
+      "part": "MAX11125"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "mpn": "iW-RainboW-G64M",
-  "name": "iW-RainboW-G64M — Achronix Speedster7t AC7t1500",
+  "name": "iW-RainboW-G64M \u00e2\u20ac\u201d Achronix Speedster7t AC7t1500",
   "status": "active",
   "url": "https://www.iwavesystems.com/product/achronix-speedster7t/",
   "vendor": "iwave",
@@ -25,5 +25,17 @@
       "type": "QSPI",
       "size_mb": 256
     }
-  ]
+  ],
+  "sensors": [
+    {
+      "type": "temperature"
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  },
+  "features": {
+    "secure_element": true,
+    "power_monitoring": true
+  }
 }

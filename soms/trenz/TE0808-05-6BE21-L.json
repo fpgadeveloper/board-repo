@@ -15,13 +15,27 @@
   "memory": [
     {
       "type": "DDR4",
-      "size_mb": 4096
+      "size_mb": 4096,
+      "width_bits": 64
     }
   ],
   "flash": [
     {
       "type": "QSPI",
-      "size_mb": 128
+      "size_mb": 64
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 64
     }
-  ]
+  ],
+  "sensors": [
+    {
+      "type": "imu",
+      "part": "LSM303D"
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  }
 }

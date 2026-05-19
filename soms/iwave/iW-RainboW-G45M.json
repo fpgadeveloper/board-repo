@@ -16,7 +16,7 @@
     },
     {
       "type": "QSPI",
-      "size_mb": 1024
+      "size_mb": 128
     }
   ],
   "memory": [

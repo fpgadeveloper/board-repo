@@ -21,5 +21,8 @@
       "type": "QSPI",
       "size_mb": 256
     }
-  ]
+  ],
+  "clocking": {
+    "programmable": true
+  }
 }

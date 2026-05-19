@@ -34,6 +34,12 @@
       }
     ],
     "pmod": 3,
-    "raspberry_pi": 1
+    "raspberry_pi": 1,
+    "gpio_header": 1
+  },
+  "user_io": {
+    "leds": 24,
+    "pushbuttons": 4,
+    "dip_switches": 8
   }
 }

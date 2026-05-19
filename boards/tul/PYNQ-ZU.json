@@ -19,6 +19,10 @@
       "width_bits": 64
     }
   ],
+  "audio": {
+    "line_in": 1,
+    "headphone_jack": 1
+  },
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1,
@@ -53,12 +57,18 @@
         "type": "lpc"
       }
     ],
-    "pmod": 2,
+    "pmod": 3,
     "raspberry_pi": 1,
     "syzygy": 2
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 6,
+    "rgb_leds": 2,
+    "pushbuttons": 5,
+    "dip_switches": 4
   },
   "wireless": {
     "wifi": true,

@@ -12,8 +12,15 @@
     "part": "5CSEMA5F31C6N",
     "vendor": "altera"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024
+    }
+  ],
   "video": {
-    "hdmi_out": 1
+    "hdmi_out": 1,
+    "vga_out": 1
   },
   "networking": {
     "ethernet": [
@@ -32,7 +39,8 @@
     }
   ],
   "expansion": {
-    "arduino": 1
+    "arduino": 1,
+    "gpio_header": 1
   },
   "storage": {
     "microsd": 1

@@ -1,0 +1,31 @@
+{
+  "mpn": "AC7A035",
+  "name": "AC7A035",
+  "status": "active",
+  "url": "https://www.en.alinx.com/detail/496",
+  "vendor": "alinx",
+  "price": null,
+  "device": {
+    "part": "XC7A35T-2FGG484I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024,
+      "width_bits": 32
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    }
+  ],
+  "sensors": [
+    {
+      "type": "temperature",
+      "part": "LM75"
+    }
+  ]
+}

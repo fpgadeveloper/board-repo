@@ -28,5 +28,11 @@
       "type": "SPI",
       "size_mb": 16
     }
-  ]
+  ],
+  "user_io": {
+    "leds": 4
+  },
+  "features": {
+    "power_monitoring": true
+  }
 }

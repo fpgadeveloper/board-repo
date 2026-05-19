@@ -16,8 +16,48 @@
     {
       "type": "SPI",
       "size_mb": 16
+    },
+    {
+      "type": "SPI",
+      "size_mb": 2
     }
   ],
+  "eeprom": [
+    {
+      "purpose": ["mac_address"],
+      "interface": "I2C",
+      "size_kbits": 2
+    },
+    {
+      "purpose": ["mac_address"],
+      "interface": "I2C",
+      "size_kbits": 2
+    }
+  ],
+  "analog": [
+    {
+      "role": "adc",
+      "channels": 8,
+      "resolution_bits": 12
+    },
+    {
+      "role": "dac",
+      "channels": 8,
+      "resolution_bits": 12
+    }
+  ],
+  "sensors": [
+    {
+      "type": "imu",
+      "part": "LSM303D"
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  },
+  "video": {
+    "vga_out": 1
+  },
   "networking": {
     "ethernet": [
       {
@@ -26,16 +66,22 @@
       }
     ]
   },
-  "expansion": {
-    "pmod": 6,
-    "arduino": 1
-  },
   "usb_bridge": [
     {
       "connector": "Micro-B",
       "functions": [
-        "jtag"
+        "jtag",
+        "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "pmod": 6,
+    "arduino": 1
+  },
+  "user_io": {
+    "leds": 13,
+    "pushbuttons": 5,
+    "seven_segment": 1
+  }
 }

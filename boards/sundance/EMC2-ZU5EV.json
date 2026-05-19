@@ -33,6 +33,15 @@
       "size_mb": 8192
     }
   ],
+  "eeprom": [
+    {
+      "purpose": ["mac_address"],
+      "interface": "I2C"
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  },
   "pcie": [
     {
       "type": "PCIe/104",
@@ -50,6 +59,9 @@
         "ports": 1
       }
     ]
+  },
+  "serial": {
+    "rs232": 1
   },
   "expansion": {
     "fmc": [

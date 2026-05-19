@@ -16,7 +16,7 @@
     {
       "type": "DDR4",
       "size_mb": 1024,
-      "ecc": true
+      "width_bits": 32
     }
   ],
   "flash": [

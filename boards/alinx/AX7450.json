@@ -57,7 +57,7 @@
     {
       "connector": "Type-A",
       "speed": "2.0",
-      "role": "host"
+      "role": "otg"
     }
   ],
   "usb_bridge": [
@@ -78,5 +78,9 @@
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 1
   }
 }

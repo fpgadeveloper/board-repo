@@ -27,7 +27,11 @@
         "PCIe"
       ],
       "lanes": 4,
-      "gen": 2
+      "gen": 2,
+      "length": "2280"
     }
-  ]
+  ],
+  "user_io": {
+    "leds": 4
+  }
 }

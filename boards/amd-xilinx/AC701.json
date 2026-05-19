@@ -25,6 +25,10 @@
       "size_mb": 32
     }
   ],
+  "clocking": {
+    "programmable": true,
+    "sma_clock_in": 2
+  },
   "pcie": [
     {
       "type": "Edge",
@@ -70,5 +74,13 @@
   },
   "storage": {
     "sd": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 4,
+    "dip_switches": 4
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

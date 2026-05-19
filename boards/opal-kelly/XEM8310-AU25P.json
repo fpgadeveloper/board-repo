@@ -35,5 +35,11 @@
       "speed": "3.0",
       "role": "device"
     }
-  ]
+  ],
+  "user_io": {
+    "leds": 4
+  },
+  "features": {
+    "power_monitoring": true
+  }
 }

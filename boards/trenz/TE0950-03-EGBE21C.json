@@ -28,6 +28,21 @@
       "size_mb": 32768
     }
   ],
+  "eeprom": [
+    {
+      "purpose": ["mac_address"],
+      "interface": "I2C"
+    }
+  ],
+  "sensors": [
+    {
+      "type": "imu",
+      "part": "LSM303D"
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  },
   "video": {
     "mipi_csi": 1
   },
@@ -40,11 +55,19 @@
     ],
     "qsfp_plus": 1
   },
+  "usb": [
+    {
+      "connector": "Micro-B",
+      "speed": "2.0",
+      "role": "otg"
+    }
+  ],
   "usb_bridge": [
     {
       "connector": "Micro-B",
       "functions": [
-        "jtag"
+        "jtag",
+        "uart"
       ]
     }
   ],
@@ -58,5 +81,10 @@
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 2,
+    "pushbuttons": 1,
+    "dip_switches": 2
   }
 }

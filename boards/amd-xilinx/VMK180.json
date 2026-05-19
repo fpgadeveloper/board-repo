@@ -23,6 +23,9 @@
       "size_mb": 8192
     }
   ],
+  "clocking": {
+    "programmable": true
+  },
   "pcie": [
     {
       "type": "Edge",
@@ -44,6 +47,17 @@
     "sfp28": 2,
     "qsfp28": 1
   },
+  "serial": {
+    "can": 1
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "uart"
+      ]
+    }
+  ],
   "expansion": {
     "fmc": [
       {
@@ -57,6 +71,14 @@
     ]
   },
   "storage": {
-    "microsd": 1
+    "microsd": 2
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 6,
+    "dip_switches": 4
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

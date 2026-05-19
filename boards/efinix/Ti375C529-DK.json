@@ -33,13 +33,6 @@
       "size_mb": 8192
     }
   ],
-  "pcie": [
-    {
-      "type": "Edge",
-      "lanes": 4,
-      "gen": 4
-    }
-  ],
   "networking": {
     "ethernet": [
       {
@@ -60,12 +53,17 @@
   "expansion": {
     "fmc": [
       {
-        "slot": "HPC",
-        "type": "hpc"
+        "slot": "LPC",
+        "type": "lpc"
       }
-    ]
+    ],
+    "pmod": 3
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 5,
+    "pushbuttons": 2
   }
 }

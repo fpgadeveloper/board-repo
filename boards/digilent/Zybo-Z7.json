@@ -25,6 +25,13 @@
       "size_mb": 16
     }
   ],
+  "audio": {
+    "codec": "SSM2603",
+    "line_in": 1,
+    "line_out": 1,
+    "headphone_jack": 1,
+    "microphone": 1
+  },
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1
@@ -37,6 +44,9 @@
       }
     ]
   },
+  "serial": {
+    "can": 1
+  },
   "usb": [
     {
       "connector": "Micro-B",
@@ -44,12 +54,6 @@
       "role": "otg"
     }
   ],
-  "expansion": {
-    "pmod": 5
-  },
-  "storage": {
-    "microsd": 1
-  },
   "usb_bridge": [
     {
       "connector": "Micro-B",
@@ -58,5 +62,16 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "pmod": 5
+  },
+  "storage": {
+    "microsd": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 6,
+    "dip_switches": 4
+  }
 }

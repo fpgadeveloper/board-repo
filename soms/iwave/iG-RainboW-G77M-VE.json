@@ -12,11 +12,23 @@
   "memory": [
     {
       "type": "LPDDR5X",
-      "size_mb": 4096
+      "size_mb": 4096,
+      "width_bits": 32
     },
     {
       "type": "LPDDR5X",
-      "size_mb": 4096
+      "size_mb": 4096,
+      "width_bits": 32
+    },
+    {
+      "type": "LPDDR5X",
+      "size_mb": 4096,
+      "width_bits": 32
+    },
+    {
+      "type": "LPDDR5X",
+      "size_mb": 4096,
+      "width_bits": 32
     }
   ],
   "flash": [
@@ -25,8 +37,11 @@
       "size_mb": 32768
     },
     {
-      "type": "QSPI",
+      "type": "OSPI",
       "size_mb": 256
     }
-  ]
+  ],
+  "clocking": {
+    "programmable": true
+  }
 }

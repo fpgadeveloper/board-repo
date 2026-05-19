@@ -16,13 +16,19 @@
     {
       "type": "DDR3",
       "size_mb": 256,
-      "width_bits": 16
+      "width_bits": 32
     }
   ],
   "flash": [
     {
       "type": "QSPI",
       "size_mb": 16
+    }
+  ],
+  "sensors": [
+    {
+      "type": "temperature",
+      "part": "LM75"
     }
   ],
   "pcie": [
@@ -33,7 +39,8 @@
     }
   ],
   "video": {
-    "hdmi_out": 2
+    "hdmi_in": 1,
+    "hdmi_out": 1
   },
   "networking": {
     "ethernet": [
@@ -53,5 +60,10 @@
   ],
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 2,
+    "seven_segment": 6
   }
 }

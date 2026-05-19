@@ -19,6 +19,12 @@
       "width_bits": 32
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    }
+  ],
   "networking": {
     "ethernet": [
       {
@@ -27,13 +33,14 @@
       }
     ]
   },
-  "usb_bridge": [
+  "usb": [
     {
       "connector": "Type-A",
-      "functions": [
-        "uart"
-      ]
-    },
+      "speed": "2.0",
+      "role": "otg"
+    }
+  ],
+  "usb_bridge": [
     {
       "connector": "Micro-B",
       "functions": [

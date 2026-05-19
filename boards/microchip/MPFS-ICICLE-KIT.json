@@ -44,10 +44,33 @@
       }
     ]
   },
+  "serial": {
+    "can": 2
+  },
+  "usb": [
+    {
+      "connector": "Micro-B",
+      "speed": "2.0",
+      "role": "otg"
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ],
   "expansion": {
-    "raspberry_pi": 1
+    "raspberry_pi": 1,
+    "click": 1
   },
   "storage": {
     "sd": 1
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

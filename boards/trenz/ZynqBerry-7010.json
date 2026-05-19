@@ -19,6 +19,12 @@
       "ecc": true
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    }
+  ],
   "video": {
     "hdmi_out": 1,
     "mipi_dsi": 1,

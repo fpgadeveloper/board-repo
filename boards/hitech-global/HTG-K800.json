@@ -20,11 +20,28 @@
       "ecc": true
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  },
   "pcie": [
     {
       "type": "Edge",
       "lanes": 8,
       "gen": 3
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Mini-B",
+      "functions": [
+        "uart"
+      ]
     }
   ],
   "expansion": {

@@ -41,6 +41,9 @@
       "gen": 2
     }
   ],
+  "high_speed_io": {
+    "sma_transceiver_pairs": 1
+  },
   "networking": {
     "ethernet": [
       {
@@ -50,14 +53,13 @@
     ],
     "sfp_plus": 1
   },
-  "usb": [
+  "usb_bridge": [
     {
       "connector": "Mini-B",
-      "speed": "2.0",
-      "role": "device"
-    }
-  ],
-  "usb_bridge": [
+      "functions": [
+        "jtag"
+      ]
+    },
     {
       "connector": "Micro-B",
       "functions": [
@@ -75,5 +77,8 @@
   },
   "storage": {
     "sata": 1
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

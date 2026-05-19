@@ -24,6 +24,9 @@
       "ecc": true
     }
   ],
+  "clocking": {
+    "programmable": true
+  },
   "pcie": [
     {
       "type": "Edge",
@@ -31,6 +34,9 @@
       "gen": 2
     }
   ],
+  "video": {
+    "sdi_out": 1
+  },
   "networking": {
     "ethernet": [
       {
@@ -39,7 +45,20 @@
       }
     ]
   },
+  "serial": {
+    "can": 1
+  },
+  "usb": [
+    {
+      "connector": "Micro-B",
+      "speed": "2.0",
+      "role": "otg"
+    }
+  ],
   "storage": {
     "microsd": 1
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

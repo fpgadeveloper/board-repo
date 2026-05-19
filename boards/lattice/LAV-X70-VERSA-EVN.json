@@ -12,6 +12,12 @@
     "part": "LAV-AT-X70-3LFG1156C",
     "vendor": "lattice"
   },
+  "flash": [
+    {
+      "type": "OSPI",
+      "size_mb": 64
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -19,11 +25,15 @@
       "gen": 3
     }
   ],
+  "networking": {
+    "sfp28": 2,
+    "qsfp28": 1
+  },
   "expansion": {
     "fmc": [
       {
-        "slot": "HPC",
-        "type": "hpc"
+        "slot": "FMC+",
+        "type": "fmcp"
       }
     ],
     "pmod": 2

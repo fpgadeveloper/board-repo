@@ -13,11 +13,13 @@
     {
       "type": "DDR4",
       "size_mb": 8192,
+      "width_bits": 64,
       "ecc": true
     },
     {
       "type": "DDR4",
-      "size_mb": 8192
+      "size_mb": 8192,
+      "width_bits": 64
     }
   ],
   "flash": [

@@ -29,6 +29,12 @@
       "size_mb": 32
     }
   ],
+  "sensors": [
+    {
+      "type": "temperature",
+      "part": "LM75"
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -44,6 +50,9 @@
       }
     ],
     "sfp_plus": 2
+  },
+  "serial": {
+    "can": 1
   },
   "usb_bridge": [
     {
@@ -71,5 +80,9 @@
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 1
   }
 }

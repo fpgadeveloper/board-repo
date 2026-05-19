@@ -19,6 +19,31 @@
       "type": "DDR3",
       "size_mb": 4096,
       "form_factor": "sodimm"
+    },
+    {
+      "type": "QDR-II+",
+      "size_mb": 9,
+      "width_bits": 36
+    },
+    {
+      "type": "QDR-II+",
+      "size_mb": 9,
+      "width_bits": 36
+    },
+    {
+      "type": "QDR-II+",
+      "size_mb": 9,
+      "width_bits": 36
+    }
+  ],
+  "flash": [
+    {
+      "type": "SPI",
+      "size_mb": 64
+    },
+    {
+      "type": "SPI",
+      "size_mb": 64
     }
   ],
   "pcie": [
@@ -43,5 +68,8 @@
   "storage": {
     "sata": 2,
     "microsd": 1
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

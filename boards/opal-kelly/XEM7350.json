@@ -35,5 +35,11 @@
         "type": "hpc"
       }
     ]
+  },
+  "user_io": {
+    "leds": 4
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

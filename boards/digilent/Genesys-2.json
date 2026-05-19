@@ -19,10 +19,21 @@
       "width_bits": 32
     }
   ],
+  "audio": {
+    "codec": "ADAU1761",
+    "line_in": 1,
+    "line_out": 1,
+    "headphone_jack": 1,
+    "microphone": 1
+  },
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1,
-    "displayport": 2
+    "displayport": 2,
+    "vga_out": 1
+  },
+  "display": {
+    "oled": "128x32"
   },
   "networking": {
     "ethernet": [
@@ -65,9 +76,15 @@
         "type": "hpc"
       }
     ],
-    "pmod": 5
+    "pmod": 5,
+    "xadc_header": 1
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 8,
+    "pushbuttons": 5,
+    "dip_switches": 8
   }
 }

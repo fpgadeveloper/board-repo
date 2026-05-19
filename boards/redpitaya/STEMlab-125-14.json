@@ -18,6 +18,22 @@
       "size_mb": 512
     }
   ],
+  "analog": [
+    {
+      "role": "adc",
+      "part": "LTC2145",
+      "channels": 2,
+      "resolution_bits": 14,
+      "sample_rate_msps": 125
+    },
+    {
+      "role": "dac",
+      "part": "AD9767",
+      "channels": 2,
+      "resolution_bits": 14,
+      "sample_rate_msps": 125
+    }
+  ],
   "networking": {
     "ethernet": [
       {

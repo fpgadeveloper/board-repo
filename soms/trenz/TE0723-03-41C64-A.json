@@ -23,5 +23,33 @@
       "type": "SPI",
       "size_mb": 16
     }
-  ]
+  ],
+  "sensors": [
+    {
+      "type": "imu",
+      "part": "LSM303D"
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  },
+  "usb": [
+    {
+      "connector": "Micro-B",
+      "speed": "2.0",
+      "role": "otg"
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": ["jtag", "uart"]
+    }
+  ],
+  "storage": {
+    "microsd": 1
+  },
+  "user_io": {
+    "leds": 2
+  }
 }

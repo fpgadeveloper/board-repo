@@ -12,11 +12,18 @@
   "memory": [
     {
       "type": "LPDDR4",
-      "size_mb": 8192
+      "size_mb": 8192,
+      "width_bits": 64
     },
     {
       "type": "LPDDR4",
-      "size_mb": 8192
+      "size_mb": 8192,
+      "width_bits": 64
+    },
+    {
+      "type": "LPDDR4",
+      "size_mb": 8192,
+      "width_bits": 64
     }
   ],
   "flash": [

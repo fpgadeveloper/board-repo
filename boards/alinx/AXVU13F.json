@@ -31,6 +31,10 @@
       "size_mb": 128
     }
   ],
+  "clocking": {
+    "sma_clock_in": 1,
+    "sma_clock_out": 1
+  },
   "pcie": [
     {
       "type": "Edge",
@@ -39,7 +43,13 @@
     }
   ],
   "networking": {
-    "qsfp28": 4
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ],
+    "qsfp28": 1
   },
   "usb_bridge": [
     {

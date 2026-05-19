@@ -28,5 +28,9 @@
       "type": "eMMC",
       "size_mb": 16384
     }
-  ]
+  ],
+  "features": {
+    "battery_backed_rtc": true,
+    "secure_element": true
+  }
 }

@@ -1,0 +1,25 @@
+{
+  "mpn": "AC7100B",
+  "name": "AC7100B",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/FPGA-Development-Boards/Artix-7/AX7101.html",
+  "vendor": "alinx",
+  "price": null,
+  "device": {
+    "part": "XC7A100T-2FGG484I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024,
+      "width_bits": 32
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    }
+  ]
+}

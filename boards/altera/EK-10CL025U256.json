@@ -18,6 +18,9 @@
       "size_mb": 16
     }
   ],
+  "clocking": {
+    "programmable": true
+  },
   "networking": {
     "ethernet": [
       {
@@ -26,8 +29,18 @@
       }
     ]
   },
+  "usb_bridge": [
+    {
+      "connector": "Mini-B",
+      "functions": ["jtag"]
+    }
+  ],
   "expansion": {
     "pmod": 1,
-    "arduino": 1
+    "arduino": 1,
+    "gpio_header": 1
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

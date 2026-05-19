@@ -24,6 +24,9 @@
       "size_mb": 16
     }
   ],
+  "video": {
+    "vga_out": 1
+  },
   "networking": {
     "ethernet": [
       {
@@ -42,5 +45,13 @@
   ],
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 4,
+    "seven_segment": 1
+  },
+  "features": {
+    "battery_backed_rtc": true
   }
 }

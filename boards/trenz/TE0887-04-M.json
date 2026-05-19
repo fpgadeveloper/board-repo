@@ -13,6 +13,7 @@
     "vendor": "lattice"
   },
   "expansion": {
-    "pmod": 4
+    "pmod": 4,
+    "raspberry_pi": 1
   }
 }

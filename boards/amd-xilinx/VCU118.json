@@ -16,11 +16,13 @@
     {
       "type": "DDR4",
       "size_mb": 2560,
+      "width_bits": 72,
       "ecc": true
     },
     {
       "type": "DDR4",
       "size_mb": 2560,
+      "width_bits": 72,
       "ecc": true
     }
   ],
@@ -34,13 +36,20 @@
       "size_mb": 128
     }
   ],
+  "clocking": {
+    "programmable": true,
+    "sma_clock_in": 3
+  },
   "pcie": [
     {
       "type": "Edge",
-      "lanes": 8,
-      "gen": 4
+      "lanes": 16,
+      "gen": 3
     }
   ],
+  "high_speed_io": {
+    "firefly": 1
+  },
   "networking": {
     "ethernet": [
       {
@@ -83,5 +92,12 @@
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "pushbuttons": 5,
+    "dip_switches": 4
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

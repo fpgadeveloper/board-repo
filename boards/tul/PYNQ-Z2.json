@@ -25,6 +25,10 @@
       "size_mb": 16
     }
   ],
+  "audio": {
+    "line_in": 1,
+    "headphone_jack": 1
+  },
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1
@@ -37,14 +41,13 @@
       }
     ]
   },
-  "expansion": {
-    "pmod": 2,
-    "arduino": 1,
-    "raspberry_pi": 1
-  },
-  "storage": {
-    "microsd": 1
-  },
+  "usb": [
+    {
+      "connector": "Micro-B",
+      "speed": "2.0",
+      "role": "otg"
+    }
+  ],
   "usb_bridge": [
     {
       "connector": "Micro-B",
@@ -53,5 +56,21 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "pmod": 2,
+    "arduino": 1,
+    "raspberry_pi": 1
+  },
+  "storage": {
+    "microsd": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 4,
+    "dip_switches": 2
+  },
+  "features": {
+    "power_monitoring": true
+  }
 }

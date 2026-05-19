@@ -12,6 +12,12 @@
     "part": "M2GL010T-FGG484",
     "vendor": "microchip"
   },
+  "memory": [
+    {
+      "type": "LPDDR2",
+      "size_mb": 64
+    }
+  ],
   "flash": [
     {
       "type": "SPI",
@@ -25,6 +31,9 @@
       "gen": 2
     }
   ],
+  "high_speed_io": {
+    "sma_transceiver_pairs": 2
+  },
   "networking": {
     "ethernet": [
       {

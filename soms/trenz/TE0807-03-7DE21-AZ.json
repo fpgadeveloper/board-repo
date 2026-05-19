@@ -21,11 +21,20 @@
   "flash": [
     {
       "type": "QSPI",
-      "size_mb": 128
+      "size_mb": 64
     },
     {
-      "type": "SPI",
-      "size_mb": 128
+      "type": "QSPI",
+      "size_mb": 64
     }
-  ]
+  ],
+  "sensors": [
+    {
+      "type": "imu",
+      "part": "LSM303D"
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  }
 }

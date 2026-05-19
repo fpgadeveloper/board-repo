@@ -54,11 +54,14 @@
       "role": "host"
     }
   ],
+  "storage": {
+    "microsd": 1
+  },
   "wireless": {
     "wifi": true,
     "bluetooth": true
   },
-  "storage": {
-    "microsd": 1
+  "features": {
+    "battery_backed_rtc": true
   }
 }

@@ -25,6 +25,15 @@
       "width_bits": 64
     }
   ],
+  "m2": [
+    {
+      "key": "M-key",
+      "direction": "socket",
+      "interfaces": [
+        "SATA"
+      ]
+    }
+  ],
   "networking": {
     "ethernet": [
       {
@@ -34,6 +43,22 @@
     ],
     "sfp28": 4
   },
+  "usb": [
+    {
+      "connector": "Micro-B",
+      "speed": "3.0",
+      "role": "host"
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ],
   "expansion": {
     "fmc": [
       {
@@ -47,13 +72,7 @@
   "storage": {
     "microsd": 1
   },
-  "m2": [
-    {
-      "key": "M-key",
-      "direction": "socket",
-      "interfaces": [
-        "SATA"
-      ]
-    }
-  ]
+  "features": {
+    "power_monitoring": true
+  }
 }

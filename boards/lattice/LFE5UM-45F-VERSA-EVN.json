@@ -32,6 +32,9 @@
       "gen": 2
     }
   ],
+  "high_speed_io": {
+    "sma_transceiver_pairs": 1
+  },
   "networking": {
     "ethernet": [
       {

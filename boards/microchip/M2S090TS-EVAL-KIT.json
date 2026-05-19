@@ -12,6 +12,12 @@
     "part": "M2S090TS-FG484",
     "vendor": "microchip"
   },
+  "memory": [
+    {
+      "type": "LPDDR2",
+      "size_mb": 64
+    }
+  ],
   "flash": [
     {
       "type": "SPI",
@@ -25,6 +31,9 @@
       "gen": 2
     }
   ],
+  "high_speed_io": {
+    "sma_transceiver_pairs": 2
+  },
   "networking": {
     "ethernet": [
       {
@@ -33,16 +42,9 @@
       }
     ]
   },
-  "usb": [
-    {
-      "connector": "Mini-B",
-      "speed": "2.0",
-      "role": "device"
-    }
-  ],
   "usb_bridge": [
     {
-      "connector": "Micro-B",
+      "connector": "Mini-B",
       "functions": [
         "uart"
       ]
@@ -54,6 +56,7 @@
         "slot": "HPC",
         "type": "hpc"
       }
-    ]
+    ],
+    "gpio_header": 1
   }
 }

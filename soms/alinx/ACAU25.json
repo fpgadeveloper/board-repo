@@ -1,0 +1,31 @@
+{
+  "mpn": "ACAU25",
+  "name": "ACAU25",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/FPGA-Development-Boards/Artix-UltraScale-plus/AXAU25.html",
+  "vendor": "alinx",
+  "price": null,
+  "device": {
+    "part": "XCAU25P-2FFVB676I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 1024,
+      "width_bits": 16
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ],
+  "sensors": [
+    {
+      "type": "temperature",
+      "part": "LM75"
+    }
+  ]
+}

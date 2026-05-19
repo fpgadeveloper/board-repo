@@ -44,6 +44,9 @@
       }
     ]
   },
+  "serial": {
+    "can": 1
+  },
   "usb": [
     {
       "connector": "Type-A",
@@ -61,5 +64,9 @@
   ],
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 4
   }
 }

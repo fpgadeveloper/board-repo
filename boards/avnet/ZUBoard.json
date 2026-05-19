@@ -25,6 +25,22 @@
       "size_mb": 32
     }
   ],
+  "eeprom": [
+    {
+      "purpose": [
+        "mac_address"
+      ],
+      "interface": "I2C"
+    }
+  ],
+  "sensors": [
+    {
+      "type": "temperature"
+    },
+    {
+      "type": "pressure"
+    }
+  ],
   "networking": {
     "ethernet": [
       {
@@ -33,10 +49,30 @@
       }
     ]
   },
+  "usb": [
+    {
+      "connector": "Type-A",
+      "speed": "2.0",
+      "role": "host"
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ],
   "expansion": {
-    "click": 1
+    "click": 1,
+    "syzygy": 3
   },
   "storage": {
     "microsd": 1
+  },
+  "features": {
+    "battery_backed_rtc": true
   }
 }

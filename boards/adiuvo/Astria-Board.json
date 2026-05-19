@@ -24,5 +24,10 @@
   ],
   "expansion": {
     "pmod": 4
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 4,
+    "dip_switches": 4
   }
 }

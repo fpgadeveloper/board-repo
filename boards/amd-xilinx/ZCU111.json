@@ -35,6 +35,9 @@
       "size_mb": 256
     }
   ],
+  "clocking": {
+    "programmable": true
+  },
   "m2": [
     {
       "key": "M-key",
@@ -75,15 +78,26 @@
   "expansion": {
     "fmc": [
       {
-        "slot": "FMCP",
-        "type": "fmcp",
+        "slot": "HPC0",
+        "type": "hpc",
+        "vadj_min": 1.2,
+        "vadj_max": 1.8
+      },
+      {
+        "slot": "HPC1",
+        "type": "hpc",
         "vadj_min": 1.2,
         "vadj_max": 1.8
       }
     ],
+    "pmod": 2,
     "rfmc": 2
   },
   "storage": {
     "microsd": 1
+  },
+  "features": {
+    "power_monitoring": true,
+    "programmable_vadj": true
   }
 }

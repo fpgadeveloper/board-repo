@@ -18,11 +18,30 @@
       "size_mb": 16
     }
   ],
+  "audio": {
+    "speaker": true
+  },
   "video": {
     "hdmi_out": 1
   },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ],
   "expansion": {
     "pmod": 4
+  },
+  "user_io": {
+    "leds": 16,
+    "rgb_leds": 2,
+    "pushbuttons": 4,
+    "dip_switches": 16,
+    "seven_segment": 8
   },
   "wireless": {
     "bluetooth": true

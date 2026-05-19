@@ -8,6 +8,15 @@
     "value": 165.9,
     "currency": "USD"
   },
+  "sensors": [
+    {
+      "type": "imu",
+      "part": "LSM303D"
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  },
   "networking": {
     "ethernet": [
       {
@@ -22,5 +31,9 @@
       "speed": "2.0",
       "role": "otg"
     }
-  ]
+  ],
+  "expansion": {
+    "xadc_header": 1,
+    "gpio_header": 1
+  }
 }

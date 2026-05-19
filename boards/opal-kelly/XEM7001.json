@@ -17,5 +17,12 @@
       "type": "SPI",
       "size_mb": 4
     }
-  ]
+  ],
+  "clocking": {
+    "programmable": true
+  },
+  "user_io": {
+    "leds": 8,
+    "pushbuttons": 4
+  }
 }

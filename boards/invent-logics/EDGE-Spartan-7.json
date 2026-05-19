@@ -18,9 +18,32 @@
       "size_mb": 8
     }
   ],
-  "wireless": {
-    "wifi": true,
-    "bluetooth": true
+  "analog": [
+    {
+      "role": "adc",
+      "channels": 8,
+      "resolution_bits": 12
+    },
+    {
+      "role": "dac",
+      "resolution_bits": 12
+    }
+  ],
+  "sensors": [
+    {
+      "type": "temperature",
+      "part": "LM35"
+    },
+    {
+      "type": "light"
+    }
+  ],
+  "audio": {
+    "headphone_jack": 1,
+    "speaker": true
+  },
+  "video": {
+    "vga_out": 1
   },
   "usb_bridge": [
     {
@@ -30,5 +53,15 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "user_io": {
+    "leds": 16,
+    "pushbuttons": 5,
+    "dip_switches": 16,
+    "seven_segment": 4
+  },
+  "wireless": {
+    "wifi": true,
+    "bluetooth": true
+  }
 }

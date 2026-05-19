@@ -51,6 +51,9 @@
       }
     ]
   },
+  "serial": {
+    "rs232": 1
+  },
   "expansion": {
     "fmc": [
       {

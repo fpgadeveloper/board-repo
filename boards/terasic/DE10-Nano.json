@@ -12,6 +12,13 @@
     "part": "5CSEBA6U23I7N",
     "vendor": "altera"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024,
+      "width_bits": 32
+    }
+  ],
   "video": {
     "hdmi_out": 1
   },
@@ -23,18 +30,26 @@
       }
     ]
   },
+  "usb": [
+    {
+      "connector": "Micro-B",
+      "speed": "2.0",
+      "role": "otg"
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Mini-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ],
   "expansion": {
     "arduino": 1
   },
   "storage": {
     "microsd": 1
-  },
-  "usb_bridge": [
-    {
-      "connector": "Micro-B",
-      "functions": [
-        "jtag"
-      ]
-    }
-  ]
+  }
 }

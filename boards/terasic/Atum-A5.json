@@ -19,13 +19,18 @@
       "gen": 3
     }
   ],
+  "video": {
+    "hdmi_out": 1,
+    "mipi_csi": 2
+  },
   "networking": {
     "ethernet": [
       {
-        "speed": 1000,
+        "speed": 2500,
         "ports": 1
       }
-    ]
+    ],
+    "qsfp_plus": 1
   },
   "usb_bridge": [
     {
@@ -38,10 +43,11 @@
   "expansion": {
     "fmc": [
       {
-        "slot": "HPC",
-        "type": "hpc"
+        "slot": "FMC+",
+        "type": "fmcp"
       }
     ],
-    "pmod": 2
+    "pmod": 2,
+    "gpio_header": 1
   }
 }

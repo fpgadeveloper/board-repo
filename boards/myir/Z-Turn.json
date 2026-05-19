@@ -25,6 +25,17 @@
       "size_mb": 16
     }
   ],
+  "sensors": [
+    {
+      "type": "imu"
+    },
+    {
+      "type": "temperature"
+    }
+  ],
+  "audio": {
+    "speaker": true
+  },
   "video": {
     "hdmi_out": 1
   },
@@ -35,6 +46,9 @@
         "ports": 1
       }
     ]
+  },
+  "serial": {
+    "can": 1
   },
   "usb": [
     {
@@ -53,5 +67,8 @@
   ],
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 3
   }
 }

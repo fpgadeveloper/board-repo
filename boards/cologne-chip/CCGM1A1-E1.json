@@ -18,6 +18,9 @@
       "size_mb": 8
     }
   ],
+  "high_speed_io": {
+    "sma_transceiver_pairs": 2
+  },
   "expansion": {
     "pmod": 2
   },

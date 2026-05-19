@@ -38,5 +38,8 @@
       "type": "eMMC",
       "size_mb": 32768
     }
-  ]
+  ],
+  "clocking": {
+    "programmable": true
+  }
 }

@@ -42,5 +42,11 @@
     ],
     "pmod": 3,
     "raspberry_pi": 1
+  },
+  "user_io": {
+    "leds": 16,
+    "pushbuttons": 4,
+    "dip_switches": 8,
+    "seven_segment": 3
   }
 }

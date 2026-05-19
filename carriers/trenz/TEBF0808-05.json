@@ -8,12 +8,56 @@
     "value": 653.83,
     "currency": "USD"
   },
+  "flash": [
+    {
+      "type": "eMMC",
+      "size_mb": 4096
+    }
+  ],
+  "eeprom": [
+    {
+      "purpose": ["board_id", "user_data"],
+      "interface": "I2C",
+      "size_kbits": 128,
+      "part": "24LC128"
+    },
+    {
+      "purpose": ["mac_address"],
+      "interface": "I2C",
+      "size_kbits": 2,
+      "part": "24AA025E48"
+    },
+    {
+      "purpose": ["mac_address"],
+      "interface": "I2C",
+      "size_kbits": 2,
+      "part": "24AA025E48"
+    },
+    {
+      "purpose": ["mac_address"],
+      "interface": "I2C",
+      "size_kbits": 2,
+      "part": "24AA025E48"
+    }
+  ],
+  "sensors": [
+    {
+      "type": "imu",
+      "part": "LSM303D"
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  },
   "pcie": [
     {
       "type": "Slot",
       "lanes": 1
     }
   ],
+  "high_speed_io": {
+    "firefly": 2
+  },
   "video": {
     "displayport": 1
   },
@@ -25,6 +69,9 @@
       }
     ],
     "sfp_plus": 2
+  },
+  "serial": {
+    "can": 1
   },
   "usb": [
     {

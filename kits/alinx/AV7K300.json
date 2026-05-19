@@ -1,0 +1,15 @@
+{
+  "mpn": "AV7K300",
+  "name": "AV7K300",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/FPGA-Development-Boards/Kintex-7/AV7K300.html",
+  "vendor": "alinx",
+  "price": {
+    "value": 752.99,
+    "currency": "GBP"
+  },
+  "composition": {
+    "som": "AC7K325B",
+    "carrier": "AV7K300-Carrier"
+  }
+}

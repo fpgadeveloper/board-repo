@@ -21,6 +21,10 @@
       "size_mb": 2048
     }
   ],
+  "clocking": {
+    "programmable": true,
+    "sma_clock_in": 1
+  },
   "pcie": [
     {
       "type": "Edge",
@@ -38,5 +42,8 @@
         "jtag"
       ]
     }
-  ]
+  ],
+  "features": {
+    "power_monitoring": true
+  }
 }

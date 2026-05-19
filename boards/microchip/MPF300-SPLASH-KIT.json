@@ -33,11 +33,13 @@
       }
     ]
   },
-  "usb": [
+  "usb_bridge": [
     {
       "connector": "Mini-B",
-      "speed": "2.0",
-      "role": "device"
+      "functions": [
+        "jtag",
+        "uart"
+      ]
     }
   ],
   "expansion": {
@@ -47,5 +49,8 @@
         "type": "lpc"
       }
     ]
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

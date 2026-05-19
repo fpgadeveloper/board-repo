@@ -49,6 +49,9 @@
     ],
     "sfp_plus": 4
   },
+  "serial": {
+    "can": 1
+  },
   "usb": [
     {
       "connector": "Type-C",
@@ -77,5 +80,12 @@
   "storage": {
     "sata": 1,
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 1,
+    "pushbuttons": 1
+  },
+  "features": {
+    "battery_backed_rtc": true
   }
 }

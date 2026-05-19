@@ -1,0 +1,43 @@
+{
+  "mpn": "ACU5EV",
+  "name": "ACU5EV",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-MPSoC/AXU5EVB-E.html",
+  "vendor": "alinx",
+  "price": null,
+  "device": {
+    "part": "XCZU5EV-2SFVC784I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "width_bits": 64
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 1024,
+      "width_bits": 16
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    }
+  ],
+  "sensors": [
+    {
+      "type": "temperature",
+      "part": "LM75"
+    }
+  ],
+  "features": {
+    "battery_backed_rtc": true
+  }
+}

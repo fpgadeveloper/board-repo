@@ -12,6 +12,15 @@
     "part": "5CSEMA5F31C6N",
     "vendor": "altera"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024
+    }
+  ],
+  "video": {
+    "vga_out": 1
+  },
   "networking": {
     "ethernet": [
       {
@@ -32,10 +41,14 @@
     {
       "connector": "Micro-B",
       "functions": [
-        "jtag"
+        "jtag",
+        "uart"
       ]
     }
   ],
+  "expansion": {
+    "gpio_header": 1
+  },
   "storage": {
     "microsd": 1
   }

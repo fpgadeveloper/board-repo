@@ -8,6 +8,29 @@
     "value": 124.07,
     "currency": "USD"
   },
+  "sensors": [
+    {
+      "type": "imu",
+      "part": "LSM303D"
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  },
+  "eeprom": [
+    {
+      "purpose": [
+        "board_id"
+      ],
+      "interface": "I2C"
+    },
+    {
+      "purpose": [
+        "board_id"
+      ],
+      "interface": "I2C"
+    }
+  ],
   "networking": {
     "ethernet": [
       {
@@ -38,5 +61,9 @@
   ],
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 1,
+    "pushbuttons": 1
   }
 }

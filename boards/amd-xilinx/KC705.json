@@ -30,6 +30,10 @@
       "size_mb": 16
     }
   ],
+  "clocking": {
+    "programmable": true,
+    "sma_clock_in": 2
+  },
   "pcie": [
     {
       "type": "Edge",
@@ -37,6 +41,9 @@
       "gen": 2
     }
   ],
+  "high_speed_io": {
+    "sma_transceiver_pairs": 1
+  },
   "video": {
     "hdmi_out": 1
   },
@@ -81,5 +88,13 @@
   },
   "storage": {
     "sd": 1
+  },
+  "user_io": {
+    "leds": 8,
+    "pushbuttons": 5,
+    "dip_switches": 4
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

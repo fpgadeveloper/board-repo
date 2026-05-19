@@ -27,6 +27,16 @@
       "ecc": true
     }
   ],
+  "clocking": {
+    "programmable": true
+  },
+  "pcie": [
+    {
+      "type": "MCIO",
+      "lanes": 4,
+      "gen": 4
+    }
+  ],
   "networking": {
     "qsfp_dd": 4,
     "qsfp_dd800": 1,
@@ -48,5 +58,14 @@
         "jtag"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "fmc": [
+      { "slot": "FMCP1", "type": "fmcp" },
+      { "slot": "FMCP2", "type": "fmcp" }
+    ]
+  },
+  "features": {
+    "power_monitoring": true
+  }
 }

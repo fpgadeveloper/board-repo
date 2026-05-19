@@ -31,6 +31,9 @@
       "width_bits": 16
     }
   ],
+  "clocking": {
+    "programmable": true
+  },
   "pcie": [
     {
       "type": "Edge",
@@ -38,6 +41,9 @@
       "gen": 3
     }
   ],
+  "high_speed_io": {
+    "sma_transceiver_pairs": 1
+  },
   "video": {
     "hdmi_out": 1
   },
@@ -80,9 +86,17 @@
         "vadj_max": 1.8
       }
     ],
-    "pmod": 1
+    "pmod": 1,
+    "xadc_header": 1
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "pushbuttons": 5,
+    "dip_switches": 4
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

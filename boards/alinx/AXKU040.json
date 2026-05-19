@@ -22,7 +22,17 @@
   "flash": [
     {
       "type": "QSPI",
-      "size_mb": 16
+      "size_mb": 32
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ],
+  "sensors": [
+    {
+      "type": "temperature",
+      "part": "LM75"
     }
   ],
   "pcie": [
@@ -43,6 +53,9 @@
       }
     ],
     "sfp_plus": 4
+  },
+  "serial": {
+    "can": 1
   },
   "usb_bridge": [
     {
@@ -71,5 +84,9 @@
   "storage": {
     "sata": 2,
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 2
   }
 }

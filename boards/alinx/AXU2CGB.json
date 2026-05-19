@@ -23,6 +23,10 @@
     {
       "type": "QSPI",
       "size_mb": 32
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 8192
     }
   ],
   "pcie": [
@@ -33,7 +37,8 @@
     }
   ],
   "video": {
-    "displayport": 1
+    "displayport": 1,
+    "mipi_csi": 2
   },
   "networking": {
     "ethernet": [
@@ -42,6 +47,9 @@
         "ports": 1
       }
     ]
+  },
+  "serial": {
+    "can": 1
   },
   "usb": [
     {
@@ -60,5 +68,9 @@
   ],
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 4
   }
 }

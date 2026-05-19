@@ -12,8 +12,8 @@
     "part": "XC7A35T-1CPG236C",
     "vendor": "amd-xilinx"
   },
-  "expansion": {
-    "pmod": 4
+  "video": {
+    "vga_out": 1
   },
   "usb_bridge": [
     {
@@ -23,5 +23,14 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "pmod": 4
+  },
+  "user_io": {
+    "leds": 16,
+    "pushbuttons": 5,
+    "dip_switches": 16,
+    "seven_segment": 4
+  }
 }

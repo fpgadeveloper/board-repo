@@ -35,5 +35,8 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "features": {
+    "power_monitoring": true
+  }
 }

@@ -33,13 +33,14 @@
       }
     ]
   },
-  "usb_bridge": [
+  "usb": [
     {
       "connector": "Type-A",
-      "functions": [
-        "uart"
-      ]
-    },
+      "speed": "2.0",
+      "role": "otg"
+    }
+  ],
+  "usb_bridge": [
     {
       "connector": "Micro-B",
       "functions": [
@@ -48,7 +49,7 @@
     }
   ],
   "expansion": {
-    "pmod": 2
+    "pmod": 1
   },
   "storage": {
     "microsd": 1

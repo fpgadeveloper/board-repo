@@ -12,9 +12,6 @@
     "part": "XC7A15T-1CPG236C",
     "vendor": "amd-xilinx"
   },
-  "expansion": {
-    "pmod": 1
-  },
   "usb_bridge": [
     {
       "connector": "Micro-B",
@@ -23,5 +20,12 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "pmod": 1
+  },
+  "user_io": {
+    "leds": 2,
+    "pushbuttons": 2
+  }
 }

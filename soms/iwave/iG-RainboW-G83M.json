@@ -12,7 +12,18 @@
   "memory": [
     {
       "type": "LPDDR4",
-      "size_mb": 4096
+      "size_mb": 4096,
+      "width_bits": 64
+    },
+    {
+      "type": "LPDDR4",
+      "size_mb": 4096,
+      "width_bits": 64
+    },
+    {
+      "type": "LPDDR4",
+      "size_mb": 4096,
+      "width_bits": 64
     }
   ],
   "flash": [
@@ -24,5 +35,8 @@
       "type": "QSPI",
       "size_mb": 256
     }
-  ]
+  ],
+  "clocking": {
+    "programmable": true
+  }
 }

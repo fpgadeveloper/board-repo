@@ -19,6 +19,12 @@
       "width_bits": 32
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ],
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1
@@ -30,6 +36,9 @@
         "ports": 1
       }
     ]
+  },
+  "serial": {
+    "can": 1
   },
   "usb": [
     {
@@ -43,12 +52,6 @@
       "role": "otg"
     }
   ],
-  "expansion": {
-    "pmod": 2
-  },
-  "storage": {
-    "microsd": 1
-  },
   "usb_bridge": [
     {
       "connector": "Mini-B",
@@ -57,5 +60,18 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "pmod": 1
+  },
+  "storage": {
+    "microsd": 1
+  },
+  "user_io": {
+    "leds": 6,
+    "pushbuttons": 6
+  },
+  "features": {
+    "battery_backed_rtc": true
+  }
 }

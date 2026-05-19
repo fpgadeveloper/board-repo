@@ -31,6 +31,16 @@
       "size_mb": 256
     }
   ],
+  "eeprom": [
+    {
+      "purpose": ["mac_address"],
+      "interface": "I2C",
+      "size_kbits": 128
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  },
   "pcie": [
     {
       "type": "Edge",
@@ -45,11 +55,15 @@
     {
       "connector": "Micro-B",
       "functions": [
-        "jtag"
+        "jtag",
+        "uart"
       ]
     }
   ],
   "storage": {
     "microsd": 1
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

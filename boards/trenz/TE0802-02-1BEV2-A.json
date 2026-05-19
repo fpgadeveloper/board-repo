@@ -24,8 +24,28 @@
       "size_mb": 32
     }
   ],
+  "m2": [
+    {
+      "key": "M-key",
+      "direction": "socket",
+      "interfaces": ["PCIe"]
+    }
+  ],
+  "sensors": [
+    {
+      "type": "imu",
+      "part": "LSM303D"
+    }
+  ],
+  "audio": {
+    "headphone_jack": 1
+  },
+  "clocking": {
+    "programmable": true
+  },
   "video": {
-    "displayport": 1
+    "displayport": 1,
+    "vga_out": 1
   },
   "networking": {
     "ethernet": [
@@ -35,24 +55,32 @@
       }
     ]
   },
+  "usb": [
+    {
+      "connector": "Type-A",
+      "speed": "3.0",
+      "role": "host"
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ],
   "expansion": {
     "pmod": 2
   },
   "storage": {
     "microsd": 1
   },
-  "usb_bridge": [
-    {
-      "connector": "Type-A",
-      "functions": [
-        "jtag"
-      ]
-    },
-    {
-      "connector": "Micro-B",
-      "functions": [
-        "jtag"
-      ]
-    }
-  ]
+  "user_io": {
+    "leds": 8,
+    "pushbuttons": 5,
+    "dip_switches": 8,
+    "seven_segment": 4
+  }
 }

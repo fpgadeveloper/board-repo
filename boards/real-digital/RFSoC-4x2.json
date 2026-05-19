@@ -24,10 +24,19 @@
       "width_bits": 64
     }
   ],
+  "clocking": {
+    "programmable": true
+  },
   "video": {
     "displayport": 1
   },
   "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ],
     "qsfp28": 1
   },
   "expansion": {
@@ -36,5 +45,15 @@
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "rgb_leds": 2,
+    "pushbuttons": 6,
+    "dip_switches": 4
+  },
+  "features": {
+    "battery_backed_rtc": true,
+    "power_monitoring": true
   }
 }

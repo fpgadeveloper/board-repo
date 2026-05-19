@@ -30,6 +30,9 @@
       "size_mb": 64
     }
   ],
+  "clocking": {
+    "programmable": true
+  },
   "pcie": [
     {
       "type": "PCIe/104",

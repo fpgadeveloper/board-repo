@@ -27,10 +27,14 @@
   "flash": [
     {
       "type": "BPI",
-      "size_mb": 128,
+      "size_mb": 32,
       "width_bits": 16
     }
   ],
+  "clocking": {
+    "programmable": true,
+    "sma_clock_in": 4
+  },
   "pcie": [
     {
       "type": "Edge",
@@ -64,5 +68,13 @@
         "vadj_max": 1.8
       }
     ]
+  },
+  "user_io": {
+    "leds": 8,
+    "pushbuttons": 5,
+    "dip_switches": 8
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

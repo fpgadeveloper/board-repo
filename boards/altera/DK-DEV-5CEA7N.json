@@ -12,6 +12,9 @@
     "part": "5CEFA7F31I7N",
     "vendor": "altera"
   },
+  "clocking": {
+    "programmable": true
+  },
   "networking": {
     "ethernet": [
       {

@@ -1,0 +1,54 @@
+{
+  "mpn": "AXRF67-Carrier",
+  "name": "AXRF67 Base Board",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-RFSoC/AXRF67.html",
+  "vendor": "alinx",
+  "price": null,
+  "clocking": {
+    "programmable": true
+  },
+  "m2": [
+    {
+      "key": "M-key",
+      "direction": "socket",
+      "interfaces": [
+        "PCIe"
+      ],
+      "lanes": 1
+    }
+  ],
+  "video": {
+    "displayport": 1
+  },
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ],
+    "sfp_plus": 1,
+    "qsfp28": 1
+  },
+  "usb": [
+    {
+      "connector": "Type-A",
+      "speed": "3.0",
+      "role": "host"
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Type-C",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ],
+  "storage": {
+    "sata": 1,
+    "microsd": 1
+  }
+}

@@ -23,5 +23,21 @@
       "type": "QSPI",
       "size_mb": 128
     }
-  ]
+  ],
+  "eeprom": [
+    {
+      "purpose": ["mac_address"],
+      "interface": "I2C",
+      "size_kbits": 2
+    }
+  ],
+  "sensors": [
+    {
+      "type": "imu",
+      "part": "LSM303D"
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  }
 }

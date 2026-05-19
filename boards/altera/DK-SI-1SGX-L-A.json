@@ -24,6 +24,9 @@
       "width_bits": 16
     }
   ],
+  "clocking": {
+    "programmable": true
+  },
   "networking": {
     "ethernet": [
       {
@@ -54,5 +57,13 @@
         "type": "fmcp"
       }
     ]
+  },
+  "user_io": {
+    "leds": 8,
+    "pushbuttons": 8,
+    "dip_switches": 7
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

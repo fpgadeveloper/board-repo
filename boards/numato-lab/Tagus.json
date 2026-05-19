@@ -12,6 +12,18 @@
     "part": "XC7A200T-2FBG484I",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 256
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -22,6 +34,14 @@
   "networking": {
     "sfp": 2
   },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "uart"
+      ]
+    }
+  ],
   "expansion": {
     "fmc": [
       {
@@ -29,5 +49,8 @@
         "type": "lpc"
       }
     ]
+  },
+  "storage": {
+    "microsd": 1
   }
 }

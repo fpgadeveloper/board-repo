@@ -16,10 +16,22 @@
     {
       "type": "QSPI",
       "size_mb": 16
-    },
-    {
-      "type": "SPI",
-      "size_mb": 16
     }
-  ]
+  ],
+  "sensors": [
+    {
+      "type": "imu",
+      "part": "LSM303D"
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  },
+  "storage": {
+    "microsd": 1
+  },
+  "user_io": {
+    "leds": 1,
+    "rgb_leds": 1
+  }
 }

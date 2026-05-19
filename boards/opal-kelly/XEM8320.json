@@ -29,6 +29,9 @@
       "size_mb": 32
     }
   ],
+  "high_speed_io": {
+    "sma_transceiver_pairs": 2
+  },
   "networking": {
     "sfp_plus": 2
   },
@@ -36,13 +39,9 @@
     {
       "connector": "Type-C",
       "speed": "3.0",
-      "role": "host"
+      "role": "device"
     }
   ],
-  "expansion": {
-    "syzygy": 4,
-    "syzygy_trx": 2
-  },
   "usb_bridge": [
     {
       "connector": "Type-C",
@@ -50,5 +49,15 @@
         "jtag"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "syzygy": 4,
+    "syzygy_trx": 2
+  },
+  "user_io": {
+    "leds": 6
+  },
+  "features": {
+    "power_monitoring": true
+  }
 }

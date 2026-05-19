@@ -1,6 +1,6 @@
 {
   "mpn": "iG-RainboW-G77M-VM",
-  "name": "iG-RainboW-G77M — Versal Prime Gen 2 (SSVA2112)",
+  "name": "iG-RainboW-G77M \u00e2\u20ac\u201d Versal Prime Gen 2 (SSVA2112)",
   "status": "active",
   "url": "https://www.iwavesystems.com/product/versal-prime-gen2/",
   "vendor": "iwave",
@@ -12,11 +12,23 @@
   "memory": [
     {
       "type": "LPDDR5X",
-      "size_mb": 4096
+      "size_mb": 4096,
+      "width_bits": 32
     },
     {
       "type": "LPDDR5X",
-      "size_mb": 4096
+      "size_mb": 4096,
+      "width_bits": 32
+    },
+    {
+      "type": "LPDDR5X",
+      "size_mb": 4096,
+      "width_bits": 32
+    },
+    {
+      "type": "LPDDR5X",
+      "size_mb": 4096,
+      "width_bits": 32
     }
   ],
   "flash": [
@@ -25,8 +37,17 @@
       "size_mb": 32768
     },
     {
-      "type": "QSPI",
+      "type": "OSPI",
       "size_mb": 256
     }
-  ]
+  ],
+  "analog": [
+    {
+      "role": "rf_transceiver",
+      "part": "AD9361"
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  }
 }

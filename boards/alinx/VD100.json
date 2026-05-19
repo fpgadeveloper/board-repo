@@ -33,6 +33,12 @@
       "size_mb": 8192
     }
   ],
+  "sensors": [
+    {
+      "type": "temperature",
+      "part": "LM75"
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -52,6 +58,9 @@
     ],
     "sfp_plus": 2
   },
+  "serial": {
+    "can": 1
+  },
   "usb": [
     {
       "connector": "Type-A",
@@ -67,7 +76,17 @@
       ]
     }
   ],
+  "expansion": {
+    "pmod": 1
+  },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 2,
+    "pushbuttons": 2
+  },
+  "features": {
+    "battery_backed_rtc": true
   }
 }

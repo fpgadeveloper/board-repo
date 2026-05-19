@@ -24,8 +24,16 @@
       "type": "BPI",
       "size_mb": 128,
       "width_bits": 16
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 16
     }
   ],
+  "clocking": {
+    "programmable": true,
+    "sma_clock_in": 2
+  },
   "pcie": [
     {
       "type": "Edge",
@@ -33,8 +41,14 @@
       "gen": 2
     }
   ],
+  "high_speed_io": {
+    "sma_transceiver_pairs": 1
+  },
   "video": {
     "hdmi_out": 1
+  },
+  "display": {
+    "character_lcd": "2x16"
   },
   "networking": {
     "ethernet": [
@@ -80,9 +94,20 @@
         "vadj_min": 1.2,
         "vadj_max": 1.8
       }
-    ]
+    ],
+    "gpio_header": 1,
+    "xadc_header": 1
   },
   "storage": {
     "sd": 1
+  },
+  "user_io": {
+    "leds": 8,
+    "pushbuttons": 5,
+    "dip_switches": 8,
+    "rotary_encoders": 1
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

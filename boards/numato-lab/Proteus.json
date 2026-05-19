@@ -42,5 +42,8 @@
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "rgb_leds": 1
   }
 }

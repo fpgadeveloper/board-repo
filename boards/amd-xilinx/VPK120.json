@@ -18,6 +18,9 @@
       "size_mb": 12288
     }
   ],
+  "clocking": {
+    "programmable": true
+  },
   "pcie": [
     {
       "type": "Edge",
@@ -53,5 +56,13 @@
   "storage": {
     "sata": 1,
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 7,
+    "dip_switches": 4
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

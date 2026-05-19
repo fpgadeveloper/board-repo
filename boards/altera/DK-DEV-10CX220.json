@@ -12,6 +12,9 @@
     "part": "10CX220YF780E5G",
     "vendor": "altera"
   },
+  "clocking": {
+    "programmable": true
+  },
   "pcie": [
     {
       "type": "Edge",
@@ -42,5 +45,8 @@
         "type": "lpc"
       }
     ]
+  },
+  "features": {
+    "power_monitoring": true
   }
 }

@@ -15,7 +15,8 @@
   "memory": [
     {
       "type": "DDR3",
-      "size_mb": 1024
+      "size_mb": 1024,
+      "width_bits": 32
     }
   ],
   "flash": [
@@ -23,5 +24,23 @@
       "type": "QSPI",
       "size_mb": 32
     }
-  ]
+  ],
+  "eeprom": [
+    {
+      "purpose": ["mac_address"],
+      "interface": "I2C"
+    }
+  ],
+  "sensors": [
+    {
+      "type": "imu",
+      "part": "LSM303D"
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  },
+  "user_io": {
+    "leds": 2
+  }
 }

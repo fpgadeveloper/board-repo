@@ -25,17 +25,11 @@
       "size_mb": 64
     }
   ],
-  "networking": {
-    "ethernet": [
-      {
-        "speed": 1000,
-        "ports": 1
-      }
-    ]
+  "clocking": {
+    "programmable": true
   },
-  "expansion": {
-    "arduino": 1,
-    "pmod": 1
+  "video": {
+    "hdmi_out": 1
   },
   "usb_bridge": [
     {
@@ -44,5 +38,12 @@
         "jtag"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "pmod": 2
+  },
+  "user_io": {
+    "leds": 5,
+    "pushbuttons": 4
+  }
 }

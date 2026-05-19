@@ -34,11 +34,23 @@
       "size_mb": 32
     }
   ],
+  "clocking": {
+    "programmable": true
+  },
   "usb": [
     {
       "connector": "Type-C",
       "speed": "3.0",
       "role": "device"
     }
-  ]
+  ],
+  "expansion": {
+    "syzygy": 6
+  },
+  "user_io": {
+    "leds": 8
+  },
+  "features": {
+    "power_monitoring": true
+  }
 }

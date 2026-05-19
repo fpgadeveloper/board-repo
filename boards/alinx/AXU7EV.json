@@ -38,6 +38,12 @@
       "size_mb": 8192
     }
   ],
+  "sensors": [
+    {
+      "type": "temperature",
+      "part": "LM75"
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -57,7 +63,8 @@
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1,
-    "displayport": 1
+    "displayport": 1,
+    "mipi_csi": 1
   },
   "networking": {
     "ethernet": [
@@ -68,11 +75,16 @@
     ],
     "sfp_plus": 2
   },
+  "serial": {
+    "can": 2,
+    "rs485": 2
+  },
   "usb": [
     {
       "connector": "Type-A",
       "speed": "3.0",
-      "role": "host"
+      "role": "host",
+      "ports": 4
     }
   ],
   "usb_bridge": [
@@ -80,7 +92,8 @@
       "connector": "Mini-B",
       "functions": [
         "uart"
-      ]
+      ],
+      "ports": 2
     }
   ],
   "expansion": {
@@ -94,5 +107,12 @@
   "storage": {
     "sata": 1,
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 2,
+    "pushbuttons": 2
+  },
+  "features": {
+    "battery_backed_rtc": true
   }
 }

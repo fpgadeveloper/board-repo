@@ -18,7 +18,39 @@
       "size_mb": 1024
     }
   ],
+  "analog": [
+    {
+      "role": "adc",
+      "part": "LTC2324",
+      "channels": 4,
+      "resolution_bits": 16,
+      "sample_rate_msps": 2
+    },
+    {
+      "role": "adc",
+      "part": "LTC2324",
+      "channels": 4,
+      "resolution_bits": 16,
+      "sample_rate_msps": 2
+    }
+  ],
   "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ],
     "sfp_plus": 3
+  },
+  "usb": [
+    {
+      "connector": "Type-B",
+      "speed": "2.0",
+      "role": "device"
+    }
+  ],
+  "serial": {
+    "can": 1
   }
 }

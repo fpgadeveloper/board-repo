@@ -1,6 +1,6 @@
 {
   "mpn": "iW-G47M-V07P-4E008G-Q128M-LIF",
-  "name": "iG-G47M — VU7P (FLVB2104)",
+  "name": "iG-G47M â€” VU7P (FLVB2104)",
   "status": "active",
   "url": "https://www.iwavesystems.com/product/virtex-ultrascale-fpga-som/",
   "vendor": "iwave",
@@ -12,7 +12,20 @@
   "memory": [
     {
       "type": "DDR4",
-      "size_mb": 8192,
+      "size_mb": 4096,
+      "width_bits": 64,
+      "ecc": true
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 4096,
+      "width_bits": 64,
+      "ecc": true
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 2048,
+      "width_bits": 32,
       "ecc": true
     }
   ],
@@ -20,6 +33,22 @@
     {
       "type": "QSPI",
       "size_mb": 128
+    },
+    {
+      "type": "BPI",
+      "size_mb": 256,
+      "width_bits": 16
     }
-  ]
+  ],
+  "sensors": [
+    {
+      "type": "temperature"
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  },
+  "features": {
+    "secure_element": true
+  }
 }

@@ -1,0 +1,15 @@
+{
+  "mpn": "Z19-P",
+  "name": "Z19-P",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-MPSoC/Z19-P.html",
+  "vendor": "alinx",
+  "price": {
+    "value": 12000,
+    "currency": "USD"
+  },
+  "composition": {
+    "som": "ACU19EG",
+    "carrier": "Z19-P-Carrier"
+  }
+}

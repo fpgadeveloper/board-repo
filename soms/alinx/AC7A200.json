@@ -1,0 +1,31 @@
+{
+  "mpn": "AC7A200",
+  "name": "AC7A200",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/FPGA-Development-Boards/Artix-7/AX7A200B.html",
+  "vendor": "alinx",
+  "price": null,
+  "device": {
+    "part": "XC7A200T-2FBG484I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024,
+      "width_bits": 32
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 16
+    }
+  ],
+  "sensors": [
+    {
+      "type": "temperature",
+      "part": "LM75"
+    }
+  ]
+}

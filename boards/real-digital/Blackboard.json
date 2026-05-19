@@ -24,14 +24,52 @@
       "size_mb": 16
     }
   ],
+  "sensors": [
+    {
+      "type": "imu",
+      "part": "LSM9DS1"
+    },
+    {
+      "type": "temperature",
+      "part": "LM75B"
+    },
+    {
+      "type": "microphone"
+    }
+  ],
+  "audio": {
+    "speaker": true
+  },
   "video": {
     "hdmi_out": 1
   },
+  "usb": [
+    {
+      "connector": "Micro-B",
+      "speed": "2.0",
+      "role": "otg"
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "jtag",
+        "uart"
+      ]
+    }
+  ],
   "expansion": {
     "pmod": 3
   },
   "storage": {
     "sd": 1
+  },
+  "user_io": {
+    "leds": 10,
+    "pushbuttons": 6,
+    "dip_switches": 12,
+    "seven_segment": 4
   },
   "wireless": {
     "wifi": true,

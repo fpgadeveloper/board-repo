@@ -33,10 +33,6 @@
       }
     ]
   },
-  "expansion": {
-    "pmod": 4,
-    "arduino": 1
-  },
   "usb_bridge": [
     {
       "connector": "Micro-B",
@@ -45,5 +41,14 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "pmod": 4,
+    "arduino": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 4,
+    "dip_switches": 4
+  }
 }

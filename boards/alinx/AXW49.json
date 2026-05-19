@@ -34,6 +34,9 @@
       "size_mb": 128
     }
   ],
+  "clocking": {
+    "programmable": true
+  },
   "m2": [
     {
       "key": "M-key",
@@ -51,9 +54,13 @@
     "ethernet": [
       {
         "speed": 1000,
-        "ports": 2
+        "ports": 3
       }
-    ]
+    ],
+    "qsfp28": 2
+  },
+  "serial": {
+    "can": 1
   },
   "usb": [
     {
@@ -73,5 +80,8 @@
   ],
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 4
   }
 }

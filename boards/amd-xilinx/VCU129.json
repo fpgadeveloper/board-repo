@@ -40,8 +40,12 @@
     {
       "connector": "Micro-B",
       "functions": [
-        "jtag"
+        "jtag",
+        "uart"
       ]
     }
-  ]
+  ],
+  "features": {
+    "power_monitoring": true
+  }
 }

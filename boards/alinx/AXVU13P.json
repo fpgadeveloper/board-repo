@@ -59,5 +59,9 @@
         "type": "fmcp"
       }
     ]
+  },
+  "user_io": {
+    "leds": 8,
+    "pushbuttons": 1
   }
 }

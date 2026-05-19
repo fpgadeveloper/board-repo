@@ -1,6 +1,6 @@
 {
   "mpn": "TE0715-05-51I33-L",
-  "name": "TE0715 \u2014 7Z015-1I, 1 GB DDR3L",
+  "name": "TE0715 — 7Z015-1I, 1 GB DDR3L",
   "status": "active",
   "url": "https://www.trenz-electronic.de/en/SoC-Module-with-AMD-Zynq-7015-1I-1-GB-DDR3L-32-MByte-Flash-4-x-5-cm-LP/TE0715-05-51I33-L",
   "vendor": "trenz",
@@ -15,17 +15,32 @@
   "memory": [
     {
       "type": "DDR3L",
-      "size_mb": 1024
+      "size_mb": 1024,
+      "width_bits": 32
     }
   ],
   "flash": [
     {
       "type": "QSPI",
       "size_mb": 32
-    },
-    {
-      "type": "SPI",
-      "size_mb": 32
     }
-  ]
+  ],
+  "eeprom": [
+    {
+      "purpose": ["mac_address"],
+      "interface": "I2C"
+    }
+  ],
+  "sensors": [
+    {
+      "type": "imu",
+      "part": "LSM303D"
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  },
+  "user_io": {
+    "leds": 1
+  }
 }

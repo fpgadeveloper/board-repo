@@ -18,10 +18,21 @@
       }
     ]
   },
+  "usb": [
+    {
+      "connector": "Type-A",
+      "speed": "3.0",
+      "role": "host",
+      "ports": 4
+    }
+  ],
   "expansion": {
     "pmod": 1
   },
   "storage": {
     "microsd": 1
+  },
+  "features": {
+    "secure_element": true
   }
 }

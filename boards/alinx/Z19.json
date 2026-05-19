@@ -15,8 +15,12 @@
   "memory": [
     {
       "type": "DDR4",
-      "size_mb": 4096,
+      "size_mb": 5120,
       "width_bits": 64
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 4096
     }
   ],
   "flash": [
@@ -33,11 +37,17 @@
       "size_mb": 32768
     }
   ],
+  "sensors": [
+    {
+      "type": "temperature",
+      "part": "LM75"
+    }
+  ],
   "pcie": [
     {
       "type": "Slot",
       "lanes": 8,
-      "gen": 2
+      "gen": 3
     }
   ],
   "m2": [
@@ -62,6 +72,10 @@
       }
     ],
     "qsfp28": 4
+  },
+  "serial": {
+    "can": 2,
+    "rs485": 2
   },
   "usb": [
     {
@@ -93,5 +107,12 @@
   "storage": {
     "sata": 4,
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 2,
+    "pushbuttons": 2
+  },
+  "features": {
+    "battery_backed_rtc": true
   }
 }

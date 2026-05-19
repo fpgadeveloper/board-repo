@@ -26,7 +26,18 @@
       ]
     }
   ],
+  "video": {
+    "vga_out": 1
+  },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 3,
+    "seven_segment": 6
+  },
+  "features": {
+    "battery_backed_rtc": true
   }
 }

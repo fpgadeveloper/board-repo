@@ -24,6 +24,23 @@
       "size_mb": 16
     }
   ],
+  "sensors": [
+    {
+      "type": "accelerometer"
+    },
+    {
+      "type": "temperature"
+    },
+    {
+      "type": "microphone"
+    }
+  ],
+  "audio": {
+    "speaker": true
+  },
+  "video": {
+    "vga_out": 1
+  },
   "networking": {
     "ethernet": [
       {
@@ -39,12 +56,6 @@
       "role": "host"
     }
   ],
-  "expansion": {
-    "pmod": 4
-  },
-  "storage": {
-    "microsd": 1
-  },
   "usb_bridge": [
     {
       "connector": "Micro-B",
@@ -53,5 +64,19 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "pmod": 4,
+    "xadc_header": 1
+  },
+  "storage": {
+    "microsd": 1
+  },
+  "user_io": {
+    "leds": 16,
+    "rgb_leds": 2,
+    "pushbuttons": 5,
+    "dip_switches": 16,
+    "seven_segment": 8
+  }
 }

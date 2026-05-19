@@ -24,13 +24,10 @@
       "width_bits": 32
     }
   ],
-  "pcie": [
-    {
-      "type": "Edge",
-      "lanes": 4,
-      "gen": 3
-    }
-  ],
+  "video": {
+    "displayport": 2,
+    "mipi_csi": 2
+  },
   "networking": {
     "ethernet": [
       {
@@ -67,9 +64,16 @@
         "type": "lpc"
       }
     ],
-    "pmod": 1
+    "pmod": 1,
+    "raspberry_pi": 1,
+    "gpio_header": 1
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 2,
+    "pushbuttons": 2,
+    "dip_switches": 4
   }
 }

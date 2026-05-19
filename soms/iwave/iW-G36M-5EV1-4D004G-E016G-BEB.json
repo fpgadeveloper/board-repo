@@ -1,6 +1,6 @@
 {
   "mpn": "iW-G36M-5EV1-4D004G-E016G-BEB",
-  "name": "iG-G36M — ZU5EV (SFVC784)",
+  "name": "iG-G36M \u00e2\u20ac\u201d ZU5EV (SFVC784)",
   "status": "active",
   "url": "https://www.iwavesystems.com/product/zynq-ultrascale-mpsoc-zu5-zu4-zu3t-zu3-zu2-zu1-system-on-module/",
   "vendor": "iwave",
@@ -12,7 +12,13 @@
   "memory": [
     {
       "type": "DDR4",
-      "size_mb": 4096
+      "size_mb": 4096,
+      "width_bits": 64
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 2048,
+      "width_bits": 16
     }
   ],
   "flash": [
@@ -20,5 +26,12 @@
       "type": "eMMC",
       "size_mb": 16384
     }
-  ]
+  ],
+  "clocking": {
+    "programmable": true
+  },
+  "features": {
+    "battery_backed_rtc": true,
+    "secure_element": true
+  }
 }

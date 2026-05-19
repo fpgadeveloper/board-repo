@@ -12,7 +12,24 @@
     "part": "SLG47910C",
     "vendor": "renesas"
   },
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 4
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Type-C",
+      "functions": [
+        "jtag"
+      ]
+    }
+  ],
   "expansion": {
     "pmod": 1
+  },
+  "user_io": {
+    "leds": 2
   }
 }

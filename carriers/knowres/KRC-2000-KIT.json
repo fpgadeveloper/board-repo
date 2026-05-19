@@ -7,5 +7,8 @@
   "price": {
     "value": 2760.0,
     "currency": "EUR"
+  },
+  "clocking": {
+    "programmable": true
   }
 }

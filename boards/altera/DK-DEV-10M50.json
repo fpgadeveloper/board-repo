@@ -25,11 +25,23 @@
       "size_mb": 64
     }
   ],
+  "analog": [
+    {
+      "role": "dac",
+      "resolution_bits": 16
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  },
+  "video": {
+    "hdmi_out": 1
+  },
   "networking": {
     "ethernet": [
       {
         "speed": 1000,
-        "ports": 1
+        "ports": 2
       }
     ]
   },
@@ -41,5 +53,16 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "pmod": 2,
+    "xadc_header": 1
+  },
+  "user_io": {
+    "leds": 5,
+    "pushbuttons": 4
+  },
+  "features": {
+    "power_monitoring": true
+  }
 }

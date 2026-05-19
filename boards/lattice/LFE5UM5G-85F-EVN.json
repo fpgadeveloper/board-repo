@@ -18,11 +18,6 @@
       "size_mb": 16
     }
   ],
-  "expansion": {
-    "pmod": 3,
-    "arduino": 1,
-    "raspberry_pi": 1
-  },
   "usb_bridge": [
     {
       "connector": "Mini-B",
@@ -30,5 +25,16 @@
         "jtag"
       ]
     }
-  ]
+  ],
+  "expansion": {
+    "pmod": 3,
+    "arduino": 1,
+    "raspberry_pi": 1,
+    "gpio_header": 1
+  },
+  "user_io": {
+    "leds": 8,
+    "pushbuttons": 3,
+    "dip_switches": 8
+  }
 }

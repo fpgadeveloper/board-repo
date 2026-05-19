@@ -8,12 +8,60 @@
     "value": 598.06,
     "currency": "USD"
   },
+  "sensors": [
+    {
+      "type": "imu",
+      "part": "LSM303D"
+    }
+  ],
+  "flash": [
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    }
+  ],
+  "eeprom": [
+    {
+      "purpose": [
+        "board_id"
+      ],
+      "interface": "I2C",
+      "part": "24LC128"
+    },
+    {
+      "purpose": [
+        "mac_address"
+      ],
+      "interface": "I2C",
+      "part": "24AA025E48T"
+    },
+    {
+      "purpose": [
+        "mac_address"
+      ],
+      "interface": "I2C",
+      "part": "24AA025E48T"
+    },
+    {
+      "purpose": [
+        "mac_address"
+      ],
+      "interface": "I2C",
+      "part": "24AA025E48T"
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  },
   "pcie": [
     {
       "type": "Slot",
       "lanes": 1
     }
   ],
+  "high_speed_io": {
+    "firefly": 2
+  },
   "video": {
     "displayport": 1
   },
@@ -25,6 +73,9 @@
       }
     ],
     "sfp_plus": 2
+  },
+  "serial": {
+    "can": 1
   },
   "usb": [
     {

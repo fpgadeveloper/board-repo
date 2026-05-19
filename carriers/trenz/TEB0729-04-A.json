@@ -8,6 +8,15 @@
     "value": 138.01,
     "currency": "USD"
   },
+  "sensors": [
+    {
+      "type": "imu",
+      "part": "LSM303D"
+    }
+  ],
+  "clocking": {
+    "programmable": true
+  },
   "networking": {
     "ethernet": [
       {
@@ -38,5 +47,8 @@
   ],
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "pushbuttons": 1
   }
 }

@@ -1,0 +1,15 @@
+{
+  "mpn": "AX7203",
+  "name": "AX7203",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/FPGA-Development-Boards/Artix-7/AX7203.html",
+  "vendor": "alinx",
+  "price": {
+    "value": 410.99,
+    "currency": "GBP"
+  },
+  "composition": {
+    "som": "AC7200",
+    "carrier": "AX7203-Carrier"
+  }
+}

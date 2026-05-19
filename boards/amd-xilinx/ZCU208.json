@@ -35,6 +35,18 @@
       "size_mb": 256
     }
   ],
+  "clocking": {
+    "programmable": true
+  },
+  "m2": [
+    {
+      "key": "M-key",
+      "direction": "socket",
+      "interfaces": [
+        "SATA"
+      ]
+    }
+  ],
   "networking": {
     "ethernet": [
       {
@@ -74,13 +86,8 @@
   "storage": {
     "microsd": 1
   },
-  "m2": [
-    {
-      "key": "M-key",
-      "direction": "socket",
-      "interfaces": [
-        "SATA"
-      ]
-    }
-  ]
+  "features": {
+    "power_monitoring": true,
+    "programmable_vadj": true
+  }
 }

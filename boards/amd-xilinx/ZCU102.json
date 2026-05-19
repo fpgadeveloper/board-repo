@@ -36,6 +36,10 @@
       "size_mb": 64
     }
   ],
+  "clocking": {
+    "programmable": true,
+    "sma_clock_in": 2
+  },
   "pcie": [
     {
       "type": "Slot",
@@ -43,6 +47,9 @@
       "gen": 2
     }
   ],
+  "high_speed_io": {
+    "sma_transceiver_pairs": 1
+  },
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1,
@@ -56,6 +63,9 @@
       }
     ],
     "sfp_plus": 4
+  },
+  "serial": {
+    "can": 1
   },
   "usb": [
     {
@@ -98,5 +108,14 @@
   "storage": {
     "sata": 1,
     "sd": 1
+  },
+  "user_io": {
+    "leds": 9,
+    "pushbuttons": 6,
+    "dip_switches": 8
+  },
+  "features": {
+    "power_monitoring": true,
+    "programmable_vadj": true
   }
 }

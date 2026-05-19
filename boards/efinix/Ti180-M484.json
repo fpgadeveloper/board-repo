@@ -29,18 +29,6 @@
       "size_mb": 32
     }
   ],
-  "video": {
-    "hdmi_out": 1,
-    "mipi_csi": 1
-  },
-  "networking": {
-    "ethernet": [
-      {
-        "speed": 1000,
-        "ports": 1
-      }
-    ]
-  },
   "usb_bridge": [
     {
       "connector": "Type-C",
@@ -60,5 +48,9 @@
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 6,
+    "pushbuttons": 2
   }
 }

@@ -7,5 +7,28 @@
   "price": {
     "value": 3760.0,
     "currency": "EUR"
+  },
+  "clocking": {
+    "programmable": true
+  },
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ],
+    "qsfp_plus": 1
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": [
+        "uart"
+      ]
+    }
+  ],
+  "storage": {
+    "microsd": 1
   }
 }

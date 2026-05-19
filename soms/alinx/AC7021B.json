@@ -1,0 +1,29 @@
+{
+  "mpn": "AC7021B",
+  "name": "AC7021B",
+  "status": "active",
+  "url": "https://www.en.alinx.com/Product/SoC-development-Boards/Zynq-7000-SoC/AX7021.html",
+  "vendor": "alinx",
+  "price": null,
+  "device": {
+    "part": "XC7Z020-2CLG484I",
+    "vendor": "amd-xilinx"
+  },
+  "memory": [
+    {
+      "type": "DDR3",
+      "size_mb": 1024,
+      "width_bits": 32
+    }
+  ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 8192
+    }
+  ]
+}
