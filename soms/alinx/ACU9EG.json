@@ -27,11 +27,7 @@
   "flash": [
     {
       "type": "QSPI",
-      "size_mb": 32
-    },
-    {
-      "type": "QSPI",
-      "size_mb": 32
+      "size_mb": 64
     },
     {
       "type": "eMMC",
