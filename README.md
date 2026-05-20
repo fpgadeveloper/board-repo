@@ -63,15 +63,23 @@ You don't have to write perfectly canonical bullets on your first push. Write wh
 
 ## How to Contribute
 
-### Option 1: Submit via the Website
+Spotted a board, SoM, carrier, kit, or FMC card that's missing? There are three ways to add it — and for the first two, all you need is the vendor's product page URL. You don't have to write any markdown or fill in specs; the maintainer reads the product page and builds the catalog entry for you.
 
-The easiest way to add a board is through the **Submit** page on the website:
+### Option 1: Submit via the website
+
+The simplest way — paste the vendor's product page URL into the **Submit** page:
 
 **[boards.fpgadeveloper.com/submit.html](https://boards.fpgadeveloper.com/submit.html)**
 
-Fill in the form and your submission will be reviewed and added to the database.
+That's the whole form. Your submission is logged as an issue here, then reviewed and added.
 
-### Option 2: Submit a Pull Request
+### Option 2: Open a GitHub issue
+
+Prefer to stay on GitHub, or want to add several boards at once? [**Open an issue**](https://github.com/fpgadeveloper/board-repo/issues/new) and include the product page URL(s) — one or many. It's imported exactly the same way as a website submission. Browse [existing issues](https://github.com/fpgadeveloper/board-repo/issues) first to avoid duplicates.
+
+### Option 3: Submit a pull request
+
+If you'd rather write the entry yourself — or you're correcting an existing one:
 
 1. **Fork** this repository.
 2. **Create or edit** the relevant `.md` file under the matching entity folder. The filename stem must equal the `mpn`, and the parent folder must equal the `vendor`.
