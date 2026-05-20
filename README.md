@@ -71,8 +71,6 @@ The easiest way to add a board is through the **Submit** page on the website:
 
 Fill in the form and your submission will be reviewed and added to the database.
 
-The website form currently covers standalone boards. For SoMs, carriers, kits, FMC cards, and relationships, use a pull request (Option 2).
-
 ### Option 2: Submit a Pull Request
 
 1. **Fork** this repository.
