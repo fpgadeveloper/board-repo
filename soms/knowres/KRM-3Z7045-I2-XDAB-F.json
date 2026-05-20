@@ -25,7 +25,14 @@
   "flash": [
     {
       "type": "QSPI",
-      "size_mb": 32
+      "size_mb": 16
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 16
     }
-  ]
+  ],
+  "user_io": {
+    "leds": 4
+  }
 }

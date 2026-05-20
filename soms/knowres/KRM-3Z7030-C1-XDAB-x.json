@@ -27,5 +27,8 @@
       "type": "QSPI",
       "size_mb": 32
     }
-  ]
+  ],
+  "user_io": {
+    "leds": 4
+  }
 }

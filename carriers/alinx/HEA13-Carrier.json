@@ -5,13 +5,6 @@
   "url": "https://www.en.alinx.com/Product/FPGA-Development-Boards/Virtex-UltraScale-plus/HEA13.html",
   "vendor": "alinx",
   "price": null,
-  "pcie": [
-    {
-      "type": "Edge",
-      "lanes": 16,
-      "gen": 3
-    }
-  ],
   "m2": [
     {
       "key": "M-key",
@@ -29,14 +22,24 @@
       ]
     }
   ],
+  "video": {
+    "displayport": 1
+  },
   "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ],
     "qsfp28": 4
   },
   "usb": [
     {
-      "connector": "Type-A",
+      "connector": "Type-C",
       "speed": "3.2",
-      "role": "host"
+      "role": "otg",
+      "ports": 2
     }
   ],
   "usb_bridge": [
@@ -63,6 +66,7 @@
     "microsd": 2
   },
   "user_io": {
+    "leds": 2,
     "pushbuttons": 2
   }
 }

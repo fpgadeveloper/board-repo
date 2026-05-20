@@ -44,5 +44,9 @@
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 2,
+    "dip_switches": 1
   }
 }

@@ -12,6 +12,12 @@
     "part": "XC7S25-1CSGA225C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "PSRAM",
+      "size_mb": 4
+    }
+  ],
   "flash": [
     {
       "type": "QSPI",

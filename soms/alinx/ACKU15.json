@@ -12,7 +12,8 @@
   "memory": [
     {
       "type": "DDR4",
-      "size_mb": 5120
+      "size_mb": 10240,
+      "width_bits": 80
     }
   ],
   "flash": [
@@ -23,12 +24,6 @@
     {
       "type": "QSPI",
       "size_mb": 64
-    }
-  ],
-  "sensors": [
-    {
-      "type": "temperature",
-      "part": "LM75A"
     }
   ]
 }

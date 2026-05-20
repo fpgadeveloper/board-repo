@@ -5,10 +5,16 @@
   "url": "https://www.en.alinx.com/detail/496",
   "vendor": "alinx",
   "price": null,
+  "sensors": [
+    {
+      "type": "temperature",
+      "part": "LM75"
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
-      "lanes": 2,
+      "lanes": 4,
       "gen": 2
     }
   ],
@@ -35,5 +41,9 @@
   ],
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 4
   }
 }

@@ -31,12 +31,6 @@
       "size_mb": 8192
     }
   ],
-  "sensors": [
-    {
-      "type": "temperature",
-      "part": "LM75"
-    }
-  ],
   "features": {
     "battery_backed_rtc": true
   }

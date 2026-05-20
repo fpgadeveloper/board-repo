@@ -39,9 +39,16 @@
     }
   ],
   "expansion": {
-    "pmod": 2
+    "pmod": 1
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 6,
+    "pushbuttons": 6
+  },
+  "features": {
+    "battery_backed_rtc": true
   }
 }

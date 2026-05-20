@@ -12,6 +12,12 @@
     "part": "XC7S6-1FTGB196C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "SDRAM",
+      "size_mb": 8
+    }
+  ],
   "flash": [
     {
       "type": "QSPI",

@@ -24,6 +24,10 @@
       "size_mb": 2560,
       "width_bits": 72,
       "ecc": true
+    },
+    {
+      "type": "RLD3",
+      "size_mb": 4
     }
   ],
   "flash": [

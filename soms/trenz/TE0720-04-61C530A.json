@@ -24,10 +24,11 @@
       "size_mb": 32
     }
   ],
-  "sensors": [
+  "eeprom": [
     {
-      "type": "imu",
-      "part": "LSM303D"
+      "purpose": ["mac_address"],
+      "interface": "I2C",
+      "size_kbits": 2
     }
   ],
   "clocking": {
@@ -35,5 +36,8 @@
   },
   "user_io": {
     "leds": 3
+  },
+  "features": {
+    "secure_element": true
   }
 }

@@ -5,6 +5,12 @@
   "url": "https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-MPSoC/AXU5EV-P.html",
   "vendor": "alinx",
   "price": null,
+  "sensors": [
+    {
+      "type": "temperature",
+      "part": "LM75"
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -36,23 +42,43 @@
     ],
     "sfp_plus": 2
   },
+  "serial": {
+    "can": 2,
+    "rs485": 2
+  },
+  "usb": [
+    {
+      "connector": "Type-A",
+      "speed": "3.0",
+      "role": "host",
+      "ports": 4
+    }
+  ],
   "usb_bridge": [
     {
       "connector": "Mini-B",
       "functions": [
         "uart"
-      ]
+      ],
+      "ports": 2
     }
   ],
   "expansion": {
     "fmc": [
       {
-        "slot": "HPC",
-        "type": "hpc"
+        "slot": "LPC",
+        "type": "lpc"
       }
     ]
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 3,
+    "pushbuttons": 2
+  },
+  "features": {
+    "battery_backed_rtc": true
   }
 }

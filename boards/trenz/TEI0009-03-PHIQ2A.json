@@ -12,6 +12,16 @@
     "part": "10CL055YU484I7G",
     "vendor": "altera"
   },
+  "memory": [
+    {
+      "type": "SDRAM",
+      "size_mb": 32
+    },
+    {
+      "type": "HyperRAM",
+      "size_mb": 8
+    }
+  ],
   "flash": [
     {
       "type": "SPI",
@@ -44,12 +54,6 @@
       "role": "dac",
       "channels": 8,
       "resolution_bits": 12
-    }
-  ],
-  "sensors": [
-    {
-      "type": "imu",
-      "part": "LSM303D"
     }
   ],
   "clocking": {

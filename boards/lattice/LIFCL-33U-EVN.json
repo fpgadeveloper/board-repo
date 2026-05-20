@@ -23,7 +23,8 @@
     {
       "connector": "Micro-B",
       "functions": [
-        "jtag"
+        "jtag",
+        "i2c"
       ]
     }
   ]

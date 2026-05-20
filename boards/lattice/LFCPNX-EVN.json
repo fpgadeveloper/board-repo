@@ -22,7 +22,8 @@
     {
       "connector": "Mini-B",
       "functions": [
-        "jtag"
+        "jtag",
+        "i2c"
       ]
     }
   ],

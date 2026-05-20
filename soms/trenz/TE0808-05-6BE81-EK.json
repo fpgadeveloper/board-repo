@@ -1,6 +1,6 @@
 {
   "mpn": "TE0808-05-6BE81-EK",
-  "name": "TE0808 \u2014 ZU6EG-1E, 4 GB DDR4",
+  "name": "TE0808 — ZU6EG-1E, 4 GB DDR4",
   "status": "active",
   "url": "https://www.trenz-electronic.de/en/UltraSOM-MPSoC-Module-with-AMD-Zynq-UltraScale-ZU6EG-1E-incl.-Heat-Spreader/TE0808-05-6BE81-EK",
   "vendor": "trenz",
@@ -21,17 +21,18 @@
   "flash": [
     {
       "type": "QSPI",
-      "size_mb": 128
+      "size_mb": 64
     },
     {
-      "type": "SPI",
+      "type": "QSPI",
       "size_mb": 64
     }
   ],
-  "sensors": [
+  "eeprom": [
     {
-      "type": "imu",
-      "part": "LSM303D"
+      "purpose": ["mac_address"],
+      "interface": "I2C",
+      "size_kbits": 2
     }
   ],
   "clocking": {

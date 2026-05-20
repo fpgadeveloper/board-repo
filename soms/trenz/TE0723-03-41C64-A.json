@@ -24,12 +24,6 @@
       "size_mb": 16
     }
   ],
-  "sensors": [
-    {
-      "type": "imu",
-      "part": "LSM303D"
-    }
-  ],
   "clocking": {
     "programmable": true
   },

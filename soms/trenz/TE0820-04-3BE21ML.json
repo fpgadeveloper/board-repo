@@ -35,12 +35,6 @@
       "interface": "I2C"
     }
   ],
-  "sensors": [
-    {
-      "type": "imu",
-      "part": "LSM303D"
-    }
-  ],
   "clocking": {
     "programmable": true
   }

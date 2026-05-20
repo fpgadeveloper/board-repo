@@ -24,6 +24,10 @@
       "type": "QDR-IV",
       "size_mb": 18,
       "width_bits": 36
+    },
+    {
+      "type": "RLD3",
+      "size_mb": 288
     }
   ],
   "pcie": [

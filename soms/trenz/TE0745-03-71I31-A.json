@@ -15,7 +15,8 @@
   "memory": [
     {
       "type": "DDR3L",
-      "size_mb": 1024
+      "size_mb": 1024,
+      "width_bits": 32
     }
   ],
   "flash": [
@@ -24,10 +25,10 @@
       "size_mb": 64
     }
   ],
-  "sensors": [
+  "eeprom": [
     {
-      "type": "imu",
-      "part": "LSM303D"
+      "purpose": ["mac_address"],
+      "interface": "I2C"
     }
   ],
   "clocking": {

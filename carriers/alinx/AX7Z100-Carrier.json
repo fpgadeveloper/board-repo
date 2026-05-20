@@ -5,6 +5,12 @@
   "url": "https://www.en.alinx.com/Product/SoC-development-Boards/Zynq-7000-SoC/AX7Z100B.html",
   "vendor": "alinx",
   "price": null,
+  "sensors": [
+    {
+      "type": "temperature",
+      "part": "LM75"
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -14,7 +20,8 @@
   ],
   "video": {
     "hdmi_in": 1,
-    "hdmi_out": 1
+    "hdmi_out": 1,
+    "mipi_csi": 1
   },
   "networking": {
     "ethernet": [
@@ -44,5 +51,9 @@
   "storage": {
     "sata": 2,
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 4
   }
 }

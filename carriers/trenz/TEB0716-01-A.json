@@ -8,12 +8,6 @@
     "value": 165.9,
     "currency": "USD"
   },
-  "sensors": [
-    {
-      "type": "imu",
-      "part": "LSM303D"
-    }
-  ],
   "clocking": {
     "programmable": true
   },

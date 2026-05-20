@@ -31,12 +31,6 @@
       "interfaces": ["PCIe"]
     }
   ],
-  "sensors": [
-    {
-      "type": "imu",
-      "part": "LSM303D"
-    }
-  ],
   "audio": {
     "headphone_jack": 1
   },

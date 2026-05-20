@@ -455,10 +455,10 @@
         "connector": { "$ref": "#/$defs/usb_connector" },
         "functions": {
           "type": "array",
-          "items": { "type": "string", "enum": ["jtag", "uart"] },
+          "items": { "type": "string", "enum": ["jtag", "uart", "i2c"] },
           "minItems": 1,
           "uniqueItems": true,
-          "description": "What the bridge does — typically [\"jtag\", \"uart\"] for combined chips like FT2232."
+          "description": "What the bridge does — typically [\"jtag\", \"uart\"] for combined chips like FT2232. 'i2c' covers bridge chips that also expose an I2C utility channel (common on Lattice FTDI-based eval boards)."
         },
         "ports": {
           "type": "integer",
@@ -496,8 +496,8 @@
       "properties": {
         "type": {
           "type": "string",
-          "enum": ["DDR2", "DDR3", "DDR3L", "DDR4", "DDR5", "LPDDR2", "LPDDR3", "LPDDR4", "LPDDR4X", "LPDDR5", "LPDDR5X", "GDDR5", "GDDR5X", "GDDR6", "GDDR6X", "HBM2", "HBM2E", "HBM3", "QDR-II+", "QDR-IV"],
-          "description": "DRAM family. HBM variants are on-package, not strictly DDR — listed here because they fill the same role in spec sheets."
+          "enum": ["SDRAM", "DDR2", "DDR3", "DDR3L", "DDR4", "DDR5", "LPDDR", "LPDDR2", "LPDDR3", "LPDDR4", "LPDDR4X", "LPDDR5", "LPDDR5X", "GDDR5", "GDDR5X", "GDDR6", "GDDR6X", "HBM2", "HBM2E", "HBM3", "QDR-II+", "QDR-IV", "RLD3", "HyperRAM", "PSRAM"],
+          "description": "DRAM family. 'SDRAM' is single-data-rate SDRAM; 'LPDDR' is the original low-power/mobile DDR (LPDDR1). HBM variants are on-package, not strictly DDR — listed here because they fill the same role in spec sheets. RLD3 (reduced-latency DRAM), HyperRAM (serial/octal DRAM), and PSRAM (pseudo-static RAM) are specialty DRAM types found on smaller or high-bandwidth boards."
         },
         "size_mb": {
           "type": "integer",
@@ -511,8 +511,8 @@
         },
         "width_bits": {
           "type": "integer",
-          "enum": [16, 18, 32, 36, 64, 72, 128, 256],
-          "description": "Data bus width. 72 typically implies ECC. 18/36 are common for QDR-II+ / QDR-IV high-bandwidth SRAM."
+          "enum": [8, 16, 18, 32, 36, 40, 48, 64, 72, 80, 128, 256],
+          "description": "Data bus width. 72 typically implies ECC (64-bit data + 8-bit ECC); 40 and 80 are likewise data+ECC widths on some SoMs. 8 is a narrow-bus single DDR3 chip. 48 is a non-ECC bank built from three 16-bit chips. 18/36 are common for QDR-II+ / QDR-IV high-bandwidth SRAM."
         },
         "ecc": {
           "type": "boolean",
@@ -688,8 +688,8 @@
         "type": {
           "type": "string",
           "title": "Sensor Type",
-          "enum": ["imu", "accelerometer", "gyroscope", "magnetometer", "temperature", "pressure", "humidity", "light", "proximity", "microphone"],
-          "description": "Sensor category. 'imu' implies combined accelerometer + gyroscope (and usually magnetometer)."
+          "enum": ["imu", "accelerometer", "gyroscope", "magnetometer", "temperature", "pressure", "humidity", "light", "proximity", "microphone", "camera"],
+          "description": "Sensor category. 'imu' implies combined accelerometer + gyroscope (and usually magnetometer). 'camera' is an image sensor soldered to the board — distinct from video.mipi_csi, which counts camera connectors."
         },
         "part": {
           "type": "string",
@@ -734,7 +734,8 @@
       "properties": {
         "sma_transceiver_pairs": { "type": "integer", "title": "SMA Transceiver Pairs", "minimum": 1, "description": "Count of SMA pairs (TX+RX) routed to FPGA transceivers." },
         "firefly": { "type": "integer", "title": "Samtec FireFly", "minimum": 1, "description": "Count of Samtec FireFly module slots." },
-        "slimsas": { "type": "integer", "title": "SlimSAS", "minimum": 1, "description": "Count of SlimSAS cabled connectors (typically PCIe over cable)." }
+        "slimsas": { "type": "integer", "title": "SlimSAS", "minimum": 1, "description": "Count of SlimSAS cabled connectors (typically PCIe over cable)." },
+        "displayport_transceiver": { "type": "integer", "title": "Mini-DP Transceiver", "minimum": 1, "description": "Count of mini-DisplayPort connectors wired to FPGA transceivers (GTP/GTH lanes), not video — a low-cost way to break out MGT lanes. Seen on Numato boards." }
       },
       "minProperties": 1
     },

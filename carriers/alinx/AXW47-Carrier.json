@@ -5,6 +5,20 @@
   "url": "https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-RFSoC/AXW47.html",
   "vendor": "alinx",
   "price": null,
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 64
+    },
+    {
+      "type": "QSPI",
+      "size_mb": 64
+    },
+    {
+      "type": "eMMC",
+      "size_mb": 32768
+    }
+  ],
   "clocking": {
     "programmable": true
   },
@@ -25,14 +39,15 @@
         "ports": 1
       }
     ],
-    "sfp_plus": 1,
+    "sfp_plus": 2,
     "qsfp_plus": 2
   },
   "usb": [
     {
-      "connector": "Type-A",
+      "connector": "Type-C",
       "speed": "3.0",
-      "role": "host"
+      "role": "otg",
+      "ports": 2
     }
   ],
   "usb_bridge": [
@@ -41,11 +56,16 @@
       "functions": [
         "jtag",
         "uart"
-      ]
+      ],
+      "ports": 2
     }
   ],
   "storage": {
     "sata": 1,
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 12,
+    "pushbuttons": 5
   }
 }

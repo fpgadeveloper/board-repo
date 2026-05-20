@@ -14,7 +14,7 @@
   },
   "memory": [
     {
-      "type": "LPDDR2",
+      "type": "LPDDR",
       "size_mb": 64
     }
   ],

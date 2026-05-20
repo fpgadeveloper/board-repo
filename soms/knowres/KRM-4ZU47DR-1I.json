@@ -12,12 +12,19 @@
   "memory": [
     {
       "type": "DDR4",
-      "size_mb": 8192
+      "size_mb": 8192,
+      "width_bits": 64,
+      "ecc": true
     },
     {
       "type": "DDR4",
       "size_mb": 8192,
-      "ecc": true
+      "width_bits": 64
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "width_bits": 64
     }
   ],
   "flash": [
@@ -29,5 +36,8 @@
       "type": "eMMC",
       "size_mb": 8192
     }
-  ]
+  ],
+  "clocking": {
+    "programmable": true
+  }
 }

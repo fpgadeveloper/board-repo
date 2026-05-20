@@ -15,7 +15,11 @@
   "memory": [
     {
       "type": "DDR3L",
-      "size_mb": 2048
+      "size_mb": 1024
+    },
+    {
+      "type": "DDR3L",
+      "size_mb": 1024
     }
   ],
   "flash": [
@@ -28,13 +32,10 @@
       "size_mb": 128
     }
   ],
-  "sensors": [
-    {
-      "type": "imu",
-      "part": "LSM303D"
-    }
-  ],
   "clocking": {
     "programmable": true
+  },
+  "user_io": {
+    "leds": 4
   }
 }

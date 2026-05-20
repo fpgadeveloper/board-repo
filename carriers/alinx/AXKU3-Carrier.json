@@ -5,6 +5,12 @@
   "url": "https://www.en.alinx.com/Product/FPGA-Development-Boards/Kintex-UltraScale-plus/AXKU3.html",
   "vendor": "alinx",
   "price": null,
+  "sensors": [
+    {
+      "type": "temperature",
+      "part": "LM75A"
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -12,6 +18,9 @@
       "gen": 3
     }
   ],
+  "video": {
+    "mipi_csi": 1
+  },
   "networking": {
     "ethernet": [
       {
@@ -38,5 +47,12 @@
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 6,
+    "pushbuttons": 4
+  },
+  "features": {
+    "battery_backed_rtc": true
   }
 }

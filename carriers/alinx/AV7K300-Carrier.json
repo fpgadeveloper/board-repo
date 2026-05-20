@@ -12,6 +12,10 @@
       "gen": 2
     }
   ],
+  "video": {
+    "sdi_in": 2,
+    "sdi_out": 2
+  },
   "networking": {
     "sfp_plus": 4
   },
@@ -25,5 +29,9 @@
   ],
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 2,
+    "pushbuttons": 2
   }
 }

@@ -21,7 +21,7 @@
   "flash": [
     {
       "type": "QSPI",
-      "size_mb": 128
+      "size_mb": 64
     },
     {
       "type": "QSPI",
@@ -32,13 +32,17 @@
       "size_mb": 8192
     }
   ],
-  "sensors": [
+  "eeprom": [
     {
-      "type": "imu",
-      "part": "LSM303D"
+      "purpose": ["mac_address"],
+      "interface": "I2C",
+      "size_kbits": 2
     }
   ],
   "clocking": {
     "programmable": true
+  },
+  "user_io": {
+    "leds": 4
   }
 }

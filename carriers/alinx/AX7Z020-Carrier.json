@@ -5,8 +5,15 @@
   "url": "https://www.en.alinx.com/Product/SoC-development-Boards/Zynq-7000-SoC/AX7Z020B.html",
   "vendor": "alinx",
   "price": null,
+  "sensors": [
+    {
+      "type": "temperature",
+      "part": "LM75"
+    }
+  ],
   "video": {
-    "hdmi_out": 1
+    "hdmi_out": 1,
+    "mipi_csi": 1
   },
   "networking": {
     "ethernet": [
@@ -15,6 +22,10 @@
         "ports": 1
       }
     ]
+  },
+  "serial": {
+    "can": 2,
+    "rs485": 2
   },
   "usb": [
     {
@@ -33,5 +44,12 @@
   ],
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 4
+  },
+  "features": {
+    "battery_backed_rtc": true
   }
 }

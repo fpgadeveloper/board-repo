@@ -5,6 +5,12 @@
   "url": "https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-MPSoC/AXU3EGB.html",
   "vendor": "alinx",
   "price": null,
+  "sensors": [
+    {
+      "type": "temperature",
+      "part": "LM75"
+    }
+  ],
   "m2": [
     {
       "key": "M-key",
@@ -15,7 +21,8 @@
     }
   ],
   "video": {
-    "displayport": 1
+    "displayport": 1,
+    "mipi_csi": 1
   },
   "networking": {
     "ethernet": [
@@ -24,6 +31,10 @@
         "ports": 2
       }
     ]
+  },
+  "serial": {
+    "can": 2,
+    "rs485": 2
   },
   "usb": [
     {
@@ -44,5 +55,12 @@
   ],
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 3,
+    "pushbuttons": 2
+  },
+  "features": {
+    "battery_backed_rtc": true
   }
 }

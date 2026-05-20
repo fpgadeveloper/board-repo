@@ -12,19 +12,23 @@
     "part": "5CEBA2U15C8N",
     "vendor": "altera"
   },
+  "memory": [
+    {
+      "type": "SDRAM",
+      "size_mb": 8
+    }
+  ],
   "flash": [
     {
       "type": "QSPI",
       "size_mb": 8
     }
   ],
-  "sensors": [
-    {
-      "type": "imu",
-      "part": "LSM303D"
-    }
-  ],
   "clocking": {
     "programmable": true
+  },
+  "user_io": {
+    "leds": 8,
+    "pushbuttons": 1
   }
 }

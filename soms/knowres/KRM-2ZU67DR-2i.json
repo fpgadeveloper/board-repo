@@ -13,14 +13,20 @@
     {
       "type": "DDR4",
       "size_mb": 8192,
+      "width_bits": 72,
       "ecc": true
     },
     {
       "type": "DDR4",
-      "size_mb": 6144
+      "size_mb": 6144,
+      "width_bits": 48
     }
   ],
   "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 128
+    },
     {
       "type": "eMMC",
       "size_mb": 65536

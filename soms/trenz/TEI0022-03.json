@@ -16,6 +16,10 @@
     {
       "type": "DDR3",
       "size_mb": 1024
+    },
+    {
+      "type": "DDR3",
+      "size_mb": 1024
     }
   ],
   "flash": [
@@ -28,13 +32,45 @@
       "size_mb": 32
     }
   ],
-  "sensors": [
-    {
-      "type": "imu",
-      "part": "LSM303D"
-    }
-  ],
   "clocking": {
     "programmable": true
+  },
+  "networking": {
+    "ethernet": [
+      {
+        "speed": 1000,
+        "ports": 1
+      }
+    ]
+  },
+  "usb": [
+    {
+      "connector": "Type-A",
+      "speed": "2.0",
+      "role": "host",
+      "ports": 4
+    }
+  ],
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": ["jtag", "uart"]
+    },
+    {
+      "connector": "Micro-B",
+      "functions": ["uart"]
+    }
+  ],
+  "expansion": {
+    "fmc": [
+      {
+        "slot": "FMC",
+        "type": "lpc"
+      }
+    ],
+    "pmod": 4
+  },
+  "storage": {
+    "sd": 1
   }
 }

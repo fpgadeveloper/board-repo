@@ -25,11 +25,5 @@
       "type": "QSPI",
       "size_mb": 16
     }
-  ],
-  "sensors": [
-    {
-      "type": "temperature",
-      "part": "LM75A"
-    }
   ]
 }

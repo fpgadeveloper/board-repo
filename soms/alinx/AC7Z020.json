@@ -16,6 +16,12 @@
       "width_bits": 32
     }
   ],
+  "flash": [
+    {
+      "type": "QSPI",
+      "size_mb": 32
+    }
+  ],
   "features": {
     "battery_backed_rtc": true
   }

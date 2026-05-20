@@ -12,6 +12,12 @@
     "part": "LFE5U-85F-6BG381C",
     "vendor": "lattice"
   },
+  "memory": [
+    {
+      "type": "SDRAM",
+      "size_mb": 32
+    }
+  ],
   "flash": [
     {
       "type": "QSPI",

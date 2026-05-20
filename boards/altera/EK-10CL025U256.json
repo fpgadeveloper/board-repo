@@ -12,6 +12,12 @@
     "part": "10CL025YU256C8G",
     "vendor": "altera"
   },
+  "memory": [
+    {
+      "type": "HyperRAM",
+      "size_mb": 16
+    }
+  ],
   "flash": [
     {
       "type": "QSPI",

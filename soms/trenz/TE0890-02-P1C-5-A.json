@@ -12,16 +12,16 @@
     "part": "XC7S25-1FTGB196C",
     "vendor": "amd-xilinx"
   },
+  "memory": [
+    {
+      "type": "HyperRAM",
+      "size_mb": 8
+    }
+  ],
   "flash": [
     {
       "type": "QSPI",
       "size_mb": 8
-    }
-  ],
-  "sensors": [
-    {
-      "type": "imu",
-      "part": "LSM303D"
     }
   ],
   "clocking": {

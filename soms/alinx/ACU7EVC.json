@@ -32,13 +32,7 @@
     },
     {
       "type": "eMMC",
-      "size_mb": 8192
-    }
-  ],
-  "sensors": [
-    {
-      "type": "temperature",
-      "part": "LM75"
+      "size_mb": 32768
     }
   ]
 }

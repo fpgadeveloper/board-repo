@@ -12,6 +12,9 @@
       "gen": 2
     }
   ],
+  "video": {
+    "vga_out": 1
+  },
   "networking": {
     "ethernet": [
       {
@@ -19,7 +22,7 @@
         "ports": 4
       }
     ],
-    "sfp": 4
+    "sfp_plus": 4
   },
   "usb_bridge": [
     {
@@ -28,5 +31,9 @@
         "uart"
       ]
     }
-  ]
+  ],
+  "user_io": {
+    "leds": 2,
+    "pushbuttons": 2
+  }
 }

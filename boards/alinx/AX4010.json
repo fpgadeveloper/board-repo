@@ -12,6 +12,12 @@
     "part": "EP4CE10F17C8N",
     "vendor": "altera"
   },
+  "memory": [
+    {
+      "type": "SDRAM",
+      "size_mb": 32
+    }
+  ],
   "flash": [
     {
       "type": "SPI",

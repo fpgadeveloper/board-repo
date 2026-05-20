@@ -5,6 +5,12 @@
   "url": "https://www.en.alinx.com/Product/FPGA-Development-Boards/Artix-7/AX7A200B.html",
   "vendor": "alinx",
   "price": null,
+  "sensors": [
+    {
+      "type": "temperature",
+      "part": "LM75"
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -35,5 +41,9 @@
   ],
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 4
   }
 }

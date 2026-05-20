@@ -21,5 +21,8 @@
       "size_mb": 32768,
       "width_bits": 256
     }
-  ]
+  ],
+  "clocking": {
+    "programmable": true
+  }
 }

@@ -15,8 +15,7 @@
   "memory": [
     {
       "type": "DDR4",
-      "size_mb": 8192,
-      "ecc": true
+      "size_mb": 8192
     }
   ],
   "flash": [

@@ -24,6 +24,9 @@
       "size_mb": 16
     }
   ],
+  "high_speed_io": {
+    "displayport_transceiver": 2
+  },
   "video": {
     "hdmi_in": 1,
     "hdmi_out": 1

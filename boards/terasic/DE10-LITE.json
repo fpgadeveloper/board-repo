@@ -12,6 +12,12 @@
     "part": "10M50DAF484C7G",
     "vendor": "altera"
   },
+  "memory": [
+    {
+      "type": "SDRAM",
+      "size_mb": 64
+    }
+  ],
   "sensors": [
     {
       "type": "accelerometer"

@@ -12,7 +12,8 @@
   "memory": [
     {
       "type": "LPDDR4",
-      "size_mb": 16384
+      "size_mb": 16384,
+      "width_bits": 256
     }
   ],
   "flash": [
@@ -24,5 +25,8 @@
       "type": "eMMC",
       "size_mb": 32768
     }
-  ]
+  ],
+  "clocking": {
+    "programmable": true
+  }
 }

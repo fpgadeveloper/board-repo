@@ -7,7 +7,7 @@
   "price": null,
   "pcie": [
     {
-      "type": "Slot",
+      "type": "Edge",
       "lanes": 4,
       "gen": 4
     }
@@ -38,5 +38,9 @@
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 2,
+    "pushbuttons": 2
   }
 }

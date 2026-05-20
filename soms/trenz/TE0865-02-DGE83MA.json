@@ -1,6 +1,6 @@
 {
   "mpn": "TE0865-02-DGE83MA",
-  "name": "TE0865 \u2014 ZU17EG-2E, 4 GB DDR4",
+  "name": "TE0865 — ZU17EG-2E, 4 GB DDR4",
   "status": "active",
   "url": "https://www.trenz-electronic.de/en/MPSoC-Module-with-Zynq-UltraScale-ZU17EG-2E-4-GB-DDR4-ECC-PS-4-GB-DDR4-PL/TE0865-02-DGE83MA",
   "vendor": "trenz",
@@ -15,16 +15,21 @@
   "memory": [
     {
       "type": "DDR4",
+      "size_mb": 4096,
+      "ecc": true
+    },
+    {
+      "type": "DDR4",
       "size_mb": 4096
     }
   ],
   "flash": [
     {
       "type": "QSPI",
-      "size_mb": 256
+      "size_mb": 128
     },
     {
-      "type": "SPI",
+      "type": "QSPI",
       "size_mb": 128
     },
     {
@@ -32,10 +37,11 @@
       "size_mb": 8192
     }
   ],
-  "sensors": [
+  "eeprom": [
     {
-      "type": "imu",
-      "part": "LSM303D"
+      "purpose": ["mac_address"],
+      "interface": "I2C",
+      "size_kbits": 2
     }
   ],
   "clocking": {

@@ -14,6 +14,10 @@
       "type": "DDR4",
       "size_mb": 16384,
       "form_factor": "dimm"
+    },
+    {
+      "type": "RLD3",
+      "size_mb": 288
     }
   ],
   "pcie": [

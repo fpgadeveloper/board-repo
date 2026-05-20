@@ -12,7 +12,7 @@
   "memory": [
     {
       "type": "DDR4",
-      "size_mb": 4096,
+      "size_mb": 5120,
       "width_bits": 72,
       "ecc": true
     },
@@ -34,12 +34,6 @@
     {
       "type": "eMMC",
       "size_mb": 32768
-    }
-  ],
-  "sensors": [
-    {
-      "type": "temperature",
-      "part": "LM75"
     }
   ]
 }

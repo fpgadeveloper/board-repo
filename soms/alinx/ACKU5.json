@@ -26,12 +26,9 @@
       "size_mb": 32
     }
   ],
-  "sensors": [
-    {
-      "type": "temperature",
-      "part": "LM75A"
-    }
-  ],
+  "user_io": {
+    "leds": 1
+  },
   "features": {
     "battery_backed_rtc": true
   }

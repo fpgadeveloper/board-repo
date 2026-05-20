@@ -15,16 +15,21 @@
   "memory": [
     {
       "type": "DDR4",
+      "size_mb": 4096,
+      "ecc": true
+    },
+    {
+      "type": "DDR4",
       "size_mb": 4096
     }
   ],
   "flash": [
     {
       "type": "QSPI",
-      "size_mb": 128
+      "size_mb": 64
     },
     {
-      "type": "SPI",
+      "type": "QSPI",
       "size_mb": 64
     },
     {
@@ -32,10 +37,11 @@
       "size_mb": 8192
     }
   ],
-  "sensors": [
+  "eeprom": [
     {
-      "type": "imu",
-      "part": "LSM303D"
+      "purpose": ["mac_address"],
+      "interface": "I2C",
+      "size_kbits": 2
     }
   ],
   "clocking": {

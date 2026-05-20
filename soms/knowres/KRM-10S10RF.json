@@ -12,12 +12,20 @@
   "memory": [
     {
       "type": "DDR4",
-      "size_mb": 16384,
+      "size_mb": 4096,
+      "width_bits": 40
+    },
+    {
+      "type": "DDR4",
+      "size_mb": 8192,
+      "width_bits": 72,
       "ecc": true
     },
     {
       "type": "DDR4",
-      "size_mb": 4096
+      "size_mb": 8192,
+      "width_bits": 72,
+      "ecc": true
     }
   ],
   "flash": [

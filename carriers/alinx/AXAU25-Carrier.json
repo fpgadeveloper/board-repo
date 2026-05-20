@@ -5,6 +5,12 @@
   "url": "https://www.en.alinx.com/Product/FPGA-Development-Boards/Artix-UltraScale-plus/AXAU25.html",
   "vendor": "alinx",
   "price": null,
+  "sensors": [
+    {
+      "type": "temperature",
+      "part": "LM75"
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",
@@ -38,5 +44,9 @@
   },
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 2,
+    "pushbuttons": 2
   }
 }

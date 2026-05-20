@@ -22,6 +22,10 @@
       "type": "DDR4",
       "size_mb": 2560,
       "ecc": true
+    },
+    {
+      "type": "RLD3",
+      "size_mb": 4
     }
   ],
   "flash": [

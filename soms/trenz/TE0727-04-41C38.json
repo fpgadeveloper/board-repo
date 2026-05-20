@@ -24,13 +24,19 @@
       "size_mb": 16
     }
   ],
-  "sensors": [
-    {
-      "type": "imu",
-      "part": "LSM303D"
-    }
-  ],
   "clocking": {
     "programmable": true
+  },
+  "usb_bridge": [
+    {
+      "connector": "Micro-B",
+      "functions": ["jtag", "uart"]
+    }
+  ],
+  "expansion": {
+    "raspberry_pi": 1
+  },
+  "storage": {
+    "microsd": 1
   }
 }

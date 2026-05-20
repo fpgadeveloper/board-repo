@@ -18,6 +18,9 @@
       "lanes": 2
     }
   ],
+  "video": {
+    "displayport": 1
+  },
   "networking": {
     "ethernet": [
       {
@@ -54,5 +57,8 @@
   "storage": {
     "sata": 1,
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 4
   }
 }

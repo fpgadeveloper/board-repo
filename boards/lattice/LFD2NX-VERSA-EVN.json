@@ -25,6 +25,14 @@
       "size_mb": 16
     }
   ],
+  "sensors": [
+    {
+      "type": "camera"
+    },
+    {
+      "type": "camera"
+    }
+  ],
   "pcie": [
     {
       "type": "Edge",

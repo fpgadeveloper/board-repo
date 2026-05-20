@@ -15,7 +15,8 @@
   "memory": [
     {
       "type": "DDR3L",
-      "size_mb": 512
+      "size_mb": 512,
+      "width_bits": 8
     }
   ],
   "flash": [
@@ -31,12 +32,6 @@
       ],
       "interface": "I2C",
       "size_kbits": 2
-    }
-  ],
-  "sensors": [
-    {
-      "type": "imu",
-      "part": "LSM303D"
     }
   ],
   "clocking": {

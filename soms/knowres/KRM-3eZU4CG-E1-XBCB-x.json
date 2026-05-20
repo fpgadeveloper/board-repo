@@ -12,11 +12,11 @@
   "memory": [
     {
       "type": "DDR4",
-      "size_mb": 8192
+      "size_mb": 4096
     },
     {
       "type": "DDR4",
-      "size_mb": 2048
+      "size_mb": 1024
     }
   ],
   "flash": [
@@ -28,5 +28,11 @@
       "type": "QSPI",
       "size_mb": 32
     }
-  ]
+  ],
+  "clocking": {
+    "programmable": true
+  },
+  "user_io": {
+    "leds": 4
+  }
 }

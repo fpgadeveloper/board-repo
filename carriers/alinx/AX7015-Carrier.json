@@ -45,6 +45,7 @@
     "microsd": 1
   },
   "user_io": {
-    "pushbuttons": 4
+    "leds": 5,
+    "pushbuttons": 2
   }
 }

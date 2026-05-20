@@ -40,12 +40,6 @@
       "part": "24AA025E48"
     }
   ],
-  "sensors": [
-    {
-      "type": "imu",
-      "part": "LSM303D"
-    }
-  ],
   "clocking": {
     "programmable": true
   },

@@ -30,9 +30,9 @@
   },
   "usb": [
     {
-      "connector": "Type-A",
+      "connector": "Type-C",
       "speed": "3.0",
-      "role": "host"
+      "role": "otg"
     }
   ],
   "usb_bridge": [
@@ -47,5 +47,8 @@
   "storage": {
     "sata": 1,
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 4
   }
 }

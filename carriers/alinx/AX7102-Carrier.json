@@ -12,6 +12,9 @@
       "gen": 2
     }
   ],
+  "video": {
+    "vga_out": 1
+  },
   "networking": {
     "ethernet": [
       {
@@ -19,7 +22,10 @@
         "ports": 1
       }
     ],
-    "sfp": 2
+    "sfp_plus": 2
+  },
+  "serial": {
+    "rs232": 1
   },
   "usb_bridge": [
     {
@@ -31,5 +37,12 @@
   ],
   "storage": {
     "microsd": 1
+  },
+  "user_io": {
+    "leds": 4,
+    "pushbuttons": 4
+  },
+  "features": {
+    "battery_backed_rtc": true
   }
 }

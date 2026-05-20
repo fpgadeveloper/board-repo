@@ -8,12 +8,6 @@
     "value": 598.06,
     "currency": "USD"
   },
-  "sensors": [
-    {
-      "type": "imu",
-      "part": "LSM303D"
-    }
-  ],
   "flash": [
     {
       "type": "eMMC",

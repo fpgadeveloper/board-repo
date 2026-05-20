@@ -12,7 +12,7 @@
   "memory": [
     {
       "type": "DDR3",
-      "size_mb": 1024,
+      "size_mb": 512,
       "width_bits": 32
     }
   ],
@@ -20,12 +20,6 @@
     {
       "type": "QSPI",
       "size_mb": 32
-    }
-  ],
-  "sensors": [
-    {
-      "type": "temperature",
-      "part": "LM75"
     }
   ],
   "features": {

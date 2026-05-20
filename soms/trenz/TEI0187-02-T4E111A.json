@@ -15,7 +15,13 @@
   "memory": [
     {
       "type": "LPDDR4",
-      "size_mb": 2048
+      "size_mb": 1024,
+      "width_bits": 32
+    },
+    {
+      "type": "LPDDR4",
+      "size_mb": 1024,
+      "width_bits": 32
     }
   ],
   "flash": [
@@ -26,12 +32,6 @@
     {
       "type": "eMMC",
       "size_mb": 8192
-    }
-  ],
-  "sensors": [
-    {
-      "type": "imu",
-      "part": "LSM303D"
     }
   ],
   "clocking": {

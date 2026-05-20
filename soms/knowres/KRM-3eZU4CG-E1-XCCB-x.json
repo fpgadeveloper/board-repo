@@ -28,5 +28,11 @@
       "type": "QSPI",
       "size_mb": 32
     }
-  ]
+  ],
+  "clocking": {
+    "programmable": true
+  },
+  "user_io": {
+    "leds": 4
+  }
 }
