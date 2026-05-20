@@ -2,9 +2,9 @@
 mpn: ACKU15
 name: ACKU15
 status: active
-url: https://www.en.alinx.com/Product/FPGA-Development-Boards/Kintex-UltraScale-plus/AXKU15.html
+url: https://www.en.alinx.com/Product/FPGA-System-on-Modules/Kintex-UltraScale-plus/ACKU15.html
 vendor: alinx
-price: null
+price: { value: 3894, currency: USD }
 device: { part: XCKU15P-2FFVE1517I, vendor: amd-xilinx }
 ---
 

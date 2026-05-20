@@ -2,9 +2,9 @@
 mpn: ACKU040
 name: ACKU040
 status: active
-url: https://www.en.alinx.com/detail/562
+url: https://www.en.alinx.com/Product/FPGA-System-on-Modules/Kintex-UltraScale/ACKU040.html
 vendor: alinx
-price: null
+price: { value: 868, currency: USD }
 device: { part: XCKU040-2FFVA1156I, vendor: amd-xilinx }
 ---
 

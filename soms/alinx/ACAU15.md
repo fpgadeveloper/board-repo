@@ -4,7 +4,7 @@ name: ACAU15
 status: active
 url: https://www.en.alinx.com/Product/FPGA-Development-Boards/Artix-UltraScale-plus/ACAU15.html
 vendor: alinx
-price: { value: 410.99, currency: GBP }
+price: { value: 449, currency: USD }
 device: { part: XCAU15P-2FFVB676I, vendor: amd-xilinx }
 ---
 

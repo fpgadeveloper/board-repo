@@ -2,9 +2,9 @@
 mpn: ACW47
 name: ACW47
 status: active
-url: https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-RFSoC/AXW47.html
+url: https://www.en.alinx.com/Product/SoC-System-on-Modules/Zynq-UltraScale-plus-RFSoC/ACW47.html
 vendor: alinx
-price: null
+price: { value: 5242, currency: USD }
 device: { part: XCZU47DR-2FFVE1156I, vendor: amd-xilinx }
 ---
 

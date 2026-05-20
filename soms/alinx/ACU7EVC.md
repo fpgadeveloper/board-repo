@@ -2,9 +2,9 @@
 mpn: ACU7EVC
 name: ACU7EVC
 status: active
-url: https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-MPSoC/Z7-P.html
+url: https://www.en.alinx.com/Product/SoC-System-on-Modules/Zynq-UltraScale-plus-MPSoC/ACU7EVC.html
 vendor: alinx
-price: null
+price: { value: 1647, currency: USD }
 device: { part: XCZU7EV-2FFVC1156I, vendor: amd-xilinx }
 ---
 

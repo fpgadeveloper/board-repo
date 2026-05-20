@@ -2,9 +2,9 @@
 mpn: ACU5EV
 name: ACU5EV
 status: active
-url: https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-MPSoC/AXU5EVB-E.html
+url: https://www.en.alinx.com/Product/SoC-System-on-Modules/Zynq-UltraScale-plus-MPSoC/ACU5EV.html
 vendor: alinx
-price: null
+price: { value: 898, currency: USD }
 device: { part: XCZU5EV-2SFVC784I, vendor: amd-xilinx }
 ---
 

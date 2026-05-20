@@ -2,9 +2,9 @@
 mpn: ACU3EG
 name: ACU3EG
 status: active
-url: https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-MPSoC/AXU3EGB.html
+url: https://www.en.alinx.com/Product/SoC-System-on-Modules/Zynq-UltraScale-plus-MPSoC/ACU3EG.html
 vendor: alinx
-price: null
+price: { value: 539, currency: USD }
 device: { part: XCZU3EG-1SFVC784I, vendor: amd-xilinx }
 ---
 

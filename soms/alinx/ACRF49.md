@@ -2,9 +2,9 @@
 mpn: ACRF49
 name: ACRF49
 status: active
-url: https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-RFSoC/AXRF49.html
+url: https://www.en.alinx.com/Product/SoC-System-on-Modules/Zynq-UltraScale-plus-RFSoC/ACRF49.html
 vendor: alinx
-price: null
+price: { value: 17971, currency: USD }
 device: { part: XCZU49DR-2FFVF1760I, vendor: amd-xilinx }
 ---
 

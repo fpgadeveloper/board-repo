@@ -2,9 +2,9 @@
 mpn: ACAU25
 name: ACAU25
 status: active
-url: https://www.en.alinx.com/Product/FPGA-Development-Boards/Artix-UltraScale-plus/AXAU25.html
+url: https://www.en.alinx.com/Product/FPGA-Development-Boards/Artix-UltraScale-plus/ACAU25.html
 vendor: alinx
-price: null
+price: { value: 584, currency: USD }
 device: { part: XCAU25P-2FFVB676I, vendor: amd-xilinx }
 ---
 

@@ -2,9 +2,9 @@
 mpn: ACVU13
 name: ACVU13
 status: active
-url: https://www.en.alinx.com/Product/FPGA-Development-Boards/Virtex-UltraScale-plus/AXVU13G.html
+url: https://www.en.alinx.com/Product/FPGA-System-on-Modules/Virtex-UltraScale-plus/ACVU13.html
 vendor: alinx
-price: null
+price: { value: 11981, currency: USD }
 device: { part: XCVU13P-2FHGB2104I, vendor: amd-xilinx }
 ---
 

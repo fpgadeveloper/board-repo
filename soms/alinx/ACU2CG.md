@@ -2,9 +2,9 @@
 mpn: ACU2CG
 name: ACU2CG
 status: active
-url: https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-MPSoC/AXU2CGB-E.html
+url: https://www.en.alinx.com/Product/SoC-System-on-Modules/Zynq-UltraScale-plus-MPSoC/ACU2CG.html
 vendor: alinx
-price: null
+price: { value: 404, currency: USD }
 device: { part: XCZU2CG-1SFVC784E, vendor: amd-xilinx }
 ---
 

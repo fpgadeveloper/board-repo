@@ -2,9 +2,9 @@
 mpn: ACU19EG
 name: ACU19EG
 status: active
-url: https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-MPSoC/Z19-P.html
+url: https://www.en.alinx.com/Product/SoC-System-on-Modules/Zynq-UltraScale-plus-MPSoC/ACU19EG.html
 vendor: alinx
-price: null
+price: { value: 4493, currency: USD }
 device: { part: XCZU19EG-2FFVC1760I, vendor: amd-xilinx }
 ---
 
