@@ -8,14 +8,26 @@ price: { value: 1999, currency: USD }
 device: { part: A5ED065BB32AE4SR0, vendor: altera }
 ---
 
+## Memory
+- DDR4 4GB 32-bit
+- DDR4 4GB 32-bit
+
+## Flash
+- QSPI 64MB
+- eMMC 8GB
+
+## Sensors
+- Temperature
+
 ## PCIe
-- Edge Gen3 x4
+- iPass Gen3 x4
 
 ## Video
 - HDMI Out x1
 - MIPI CSI x2
 
 ## Networking
+- 1GbE x1
 - 2.5GbE x1
 - QSFP+ x1
 
@@ -24,5 +36,19 @@ device: { part: A5ED065BB32AE4SR0, vendor: altera }
 
 ## Expansion
 - FMC+ "FMC+"
-- Pmod x2
-- GPIO Header x1
+- GPIO Header x2
+
+## Storage
+- microSD x1
+
+## User I/O
+- LEDs x5
+- Pushbuttons x5
+- DIP switches x4
+
+## Features
+- Power monitoring
+
+## Extras
+- USB 3.1 Gen1 Type-C port (HPS)
+- 2x6 TMD header

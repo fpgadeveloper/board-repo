@@ -103,7 +103,7 @@ Compatibility between entities lives under `relationships/`. These files stay **
 | `relationships/fmc-mates/<fmc-card-vendor>/<fmc-card-mpn>.json` | FMC card | The hosts (standalone boards, kits, carriers) the card mates with, and on which slot. |
 | `relationships/som-mates/<carrier-vendor>/<carrier-mpn>.json` | carrier | The SoMs that physically and electrically fit on the carrier. |
 
-The parent folder mirrors the owning entity's vendor folder — so an FMC card at `fmc-cards/opsero/OP120.md` has its compatibility list at `relationships/fmc-mates/opsero/OP120.json`, and a carrier at `carriers/avnet/AES-ZU7EV-1-CC-FMC-G.md` has its list at `relationships/som-mates/avnet/AES-ZU7EV-1-CC-FMC-G.json`. This makes it easy for each vendor to maintain compatibility lists for their own products.
+The parent folder mirrors the owning entity's vendor folder — so an FMC card at `fmc-cards/opsero/OP120.md` has its compatibility list at `relationships/fmc-mates/opsero/OP120.json`, and a carrier at `carriers/tria/AES-ZUEV-CC-G.md` has its list at `relationships/som-mates/tria/AES-ZUEV-CC-G.json`. This makes it easy for each vendor to maintain compatibility lists for their own products.
 
 The filename stem (e.g. `OP120`) must match the bundle's top-level key field (`fmc_card` or `carrier`).
 
@@ -125,7 +125,7 @@ One file per FMC card. Each entry in `compatible_hosts` describes one (host, slo
       "notes": "2x 40G."
     },
     {
-      "host": "AES-ZU7EV-1-CC-FMC-G",
+      "host": "AES-ZUEV-CC-G",
       "host_type": "carrier",
       "target_slot": "HPC",
       "verified_by": "vendor"

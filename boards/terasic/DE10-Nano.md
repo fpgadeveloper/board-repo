@@ -11,6 +11,12 @@ device: { part: 5CSEBA6U23I7N, vendor: altera }
 ## Memory
 - DDR3 1GB 32-bit
 
+## Analog
+- ADC
+
+## Sensors
+- Accelerometer
+
 ## Video
 - HDMI Out x1
 
@@ -21,10 +27,17 @@ device: { part: 5CSEBA6U23I7N, vendor: altera }
 - Micro-B 2.0 OTG
 
 ## USB UART/JTAG
-- Mini-B JTAG/UART
+- Mini-B JTAG
+- Mini-B UART
 
 ## Expansion
 - Arduino x1
+- GPIO Header x2
 
 ## Storage
 - microSD x1
+
+## User I/O
+- LEDs x9
+- Pushbuttons x3
+- DIP switches x4

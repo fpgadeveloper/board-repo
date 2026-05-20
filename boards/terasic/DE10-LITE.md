@@ -9,7 +9,7 @@ device: { part: 10M50DAF484C7G, vendor: altera }
 ---
 
 ## Memory
-- SDRAM 64MB
+- SDRAM 64MB 16-bit
 
 ## Sensors
 - Accelerometer
@@ -23,3 +23,9 @@ device: { part: 10M50DAF484C7G, vendor: altera }
 ## Expansion
 - Arduino x1
 - GPIO Header x1
+
+## User I/O
+- LEDs x10
+- Pushbuttons x2
+- DIP switches x10
+- 7-segment displays x6

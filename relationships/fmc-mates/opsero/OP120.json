@@ -2,7 +2,7 @@
   "fmc_card": "OP120",
   "compatible_hosts": [
     {
-      "host": "AES-ZU7EV-1-CC-FMC-G",
+      "host": "AES-ZUEV-CC-G",
       "host_type": "carrier",
       "verified_by": "vendor",
       "target_slot": "HPC",

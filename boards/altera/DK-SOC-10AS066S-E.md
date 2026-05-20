@@ -15,16 +15,19 @@ device: { part: 10AS066N3F40E2SG, vendor: altera }
 ## PCIe
 - Edge Gen3 x8
 
+## Video
+- DisplayPort x1
+
 ## Networking
-- 1GbE x2
+- 1GbE x3
 - SFP+ x2
 
 ## USB UART/JTAG
 - Micro-B JTAG
 
 ## Expansion
-- FMC HPC "HPC"
-- FMC LPC "LPC"
+- FMC HPC "FMCA"
+- FMC LPC "FMCB"
 
 ## Storage
 - microSD x1

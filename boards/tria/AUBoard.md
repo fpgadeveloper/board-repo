@@ -2,8 +2,8 @@
 mpn: AUBoard
 name: AUBoard
 status: active
-url: https://www.avnet.com/americas/products/avnet-boards/avnet-board-families/auboard-15p-fpga-development-kit/
-vendor: avnet
+url: https://www.tria-technologies.com/product/auboard-15p/
+vendor: tria
 price: { value: 699, currency: USD }
 device: { part: XCAU15P-2FFVB676E, vendor: amd-xilinx }
 ---
@@ -21,14 +21,14 @@ device: { part: XCAU15P-2FFVB676E, vendor: amd-xilinx }
 - Programmable
 
 ## PCIe
-- Edge x4
+- Edge Gen4 x4
 
 ## Video
 - HDMI In x1
 - HDMI Out x1
 
 ## Networking
-- 1GbE x1
+- 100Mbps x1
 - SFP+ x1
 
 ## USB UART/JTAG
@@ -36,3 +36,10 @@ device: { part: XCAU15P-2FFVB676E, vendor: amd-xilinx }
 
 ## Expansion
 - FMC HPC "HPC"
+- Click x1
+
+## User I/O
+- LEDs x4
+- RGB LEDs x2
+- Pushbuttons x4
+- DIP switches x4
