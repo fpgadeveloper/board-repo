@@ -1,0 +1,15 @@
+---
+mpn: LIFCL-33U-EVN
+name: CrossLinkU-NX Evaluation
+status: active
+url: https://www.latticesemi.com/products/developmentboardsandkits/crosslinku-nx-evaluation-board
+vendor: lattice
+price: { value: 150, currency: USD }
+device: { part: LIFCL-33U-7CTG104C, vendor: lattice }
+---
+
+## USB
+- Type-C 3.0 device
+
+## USB UART/JTAG
+- Micro-B JTAG/I2C

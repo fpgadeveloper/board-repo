@@ -1,0 +1,32 @@
+---
+mpn: AX7A035-Carrier
+name: AX7A035 Base Board
+status: active
+url: https://www.en.alinx.com/detail/496
+vendor: alinx
+price: null
+---
+
+## Sensors
+- Temperature LM75
+
+## PCIe
+- Edge Gen2 x4
+
+## Video
+- HDMI In x1
+- HDMI Out x1
+
+## Networking
+- 1GbE x1
+- SFP x2
+
+## USB UART/JTAG
+- Mini-B UART
+
+## Storage
+- microSD x1
+
+## User I/O
+- LEDs x4
+- Pushbuttons x4

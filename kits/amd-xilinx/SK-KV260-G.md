@@ -1,0 +1,9 @@
+---
+mpn: SK-KV260-G
+name: Kria KV260 Vision AI Starter Kit
+status: active
+url: https://www.amd.com/en/products/system-on-modules/kria/k26/kv260-vision-starter-kit.html
+vendor: amd-xilinx
+price: { value: 249, currency: USD }
+composition: { som: SM-K26-XCL2GC, carrier: KV260-Carrier }
+---

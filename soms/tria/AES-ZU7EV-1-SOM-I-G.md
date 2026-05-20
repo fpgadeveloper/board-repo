@@ -1,0 +1,18 @@
+---
+mpn: AES-ZU7EV-1-SOM-I-G
+name: UltraZed-EV SOM
+status: active
+url: https://www.tria-technologies.com/product/ultrazed-ev/
+vendor: tria
+price: { value: 1469, currency: USD }
+device: { part: XCZU7EV-1FBVB900I, vendor: amd-xilinx }
+---
+
+## Memory
+- DDR4 4GB 64-bit
+- DDR4 1GB 16-bit
+
+## Flash
+- QSPI 32MB
+- QSPI 32MB
+- eMMC 8GB

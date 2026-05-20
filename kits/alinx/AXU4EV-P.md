@@ -1,0 +1,9 @@
+---
+mpn: AXU4EV-P
+name: AXU4EV-P
+status: active
+url: https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-MPSoC/AXU4EVB-P.html
+vendor: alinx
+price: { value: 1053.99, currency: GBP }
+composition: { som: ACU4EV, carrier: AXU4EV-P-Carrier }
+---

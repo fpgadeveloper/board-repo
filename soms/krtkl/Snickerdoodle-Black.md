@@ -1,0 +1,19 @@
+---
+mpn: Snickerdoodle-Black
+name: Snickerdoodle Black
+status: active
+url: https://krtkl.com/snickerdoodle/
+vendor: krtkl
+price: { value: 245, currency: USD }
+device: { part: XC7Z020-3CLG400E, vendor: amd-xilinx }
+---
+
+## Memory
+- DDR3 512MB
+
+## Storage
+- microSD x1
+
+## Wireless
+- WiFi
+- Bluetooth

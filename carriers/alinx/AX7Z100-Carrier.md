@@ -1,0 +1,37 @@
+---
+mpn: AX7Z100-Carrier
+name: AX7Z100 Base Board
+status: active
+url: https://www.en.alinx.com/Product/SoC-development-Boards/Zynq-7000-SoC/AX7Z100B.html
+vendor: alinx
+price: null
+---
+
+## Sensors
+- Temperature LM75
+
+## PCIe
+- Edge Gen2 x8
+
+## Video
+- HDMI In x1
+- HDMI Out x1
+- MIPI CSI x1
+
+## Networking
+- 1GbE x2
+- SFP+ x4
+
+## USB
+- Type-A 2.0 host x4
+
+## USB UART/JTAG
+- Mini-B UART
+
+## Storage
+- SATA x2
+- microSD x1
+
+## User I/O
+- LEDs x4
+- Pushbuttons x4

@@ -1,0 +1,16 @@
+---
+mpn: ACKU15
+name: ACKU15
+status: active
+url: https://www.en.alinx.com/Product/FPGA-Development-Boards/Kintex-UltraScale-plus/AXKU15.html
+vendor: alinx
+price: null
+device: { part: XCKU15P-2FFVE1517I, vendor: amd-xilinx }
+---
+
+## Memory
+- DDR4 10GB 80-bit
+
+## Flash
+- QSPI 64MB
+- QSPI 64MB

@@ -1,0 +1,26 @@
+---
+mpn: LFCPNX-EVN
+name: LFCPNX-EVN
+status: active
+url: https://www.latticesemi.com/products/developmentboardsandkits/certuspro-nxevaluationboard
+vendor: lattice
+price: { value: 200, currency: USD }
+device: { part: LFCPNX-100-9LFG672C, vendor: lattice }
+---
+
+## Flash
+- SPI 16MB
+
+## USB UART/JTAG
+- Mini-B JTAG/I2C
+
+## Expansion
+- FMC HPC "HPC"
+- Pmod x3
+- Raspberry Pi x1
+- GPIO Header x1
+
+## User I/O
+- LEDs x24
+- Pushbuttons x4
+- DIP switches x8

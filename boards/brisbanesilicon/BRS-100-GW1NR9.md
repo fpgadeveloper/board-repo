@@ -1,0 +1,16 @@
+---
+mpn: BRS-100-GW1NR9
+name: BRS-100-GW1NR9
+status: active
+url: https://brisbanesilicon.com.au/brs-100-gw1nr9/
+vendor: brisbanesilicon
+price: { value: 19.95, currency: USD }
+device: { part: GW1NR-LV9QFN88PC7, vendor: gowin }
+---
+
+## USB UART/JTAG
+- Type-C JTAG/UART
+
+## User I/O
+- LEDs x6
+- Pushbuttons x2

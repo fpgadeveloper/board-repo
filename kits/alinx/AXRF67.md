@@ -1,0 +1,9 @@
+---
+mpn: AXRF67
+name: AXRF67
+status: active
+url: https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-RFSoC/AXRF67.html
+vendor: alinx
+price: { value: 9534.99, currency: GBP }
+composition: { som: ACRF67, carrier: AXRF67-Carrier }
+---

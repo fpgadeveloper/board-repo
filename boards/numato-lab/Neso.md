@@ -1,0 +1,18 @@
+---
+mpn: Neso
+name: Neso
+status: active
+url: https://numato.com/product/neso-artix-7-fpga-development-board/
+vendor: numato-lab
+price: { value: 299.99, currency: USD }
+device: { part: XC7A100T-2CSG324C, vendor: amd-xilinx }
+---
+
+## Memory
+- DDR3 256MB
+
+## Flash
+- SPI 16MB
+
+## USB UART/JTAG
+- Micro-B JTAG/UART

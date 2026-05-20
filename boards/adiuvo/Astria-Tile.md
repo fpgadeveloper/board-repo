@@ -1,0 +1,21 @@
+---
+mpn: Astria-Tile
+name: Astria Tile
+status: active
+url: https://www.adiuvoengineering.com/product-page/astria-embedded-system-tile
+vendor: adiuvo
+price: { value: 300, currency: GBP }
+device: { part: XC7S25-1CSGA225C, vendor: amd-xilinx }
+---
+
+## Memory
+- PSRAM 4MB
+
+## Flash
+- QSPI 32MB
+
+## USB UART/JTAG
+- Micro-B JTAG
+
+## User I/O
+- LEDs x2

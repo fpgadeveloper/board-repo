@@ -3,31 +3,33 @@ name: Validate entities
 on:
   pull_request:
     paths:
-      - "boards/**/*.json"
-      - "soms/**/*.json"
-      - "carriers/**/*.json"
-      - "kits/**/*.json"
-      - "fmc-cards/**/*.json"
+      - "boards/**/*.md"
+      - "soms/**/*.md"
+      - "carriers/**/*.md"
+      - "kits/**/*.md"
+      - "fmc-cards/**/*.md"
       - "relationships/**/*.json"
-      - "notes/**/*.md"
       - "schema.json"
       - "vendors.json"
+      - "MARKDOWN_FORMAT.md"
       - "README.md"
+      - "scripts/json_from_md.py"
       - "scripts/update-readme.py"
       - ".github/workflows/validate.yml"
   push:
     branches: [main]
     paths:
-      - "boards/**/*.json"
-      - "soms/**/*.json"
-      - "carriers/**/*.json"
-      - "kits/**/*.json"
-      - "fmc-cards/**/*.json"
+      - "boards/**/*.md"
+      - "soms/**/*.md"
+      - "carriers/**/*.md"
+      - "kits/**/*.md"
+      - "fmc-cards/**/*.md"
       - "relationships/**/*.json"
-      - "notes/**/*.md"
       - "schema.json"
       - "vendors.json"
+      - "MARKDOWN_FORMAT.md"
       - "README.md"
+      - "scripts/json_from_md.py"
       - "scripts/update-readme.py"
       - ".github/workflows/validate.yml"
 
@@ -41,13 +43,15 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install jsonschema
-        run: pip install jsonschema referencing
+      - name: Install dependencies
+        run: pip install jsonschema referencing pyyaml
 
-      - name: Validate entities and relationships against schema
+      - name: Validate entities and relationships
         run: |
           python - <<'PY'
           import json, glob, os, sys
+          sys.path.insert(0, "scripts")
+          from json_from_md import parse
           from jsonschema import Draft202012Validator
           from referencing import Registry, Resource
 
@@ -55,6 +59,7 @@ jobs:
               schema = json.load(f)
           registry = Registry().with_resource("urn:root", Resource.from_contents(schema))
 
+          # Entity .md files parse to JSON via the strict canonical parser.
           ENTITY_FOLDERS = {
               "boards": "standalone",
               "soms": "som",
@@ -62,6 +67,7 @@ jobs:
               "kits": "kit",
               "fmc-cards": "fmc_card",
           }
+          # Relationship bundles stay JSON — purely relational, not contributor-edited.
           RELATIONSHIP_FOLDERS = {
               "som-mates": "som_mates",
               "fmc-mates": "fmc_mates",
@@ -74,11 +80,31 @@ jobs:
 
           errors = 0
           entities = {t: {} for t in ENTITY_FOLDERS.values()}
+          all_mpns = []  # (mpn, path) across every entity folder — duplicate check
 
           for folder, defname in ENTITY_FOLDERS.items():
-              for path in sorted(glob.glob(f"{folder}/**/*.json", recursive=True)):
-                  with open(path) as f:
-                      rec = json.load(f)
+              for path in sorted(glob.glob(f"{folder}/**/*.md", recursive=True)):
+                  with open(path, encoding="utf-8") as f:
+                      md_text = f.read()
+                  # Front-matter that doesn't parse, or missing required identity
+                  # fields, is a hard error (parse() raises).
+                  try:
+                      result = parse(md_text, defname)
+                  except Exception as e:
+                      print(f"::error file={path}::failed to parse: {e}")
+                      errors += 1
+                      continue
+                  # Parser warnings: an unrecognized bullet in a *known* section is
+                  # blocking (the PR must be canonicalized before merge). An unknown
+                  # *section heading* is tolerated — preserved in the .md, surfaced
+                  # as an annotation only. (See REWORK.md "PR validation workflow".)
+                  for w in result.warnings:
+                      if "unknown section" in w:
+                          print(f"::warning file={path}::{w}")
+                      else:
+                          print(f"::error file={path}::{w}")
+                          errors += 1
+                  rec = result.data
                   for e in validators[defname].iter_errors(rec):
                       print(f"::error file={path}::{e.json_path}: {e.message}")
                       errors += 1
@@ -92,19 +118,31 @@ jobs:
                       print(f"::error file={path}::vendor field {rec.get('vendor')!r} does not match folder {parent!r}")
                       errors += 1
                   entities[defname][rec.get("mpn")] = rec
+                  if rec.get("mpn"):
+                      all_mpns.append((rec["mpn"], path))
+
+          # Duplicate MPNs across all entity folders.
+          from collections import Counter
+          counts = Counter(m for m, _ in all_mpns)
+          for mpn, c in counts.items():
+              if c > 1:
+                  for m, p in all_mpns:
+                      if m == mpn:
+                          print(f"::error file={p}::Duplicate MPN: {mpn}")
+                  errors += 1
 
           # Cross-ref: kit compositions must point at existing SoM + carrier.
           for mpn, kit in entities["kit"].items():
               comp = kit.get("composition") or {}
               if comp.get("som") not in entities["som"]:
-                  print(f"::error file=kits/{kit.get('vendor')}/{mpn}.json::composition.som {comp.get('som')!r} not in soms/")
+                  print(f"::error file=kits/{kit.get('vendor')}/{mpn}.md::composition.som {comp.get('som')!r} not in soms/")
                   errors += 1
               if comp.get("carrier") not in entities["carrier"]:
-                  print(f"::error file=kits/{kit.get('vendor')}/{mpn}.json::composition.carrier {comp.get('carrier')!r} not in carriers/")
+                  print(f"::error file=kits/{kit.get('vendor')}/{mpn}.md::composition.carrier {comp.get('carrier')!r} not in carriers/")
                   errors += 1
 
-          # Cross-ref: relationship bundles must point at existing entities;
-          # filename stem must match the bundle key (fmc_card or carrier);
+          # Cross-ref: relationship bundles (still JSON) must point at existing
+          # entities; filename stem must match the bundle key (fmc_card or carrier);
           # parent folder must match the owning entity's vendor.
           host_lookups = {"standalone": entities["standalone"], "kit": entities["kit"], "carrier": entities["carrier"]}
           owner_entity_type = {"som_mates": "carrier", "fmc_mates": "fmc_card"}
@@ -156,53 +194,3 @@ jobs:
             echo "::error file=README.md::README.md is out of sync with vendors.json. Run 'python scripts/update-readme.py' locally and commit the change."
             exit 1
           fi
-
-      - name: Check notes/ files match an existing entity
-        run: |
-          python - <<'PY'
-          import glob, os, sys
-
-          # Notes can attach to any entity type — look across all entity folders.
-          ENTITY_FOLDERS = ["boards", "soms", "carriers", "kits", "fmc-cards"]
-          orphans = []
-          for path in sorted(glob.glob("notes/**/*.md", recursive=True)):
-              rel_parts = os.path.relpath(path, "notes").split(os.sep)
-              if len(rel_parts) != 2:
-                  continue
-              vendor, filename = rel_parts
-              mpn = os.path.splitext(filename)[0]
-              if not any(os.path.isfile(os.path.join(f, vendor, f"{mpn}.json")) for f in ENTITY_FOLDERS):
-                  orphans.append((path, vendor, mpn))
-
-          for note, vendor, mpn in orphans:
-              print(f"::error file={note}::Orphaned note: no entity {vendor}/{mpn}.json found in boards/, soms/, carriers/, kits/, or fmc-cards/")
-          if orphans:
-              sys.exit(1)
-          print("All notes have matching entity files.")
-          PY
-
-      - name: Check for duplicate MPNs across entity folders
-        run: |
-          python - <<'PY'
-          import json, glob, sys
-          from collections import Counter
-
-          mpns = []
-          for folder in ["boards", "soms", "carriers", "kits", "fmc-cards"]:
-              for path in sorted(glob.glob(f"{folder}/**/*.json", recursive=True)):
-                  with open(path) as f:
-                      rec = json.load(f)
-                  mpn = rec.get("mpn")
-                  if mpn:
-                      mpns.append((mpn, path))
-
-          counts = Counter(m for m, _ in mpns)
-          dupes = [m for m, c in counts.items() if c > 1]
-          if dupes:
-              for mpn in dupes:
-                  paths = [p for m, p in mpns if m == mpn]
-                  for p in paths:
-                      print(f"::error file={p}::Duplicate MPN: {mpn}")
-              sys.exit(1)
-          print(f"{len(mpns)} MPNs across all entity folders, no duplicates")
-          PY

@@ -1,6 +1,6 @@
 # Canonical markdown format
 
-Reference spec for the per-entity `.md` files in this repo. Defines exactly what the strict parser (`scripts/json_from_md.py` in the website repo) accepts. Read alongside `schema.json` — schema says what data is legal, this doc says what string form represents it.
+Reference spec for the per-entity `.md` files in this repo. Defines exactly what the strict parser (`scripts/json_from_md.py`, in this repo) accepts. Read alongside `schema.json` — schema says what data is legal, this doc says what string form represents it.
 
 Audiences:
 - **Contributors** editing `.md` files on GitHub — write canonical bullets, the validator will be happy. If you don't know the canonical form, write what makes sense to you; the maintainer's PR script will canonicalize it.
@@ -93,7 +93,7 @@ Grammar: `<type> <size> [<width>-bit] [ECC] [<form_factor>]`
 
 | Token | Schema field | Form |
 |---|---|---|
-| `type` | `type` | Enum literal: `DDR3`, `DDR4`, `LPDDR4`, `HBM2`, `QDR-II+`, etc. |
+| `type` | `type` | Enum literal: `SDRAM`, `DDR3`, `DDR4`, `LPDDR`, `LPDDR4`, `HBM2`, `QDR-II+`, `RLD3`, `HyperRAM`, `PSRAM`, etc. |
 | `size` | `size_mb` | Integer + `GB` (when `size_mb` is a multiple of 1024) or `MB` |
 | `width` | `width_bits` | `<N>-bit` |
 | `ECC` | `ecc: true` | Literal `ECC` |
@@ -169,7 +169,7 @@ Grammar: `<type> [<part>]`
 
 | Token | Schema field | Form |
 |---|---|---|
-| `type` | `type` | Display label: `IMU`, `Accelerometer`, `Gyroscope`, `Magnetometer`, `Temperature`, `Pressure`, `Humidity`, `Light`, `Proximity`, `Microphone` |
+| `type` | `type` | Display label: `IMU`, `Accelerometer`, `Gyroscope`, `Magnetometer`, `Temperature`, `Pressure`, `Humidity`, `Light`, `Proximity`, `Microphone`, `Camera` |
 | `part` | `part` | Manufacturer part number |
 
 Examples:
@@ -258,6 +258,7 @@ Schema: `high_speed_io` (object of counts).
 | `SMA transceiver pairs xN` | `sma_transceiver_pairs` |
 | `Samtec FireFly xN` | `firefly` |
 | `SlimSAS xN` | `slimsas` |
+| `Mini-DP transceiver xN` | `displayport_transceiver` |
 
 ### `## Video`
 
@@ -350,7 +351,7 @@ Grammar: `<connector> <functions> [xN]`
 | Token | Schema field | Form |
 |---|---|---|
 | `connector` | `connector` | Same set as USB |
-| `functions` | `functions[]` | Joined with `/`, uppercased: `JTAG`, `UART`, `JTAG/UART` |
+| `functions` | `functions[]` | Joined with `/`, uppercased: `JTAG`, `UART`, `I2C`, e.g. `JTAG/UART`, `JTAG/I2C` |
 | `xN` | `ports` | Omit when 1 |
 
 Examples:
@@ -481,11 +482,18 @@ The parser (`scripts/json_from_md.py`) is strict but tolerant of unmodeled data:
 
 1. **Front-matter** must parse as YAML and match the entity-type field set above. Failure to parse is a hard error.
 2. **Section headings** are matched exactly (case-sensitive, whitespace-normalized). Unknown headings (e.g. `## Power`) leave the section preserved in markdown but unparsed — they don't error.
-3. **Bullets in known sections** are matched against the grammar above. Recognized bullets become JSON. Unrecognized bullets emit a warning but don't error — they remain in the markdown for the next pass to handle.
+3. **Bullets in known sections** are matched against the grammar above. Recognized bullets become JSON. Unrecognized bullets emit a warning — the parser itself never raises on them; they remain in the markdown for the next pass to handle.
 4. **`## Extras` and `## Notes`** are never parsed into JSON. Extras bullets survive verbatim; Notes is rendered to HTML at build time.
 5. **Schema validation** runs on the produced JSON. Schema failure = hard error.
 
-A PR validator failure means the parsed JSON didn't satisfy the schema, or required identity fields are missing. It does **not** mean unknown bullets — those are surfaced as warnings only.
+"Warns, doesn't raise" is *parser* behaviour. CI policy is stricter — `.github/workflows/validate.yml` **fails** a PR when:
+
+- front-matter fails to parse or is missing a required identity field;
+- the produced JSON fails schema validation;
+- an MPN collides across the entity folders;
+- a bullet in a **known section** fails to match the canonical grammar.
+
+An **unknown section heading** (e.g. `## Power`) does *not* fail CI — it's reported as an annotation and the section is preserved in the `.md`. `## Extras` content never fails anything. So contributors don't have to nail canonical form on the first push: near-miss bullets show red until the maintainer's PR-processing script canonicalizes them, but unmodeled features parked in `## Extras` (or a whole unknown section) sail through.
 
 ## Round-trip and stability
 

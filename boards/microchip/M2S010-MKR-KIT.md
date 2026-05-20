@@ -1,0 +1,12 @@
+---
+mpn: M2S010-MKR-KIT
+name: SmartFusion2 Maker
+status: active
+url: https://www.microchip.com/en-us/development-tool/m2s010-mkr-kit
+vendor: microchip
+price: { value: 79, currency: USD }
+device: { part: M2S010T-TQ144, vendor: microchip }
+---
+
+## Networking
+- 1GbE x1

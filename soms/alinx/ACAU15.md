@@ -1,0 +1,15 @@
+---
+mpn: ACAU15
+name: ACAU15
+status: active
+url: https://www.en.alinx.com/Product/FPGA-Development-Boards/Artix-UltraScale-plus/ACAU15.html
+vendor: alinx
+price: { value: 410.99, currency: GBP }
+device: { part: XCAU15P-2FFVB676I, vendor: amd-xilinx }
+---
+
+## Memory
+- DDR4 1GB 16-bit
+
+## Flash
+- QSPI 32MB

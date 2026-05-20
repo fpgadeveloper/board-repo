@@ -1,0 +1,32 @@
+---
+mpn: AXRF47-Carrier
+name: AXRF47 Base Board
+status: active
+url: https://www.en.alinx.com/detail/763
+vendor: alinx
+price: null
+---
+
+## Clocking
+- Programmable
+
+## M.2
+- M-key x1
+
+## Networking
+- 1GbE x1
+- SFP28 x1
+- QSFP28 x1
+
+## USB
+- Type-C 3.0 OTG
+
+## USB UART/JTAG
+- Type-C JTAG/UART
+
+## Storage
+- SATA x1
+- microSD x1
+
+## User I/O
+- LEDs x4

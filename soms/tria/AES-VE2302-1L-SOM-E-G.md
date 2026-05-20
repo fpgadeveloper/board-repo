@@ -1,0 +1,19 @@
+---
+mpn: AES-VE2302-1L-SOM-E-G
+name: Versal AI Edge - VE2302 SOM
+status: active
+url: https://www.tria-technologies.com/product/ve2302-som/
+vendor: tria
+price: { value: 1295, currency: USD }
+device: { part: XCVE2302-1LSESFVA784, vendor: amd-xilinx }
+---
+
+## Memory
+- LPDDR4 4GB 32-bit
+
+## Flash
+- OSPI 256MB
+- eMMC 32GB
+
+## EEPROM
+- MAC I2C

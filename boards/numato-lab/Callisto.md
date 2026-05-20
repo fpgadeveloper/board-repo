@@ -1,0 +1,18 @@
+---
+mpn: Callisto
+name: Callisto
+status: active
+url: https://numato.com/product/callisto-kintex-7-usb-3-1-fpga-module/
+vendor: numato-lab
+price: { value: 949.99, currency: USD }
+device: { part: XC7K160T-1FBG676C, vendor: amd-xilinx }
+---
+
+## Memory
+- DDR3 512MB
+
+## Flash
+- QSPI 64MB
+
+## USB
+- Type-C 3.1 device

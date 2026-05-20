@@ -1,0 +1,18 @@
+---
+mpn: VSD-UP5KDEV-YA-4A
+name: VSDSQUADRON FM
+status: active
+url: https://www.vlsisystemdesign.com/vsdsquadronfm/
+vendor: vlsi-system-design
+price: { value: 37, currency: USD }
+device: { part: ICE40UP5K-SG48, vendor: lattice }
+---
+
+## Flash
+- SPI 4MB
+
+## Sensors
+- Temperature
+
+## USB UART/JTAG
+- Micro-B JTAG/UART
