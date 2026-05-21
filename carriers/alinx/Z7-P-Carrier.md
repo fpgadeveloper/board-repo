@@ -30,10 +30,11 @@ price: null
 
 ## Expansion
 - FMC HPC "HPC"
+- GPIO Header x1
 
 ## Storage
 - microSD x1
 
 ## User I/O
-- LEDs x4
+- LEDs x1
 - Pushbuttons x2

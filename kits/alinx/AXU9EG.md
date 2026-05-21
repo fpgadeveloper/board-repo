@@ -7,3 +7,12 @@ vendor: alinx
 price: { value: 1831.99, currency: GBP }
 composition: { som: ACU9EG, carrier: AXU9EG-Carrier }
 ---
+
+## Includes
+- Heatsink kit (preinstalled)
+- USB downloader cable
+- 12V power adapter
+- Acrylic baseplate
+- Mini-USB cable
+- Card reader
+- microSD card

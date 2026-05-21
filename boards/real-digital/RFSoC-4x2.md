@@ -38,3 +38,7 @@ device: { part: XCZU48DR-1FFVG1517E, vendor: amd-xilinx }
 ## Features
 - Power monitoring
 - Battery-backed RTC
+
+## Extras
+- 4x RF ADC SMA inputs (5 GSPS, 6 GHz analog bandwidth)
+- 2x RF DAC SMA outputs (14-bit, 9.85 GSPS)

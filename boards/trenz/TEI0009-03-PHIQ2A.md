@@ -13,7 +13,7 @@ device: { part: 10CL055YU484I7G, vendor: altera }
 - HyperRAM 8MB
 
 ## Flash
-- SPI 16MB
+- QSPI 16MB
 - SPI 2MB
 
 ## EEPROM
@@ -44,3 +44,7 @@ device: { part: 10CL055YU484I7G, vendor: altera }
 - LEDs x13
 - Pushbuttons x5
 - 7-segment displays x1
+
+## Extras
+- Grove connector
+- 2x SMA connectors (unpopulated)

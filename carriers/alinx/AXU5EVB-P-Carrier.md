@@ -45,3 +45,6 @@ price: null
 ## User I/O
 - LEDs x1
 - Pushbuttons x2
+
+## Extras
+- Real-time clock (RTC)

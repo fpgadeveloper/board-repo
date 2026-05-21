@@ -16,6 +16,12 @@ device: { part: XCZU2CG-1SFVC784I, vendor: amd-xilinx }
 - QSPI 64MB
 - eMMC 8GB
 
+## EEPROM
+- MAC
+
+## Clocking
+- Programmable
+
 ## PCIe
 - PCIe/104 Gen2 x4
 

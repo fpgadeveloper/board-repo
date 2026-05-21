@@ -19,3 +19,7 @@ price: { value: 2760, currency: EUR }
 
 ## Storage
 - microSD x1
+
+## Extras
+- RF front-end (AFE): 8 ADC + 8 DAC channels with baluns to MMCX, 6GHz bandwidth
+- Onboard BMC (baseboard management controller) with USB serial console

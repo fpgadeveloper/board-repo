@@ -43,3 +43,9 @@ device: { part: XCZU49DR-2FFVF1760E, vendor: amd-xilinx }
 
 ## User I/O
 - LEDs x4
+
+## Extras
+- Kontron COM Express (COMe) x86 processor module socket
+- 16-channel RF-ADC + 16-channel RF-DAC brought out to MCX connectors (RFSoC integrated data converters)
+- 5x MMCX clock connectors (CLK IN/OUT, EXT_CLK)
+- Expansion connectors J2/J8/J11/J13 exposing RS422/RS485/RS232/CAN and GPIO

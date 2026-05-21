@@ -14,8 +14,11 @@ device: { part: XCAU15P-2FFVB676E, vendor: amd-xilinx }
 ## Flash
 - QSPI 64MB
 
+## EEPROM
+- MAC+data I2C 2Kbit AT24MAC402
+
 ## Sensors
-- Temperature
+- Temperature STTS22HTR
 
 ## Clocking
 - Programmable

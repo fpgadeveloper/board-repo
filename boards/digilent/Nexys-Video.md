@@ -14,6 +14,9 @@ device: { part: XC7A200T-1SBG484C, vendor: amd-xilinx }
 ## Flash
 - QSPI 32MB
 
+## EEPROM
+- data
+
 ## Audio
 - Codec ADAU1761
 - Line in x1
@@ -25,6 +28,9 @@ device: { part: XC7A200T-1SBG484C, vendor: amd-xilinx }
 - HDMI In x1
 - HDMI Out x1
 - DisplayPort x1
+
+## Display
+- OLED 128x32
 
 ## Networking
 - 1GbE x1
@@ -38,6 +44,7 @@ device: { part: XC7A200T-1SBG484C, vendor: amd-xilinx }
 ## Expansion
 - FMC LPC "LPC"
 - Pmod x4
+- XADC Header x1
 
 ## Storage
 - microSD x1

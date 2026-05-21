@@ -35,6 +35,7 @@ price: null
 ## Extras
 - HSIO TXR2 expansion sites x2 — Samtec QSH-020 high-speed connectors carrying PL I/O and PS GTR transceivers
 - USB Type-C 15V power input connector
+- Encryption-key backup battery circuit (VCCBATT; battery not installed)
 
 ## Notes
 

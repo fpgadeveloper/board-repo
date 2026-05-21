@@ -12,7 +12,7 @@ device: { part: LFE5UM5G-85F-8BG381C, vendor: lattice }
 - SPI 16MB
 
 ## USB UART/JTAG
-- Mini-B JTAG
+- Mini-B JTAG/I2C
 
 ## Expansion
 - Pmod x3

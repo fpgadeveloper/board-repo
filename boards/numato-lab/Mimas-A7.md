@@ -9,7 +9,7 @@ device: { part: XC7A50T-1FGG484C, vendor: amd-xilinx }
 ---
 
 ## Memory
-- DDR3 256MB
+- DDR3 256MB 16-bit
 
 ## Flash
 - SPI 16MB

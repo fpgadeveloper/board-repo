@@ -26,3 +26,6 @@ device: { part: XCKU115-2FLVA1517E, vendor: amd-xilinx }
 ## Expansion
 - FMC HPC "HPC0"
 - FMC HPC "HPC1"
+
+## Extras
+- HTG High-Speed Bus on Samtec Z-Ray connector — 16 GTH transceivers, control I/Os, 12V/3.3V power pins

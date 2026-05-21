@@ -12,6 +12,9 @@ device: { part: 5CSEMA5F31C6N, vendor: altera }
 - DDR3 1GB 32-bit
 - SDRAM 64MB 16-bit
 
+## Flash
+- SPI 16MB
+
 ## Analog
 - ADC 8ch 12-bit 0.5MSPS
 
@@ -47,3 +50,10 @@ device: { part: 5CSEMA5F31C6N, vendor: altera }
 - Pushbuttons x4
 - DIP switches x10
 - 7-segment displays x6
+
+## Extras
+- PS/2 keyboard/mouse port
+- Infrared emitter/receiver
+- Composite video input (TV decoder, NTSC/PAL/SECAM)
+- LTC connector (SPI/I2C/GPIO)
+- 10-pin ADC input header

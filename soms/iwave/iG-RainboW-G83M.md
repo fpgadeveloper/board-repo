@@ -17,5 +17,8 @@ device: { part: XCVC1902-2MSEVSVA2197, vendor: amd-xilinx }
 - eMMC 16GB
 - QSPI 256MB
 
+## Networking
+- 1GbE x1 PHY-only
+
 ## Clocking
 - Programmable

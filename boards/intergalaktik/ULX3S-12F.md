@@ -8,8 +8,17 @@ price: { value: 130, currency: EUR }
 device: { part: LFE5U-12F-6BG381C, vendor: lattice }
 ---
 
+## Memory
+- SDRAM 32MB
+
+## Flash
+- QSPI 16MB
+
 ## Analog
-- ADC MAX11125
+- ADC MAX11125 8ch 12-bit 1MSPS
+
+## Audio
+- Headphone x1
 
 ## Video
 - HDMI Out x1
@@ -25,6 +34,7 @@ device: { part: LFE5U-12F-6BG381C, vendor: lattice }
 
 ## User I/O
 - LEDs x8
+- Pushbuttons x6
 
 ## Wireless
 - WiFi
@@ -32,3 +42,6 @@ device: { part: LFE5U-12F-6BG381C, vendor: lattice }
 
 ## Features
 - Battery-backed RTC
+
+## Extras
+- FM/ASK onboard antenna (27, 88-108, 144, 433 MHz)

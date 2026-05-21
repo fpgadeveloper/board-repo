@@ -16,3 +16,6 @@ device: { part: XC7A200T-2FBG484C, vendor: amd-xilinx }
 
 ## User I/O
 - LEDs x4
+
+## Extras
+- 12 external I/O on Pico-EZmate / DF52 connectors (4 selectable analog or digital, JTAG-capable)

@@ -15,7 +15,7 @@ device: { part: XC7Z010-1CLG400I, vendor: amd-xilinx }
 - QSPI 16MB
 
 ## Networking
-- 1GbE x1
+- 1GbE x1 PHY-only
 
 ## USB
 - Type-A 2.0 OTG
@@ -28,6 +28,9 @@ device: { part: XC7Z010-1CLG400I, vendor: amd-xilinx }
 
 ## Storage
 - microSD x1
+
+## Extras
+- 2x 100-pin micro headers for carrier-card connection (100 PL I/O)
 
 ## Notes
 

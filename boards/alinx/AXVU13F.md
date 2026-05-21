@@ -16,6 +16,7 @@ device: { part: XCVU13P-2FHGB2104I, vendor: amd-xilinx }
 - QSPI 128MB
 
 ## Clocking
+- Programmable
 - SMA clock in x1
 - SMA clock out x1
 
@@ -38,3 +39,10 @@ device: { part: XCVU13P-2FHGB2104I, vendor: amd-xilinx }
 - FMC+ "FMCP1"
 - FMC+ "FMCP2"
 - FMC+ "FMCP3"
+- GPIO Header x1
+
+## User I/O
+- LEDs x4
+
+## Extras
+- NVIDIA Jetson Orin NX module socket (260-pin SO-DIMM connector, PCIe Gen3 x4)

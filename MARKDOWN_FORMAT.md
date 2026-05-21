@@ -38,7 +38,7 @@ Status: draft. Working examples for all entity types live in `REWORK.md` in the 
 
 - **Succinct, space-separated tokens** — no commas, no extra whitespace. `DDR4 2GB 64-bit`, not `DDR4, 2 GB, 64 bit`.
 - **No space between number and unit** — `2GB`, `100MHz`, `1GbE`, `64-bit`. Exception: VADJ ranges write `1.5-1.8V` (hyphen separator, V at end).
-- **Counts use `x<N>` suffix** — `Pmod x2`, `LEDs x8`. Omit when value is 1 and counting is implicit from the bullet existing. (`Speaker` is enough; no `Speaker x1`.)
+- **Counts use an `x<N>` suffix — follow each section's grammar exactly.** Where a grammar shows `xN` (`Pmod xN`, `LEDs xN`, `HDMI Out xN`, `SFP+ xN`, …) the suffix is **required, including a count of one** — write `Pmod x1`, never a bare `Pmod`. Omit it *only* where a grammar shows `[xN]` in brackets (USB and USB UART/JTAG), for a single port. Boolean bullets that carry no count token at all (`Speaker`, `Programmable`, `WiFi`) never take one.
 - **Token order is fixed per section**, defined below. Parser is positional within each section's grammar.
 - **Optional tokens are appended in fixed order** — for example memory is `<type> <size> [<width>-bit] [ECC] [<form_factor>]`. Skip any optional token by leaving it out.
 
@@ -286,7 +286,18 @@ Schema: `display` (singleton object). One bullet per non-default attribute:
 
 Schema: `networking` (mixed — `ethernet[]` array plus per-cage counts).
 
-Ethernet bullets — one per `(speed, ports)` pair: `<speed-label> x<ports>`
+Ethernet bullets — one per `(speed, ports)` pair: `<speed-label> x<ports> [<endpoint>]`
+
+`<endpoint>` is an optional trailing token marking which part of the Ethernet
+chain the entity carries — omit it for a complete port:
+
+| Token | `endpoint` | Meaning |
+|---|---|---|
+| *(omitted)* | `phy+rj45` | Complete port — PHY + RJ45 jack (standalone boards) |
+| `PHY-only` | `phy` | PHY/MAC exposed, no jack — the jack is on the carrier (SoMs) |
+| `RJ45-only` | `rj45` | RJ45 jack + magnetics, PHY supplied by a mated SoM (some carriers) |
+
+Examples: `1GbE x1`, `1GbE x2 PHY-only`, `2.5GbE x1 RJ45-only`.
 
 | Speed | Label |
 |---|---|

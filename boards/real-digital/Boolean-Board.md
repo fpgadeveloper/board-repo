@@ -32,3 +32,7 @@ device: { part: XC7S50-1CSGA324C, vendor: amd-xilinx }
 
 ## Wireless
 - Bluetooth
+
+## Extras
+- Servo connectors x4
+- On-board ADC with thumbwheel potentiometer

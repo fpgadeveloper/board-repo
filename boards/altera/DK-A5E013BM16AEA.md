@@ -39,3 +39,6 @@ device: { part: A5ED013BM16AE4SCS, vendor: altera }
 - LEDs x2
 - Pushbuttons x2
 - DIP switches x4
+
+## Features
+- Power monitoring

@@ -10,16 +10,25 @@ device: { part: AGIB027R29A1E1VB, vendor: altera }
 
 ## Memory
 - DDR4 32GB 72-bit ECC
+- DDR4 32GB 72-bit ECC
 - DDR4 2GB 72-bit ECC DIMM
 
 ## Flash
 - QSPI 256MB
 
+## Clocking
+- Programmable
+
 ## PCIe
 - Edge Gen5 x16
+- MCIO Gen5
+- MCIO Gen5
 
 ## Networking
 - QSFP-DD x2
 
 ## USB UART/JTAG
 - Micro-B JTAG
+
+## Features
+- Power monitoring

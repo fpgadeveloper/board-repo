@@ -15,5 +15,8 @@ device: { part: XCZU5EV-1FBVB900I, vendor: amd-xilinx }
 ## Flash
 - eMMC 8GB
 
+## Networking
+- 1GbE x1 PHY-only
+
 ## Features
 - Battery-backed RTC

@@ -19,3 +19,7 @@ device: { part: SLG47910C, vendor: renesas }
 
 ## User I/O
 - LEDs x2
+
+## Extras
+- On-board RP2040 ARM Cortex-M0 microcontroller with integrated FPGA-MCU IO interface
+- Breadboard-compatible pin layout

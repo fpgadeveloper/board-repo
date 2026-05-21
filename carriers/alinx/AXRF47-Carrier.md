@@ -7,6 +7,9 @@ vendor: alinx
 price: null
 ---
 
+## Sensors
+- Temperature
+
 ## Clocking
 - Programmable
 
@@ -30,3 +33,6 @@ price: null
 
 ## User I/O
 - LEDs x4
+
+## Extras
+- MCX connectors for 8 RF-ADC and 8 RF-DAC channels

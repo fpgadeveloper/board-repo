@@ -36,6 +36,9 @@ device: { part: XC7Z010-1CLG400C, vendor: amd-xilinx }
 ## Networking
 - 1GbE x1
 
+## Expansion
+- GPIO Header x3
+
 ## USB
 - Micro-B 2.0 OTG
 

@@ -39,6 +39,7 @@ device: { part: XC7Z007S-1CLG400C, vendor: amd-xilinx }
 
 ## User I/O
 - LEDs x10
+- RGB LEDs x2
 - Pushbuttons x6
 - DIP switches x12
 - 7-segment displays x4
@@ -46,3 +47,7 @@ device: { part: XC7Z007S-1CLG400C, vendor: amd-xilinx }
 ## Wireless
 - WiFi
 - Bluetooth
+
+## Extras
+- Servo connectors x4
+- On-board ADC with thumbwheel potentiometer

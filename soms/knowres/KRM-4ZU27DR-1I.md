@@ -19,3 +19,6 @@ device: { part: XCZU27DR-1FFVG1517I, vendor: amd-xilinx }
 
 ## Clocking
 - Programmable
+
+## Extras
+- Onboard Board Management Controller (BMC): power sequencing, telemetry, boot-mode selection, on-module clock configuration, and multi-module housekeeping

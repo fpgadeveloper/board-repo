@@ -36,9 +36,12 @@ device: { part: 1SX280HU2F50E1VG, vendor: altera }
 - Mini-B UART
 
 ## Expansion
-- FMC HPC "HPC"
-- FMC+ "FMCP"
+- FMC HPC "HPC" VADJ 1.2-1.8V
+- FMC+ "FMCP" VADJ 1.2-1.8V
 - GPIO Header x2
+
+## Storage
+- microSD x1
 
 ## User I/O
 - LEDs x7

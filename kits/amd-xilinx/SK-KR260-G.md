@@ -7,3 +7,9 @@ vendor: amd-xilinx
 price: { value: 349, currency: USD }
 composition: { som: SM-K26-XCL2GC, carrier: KR260-Carrier }
 ---
+
+## Includes
+- 12V 36W AC/DC power supply with interchangeable regional plug blades
+- USB-A to micro-B cable
+- Ethernet cable
+- microSD card with microSD-to-SD adapter

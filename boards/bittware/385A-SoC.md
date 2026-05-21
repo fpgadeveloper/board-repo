@@ -10,7 +10,7 @@ device: { part: 10AS066N3F40E2SG, vendor: altera }
 
 ## Memory
 - DDR4 4GB 72-bit ECC
-- DDR4 2GB
+- DDR4 2GB 40-bit
 
 ## Clocking
 - Programmable
@@ -27,3 +27,6 @@ device: { part: 10AS066N3F40E2SG, vendor: altera }
 
 ## Features
 - Power monitoring
+
+## Extras
+- 1PPS timing reference input

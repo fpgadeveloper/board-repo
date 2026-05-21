@@ -24,6 +24,10 @@ price: null
 - 1GbE x2
 - SFP+ x2
 
+## Serial
+- CAN x2
+- RS-485 x2
+
 ## USB
 - Type-A 3.0 host x4
 
@@ -32,6 +36,7 @@ price: null
 
 ## Expansion
 - FMC HPC "HPC"
+- GPIO Header x1
 
 ## Storage
 - SATA x2

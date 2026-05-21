@@ -21,3 +21,6 @@ device: { part: 10AX115S2F45I1SG, vendor: altera }
 
 ## Features
 - Power monitoring
+
+## Extras
+- BullsEye high-density coaxial transceiver test connectors

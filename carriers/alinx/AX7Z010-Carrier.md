@@ -7,6 +7,10 @@ vendor: alinx
 price: null
 ---
 
+## EEPROM
+- data I2C 4Kbit 24LC04
+- data I2C 4Kbit 24LC04
+
 ## Sensors
 - Temperature LM75
 
@@ -25,6 +29,9 @@ price: null
 
 ## USB UART/JTAG
 - Mini-B UART
+
+## Expansion
+- GPIO Header x2
 
 ## Storage
 - microSD x1

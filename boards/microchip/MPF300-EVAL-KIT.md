@@ -38,3 +38,6 @@ device: { part: MPF300TS-1FCG1152I, vendor: microchip }
 
 ## Features
 - Power monitoring
+
+## Extras
+- IEEE 1588 and SyncE support via VSC8575 Ethernet PHY

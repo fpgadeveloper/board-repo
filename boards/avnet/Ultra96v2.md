@@ -29,6 +29,10 @@ device: { part: XCZU3EG-1SFVA625I, vendor: amd-xilinx }
 - WiFi
 - Bluetooth
 
+## Extras
+- 96Boards 40-pin low-speed expansion header
+- 96Boards 60-pin high-speed expansion header
+
 ## Notes
 
 ### Configuration

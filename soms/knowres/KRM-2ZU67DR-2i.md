@@ -15,3 +15,9 @@ device: { part: XCZU67DR-2FSVE1156I, vendor: amd-xilinx }
 ## Flash
 - QSPI 128MB
 - eMMC 64GB
+
+## Clocking
+- Programmable
+
+## Extras
+- Onboard Board Management Controller (BMC): power sequencing, telemetry, boot-mode selection, on-module clock configuration, and multi-module housekeeping

@@ -20,8 +20,14 @@ price: null
 ## Serial
 - RS-232 x1
 
+## USB
+- Mini-B 2.0 host
+
 ## USB UART/JTAG
 - Mini-B UART
+
+## Expansion
+- GPIO Header x2
 
 ## Storage
 - microSD x1

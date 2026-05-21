@@ -17,5 +17,8 @@ device: { part: XCVR1902-1LSEVSVA2488, vendor: amd-xilinx }
 - eMMC 32GB
 - QSPI 256MB
 
+## Networking
+- 1GbE x1 PHY-only
+
 ## Clocking
 - Programmable

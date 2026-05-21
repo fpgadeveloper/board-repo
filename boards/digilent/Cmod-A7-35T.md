@@ -19,4 +19,8 @@ device: { part: XC7A35T-1CPG236C, vendor: amd-xilinx }
 
 ## User I/O
 - LEDs x2
+- RGB LEDs x1
 - Pushbuttons x2
+
+## Extras
+- 512KB SRAM (8-bit bus, 8ns access time)

@@ -16,3 +16,6 @@ device: { part: AGIB027R31B1E2VR0, vendor: altera }
 ## Flash
 - eMMC 32GB
 - QSPI 128MB
+
+## Extras
+- On-SOM PTP and SyncE network synchronizers

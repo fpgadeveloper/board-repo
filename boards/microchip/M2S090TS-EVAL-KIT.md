@@ -29,3 +29,6 @@ device: { part: M2S090TS-FG484, vendor: microchip }
 ## Expansion
 - FMC HPC "HPC"
 - GPIO Header x1
+
+## Extras
+- Current measurement test points

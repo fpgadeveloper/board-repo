@@ -15,6 +15,9 @@ device: { part: XCKU040-2FFVA1156I, vendor: amd-xilinx }
 - QSPI 32MB
 - QSPI 32MB
 
+## EEPROM
+- data I2C 4Kbit 24LC04
+
 ## Sensors
 - Temperature LM75
 

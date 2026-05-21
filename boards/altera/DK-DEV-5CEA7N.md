@@ -16,3 +16,9 @@ device: { part: 5CEFA7F31I7N, vendor: altera }
 
 ## USB UART/JTAG
 - Micro-B JTAG
+
+## Features
+- Power monitoring
+
+## Extras
+- HSMC expansion connector

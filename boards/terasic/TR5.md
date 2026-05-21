@@ -26,10 +26,10 @@ device: { part: 5SGXEA7N2F45C2N, vendor: altera }
 - Micro-B JTAG/UART
 
 ## Expansion
-- FMC HPC "HPC0"
-- FMC HPC "HPC1"
-- FMC LPC "LPC0"
-- FMC LPC "LPC1"
+- FMC HPC "HPC0" VADJ 1.2-3.0V
+- FMC HPC "HPC1" VADJ 1.2-3.0V
+- FMC LPC "LPC0" VADJ 1.2-3.0V
+- FMC LPC "LPC1" VADJ 1.2-3.0V
 - GPIO Header x1
 
 ## Storage

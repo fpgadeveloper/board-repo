@@ -10,3 +10,6 @@ device: { part: LCMXO2-7000HE-4TG144C, vendor: lattice }
 
 ## USB UART/JTAG
 - Mini-B JTAG
+
+## Extras
+- Prototyping area

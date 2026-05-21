@@ -25,7 +25,12 @@ device: { part: XCVU13P-2FHGB2104I, vendor: amd-xilinx }
 - FMC+ "FMCP0"
 - FMC+ "FMCP1"
 - FMC+ "FMCP2"
+- GPIO Header x1
 
 ## User I/O
-- LEDs x8
+- LEDs x6
+- DIP switches x4
 - Pushbuttons x1
+
+## Extras
+- SMA differential I/O (2x, FPGA HPIO)

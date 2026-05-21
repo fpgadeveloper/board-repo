@@ -26,5 +26,6 @@ device: { part: XC7A35TI-1LCSG324I, vendor: amd-xilinx }
 
 ## User I/O
 - LEDs x4
+- RGB LEDs x4
 - Pushbuttons x4
 - DIP switches x4

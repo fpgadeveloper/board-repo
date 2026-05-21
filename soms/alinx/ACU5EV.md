@@ -14,7 +14,7 @@ device: { part: XCZU5EV-2SFVC784I, vendor: amd-xilinx }
 
 ## Flash
 - QSPI 32MB
-- eMMC 8GB
+- eMMC 32GB
 
 ## Features
 - Battery-backed RTC

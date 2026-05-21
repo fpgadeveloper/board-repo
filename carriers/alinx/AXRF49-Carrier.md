@@ -35,3 +35,7 @@ price: null
 
 ## User I/O
 - LEDs x4
+
+## Extras
+- MCX connectors for 16 RF-ADC and 16 RF-DAC channels
+- Onboard GPS module

@@ -8,12 +8,15 @@ price: { value: 193, currency: USD }
 device: { part: XC7A35T-1FTG256C, vendor: amd-xilinx }
 ---
 
+## Memory
+- SDRAM 32MB
+
 ## Flash
 - SPI 8MB
 
 ## Analog
 - ADC 8ch 12-bit
-- DAC
+- DAC 12-bit
 
 ## Sensors
 - Temperature LM35

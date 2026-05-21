@@ -9,7 +9,7 @@ device: { part: 5CEFA4F23C8N, vendor: altera }
 ---
 
 ## Memory
-- DDR3 512MB
+- DDR3 512MB 16-bit
 
 ## Flash
 - SPI 16MB

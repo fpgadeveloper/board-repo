@@ -14,6 +14,9 @@ device: { part: XCZU2CG-1SFVC784E, vendor: amd-xilinx }
 ## Flash
 - QSPI 32MB
 
+## EEPROM
+- data I2C 4Kbit 24LC04
+
 ## PCIe
 - Slot Gen2 x1
 
@@ -33,9 +36,12 @@ device: { part: XCZU2CG-1SFVC784E, vendor: amd-xilinx }
 ## USB UART/JTAG
 - Mini-B UART
 
+## Expansion
+- GPIO Header x2
+
 ## Storage
 - microSD x1
 
 ## User I/O
-- LEDs x4
+- LEDs x5
 - Pushbuttons x4

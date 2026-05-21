@@ -9,7 +9,7 @@ device: { part: XC7A200T-2FBG484I, vendor: amd-xilinx }
 ---
 
 ## Memory
-- DDR3 256MB
+- DDR3 256MB 16-bit
 
 ## Flash
 - QSPI 64MB

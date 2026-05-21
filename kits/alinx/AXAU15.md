@@ -7,3 +7,10 @@ vendor: alinx
 price: { value: 689, currency: USD }
 composition: { som: ACAU15, carrier: AXAU15-Carrier }
 ---
+
+## Includes
+- Mini USB cable
+- USB downloader cable
+- 12V power adapter
+- PCIe fence bracket
+- Heatsink kit (preinstalled)

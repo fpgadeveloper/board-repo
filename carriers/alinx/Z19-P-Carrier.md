@@ -36,4 +36,4 @@ price: null
 - microSD x1
 
 ## User I/O
-- LEDs x3
+- LEDs x2

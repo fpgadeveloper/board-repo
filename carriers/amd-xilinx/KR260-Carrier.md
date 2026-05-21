@@ -29,3 +29,6 @@ price: null
 
 ## Features
 - Secure element
+
+## Extras
+- SLVS-EC Gen2 x2-lane camera interface

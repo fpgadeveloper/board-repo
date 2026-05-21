@@ -34,6 +34,7 @@ device: { part: XC7Z020-1CLG484C, vendor: amd-xilinx }
 - microSD x1
 
 ## User I/O
+- RGB LEDs x2
 - Pushbuttons x2
 
 ## Features

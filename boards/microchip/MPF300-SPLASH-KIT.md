@@ -12,7 +12,7 @@ device: { part: MPF300T-1FCG484E, vendor: microchip }
 - SPI 128MB
 
 ## PCIe
-- Edge Gen2 x1
+- Edge Gen2 x4
 
 ## Networking
 - 1GbE x1

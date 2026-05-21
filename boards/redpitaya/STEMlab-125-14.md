@@ -21,3 +21,6 @@ device: { part: XC7Z010-1CLG225C, vendor: amd-xilinx }
 ## Storage
 - SATA x2
 - microSD x1
+
+## Extras
+- Extension connector: 16 digital I/O, 4-channel 12-bit analog in, 4-channel 12-bit analog out, I2C/UART/SPI

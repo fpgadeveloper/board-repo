@@ -9,7 +9,7 @@ device: { part: XC7S50-1CSGA324C, vendor: amd-xilinx }
 ---
 
 ## Memory
-- DDR3 256MB
+- DDR3 256MB 16-bit
 
 ## Flash
 - QSPI 16MB

@@ -23,6 +23,7 @@ price: null
 
 ## Expansion
 - Pmod x1
+- GPIO Header x2
 
 ## Storage
 - microSD x1

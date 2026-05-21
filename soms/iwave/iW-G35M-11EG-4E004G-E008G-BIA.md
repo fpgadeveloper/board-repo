@@ -15,3 +15,6 @@ device: { part: XCZU11EG-1FFVC1760I, vendor: amd-xilinx }
 
 ## Flash
 - eMMC 8GB
+
+## Networking
+- 1GbE x1 PHY-only

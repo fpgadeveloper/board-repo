@@ -11,7 +11,7 @@ price: null
 - Programmable
 
 ## M.2
-- M-key x1
+- M-key Gen2 x2
 
 ## Video
 - DisplayPort x1
@@ -36,3 +36,7 @@ price: null
 
 ## User I/O
 - LEDs x4
+
+## Extras
+- 4 RF-ADC input and 2 RF-DAC output connectors
+- Onboard high-precision GPS module

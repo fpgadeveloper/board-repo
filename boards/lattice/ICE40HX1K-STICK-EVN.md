@@ -15,7 +15,10 @@ device: { part: ICE40HX1K-TQ144, vendor: lattice }
 - Type-A JTAG/UART
 
 ## Expansion
-- Pmod x2
+- Pmod x1
 
 ## User I/O
 - LEDs x5
+
+## Extras
+- IrDA transceiver (Vishay TFDU4101)

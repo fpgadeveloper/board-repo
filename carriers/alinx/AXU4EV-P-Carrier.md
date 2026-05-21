@@ -11,7 +11,7 @@ price: null
 - Temperature LM75
 
 ## PCIe
-- Edge Gen3 x4
+- Edge Gen3 x2
 
 ## M.2
 - M-key

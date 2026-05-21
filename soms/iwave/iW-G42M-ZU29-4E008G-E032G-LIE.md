@@ -9,9 +9,12 @@ device: { part: XCZU29DR-1FFVF1760I, vendor: amd-xilinx }
 ---
 
 ## Memory
-- DDR4 8GB ECC
-- DDR4 8GB
+- DDR4 8GB 64-bit ECC
+- DDR4 8GB 64-bit
 
 ## Flash
 - eMMC 32GB
 - QSPI 256MB
+
+## Networking
+- 1GbE x1 PHY-only

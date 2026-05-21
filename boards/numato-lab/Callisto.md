@@ -9,7 +9,7 @@ device: { part: XC7K160T-1FBG676C, vendor: amd-xilinx }
 ---
 
 ## Memory
-- DDR3 512MB
+- DDR3 512MB 16-bit
 
 ## Flash
 - QSPI 64MB

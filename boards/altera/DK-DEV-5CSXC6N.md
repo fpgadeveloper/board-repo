@@ -35,3 +35,6 @@ device: { part: 5CSXFC6D6F31C6N, vendor: altera }
 
 ## Features
 - Power monitoring
+
+## Extras
+- HSMC expansion connector

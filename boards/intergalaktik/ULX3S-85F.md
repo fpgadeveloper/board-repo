@@ -15,7 +15,7 @@ device: { part: LFE5U-85F-6BG381C, vendor: lattice }
 - QSPI 16MB
 
 ## Analog
-- ADC MAX11125
+- ADC MAX11125 8ch 12-bit 1MSPS
 
 ## Audio
 - Headphone x1
@@ -42,3 +42,6 @@ device: { part: LFE5U-85F-6BG381C, vendor: lattice }
 
 ## Features
 - Battery-backed RTC
+
+## Extras
+- FM/ASK onboard antenna (27, 88-108, 144, 433 MHz)

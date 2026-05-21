@@ -15,3 +15,6 @@ device: { part: XCZU64DR-2FFVE1156I, vendor: amd-xilinx }
 ## Flash
 - eMMC 32GB
 - QSPI 256MB
+
+## Networking
+- 1GbE x1 PHY-only

@@ -528,18 +528,30 @@ _CAGE_LABEL_TO_KEY = {
 }
 
 
+# Optional trailing endpoint token on an Ethernet bullet -> ethernet_interface
+# `endpoint` value. An omitted token means the schema default ("phy+rj45"), so
+# it is left out of the JSON entirely.
+_ETH_ENDPOINT_TOKEN = {"PHY-only": "phy", "RJ45-only": "rj45"}
+
+
 def parse_networking(bullets, base_line, warnings):
     data = {}
     ethernet = []
     for text, off in bullets:
-        m = re.match(r"^(\S+) x(\d+)$", text)
+        m = re.match(r"^(\S+) x(\d+)(?: (PHY-only|RJ45-only))?$", text)
         if not m:
             warn(warnings, base_line + off, f"Networking: unrecognized {text!r}")
             continue
-        label, count_s = m.group(1), m.group(2)
+        label, count_s, endpoint_tok = m.group(1), m.group(2), m.group(3)
         if label in _ETH_LABEL_TO_SPEED:
-            ethernet.append({"speed": _ETH_LABEL_TO_SPEED[label], "ports": int(count_s)})
+            entry = {"speed": _ETH_LABEL_TO_SPEED[label], "ports": int(count_s)}
+            if endpoint_tok:
+                entry["endpoint"] = _ETH_ENDPOINT_TOKEN[endpoint_tok]
+            ethernet.append(entry)
         elif label in _CAGE_LABEL_TO_KEY:
+            if endpoint_tok:
+                warn(warnings, base_line + off,
+                     f"Networking: {endpoint_tok!r} is only valid on an Ethernet bullet, not {label!r}")
             data[_CAGE_LABEL_TO_KEY[label]] = int(count_s)
         else:
             warn(warnings, base_line + off, f"Networking: unknown label {label!r}")

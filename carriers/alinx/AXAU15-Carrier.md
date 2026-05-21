@@ -7,6 +7,12 @@ vendor: alinx
 price: null
 ---
 
+## EEPROM
+- data I2C 4Kbit 24LC04
+
+## Sensors
+- Temperature LM75
+
 ## PCIe
 - Edge Gen4 x4
 
@@ -18,6 +24,7 @@ price: null
 
 ## Expansion
 - FMC HPC "HPC"
+- GPIO Header x2
 
 ## Storage
 - microSD x1

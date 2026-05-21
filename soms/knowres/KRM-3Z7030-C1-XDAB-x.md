@@ -9,11 +9,14 @@ device: { part: XC7Z030-1FFG676C, vendor: amd-xilinx }
 ---
 
 ## Memory
-- LPDDR3 1GB
-- LPDDR3 256MB
+- LPDDR3 1GB 32-bit
+- LPDDR3 256MB 16-bit
 
 ## Flash
 - QSPI 32MB
 
 ## User I/O
 - LEDs x4
+
+## Extras
+- Onboard Board Management Controller (BMC) for boot-source/boot-mode selection and reset/configuration signaling

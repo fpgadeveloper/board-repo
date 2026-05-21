@@ -14,3 +14,6 @@ device: { part: XC7Z020-1CLG484C, vendor: amd-xilinx }
 ## Flash
 - QSPI 64MB
 - NAND 512MB
+
+## Extras
+- Onboard real-time clock (RTC)

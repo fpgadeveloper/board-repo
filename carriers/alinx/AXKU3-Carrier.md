@@ -24,6 +24,7 @@ price: null
 
 ## Expansion
 - FMC HPC "HPC"
+- GPIO Header x1
 
 ## Storage
 - microSD x1

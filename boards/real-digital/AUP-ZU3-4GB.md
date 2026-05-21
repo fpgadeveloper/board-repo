@@ -21,3 +21,6 @@ device: { part: XCZU3EG-2SFVC784E, vendor: amd-xilinx }
 
 ## Storage
 - microSD x1
+
+## Extras
+- Grove expansion connector

@@ -10,6 +10,7 @@ device: { part: 10M50DAF484I6G, vendor: altera }
 
 ## Memory
 - DDR3 128MB 16-bit
+- DDR3 128MB 8-bit
 
 ## Flash
 - QSPI 64MB
@@ -39,3 +40,6 @@ device: { part: 10M50DAF484I6G, vendor: altera }
 
 ## Features
 - Power monitoring
+
+## Extras
+- HSMC expansion connector (84 CMOS or 17 LVDS channels)

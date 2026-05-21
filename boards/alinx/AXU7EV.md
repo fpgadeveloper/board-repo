@@ -17,6 +17,9 @@ device: { part: XCZU7EV-2FFVC1156I, vendor: amd-xilinx }
 - QSPI 32MB
 - eMMC 8GB
 
+## EEPROM
+- data I2C 4Kbit 24LC04
+
 ## Sensors
 - Temperature LM75
 

@@ -15,3 +15,6 @@ device: { part: XC7Z045-2FFG676I, vendor: amd-xilinx }
 ## Flash
 - QSPI 64MB
 - NAND 512MB
+
+## Extras
+- Onboard real-time clock (RTC)

@@ -12,6 +12,9 @@ device: { part: XC7K325T-1FBG676C, vendor: amd-xilinx }
 - DDR3 512MB
 - DDR3 512MB
 
+## Sensors
+- Temperature
+
 ## Clocking
 - Programmable
 
@@ -22,7 +25,7 @@ device: { part: XC7K325T-1FBG676C, vendor: amd-xilinx }
 - Samtec FireFly x1
 
 ## Expansion
-- FMC HPC "HPC"
+- FMC+ "FMCP"
 
 ## Features
 - Power monitoring

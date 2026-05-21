@@ -416,6 +416,12 @@
           "type": "integer",
           "minimum": 1,
           "description": "Number of ports at this speed."
+        },
+        "endpoint": {
+          "type": "string",
+          "enum": ["phy", "rj45", "phy+rj45"],
+          "default": "phy+rj45",
+          "description": "Which part of the Ethernet signal chain this entity carries. 'phy' = PHY/MAC exposed with no connector (typical SoM — the RJ45 jack is on the carrier). 'rj45' = RJ45 jack + magnetics with the PHY supplied by a mated SoM (some carriers). 'phy+rj45' = the complete port (standalone boards). Defaults to 'phy+rj45' when omitted."
         }
       }
     },

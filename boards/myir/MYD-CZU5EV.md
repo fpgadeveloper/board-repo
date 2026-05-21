@@ -50,3 +50,6 @@ device: { part: XCZU5EV-2SFVC784E, vendor: amd-xilinx }
 
 ## Features
 - Battery-backed RTC
+
+## Extras
+- 24-bit RGB LCD/TSP interface (supports resistive and capacitive touch panels)

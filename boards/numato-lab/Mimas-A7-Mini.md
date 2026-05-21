@@ -9,7 +9,7 @@ device: { part: XC7A35T-1FTG256C, vendor: amd-xilinx }
 ---
 
 ## Memory
-- DDR3 256MB
+- DDR3 256MB 16-bit
 
 ## Flash
 - QSPI 16MB
@@ -22,4 +22,5 @@ device: { part: XC7A35T-1FTG256C, vendor: amd-xilinx }
 
 ## User I/O
 - LEDs x8
+- RGB LEDs x1
 - Pushbuttons x4

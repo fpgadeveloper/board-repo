@@ -22,3 +22,6 @@ device: { part: XC7S6-1FTGB196C, vendor: amd-xilinx }
 - LEDs x4
 - Pushbuttons x4
 - DIP switches x4
+
+## Extras
+- Raspberry Pi RP2040 companion microcontroller (dual-core Arm Cortex-M0+, 133 MHz)

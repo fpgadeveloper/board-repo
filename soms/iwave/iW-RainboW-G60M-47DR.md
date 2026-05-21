@@ -15,3 +15,6 @@ device: { part: XCZU47DR-2FFVG1517I, vendor: amd-xilinx }
 ## Flash
 - eMMC 32GB
 - QSPI 256MB
+
+## Networking
+- 1GbE x1 PHY-only

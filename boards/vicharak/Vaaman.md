@@ -12,6 +12,9 @@ device: { part: T120F324C3, vendor: efinix }
 - LPDDR4 2GB
 - DDR3L 1GB 32-bit
 
+## Audio
+- Headphone x1
+
 ## Video
 - HDMI Out x1
 - DisplayPort x1
@@ -23,8 +26,11 @@ device: { part: T120F324C3, vendor: efinix }
 
 ## USB
 - Type-C 3.0 host
-- Type-A 2.0 host
+- Type-A 2.0 host x2
 - Type-A 3.0 host
+
+## Expansion
+- GPIO Header x1
 
 ## Storage
 - microSD x1

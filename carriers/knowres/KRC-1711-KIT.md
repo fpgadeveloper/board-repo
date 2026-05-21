@@ -14,10 +14,14 @@ price: null
 - Type-A 2.0 host x4
 
 ## USB UART/JTAG
-- Micro-B UART
+- Micro-B UART x2
 
 ## Expansion
+- FMC HPC "HPC"
 - Pmod x24
 
 ## Storage
 - microSD x1
+
+## Extras
+- 2x 50-pin ZIF expansion ports

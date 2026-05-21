@@ -8,6 +8,14 @@ price: { value: 1595, currency: USD }
 composition: { som: AES-ZU7EV-1-SOM-I-G, carrier: AES-ZUEV-CC-G }
 ---
 
+## Includes
+- 12V AC/DC power supply
+- Quick start card
+- Micro-USB cable
+- UltraZed-EV SOM mounting hardware
+- 8GB microSD card
+- RJ45 Ethernet cable
+
 ## Notes
 
 ### Configuration

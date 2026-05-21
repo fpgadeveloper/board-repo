@@ -14,6 +14,7 @@ device: { part: AGFD023R24C2E1VC, vendor: altera }
 ## Flash
 - QSPI 256MB
 - QSPI 256MB
+- SPI 8MB
 
 ## EEPROM
 - MAC I2C 128Kbit
@@ -35,3 +36,6 @@ device: { part: AGFD023R24C2E1VC, vendor: altera }
 
 ## Features
 - Power monitoring
+
+## Extras
+- CXL connector (PCIe x4)

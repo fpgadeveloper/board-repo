@@ -25,7 +25,7 @@ device: { part: LFD2NX-40-8BG256C, vendor: lattice }
 - 1GbE x2
 
 ## USB UART/JTAG
-- Mini-B JTAG
+- Mini-B JTAG/I2C
 
 ## Expansion
 - Pmod x3

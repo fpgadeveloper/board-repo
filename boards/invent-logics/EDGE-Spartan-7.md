@@ -38,3 +38,6 @@ device: { part: XC7S15-1FTGB196C, vendor: amd-xilinx }
 ## Wireless
 - WiFi
 - Bluetooth
+
+## Extras
+- PS/2-compatible keyboard interface on USB connector (3.3V keyboards only)

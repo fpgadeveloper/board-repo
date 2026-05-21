@@ -20,6 +20,9 @@ price: null
 ## USB UART/JTAG
 - Mini-B UART
 
+## Expansion
+- GPIO Header x1
+
 ## User I/O
 - LEDs x2
 - Pushbuttons x2

@@ -15,6 +15,9 @@ device: { part: XCK26-2LVSFVC784C, vendor: amd-xilinx }
 - QSPI 64MB
 - eMMC 16GB
 
+## EEPROM
+- MAC+ID+UID I2C 64Kbit
+
 ## Features
 - Battery-backed RTC
 - Secure element

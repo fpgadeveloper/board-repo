@@ -38,3 +38,6 @@ device: { part: 5CSEMA4U23C6N, vendor: altera }
 - LEDs x9
 - Pushbuttons x3
 - DIP switches x4
+
+## Extras
+- LTC 2x7 expansion header (SPI / I2C / GPIO)

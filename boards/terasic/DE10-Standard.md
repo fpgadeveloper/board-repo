@@ -12,6 +12,9 @@ device: { part: 5CSXFC6D6F31C6N, vendor: altera }
 - DDR3 1GB 32-bit
 - SDRAM 64MB 16-bit
 
+## Flash
+- SPI 16MB
+
 ## Analog
 - ADC 8ch 12-bit 0.5MSPS
 
@@ -51,3 +54,8 @@ device: { part: 5CSXFC6D6F31C6N, vendor: altera }
 ## Extras
 - HSMC connector
 - 128x64 dot-matrix LCD module
+- PS/2 keyboard/mouse port
+- Infrared emitter/receiver
+- Composite video input (TV decoder, NTSC/PAL/SECAM)
+- LTC connector (SPI/I2C/GPIO)
+- 10-pin ADC input header

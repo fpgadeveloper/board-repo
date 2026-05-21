@@ -24,6 +24,7 @@ device: { part: XC7Z010-1CLG400C, vendor: amd-xilinx }
 ## Video
 - HDMI In x1
 - HDMI Out x1
+- MIPI CSI x1
 
 ## Networking
 - 1GbE x1
@@ -44,6 +45,7 @@ device: { part: XC7Z010-1CLG400C, vendor: amd-xilinx }
 - microSD x1
 
 ## User I/O
-- LEDs x4
+- LEDs x5
+- RGB LEDs x2
 - Pushbuttons x6
 - DIP switches x4

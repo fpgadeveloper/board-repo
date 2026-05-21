@@ -35,3 +35,6 @@ device: { part: 1SG280HU1F50E2VG, vendor: altera }
 
 ## Features
 - Power monitoring
+
+## Extras
+- MXP high-speed cabled connector

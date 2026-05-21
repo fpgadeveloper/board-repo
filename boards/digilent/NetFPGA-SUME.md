@@ -35,3 +35,7 @@ device: { part: XC7VX690T-3FFG1761C, vendor: amd-xilinx }
 
 ## Features
 - Power monitoring
+
+## Extras
+- Samtec QTH-DP high-speed connector exposing 8 serial links (additional GTH transceivers)
+- On-board clock recovery circuit

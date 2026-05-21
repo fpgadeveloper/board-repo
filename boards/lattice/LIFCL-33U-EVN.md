@@ -13,3 +13,6 @@ device: { part: LIFCL-33U-7CTG104C, vendor: lattice }
 
 ## USB UART/JTAG
 - Micro-B JTAG/I2C
+
+## Expansion
+- Pmod x2

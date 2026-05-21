@@ -15,5 +15,8 @@ device: { part: XCVE2302-1LSESFVA784, vendor: amd-xilinx }
 - QSPI 256MB
 - eMMC 16GB
 
+## Networking
+- 1GbE x1 PHY-only
+
 ## Clocking
 - Programmable

@@ -20,3 +20,6 @@ device: { part: GW2A-LV55PG484C8I7, vendor: gowin }
 
 ## Serial
 - CAN x1
+
+## Extras
+- On-board RTC module

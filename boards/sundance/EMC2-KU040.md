@@ -27,6 +27,9 @@ device: { part: XCKU040-1SFVA784I, vendor: amd-xilinx }
 ## Networking
 - 1GbE x1
 
+## Serial
+- RS-232 x1
+
 ## Expansion
 - FMC LPC "LPC"
 

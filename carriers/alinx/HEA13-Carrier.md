@@ -27,6 +27,7 @@ price: null
 ## Expansion
 - FMC+ "FMCP0"
 - FMC+ "FMCP1"
+- GPIO Header x1
 
 ## Storage
 - microSD x2

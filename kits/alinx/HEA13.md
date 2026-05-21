@@ -7,3 +7,10 @@ vendor: alinx
 price: { value: 20488.99, currency: GBP }
 composition: { som: ACVU13, carrier: HEA13-Carrier }
 ---
+
+## Includes
+- Heatsink kit (preinstalled)
+- USB downloader cable
+- 12V power adapter
+- Mini-USB cable
+- SD card

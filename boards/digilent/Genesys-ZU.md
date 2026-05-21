@@ -14,6 +14,10 @@ device: { part: XCZU5EV-1SFVC784E, vendor: amd-xilinx }
 ## Flash
 - QSPI 32MB
 
+## PCIe
+- MiniPCIe-Half x1
+- MiniPCIe-Full x1 +mSATA
+
 ## Audio
 - Codec ADAU1761
 - Headphone x1

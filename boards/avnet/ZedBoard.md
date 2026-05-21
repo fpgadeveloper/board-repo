@@ -25,6 +25,9 @@ device: { part: XC7Z020-1CLG484C, vendor: amd-xilinx }
 - HDMI Out x1
 - VGA Out x1
 
+## Display
+- OLED 128x32
+
 ## Networking
 - 1GbE x1
 
@@ -37,6 +40,7 @@ device: { part: XC7Z020-1CLG484C, vendor: amd-xilinx }
 ## Expansion
 - FMC LPC "LPC"
 - Pmod x5
+- XADC Header x1
 
 ## Storage
 - SD x1

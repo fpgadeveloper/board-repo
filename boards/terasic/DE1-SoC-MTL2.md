@@ -12,6 +12,9 @@ device: { part: 5CSEMA5F31C6N, vendor: altera }
 - DDR3 1GB 32-bit
 - SDRAM 64MB 16-bit
 
+## Flash
+- SPI 16MB
+
 ## Analog
 - ADC 8ch 12-bit 0.5MSPS
 
@@ -50,3 +53,7 @@ device: { part: 5CSEMA5F31C6N, vendor: altera }
 
 ## Extras
 - 7-inch 800x480 capacitive multi-touch TFT LCD (MTL2)
+- PS/2 mouse/keyboard port
+- IR emitter/receiver
+- Composite video-in connector (NTSC/PAL/SECAM TV decoder)
+- LTC connector (SPI master / I2C / GPIO)

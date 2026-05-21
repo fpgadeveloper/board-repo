@@ -7,3 +7,12 @@ vendor: alinx
 price: { value: 1913.99, currency: GBP }
 composition: { som: ACU7EVC, carrier: Z7-P-Carrier }
 ---
+
+## Includes
+- Heatsink kit (preinstalled)
+- USB downloader cable
+- 12V power adapter
+- PCIe bracket
+- Mini-USB cable
+- Card reader
+- microSD card

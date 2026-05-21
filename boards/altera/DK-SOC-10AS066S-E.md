@@ -12,6 +12,13 @@ device: { part: 10AS066N3F40E2SG, vendor: altera }
 - DDR4 1GB
 - DDR4 2GB
 
+## Flash
+- QSPI 128MB
+- NAND 128MB
+
+## Clocking
+- Programmable
+
 ## PCIe
 - Edge Gen3 x8
 

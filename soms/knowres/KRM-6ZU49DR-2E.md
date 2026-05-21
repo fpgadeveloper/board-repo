@@ -10,8 +10,8 @@ device: { part: XCZU49DR-2FFVF1760E, vendor: amd-xilinx }
 
 ## Memory
 - DDR4 8GB 64-bit ECC
-- DDR4 8GB 64-bit ECC
-- DDR4 8GB 64-bit ECC
+- DDR4 8GB 72-bit ECC
+- DDR4 8GB 72-bit ECC
 
 ## Flash
 - QSPI 128MB
@@ -19,3 +19,7 @@ device: { part: XCZU49DR-2FFVF1760E, vendor: amd-xilinx }
 
 ## Clocking
 - Programmable
+
+## Extras
+- BMC console
+- Universal housekeeping bus

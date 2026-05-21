@@ -20,7 +20,7 @@ price: null
 
 ## Networking
 - 1GbE x1
-- SFP+ x2
+- SFP+ x1
 - QSFP+ x2
 
 ## USB
@@ -36,3 +36,7 @@ price: null
 ## User I/O
 - LEDs x12
 - Pushbuttons x5
+
+## Extras
+- On-carrier DDR4 SDRAM: 4x 4GB 64-bit banks (attached to the base-board XCKU115 FPGA)
+- RF SMB connectors: 8x RF-ADC + 8x RF-DAC channels

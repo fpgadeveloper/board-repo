@@ -14,6 +14,9 @@ device: { part: MPFS250T-FCVG484E, vendor: microchip }
 ## Flash
 - SPI 64MB
 
+## EEPROM
+- MAC
+
 ## PCIe
 - PCIe/104 Gen2 x4
 
@@ -22,6 +25,9 @@ device: { part: MPFS250T-FCVG484E, vendor: microchip }
 
 ## Networking
 - 1GbE x1
+
+## Serial
+- RS-232 x1
 
 ## Expansion
 - FMC LPC "LPC"

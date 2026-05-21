@@ -9,7 +9,7 @@ device: { part: XC7K160T-1FBG676C, vendor: amd-xilinx }
 ---
 
 ## Memory
-- DDR3L 4GB SODIMM
+- DDR3L 4GB 64-bit SODIMM
 
 ## Flash
 - QSPI 16MB

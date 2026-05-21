@@ -16,6 +16,7 @@ device: { part: T8F81C2, vendor: efinix }
 
 ## Expansion
 - Pmod x1
+- GPIO Header x2
 
 ## Storage
 - microSD x1

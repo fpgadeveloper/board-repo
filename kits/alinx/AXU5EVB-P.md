@@ -7,3 +7,12 @@ vendor: alinx
 price: { value: 1288, currency: USD }
 composition: { som: ACU5EV, carrier: AXU5EVB-P-Carrier }
 ---
+
+## Includes
+- Heatsink kit (pre-installed)
+- USB downloader cable
+- 12V power adapter
+- PCIe bracket
+- Mini USB cable
+- Card reader
+- microSD card

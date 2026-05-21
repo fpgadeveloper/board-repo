@@ -15,7 +15,7 @@ device: { part: XC7Z010-1CLG400C, vendor: amd-xilinx }
 - QSPI 16MB
 
 ## Sensors
-- IMU
+- Accelerometer
 - Temperature
 
 ## Audio
@@ -41,3 +41,6 @@ device: { part: XC7Z010-1CLG400C, vendor: amd-xilinx }
 
 ## User I/O
 - LEDs x3
+- RGB LEDs x1
+- Pushbuttons x1
+- DIP switches x4

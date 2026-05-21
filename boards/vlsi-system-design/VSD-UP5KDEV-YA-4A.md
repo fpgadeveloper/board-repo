@@ -16,3 +16,6 @@ device: { part: ICE40UP5K-SG48, vendor: lattice }
 
 ## USB UART/JTAG
 - Micro-B JTAG/UART
+
+## User I/O
+- RGB LEDs x1

@@ -33,6 +33,9 @@ price: null
 ## USB UART/JTAG
 - Mini-B UART x2
 
+## Expansion
+- GPIO Header x2
+
 ## Storage
 - SATA x1
 - microSD x1

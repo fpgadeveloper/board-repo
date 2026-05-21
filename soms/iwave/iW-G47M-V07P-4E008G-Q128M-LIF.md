@@ -25,3 +25,8 @@ device: { part: XCVU7P-2FLVB2104I, vendor: amd-xilinx }
 
 ## Features
 - Secure element
+
+## Extras
+- Dual-core Arm Cortex-A7 companion processor (1.2GHz)
+- 512KB SPI SRAM
+- 4MB MRAM

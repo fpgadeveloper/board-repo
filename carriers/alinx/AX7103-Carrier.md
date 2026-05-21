@@ -22,6 +22,7 @@ price: null
 
 ## Expansion
 - XADC Header x1
+- GPIO Header x2
 
 ## Storage
 - microSD x1

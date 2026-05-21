@@ -42,3 +42,6 @@ device: { part: XC7Z010-1CLG400C, vendor: amd-xilinx }
 - RGB LEDs x2
 - Pushbuttons x4
 - DIP switches x2
+
+## Extras
+- QSPI Flash carries factory-programmed 48-bit EUI-48/64 unique identifier

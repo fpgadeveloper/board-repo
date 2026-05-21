@@ -7,6 +7,9 @@ vendor: alinx
 price: null
 ---
 
+## EEPROM
+- data I2C 4Kbit 24LC04
+
 ## Sensors
 - Temperature LM75A
 

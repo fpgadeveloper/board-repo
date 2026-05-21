@@ -7,3 +7,10 @@ vendor: alinx
 price: { value: 4917.99, currency: GBP }
 composition: { som: ACKU15, carrier: AXKU15-Carrier }
 ---
+
+## Includes
+- Mini USB cable
+- USB downloader cable
+- 12V power adapter
+- PCIe fence bracket
+- Heatsink kit (preinstalled)

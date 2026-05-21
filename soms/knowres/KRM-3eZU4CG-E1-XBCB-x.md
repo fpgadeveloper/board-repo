@@ -9,8 +9,8 @@ device: { part: XCZU4CG-1SFVC784E, vendor: amd-xilinx }
 ---
 
 ## Memory
-- DDR4 4GB
-- DDR4 1GB
+- DDR4 4GB 64-bit
+- DDR4 1GB 16-bit
 
 ## Flash
 - QSPI 32MB
@@ -21,3 +21,7 @@ device: { part: XCZU4CG-1SFVC784E, vendor: amd-xilinx }
 
 ## User I/O
 - LEDs x4
+
+## Extras
+- Onboard Board Management Controller (BMC): power sequencing, telemetry, boot-mode selection, and multi-module housekeeping
+- Optional top-mounted piggyback NVMe adapter on the on-SoM PS GTR connector (accepts small NVMe SSDs or LTE modems)

@@ -9,7 +9,7 @@ device: { part: XC7A200T-2FBG484I, vendor: amd-xilinx }
 ---
 
 ## Memory
-- DDR3 256MB
+- DDR3 256MB 16-bit
 
 ## Flash
 - QSPI 16MB
@@ -28,3 +28,9 @@ device: { part: XC7A200T-2FBG484I, vendor: amd-xilinx }
 
 ## Storage
 - microSD x1
+
+## User I/O
+- RGB LEDs x1
+
+## Features
+- Secure element

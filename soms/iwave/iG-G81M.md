@@ -16,3 +16,6 @@ device: { part: XCVP1802-2MSELSVA5601, vendor: amd-xilinx }
 ## Flash
 - eMMC 32GB
 - QSPI 256MB
+
+## Clocking
+- Programmable

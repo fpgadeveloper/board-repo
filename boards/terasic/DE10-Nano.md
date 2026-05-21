@@ -11,6 +11,9 @@ device: { part: 5CSEBA6U23I7N, vendor: altera }
 ## Memory
 - DDR3 1GB 32-bit
 
+## Flash
+- SPI 8MB
+
 ## Analog
 - ADC
 
@@ -41,3 +44,7 @@ device: { part: 5CSEBA6U23I7N, vendor: altera }
 - LEDs x9
 - Pushbuttons x3
 - DIP switches x4
+
+## Extras
+- LTC 2x7 expansion header
+- 10-pin analog input header

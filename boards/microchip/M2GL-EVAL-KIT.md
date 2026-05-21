@@ -27,4 +27,10 @@ device: { part: M2GL010T-FGG484, vendor: microchip }
 - Mini-B 2.0 device
 
 ## USB UART/JTAG
-- Micro-B UART
+- Mini-B UART
+
+## Expansion
+- GPIO Header x1
+
+## Extras
+- Current measurement test points

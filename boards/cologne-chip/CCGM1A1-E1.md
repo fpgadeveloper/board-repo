@@ -8,6 +8,9 @@ price: { value: 244.43, currency: USD }
 device: { part: CCGM1A1-BGA324, vendor: cologne-chip }
 ---
 
+## Memory
+- HyperRAM 8MB
+
 ## Flash
 - QSPI 8MB
 
@@ -19,3 +22,10 @@ device: { part: CCGM1A1-BGA324, vendor: cologne-chip }
 
 ## Expansion
 - Pmod x2
+
+## Features
+- Programmable VADJ
+
+## Extras
+- Unpopulated footprint for secondary HyperRAM / HyperFlash module
+- USB-SPI flash configuration interface

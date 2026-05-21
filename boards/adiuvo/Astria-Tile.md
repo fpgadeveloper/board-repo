@@ -19,3 +19,11 @@ device: { part: XC7S25-1CSGA225C, vendor: amd-xilinx }
 
 ## User I/O
 - LEDs x2
+
+## Extras
+- Wide-range supply input 4.5-18V
+- 100MHz onboard oscillator
+- DONE configuration-status LED
+- Reset button
+- Boot-mode selection header (JTAG/QSPI)
+- 82 I/O pins: 32 fixed 3.3V, 41 configurable-voltage (1.2-3.3V, LVDS-capable)

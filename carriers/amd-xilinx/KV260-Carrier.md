@@ -26,3 +26,6 @@ price: null
 
 ## Features
 - Secure element
+
+## Extras
+- OnSemi AP1302 ISP (image sensor processor)

@@ -22,3 +22,6 @@ price: { value: 279, currency: EUR }
 
 ## Storage
 - microSD x1
+
+## Extras
+- 2x 50-pin ZIF expansion ports

@@ -22,3 +22,6 @@ device: { part: 5CGXFC9E7F27C7N, vendor: altera }
 
 ## Features
 - Power monitoring
+
+## Extras
+- HSMC expansion connectors x2 (HSMA and HSMB)

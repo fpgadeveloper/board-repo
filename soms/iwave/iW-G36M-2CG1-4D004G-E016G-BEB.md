@@ -14,6 +14,10 @@ device: { part: XCZU2CG-1SFVC784E, vendor: amd-xilinx }
 
 ## Flash
 - eMMC 16GB
+- QSPI 256MB
+
+## Networking
+- 1GbE x1 PHY-only
 
 ## Clocking
 - Programmable

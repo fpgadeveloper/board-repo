@@ -25,3 +25,6 @@ device: { part: LFE5UM5G-45F-8BG381I, vendor: lattice }
 
 ## USB UART/JTAG
 - Mini-B JTAG/UART
+
+## Extras
+- 14-segment alphanumeric display

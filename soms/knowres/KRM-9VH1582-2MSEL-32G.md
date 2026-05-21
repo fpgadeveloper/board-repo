@@ -17,3 +17,6 @@ device: { part: XCVH1582-2MSELSVA4737, vendor: amd-xilinx }
 
 ## Clocking
 - Programmable
+
+## Extras
+- Housekeeping bus for deterministic multi-module power-up

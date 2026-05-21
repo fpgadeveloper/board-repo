@@ -17,5 +17,11 @@ device: { part: XCVP1502-1LSEVSVA2785, vendor: amd-xilinx }
 - QSPI 256MB
 - eMMC 32GB
 
+## Networking
+- 1GbE x1 PHY-only
+
 ## Clocking
 - Programmable
+
+## Extras
+- Ethernet PHY with PTP support

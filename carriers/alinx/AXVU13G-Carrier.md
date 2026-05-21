@@ -10,6 +10,9 @@ price: null
 ## PCIe
 - Edge Gen3 x16
 
+## High-speed I/O
+- SMA transceiver pairs x8
+
 ## Networking
 - 1GbE x1
 - QSFP28 x7
@@ -28,3 +31,6 @@ price: null
 ## User I/O
 - LEDs x2
 - DIP switches x1
+
+## Extras
+- SMA trigger connectors x2
