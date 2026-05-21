@@ -8,6 +8,9 @@ price: { value: 99, currency: USD }
 device: { part: XC7A35T-1CPG236C, vendor: amd-xilinx }
 ---
 
+## SRAM
+- SRAM 512KB 8-bit
+
 ## Flash
 - QSPI 4MB
 
@@ -21,6 +24,3 @@ device: { part: XC7A35T-1CPG236C, vendor: amd-xilinx }
 - LEDs x2
 - RGB LEDs x1
 - Pushbuttons x2
-
-## Extras
-- 512KB SRAM (8-bit bus, 8ns access time)

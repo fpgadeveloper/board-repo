@@ -15,7 +15,7 @@ device: { part: LFCPNX-100-9LFG672I, vendor: lattice }
 - Edge Gen3 x4
 
 ## High-speed I/O
-- SMA transceiver pairs x2
+- SMA x2 2-lane
 
 ## Video
 - MIPI CSI x1

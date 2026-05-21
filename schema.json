@@ -19,6 +19,7 @@
         "price": { "$ref": "#/$defs/price_or_null" },
         "device": { "$ref": "#/$defs/device" },
         "memory": { "type": "array", "title": "Memory", "description": "On-board DRAM. List one entry per distinct memory bank.", "items": { "$ref": "#/$defs/memory_interface" }, "minItems": 1 },
+        "sram": { "type": "array", "title": "SRAM", "description": "On-board static / non-volatile RAM chips (SRAM, SSRAM, MRAM, FRAM, nvSRAM) — distinct from the DRAM banks in `memory`. One entry per chip.", "items": { "$ref": "#/$defs/sram_interface" }, "minItems": 1 },
         "flash": { "type": "array", "title": "Flash", "description": "On-board non-volatile flash memory. List one entry per distinct chip.", "items": { "$ref": "#/$defs/flash_interface" }, "minItems": 1 },
         "eeprom": { "type": "array", "title": "EEPROM", "description": "Small on-board EEPROMs (MAC address, board UID, board identification, user data). One entry per chip.", "items": { "$ref": "#/$defs/eeprom_chip" }, "minItems": 1 },
         "analog": { "type": "array", "title": "Analog", "description": "Discrete ADCs, DACs, RF transceivers, and AFEs soldered to the board. Excludes FPGA-internal XADC/SYSMON and anything on daughter cards.", "items": { "$ref": "#/$defs/analog_chip" }, "minItems": 1 },
@@ -57,6 +58,7 @@
         "price": { "$ref": "#/$defs/price_or_null" },
         "device": { "$ref": "#/$defs/device" },
         "memory": { "type": "array", "title": "Memory", "description": "On-SoM DRAM. List one entry per distinct memory bank.", "items": { "$ref": "#/$defs/memory_interface" }, "minItems": 1 },
+        "sram": { "type": "array", "title": "SRAM", "description": "On-SoM static / non-volatile RAM chips (SRAM, SSRAM, MRAM, FRAM, nvSRAM) — distinct from the DRAM banks in `memory`. One entry per chip.", "items": { "$ref": "#/$defs/sram_interface" }, "minItems": 1 },
         "flash": { "type": "array", "title": "Flash", "description": "On-SoM non-volatile flash memory.", "items": { "$ref": "#/$defs/flash_interface" }, "minItems": 1 },
         "eeprom": { "type": "array", "title": "EEPROM", "description": "On-SoM EEPROMs (typically MAC address, unique board ID). One entry per chip. Useful regardless of carrier — flattens into the kit at build time.", "items": { "$ref": "#/$defs/eeprom_chip" }, "minItems": 1 },
         "analog": { "type": "array", "title": "Analog", "description": "Discrete ADCs, DACs, RF transceivers, and AFEs soldered to the SoM.", "items": { "$ref": "#/$defs/analog_chip" }, "minItems": 1 },
@@ -432,10 +434,16 @@
     },
     "usb_interface": {
       "type": "object",
-      "required": ["connector", "speed", "role"],
+      "required": ["speed", "role"],
       "additionalProperties": false,
       "properties": {
         "connector": { "$ref": "#/$defs/usb_connector" },
+        "endpoint": {
+          "type": "string",
+          "enum": ["connector", "phy"],
+          "default": "connector",
+          "description": "Which part of the USB signal chain this entity carries. 'connector' = a complete USB port terminating in a physical receptacle (standalone boards — the default). 'phy' = a USB PHY / ULPI transceiver routed to the entity's mating connectors with no receptacle of its own; the receptacle is on a mated carrier (typical SoM). Defaults to 'connector' when omitted. When 'phy', `connector` is omitted; otherwise `connector` is required."
+        },
         "speed": {
           "type": "string",
           "enum": ["1.1", "2.0", "3.0", "3.1", "3.2", "4"],
@@ -451,7 +459,14 @@
           "minimum": 1,
           "description": "Number of physical ports of this kind. Defaults to 1 if omitted."
         }
-      }
+      },
+      "allOf": [
+        {
+          "if": { "required": ["endpoint"], "properties": { "endpoint": { "const": "phy" } } },
+          "then": { "not": { "required": ["connector"] } },
+          "else": { "required": ["connector"] }
+        }
+      ]
     },
     "usb_bridge_interface": {
       "type": "object",
@@ -523,6 +538,35 @@
         "ecc": {
           "type": "boolean",
           "description": "True when this bank has ECC (error-correcting) support."
+        }
+      }
+    },
+    "sram_interface": {
+      "type": "object",
+      "title": "SRAM Chip",
+      "description": "A discrete static or non-volatile RAM chip — distinct from the DRAM banks in `memory`. Covers asynchronous SRAM, synchronous SRAM (SSRAM), and the non-volatile MRAM / FRAM / nvSRAM families. HyperRAM and PSRAM are pseudo-static DRAM and live in `memory`, not here. One entry per chip.",
+      "required": ["type", "size_kb"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["SRAM", "SSRAM", "MRAM", "FRAM", "nvSRAM"],
+          "description": "Static-RAM family. 'SRAM' = asynchronous static RAM; 'SSRAM' = synchronous SRAM (pipelined / ZBT / QDR-class). MRAM (magnetoresistive), FRAM (ferroelectric), and nvSRAM are non-volatile — they retain data without power."
+        },
+        "size_kb": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Total capacity of this chip in kilobytes (1 MB -> 1024). SRAM chips are far smaller than DRAM, so capacity is recorded in KB rather than MB."
+        },
+        "width_bits": {
+          "type": "integer",
+          "enum": [1, 2, 4, 8, 16, 32, 36],
+          "description": "Data bus width. 1/2/4 are serial SRAMs (SPI / QSPI); 8/16/32 are parallel; 36 is a parity / byte-enable width seen on some SSRAMs."
+        },
+        "interface": {
+          "type": "string",
+          "enum": ["parallel", "SPI", "QSPI"],
+          "description": "Bus the chip hangs off. 'parallel' is the default for classic asynchronous / synchronous SRAM; serial SRAMs use SPI or QSPI."
         }
       }
     },
@@ -632,7 +676,13 @@
         "syzygy_trx": { "type": "integer", "title": "SYZYGY TRX", "minimum": 1 },
         "rfmc": { "type": "integer", "title": "RFMC", "minimum": 1 },
         "gpio_header": { "type": "integer", "title": "GPIO Header", "minimum": 1, "description": "Count of generic GPIO breakout headers (no standardised pinout — pin count varies)." },
-        "xadc_header": { "type": "integer", "title": "XADC Header", "minimum": 1, "description": "Count of XADC / SYSMON / SmartVIO analog-channel breakout headers (common on Xilinx 7-series and Ultrascale eval boards)." }
+        "xadc_header": { "type": "integer", "title": "XADC Header", "minimum": 1, "description": "Count of XADC / SYSMON / SmartVIO analog-channel breakout headers (common on Xilinx 7-series and Ultrascale eval boards)." },
+        "hsmc": { "type": "integer", "title": "HSMC", "minimum": 1, "description": "Count of HSMC (High-Speed Mezzanine Card) connectors — the Altera / Terasic 172-pin mezzanine standard." },
+        "cruvi_hs": { "type": "integer", "title": "CRUVI HS", "minimum": 1, "description": "Count of CRUVI HS (high-speed) mezzanine connectors." },
+        "cruvi_ls": { "type": "integer", "title": "CRUVI LS", "minimum": 1, "description": "Count of CRUVI LS (low-speed) mezzanine connectors." },
+        "grove": { "type": "integer", "title": "Grove", "minimum": 1, "description": "Count of Seeed Grove 4-pin connectors." },
+        "boards96_ls": { "type": "integer", "title": "96Boards Low-Speed", "minimum": 1, "description": "Count of 96Boards low-speed (40-pin) expansion connectors." },
+        "boards96_hs": { "type": "integer", "title": "96Boards High-Speed", "minimum": 1, "description": "Count of 96Boards high-speed (60-pin) expansion connectors." }
       },
       "minProperties": 1
     },
@@ -732,18 +782,45 @@
       },
       "minProperties": 1
     },
-    "high_speed_io": {
+    "transceiver_connector": {
       "type": "object",
-      "title": "High-Speed I/O",
-      "description": "Raw transceiver fan-outs and high-speed cabled connectors that expose the FPGA's GTX/GTH/GTY lanes without the PCIe protocol wrapper.",
+      "title": "High-Speed Connector",
+      "description": "A connector whose purpose is to break out the FPGA's high-speed serial transceiver lanes (GTX / GTH / GTY / PS-GTR / ...) outside the PCIe protocol wrapper. One entry per connector form.",
+      "required": ["form"],
       "additionalProperties": false,
       "properties": {
-        "sma_transceiver_pairs": { "type": "integer", "title": "SMA Transceiver Pairs", "minimum": 1, "description": "Count of SMA pairs (TX+RX) routed to FPGA transceivers." },
-        "firefly": { "type": "integer", "title": "Samtec FireFly", "minimum": 1, "description": "Count of Samtec FireFly module slots." },
-        "slimsas": { "type": "integer", "title": "SlimSAS", "minimum": 1, "description": "Count of SlimSAS cabled connectors (typically PCIe over cable)." },
-        "displayport_transceiver": { "type": "integer", "title": "Mini-DP Transceiver", "minimum": 1, "description": "Count of mini-DisplayPort connectors wired to FPGA transceivers (GTP/GTH lanes), not video — a low-cost way to break out MGT lanes. Seen on Numato boards." }
-      },
-      "minProperties": 1
+        "form": {
+          "type": "string",
+          "enum": ["SMA", "FireFly", "SlimSAS", "BullsEye", "MXP", "Mini-DP", "Z-Ray"],
+          "description": "Physical connector type. SMA = coaxial SMA pairs (one TX+RX pair = one lane). FireFly = Samtec FireFly micro optical/copper module slot. SlimSAS = SFF-8654 cabled connector. BullsEye = Samtec high-density coaxial test connector. MXP = Samtec MXP cabled connector. Mini-DP = mini-DisplayPort connector wired to FPGA transceivers (not video). Z-Ray = Samtec Z-Ray high-density array connector."
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Number of connectors of this form. Defaults to 1 if omitted."
+        },
+        "lanes": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Total number of transceiver lanes (TX/RX pairs) routed across all `count` connectors of this form."
+        },
+        "transceiver": {
+          "type": "string",
+          "description": "Transceiver type the lanes belong to — e.g. GTP, GTX, GTH, GTY, GTYP, GTM, GTF, PS-GTR (AMD), or an Intel / Lattice / etc. equivalent. Free-form because transceiver naming is silicon-vendor-specific."
+        },
+        "max_rate_gbps": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Maximum per-lane line rate in Gbps."
+        }
+      }
+    },
+    "high_speed_io": {
+      "type": "array",
+      "title": "High-Speed I/O",
+      "description": "Connectors that break out the FPGA's high-speed serial transceiver lanes (GTX / GTH / GTY / PS-GTR / ...) outside the PCIe protocol wrapper. One entry per connector form.",
+      "items": { "$ref": "#/$defs/transceiver_connector" },
+      "minItems": 1
     },
     "serial": {
       "type": "object",
@@ -781,6 +858,7 @@
       "properties": {
         "power_monitoring": { "type": "boolean", "title": "Power Monitoring", "description": "On-board PMBus / INA-class power-rail monitoring." },
         "programmable_vadj": { "type": "boolean", "title": "Programmable VADJ", "description": "User can adjust VADJ / core voltage rails (typically via I2C / PMBus)." },
+        "rtc": { "type": "boolean", "title": "RTC", "description": "On-board real-time clock chip. Set `battery_backed_rtc` instead (or as well) when the RTC is backed by a coin cell or supercap." },
         "battery_backed_rtc": { "type": "boolean", "title": "Battery-Backed RTC", "description": "RTC backed by coin cell or supercap." },
         "secure_element": { "type": "boolean", "title": "Secure Element", "description": "Discrete TPM / ATECC / equivalent cryptographic chip." },
         "tamper_detection": { "type": "boolean", "title": "Tamper Detection", "description": "On-board tamper-detection circuitry." }

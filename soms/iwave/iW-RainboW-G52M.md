@@ -14,6 +14,9 @@ device: { part: XCVU13P-1FHGB2104I, vendor: amd-xilinx }
 - DDR4 2GB 32-bit
 - LPDDR 2GB 32-bit
 
+## SRAM
+- SRAM 512KB SPI
+
 ## Flash
 - QSPI 128MB
 - eMMC 16GB
@@ -31,5 +34,4 @@ device: { part: XCVU13P-1FHGB2104I, vendor: amd-xilinx }
 - Secure element
 
 ## Extras
-- 512KB SRAM (SPI)
 - 2:1 JTAG MUX switch

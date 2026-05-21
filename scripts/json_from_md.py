@@ -59,6 +59,7 @@ OPTIONAL_FRONT_MATTER = {
 # Section heading → JSON key (for sections that map to a top-level JSON field)
 SECTION_HEADING_TO_KEY = {
     "Memory": "memory",
+    "SRAM": "sram",
     "Flash": "flash",
     "EEPROM": "eeprom",
     "Analog": "analog",
@@ -100,6 +101,17 @@ def parse_size(s):
     if s.endswith("GB"):
         return int(s[:-2]) * 1024
     if s.endswith("MB"):
+        return int(s[:-2])
+    raise ValueError(f"can't parse size: {s!r}")
+
+
+def parse_size_kb(s):
+    """'1MB' -> 1024; '512KB' -> 512; '1GB' -> 1048576. For small SRAM chips."""
+    if s.endswith("GB"):
+        return int(s[:-2]) * 1024 * 1024
+    if s.endswith("MB"):
+        return int(s[:-2]) * 1024
+    if s.endswith("KB"):
         return int(s[:-2])
     raise ValueError(f"can't parse size: {s!r}")
 
@@ -214,6 +226,31 @@ def parse_memory(bullets, base_line, warnings):
             item["ecc"] = True
         if m.group(5):
             item["form_factor"] = m.group(5).lower()
+        items.append(item)
+    return items
+
+
+SRAM_RE = re.compile(
+    r"^(SRAM|SSRAM|MRAM|FRAM|nvSRAM) "
+    r"(\d+(?:GB|MB|KB))"
+    r"(?: (\d+)-bit)?"
+    r"(?: (SPI|QSPI))?"
+    r"$"
+)
+
+
+def parse_sram(bullets, base_line, warnings):
+    items = []
+    for text, off in bullets:
+        m = SRAM_RE.match(text)
+        if not m:
+            warn(warnings, base_line + off, f"SRAM: unrecognized {text!r}")
+            continue
+        item = {"type": m.group(1), "size_kb": parse_size_kb(m.group(2))}
+        if m.group(3):
+            item["width_bits"] = int(m.group(3))
+        if m.group(4):
+            item["interface"] = m.group(4)
         items.append(item)
     return items
 
@@ -476,16 +513,48 @@ def _parse_count_section(bullets, base_line, warnings, section_name, label_map):
     return data
 
 
-_HSI_LABELS = [
-    ("SMA transceiver pairs", "sma_transceiver_pairs", True),
-    ("Samtec FireFly", "firefly", True),
-    ("SlimSAS", "slimsas", True),
-    ("Mini-DP transceiver", "displayport_transceiver", True),
-]
+_HSI_FORMS = {"SMA", "FireFly", "SlimSAS", "BullsEye", "MXP", "Mini-DP", "Z-Ray"}
 
 
 def parse_high_speed_io(bullets, base_line, warnings):
-    return _parse_count_section(bullets, base_line, warnings, "High-speed I/O", _HSI_LABELS)
+    """`<form> [xN] [<lanes>-lane] [<type>] [<rate>Gbps]` -> transceiver_connector.
+
+    Tokens are consumed positionally (like parse_m2). The optional transceiver
+    `type` is a free-form token, so the trailing `<rate>Gbps` is matched from
+    the end first to keep the type token from swallowing it.
+    """
+    items = []
+    for text, off in bullets:
+        toks = text.split()
+        if not toks or toks[0] not in _HSI_FORMS:
+            warn(warnings, base_line + off, f"High-speed I/O: unrecognized form in {text!r}")
+            continue
+        item = {"form": toks[0]}
+        i = 1
+        # optional count xN
+        if i < len(toks) and (m := re.fullmatch(r"x(\d+)", toks[i])):
+            item["count"] = int(m.group(1))
+            i += 1
+        # optional lanes <N>-lane
+        if i < len(toks) and (m := re.fullmatch(r"(\d+)-lane", toks[i])):
+            item["lanes"] = int(m.group(1))
+            i += 1
+        # optional rate <N>Gbps — matched from the end so the free-form
+        # transceiver-type token doesn't absorb it
+        end = len(toks)
+        if i < end and (m := re.fullmatch(r"(\d+(?:\.\d+)?)Gbps", toks[end - 1])):
+            item["max_rate_gbps"] = parse_number(m.group(1))
+            end -= 1
+        # whatever is left between i and end is the transceiver type (one token)
+        if i < end:
+            if end - i == 1:
+                item["transceiver"] = toks[i]
+            else:
+                warn(warnings, base_line + off,
+                     f"High-speed I/O: unrecognized tokens in {text!r}: {toks[i:end]}")
+                continue
+        items.append(item)
+    return items
 
 
 _VIDEO_LABELS = [
@@ -584,9 +653,13 @@ def parse_usb(bullets, base_line, warnings):
         if len(toks) < 3:
             warn(warnings, base_line + off, f"USB: too few tokens in {text!r}")
             continue
-        connector, speed, role_tok = toks[0], toks[1], toks[2]
-        if connector not in _USB_CONNECTORS:
-            warn(warnings, base_line + off, f"USB: unknown connector {connector!r}")
+        # First token is either a physical connector, or the literal `PHY`
+        # marking a USB PHY / ULPI transceiver with no receptacle of its own
+        # (the receptacle lives on a mated carrier — typical SoM).
+        first, speed, role_tok = toks[0], toks[1], toks[2]
+        is_phy = first == "PHY"
+        if not is_phy and first not in _USB_CONNECTORS:
+            warn(warnings, base_line + off, f"USB: unknown connector {first!r}")
             continue
         if speed not in _USB_SPEEDS:
             warn(warnings, base_line + off, f"USB: unknown speed {speed!r}")
@@ -594,7 +667,13 @@ def parse_usb(bullets, base_line, warnings):
         if role_tok not in _USB_ROLE_TOKEN:
             warn(warnings, base_line + off, f"USB: unknown role {role_tok!r}")
             continue
-        item = {"connector": connector, "speed": speed, "role": _USB_ROLE_TOKEN[role_tok]}
+        item = {}
+        if is_phy:
+            item["endpoint"] = "phy"
+        else:
+            item["connector"] = first
+        item["speed"] = speed
+        item["role"] = _USB_ROLE_TOKEN[role_tok]
         if len(toks) == 4:
             m = re.fullmatch(r"x(\d+)", toks[3])
             if not m:
@@ -648,6 +727,12 @@ _EXPANSION_COUNT_LABELS = [
     ("RFMC", "rfmc", True),
     ("GPIO Header", "gpio_header", True),
     ("XADC Header", "xadc_header", True),
+    ("HSMC", "hsmc", True),
+    ("CRUVI HS", "cruvi_hs", True),
+    ("CRUVI LS", "cruvi_ls", True),
+    ("Grove", "grove", True),
+    ("96Boards LS", "boards96_ls", True),
+    ("96Boards HS", "boards96_hs", True),
 ]
 _EXPANSION_LABELS_BY_TEXT = {label: (key, _) for label, key, _ in _EXPANSION_COUNT_LABELS}
 
@@ -679,7 +764,11 @@ def parse_expansion(bullets, base_line, warnings):
             fmc_slots.append(slot_data)
             continue
         # SYZYGY TRX must match before SYZYGY (longest first); regex handles this.
-        m2 = re.match(r"^(SYZYGY TRX|Raspberry Pi|GPIO Header|XADC Header|Pmod|Arduino|Click|SYZYGY|RFMC) x(\d+)$", text)
+        m2 = re.match(
+            r"^(SYZYGY TRX|Raspberry Pi|GPIO Header|XADC Header|CRUVI HS|CRUVI LS"
+            r"|96Boards LS|96Boards HS|Pmod|Arduino|Click|SYZYGY|RFMC|HSMC|Grove) x(\d+)$",
+            text,
+        )
         if m2 and m2.group(1) in _EXPANSION_LABELS_BY_TEXT:
             key, _ = _EXPANSION_LABELS_BY_TEXT[m2.group(1)]
             data[key] = int(m2.group(2))
@@ -730,6 +819,7 @@ def parse_wireless(bullets, base_line, warnings):
 _FEATURE_BULLETS = {
     "Power monitoring": "power_monitoring",
     "Programmable VADJ": "programmable_vadj",
+    "RTC": "rtc",
     "Battery-backed RTC": "battery_backed_rtc",
     "Secure element": "secure_element",
     "Tamper detection": "tamper_detection",
@@ -749,6 +839,7 @@ def parse_features(bullets, base_line, warnings):
 
 SECTION_PARSERS = {
     "Memory": parse_memory,
+    "SRAM": parse_sram,
     "Flash": parse_flash,
     "EEPROM": parse_eeprom,
     "Analog": parse_analog,

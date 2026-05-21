@@ -15,7 +15,7 @@ device: { part: XC7A50T-1FGG484C, vendor: amd-xilinx }
 - SPI 16MB
 
 ## High-speed I/O
-- Mini-DP transceiver x2
+- Mini-DP x2
 
 ## Video
 - HDMI In x1

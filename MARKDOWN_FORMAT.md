@@ -38,7 +38,7 @@ Status: draft. Working examples for all entity types live in `REWORK.md` in the 
 
 - **Succinct, space-separated tokens** — no commas, no extra whitespace. `DDR4 2GB 64-bit`, not `DDR4, 2 GB, 64 bit`.
 - **No space between number and unit** — `2GB`, `100MHz`, `1GbE`, `64-bit`. Exception: VADJ ranges write `1.5-1.8V` (hyphen separator, V at end).
-- **Counts use an `x<N>` suffix — follow each section's grammar exactly.** Where a grammar shows `xN` (`Pmod xN`, `LEDs xN`, `HDMI Out xN`, `SFP+ xN`, …) the suffix is **required, including a count of one** — write `Pmod x1`, never a bare `Pmod`. Omit it *only* where a grammar shows `[xN]` in brackets (USB and USB UART/JTAG), for a single port. Boolean bullets that carry no count token at all (`Speaker`, `Programmable`, `WiFi`) never take one.
+- **Counts use an `x<N>` suffix — follow each section's grammar exactly.** Where a grammar shows `xN` (`Pmod xN`, `LEDs xN`, `HDMI Out xN`, `SFP+ xN`, …) the suffix is **required, including a count of one** — write `Pmod x1`, never a bare `Pmod`. Omit it *only* where a grammar shows `[xN]` in brackets (USB, USB UART/JTAG, and High-speed I/O), for a single port / connector. Boolean bullets that carry no count token at all (`Speaker`, `Programmable`, `WiFi`) never take one.
 - **Token order is fixed per section**, defined below. Parser is positional within each section's grammar.
 - **Optional tokens are appended in fixed order** — for example memory is `<type> <size> [<width>-bit] [ECC] [<form_factor>]`. Skip any optional token by leaving it out.
 
@@ -104,6 +104,25 @@ Examples:
 - `DDR4 8GB 72-bit ECC`
 - `DDR4 16GB 64-bit SODIMM`
 - `HBM2 8GB`
+
+### `## SRAM`
+
+Schema: `sram[]` (array of `sram_interface`). Discrete static / non-volatile RAM chips — distinct from the DRAM banks in `## Memory`. HyperRAM and PSRAM are pseudo-static DRAM and belong in `## Memory`, not here.
+
+Grammar: `<type> <size> [<width>-bit] [<interface>]`
+
+| Token | Schema field | Form |
+|---|---|---|
+| `type` | `type` | Enum literal: `SRAM`, `SSRAM`, `MRAM`, `FRAM`, `nvSRAM` |
+| `size` | `size_kb` | Integer + `KB`, `MB`, or `GB` |
+| `width` | `width_bits` | `<N>-bit` |
+| `interface` | `interface` | Literal `SPI` or `QSPI`; omit when `parallel` (default) |
+
+Examples:
+- `SRAM 512KB 8-bit`
+- `SSRAM 2MB 16-bit`
+- `MRAM 4MB`
+- `SRAM 512KB SPI`
 
 ### `## Flash`
 
@@ -251,14 +270,25 @@ Examples:
 
 ### `## High-speed I/O`
 
-Schema: `high_speed_io` (object of counts).
+Schema: `high_speed_io[]` (array of `transceiver_connector`). Connectors that
+break out the FPGA's serial transceiver lanes outside the PCIe protocol wrapper.
+One bullet per connector form.
 
-| Bullet | Schema field |
-|---|---|
-| `SMA transceiver pairs xN` | `sma_transceiver_pairs` |
-| `Samtec FireFly xN` | `firefly` |
-| `SlimSAS xN` | `slimsas` |
-| `Mini-DP transceiver xN` | `displayport_transceiver` |
+Grammar: `<form> [xN] [<lanes>-lane] [<type>] [<rate>Gbps]`
+
+| Token | Schema field | Form |
+|---|---|---|
+| `form` | `form` | Enum literal: `SMA`, `FireFly`, `SlimSAS`, `BullsEye`, `MXP`, `Mini-DP`, `Z-Ray` |
+| `xN` | `count` | `x` + integer; omit when 1 |
+| `lanes` | `lanes` | `<N>-lane` — total transceiver lanes across all `xN` connectors |
+| `type` | `transceiver` | Transceiver-type token: `GTP`, `GTX`, `GTH`, `GTY`, `GTYP`, `GTM`, `GTF`, `PS-GTR`, or a vendor equivalent |
+| `rate` | `max_rate_gbps` | `<N>Gbps` — maximum per-lane line rate |
+
+Examples:
+- `SMA x4 4-lane GTH`
+- `FireFly x1 4-lane GTY 28.21Gbps`
+- `BullsEye 8-lane GTM 112Gbps`
+- `Mini-DP x2`
 
 ### `## Video`
 
@@ -343,7 +373,7 @@ Grammar: `<connector> <speed> <role> [xN]`
 
 | Token | Schema field | Form |
 |---|---|---|
-| `connector` | `connector` | Enum: `Type-A`, `Type-B`, `Type-C`, `Mini-B`, `Micro-B`, `Header` |
+| `connector` | `connector` / `endpoint` | Enum: `Type-A`, `Type-B`, `Type-C`, `Mini-B`, `Micro-B`, `Header` — or the literal `PHY` for a USB PHY / ULPI transceiver with no receptacle of its own (the receptacle sits on a mated carrier — typical SoM). `PHY` sets `endpoint: phy` and omits `connector`; any other value sets `connector` and leaves `endpoint` at its default (`connector`). |
 | `speed` | `speed` | Enum: `1.1`, `2.0`, `3.0`, `3.1`, `3.2`, `4` |
 | `role` | `role` | `host`, `device`, `OTG` (display form of `otg`) |
 | `xN` | `ports` | Omit when 1 |
@@ -352,6 +382,7 @@ Examples:
 - `Type-A 3.0 host x4`
 - `Type-C 3.2 OTG`
 - `Micro-B 2.0 device`
+- `PHY 2.0 OTG` (SoM-side USB PHY — receptacle on the carrier)
 
 ### `## USB UART/JTAG`
 
@@ -399,6 +430,10 @@ Other expansion bullets — one per non-zero key:
 | `RFMC xN` | `rfmc` |
 | `GPIO Header xN` | `gpio_header` |
 | `XADC Header xN` | `xadc_header` |
+| `HSMC xN` | `hsmc` |
+| `CRUVI HS xN` / `CRUVI LS xN` | `cruvi_hs` / `cruvi_ls` |
+| `Grove xN` | `grove` |
+| `96Boards LS xN` / `96Boards HS xN` | `boards96_ls` / `boards96_hs` |
 
 ### `## Storage`
 
@@ -440,6 +475,7 @@ Schema: `features` (booleans). Labels mirror schema `title`:
 |---|---|
 | `Power monitoring` | `power_monitoring` |
 | `Programmable VADJ` | `programmable_vadj` |
+| `RTC` | `rtc` |
 | `Battery-backed RTC` | `battery_backed_rtc` |
 | `Secure element` | `secure_element` |
 | `Tamper detection` | `tamper_detection` |

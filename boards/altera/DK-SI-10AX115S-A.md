@@ -11,6 +11,9 @@ device: { part: 10AX115S2F45I1SG, vendor: altera }
 ## Clocking
 - Programmable
 
+## High-speed I/O
+- BullsEye
+
 ## Networking
 - SFP+ x2
 - QSFP+ x2
@@ -21,6 +24,3 @@ device: { part: 10AX115S2F45I1SG, vendor: altera }
 
 ## Features
 - Power monitoring
-
-## Extras
-- BullsEye high-density coaxial transceiver test connectors

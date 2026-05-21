@@ -11,7 +11,7 @@ price: null
 - Edge Gen3 x16
 
 ## High-speed I/O
-- SMA transceiver pairs x8
+- SMA x8 8-lane
 
 ## Networking
 - 1GbE x1

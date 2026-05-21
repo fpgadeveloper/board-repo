@@ -39,6 +39,7 @@ device: { part: 10CL055YU484I7G, vendor: altera }
 ## Expansion
 - Pmod x6
 - Arduino x1
+- Grove x1
 
 ## User I/O
 - LEDs x13
@@ -46,5 +47,4 @@ device: { part: 10CL055YU484I7G, vendor: altera }
 - 7-segment displays x1
 
 ## Extras
-- Grove connector
 - 2x SMA connectors (unpopulated)

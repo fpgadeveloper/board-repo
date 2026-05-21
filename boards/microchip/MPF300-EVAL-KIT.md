@@ -20,7 +20,7 @@ device: { part: MPF300TS-1FCG1152I, vendor: microchip }
 - Edge Gen2 x4
 
 ## High-speed I/O
-- SMA transceiver pairs x1
+- SMA 1-lane
 
 ## Networking
 - 1GbE x2

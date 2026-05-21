@@ -15,6 +15,9 @@ device: { part: 1SG280HU1F50E2VG, vendor: altera }
 ## Clocking
 - Programmable
 
+## High-speed I/O
+- MXP
+
 ## Networking
 - 1GbE x1
 - SFP+ x2
@@ -35,6 +38,3 @@ device: { part: 1SG280HU1F50E2VG, vendor: altera }
 
 ## Features
 - Power monitoring
-
-## Extras
-- MXP high-speed cabled connector

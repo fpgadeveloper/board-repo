@@ -22,7 +22,7 @@ device: { part: XC7K325T-1FBG676C, vendor: amd-xilinx }
 - Edge Gen2 x4
 
 ## High-speed I/O
-- Samtec FireFly x1
+- FireFly
 
 ## Expansion
 - FMC+ "FMCP"

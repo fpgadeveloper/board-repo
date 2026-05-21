@@ -13,6 +13,10 @@ device: { part: XCKU19P-2FFVB2104I, vendor: amd-xilinx }
 - DDR4 4GB 64-bit ECC
 - DDR4 2GB 32-bit ECC
 
+## SRAM
+- SRAM 512KB SPI
+- MRAM 4MB
+
 ## Flash
 - QSPI 128MB
 - BPI 256MB 16-bit
@@ -28,5 +32,3 @@ device: { part: XCKU19P-2FFVB2104I, vendor: amd-xilinx }
 
 ## Extras
 - Dual-core Arm Cortex-A7 companion processor (1.2GHz)
-- 512KB SPI SRAM
-- 4MB MRAM

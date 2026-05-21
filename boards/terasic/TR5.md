@@ -11,6 +11,9 @@ device: { part: 5SGXEA7N2F45C2N, vendor: altera }
 ## Memory
 - DDR3 8GB SODIMM
 
+## SRAM
+- SSRAM 2MB 16-bit
+
 ## Flash
 - BPI 128MB 16-bit
 
@@ -39,6 +42,3 @@ device: { part: 5SGXEA7N2F45C2N, vendor: altera }
 - LEDs x4
 - Pushbuttons x4
 - DIP switches x4
-
-## Extras
-- 2MB SSRAM (1M x 16)

@@ -41,6 +41,7 @@ device: { part: 5CSXFC6D6F31C6N, vendor: altera }
 
 ## Expansion
 - GPIO Header x1
+- HSMC x1
 
 ## Storage
 - microSD x1
@@ -52,7 +53,6 @@ device: { part: 5CSXFC6D6F31C6N, vendor: altera }
 - 7-segment displays x6
 
 ## Extras
-- HSMC connector
 - 128x64 dot-matrix LCD module
 - PS/2 keyboard/mouse port
 - Infrared emitter/receiver

@@ -20,12 +20,12 @@ device: { part: XCKU115-2FLVA1517E, vendor: amd-xilinx }
 ## PCIe
 - Edge Gen3 x8
 
+## High-speed I/O
+- Z-Ray 16-lane GTH
+
 ## USB UART/JTAG
 - Mini-B UART
 
 ## Expansion
 - FMC HPC "HPC0"
 - FMC HPC "HPC1"
-
-## Extras
-- HTG High-Speed Bus on Samtec Z-Ray connector — 16 GTH transceivers, control I/Os, 12V/3.3V power pins

@@ -20,8 +20,8 @@ device: { part: 5CGXFC9E7F27C7N, vendor: altera }
 ## USB UART/JTAG
 - Mini-B JTAG
 
+## Expansion
+- HSMC x2
+
 ## Features
 - Power monitoring
-
-## Extras
-- HSMC expansion connectors x2 (HSMA and HSMB)

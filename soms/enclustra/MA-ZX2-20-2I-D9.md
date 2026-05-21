@@ -14,5 +14,5 @@ device: { part: XC7Z020-2CLG400I, vendor: amd-xilinx }
 ## Flash
 - QSPI 64MB
 
-## Extras
-- Onboard real-time clock (RTC)
+## Features
+- RTC

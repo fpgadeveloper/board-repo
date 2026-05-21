@@ -46,5 +46,5 @@ price: null
 - LEDs x1
 - Pushbuttons x2
 
-## Extras
-- Real-time clock (RTC)
+## Features
+- RTC

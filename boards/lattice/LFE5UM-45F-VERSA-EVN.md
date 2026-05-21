@@ -18,7 +18,7 @@ device: { part: LFE5UM-45F-8BG381C, vendor: lattice }
 - Edge Gen2 x1
 
 ## High-speed I/O
-- SMA transceiver pairs x1
+- SMA 1-lane
 
 ## Networking
 - 1GbE x2

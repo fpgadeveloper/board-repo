@@ -18,9 +18,7 @@ device: { part: XCZU3EG-2SFVC784E, vendor: amd-xilinx }
 ## Expansion
 - Pmod x2
 - Raspberry Pi x1
+- Grove x1
 
 ## Storage
 - microSD x1
-
-## Extras
-- Grove expansion connector

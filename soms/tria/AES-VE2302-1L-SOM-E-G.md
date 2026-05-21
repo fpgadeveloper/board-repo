@@ -18,10 +18,12 @@ device: { part: XCVE2302-1LSESFVA784, vendor: amd-xilinx }
 ## EEPROM
 - MAC I2C
 
+## Networking
+- 1GbE x1 PHY-only
+
 ## Extras
 - 3x 160-pin Samtec JX board-to-board connectors
 - 8 GTYP transceiver lanes / 4 GTYP reference clocks
 - I/O resources: 80 user XPIO, 22 user HDIO, 12 user LPD MIO, 13 user PMC MIO
-- Onboard Gigabit Ethernet RGMII PHY
 - Onboard USB 2.0 ULPI PHY
 - I2C 8-bit I/O expander and I2C 2-channel switch

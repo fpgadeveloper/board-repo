@@ -18,7 +18,7 @@ device: { part: M2S090TS-FG484, vendor: microchip }
 - Edge Gen2 x1
 
 ## High-speed I/O
-- SMA transceiver pairs x2
+- SMA x2 2-lane
 
 ## Networking
 - 1GbE x1

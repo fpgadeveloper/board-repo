@@ -19,6 +19,10 @@ device: { part: XCZU3EG-1SFVA625I, vendor: amd-xilinx }
 - Type-A 3.0 host x2
 - Type-A 2.0 host
 
+## Expansion
+- 96Boards LS x1
+- 96Boards HS x1
+
 ## Storage
 - microSD x1
 
@@ -28,10 +32,6 @@ device: { part: XCZU3EG-1SFVA625I, vendor: amd-xilinx }
 ## Wireless
 - WiFi
 - Bluetooth
-
-## Extras
-- 96Boards 40-pin low-speed expansion header
-- 96Boards 60-pin high-speed expansion header
 
 ## Notes
 

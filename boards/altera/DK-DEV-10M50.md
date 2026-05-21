@@ -33,6 +33,7 @@ device: { part: 10M50DAF484I6G, vendor: altera }
 ## Expansion
 - Pmod x2
 - XADC Header x1
+- HSMC x1
 
 ## User I/O
 - LEDs x5
@@ -40,6 +41,3 @@ device: { part: 10M50DAF484I6G, vendor: altera }
 
 ## Features
 - Power monitoring
-
-## Extras
-- HSMC expansion connector (84 CMOS or 17 LVDS channels)

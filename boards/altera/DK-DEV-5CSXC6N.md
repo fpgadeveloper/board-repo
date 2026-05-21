@@ -30,11 +30,11 @@ device: { part: 5CSXFC6D6F31C6N, vendor: altera }
 ## USB
 - Micro-B 2.0 OTG
 
+## Expansion
+- HSMC x1
+
 ## Storage
 - microSD x1
 
 ## Features
 - Power monitoring
-
-## Extras
-- HSMC expansion connector

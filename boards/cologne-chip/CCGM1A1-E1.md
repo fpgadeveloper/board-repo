@@ -15,7 +15,7 @@ device: { part: CCGM1A1-BGA324, vendor: cologne-chip }
 - QSPI 8MB
 
 ## High-speed I/O
-- SMA transceiver pairs x2
+- SMA x2 2-lane
 
 ## USB UART/JTAG
 - Micro-B JTAG
