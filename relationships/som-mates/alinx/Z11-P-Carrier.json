@@ -1,0 +1,6 @@
+{
+  "carrier": "Z11-P-Carrier",
+  "compatible_soms": [
+    { "som": "ACU11EG", "verified_by": "vendor" }
+  ]
+}

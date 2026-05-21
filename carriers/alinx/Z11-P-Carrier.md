@@ -1,21 +1,11 @@
 ---
-mpn: Z11-P
-name: Z11-P
+mpn: Z11-P-Carrier
+name: Z11-P Base Board
 status: active
 url: https://www.en.alinx.com/Product/SoC-Development-Boards/Zynq-UltraScale-plus-MPSoC/Z11-P.html
 vendor: alinx
-price: { value: 2186.99, currency: GBP }
-device: { part: XCZU11EG-2FFVC1156I, vendor: amd-xilinx }
+price: null
 ---
-
-## Memory
-- DDR4 4GB 64-bit
-- DDR4 4GB 64-bit
-
-## Flash
-- QSPI 32MB
-- QSPI 32MB
-- eMMC 32GB
 
 ## EEPROM
 - data I2C 4Kbit 24LC04

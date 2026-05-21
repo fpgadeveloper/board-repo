@@ -1,20 +1,11 @@
 ---
-mpn: VD100
-name: VD100
+mpn: VD100-Carrier
+name: VD100 Base Board
 status: active
 url: https://www.en.alinx.com/Product/SoC-Development-Boards/Versal-AI-Edge/VD100.html
 vendor: alinx
-price: { value: 1640.99, currency: GBP }
-device: { part: XCVE2302-1LSESFVA784, vendor: amd-xilinx }
+price: null
 ---
-
-## Memory
-- DDR4 4GB 64-bit
-
-## Flash
-- QSPI 32MB
-- QSPI 32MB
-- eMMC 8GB
 
 ## EEPROM
 - data I2C 4Kbit 24LC04

@@ -1,0 +1,6 @@
+{
+  "carrier": "VD100-Carrier",
+  "compatible_soms": [
+    { "som": "V100", "verified_by": "vendor" }
+  ]
+}
