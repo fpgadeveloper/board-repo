@@ -15,7 +15,7 @@ device: { part: XC7Z020-1CLG400I, vendor: amd-xilinx }
 - QSPI 16MB
 
 ## Networking
-- 1GbE x1 PHY-only
+- 1GbE x1
 
 ## USB
 - Type-A 2.0 OTG
