@@ -10,9 +10,6 @@ price: null
 ## Sensors
 - Temperature LM75
 
-## PCIe
-- Edge Gen2 x4
-
 ## M.2
 - M-key
 
@@ -33,14 +30,13 @@ price: null
 - Type-A 2.0 host x2
 
 ## USB UART/JTAG
-- Mini-B UART x2
+- Micro-B UART x2
 
 ## Expansion
 - FMC HPC "HPC"
 - GPIO Header x1
 
 ## Storage
-- SATA x2
 - microSD x1
 
 ## User I/O

@@ -21,7 +21,6 @@ price: null
 - Mini-B UART
 
 ## Expansion
-- XADC Header x1
 - GPIO Header x2
 
 ## Storage

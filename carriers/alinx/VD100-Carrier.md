@@ -14,23 +14,23 @@ price: null
 - Temperature LM75
 
 ## PCIe
-- Edge Gen3 x4
+- Edge Gen4 x4
 
 ## Video
 - MIPI CSI x2
 
 ## Networking
-- 1GbE x1
+- 1GbE x2
 - SFP+ x2
 
 ## Serial
-- CAN x1
+- CAN x2
 
 ## USB
 - Type-A 2.0 host
 
 ## USB UART/JTAG
-- Mini-B UART x2
+- Micro-B UART
 
 ## Expansion
 - Pmod x1
@@ -43,7 +43,7 @@ price: null
 - Pushbuttons x2
 
 ## Features
-- Battery-backed RTC
+- RTC
 
 ## Extras
 - LVDS display interface connector

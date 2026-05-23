@@ -9,7 +9,7 @@ device: { part: XCZU47DR-2FFVE1156I, vendor: amd-xilinx }
 ---
 
 ## Memory
-- DDR4 4GB 64-bit
+- DDR4 4GB 64-bit ECC
 - DDR4 2GB 32-bit
 
 ## Flash

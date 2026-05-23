@@ -7,6 +7,9 @@ vendor: alinx
 price: null
 ---
 
+## Clocking
+- SMA clock in x2
+
 ## M.2
 - M-key
 - E-key
@@ -16,6 +19,8 @@ price: null
 
 ## Networking
 - 1GbE x1
+- 5GbE x1 RJ45-only
+- 10GbE x1 RJ45-only
 - QSFP28 x4
 
 ## USB
@@ -33,5 +38,5 @@ price: null
 - microSD x2
 
 ## User I/O
-- LEDs x2
-- Pushbuttons x2
+- LEDs x3
+- Pushbuttons x3

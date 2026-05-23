@@ -13,5 +13,4 @@ device: { part: XCVU13P-2FHGB2104I, vendor: amd-xilinx }
 - DDR4 10GB 80-bit
 
 ## Flash
-- QSPI 128MB
-- QSPI 128MB
+- QSPI 256MB

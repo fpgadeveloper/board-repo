@@ -19,7 +19,7 @@ device: { part: XCKU040-2FFVA1156I, vendor: amd-xilinx }
 - data I2C 4Kbit 24LC04
 
 ## Sensors
-- Temperature LM75
+- Temperature LM75A
 
 ## PCIe
 - Edge Gen3 x8
@@ -32,7 +32,7 @@ device: { part: XCKU040-2FFVA1156I, vendor: amd-xilinx }
 - CAN x1
 
 ## USB UART/JTAG
-- Mini-B UART
+- Micro-B UART
 
 ## Expansion
 - FMC HPC "HPC"

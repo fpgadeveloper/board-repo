@@ -8,7 +8,6 @@ price: null
 ---
 
 ## Video
-- HDMI In x1
 - HDMI Out x1
 
 ## Networking
@@ -16,10 +15,10 @@ price: null
 
 ## USB
 - Type-A 2.0 host
-- Micro-B 2.0 OTG
+- Mini-B 2.0 OTG
 
 ## USB UART/JTAG
-- Mini-B JTAG/UART
+- Mini-B UART
 
 ## Expansion
 - Pmod x1

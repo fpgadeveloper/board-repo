@@ -18,7 +18,7 @@ price: null
 - Type-A 3.0 host x4
 
 ## USB UART/JTAG
-- Micro-B UART
+- Micro-B JTAG/UART
 
 ## Expansion
 - Pmod x4

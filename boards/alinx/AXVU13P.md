@@ -28,7 +28,7 @@ device: { part: XCVU13P-2FHGB2104I, vendor: amd-xilinx }
 - GPIO Header x1
 
 ## User I/O
-- LEDs x6
+- LEDs x8
 - DIP switches x4
 - Pushbuttons x1
 

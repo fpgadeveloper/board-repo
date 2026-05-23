@@ -17,7 +17,7 @@ price: null
 - Edge Gen3 x8
 
 ## M.2
-- M-key x1
+- M-key
 
 ## Video
 - DisplayPort x1
@@ -25,23 +25,19 @@ price: null
 ## Networking
 - 1GbE x2
 
-## Serial
-- CAN x1
-
 ## USB
 - Type-C 3.0 OTG
 
 ## USB UART/JTAG
-- Mini-B UART x2
+- Micro-B UART x2
 
 ## Expansion
 - FMC HPC "HPC"
 - GPIO Header x1
 
 ## Storage
-- SATA x1
 - microSD x1
 
 ## User I/O
-- LEDs x4
+- LEDs x1
 - Pushbuttons x2

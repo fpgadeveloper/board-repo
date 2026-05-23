@@ -22,13 +22,12 @@ price: null
 - QSFP28 x1
 
 ## USB
-- Type-C 3.0 OTG
+- Type-A 3.0 host
 
 ## USB UART/JTAG
-- Type-C JTAG/UART
+- Type-C UART
 
 ## Storage
-- SATA x1
 - microSD x1
 
 ## User I/O

@@ -32,7 +32,6 @@ price: null
 - GPIO Header x1
 
 ## Storage
-- SATA x2
 - microSD x1
 
 ## User I/O

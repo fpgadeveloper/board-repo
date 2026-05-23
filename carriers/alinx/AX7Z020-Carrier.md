@@ -38,7 +38,7 @@ price: null
 - microSD x1
 
 ## User I/O
-- LEDs x4
+- LEDs x2
 - Pushbuttons x4
 
 ## Features

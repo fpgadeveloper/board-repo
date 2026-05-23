@@ -20,9 +20,6 @@ device: { part: XCVU13P-2FHGB2104I, vendor: amd-xilinx }
 - SMA clock in x1
 - SMA clock out x1
 
-## PCIe
-- Edge Gen3 x16
-
 ## M.2
 - M-key Gen4 x2
 - E-key
@@ -32,7 +29,7 @@ device: { part: XCVU13P-2FHGB2104I, vendor: amd-xilinx }
 - QSFP28 x1
 
 ## USB UART/JTAG
-- Mini-B UART
+- Micro-B UART
 
 ## Expansion
 - FMC+ "FMCP0"

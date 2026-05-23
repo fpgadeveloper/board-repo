@@ -10,13 +10,15 @@ price: null
 ## Flash
 - QSPI 64MB
 - QSPI 64MB
-- eMMC 32GB
 
 ## Clocking
 - Programmable
 
 ## M.2
-- M-key x4
+- M-key
+- M-key
+- M-key
+- M-key
 
 ## Networking
 - 1GbE x1
@@ -27,11 +29,10 @@ price: null
 - Type-C 3.0 OTG x2
 
 ## USB UART/JTAG
-- Type-C JTAG/UART x2
+- Micro-B JTAG/UART x2
 
 ## Storage
-- SATA x1
-- microSD x1
+- SD x1
 
 ## User I/O
 - LEDs x12
@@ -40,3 +41,4 @@ price: null
 ## Extras
 - On-carrier DDR4 SDRAM: 4x 4GB 64-bit banks (attached to the base-board XCKU115 FPGA)
 - RF SMB connectors: 8x RF-ADC + 8x RF-DAC channels
+- 2x MGB high-speed connectors

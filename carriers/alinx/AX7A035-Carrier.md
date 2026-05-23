@@ -19,7 +19,7 @@ price: null
 
 ## Networking
 - 1GbE x1
-- SFP x2
+- SFP+ x2
 
 ## USB UART/JTAG
 - Mini-B UART

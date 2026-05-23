@@ -14,7 +14,7 @@ price: null
 - Edge Gen3 x16
 
 ## M.2
-- M-key x1
+- M-key
 
 ## Video
 - DisplayPort x1
@@ -26,7 +26,7 @@ price: null
 - Type-C 3.0 OTG
 
 ## USB UART/JTAG
-- Mini-B UART x2
+- Micro-B UART x2
 
 ## Expansion
 - FMC HPC "HPC0"

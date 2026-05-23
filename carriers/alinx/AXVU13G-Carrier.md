@@ -7,11 +7,8 @@ vendor: alinx
 price: null
 ---
 
-## PCIe
-- Edge Gen3 x16
-
 ## High-speed I/O
-- SMA x8 8-lane
+- SMA 8-lane GTY
 
 ## Networking
 - 1GbE x1
@@ -19,7 +16,7 @@ price: null
 - QSFP-DD x2
 
 ## USB UART/JTAG
-- Mini-B UART
+- Micro-B UART
 
 ## Expansion
 - FMC HPC "HPC"
@@ -29,7 +26,8 @@ price: null
 - microSD x1
 
 ## User I/O
-- LEDs x2
+- LEDs x4
+- Pushbuttons x1
 - DIP switches x1
 
 ## Extras

@@ -13,6 +13,5 @@ device: { part: XCZU7EV-2FFVC1156I, vendor: amd-xilinx }
 - DDR4 4GB 64-bit
 
 ## Flash
-- QSPI 32MB
-- QSPI 32MB
+- QSPI 64MB
 - eMMC 32GB

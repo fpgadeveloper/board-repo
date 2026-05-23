@@ -31,10 +31,11 @@ device: { part: XCZU2CG-1SFVC784E, vendor: amd-xilinx }
 - CAN x1
 
 ## USB
-- Type-A 3.0 host
+- Type-A 3.0 host x2
+- Type-A 2.0 host x2
 
 ## USB UART/JTAG
-- Mini-B UART
+- Micro-B UART
 
 ## Expansion
 - GPIO Header x2
@@ -43,5 +44,5 @@ device: { part: XCZU2CG-1SFVC784E, vendor: amd-xilinx }
 - microSD x1
 
 ## User I/O
-- LEDs x5
+- LEDs x4
 - Pushbuttons x4

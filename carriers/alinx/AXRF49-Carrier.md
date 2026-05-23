@@ -11,7 +11,7 @@ price: null
 - Programmable
 
 ## M.2
-- M-key x2
+- M-key
 
 ## Video
 - DisplayPort x1
@@ -21,7 +21,7 @@ price: null
 - QSFP28 x2
 
 ## USB
-- Type-A 3.0 host
+- Type-A 3.0 OTG
 
 ## USB UART/JTAG
 - Type-C JTAG/UART
@@ -30,7 +30,6 @@ price: null
 - FMC+ "FMCP"
 
 ## Storage
-- SATA x1
 - microSD x1
 
 ## User I/O

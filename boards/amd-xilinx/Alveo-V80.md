@@ -10,11 +10,12 @@ device: { part: XCV80-2MSELSVA4737, vendor: amd-xilinx }
 
 ## Memory
 - HBM2E 32GB
-- DDR4 4GB
+- SDRAM 4GB
 - DDR4 32GB DIMM
 
 ## PCIe
 - Edge Gen4 x16
+- MCIO Gen5
 
 ## Networking
 - QSFP56 x4

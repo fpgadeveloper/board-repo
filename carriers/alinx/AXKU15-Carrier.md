@@ -11,7 +11,7 @@ price: null
 - data I2C 4Kbit 24LC04
 
 ## Sensors
-- Temperature LM75A
+- Temperature LM75
 
 ## PCIe
 - Edge Gen3 x16
@@ -34,5 +34,5 @@ price: null
 - microSD x1
 
 ## User I/O
-- LEDs x6
+- LEDs x4
 - Pushbuttons x4

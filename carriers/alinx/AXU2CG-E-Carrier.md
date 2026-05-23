@@ -25,10 +25,11 @@ price: null
 - RS-485 x2
 
 ## USB
-- Type-A 3.0 host x4
+- Type-A 3.0 host x2
+- Type-A 2.0 host x2
 
 ## USB UART/JTAG
-- Mini-B UART x2
+- Micro-B UART x2
 
 ## Expansion
 - GPIO Header x2
@@ -37,7 +38,7 @@ price: null
 - microSD x1
 
 ## User I/O
-- LEDs x3
+- LEDs x2
 - Pushbuttons x2
 
 ## Features

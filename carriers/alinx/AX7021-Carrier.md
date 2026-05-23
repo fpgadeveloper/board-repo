@@ -7,9 +7,6 @@ vendor: alinx
 price: null
 ---
 
-## PCIe
-- Edge Gen2 x4
-
 ## Video
 - HDMI Out x1
 
@@ -20,7 +17,7 @@ price: null
 - Type-A 2.0 host x4
 
 ## USB UART/JTAG
-- Mini-B JTAG/UART
+- Mini-B UART
 
 ## Expansion
 - GPIO Header x2

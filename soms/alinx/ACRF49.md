@@ -10,7 +10,7 @@ device: { part: XCZU49DR-2FFVF1760I, vendor: amd-xilinx }
 
 ## Memory
 - DDR4 5GB 64-bit ECC
-- DDR4 5GB 64-bit
+- DDR4 5GB 72-bit
 
 ## Flash
 - QSPI 64MB

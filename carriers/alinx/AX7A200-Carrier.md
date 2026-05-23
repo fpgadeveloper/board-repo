@@ -11,7 +11,7 @@ price: null
 - Temperature LM75
 
 ## PCIe
-- Edge Gen2 x2
+- Edge Gen2 x4
 
 ## Video
 - HDMI In x1
@@ -19,7 +19,7 @@ price: null
 
 ## Networking
 - 1GbE x1
-- SFP x2
+- SFP+ x2
 
 ## USB UART/JTAG
 - Mini-B UART

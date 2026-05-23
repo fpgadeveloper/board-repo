@@ -7,9 +7,6 @@ vendor: alinx
 price: null
 ---
 
-## PCIe
-- Edge Gen2 x1
-
 ## Video
 - VGA Out x1
 

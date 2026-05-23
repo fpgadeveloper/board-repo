@@ -9,6 +9,8 @@ price: null
 
 ## Clocking
 - Programmable
+- SMA clock in x1
+- SMA clock out x1
 
 ## M.2
 - M-key Gen2 x2
@@ -31,7 +33,6 @@ price: null
 - Pmod x2
 
 ## Storage
-- SATA x1
 - microSD x1
 
 ## User I/O

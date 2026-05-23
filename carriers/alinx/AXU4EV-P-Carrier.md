@@ -34,16 +34,16 @@ price: null
 - Type-A 3.0 host x4
 
 ## USB UART/JTAG
-- Mini-B UART x2
+- Micro-B UART x2
 
 ## Expansion
-- FMC LPC "LPC"
+- FMC LPC "LPC" VADJ 1.8V
 
 ## Storage
 - microSD x1
 
 ## User I/O
-- LEDs x3
+- LEDs x1
 - Pushbuttons x2
 
 ## Features

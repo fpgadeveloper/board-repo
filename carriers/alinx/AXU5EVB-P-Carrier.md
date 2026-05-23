@@ -37,7 +37,7 @@ price: null
 - Micro-B UART x2
 
 ## Expansion
-- FMC LPC "LPC"
+- FMC LPC "LPC" VADJ 1.8V
 
 ## Storage
 - microSD x1
