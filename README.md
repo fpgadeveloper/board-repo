@@ -229,6 +229,7 @@ Board and silicon vendors are defined in `vendors.json`. Each entity references 
 | `numato-lab` | Numato Lab |
 | `opal-kelly` | Opal Kelly |
 | `opsero` | Opsero |
+| `proyecto-ciaa` | Proyecto CIAA |
 | `real-digital` | Real Digital |
 | `redpitaya` | RedPitaya |
 | `rhs-research` | RHS Research |
