@@ -209,6 +209,16 @@
               "XC"
             ]
           }
+        },
+        {
+          "value": "2L",
+          "label": "2L",
+          "description": "Speed grade -2, low voltage",
+          "when": {
+            "product_grade": [
+              "XC"
+            ]
+          }
         }
       ]
     },
