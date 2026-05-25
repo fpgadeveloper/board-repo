@@ -8,6 +8,10 @@
       "name": "Altera",
       "url": "https://www.altera.com"
     },
+    "analog-devices": {
+      "name": "Analog Devices",
+      "url": "https://www.analog.com"
+    },
     "amd-xilinx": {
       "name": "AMD Xilinx",
       "url": "https://www.amd.com"
