@@ -134,25 +134,30 @@
     },
     {
       "id": "qualifier",
-      "label": "Qualifier",
-      "description": "Single-digit routing/packaging qualifier.",
+      "label": "Transceiver Speed Grade",
+      "description": "Single-digit transceiver speed grade (1 = fastest). Per the Arria 10 Device Overview (doc 683332) ordering-code legend.",
       "length": 1,
       "type": "select",
       "options": [
         {
           "value": "1",
-          "label": "Qualifier 1",
-          "description": "Routing/packaging variant 1."
+          "label": "Transceiver Speed Grade 1",
+          "description": "Fastest transceiver speed grade."
         },
         {
           "value": "2",
-          "label": "Qualifier 2",
-          "description": "Routing/packaging variant 2."
+          "label": "Transceiver Speed Grade 2",
+          "description": "Transceiver speed grade 2."
         },
         {
           "value": "3",
-          "label": "Qualifier 3",
-          "description": "Routing/packaging variant 3."
+          "label": "Transceiver Speed Grade 3",
+          "description": "Transceiver speed grade 3."
+        },
+        {
+          "value": "4",
+          "label": "Transceiver Speed Grade 4",
+          "description": "Transceiver speed grade 4 (standard)."
         }
       ]
     },

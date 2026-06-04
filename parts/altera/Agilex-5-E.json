@@ -1,6 +1,6 @@
 {
   "family": "Agilex 5 E",
-  "description": "Altera Agilex 5 E-Series FPGAs and SoC FPGAs. Format: A5E{hps}{density}{group}{package}{grade}{speed}S[suffix]. Example: A5ED065BB32AE4SR0 (SoC, 065B density, B32A package, Extended speed 4, Standard power, R0 dev-kit suffix).",
+  "description": "Altera Agilex 5 E-Series FPGAs and SoC FPGAs. Format: A5E{hps}{density}{group}{package}{grade}{speed}{power}[suffix]. Examples: A5ED065BB32AE4SR0 (SoC, 065B, B32A, Extended speed 4, Standard power, R0 dev-kit suffix); A5ED065AB32AI2V (SoC, 065A, B32A, Industrial speed 2, SmartVID power).",
   "fields": [
     {
       "id": "prefix",
@@ -78,10 +78,12 @@
     {
       "id": "speed_grade",
       "label": "Speed Grade",
-      "description": "Core fabric speed grade. Lower = faster.",
+      "description": "Core fabric speed grade. Lower = faster. E-Series spans 1 (fastest) to 6 per the Agilex 5 Device Overview (doc 762191) ordering-code legend.",
       "length": 1,
       "type": "select",
       "options": [
+        {"value": "1", "label": "1", "description": "Speed grade 1 (fastest)."},
+        {"value": "2", "label": "2", "description": "Speed grade 2."},
         {"value": "3", "label": "3", "description": "Speed grade 3."},
         {"value": "4", "label": "4", "description": "Speed grade 4."},
         {"value": "5", "label": "5", "description": "Speed grade 5."},
@@ -91,10 +93,15 @@
     {
       "id": "power_option",
       "label": "Power Option",
-      "description": "Power option suffix. S = standard power.",
+      "description": "Power option. Per the Agilex 5 Device Overview (doc 762191): S = Standard Power (fixed voltage), V = Standard Power (SmartVID), E = Lower Power (SmartVID), X = Lowest Voltage (fixed voltage). SmartVID (V/E) applies to D-Series and E-Series Device Group A.",
       "length": 1,
-      "type": "fixed",
-      "value": "S"
+      "type": "select",
+      "options": [
+        {"value": "S", "label": "S", "description": "Standard power, fixed voltage."},
+        {"value": "V", "label": "V (SmartVID)", "description": "Standard power, SmartVID — core voltage set via a PMBus regulator to the device's VID code."},
+        {"value": "E", "label": "E (SmartVID)", "description": "Lower power, SmartVID."},
+        {"value": "X", "label": "X", "description": "Lowest voltage, fixed voltage."}
+      ]
     },
     {
       "id": "suffix",
