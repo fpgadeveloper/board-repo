@@ -1,5 +1,9 @@
 {
   "board_vendors": {
+    "aldec": {
+      "name": "Aldec",
+      "url": "https://www.aldec.com"
+    },
     "alinx": {
       "name": "Alinx",
       "url": "https://alinx.com"

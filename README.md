@@ -199,6 +199,7 @@ Board and silicon vendors are defined in `vendors.json`. Each entity references 
 | Key | Name |
 |-----|------|
 | `adiuvo` | Adiuvo |
+| `aldec` | Aldec |
 | `alinx` | Alinx |
 | `altera` | Altera |
 | `amd-xilinx` | AMD Xilinx |
