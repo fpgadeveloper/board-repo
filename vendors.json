@@ -4,6 +4,10 @@
       "name": "1BitSquared",
       "url": "https://1bitsquared.com"
     },
+    "arduino": {
+      "name": "Arduino",
+      "url": "https://www.arduino.cc"
+    },
     "aldec": {
       "name": "Aldec",
       "url": "https://www.aldec.com"
