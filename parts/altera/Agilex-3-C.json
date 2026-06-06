@@ -20,7 +20,8 @@
         {"value": "C", "label": "C", "description": "Standard FPGA variant."},
         {"value": "D", "label": "D (SoC)", "description": "SoC with dual-core Arm Cortex-A55 hard processor system."},
         {"value": "W", "label": "W", "description": "W variant."},
-        {"value": "Y", "label": "Y", "description": "Y variant."}
+        {"value": "Y", "label": "Y", "description": "Y variant."},
+        {"value": "Z", "label": "Z", "description": "Z variant."}
       ]
     },
     {
@@ -82,7 +83,8 @@
         {"value": "3", "label": "3", "description": "Speed grade 3."},
         {"value": "4", "label": "4", "description": "Speed grade 4."},
         {"value": "5", "label": "5", "description": "Speed grade 5."},
-        {"value": "6", "label": "6", "description": "Speed grade 6."}
+        {"value": "6", "label": "6", "description": "Speed grade 6."},
+        {"value": "7", "label": "7", "description": "Speed grade 7."}
       ]
     },
     {

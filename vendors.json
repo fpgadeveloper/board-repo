@@ -1,8 +1,12 @@
 {
   "board_vendors": {
-    "steiert-solutions": {
-      "name": "Steiert Solutions",
-      "url": "https://www.steiert.net"
+    "1bitsquared": {
+      "name": "1BitSquared",
+      "url": "https://1bitsquared.com"
+    },
+    "arduino": {
+      "name": "Arduino",
+      "url": "https://www.arduino.cc"
     },
     "aldec": {
       "name": "Aldec",
@@ -127,6 +131,10 @@
     "rhs-research": {
       "name": "RHS Research",
       "url": "https://rhsresearch.com"
+    },
+    "steiert-solutions": {
+      "name": "Steiert Solutions",
+      "url": "https://www.steiert.net"
     },
     "sundance": {
       "name": "Sundance Multiprocessor Technology Ltd.",
