@@ -236,6 +236,7 @@ Board and silicon vendors are defined in `vendors.json`. Each entity references 
 | `real-digital` | Real Digital |
 | `redpitaya` | RedPitaya |
 | `rhs-research` | RHS Research |
+| `steiert-solutions` | Steiert Solutions |
 | `sundance` | Sundance Multiprocessor Technology Ltd. |
 | `techway` | Techway |
 | `terasic` | Terasic |
