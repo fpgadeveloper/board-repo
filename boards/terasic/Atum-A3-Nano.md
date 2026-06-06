@@ -24,6 +24,7 @@ device: { part: A3CZ135BB18AE7S, vendor: altera }
 - Type-C JTAG
 
 ## Expansion
+- Pmod x2
 - GPIO Header x1
 
 ## Storage
@@ -35,7 +36,6 @@ device: { part: A3CZ135BB18AE7S, vendor: altera }
 - DIP switches x2
 
 ## Extras
-- Two 2x6 TMD GPIO headers (3.3V, PMOD compatible)
 - On-board USB Blaster III (Type-C connector)
 - UART
 - 5V DC input

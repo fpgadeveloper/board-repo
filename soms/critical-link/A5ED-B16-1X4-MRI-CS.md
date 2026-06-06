@@ -17,6 +17,12 @@ device: { part: A5ED013BB23AI6S, vendor: altera }
 ## EEPROM
 - MAC+UID+ID I2C 256Kbit CAT24C256WI-GT3
 
+## Networking
+- 2.5GbE x3 PHY-only
+
+## USB
+- PHY 2.0 OTG
+
 ## Features
 - Power monitoring
 

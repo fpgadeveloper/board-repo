@@ -36,8 +36,7 @@ device: { part: A3CW135BM16AE6S, vendor: altera }
 
 ## User I/O
 - LEDs x4
-- RGB LEDs x1
-- Pushbuttons x4
+- Pushbuttons x3
 - DIP switches x4
 
 ## Features
@@ -47,5 +46,3 @@ device: { part: A3CW135BM16AE6S, vendor: altera }
 - PCIe 3.0 x1 via optional DC-A3SOCPCIE daughter card
 - Onboard USB-Blaster III programmer
 - 22-pin FPC connector for Raspberry Pi 5 M.2 daughter card or Altera PCIe daughter card
-</content>
-</invoke>
