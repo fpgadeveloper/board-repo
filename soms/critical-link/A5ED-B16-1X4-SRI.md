@@ -15,10 +15,16 @@ device: { part: A5ED013BB32AI6S, vendor: altera }
 - QSPI 32MB
 
 ## EEPROM
-- MAC+UID+ID I2C 256Kbit CAT24C256
+- MAC+UID+ID I2C 256Kbit CAT24C256WI-GT3
 
 ## Networking
 - 2.5GbE x3 PHY-only
+
+## USB
+- PHY 2.0 OTG
+
+## Features
+- Power monitoring
 
 ## Extras
 - 2x 400-pin Samtec SEARAY board-to-board mezzanine connectors (J1/J2, SEAF-50-05.0-L-08-2-A-K-TR)
@@ -28,5 +34,5 @@ device: { part: A5ED013BB32AI6S, vendor: altera }
 - USB 2.0 OTG (ULPI to carrier-side PHY)
 - USB 3.1 Gen 1 SuperSpeed routed to carrier
 - Up to 14 x4-lane MIPI D-PHY (CSI/DSI) to 2.5/3.5 Gbps via FPGA banks
-- FPGA IO: 120 HVIO pins, 216 HSIO pins, 48 HPS IO pins
+- FPGA IO: 146 HVIO pins, 216 HSIO pins, 48 HPS IO pins (138KLE density)
 - 5-12Vdc input, all supplies generated on-board

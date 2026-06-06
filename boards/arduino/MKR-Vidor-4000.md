@@ -21,6 +21,10 @@ device: { part: 10CL016YU256C8G, vendor: altera }
 ## USB
 - Micro-B 2.0 device
 
+## User I/O
+- LEDs x1
+- RGB LEDs x1
+
 ## Wireless
 - WiFi
 - Bluetooth

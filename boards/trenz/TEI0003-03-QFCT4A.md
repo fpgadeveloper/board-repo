@@ -23,7 +23,7 @@ device: { part: 10CL025YU256C8G, vendor: altera }
 ## Expansion
 - Arduino x1
 - Pmod x1
-- GPIO Header x2
+- GPIO Header x1
 
 ## User I/O
 - LEDs x8
