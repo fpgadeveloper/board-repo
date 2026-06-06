@@ -1,5 +1,9 @@
 {
   "board_vendors": {
+    "1bitsquared": {
+      "name": "1BitSquared",
+      "url": "https://1bitsquared.com"
+    },
     "aldec": {
       "name": "Aldec",
       "url": "https://www.aldec.com"
