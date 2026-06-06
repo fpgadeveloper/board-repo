@@ -17,6 +17,7 @@
       "length": 1,
       "type": "select",
       "options": [
+        {"value": "B", "label": "B (SoC)", "description": "SoC with dual-core Arm Cortex-A55 hard processor system (no A76 cluster)."},
         {"value": "C", "label": "C (FPGA)", "description": "Standalone FPGA, no HPS."},
         {"value": "D", "label": "D (SoC)", "description": "SoC with dual-core Arm Cortex-A55 + dual-core Arm Cortex-A76."}
       ]

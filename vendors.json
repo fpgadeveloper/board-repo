@@ -1,5 +1,9 @@
 {
   "board_vendors": {
+    "1bitsquared": {
+      "name": "1BitSquared",
+      "url": "https://1bitsquared.com"
+    },
     "arduino": {
       "name": "Arduino",
       "url": "https://www.arduino.cc"
