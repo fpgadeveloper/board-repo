@@ -204,6 +204,7 @@ Board and silicon vendors are defined in `vendors.json`. Each entity references 
 | `altera` | Altera |
 | `amd-xilinx` | AMD Xilinx |
 | `analog-devices` | Analog Devices |
+| `arduino` | Arduino |
 | `arrow` | Arrow |
 | `avnet` | Avnet |
 | `bittware` | BittWare |

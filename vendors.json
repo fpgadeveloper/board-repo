@@ -1,5 +1,9 @@
 {
   "board_vendors": {
+    "arduino": {
+      "name": "Arduino",
+      "url": "https://www.arduino.cc"
+    },
     "aldec": {
       "name": "Aldec",
       "url": "https://www.aldec.com"
