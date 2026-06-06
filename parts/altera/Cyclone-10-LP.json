@@ -80,6 +80,11 @@
           "value": "F",
           "label": "FBGA",
           "description": "Fine-pitch BGA package."
+        },
+        {
+          "value": "YM",
+          "label": "MBGA",
+          "description": "Micro FineLine BGA package."
         }
       ]
     },
@@ -90,6 +95,11 @@
       "length": 3,
       "type": "select",
       "options": [
+        {
+          "value": "164",
+          "label": "164 pins",
+          "description": "164-pin package."
+        },
         {
           "value": "256",
           "label": "256 pins",

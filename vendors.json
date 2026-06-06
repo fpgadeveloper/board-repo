@@ -1,5 +1,9 @@
 {
   "board_vendors": {
+    "steiert-solutions": {
+      "name": "Steiert Solutions",
+      "url": "https://www.steiert.net"
+    },
     "aldec": {
       "name": "Aldec",
       "url": "https://www.aldec.com"
