@@ -125,6 +125,11 @@
           "description": "144-pin package."
         },
         {
+          "value": "169",
+          "label": "169 pins",
+          "description": "169-pin package."
+        },
+        {
           "value": "256",
           "label": "256 pins",
           "description": "256-pin package."
