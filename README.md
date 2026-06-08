@@ -217,17 +217,20 @@ Board and silicon vendors are defined in `vendors.json`. Each entity references 
 | `efinix` | Efinix |
 | `enclustra` | Enclustra |
 | `forgefunder` | Forgefunder |
+| `gadget-factory` | Gadget Factory |
 | `gowin` | Gowin Semiconductor |
 | `hitech-global` | Hitech Global |
 | `imperix` | imperix |
 | `intergalaktik` | Intergalaktik |
 | `invent-logics` | Invent Logics |
 | `iwave` | iWave Systems |
+| `jungle-electronics` | Jungle Electronics |
 | `knjn` | KNJN |
 | `knowres` | Knowledge Resources |
 | `krtkl` | Krtkl |
 | `lattice` | Lattice |
 | `microchip` | Microchip |
+| `muselab` | MuseLab |
 | `myir` | MYIR Tech |
 | `numato-lab` | Numato Lab |
 | `opal-kelly` | Opal Kelly |
@@ -236,6 +239,7 @@ Board and silicon vendors are defined in `vendors.json`. Each entity references 
 | `real-digital` | Real Digital |
 | `redpitaya` | RedPitaya |
 | `rhs-research` | RHS Research |
+| `sipeed` | Sipeed |
 | `steiert-solutions` | Steiert Solutions |
 | `sundance` | Sundance Multiprocessor Technology Ltd. |
 | `techway` | Techway |

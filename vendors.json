@@ -4,6 +4,22 @@
       "name": "1BitSquared",
       "url": "https://1bitsquared.com"
     },
+    "gadget-factory": {
+      "name": "Gadget Factory",
+      "url": "https://www.gadgetfactory.net"
+    },
+    "jungle-electronics": {
+      "name": "Jungle Electronics",
+      "url": "https://jungle-elec.com"
+    },
+    "muselab": {
+      "name": "MuseLab",
+      "url": "https://www.muselab-tech.com"
+    },
+    "sipeed": {
+      "name": "Sipeed",
+      "url": "https://sipeed.com"
+    },
     "arduino": {
       "name": "Arduino",
       "url": "https://www.arduino.cc"
