@@ -12,14 +12,17 @@
     },
     {
       "id": "hps",
-      "label": "HPS Variant",
-      "description": "C = FPGA only; D = SoC with integrated ARM Cortex-A55/A76 hard processor system.",
+      "label": "Device Code",
+      "description": "Combined HPS / transceiver / crypto code per the Agilex 5 Device Overview (doc 762191) ordering-code legend (Figure 4). Encodes the hard processor system, transceiver availability and crypto services.",
       "length": 1,
       "type": "select",
       "options": [
-        {"value": "B", "label": "B (SoC)", "description": "SoC with dual-core Arm Cortex-A55 hard processor system (no A76 cluster)."},
-        {"value": "C", "label": "C (FPGA)", "description": "Standalone FPGA, no HPS."},
-        {"value": "D", "label": "D (SoC)", "description": "SoC with dual-core Arm Cortex-A55 + dual-core Arm Cortex-A76."}
+        {"value": "A", "label": "A (FPGA)", "description": "FPGA, no HPS, no transceivers."},
+        {"value": "B", "label": "B (SoC)", "description": "SoC with Quad HPS (dual-core Arm Cortex-A55 + dual-core Arm Cortex-A76), no transceivers."},
+        {"value": "C", "label": "C (FPGA)", "description": "FPGA, no HPS, with transceivers."},
+        {"value": "D", "label": "D (SoC)", "description": "SoC with Quad HPS (dual-core Arm Cortex-A55 + dual-core Arm Cortex-A76), with transceivers."},
+        {"value": "E", "label": "E (SoC)", "description": "SoC with Dual HPS (dual-core Arm Cortex-A55), no transceivers."},
+        {"value": "G", "label": "G (FPGA)", "description": "FPGA with crypto services, no HPS, no transceivers (B18A package only)."}
       ]
     },
     {
