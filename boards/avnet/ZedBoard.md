@@ -46,6 +46,7 @@ device: { part: XC7Z020-1CLG484C, vendor: amd-xilinx }
 - SD x1
 
 ## User I/O
+- LEDs x9
 - Pushbuttons x7
 - DIP switches x8
 
