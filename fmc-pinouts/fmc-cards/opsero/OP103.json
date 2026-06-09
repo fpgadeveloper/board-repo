@@ -1,0 +1,314 @@
+{
+  "mpn": "OP103",
+  "side": "card",
+  "source": "docs.opsero.com",
+  "source_ref": "op103/datasheet/pin-configuration",
+  "slots": [
+    {
+      "slot": "FMC",
+      "type": "hpc",
+      "signals": [
+        {
+          "signal": "DP0_C2M_N",
+          "fmc_pin": "C3",
+          "net": "PETA_0_N",
+          "function": "PCIe lane 0 negative (FPGA-to-MCIOA)"
+        },
+        {
+          "signal": "DP0_C2M_P",
+          "fmc_pin": "C2",
+          "net": "PETA_0_P",
+          "function": "PCIe lane 0 positive (FPGA-to-MCIOA)"
+        },
+        {
+          "signal": "DP0_M2C_N",
+          "fmc_pin": "C7",
+          "net": "PERA_0_N",
+          "function": "PCIe lane 0 negative (MCIOA-to-FPGA)"
+        },
+        {
+          "signal": "DP0_M2C_P",
+          "fmc_pin": "C6",
+          "net": "PERA_0_P",
+          "function": "PCIe lane 0 positive (MCIOA-to-FPGA)"
+        },
+        {
+          "signal": "DP1_C2M_N",
+          "fmc_pin": "A23",
+          "net": "PETA_1_N",
+          "function": "PCIe lane 1 negative (FPGA-to-MCIOA)"
+        },
+        {
+          "signal": "DP1_C2M_P",
+          "fmc_pin": "A22",
+          "net": "PETA_1_P",
+          "function": "PCIe lane 1 positive (FPGA-to-MCIOA)"
+        },
+        {
+          "signal": "DP1_M2C_N",
+          "fmc_pin": "A3",
+          "net": "PERA_1_N",
+          "function": "PCIe lane 1 negative (MCIOA-to-FPGA)"
+        },
+        {
+          "signal": "DP1_M2C_P",
+          "fmc_pin": "A2",
+          "net": "PERA_1_P",
+          "function": "PCIe lane 1 positive (MCIOA-to-FPGA)"
+        },
+        {
+          "signal": "DP2_C2M_N",
+          "fmc_pin": "A27",
+          "net": "PETA_2_N",
+          "function": "PCIe lane 2 negative (FPGA-to-MCIOA)"
+        },
+        {
+          "signal": "DP2_C2M_P",
+          "fmc_pin": "A26",
+          "net": "PETA_2_P",
+          "function": "PCIe lane 2 positive (FPGA-to-MCIOA)"
+        },
+        {
+          "signal": "DP2_M2C_N",
+          "fmc_pin": "A7",
+          "net": "PERA_2_N",
+          "function": "PCIe lane 2 negative (MCIOA-to-FPGA)"
+        },
+        {
+          "signal": "DP2_M2C_P",
+          "fmc_pin": "A6",
+          "net": "PERA_2_P",
+          "function": "PCIe lane 2 positive (MCIOA-to-FPGA)"
+        },
+        {
+          "signal": "DP3_C2M_N",
+          "fmc_pin": "A31",
+          "net": "PETA_3_N",
+          "function": "PCIe lane 3 negative (FPGA-to-MCIOA)"
+        },
+        {
+          "signal": "DP3_C2M_P",
+          "fmc_pin": "A30",
+          "net": "PETA_3_P",
+          "function": "PCIe lane 3 positive (FPGA-to-MCIOA)"
+        },
+        {
+          "signal": "DP3_M2C_N",
+          "fmc_pin": "A11",
+          "net": "PERA_3_N",
+          "function": "PCIe lane 3 negative (MCIOA-to-FPGA)"
+        },
+        {
+          "signal": "DP3_M2C_P",
+          "fmc_pin": "A10",
+          "net": "PERA_3_P",
+          "function": "PCIe lane 3 positive (MCIOA-to-FPGA)"
+        },
+        {
+          "signal": "DP4_C2M_N",
+          "fmc_pin": "A35",
+          "net": "PETB_0_N",
+          "function": "PCIe lane 0 negative (FPGA-to-MCIOB)"
+        },
+        {
+          "signal": "DP4_C2M_P",
+          "fmc_pin": "A34",
+          "net": "PETB_0_P",
+          "function": "PCIe lane 0 positive (FPGA-to-MCIOB)"
+        },
+        {
+          "signal": "DP4_M2C_N",
+          "fmc_pin": "A15",
+          "net": "PERB_0_N",
+          "function": "PCIe lane 0 negative (MCIOB-to-FPGA)"
+        },
+        {
+          "signal": "DP4_M2C_P",
+          "fmc_pin": "A14",
+          "net": "PERB_0_P",
+          "function": "PCIe lane 0 positive (MCIOB-to-FPGA)"
+        },
+        {
+          "signal": "DP5_C2M_N",
+          "fmc_pin": "A39",
+          "net": "PETB_1_N",
+          "function": "PCIe lane 1 negative (FPGA-to-MCIOB)"
+        },
+        {
+          "signal": "DP5_C2M_P",
+          "fmc_pin": "A38",
+          "net": "PETB_1_P",
+          "function": "PCIe lane 1 positive (FPGA-to-MCIOB)"
+        },
+        {
+          "signal": "DP5_M2C_N",
+          "fmc_pin": "A19",
+          "net": "PERB_1_N",
+          "function": "PCIe lane 1 negative (MCIOB-to-FPGA)"
+        },
+        {
+          "signal": "DP5_M2C_P",
+          "fmc_pin": "A18",
+          "net": "PERB_1_P",
+          "function": "PCIe lane 1 positive (MCIOB-to-FPGA)"
+        },
+        {
+          "signal": "DP6_C2M_N",
+          "fmc_pin": "B37",
+          "net": "PETB_2_N",
+          "function": "PCIe lane 2 negative (FPGA-to-MCIOB)"
+        },
+        {
+          "signal": "DP6_C2M_P",
+          "fmc_pin": "B36",
+          "net": "PETB_2_P",
+          "function": "PCIe lane 2 positive (FPGA-to-MCIOB)"
+        },
+        {
+          "signal": "DP6_M2C_N",
+          "fmc_pin": "B17",
+          "net": "PERB_2_N",
+          "function": "PCIe lane 2 negative (MCIOB-to-FPGA)"
+        },
+        {
+          "signal": "DP6_M2C_P",
+          "fmc_pin": "B16",
+          "net": "PERB_2_P",
+          "function": "PCIe lane 2 positive (MCIOB-to-FPGA)"
+        },
+        {
+          "signal": "DP7_C2M_N",
+          "fmc_pin": "B33",
+          "net": "PETB_3_N",
+          "function": "PCIe lane 3 negative (FPGA-to-MCIOB)"
+        },
+        {
+          "signal": "DP7_C2M_P",
+          "fmc_pin": "B32",
+          "net": "PETB_3_P",
+          "function": "PCIe lane 3 positive (FPGA-to-MCIOB)"
+        },
+        {
+          "signal": "DP7_M2C_N",
+          "fmc_pin": "B13",
+          "net": "PERB_3_N",
+          "function": "PCIe lane 3 negative (MCIOB-to-FPGA)"
+        },
+        {
+          "signal": "DP7_M2C_P",
+          "fmc_pin": "B12",
+          "net": "PERB_3_P",
+          "function": "PCIe lane 3 positive (MCIOB-to-FPGA)"
+        },
+        {
+          "signal": "GBTCLK0_M2C_N",
+          "fmc_pin": "D5",
+          "net": "CLKA_F_N",
+          "function": "100MHz PCIe reference clock for the FPGA"
+        },
+        {
+          "signal": "GBTCLK0_M2C_P",
+          "fmc_pin": "D4",
+          "net": "CLKA_F_P",
+          "function": "100MHz PCIe reference clock for the FPGA"
+        },
+        {
+          "signal": "GBTCLK1_M2C_N",
+          "fmc_pin": "B21",
+          "net": "CLKB_F_N",
+          "function": "100MHz PCIe reference clock for the FPGA"
+        },
+        {
+          "signal": "GBTCLK1_M2C_P",
+          "fmc_pin": "B20",
+          "net": "CLKB_F_P",
+          "function": "100MHz PCIe reference clock for the FPGA"
+        },
+        {
+          "signal": "LA00_CC_N",
+          "fmc_pin": "G7",
+          "net": "CPRSNTA_N_T",
+          "function": "PCIe detect for MCIOA"
+        },
+        {
+          "signal": "LA00_CC_P",
+          "fmc_pin": "G6",
+          "net": "PERSTA_N_T",
+          "function": "PCIe reset for MCIOA (active LOW)"
+        },
+        {
+          "signal": "LA04_N",
+          "fmc_pin": "H11",
+          "net": "CPRSNTA_N_T",
+          "function": "PCIe detect for MCIOB"
+        },
+        {
+          "signal": "LA04_P",
+          "fmc_pin": "H10",
+          "net": "PERSTA_N_T",
+          "function": "PCIe reset for MCIOB (active LOW)"
+        },
+        {
+          "signal": "LA10_N",
+          "fmc_pin": "C15",
+          "net": "SBB_DISABLE_T",
+          "function": "Disable sideband B signals"
+        },
+        {
+          "signal": "LA10_P",
+          "fmc_pin": "C14",
+          "net": "SBA_DISABLE_T",
+          "function": "Disable sideband A signals"
+        },
+        {
+          "signal": "LA11_N",
+          "fmc_pin": "H17",
+          "net": "MCIOB_I2C_SDA",
+          "function": "I2C data for MCIO Channel B"
+        },
+        {
+          "signal": "LA11_P",
+          "fmc_pin": "H16",
+          "net": "MCIOB_I2C_SCL",
+          "function": "I2C clock for MCIO Channel B"
+        },
+        {
+          "signal": "LA12_N",
+          "fmc_pin": "G16",
+          "net": "MCIOA_I2C_SDA",
+          "function": "I2C data for MCIO Channel A"
+        },
+        {
+          "signal": "LA12_P",
+          "fmc_pin": "G15",
+          "net": "MCIOA_I2C_SCL",
+          "function": "I2C clock for MCIO Channel A"
+        },
+        {
+          "signal": "LA14_N",
+          "fmc_pin": "C19",
+          "net": "LOCAL_CLKS_N_T",
+          "function": "Local/remote clock select (0:LOCAL, 1:REMOTE)"
+        },
+        {
+          "signal": "LA14_P",
+          "fmc_pin": "C18",
+          "net": "HOST_MODE_N_T",
+          "function": "Host mode enable active-low (0:HOST MODE, 1:DEVICE MODE)"
+        },
+        {
+          "signal": "LA15_N",
+          "fmc_pin": "H20",
+          "net": "RDRV_I2C_SDA",
+          "function": "I2C data for Redrivers"
+        },
+        {
+          "signal": "LA15_P",
+          "fmc_pin": "H19",
+          "net": "RDRV_I2C_SCL",
+          "function": "I2C clock for Redrivers"
+        }
+      ]
+    }
+  ]
+}

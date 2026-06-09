@@ -1,0 +1,398 @@
+{
+  "mpn": "OP031-1V8",
+  "side": "card",
+  "source": "docs.opsero.com",
+  "source_ref": "op031/datasheet/pin-configuration",
+  "slots": [
+    {
+      "slot": "FMC",
+      "type": "lpc",
+      "signals": [
+        {
+          "signal": "CLK0_M2C_N",
+          "fmc_pin": "H5",
+          "net": "REF_CLK_N",
+          "function": "LVDS 125MHz Precision Clock to FPGA"
+        },
+        {
+          "signal": "CLK0_M2C_P",
+          "fmc_pin": "H4",
+          "net": "REF_CLK_P",
+          "function": "LVDS 125MHz Precision Clock to FPGA"
+        },
+        {
+          "signal": "LA00_CC_N",
+          "fmc_pin": "G7",
+          "net": "E0_RX_CTRL",
+          "function": "Port 0 RGMII Receive Control (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA00_CC_P",
+          "fmc_pin": "G6",
+          "net": "E0_RX_CLK",
+          "function": "Port 0 RGMII Receive Clock (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA01_CC_N",
+          "fmc_pin": "D9",
+          "net": "E1_RX_CTRL",
+          "function": "Port 1 RGMII Receive Control (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA01_CC_P",
+          "fmc_pin": "D8",
+          "net": "E1_RX_CLK",
+          "function": "Port 1 RGMII Receive Clock (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA02_N",
+          "fmc_pin": "H8",
+          "net": "E0_RXD1",
+          "function": "Port 0 RGMII Receive Data Bit 1 (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA02_P",
+          "fmc_pin": "H7",
+          "net": "E0_RXD0",
+          "function": "Port 0 RGMII Receive Data Bit 0 (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA03_N",
+          "fmc_pin": "G10",
+          "net": "E0_RXD3",
+          "function": "Port 0 RGMII Receive Data Bit 3 (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA03_P",
+          "fmc_pin": "G9",
+          "net": "E0_RXD2",
+          "function": "Port 0 RGMII Receive Data Bit 2 (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA04_N",
+          "fmc_pin": "H11",
+          "net": "E0_TX_CLK",
+          "function": "Port 0 RGMII Transmit Clock (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA04_P",
+          "fmc_pin": "H10",
+          "net": "E0_TXD0",
+          "function": "Port 0 RGMII Transmit Data Bit 0 (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA05_N",
+          "fmc_pin": "D12",
+          "net": "E0_RESET_N",
+          "function": "Port 0 PHY Reset (Active-Low)"
+        },
+        {
+          "signal": "LA05_P",
+          "fmc_pin": "D11",
+          "net": "E0_MDC",
+          "function": "Port 0 MDIO Clock (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA06_N",
+          "fmc_pin": "C11",
+          "net": "E0_MDIO",
+          "function": "Port 0 MDIO Data (bidirectional)"
+        },
+        {
+          "signal": "LA06_P",
+          "fmc_pin": "C10",
+          "net": "E1_RXD0",
+          "function": "Port 1 RGMII Receive Data Bit 0 (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA07_N",
+          "fmc_pin": "H14",
+          "net": "E0_TX_CTRL",
+          "function": "Port 0 RGMII Transmit Control (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA07_P",
+          "fmc_pin": "H13",
+          "net": "E0_TXD3",
+          "function": "Port 0 RGMII Transmit Data Bit 3 (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA08_N",
+          "fmc_pin": "G13",
+          "net": "E0_TXD2",
+          "function": "Port 0 RGMII Transmit Data Bit 2 (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA08_P",
+          "fmc_pin": "G12",
+          "net": "E0_TXD1",
+          "function": "Port 0 RGMII Transmit Data Bit 1 (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA09_N",
+          "fmc_pin": "D15",
+          "net": "E1_RXD3",
+          "function": "Port 1 RGMII Receive Data Bit 3 (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA09_P",
+          "fmc_pin": "D14",
+          "net": "E1_RXD1",
+          "function": "Port 1 RGMII Receive Data Bit 1 (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA10_N",
+          "fmc_pin": "C15",
+          "net": "E1_RXD2",
+          "function": "Port 1 RGMII Receive Data Bit 2 (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA11_N",
+          "fmc_pin": "H17",
+          "net": "E1_TX_CLK",
+          "function": "Port 1 RGMII Transmit Clock (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA11_P",
+          "fmc_pin": "H16",
+          "net": "E1_TXD1",
+          "function": "Port 1 RGMII Transmit Data Bit 1 (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA12_N",
+          "fmc_pin": "G16",
+          "net": "E1_TXD0",
+          "function": "Port 1 RGMII Transmit Data Bit 0 (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA13_N",
+          "fmc_pin": "D18",
+          "net": "E1_MDC",
+          "function": "Port 1 MDIO Clock (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA13_P",
+          "fmc_pin": "D17",
+          "net": "REF_CLK_OE",
+          "function": "Enable LVDS 125MHz Clock (Active-High, enabled by default with pull-up)"
+        },
+        {
+          "signal": "LA14_N",
+          "fmc_pin": "C19",
+          "net": "E1_MDIO",
+          "function": "Port 1 MDIO Data (bidirectional)"
+        },
+        {
+          "signal": "LA14_P",
+          "fmc_pin": "C18",
+          "net": "REF_CLK_FSEL",
+          "function": "Reserved"
+        },
+        {
+          "signal": "LA15_N",
+          "fmc_pin": "H20",
+          "net": "E1_RESET_N",
+          "function": "Port 1 PHY Reset (Active-Low)"
+        },
+        {
+          "signal": "LA15_P",
+          "fmc_pin": "H19",
+          "net": "E1_TX_CTRL",
+          "function": "Port 1 RGMII Transmit Control (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA16_N",
+          "fmc_pin": "G19",
+          "net": "E1_TXD3",
+          "function": "Port 1 RGMII Transmit Data Bit 3 (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA16_P",
+          "fmc_pin": "G18",
+          "net": "E1_TXD2",
+          "function": "Port 1 RGMII Transmit Data Bit 2 (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA17_CC_P",
+          "fmc_pin": "D20",
+          "net": "E2_RX_CLK",
+          "function": "Port 2 RGMII Receive Clock (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA18_CC_N",
+          "fmc_pin": "C23",
+          "net": "E3_RX_CTRL",
+          "function": "Port 3 RGMII Receive Control (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA18_CC_P",
+          "fmc_pin": "C22",
+          "net": "E3_RX_CLK",
+          "function": "Port 3 RGMII Receive Clock (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA19_N",
+          "fmc_pin": "H23",
+          "net": "E2_TXD0",
+          "function": "Port 2 RGMII Transmit Data Bit 0 (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA19_P",
+          "fmc_pin": "H22",
+          "net": "E2_RXD1",
+          "function": "Port 2 RGMII Receive Data Bit 1 (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA20_N",
+          "fmc_pin": "G22",
+          "net": "E2_RXD0",
+          "function": "Port 2 RGMII Receive Data Bit 0 (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA20_P",
+          "fmc_pin": "G21",
+          "net": "E2_RX_CTRL",
+          "function": "Port 2 RGMII Receive Control (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA21_N",
+          "fmc_pin": "H26",
+          "net": "E2_TXD3",
+          "function": "Port 2 RGMII Transmit Data Bit 3 (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA21_P",
+          "fmc_pin": "H25",
+          "net": "E2_TX_CLK",
+          "function": "Port 2 RGMII Transmit Clock (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA22_N",
+          "fmc_pin": "G25",
+          "net": "E2_TXD2",
+          "function": "Port 2 RGMII Transmit Data Bit 2 (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA22_P",
+          "fmc_pin": "G24",
+          "net": "E2_TXD1",
+          "function": "Port 2 RGMII Transmit Data Bit 1 (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA23_N",
+          "fmc_pin": "D24",
+          "net": "E2_RXD3",
+          "function": "Port 2 RGMII Receive Data Bit 3 (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA23_P",
+          "fmc_pin": "D23",
+          "net": "E2_RXD2",
+          "function": "Port 2 RGMII Receive Data Bit 2 (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA24_N",
+          "fmc_pin": "H29",
+          "net": "E2_RESET_N",
+          "function": "Port 2 PHY Reset (Active-Low)"
+        },
+        {
+          "signal": "LA24_P",
+          "fmc_pin": "H28",
+          "net": "E2_MDC",
+          "function": "Port 2 MDIO Clock (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA25_N",
+          "fmc_pin": "G28",
+          "net": "E2_MDIO",
+          "function": "Port 2 MDIO Data (bidirectional)"
+        },
+        {
+          "signal": "LA25_P",
+          "fmc_pin": "G27",
+          "net": "E2_TX_CTRL",
+          "function": "Port 2 RGMII Transmit Control (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA26_N",
+          "fmc_pin": "D27",
+          "net": "E3_RXD2",
+          "function": "Port 3 RGMII Receive Data Bit 2 (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA26_P",
+          "fmc_pin": "D26",
+          "net": "E3_RXD0",
+          "function": "Port 3 RGMII Receive Data Bit 0 (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA27_N",
+          "fmc_pin": "C27",
+          "net": "E3_RXD3",
+          "function": "Port 3 RGMII Receive Data Bit 3 (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA27_P",
+          "fmc_pin": "C26",
+          "net": "E3_RXD1",
+          "function": "Port 3 RGMII Receive Data Bit 1 (PHY-to-FPGA)"
+        },
+        {
+          "signal": "LA28_N",
+          "fmc_pin": "H32",
+          "net": "E3_TX_CLK",
+          "function": "Port 3 RGMII Transmit Clock (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA28_P",
+          "fmc_pin": "H31",
+          "net": "E3_TXD1",
+          "function": "Port 3 RGMII Transmit Data Bit 1 (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA29_N",
+          "fmc_pin": "G31",
+          "net": "E3_TXD0",
+          "function": "Port 3 RGMII Transmit Data Bit 0 (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA30_N",
+          "fmc_pin": "H35",
+          "net": "E3_MDC",
+          "function": "Port 3 MDIO Clock (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA30_P",
+          "fmc_pin": "H34",
+          "net": "E3_TX_CTRL",
+          "function": "Port 3 RGMII Transmit Control (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA31_N",
+          "fmc_pin": "G34",
+          "net": "E3_TXD3",
+          "function": "Port 3 RGMII Transmit Data Bit 3 (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA31_P",
+          "fmc_pin": "G33",
+          "net": "E3_TXD2",
+          "function": "Port 3 RGMII Transmit Data Bit 2 (FPGA-to-PHY)"
+        },
+        {
+          "signal": "LA32_N",
+          "fmc_pin": "H38",
+          "net": "E3_RESET_N",
+          "function": "Port 3 PHY Reset (Active-Low)"
+        },
+        {
+          "signal": "LA32_P",
+          "fmc_pin": "H37",
+          "net": "E3_MDIO",
+          "function": "Port 3 MDIO Data (bidirectional)"
+        }
+      ]
+    }
+  ]
+}

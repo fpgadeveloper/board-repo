@@ -9,6 +9,7 @@ on:
       - "kits/**/*.md"
       - "fmc-cards/**/*.md"
       - "relationships/**/*.json"
+      - "fmc-pinouts/**/*.json"
       - "schema.json"
       - "vendors.json"
       - "MARKDOWN_FORMAT.md"
@@ -25,6 +26,7 @@ on:
       - "kits/**/*.md"
       - "fmc-cards/**/*.md"
       - "relationships/**/*.json"
+      - "fmc-pinouts/**/*.json"
       - "schema.json"
       - "vendors.json"
       - "MARKDOWN_FORMAT.md"
@@ -75,7 +77,7 @@ jobs:
 
           validators = {
               defname: Draft202012Validator({"$ref": f"urn:root#/$defs/{defname}"}, registry=registry)
-              for defname in set(ENTITY_FOLDERS.values()) | set(RELATIONSHIP_FOLDERS.values())
+              for defname in set(ENTITY_FOLDERS.values()) | set(RELATIONSHIP_FOLDERS.values()) | {"fmc_pinout"}
           }
 
           errors = 0
@@ -182,8 +184,53 @@ jobs:
                       print(f"::error file={path}::parent folder {parent!r} does not match {key!r} vendor {owner.get('vendor')!r}")
                       errors += 1
 
+          # FMC pinouts (JSON): pin-level routing per entity, used for card<->host
+          # compatibility. Cross-check: filename stem == mpn; the <type> folder + mpn
+          # point at an existing entity; parent folder == that entity's vendor; side
+          # matches the folder; and every host slot name exists on the entity.
+          ENTITY_DEF_BY_FOLDER = ENTITY_FOLDERS  # {folder: defname}
+          # Reference files under fmc-pinouts/ that are NOT per-entity pinouts
+          # (the VITA 57 connector standard table) — skip the entity cross-checks.
+          PINOUT_RESERVED = {"vita57-standard.json"}
+          pinout_count = 0
+          for path in sorted(glob.glob("fmc-pinouts/**/*.json", recursive=True)):
+              if os.path.basename(path) in PINOUT_RESERVED:
+                  continue
+              pinout_count += 1
+              with open(path) as f:
+                  doc = json.load(f)
+              for e in validators["fmc_pinout"].iter_errors(doc):
+                  print(f"::error file={path}::{e.json_path}: {e.message}")
+                  errors += 1
+              rel = os.path.relpath(path, "fmc-pinouts").replace("\\", "/")
+              parts = rel.split("/")
+              folder, vendor, stem = parts[0], parts[1], os.path.splitext(parts[-1])[0]
+              mpn = doc.get("mpn")
+              if stem != mpn:
+                  print(f"::error file={path}::filename stem {stem!r} does not match mpn {mpn!r}")
+                  errors += 1
+              defname = ENTITY_DEF_BY_FOLDER.get(folder)
+              entity = entities.get(defname, {}).get(mpn) if defname else None
+              if entity is None:
+                  print(f"::error file={path}::mpn {mpn!r} not found in {folder}/")
+                  errors += 1
+                  continue
+              if entity.get("vendor") != vendor:
+                  print(f"::error file={path}::parent folder {vendor!r} does not match {mpn!r} vendor {entity.get('vendor')!r}")
+                  errors += 1
+              expected_side = "card" if folder == "fmc-cards" else "host"
+              if doc.get("side") != expected_side:
+                  print(f"::error file={path}::side {doc.get('side')!r} should be {expected_side!r} for {folder}/")
+                  errors += 1
+              if expected_side == "host":
+                  known = {s.get("slot") for s in (entity.get("expansion", {}).get("fmc") or [])}
+                  for s in doc.get("slots", []):
+                      if s.get("slot") not in known:
+                          print(f"::error file={path}::slot {s.get('slot')!r} not in {mpn} expansion FMC slots {sorted(known)}")
+                          errors += 1
+
           total = sum(len(v) for v in entities.values())
-          print(f"{total} entities checked, {errors} error(s)")
+          print(f"{total} entities, {pinout_count} fmc-pinouts checked, {errors} error(s)")
           sys.exit(1 if errors else 0)
           PY
 

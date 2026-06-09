@@ -1,0 +1,1638 @@
+{
+  "mpn": "KCU105",
+  "side": "host",
+  "device": "xcku040ffva1156e-2",
+  "source": "xilinx-board-store",
+  "source_ref": "boards/Xilinx/kcu105/1.7",
+  "slots": [
+    {
+      "slot": "HPC",
+      "type": "hpc",
+      "signals": [
+        {
+          "signal": "CLK0_M2C_N",
+          "pin": "G12",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "CLK0_M2C_P",
+          "pin": "H12",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "CLK1_M2C_N",
+          "pin": "D25",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "CLK1_M2C_P",
+          "pin": "E25",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "DP0_C2M_N",
+          "pin": "F5",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP0_C2M_P",
+          "pin": "F6",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP0_M2C_N",
+          "pin": "E3",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP0_M2C_P",
+          "pin": "E4",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP1_C2M_N",
+          "pin": "D5",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP1_C2M_P",
+          "pin": "D6",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP1_M2C_N",
+          "pin": "D1",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP1_M2C_P",
+          "pin": "D2",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP2_C2M_N",
+          "pin": "C3",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP2_C2M_P",
+          "pin": "C4",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP2_M2C_N",
+          "pin": "B1",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP2_M2C_P",
+          "pin": "B2",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP3_C2M_N",
+          "pin": "B5",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP3_C2M_P",
+          "pin": "B6",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP3_M2C_N",
+          "pin": "A3",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP3_M2C_P",
+          "pin": "A4",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP4_C2M_N",
+          "pin": "N3",
+          "bank": 227,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP4_C2M_P",
+          "pin": "N4",
+          "bank": 227,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP4_M2C_N",
+          "pin": "M1",
+          "bank": 227,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP4_M2C_P",
+          "pin": "M2",
+          "bank": 227,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP5_C2M_N",
+          "pin": "J3",
+          "bank": 227,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP5_C2M_P",
+          "pin": "J4",
+          "bank": 227,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP5_M2C_N",
+          "pin": "H1",
+          "bank": 227,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP5_M2C_P",
+          "pin": "H2",
+          "bank": 227,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP6_C2M_N",
+          "pin": "L3",
+          "bank": 227,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP6_C2M_P",
+          "pin": "L4",
+          "bank": 227,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP6_M2C_N",
+          "pin": "K1",
+          "bank": 227,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP6_M2C_P",
+          "pin": "K2",
+          "bank": 227,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP7_C2M_N",
+          "pin": "G3",
+          "bank": 227,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP7_C2M_P",
+          "pin": "G4",
+          "bank": 227,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP7_M2C_N",
+          "pin": "F1",
+          "bank": 227,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP7_M2C_P",
+          "pin": "F2",
+          "bank": 227,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "GBTCLK0_M2C_N",
+          "pin": "K5",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "GBTCLK0_M2C_P",
+          "pin": "K6",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "GBTCLK1_M2C_N",
+          "pin": "H5",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "GBTCLK1_M2C_P",
+          "pin": "H6",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "HA00_CC_N",
+          "pin": "G16",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA00_CC_P",
+          "pin": "G17",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA01_CC_N",
+          "pin": "D16",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA01_CC_P",
+          "pin": "E16",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA02_N",
+          "pin": "H18",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA02_P",
+          "pin": "H19",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA03_N",
+          "pin": "G14",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA03_P",
+          "pin": "G15",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA04_N",
+          "pin": "F19",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA04_P",
+          "pin": "G19",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA05_N",
+          "pin": "J14",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA05_P",
+          "pin": "J15",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA06_N",
+          "pin": "K15",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA06_P",
+          "pin": "L15",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA07_N",
+          "pin": "L18",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA07_P",
+          "pin": "L19",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA08_N",
+          "pin": "K17",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA08_P",
+          "pin": "K18",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA09_N",
+          "pin": "F17",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA09_P",
+          "pin": "F18",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA10_N",
+          "pin": "H16",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA10_P",
+          "pin": "H17",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA11_N",
+          "pin": "J18",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA11_P",
+          "pin": "J19",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA12_N",
+          "pin": "J16",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA12_P",
+          "pin": "K16",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA13_N",
+          "pin": "A14",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA13_P",
+          "pin": "B14",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA14_N",
+          "pin": "F14",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA14_P",
+          "pin": "F15",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA15_N",
+          "pin": "C14",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA15_P",
+          "pin": "D14",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA16_N",
+          "pin": "A18",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA16_P",
+          "pin": "A19",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA17_CC_N",
+          "pin": "E17",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA17_CC_P",
+          "pin": "E18",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA18_N",
+          "pin": "B16",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA18_P",
+          "pin": "B17",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA19_N",
+          "pin": "D18",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA19_P",
+          "pin": "D19",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA20_N",
+          "pin": "B19",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA20_P",
+          "pin": "C19",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA21_N",
+          "pin": "D15",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA21_P",
+          "pin": "E15",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA22_N",
+          "pin": "C17",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA22_P",
+          "pin": "C18",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA23_N",
+          "pin": "A15",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "HA23_P",
+          "pin": "B15",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA00_CC_N",
+          "pin": "G11",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA00_CC_P",
+          "pin": "H11",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA01_CC_N",
+          "pin": "F9",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA01_CC_P",
+          "pin": "G9",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA02_N",
+          "pin": "J10",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA02_P",
+          "pin": "K10",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA03_N",
+          "pin": "A12",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA03_P",
+          "pin": "A13",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA04_N",
+          "pin": "K12",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA04_P",
+          "pin": "L12",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA05_N",
+          "pin": "K13",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA05_P",
+          "pin": "L13",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA06_N",
+          "pin": "C13",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA06_P",
+          "pin": "D13",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA07_N",
+          "pin": "E8",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA07_P",
+          "pin": "F8",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA08_N",
+          "pin": "H8",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA08_P",
+          "pin": "J8",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA09_N",
+          "pin": "H9",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA09_P",
+          "pin": "J9",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA10_N",
+          "pin": "K8",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA10_P",
+          "pin": "L8",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA11_N",
+          "pin": "J11",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA11_P",
+          "pin": "K11",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA12_N",
+          "pin": "D10",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA12_P",
+          "pin": "E10",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA13_N",
+          "pin": "C9",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA13_P",
+          "pin": "D9",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA14_N",
+          "pin": "A10",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA14_P",
+          "pin": "B10",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA15_N",
+          "pin": "C8",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA15_P",
+          "pin": "D8",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA16_N",
+          "pin": "A9",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA16_P",
+          "pin": "B9",
+          "bank": 66,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA17_CC_N",
+          "pin": "C24",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA17_CC_P",
+          "pin": "D24",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA18_CC_N",
+          "pin": "E23",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA18_CC_P",
+          "pin": "E22",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA19_N",
+          "pin": "C22",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA19_P",
+          "pin": "C21",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA20_N",
+          "pin": "A24",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA20_P",
+          "pin": "B24",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA21_N",
+          "pin": "F24",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA21_P",
+          "pin": "F23",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA22_N",
+          "pin": "F25",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA22_P",
+          "pin": "G24",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA23_N",
+          "pin": "F22",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA23_P",
+          "pin": "G22",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA24_N",
+          "pin": "E21",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA24_P",
+          "pin": "E20",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA25_N",
+          "pin": "D21",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA25_P",
+          "pin": "D20",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA26_N",
+          "pin": "F20",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA26_P",
+          "pin": "G20",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA27_N",
+          "pin": "G21",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA27_P",
+          "pin": "H21",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA28_N",
+          "pin": "B22",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA28_P",
+          "pin": "B21",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA29_N",
+          "pin": "A20",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA29_P",
+          "pin": "B20",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA30_N",
+          "pin": "B26",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA30_P",
+          "pin": "C26",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA31_N",
+          "pin": "A25",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA31_P",
+          "pin": "B25",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA32_N",
+          "pin": "D26",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA32_P",
+          "pin": "E26",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA33_N",
+          "pin": "A28",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA33_P",
+          "pin": "A27",
+          "bank": 67,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "PG_M2C_LS",
+          "pin": "L27",
+          "bank": 65,
+          "io_type": "HR",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "PRSNT_M2C_B_LS",
+          "pin": "H24",
+          "bank": 65,
+          "io_type": "HR",
+          "iostandard": "LVCMOS18"
+        }
+      ]
+    },
+    {
+      "slot": "LPC",
+      "type": "lpc",
+      "signals": [
+        {
+          "signal": "CLK0_M2C_N",
+          "pin": "AA25",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "CLK0_M2C_P",
+          "pin": "AA24",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "CLK1_M2C_N",
+          "pin": "AC32",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "CLK1_M2C_P",
+          "pin": "AC31",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "DP0_C2M_N",
+          "pin": "AA3",
+          "bank": 226,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP0_C2M_P",
+          "pin": "AA4",
+          "bank": 226,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP0_M2C_N",
+          "pin": "Y1",
+          "bank": 226,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP0_M2C_P",
+          "pin": "Y2",
+          "bank": 226,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "GBTCLK0_M2C_N",
+          "pin": "T5",
+          "bank": 226,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "GBTCLK0_M2C_P",
+          "pin": "T6",
+          "bank": 226,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "LA00_CC_N",
+          "pin": "W24",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA00_CC_P",
+          "pin": "W23",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA01_CC_N",
+          "pin": "Y25",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA01_CC_P",
+          "pin": "W25",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA02_N",
+          "pin": "AB22",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA02_P",
+          "pin": "AA22",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA03_N",
+          "pin": "Y28",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA03_P",
+          "pin": "W28",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA04_N",
+          "pin": "U27",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA04_P",
+          "pin": "U26",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA05_N",
+          "pin": "V28",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA05_P",
+          "pin": "V27",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA06_N",
+          "pin": "W29",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA06_P",
+          "pin": "V29",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA07_N",
+          "pin": "V23",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA07_P",
+          "pin": "V22",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA08_N",
+          "pin": "U25",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA08_P",
+          "pin": "U24",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA09_N",
+          "pin": "W26",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA09_P",
+          "pin": "V26",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA10_N",
+          "pin": "T23",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA10_P",
+          "pin": "T22",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA11_N",
+          "pin": "W21",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA11_P",
+          "pin": "V21",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA12_N",
+          "pin": "AC23",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA12_P",
+          "pin": "AC22",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA13_N",
+          "pin": "AB20",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA13_P",
+          "pin": "AA20",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA14_N",
+          "pin": "U22",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA14_P",
+          "pin": "U21",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA15_N",
+          "pin": "AB26",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA15_P",
+          "pin": "AB25",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA16_N",
+          "pin": "AC21",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA16_P",
+          "pin": "AB21",
+          "bank": 47,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA17_CC_N",
+          "pin": "AB32",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA17_CC_P",
+          "pin": "AA32",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA18_CC_N",
+          "pin": "AB31",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA18_CC_P",
+          "pin": "AB30",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA19_N",
+          "pin": "AB29",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA19_P",
+          "pin": "AA29",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA20_N",
+          "pin": "AB34",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA20_P",
+          "pin": "AA34",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA21_N",
+          "pin": "AD33",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA21_P",
+          "pin": "AC33",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA22_N",
+          "pin": "AD34",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA22_P",
+          "pin": "AC34",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA23_N",
+          "pin": "AD31",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA23_P",
+          "pin": "AD30",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA24_N",
+          "pin": "AF32",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA24_P",
+          "pin": "AE32",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA25_N",
+          "pin": "AF34",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA25_P",
+          "pin": "AE33",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA26_N",
+          "pin": "AG34",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA26_P",
+          "pin": "AF33",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA27_N",
+          "pin": "AG32",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA27_P",
+          "pin": "AG31",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA28_N",
+          "pin": "W31",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA28_P",
+          "pin": "V31",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA29_N",
+          "pin": "V34",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA29_P",
+          "pin": "U34",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA30_N",
+          "pin": "Y32",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA30_P",
+          "pin": "Y31",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA31_N",
+          "pin": "W34",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA31_P",
+          "pin": "V33",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA32_N",
+          "pin": "Y30",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA32_P",
+          "pin": "W30",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA33_N",
+          "pin": "Y33",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "LA33_P",
+          "pin": "W33",
+          "bank": 48,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "PRSNT_M2C_B_LS",
+          "pin": "J26",
+          "bank": 65,
+          "io_type": "HR",
+          "iostandard": "LVCMOS18"
+        }
+      ]
+    }
+  ]
+}

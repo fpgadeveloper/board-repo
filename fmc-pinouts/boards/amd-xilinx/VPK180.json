@@ -1,0 +1,662 @@
+{
+  "mpn": "VPK180",
+  "side": "host",
+  "source": "fmc-pinouts-reference",
+  "slots": [
+    {
+      "slot": "FMCP",
+      "type": "fmcp",
+      "signals": [
+        {
+          "signal": "CLK0_M2C_N",
+          "pin": "BY44",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "CLK0_M2C_P",
+          "pin": "BY43",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "CLK1_M2C_N",
+          "pin": "BP38",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "CLK1_M2C_P",
+          "pin": "BN39",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "DP0_C2M_N",
+          "pin": "CD55",
+          "bank": 200,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP0_C2M_P",
+          "pin": "CD54",
+          "bank": 200,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP0_M2C_N",
+          "pin": "CB62",
+          "bank": 200,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP0_M2C_P",
+          "pin": "CB61",
+          "bank": 200,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP1_C2M_N",
+          "pin": "CD59",
+          "bank": 200,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP1_C2M_P",
+          "pin": "CD58",
+          "bank": 200,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP1_M2C_N",
+          "pin": "BY62",
+          "bank": 200,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP1_M2C_P",
+          "pin": "BY61",
+          "bank": 200,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP2_C2M_N",
+          "pin": "CC57",
+          "bank": 200,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP2_C2M_P",
+          "pin": "CC56",
+          "bank": 200,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP2_M2C_N",
+          "pin": "BW64",
+          "bank": 200,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP2_M2C_P",
+          "pin": "BW63",
+          "bank": 200,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP3_C2M_N",
+          "pin": "CB59",
+          "bank": 200,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP3_C2M_P",
+          "pin": "CB58",
+          "bank": 200,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP3_M2C_N",
+          "pin": "BV62",
+          "bank": 200,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP3_M2C_P",
+          "pin": "BV61",
+          "bank": 200,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP4_C2M_N",
+          "pin": "CB55",
+          "bank": 201,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP4_C2M_P",
+          "pin": "CB54",
+          "bank": 201,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP4_M2C_N",
+          "pin": "BU64",
+          "bank": 201,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP4_M2C_P",
+          "pin": "BU63",
+          "bank": 201,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP5_C2M_N",
+          "pin": "CA57",
+          "bank": 201,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP5_C2M_P",
+          "pin": "CA56",
+          "bank": 201,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP5_M2C_N",
+          "pin": "BT62",
+          "bank": 201,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP5_M2C_P",
+          "pin": "BT61",
+          "bank": 201,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP6_C2M_N",
+          "pin": "BY59",
+          "bank": 201,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP6_C2M_P",
+          "pin": "BY58",
+          "bank": 201,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP6_M2C_N",
+          "pin": "BR64",
+          "bank": 201,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP6_M2C_P",
+          "pin": "BR63",
+          "bank": 201,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP7_C2M_N",
+          "pin": "BY55",
+          "bank": 201,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP7_C2M_P",
+          "pin": "BY54",
+          "bank": 201,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP7_M2C_N",
+          "pin": "BR60",
+          "bank": 201,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "DP7_M2C_P",
+          "pin": "BR59",
+          "bank": 201,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "GBTCLK0_M2C_N",
+          "pin": "AT49",
+          "bank": 200,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "GBTCLK0_M2C_P",
+          "pin": "AT48",
+          "bank": 200,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "GBTCLK1_M2C_N",
+          "pin": "AN51",
+          "bank": 201,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "GBTCLK1_M2C_P",
+          "pin": "AN50",
+          "bank": 201,
+          "io_type": "GTYP"
+        },
+        {
+          "signal": "LA00_CC_N",
+          "pin": "BV50",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA00_CC_P",
+          "pin": "BV49",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA01_CC_N",
+          "pin": "BW52",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA01_CC_P",
+          "pin": "BW51",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA02_N",
+          "pin": "CC47",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA02_P",
+          "pin": "CB46",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA03_N",
+          "pin": "CD48",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA03_P",
+          "pin": "CD47",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA04_N",
+          "pin": "CB50",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA04_P",
+          "pin": "CA49",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA05_N",
+          "pin": "CB44",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA05_P",
+          "pin": "CC43",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA06_N",
+          "pin": "CB45",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA06_P",
+          "pin": "CA44",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA07_N",
+          "pin": "CC50",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA07_P",
+          "pin": "CB49",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA08_N",
+          "pin": "BY50",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA08_P",
+          "pin": "BY49",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA09_N",
+          "pin": "CD46",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA09_P",
+          "pin": "CC45",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA10_N",
+          "pin": "CD45",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA10_P",
+          "pin": "CC44",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA11_N",
+          "pin": "CC52",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA11_P",
+          "pin": "CB51",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA12_N",
+          "pin": "BW50",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA12_P",
+          "pin": "BW49",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA13_N",
+          "pin": "CD50",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA13_P",
+          "pin": "CC49",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA14_N",
+          "pin": "CA52",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA14_P",
+          "pin": "BY51",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA15_N",
+          "pin": "CD52",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA15_P",
+          "pin": "CD51",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA16_N",
+          "pin": "CB52",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA16_P",
+          "pin": "CA51",
+          "bank": 710,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA17_CC_N",
+          "pin": "BU42",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA17_CC_P",
+          "pin": "BU41",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA18_CC_N",
+          "pin": "BY39",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA18_CC_P",
+          "pin": "BW39",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA19_N",
+          "pin": "BP40",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA19_P",
+          "pin": "BN40",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA20_N",
+          "pin": "BT41",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA20_P",
+          "pin": "BR42",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA21_N",
+          "pin": "CD41",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA21_P",
+          "pin": "CD40",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA22_N",
+          "pin": "CD43",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA22_P",
+          "pin": "CD42",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA23_N",
+          "pin": "CC40",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA23_P",
+          "pin": "CB40",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA24_N",
+          "pin": "CA39",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA24_P",
+          "pin": "BY40",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA25_N",
+          "pin": "CC39",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA25_P",
+          "pin": "CC38",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA26_N",
+          "pin": "CC42",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA26_P",
+          "pin": "CB41",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA27_N",
+          "pin": "CB39",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA27_P",
+          "pin": "CA38",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA28_N",
+          "pin": "BR38",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA28_P",
+          "pin": "BR37",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA29_N",
+          "pin": "CA37",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA29_P",
+          "pin": "BY38",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA30_N",
+          "pin": "BT39",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA30_P",
+          "pin": "BR39",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA31_N",
+          "pin": "BT40",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA31_P",
+          "pin": "BR41",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA32_N",
+          "pin": "CA41",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA32_P",
+          "pin": "BY41",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA33_N",
+          "pin": "BW41",
+          "bank": 709,
+          "io_type": "XPIO"
+        },
+        {
+          "signal": "LA33_P",
+          "pin": "BV41",
+          "bank": 709,
+          "io_type": "XPIO"
+        }
+      ]
+    }
+  ],
+  "device": "xcvp1802-lsvc4072-2MP-e-S"
+}

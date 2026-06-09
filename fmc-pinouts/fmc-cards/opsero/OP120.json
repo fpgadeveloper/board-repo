@@ -1,0 +1,368 @@
+{
+  "mpn": "OP120",
+  "side": "card",
+  "source": "docs.opsero.com",
+  "source_ref": "op120/datasheet/pin-configuration",
+  "slots": [
+    {
+      "slot": "FMC",
+      "type": "hpc",
+      "signals": [
+        {
+          "signal": "DP0_C2M_N",
+          "fmc_pin": "C3",
+          "net": "DP0_C2M_N",
+          "function": "Port 0 QSFP28 TX lane 0 negative"
+        },
+        {
+          "signal": "DP0_C2M_P",
+          "fmc_pin": "C2",
+          "net": "DP0_C2M_P",
+          "function": "Port 0 QSFP28 TX lane 0 positive"
+        },
+        {
+          "signal": "DP0_M2C_N",
+          "fmc_pin": "C7",
+          "net": "DP0_M2C_N",
+          "function": "Port 0 QSFP28 RX lane 0 negative"
+        },
+        {
+          "signal": "DP0_M2C_P",
+          "fmc_pin": "C6",
+          "net": "DP0_M2C_P",
+          "function": "Port 0 QSFP28 RX lane 0 positive"
+        },
+        {
+          "signal": "DP1_C2M_N",
+          "fmc_pin": "A23",
+          "net": "DP1_C2M_N",
+          "function": "Port 0 QSFP28 TX lane 1 negative"
+        },
+        {
+          "signal": "DP1_C2M_P",
+          "fmc_pin": "A22",
+          "net": "DP1_C2M_P",
+          "function": "Port 0 QSFP28 TX lane 1 positive"
+        },
+        {
+          "signal": "DP1_M2C_N",
+          "fmc_pin": "A3",
+          "net": "DP1_M2C_N",
+          "function": "Port 0 QSFP28 RX lane 1 negative"
+        },
+        {
+          "signal": "DP1_M2C_P",
+          "fmc_pin": "A2",
+          "net": "DP1_M2C_P",
+          "function": "Port 0 QSFP28 RX lane 1 positive"
+        },
+        {
+          "signal": "DP2_C2M_N",
+          "fmc_pin": "A27",
+          "net": "DP2_C2M_N",
+          "function": "Port 0 QSFP28 TX lane 2 negative"
+        },
+        {
+          "signal": "DP2_C2M_P",
+          "fmc_pin": "A26",
+          "net": "DP2_C2M_P",
+          "function": "Port 0 QSFP28 TX lane 2 positive"
+        },
+        {
+          "signal": "DP2_M2C_N",
+          "fmc_pin": "A7",
+          "net": "DP2_M2C_N",
+          "function": "Port 0 QSFP28 RX lane 2 negative"
+        },
+        {
+          "signal": "DP2_M2C_P",
+          "fmc_pin": "A6",
+          "net": "DP2_M2C_P",
+          "function": "Port 0 QSFP28 RX lane 2 positive"
+        },
+        {
+          "signal": "DP3_C2M_N",
+          "fmc_pin": "A31",
+          "net": "DP3_C2M_N",
+          "function": "Port 0 QSFP28 TX lane 3 negative"
+        },
+        {
+          "signal": "DP3_C2M_P",
+          "fmc_pin": "A30",
+          "net": "DP3_C2M_P",
+          "function": "Port 0 QSFP28 TX lane 3 positive"
+        },
+        {
+          "signal": "DP3_M2C_N",
+          "fmc_pin": "A11",
+          "net": "DP3_M2C_N",
+          "function": "Port 0 QSFP28 RX lane 3 negative"
+        },
+        {
+          "signal": "DP3_M2C_P",
+          "fmc_pin": "A10",
+          "net": "DP3_M2C_P",
+          "function": "Port 0 QSFP28 RX lane 3 positive"
+        },
+        {
+          "signal": "DP4_C2M_N",
+          "fmc_pin": "A35",
+          "net": "DP4_C2M_N",
+          "function": "Port 1 QSFP28 TX lane 0 negative"
+        },
+        {
+          "signal": "DP4_C2M_P",
+          "fmc_pin": "A34",
+          "net": "DP4_C2M_P",
+          "function": "Port 1 QSFP28 TX lane 0 positive"
+        },
+        {
+          "signal": "DP4_M2C_N",
+          "fmc_pin": "A15",
+          "net": "DP4_M2C_N",
+          "function": "Port 1 QSFP28 RX lane 0 negative"
+        },
+        {
+          "signal": "DP4_M2C_P",
+          "fmc_pin": "A14",
+          "net": "DP4_M2C_P",
+          "function": "Port 1 QSFP28 RX lane 0 positive"
+        },
+        {
+          "signal": "DP5_C2M_N",
+          "fmc_pin": "A39",
+          "net": "DP5_C2M_N",
+          "function": "Port 1 QSFP28 TX lane 1 negative"
+        },
+        {
+          "signal": "DP5_C2M_P",
+          "fmc_pin": "A38",
+          "net": "DP5_C2M_P",
+          "function": "Port 1 QSFP28 TX lane 1 positive"
+        },
+        {
+          "signal": "DP5_M2C_N",
+          "fmc_pin": "A19",
+          "net": "DP5_M2C_N",
+          "function": "Port 1 QSFP28 RX lane 1 negative"
+        },
+        {
+          "signal": "DP5_M2C_P",
+          "fmc_pin": "A18",
+          "net": "DP5_M2C_P",
+          "function": "Port 1 QSFP28 RX lane 1 positive"
+        },
+        {
+          "signal": "DP6_C2M_N",
+          "fmc_pin": "B37",
+          "net": "DP6_C2M_N",
+          "function": "Port 1 QSFP28 TX lane 2 negative"
+        },
+        {
+          "signal": "DP6_C2M_P",
+          "fmc_pin": "B36",
+          "net": "DP6_C2M_P",
+          "function": "Port 1 QSFP28 TX lane 2 positive"
+        },
+        {
+          "signal": "DP6_M2C_N",
+          "fmc_pin": "B17",
+          "net": "DP6_M2C_N",
+          "function": "Port 1 QSFP28 RX lane 2 negative"
+        },
+        {
+          "signal": "DP6_M2C_P",
+          "fmc_pin": "B16",
+          "net": "DP6_M2C_P",
+          "function": "Port 1 QSFP28 RX lane 2 positive"
+        },
+        {
+          "signal": "DP7_C2M_N",
+          "fmc_pin": "B33",
+          "net": "DP7_C2M_N",
+          "function": "Port 1 QSFP28 TX lane 3 negative"
+        },
+        {
+          "signal": "DP7_C2M_P",
+          "fmc_pin": "B32",
+          "net": "DP7_C2M_P",
+          "function": "Port 1 QSFP28 TX lane 3 positive"
+        },
+        {
+          "signal": "DP7_M2C_N",
+          "fmc_pin": "B13",
+          "net": "DP7_M2C_N",
+          "function": "Port 1 QSFP28 RX lane 3 negative"
+        },
+        {
+          "signal": "DP7_M2C_P",
+          "fmc_pin": "B12",
+          "net": "DP7_M2C_P",
+          "function": "Port 1 QSFP28 RX lane 3 positive"
+        },
+        {
+          "signal": "GBTCLK0_M2C_N",
+          "fmc_pin": "D5",
+          "net": "GBTCLK0_M2C_N",
+          "function": "Clock oscillator Si5328 CLKOUT1- output"
+        },
+        {
+          "signal": "GBTCLK0_M2C_P",
+          "fmc_pin": "D4",
+          "net": "GBTCLK0_M2C_P",
+          "function": "Clock oscillator Si5328 CLKOUT1+ output"
+        },
+        {
+          "signal": "GBTCLK1_M2C_N",
+          "fmc_pin": "B21",
+          "net": "GBTCLK1_M2C_N",
+          "function": "Clock oscillator Si5328 CLKOUT2- output"
+        },
+        {
+          "signal": "GBTCLK1_M2C_P",
+          "fmc_pin": "B20",
+          "net": "GBTCLK1_M2C_P",
+          "function": "Clock oscillator Si5328 CLKOUT2+ output"
+        },
+        {
+          "signal": "LA00_CC_N",
+          "fmc_pin": "G7",
+          "net": "REC_CLK1_N",
+          "function": "Recovered clock negative (LVDS, FPGA to Si5328)"
+        },
+        {
+          "signal": "LA00_CC_P",
+          "fmc_pin": "G6",
+          "net": "REC_CLK1_P",
+          "function": "Recovered clock positive (LVDS, FPGA to Si5328)"
+        },
+        {
+          "signal": "LA02_N",
+          "fmc_pin": "H8",
+          "net": "CLK_I2C_SDA_T",
+          "function": "Clock multiplier I2C bus data SDA"
+        },
+        {
+          "signal": "LA02_P",
+          "fmc_pin": "H7",
+          "net": "CLK_I2C_SCL_T",
+          "function": "Clock multiplier I2C bus clock SCL"
+        },
+        {
+          "signal": "LA03_N",
+          "fmc_pin": "G10",
+          "net": "QSFP0_I2C_SDA_T",
+          "function": "Port 0 QSFP28 I2C Data (bidirectional)"
+        },
+        {
+          "signal": "LA03_P",
+          "fmc_pin": "G9",
+          "net": "QSFP0_I2C_SCL_T",
+          "function": "Port 0 QSFP28 I2C Clock"
+        },
+        {
+          "signal": "LA04_N",
+          "fmc_pin": "H11",
+          "net": "QSFP0_RESETL_T",
+          "function": "Port 0 QSFP28 Reset (active low)"
+        },
+        {
+          "signal": "LA04_P",
+          "fmc_pin": "H10",
+          "net": "QSFP0_MODSELL_T",
+          "function": "Port 0 QSFP28 Module Select (active low)"
+        },
+        {
+          "signal": "LA05_N",
+          "fmc_pin": "D12",
+          "net": "QSFP1_INTL_T",
+          "function": "Port 1 QSFP28 Interrupt (active low)"
+        },
+        {
+          "signal": "LA05_P",
+          "fmc_pin": "D11",
+          "net": "QSFP1_MODPRSL_T",
+          "function": "Port 1 QSFP28 Module Present (active low)"
+        },
+        {
+          "signal": "LA06_P",
+          "fmc_pin": "C10",
+          "net": "CLK_LOS_ALARM_T",
+          "function": "Clock loss alarm from Si5328"
+        },
+        {
+          "signal": "LA07_N",
+          "fmc_pin": "H14",
+          "net": "QSFP0_RED_LED_T",
+          "function": "Port 0 QSFP28 User bicolor LED Red"
+        },
+        {
+          "signal": "LA07_P",
+          "fmc_pin": "H13",
+          "net": "QSFP0_GRN_LED_T",
+          "function": "Port 0 QSFP28 User bicolor LED Green"
+        },
+        {
+          "signal": "LA08_N",
+          "fmc_pin": "G13",
+          "net": "QSFP1_RED_LED_T",
+          "function": "Port 1 QSFP28 User bicolor LED Red"
+        },
+        {
+          "signal": "LA08_P",
+          "fmc_pin": "G12",
+          "net": "QSFP1_GRN_LED_T",
+          "function": "Port 1 QSFP28 User bicolor LED Green"
+        },
+        {
+          "signal": "LA11_N",
+          "fmc_pin": "H17",
+          "net": "QSFP1_LPMODE_T",
+          "function": "Port 1 QSFP28 Low Power Mode"
+        },
+        {
+          "signal": "LA11_P",
+          "fmc_pin": "H16",
+          "net": "QSFP0_LPMODE_T",
+          "function": "Port 0 QSFP28 Low Power Mode"
+        },
+        {
+          "signal": "LA12_N",
+          "fmc_pin": "G16",
+          "net": "QSFP0_INTL_T",
+          "function": "Port 0 QSFP28 Interrupt (active low)"
+        },
+        {
+          "signal": "LA12_P",
+          "fmc_pin": "G15",
+          "net": "QSFP0_MODPRSL_T",
+          "function": "Port 0 QSFP28 Module Present (active low)"
+        },
+        {
+          "signal": "LA15_N",
+          "fmc_pin": "H20",
+          "net": "QSFP1_RESETL_T",
+          "function": "Port 1 QSFP28 Reset (active low)"
+        },
+        {
+          "signal": "LA15_P",
+          "fmc_pin": "H19",
+          "net": "QSFP1_MODSELL_T",
+          "function": "Port 1 QSFP28 Module Select (active low)"
+        },
+        {
+          "signal": "LA17_CC_N",
+          "fmc_pin": "D21",
+          "net": "QSFP1_I2C_SDA_T",
+          "function": "Port 1 QSFP28 I2C Data (bidirectional)"
+        },
+        {
+          "signal": "LA17_CC_P",
+          "fmc_pin": "D20",
+          "net": "QSFP1_I2C_SCL_T",
+          "function": "Port 1 QSFP28 I2C Clock"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "mpn": "Ti375C529-DK",
+  "side": "host",
+  "source": "litex-boards",
+  "source_ref": "litex-hub/litex-boards litex_boards/platforms/efinix_ti375_c529_dev_kit.py",
+  "slots": [
+    {
+      "slot": "LPC",
+      "type": "lpc",
+      "signals": [
+        {
+          "signal": "CLK0_M2C_N",
+          "pin": "N18"
+        },
+        {
+          "signal": "CLK0_M2C_P",
+          "pin": "N17"
+        },
+        {
+          "signal": "CLK1_M2C_N",
+          "pin": "G2"
+        },
+        {
+          "signal": "CLK1_M2C_P",
+          "pin": "F2"
+        },
+        {
+          "signal": "DP0_M2C_N",
+          "pin": "A3"
+        },
+        {
+          "signal": "DP0_M2C_P",
+          "pin": "A4"
+        },
+        {
+          "signal": "LA00_CC_N",
+          "pin": "D2"
+        },
+        {
+          "signal": "LA00_CC_P",
+          "pin": "D1"
+        },
+        {
+          "signal": "LA01_CC_N",
+          "pin": "D8"
+        },
+        {
+          "signal": "LA01_CC_P",
+          "pin": "E8"
+        },
+        {
+          "signal": "LA02_N",
+          "pin": "A6"
+        },
+        {
+          "signal": "LA02_P",
+          "pin": "B6"
+        },
+        {
+          "signal": "LA03_N",
+          "pin": "D3"
+        },
+        {
+          "signal": "LA03_P",
+          "pin": "C3"
+        },
+        {
+          "signal": "LA04_N",
+          "pin": "C2"
+        },
+        {
+          "signal": "LA04_P",
+          "pin": "B1"
+        },
+        {
+          "signal": "LA05_N",
+          "pin": "C7"
+        },
+        {
+          "signal": "LA05_P",
+          "pin": "D7"
+        },
+        {
+          "signal": "LA06_N",
+          "pin": "B5"
+        },
+        {
+          "signal": "LA06_P",
+          "pin": "C5"
+        },
+        {
+          "signal": "LA07_N",
+          "pin": "F1"
+        },
+        {
+          "signal": "LA07_P",
+          "pin": "E1"
+        },
+        {
+          "signal": "LA08_N",
+          "pin": "B4"
+        },
+        {
+          "signal": "LA08_P",
+          "pin": "C4"
+        },
+        {
+          "signal": "LA09_N",
+          "pin": "E6"
+        },
+        {
+          "signal": "LA09_P",
+          "pin": "F6"
+        },
+        {
+          "signal": "LA10_N",
+          "pin": "B2"
+        },
+        {
+          "signal": "LA10_P",
+          "pin": "A2"
+        },
+        {
+          "signal": "LA11_N",
+          "pin": "J2"
+        },
+        {
+          "signal": "LA11_P",
+          "pin": "J1"
+        },
+        {
+          "signal": "LA12_N",
+          "pin": "H2"
+        },
+        {
+          "signal": "LA12_P",
+          "pin": "G1"
+        },
+        {
+          "signal": "LA13_N",
+          "pin": "F3"
+        },
+        {
+          "signal": "LA13_P",
+          "pin": "E3"
+        },
+        {
+          "signal": "LA14_N",
+          "pin": "K4"
+        },
+        {
+          "signal": "LA14_P",
+          "pin": "K3"
+        },
+        {
+          "signal": "LA15_N",
+          "pin": "R5"
+        },
+        {
+          "signal": "LA15_P",
+          "pin": "P5"
+        },
+        {
+          "signal": "LA16_N",
+          "pin": "M4"
+        },
+        {
+          "signal": "LA16_P",
+          "pin": "L3"
+        },
+        {
+          "signal": "LA17_CC_N",
+          "pin": "P3"
+        },
+        {
+          "signal": "LA17_CC_P",
+          "pin": "N3"
+        },
+        {
+          "signal": "LA18_CC_N",
+          "pin": "M2"
+        },
+        {
+          "signal": "LA18_CC_P",
+          "pin": "L2"
+        },
+        {
+          "signal": "LA19_N",
+          "pin": "L6"
+        },
+        {
+          "signal": "LA19_P",
+          "pin": "K6"
+        },
+        {
+          "signal": "LA20_N",
+          "pin": "F4"
+        },
+        {
+          "signal": "LA20_P",
+          "pin": "G4"
+        },
+        {
+          "signal": "LA21_N",
+          "pin": "J3"
+        },
+        {
+          "signal": "LA21_P",
+          "pin": "H3"
+        },
+        {
+          "signal": "LA22_N",
+          "pin": "M6"
+        },
+        {
+          "signal": "LA22_P",
+          "pin": "M5"
+        },
+        {
+          "signal": "LA23_N",
+          "pin": "L1"
+        },
+        {
+          "signal": "LA23_P",
+          "pin": "K1"
+        },
+        {
+          "signal": "LA24_N",
+          "pin": "J5"
+        },
+        {
+          "signal": "LA24_P",
+          "pin": "J6"
+        },
+        {
+          "signal": "LA25_N",
+          "pin": "P7"
+        },
+        {
+          "signal": "LA25_P",
+          "pin": "N7"
+        },
+        {
+          "signal": "LA26_N",
+          "pin": "N4"
+        },
+        {
+          "signal": "LA26_P",
+          "pin": "N5"
+        },
+        {
+          "signal": "LA27_N",
+          "pin": "N2"
+        },
+        {
+          "signal": "LA27_P",
+          "pin": "M1"
+        },
+        {
+          "signal": "LA28_N",
+          "pin": "R6"
+        },
+        {
+          "signal": "LA28_P",
+          "pin": "P6"
+        },
+        {
+          "signal": "LA29_N",
+          "pin": "T2"
+        },
+        {
+          "signal": "LA29_P",
+          "pin": "T3"
+        },
+        {
+          "signal": "LA30_N",
+          "pin": "T1"
+        },
+        {
+          "signal": "LA30_P",
+          "pin": "R1"
+        },
+        {
+          "signal": "LA31_N",
+          "pin": "P1"
+        },
+        {
+          "signal": "LA31_P",
+          "pin": "P2"
+        },
+        {
+          "signal": "LA32_N",
+          "pin": "U1"
+        },
+        {
+          "signal": "LA32_P",
+          "pin": "U2"
+        },
+        {
+          "signal": "LA33_N",
+          "pin": "R3"
+        },
+        {
+          "signal": "LA33_P",
+          "pin": "R4"
+        }
+      ]
+    }
+  ],
+  "device": "Ti375C529C4"
+}
