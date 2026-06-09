@@ -258,6 +258,68 @@
       }
     },
 
+    "fmc_pinout": {
+      "type": "object",
+      "title": "FMC Pinout",
+      "description": "Pin-level FMC connector routing for one entity, used for automated card<->host compatibility checking. One file per entity under fmc-pinouts/<entity-type>/<vendor>/<mpn>.json — the filename stem matches the entity mpn and the parent folder matches its vendor. Signals use canonical VITA 57.1 names (LA00_CC_P, HA17_N, DP0_C2M_P, CLK0_M2C_N, GBTCLK0_M2C_P) so a card's used-signal set joins directly against a host slot's routed-signal set. Slot names match the host's expansion FMC slot names (and the fmc-mates target_slot).",
+      "required": ["mpn", "side", "slots"],
+      "additionalProperties": false,
+      "properties": {
+        "mpn": { "type": "string", "title": "Entity MPN", "description": "MPN of the entity this pinout belongs to. Must match the filename stem and an existing entity." },
+        "side": {
+          "type": "string",
+          "title": "Side",
+          "enum": ["host", "card"],
+          "description": "host = board/carrier/kit that provides the FMC site (signals routed to its FPGA). card = FMC mezzanine that consumes the site (signals it uses)."
+        },
+        "device": { "type": "string", "title": "FPGA Device", "description": "Host FPGA part the FMC signals route to (e.g. xczu9eg-ffvb1156-2-e); determines the package used for bank lookup. Omit on the card side." },
+        "source": { "type": "string", "title": "Source", "description": "Provenance of the pin data, e.g. 'xilinx-board-store' or 'docs.opsero.com'." },
+        "source_ref": { "type": "string", "title": "Source Reference", "description": "Specific source locator, e.g. 'boards/Xilinx/zcu102/3.4' or 'op031/datasheet/pin-configuration'." },
+        "slots": {
+          "type": "array",
+          "title": "Slots",
+          "minItems": 1,
+          "description": "One entry per FMC site on the entity. A card has a single edge connector (one slot).",
+          "items": { "$ref": "#/$defs/fmc_pinout_slot" }
+        }
+      }
+    },
+
+    "fmc_pinout_slot": {
+      "type": "object",
+      "title": "FMC Pinout Slot",
+      "required": ["slot", "type", "signals"],
+      "additionalProperties": false,
+      "properties": {
+        "slot": { "type": "string", "title": "Slot Name", "description": "On a host, matches a slot name in the entity's expansion FMC list (e.g. HPC0, LPC1). On a card, the card's own connector label (typically 'FMC')." },
+        "type": { "type": "string", "title": "Connector Type", "enum": ["lpc", "hpc", "fmcp"], "description": "LPC / HPC / FMC+ class of this physical site." },
+        "signals": {
+          "type": "array",
+          "title": "Signals",
+          "description": "One entry per routed (host) or used (card) FMC signal. P and N of a differential pair are separate entries. A signal's absence means it is not routed/used at this site.",
+          "items": { "$ref": "#/$defs/fmc_pinout_signal" }
+        }
+      }
+    },
+
+    "fmc_pinout_signal": {
+      "type": "object",
+      "title": "FMC Pinout Signal",
+      "description": "A single FMC signal at a site. Host entries carry the FPGA-side facts (pin/bank); card entries carry the connector position and the card net it drives.",
+      "required": ["signal"],
+      "additionalProperties": false,
+      "properties": {
+        "signal": { "type": "string", "title": "Signal", "description": "Canonical VITA 57.1 signal name (e.g. LA00_CC_P, HA17_N, HB06_CC_P, CLK1_M2C_N, DP0_C2M_P, GBTCLK0_M2C_P)." },
+        "pin": { "type": "string", "title": "FPGA Pin", "description": "Host side: FPGA package pin (e.g. Y4)." },
+        "bank": { "type": "integer", "title": "I/O Bank", "description": "Host side: FPGA I/O or GT bank the pin belongs to. Drives co-bank compatibility checks." },
+        "io_type": { "type": "string", "title": "I/O Type", "description": "Host side: bank I/O type from the package file (HP / HD / HR / GTH / GTY / ...)." },
+        "iostandard": { "type": "string", "title": "IOSTANDARD", "description": "Host side: default IOSTANDARD asserted by the board file (reflects the site's default VADJ for regular I/O; a placeholder on GT pins)." },
+        "fmc_pin": { "type": "string", "title": "FMC Connector Pin", "description": "Card side: physical VITA 57.1 connector position (e.g. G6, H4)." },
+        "net": { "type": "string", "title": "Card Net", "description": "Card side: the card net this FMC signal connects to (e.g. E0_RX_CLK)." },
+        "function": { "type": "string", "title": "Function", "description": "Card side: human description of the net's purpose." }
+      }
+    },
+
     "mpn": {
       "type": "string",
       "title": "Part Number",

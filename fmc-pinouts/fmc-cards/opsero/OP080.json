@@ -1,0 +1,218 @@
+{
+  "mpn": "OP080",
+  "side": "card",
+  "source": "docs.opsero.com",
+  "source_ref": "op080/datasheet/pin-configuration",
+  "slots": [
+    {
+      "slot": "FMC",
+      "type": "hpc",
+      "signals": [
+        {
+          "signal": "DP0_C2M_N",
+          "fmc_pin": "C3",
+          "net": "DP0_C2M_N",
+          "function": "Port 0 PHY SGMII IN negative"
+        },
+        {
+          "signal": "DP0_C2M_P",
+          "fmc_pin": "C2",
+          "net": "DP0_C2M_P",
+          "function": "Port 0 PHY SGMII IN positive"
+        },
+        {
+          "signal": "DP0_M2C_N",
+          "fmc_pin": "C7",
+          "net": "DP0_M2C_N",
+          "function": "Port 0 PHY SGMII OUT negative"
+        },
+        {
+          "signal": "DP0_M2C_P",
+          "fmc_pin": "C6",
+          "net": "DP0_M2C_P",
+          "function": "Port 0 PHY SGMII OUT positive"
+        },
+        {
+          "signal": "DP1_C2M_N",
+          "fmc_pin": "A23",
+          "net": "DP1_C2M_N",
+          "function": "Port 1 PHY SGMII IN negative"
+        },
+        {
+          "signal": "DP1_C2M_P",
+          "fmc_pin": "A22",
+          "net": "DP1_C2M_P",
+          "function": "Port 1 PHY SGMII IN positive"
+        },
+        {
+          "signal": "DP1_M2C_N",
+          "fmc_pin": "A3",
+          "net": "DP1_M2C_N",
+          "function": "Port 1 PHY SGMII OUT negative"
+        },
+        {
+          "signal": "DP1_M2C_P",
+          "fmc_pin": "A2",
+          "net": "DP1_M2C_P",
+          "function": "Port 1 PHY SGMII OUT positive"
+        },
+        {
+          "signal": "DP2_C2M_N",
+          "fmc_pin": "A27",
+          "net": "DP2_C2M_N",
+          "function": "Port 2 PHY SGMII IN negative"
+        },
+        {
+          "signal": "DP2_C2M_P",
+          "fmc_pin": "A26",
+          "net": "DP2_C2M_P",
+          "function": "Port 2 PHY SGMII IN positive"
+        },
+        {
+          "signal": "DP2_M2C_N",
+          "fmc_pin": "A7",
+          "net": "DP2_M2C_N",
+          "function": "Port 2 PHY SGMII OUT negative"
+        },
+        {
+          "signal": "DP2_M2C_P",
+          "fmc_pin": "A6",
+          "net": "DP2_M2C_P",
+          "function": "Port 2 PHY SGMII OUT positive"
+        },
+        {
+          "signal": "DP3_C2M_N",
+          "fmc_pin": "A31",
+          "net": "DP3_C2M_N",
+          "function": "Port 3 PHY SGMII IN negative"
+        },
+        {
+          "signal": "DP3_C2M_P",
+          "fmc_pin": "A30",
+          "net": "DP3_C2M_P",
+          "function": "Port 3 PHY SGMII IN positive"
+        },
+        {
+          "signal": "DP3_M2C_N",
+          "fmc_pin": "A11",
+          "net": "DP3_M2C_N",
+          "function": "Port 3 PHY SGMII OUT negative"
+        },
+        {
+          "signal": "DP3_M2C_P",
+          "fmc_pin": "A10",
+          "net": "DP3_M2C_P",
+          "function": "Port 3 PHY SGMII OUT positive"
+        },
+        {
+          "signal": "GBTCLK0_M2C_N",
+          "fmc_pin": "D5",
+          "net": "GBTCLK0_M2C_N",
+          "function": "125MHz Ethernet reference clock for the FPGA"
+        },
+        {
+          "signal": "GBTCLK0_M2C_P",
+          "fmc_pin": "D4",
+          "net": "GBTCLK0_M2C_P",
+          "function": "125MHz Ethernet reference clock for the FPGA"
+        },
+        {
+          "signal": "LA07_N",
+          "fmc_pin": "H14",
+          "net": "E1_GPIO1_T",
+          "function": "Port 1 PHY GPIO1 output"
+        },
+        {
+          "signal": "LA07_P",
+          "fmc_pin": "H13",
+          "net": "E1_GPIO0_T",
+          "function": "Port 1 PHY GPIO0 output"
+        },
+        {
+          "signal": "LA08_N",
+          "fmc_pin": "G13",
+          "net": "E0_GPIO1_T",
+          "function": "Port 0 PHY GPIO1 output"
+        },
+        {
+          "signal": "LA08_P",
+          "fmc_pin": "G12",
+          "net": "E0_GPIO0_T",
+          "function": "Port 0 PHY GPIO0 output"
+        },
+        {
+          "signal": "LA11_N",
+          "fmc_pin": "H17",
+          "net": "E3_RESET_N_T",
+          "function": "Port 3 PHY reset input (active low)"
+        },
+        {
+          "signal": "LA11_P",
+          "fmc_pin": "H16",
+          "net": "E2_RESET_N_T",
+          "function": "Port 2 PHY reset input (active low)"
+        },
+        {
+          "signal": "LA12_N",
+          "fmc_pin": "G16",
+          "net": "E1_RESET_N_T",
+          "function": "Port 1 PHY reset input (active low)"
+        },
+        {
+          "signal": "LA12_P",
+          "fmc_pin": "G15",
+          "net": "E0_RESET_N_T",
+          "function": "Port 0 PHY reset input (active low)"
+        },
+        {
+          "signal": "LA13_N",
+          "fmc_pin": "D18",
+          "net": "PG_2V5",
+          "function": "Power good signal from 2.5V buck converter"
+        },
+        {
+          "signal": "LA13_P",
+          "fmc_pin": "D17",
+          "net": "PG_1V0",
+          "function": "Power good signal from 1.0V buck converter"
+        },
+        {
+          "signal": "LA15_N",
+          "fmc_pin": "H20",
+          "net": "E3_GPIO1_T",
+          "function": "Port 3 PHY GPIO1 output"
+        },
+        {
+          "signal": "LA15_P",
+          "fmc_pin": "H19",
+          "net": "E3_GPIO0_T",
+          "function": "Port 3 PHY GPIO0 output"
+        },
+        {
+          "signal": "LA16_N",
+          "fmc_pin": "G19",
+          "net": "E2_GPIO1_T",
+          "function": "Port 2 PHY GPIO1 output"
+        },
+        {
+          "signal": "LA16_P",
+          "fmc_pin": "G18",
+          "net": "E2_GPIO0_T",
+          "function": "Port 2 PHY GPIO0 output"
+        },
+        {
+          "signal": "LA17_CC_N",
+          "fmc_pin": "D21",
+          "net": "MDIO_T",
+          "function": "MDIO bus data (bidirectional)"
+        },
+        {
+          "signal": "LA17_CC_P",
+          "fmc_pin": "D20",
+          "net": "MDC_T",
+          "function": "MDIO bus clock (FPGA to PHY)"
+        }
+      ]
+    }
+  ]
+}

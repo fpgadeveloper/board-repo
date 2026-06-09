@@ -1,0 +1,314 @@
+{
+  "mpn": "OP068",
+  "side": "card",
+  "source": "docs.opsero.com",
+  "source_ref": "op068/datasheet/pin-configuration",
+  "slots": [
+    {
+      "slot": "FMC",
+      "type": "lpc",
+      "signals": [
+        {
+          "signal": "LA00_CC_N",
+          "fmc_pin": "G7",
+          "net": "CAM0_CLK_N",
+          "function": "Camera 0 Clock lane Negative"
+        },
+        {
+          "signal": "LA00_CC_P",
+          "fmc_pin": "G6",
+          "net": "CAM0_CLK_P",
+          "function": "Camera 0 Clock lane Positive"
+        },
+        {
+          "signal": "LA01_CC_N",
+          "fmc_pin": "D9",
+          "net": "CAM1_LA01_CLK_N",
+          "function": "Camera 1 Clock lane via LA01 Negative"
+        },
+        {
+          "signal": "LA01_CC_P",
+          "fmc_pin": "D8",
+          "net": "CAM1_LA01_CLK_P",
+          "function": "Camera 1 Clock lane via LA01 Positive"
+        },
+        {
+          "signal": "LA02_N",
+          "fmc_pin": "H8",
+          "net": "CAM0_DATA1_N",
+          "function": "Camera 0 Data lane 1 Negative"
+        },
+        {
+          "signal": "LA02_P",
+          "fmc_pin": "H7",
+          "net": "CAM0_DATA1_P",
+          "function": "Camera 0 Data lane 1 Positive"
+        },
+        {
+          "signal": "LA03_N",
+          "fmc_pin": "G10",
+          "net": "CAM0_SCL",
+          "function": "Camera 0 I2C bus clock"
+        },
+        {
+          "signal": "LA03_P",
+          "fmc_pin": "G9",
+          "net": "CAM0_SDA",
+          "function": "Camera 0 I2C bus data"
+        },
+        {
+          "signal": "LA05_N",
+          "fmc_pin": "D12",
+          "net": "CAM1_SCL",
+          "function": "Camera 1 I2C bus clock"
+        },
+        {
+          "signal": "LA05_P",
+          "fmc_pin": "D11",
+          "net": "CAM1_SDA",
+          "function": "Camera 1 I2C bus data"
+        },
+        {
+          "signal": "LA06_N",
+          "fmc_pin": "C11",
+          "net": "CAM0_DATA0_N",
+          "function": "Camera 0 Data lane 0 Negative"
+        },
+        {
+          "signal": "LA06_P",
+          "fmc_pin": "C10",
+          "net": "CAM0_DATA0_P",
+          "function": "Camera 0 Data lane 0 Positive"
+        },
+        {
+          "signal": "LA09_N",
+          "fmc_pin": "D15",
+          "net": "CAM1_IO0",
+          "function": "Camera 1 IO0 (GPIO)"
+        },
+        {
+          "signal": "LA09_P",
+          "fmc_pin": "D14",
+          "net": "CAM1_IO1",
+          "function": "Camera 1 IO1 (GPIO)"
+        },
+        {
+          "signal": "LA12_N",
+          "fmc_pin": "G16",
+          "net": "CAM0_IO0",
+          "function": "Camera 0 IO0 (GPIO)"
+        },
+        {
+          "signal": "LA12_P",
+          "fmc_pin": "G15",
+          "net": "CAM0_IO1",
+          "function": "Camera 0 IO1 (GPIO)"
+        },
+        {
+          "signal": "LA13_N",
+          "fmc_pin": "D18",
+          "net": "CAM_IO1_DIR",
+          "function": "Camera IO1 Direction select"
+        },
+        {
+          "signal": "LA13_P",
+          "fmc_pin": "D17",
+          "net": "CAM_IO0_DIR",
+          "function": "Camera IO0 Direction select"
+        },
+        {
+          "signal": "LA14_N",
+          "fmc_pin": "C19",
+          "net": "CAM1_DATA1_N",
+          "function": "Camera 1 Data lane 1 Negative"
+        },
+        {
+          "signal": "LA14_P",
+          "fmc_pin": "C18",
+          "net": "CAM1_DATA1_P",
+          "function": "Camera 1 Data lane 1 Positive"
+        },
+        {
+          "signal": "LA15_N",
+          "fmc_pin": "H20",
+          "net": "CAM1_DATA0_N",
+          "function": "Camera 1 Data lane 0 Negative"
+        },
+        {
+          "signal": "LA15_P",
+          "fmc_pin": "H19",
+          "net": "CAM1_DATA0_P",
+          "function": "Camera 1 Data lane 0 Positive"
+        },
+        {
+          "signal": "LA16_N",
+          "fmc_pin": "G19",
+          "net": "CAM1_LA16_CLK_N",
+          "function": "Camera 1 Clock lane via LA16 Negative"
+        },
+        {
+          "signal": "LA16_P",
+          "fmc_pin": "G18",
+          "net": "CAM1_LA16_CLK_P",
+          "function": "Camera 1 Clock lane via LA16 Positive"
+        },
+        {
+          "signal": "LA17_CC_N",
+          "fmc_pin": "D21",
+          "net": "CAM2_DATA1_N",
+          "function": "Camera 2 Data lane 1 Negative"
+        },
+        {
+          "signal": "LA17_CC_P",
+          "fmc_pin": "D20",
+          "net": "CAM2_DATA1_P",
+          "function": "Camera 2 Data lane 1 Positive"
+        },
+        {
+          "signal": "LA18_CC_N",
+          "fmc_pin": "C23",
+          "net": "CAM2_CLK_N",
+          "function": "Camera 2 Clock lane Negative"
+        },
+        {
+          "signal": "LA18_CC_P",
+          "fmc_pin": "C22",
+          "net": "CAM2_CLK_P",
+          "function": "Camera 2 Clock lane Positive"
+        },
+        {
+          "signal": "LA19_N",
+          "fmc_pin": "H23",
+          "net": "CAM2_IO0",
+          "function": "Camera 2 IO0 (GPIO)"
+        },
+        {
+          "signal": "LA19_P",
+          "fmc_pin": "H22",
+          "net": "CAM2_IO1",
+          "function": "Camera 2 IO1 (GPIO)"
+        },
+        {
+          "signal": "LA20_N",
+          "fmc_pin": "G22",
+          "net": "CAM3_IO0",
+          "function": "Camera 3 IO0 (GPIO)"
+        },
+        {
+          "signal": "LA20_P",
+          "fmc_pin": "G21",
+          "net": "CAM3_IO1",
+          "function": "Camera 3 IO1 (GPIO)"
+        },
+        {
+          "signal": "LA24_N",
+          "fmc_pin": "H29",
+          "net": "CAM2_DATA0_N",
+          "function": "Camera 2 Data lane 0 Negative"
+        },
+        {
+          "signal": "LA24_P",
+          "fmc_pin": "H28",
+          "net": "CAM2_DATA0_P",
+          "function": "Camera 2 Data lane 0 Positive"
+        },
+        {
+          "signal": "LA25_N",
+          "fmc_pin": "G28",
+          "net": "CAM1_CLK_SEL",
+          "function": "Camera 1 Clock select (0=LA01,1=LA16)"
+        },
+        {
+          "signal": "LA25_P",
+          "fmc_pin": "G27",
+          "net": "CAM3_CLK_SEL",
+          "function": "Camera 3 Clock select (0=LA26,1=LA31)"
+        },
+        {
+          "signal": "LA26_N",
+          "fmc_pin": "D27",
+          "net": "CAM3_LA26_CLK_N",
+          "function": "Camera 3 Clock lane via LA26 Negative"
+        },
+        {
+          "signal": "LA26_P",
+          "fmc_pin": "D26",
+          "net": "CAM3_LA26_CLK_P",
+          "function": "Camera 3 Clock lane via LA26 Positive"
+        },
+        {
+          "signal": "LA27_N",
+          "fmc_pin": "C27",
+          "net": "CAM_IO1_OE_N",
+          "function": "Camera IO1 Output enable (active low)"
+        },
+        {
+          "signal": "LA27_P",
+          "fmc_pin": "C26",
+          "net": "CAM_IO0_OE_N",
+          "function": "Camera IO0 Output enable (active low)"
+        },
+        {
+          "signal": "LA28_N",
+          "fmc_pin": "H32",
+          "net": "CAM3_DATA1_N",
+          "function": "Camera 3 Data lane 1 Negative"
+        },
+        {
+          "signal": "LA28_P",
+          "fmc_pin": "H31",
+          "net": "CAM3_DATA1_P",
+          "function": "Camera 3 Data lane 1 Positive"
+        },
+        {
+          "signal": "LA30_N",
+          "fmc_pin": "H35",
+          "net": "CAM2_SCL",
+          "function": "Camera 2 I2C bus clock"
+        },
+        {
+          "signal": "LA30_P",
+          "fmc_pin": "H34",
+          "net": "CAM2_SDA",
+          "function": "Camera 2 I2C bus data"
+        },
+        {
+          "signal": "LA31_N",
+          "fmc_pin": "G34",
+          "net": "CAM3_LA31_CLK_N",
+          "function": "Camera 3 Clock lane via LA31 Negative"
+        },
+        {
+          "signal": "LA31_P",
+          "fmc_pin": "G33",
+          "net": "CAM3_LA31_CLK_P",
+          "function": "Camera 3 Clock lane via LA31 Positive"
+        },
+        {
+          "signal": "LA32_N",
+          "fmc_pin": "H38",
+          "net": "CAM3_SCL",
+          "function": "Camera 3 I2C bus clock"
+        },
+        {
+          "signal": "LA32_P",
+          "fmc_pin": "H37",
+          "net": "CAM3_SDA",
+          "function": "Camera 3 I2C bus data"
+        },
+        {
+          "signal": "LA33_N",
+          "fmc_pin": "G37",
+          "net": "CAM3_DATA0_N",
+          "function": "Camera 3 Data lane 0 Negative"
+        },
+        {
+          "signal": "LA33_P",
+          "fmc_pin": "G36",
+          "net": "CAM3_DATA0_P",
+          "function": "Camera 3 Data lane 0 Positive"
+        }
+      ]
+    }
+  ]
+}

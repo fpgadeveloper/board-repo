@@ -1,0 +1,110 @@
+{
+  "mpn": "ZCU670",
+  "side": "host",
+  "source": "fmc-pinouts-reference",
+  "slots": [
+    {
+      "slot": "FMCP",
+      "type": "fmcp",
+      "signals": [
+        {
+          "signal": "DP0_C2M_N",
+          "pin": "E31",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP0_C2M_P",
+          "pin": "E30",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP0_M2C_N",
+          "pin": "F34",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP0_M2C_P",
+          "pin": "F33",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP1_C2M_N",
+          "pin": "D29",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP1_C2M_P",
+          "pin": "D28",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP1_M2C_N",
+          "pin": "D34",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP1_M2C_P",
+          "pin": "D33",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP2_C2M_N",
+          "pin": "C31",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP2_C2M_P",
+          "pin": "C30",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP2_M2C_N",
+          "pin": "B34",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP2_M2C_P",
+          "pin": "B33",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP3_C2M_N",
+          "pin": "B29",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP3_C2M_P",
+          "pin": "B28",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP3_M2C_N",
+          "pin": "A32",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP3_M2C_P",
+          "pin": "A31",
+          "bank": 128,
+          "io_type": "GTY"
+        }
+      ]
+    }
+  ],
+  "device": "xczu67dr-fsve1156-i"
+}

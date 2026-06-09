@@ -1,0 +1,272 @@
+{
+  "mpn": "OP063",
+  "side": "card",
+  "source": "docs.opsero.com",
+  "source_ref": "op063/datasheet/pin-configuration",
+  "slots": [
+    {
+      "slot": "FMC",
+      "type": "hpc",
+      "signals": [
+        {
+          "signal": "DP0_C2M_N",
+          "fmc_pin": "C3",
+          "net": "FPGA2SSDA_0_N",
+          "function": "PCIe lane 0 negative (FPGA-to-SSD1)"
+        },
+        {
+          "signal": "DP0_C2M_P",
+          "fmc_pin": "C2",
+          "net": "FPGA2SSDA_0_P",
+          "function": "PCIe lane 0 positive (FPGA-to-SSD1)"
+        },
+        {
+          "signal": "DP0_M2C_N",
+          "fmc_pin": "C7",
+          "net": "SSDA2FPGA_0_N",
+          "function": "PCIe lane 0 negative (SSD1-to-FPGA)"
+        },
+        {
+          "signal": "DP0_M2C_P",
+          "fmc_pin": "C6",
+          "net": "SSDA2FPGA_0_P",
+          "function": "PCIe lane 0 positive (SSD1-to-FPGA)"
+        },
+        {
+          "signal": "DP1_C2M_N",
+          "fmc_pin": "A23",
+          "net": "FPGA2SSDA_1_N",
+          "function": "PCIe lane 1 negative (FPGA-to-SSD1)"
+        },
+        {
+          "signal": "DP1_C2M_P",
+          "fmc_pin": "A22",
+          "net": "FPGA2SSDA_1_P",
+          "function": "PCIe lane 1 positive (FPGA-to-SSD1)"
+        },
+        {
+          "signal": "DP1_M2C_N",
+          "fmc_pin": "A3",
+          "net": "SSDA2FPGA_1_N",
+          "function": "PCIe lane 1 negative (SSD1-to-FPGA)"
+        },
+        {
+          "signal": "DP1_M2C_P",
+          "fmc_pin": "A2",
+          "net": "SSDA2FPGA_1_P",
+          "function": "PCIe lane 1 positive (SSD1-to-FPGA)"
+        },
+        {
+          "signal": "DP2_C2M_N",
+          "fmc_pin": "A27",
+          "net": "FPGA2SSDA_2_N",
+          "function": "PCIe lane 2 negative (FPGA-to-SSD1)"
+        },
+        {
+          "signal": "DP2_C2M_P",
+          "fmc_pin": "A26",
+          "net": "FPGA2SSDA_2_P",
+          "function": "PCIe lane 2 positive (FPGA-to-SSD1)"
+        },
+        {
+          "signal": "DP2_M2C_N",
+          "fmc_pin": "A7",
+          "net": "SSDA2FPGA_2_N",
+          "function": "PCIe lane 2 negative (SSD1-to-FPGA)"
+        },
+        {
+          "signal": "DP2_M2C_P",
+          "fmc_pin": "A6",
+          "net": "SSDA2FPGA_2_P",
+          "function": "PCIe lane 2 positive (SSD1-to-FPGA)"
+        },
+        {
+          "signal": "DP3_C2M_N",
+          "fmc_pin": "A31",
+          "net": "FPGA2SSDA_3_N",
+          "function": "PCIe lane 3 negative (FPGA-to-SSD1)"
+        },
+        {
+          "signal": "DP3_C2M_P",
+          "fmc_pin": "A30",
+          "net": "FPGA2SSDA_3_P",
+          "function": "PCIe lane 3 positive (FPGA-to-SSD1)"
+        },
+        {
+          "signal": "DP3_M2C_N",
+          "fmc_pin": "A11",
+          "net": "SSDA2FPGA_3_N",
+          "function": "PCIe lane 3 negative (SSD1-to-FPGA)"
+        },
+        {
+          "signal": "DP3_M2C_P",
+          "fmc_pin": "A10",
+          "net": "SSDA2FPGA_3_P",
+          "function": "PCIe lane 3 positive (SSD1-to-FPGA)"
+        },
+        {
+          "signal": "DP4_C2M_N",
+          "fmc_pin": "A35",
+          "net": "FPGA2SSDB_0_N",
+          "function": "PCIe lane 0 negative (FPGA-to-SSD2)"
+        },
+        {
+          "signal": "DP4_C2M_P",
+          "fmc_pin": "A34",
+          "net": "FPGA2SSDB_0_P",
+          "function": "PCIe lane 0 positive (FPGA-to-SSD2)"
+        },
+        {
+          "signal": "DP4_M2C_N",
+          "fmc_pin": "A15",
+          "net": "SSDB2FPGA_0_N",
+          "function": "PCIe lane 0 negative (SSD2-to-FPGA)"
+        },
+        {
+          "signal": "DP4_M2C_P",
+          "fmc_pin": "A14",
+          "net": "SSDB2FPGA_0_P",
+          "function": "PCIe lane 0 positive (SSD2-to-FPGA)"
+        },
+        {
+          "signal": "DP5_C2M_N",
+          "fmc_pin": "A39",
+          "net": "FPGA2SSDB_1_N",
+          "function": "PCIe lane 1 negative (FPGA-to-SSD2)"
+        },
+        {
+          "signal": "DP5_C2M_P",
+          "fmc_pin": "A38",
+          "net": "FPGA2SSDB_1_P",
+          "function": "PCIe lane 1 positive (FPGA-to-SSD2)"
+        },
+        {
+          "signal": "DP5_M2C_N",
+          "fmc_pin": "A19",
+          "net": "SSDB2FPGA_1_N",
+          "function": "PCIe lane 1 negative (SSD2-to-FPGA)"
+        },
+        {
+          "signal": "DP5_M2C_P",
+          "fmc_pin": "A18",
+          "net": "SSDB2FPGA_1_P",
+          "function": "PCIe lane 1 positive (SSD2-to-FPGA)"
+        },
+        {
+          "signal": "DP6_C2M_N",
+          "fmc_pin": "B37",
+          "net": "FPGA2SSDB_2_N",
+          "function": "PCIe lane 2 negative (FPGA-to-SSD2)"
+        },
+        {
+          "signal": "DP6_C2M_P",
+          "fmc_pin": "B36",
+          "net": "FPGA2SSDB_2_P",
+          "function": "PCIe lane 2 positive (FPGA-to-SSD2)"
+        },
+        {
+          "signal": "DP6_M2C_N",
+          "fmc_pin": "B17",
+          "net": "SSDB2FPGA_2_N",
+          "function": "PCIe lane 2 negative (SSD2-to-FPGA)"
+        },
+        {
+          "signal": "DP6_M2C_P",
+          "fmc_pin": "B16",
+          "net": "SSDB2FPGA_2_P",
+          "function": "PCIe lane 2 positive (SSD2-to-FPGA)"
+        },
+        {
+          "signal": "DP7_C2M_N",
+          "fmc_pin": "B33",
+          "net": "FPGA2SSDB_3_N",
+          "function": "PCIe lane 3 negative (FPGA-to-SSD2)"
+        },
+        {
+          "signal": "DP7_C2M_P",
+          "fmc_pin": "B32",
+          "net": "FPGA2SSDB_3_P",
+          "function": "PCIe lane 3 positive (FPGA-to-SSD2)"
+        },
+        {
+          "signal": "DP7_M2C_N",
+          "fmc_pin": "B13",
+          "net": "SSDB2FPGA_3_N",
+          "function": "PCIe lane 3 negative (SSD2-to-FPGA)"
+        },
+        {
+          "signal": "DP7_M2C_P",
+          "fmc_pin": "B12",
+          "net": "SSDB2FPGA_3_P",
+          "function": "PCIe lane 3 positive (SSD2-to-FPGA)"
+        },
+        {
+          "signal": "GBTCLK0_M2C_N",
+          "fmc_pin": "D5",
+          "net": "REFCLKA_FPGA_P",
+          "function": "100MHz PCIe reference clock for the FPGA"
+        },
+        {
+          "signal": "GBTCLK0_M2C_P",
+          "fmc_pin": "D4",
+          "net": "REFCLKA_FPGA_P",
+          "function": "100MHz PCIe reference clock for the FPGA"
+        },
+        {
+          "signal": "GBTCLK1_M2C_N",
+          "fmc_pin": "B21",
+          "net": "REFCLKB_FPGA_N",
+          "function": "100MHz PCIe reference clock for the FPGA"
+        },
+        {
+          "signal": "GBTCLK1_M2C_P",
+          "fmc_pin": "B20",
+          "net": "REFCLKB_FPGA_P",
+          "function": "100MHz PCIe reference clock for the FPGA"
+        },
+        {
+          "signal": "LA00_CC_N",
+          "fmc_pin": "G7",
+          "net": "PEDET_A",
+          "function": "PCIe detect for SSD1"
+        },
+        {
+          "signal": "LA00_CC_P",
+          "fmc_pin": "G6",
+          "net": "PERST_A",
+          "function": "PCIe reset for SSD1 (active high)"
+        },
+        {
+          "signal": "LA04_N",
+          "fmc_pin": "H11",
+          "net": "PEDET_B",
+          "function": "PCIe detect for SSD2"
+        },
+        {
+          "signal": "LA04_P",
+          "fmc_pin": "H10",
+          "net": "PERST_B",
+          "function": "PCIe reset for SSD2 (active high)"
+        },
+        {
+          "signal": "LA07_P",
+          "fmc_pin": "H13",
+          "net": "DISABLE_SSD2_PWR",
+          "function": "Disable switching regulator for SSD2 (0=Enable,1=Disable)"
+        },
+        {
+          "signal": "LA17_CC_N",
+          "fmc_pin": "D21",
+          "net": "RSVD",
+          "function": "Reserved for production testing"
+        },
+        {
+          "signal": "LA17_CC_P",
+          "fmc_pin": "D20",
+          "net": "RSVD",
+          "function": "Reserved for production testing"
+        }
+      ]
+    }
+  ]
+}

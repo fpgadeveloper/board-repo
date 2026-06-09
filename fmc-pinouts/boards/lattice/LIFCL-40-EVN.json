@@ -1,0 +1,287 @@
+{
+  "mpn": "LIFCL-40-EVN",
+  "side": "host",
+  "source": "litex-boards",
+  "source_ref": "litex-hub/litex-boards litex_boards/platforms/lattice_crosslink_nx_evn.py",
+  "slots": [
+    {
+      "slot": "LPC",
+      "type": "lpc",
+      "signals": [
+        {
+          "signal": "CLK0_M2C_N",
+          "pin": "W12"
+        },
+        {
+          "signal": "CLK0_M2C_P",
+          "pin": "Y12"
+        },
+        {
+          "signal": "CLK1_M2C_N",
+          "pin": "T7"
+        },
+        {
+          "signal": "CLK1_M2C_P",
+          "pin": "R7"
+        },
+        {
+          "signal": "LA00_CC_N",
+          "pin": "U11"
+        },
+        {
+          "signal": "LA00_CC_P",
+          "pin": "V11"
+        },
+        {
+          "signal": "LA01_CC_N",
+          "pin": "V12"
+        },
+        {
+          "signal": "LA01_CC_P",
+          "pin": "W13"
+        },
+        {
+          "signal": "LA02_N",
+          "pin": "Y3"
+        },
+        {
+          "signal": "LA02_P",
+          "pin": "Y2"
+        },
+        {
+          "signal": "LA03_N",
+          "pin": "Y6"
+        },
+        {
+          "signal": "LA03_P",
+          "pin": "W6"
+        },
+        {
+          "signal": "LA04_N",
+          "pin": "W1"
+        },
+        {
+          "signal": "LA04_P",
+          "pin": "V1"
+        },
+        {
+          "signal": "LA05_N",
+          "pin": "R6"
+        },
+        {
+          "signal": "LA05_P",
+          "pin": "R5"
+        },
+        {
+          "signal": "LA06_N",
+          "pin": "Y9"
+        },
+        {
+          "signal": "LA06_P",
+          "pin": "W9"
+        },
+        {
+          "signal": "LA07_N",
+          "pin": "V7"
+        },
+        {
+          "signal": "LA07_P",
+          "pin": "W7"
+        },
+        {
+          "signal": "LA08_N",
+          "pin": "Y8"
+        },
+        {
+          "signal": "LA08_P",
+          "pin": "Y7"
+        },
+        {
+          "signal": "LA09_N",
+          "pin": "U7"
+        },
+        {
+          "signal": "LA09_P",
+          "pin": "V6"
+        },
+        {
+          "signal": "LA10_N",
+          "pin": "Y10"
+        },
+        {
+          "signal": "LA10_P",
+          "pin": "W10"
+        },
+        {
+          "signal": "LA11_N",
+          "pin": "R10"
+        },
+        {
+          "signal": "LA11_P",
+          "pin": "P10"
+        },
+        {
+          "signal": "LA12_N",
+          "pin": "T1"
+        },
+        {
+          "signal": "LA12_P",
+          "pin": "U1"
+        },
+        {
+          "signal": "LA13_N",
+          "pin": "P9"
+        },
+        {
+          "signal": "LA13_P",
+          "pin": "R9"
+        },
+        {
+          "signal": "LA14_N",
+          "pin": "Y11"
+        },
+        {
+          "signal": "LA14_P",
+          "pin": "W11"
+        },
+        {
+          "signal": "LA15_N",
+          "pin": "V9"
+        },
+        {
+          "signal": "LA15_P",
+          "pin": "W8"
+        },
+        {
+          "signal": "LA16_N",
+          "pin": "P8"
+        },
+        {
+          "signal": "LA16_P",
+          "pin": "P7"
+        },
+        {
+          "signal": "LA17_CC_N",
+          "pin": "V10"
+        },
+        {
+          "signal": "LA17_CC_P",
+          "pin": "U10"
+        },
+        {
+          "signal": "LA18_CC_N",
+          "pin": "T8"
+        },
+        {
+          "signal": "LA18_CC_P",
+          "pin": "R8"
+        },
+        {
+          "signal": "LA19_N",
+          "pin": "T12"
+        },
+        {
+          "signal": "LA19_P",
+          "pin": "U12"
+        },
+        {
+          "signal": "LA20_N",
+          "pin": "T11"
+        },
+        {
+          "signal": "LA20_P",
+          "pin": "T10"
+        },
+        {
+          "signal": "LA21_N",
+          "pin": "R13"
+        },
+        {
+          "signal": "LA21_P",
+          "pin": "P13"
+        },
+        {
+          "signal": "LA22_N",
+          "pin": "U14"
+        },
+        {
+          "signal": "LA22_P",
+          "pin": "V14"
+        },
+        {
+          "signal": "LA23_N",
+          "pin": "R11"
+        },
+        {
+          "signal": "LA23_P",
+          "pin": "P11"
+        },
+        {
+          "signal": "LA24_N",
+          "pin": "W15"
+        },
+        {
+          "signal": "LA24_P",
+          "pin": "W14"
+        },
+        {
+          "signal": "LA25_N",
+          "pin": "P12"
+        },
+        {
+          "signal": "LA25_P",
+          "pin": "R12"
+        },
+        {
+          "signal": "LA26_N",
+          "pin": "T14"
+        },
+        {
+          "signal": "LA26_P",
+          "pin": "T13"
+        },
+        {
+          "signal": "LA27_N",
+          "pin": "Y14"
+        },
+        {
+          "signal": "LA27_P",
+          "pin": "Y13"
+        },
+        {
+          "signal": "LA28_N",
+          "pin": "V16"
+        },
+        {
+          "signal": "LA28_P",
+          "pin": "U15"
+        },
+        {
+          "signal": "LA29_N",
+          "pin": "Y16"
+        },
+        {
+          "signal": "LA29_P",
+          "pin": "Y15"
+        },
+        {
+          "signal": "LA30_N",
+          "pin": "U16"
+        },
+        {
+          "signal": "LA30_P",
+          "pin": "V17"
+        },
+        {
+          "signal": "LA31_N",
+          "pin": "W17"
+        },
+        {
+          "signal": "LA31_P",
+          "pin": "Y17"
+        }
+      ]
+    }
+  ],
+  "device": "LIFCL-40-9BG400C"
+}

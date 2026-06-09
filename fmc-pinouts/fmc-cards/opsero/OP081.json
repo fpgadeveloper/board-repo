@@ -1,0 +1,350 @@
+{
+  "mpn": "OP081",
+  "side": "card",
+  "source": "docs.opsero.com",
+  "source_ref": "op081/datasheet/pin-configuration",
+  "slots": [
+    {
+      "slot": "FMC",
+      "type": "hpc",
+      "signals": [
+        {
+          "signal": "DP0_C2M_N",
+          "fmc_pin": "C3",
+          "net": "DP0_C2M_N",
+          "function": "Port 0 SFP TX negative"
+        },
+        {
+          "signal": "DP0_C2M_P",
+          "fmc_pin": "C2",
+          "net": "DP0_C2M_P",
+          "function": "Port 0 SFP TX positive"
+        },
+        {
+          "signal": "DP0_M2C_N",
+          "fmc_pin": "C7",
+          "net": "DP0_M2C_N",
+          "function": "Port 0 SFP RX negative"
+        },
+        {
+          "signal": "DP0_M2C_P",
+          "fmc_pin": "C6",
+          "net": "DP0_M2C_P",
+          "function": "Port 0 SFP RX positive"
+        },
+        {
+          "signal": "DP1_C2M_N",
+          "fmc_pin": "A23",
+          "net": "DP1_C2M_N",
+          "function": "Port 1 SFP TX negative"
+        },
+        {
+          "signal": "DP1_C2M_P",
+          "fmc_pin": "A22",
+          "net": "DP1_C2M_P",
+          "function": "Port 1 SFP TX positive"
+        },
+        {
+          "signal": "DP1_M2C_N",
+          "fmc_pin": "A3",
+          "net": "DP1_M2C_N",
+          "function": "Port 1 SFP RX negative"
+        },
+        {
+          "signal": "DP1_M2C_P",
+          "fmc_pin": "A2",
+          "net": "DP1_M2C_P",
+          "function": "Port 1 SFP RX positive"
+        },
+        {
+          "signal": "DP2_C2M_N",
+          "fmc_pin": "A27",
+          "net": "DP2_C2M_N",
+          "function": "Port 2 SFP TX negative"
+        },
+        {
+          "signal": "DP2_C2M_P",
+          "fmc_pin": "A26",
+          "net": "DP2_C2M_P",
+          "function": "Port 2 SFP TX positive"
+        },
+        {
+          "signal": "DP2_M2C_N",
+          "fmc_pin": "A7",
+          "net": "DP2_M2C_N",
+          "function": "Port 2 SFP RX negative"
+        },
+        {
+          "signal": "DP2_M2C_P",
+          "fmc_pin": "A6",
+          "net": "DP2_M2C_P",
+          "function": "Port 2 SFP RX positive"
+        },
+        {
+          "signal": "DP3_C2M_N",
+          "fmc_pin": "A31",
+          "net": "DP3_C2M_N",
+          "function": "Port 3 SFP TX negative"
+        },
+        {
+          "signal": "DP3_C2M_P",
+          "fmc_pin": "A30",
+          "net": "DP3_C2M_P",
+          "function": "Port 3 SFP TX positive"
+        },
+        {
+          "signal": "DP3_M2C_N",
+          "fmc_pin": "A11",
+          "net": "DP3_M2C_N",
+          "function": "Port 3 SFP RX negative"
+        },
+        {
+          "signal": "DP3_M2C_P",
+          "fmc_pin": "A10",
+          "net": "DP3_M2C_P",
+          "function": "Port 3 SFP RX positive"
+        },
+        {
+          "signal": "GBTCLK0_M2C_N",
+          "fmc_pin": "D5",
+          "net": "GBTCLK0_M2C_N",
+          "function": "Clock oscillator Si5328 CLKOUT1- output"
+        },
+        {
+          "signal": "GBTCLK0_M2C_P",
+          "fmc_pin": "D4",
+          "net": "GBTCLK0_M2C_P",
+          "function": "Clock oscillator Si5328 CLKOUT1+ output"
+        },
+        {
+          "signal": "GBTCLK1_M2C_N",
+          "fmc_pin": "B21",
+          "net": "GBTCLK1_M2C_N",
+          "function": "Clock oscillator Si5328 CLKOUT2- output"
+        },
+        {
+          "signal": "GBTCLK1_M2C_P",
+          "fmc_pin": "B20",
+          "net": "GBTCLK1_M2C_P",
+          "function": "Clock oscillator Si5328 CLKOUT2+ output"
+        },
+        {
+          "signal": "LA00_CC_N",
+          "fmc_pin": "G7",
+          "net": "REC_CLK1_N",
+          "function": "Recovered clock negative (LVDS, FPGA to Si5328)"
+        },
+        {
+          "signal": "LA00_CC_P",
+          "fmc_pin": "G6",
+          "net": "REC_CLK1_P",
+          "function": "Recovered clock positive (LVDS, FPGA to Si5328)"
+        },
+        {
+          "signal": "LA01_CC_N",
+          "fmc_pin": "D9",
+          "net": "SFP0_RED_LED_T",
+          "function": "Port 0 SFP User bicolor LED Red"
+        },
+        {
+          "signal": "LA01_CC_P",
+          "fmc_pin": "D8",
+          "net": "SFP0_GRN_LED_T",
+          "function": "Port 0 SFP User bicolor LED Green"
+        },
+        {
+          "signal": "LA02_N",
+          "fmc_pin": "H8",
+          "net": "SFP0_RS0_T",
+          "function": "Port 0 SFP Rate Select RS0"
+        },
+        {
+          "signal": "LA02_P",
+          "fmc_pin": "H7",
+          "net": "SFP0_RS1_T",
+          "function": "Port 0 SFP Rate Select RS1"
+        },
+        {
+          "signal": "LA03_N",
+          "fmc_pin": "G10",
+          "net": "SFP0_TX_FAULT_T",
+          "function": "Port 0 SFP TX fault"
+        },
+        {
+          "signal": "LA03_P",
+          "fmc_pin": "G9",
+          "net": "SFP0_TX_DISABLE_T",
+          "function": "Port 0 SFP TX disable (FPGA to SFP)"
+        },
+        {
+          "signal": "LA04_N",
+          "fmc_pin": "H11",
+          "net": "SFP0_MOD_ABS_T",
+          "function": "Port 0 SFP MOD_ABS"
+        },
+        {
+          "signal": "LA04_P",
+          "fmc_pin": "H10",
+          "net": "SFP0_LOS_T",
+          "function": "Port 0 SFP Loss of Signal LOS"
+        },
+        {
+          "signal": "LA05_N",
+          "fmc_pin": "D12",
+          "net": "SFP1_RED_LED_T",
+          "function": "Port 1 SFP User bicolor LED Red"
+        },
+        {
+          "signal": "LA05_P",
+          "fmc_pin": "D11",
+          "net": "SFP1_GRN_LED_T",
+          "function": "Port 1 SFP User bicolor LED Green"
+        },
+        {
+          "signal": "LA07_N",
+          "fmc_pin": "H14",
+          "net": "SFP1_MOD_ABS_T",
+          "function": "Port 1 SFP MOD_ABS"
+        },
+        {
+          "signal": "LA07_P",
+          "fmc_pin": "H13",
+          "net": "SFP1_LOS_T",
+          "function": "Port 1 SFP Loss of Signal LOS"
+        },
+        {
+          "signal": "LA08_N",
+          "fmc_pin": "G13",
+          "net": "SFP1_RS0_T",
+          "function": "Port 1 SFP Rate Select RS0"
+        },
+        {
+          "signal": "LA08_P",
+          "fmc_pin": "G12",
+          "net": "SFP1_RS1_T",
+          "function": "Port 1 SFP Rate Select RS1"
+        },
+        {
+          "signal": "LA09_N",
+          "fmc_pin": "D15",
+          "net": "SFP2_MOD_ABS_T",
+          "function": "Port 2 SFP MOD_ABS"
+        },
+        {
+          "signal": "LA09_P",
+          "fmc_pin": "D14",
+          "net": "SFP2_LOS_T",
+          "function": "Port 2 SFP Loss of Signal LOS"
+        },
+        {
+          "signal": "LA10_N",
+          "fmc_pin": "C15",
+          "net": "SFP2_RS0_T",
+          "function": "Port 2 SFP Rate Select RS0"
+        },
+        {
+          "signal": "LA10_P",
+          "fmc_pin": "C14",
+          "net": "SFP2_RS1_T",
+          "function": "Port 2 SFP Rate Select RS1"
+        },
+        {
+          "signal": "LA11_N",
+          "fmc_pin": "H17",
+          "net": "PL_I2C_SDA_T",
+          "function": "PL I2C bus data SDA"
+        },
+        {
+          "signal": "LA11_P",
+          "fmc_pin": "H16",
+          "net": "PL_I2C_SCL_T",
+          "function": "PL I2C bus clock SCL"
+        },
+        {
+          "signal": "LA12_N",
+          "fmc_pin": "G16",
+          "net": "SFP1_TX_FAULT_T",
+          "function": "Port 1 SFP TX fault"
+        },
+        {
+          "signal": "LA12_P",
+          "fmc_pin": "G15",
+          "net": "SFP1_TX_DISABLE_T",
+          "function": "Port 1 SFP TX disable (FPGA to SFP)"
+        },
+        {
+          "signal": "LA13_N",
+          "fmc_pin": "D18",
+          "net": "SFP3_RED_LED_T",
+          "function": "Port 3 SFP User bicolor LED Red"
+        },
+        {
+          "signal": "LA13_P",
+          "fmc_pin": "D17",
+          "net": "SFP3_GRN_LED_T",
+          "function": "Port 3 SFP User bicolor LED Green"
+        },
+        {
+          "signal": "LA14_N",
+          "fmc_pin": "C19",
+          "net": "SFP3_RS0_T",
+          "function": "Port 3 SFP Rate Select RS0"
+        },
+        {
+          "signal": "LA14_P",
+          "fmc_pin": "C18",
+          "net": "SFP3_RS1_T",
+          "function": "Port 3 SFP Rate Select RS1"
+        },
+        {
+          "signal": "LA15_N",
+          "fmc_pin": "H20",
+          "net": "SFP2_TX_DISABLE_T",
+          "function": "Port 2 SFP TX disable (FPGA to SFP)"
+        },
+        {
+          "signal": "LA15_P",
+          "fmc_pin": "H19",
+          "net": "SFP2_TX_FAULT_T",
+          "function": "Port 2 SFP TX fault"
+        },
+        {
+          "signal": "LA16_N",
+          "fmc_pin": "G19",
+          "net": "SFP2_RED_LED_T",
+          "function": "Port 2 SFP User bicolor LED Red"
+        },
+        {
+          "signal": "LA16_P",
+          "fmc_pin": "G18",
+          "net": "SFP2_GRN_LED_T",
+          "function": "Port 2 SFP User bicolor LED Green"
+        },
+        {
+          "signal": "LA17_CC_N",
+          "fmc_pin": "D21",
+          "net": "SFP3_TX_DISABLE_T",
+          "function": "Port 3 SFP TX disable (FPGA to SFP)"
+        },
+        {
+          "signal": "LA17_CC_P",
+          "fmc_pin": "D20",
+          "net": "SFP3_TX_FAULT_T",
+          "function": "Port 3 SFP TX fault"
+        },
+        {
+          "signal": "LA18_CC_N",
+          "fmc_pin": "C23",
+          "net": "SFP3_MOD_ABS_T",
+          "function": "Port 3 SFP MOD_ABS"
+        },
+        {
+          "signal": "LA18_CC_P",
+          "fmc_pin": "C22",
+          "net": "SFP3_LOS_T",
+          "function": "Port 3 SFP Loss of Signal LOS"
+        }
+      ]
+    }
+  ]
+}
