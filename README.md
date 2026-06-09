@@ -12,6 +12,7 @@ This repository contains the community-maintained database of FPGA development b
 | `kits/` | Pre-assembled SoM + carrier bundles sold as a single SKU. Each kit references its components by MPN (e.g. `kits/amd-xilinx/SK-KR260-G.md`). |
 | `fmc-cards/` | FPGA Mezzanine Cards (VITA 57: LPC / HPC / FMC+) that plug into FMC sites on a host (e.g. `fmc-cards/opsero/OP120.md`). |
 | `relationships/` | Compatibility relationships between entities (which FMC cards mate with which hosts; which SoMs fit which carriers). Still JSON — purely relational data. See [Compatibility Relationships](#compatibility-relationships) below. |
+| `fmc-pinouts/` | Pin-level FMC connector routing per entity (signal → FPGA pin for hosts; signal → card net for cards), plus the VITA 57 standard connector table. JSON. Used for automated card↔host compatibility checking. See [FMC Pinouts](#fmc-pinouts) below. |
 | `parts/` | Part-number decoder files, one JSON file per FPGA family (e.g. `parts/amd-xilinx/Spartan-7.json`). See [Part Number Decoders](#part-number-decoders) below. |
 | `attributes/` | Per-vendor device attributes that extend the board detail page (ML support, resource counts, transceivers, ...). JSON. See [`attributes/README.md`](attributes/README.md). |
 | `MARKDOWN_FORMAT.md` | Canonical specification of the entity markdown format — what the strict parser accepts, section by section. |
@@ -180,6 +181,29 @@ CI validates that:
 - The bundle's `fmc_card` / `carrier` key matches the filename stem.
 - The parent folder matches the owning entity's `vendor` field.
 - Every referenced MPN (`fmc_card`, `host`, `carrier`, `som`) exists in the corresponding entity folder.
+
+## FMC Pinouts
+
+Pin-level FMC connector routing lives under `fmc-pinouts/`, one JSON file per entity, mirroring the entity-type folders:
+
+```
+fmc-pinouts/<entity-type>/<vendor>/<mpn>.json
+```
+
+The filename stem matches the entity MPN and the parent folder matches its vendor — so a host board at `boards/amd-xilinx/ZCU102.md` has its pinout at `fmc-pinouts/boards/amd-xilinx/ZCU102.json`, and an FMC card at `fmc-cards/opsero/OP120.md` at `fmc-pinouts/fmc-cards/opsero/OP120.json`.
+
+Each file validates against the `fmc_pinout` definition in [`schema.json`](schema.json). Signals use canonical VITA 57.1 names (`LA00_CC_P`, `HA17_N`, `DP0_C2M_P`, `CLK0_M2C_N`, `GBTCLK0_M2C_P`) so a card's used-signal set joins directly against a host slot's routed-signal set — the basis for automated card↔host compatibility checking.
+
+| Field | Side | Description |
+|-------|------|-------------|
+| `mpn`, `side` | both | `side` is `host` (board/carrier/kit providing the site) or `card` (FMC mezzanine consuming it). `host` is implied for everything outside `fmc-cards/`. |
+| `device` | host | FPGA part the signals route to (drives the package used for bank lookup). |
+| `slots[].slot` / `.type` | both | `slot` matches the host's `## Expansion` FMC slot name (and the `fmc-mates` `target_slot`); `type` is `lpc` / `hpc` / `fmcp`. |
+| `signals[].signal` | both | Canonical VITA signal name. |
+| `signals[].pin` / `.bank` / `.io_type` / `.iostandard` | host | FPGA package pin and its I/O bank / type. |
+| `signals[].fmc_pin` / `.net` / `.function` | card | Connector position (e.g. `G6`) and the card net it drives. |
+
+`fmc-pinouts/vita57-standard.json` is the VITA 57.1 / 57.4 standard connector table (pin → canonical signal, one map per `lpc` / `hpc` / `fmcp` connector class) — reference data, not a per-entity pinout, so CI skips it during entity validation. See [`fmc-pinouts/SOURCES.md`](fmc-pinouts/SOURCES.md) for data provenance and attribution.
 
 ## Notes
 
