@@ -27,7 +27,6 @@ device: { part: A5ED013BM16AE4SCS, vendor: altera }
 - Micro-B UART
 
 ## Expansion
-- FMC LPC "LPC"
 - Pmod x1
 - Raspberry Pi x1
 - GPIO Header x1
