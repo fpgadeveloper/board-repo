@@ -54,6 +54,7 @@ jobs:
           import json, glob, os, sys
           sys.path.insert(0, "scripts")
           from json_from_md import parse
+          import fmc_compat
           from jsonschema import Draft202012Validator
           from referencing import Registry, Resource
 
@@ -148,6 +149,7 @@ jobs:
           # parent folder must match the owning entity's vendor.
           host_lookups = {"standalone": entities["standalone"], "kit": entities["kit"], "carrier": entities["carrier"]}
           owner_entity_type = {"som_mates": "carrier", "fmc_mates": "fmc_card"}
+          fmc_mates_edges = []  # collected for the compatibility discrepancy guard
           for folder, defname in RELATIONSHIP_FOLDERS.items():
               for path in sorted(glob.glob(f"relationships/{folder}/**/*.json", recursive=True)):
                   with open(path) as f:
@@ -173,9 +175,18 @@ jobs:
                           errors += 1
                       for i, entry in enumerate(bundle.get("compatible_hosts", [])):
                           host_type = entry.get("host_type")
-                          if entry.get("host") not in host_lookups.get(host_type, {}):
+                          host_rec = host_lookups.get(host_type, {}).get(entry.get("host"))
+                          if host_rec is None:
                               print(f"::error file={path}::compatible_hosts[{i}].host {entry.get('host')!r} not in {host_type}s/")
                               errors += 1
+                          # Nudge: a multi-FMC-site host needs an explicit target_slot,
+                          # else the endorsement is attached to *all* its slots.
+                          elif entry.get("target_slot") is None:
+                              fmc_slots = [s.get("slot") for s in (host_rec.get("expansion", {}).get("fmc") or [])]
+                              if len(fmc_slots) > 1:
+                                  print(f"::warning file={path}::compatible_hosts[{i}] {entry.get('host')!r} has multiple FMC sites {fmc_slots} — specify target_slot")
+                          fmc_mates_edges.append({"fmc_card": key, "host_type": host_type,
+                                                  "host": entry.get("host"), "target_slot": entry.get("target_slot")})
                   if key is not None and stem != key:
                       print(f"::error file={path}::filename stem {stem!r} does not match bundle key {key!r}")
                       errors += 1
@@ -193,6 +204,7 @@ jobs:
           # (the VITA 57 connector standard table) — skip the entity cross-checks.
           PINOUT_RESERVED = {"vita57-standard.json"}
           pinout_count = 0
+          card_pinouts, host_pinouts = {}, {}  # for the discrepancy guard
           for path in sorted(glob.glob("fmc-pinouts/**/*.json", recursive=True)):
               if os.path.basename(path) in PINOUT_RESERVED:
                   continue
@@ -228,6 +240,21 @@ jobs:
                       if s.get("slot") not in known:
                           print(f"::error file={path}::slot {s.get('slot')!r} not in {mpn} expansion FMC slots {sorted(known)}")
                           errors += 1
+                  host_pinouts[(defname, mpn)] = doc
+              else:
+                  card_pinouts[mpn] = doc
+
+          # Compatibility discrepancy guard: where a vendor fmc-mates edge has
+          # pinouts on both sides but the mechanical engine refutes it. This is a
+          # maintainer ALERT, never a merge gate — a vendor "incompatible" can be
+          # legitimate (PCIe/SGMII lane-width degradation, an incomplete host
+          # pinout, or unmodeled card semantics) and the vendor claim always
+          # shows on the site regardless. A 'review' tag marks a disagreement on
+          # a fully-modeled card (higher triage priority); 'fyi' an implicit one.
+          for sev, cm, htype, hm, slot, why in fmc_compat.find_discrepancies(
+                  card_pinouts, host_pinouts, fmc_mates_edges, entities["fmc_card"], host_lookups):
+              tag = "review" if sev == "hard" else "fyi"
+              print(f"::warning::[{tag}] vendor edge {cm} x {hm}[{slot}] but engine says INCOMPATIBLE: {why}")
 
           total = sum(len(v) for v in entities.values())
           print(f"{total} entities, {pinout_count} fmc-pinouts checked, {errors} error(s)")

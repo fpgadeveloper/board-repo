@@ -93,13 +93,6 @@
       "notes": "Gen3 PCIe, both slots."
     },
     {
-      "host": "VCU118",
-      "host_type": "standalone",
-      "verified_by": "vendor",
-      "target_slot": "HPC",
-      "notes": "Neither slot supported \u2014 use FMC+."
-    },
-    {
       "host": "VEK280",
       "host_type": "standalone",
       "verified_by": "vendor",

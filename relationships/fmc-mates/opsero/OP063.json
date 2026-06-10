@@ -93,13 +93,6 @@
       "notes": "Gen3 PCIe, dual SSD."
     },
     {
-      "host": "VCU118",
-      "host_type": "standalone",
-      "verified_by": "vendor",
-      "target_slot": "HPC",
-      "notes": "No reference design."
-    },
-    {
       "host": "VEK280",
       "host_type": "standalone",
       "verified_by": "vendor",

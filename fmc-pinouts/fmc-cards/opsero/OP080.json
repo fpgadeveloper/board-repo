@@ -212,6 +212,56 @@
           "net": "MDC_T",
           "function": "MDIO bus clock (FPGA to PHY)"
         }
+      ],
+      "groups": [
+        {
+          "name": "Port 0",
+          "signals": [
+            "DP0_C2M_N",
+            "DP0_C2M_P",
+            "DP0_M2C_N",
+            "DP0_M2C_P",
+            "LA08_N",
+            "LA08_P",
+            "LA12_P"
+          ]
+        },
+        {
+          "name": "Port 1",
+          "signals": [
+            "DP1_C2M_N",
+            "DP1_C2M_P",
+            "DP1_M2C_N",
+            "DP1_M2C_P",
+            "LA07_N",
+            "LA07_P",
+            "LA12_N"
+          ]
+        },
+        {
+          "name": "Port 2",
+          "signals": [
+            "DP2_C2M_N",
+            "DP2_C2M_P",
+            "DP2_M2C_N",
+            "DP2_M2C_P",
+            "LA11_P",
+            "LA16_N",
+            "LA16_P"
+          ]
+        },
+        {
+          "name": "Port 3",
+          "signals": [
+            "DP3_C2M_N",
+            "DP3_C2M_P",
+            "DP3_M2C_N",
+            "DP3_M2C_P",
+            "LA11_N",
+            "LA15_N",
+            "LA15_P"
+          ]
+        }
       ]
     }
   ]

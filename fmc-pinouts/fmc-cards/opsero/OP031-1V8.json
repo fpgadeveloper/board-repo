@@ -392,6 +392,92 @@
           "net": "E3_MDIO",
           "function": "Port 3 MDIO Data (bidirectional)"
         }
+      ],
+      "groups": [
+        {
+          "name": "Port 0",
+          "signals": [
+            "LA00_CC_N",
+            "LA00_CC_P",
+            "LA02_N",
+            "LA02_P",
+            "LA03_N",
+            "LA03_P",
+            "LA04_N",
+            "LA04_P",
+            "LA05_N",
+            "LA05_P",
+            "LA06_N",
+            "LA07_N",
+            "LA07_P",
+            "LA08_N",
+            "LA08_P"
+          ],
+          "same_bank": true
+        },
+        {
+          "name": "Port 1",
+          "signals": [
+            "LA01_CC_N",
+            "LA01_CC_P",
+            "LA06_P",
+            "LA09_N",
+            "LA09_P",
+            "LA10_N",
+            "LA11_N",
+            "LA11_P",
+            "LA12_N",
+            "LA13_N",
+            "LA14_N",
+            "LA15_N",
+            "LA15_P",
+            "LA16_N",
+            "LA16_P"
+          ],
+          "same_bank": true
+        },
+        {
+          "name": "Port 2",
+          "signals": [
+            "LA17_CC_P",
+            "LA19_N",
+            "LA19_P",
+            "LA20_N",
+            "LA20_P",
+            "LA21_N",
+            "LA21_P",
+            "LA22_N",
+            "LA22_P",
+            "LA23_N",
+            "LA23_P",
+            "LA24_N",
+            "LA24_P",
+            "LA25_N",
+            "LA25_P"
+          ],
+          "same_bank": true
+        },
+        {
+          "name": "Port 3",
+          "signals": [
+            "LA18_CC_N",
+            "LA18_CC_P",
+            "LA26_N",
+            "LA26_P",
+            "LA27_N",
+            "LA27_P",
+            "LA28_N",
+            "LA28_P",
+            "LA29_N",
+            "LA30_N",
+            "LA30_P",
+            "LA31_N",
+            "LA31_P",
+            "LA32_N",
+            "LA32_P"
+          ],
+          "same_bank": true
+        }
       ]
     }
   ]

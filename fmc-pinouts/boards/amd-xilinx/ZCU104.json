@@ -3,7 +3,7 @@
   "side": "host",
   "device": "xczu7ev-ffvc1156-2-e",
   "source": "xilinx-board-store",
-  "source_ref": "boards/Xilinx/zcu104/1.1",
+  "source_ref": "boards/Xilinx/zcu104/1.1 (+ DP0/GBTCLK0/CLK1 from data/fmc-pinouts/fmc_pinouts.json reference)",
   "slots": [
     {
       "slot": "LPC",
@@ -21,6 +21,62 @@
           "pin": "E15",
           "bank": 67,
           "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "CLK1_M2C_N",
+          "pin": "F10",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "CLK1_M2C_P",
+          "pin": "G10",
+          "bank": 68,
+          "io_type": "HP",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "DP0_C2M_N",
+          "pin": "N5",
+          "bank": 226,
+          "io_type": "GTH",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "DP0_C2M_P",
+          "pin": "N6",
+          "bank": 226,
+          "io_type": "GTH",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "DP0_M2C_N",
+          "pin": "P3",
+          "bank": 226,
+          "io_type": "GTH",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "DP0_M2C_P",
+          "pin": "P4",
+          "bank": 226,
+          "io_type": "GTH",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "GBTCLK0_M2C_N",
+          "pin": "V7",
+          "bank": 226,
+          "io_type": "GTH",
+          "iostandard": "LVCMOS18"
+        },
+        {
+          "signal": "GBTCLK0_M2C_P",
+          "pin": "V8",
+          "bank": 226,
+          "io_type": "GTH",
           "iostandard": "LVCMOS18"
         },
         {

@@ -344,6 +344,76 @@
           "net": "SFP3_LOS_T",
           "function": "Port 3 SFP Loss of Signal LOS"
         }
+      ],
+      "groups": [
+        {
+          "name": "Port 0",
+          "signals": [
+            "DP0_C2M_N",
+            "DP0_C2M_P",
+            "DP0_M2C_N",
+            "DP0_M2C_P",
+            "LA01_CC_N",
+            "LA01_CC_P",
+            "LA02_N",
+            "LA02_P",
+            "LA03_N",
+            "LA03_P",
+            "LA04_N",
+            "LA04_P"
+          ]
+        },
+        {
+          "name": "Port 1",
+          "signals": [
+            "DP1_C2M_N",
+            "DP1_C2M_P",
+            "DP1_M2C_N",
+            "DP1_M2C_P",
+            "LA05_N",
+            "LA05_P",
+            "LA07_N",
+            "LA07_P",
+            "LA08_N",
+            "LA08_P",
+            "LA12_N",
+            "LA12_P"
+          ]
+        },
+        {
+          "name": "Port 2",
+          "signals": [
+            "DP2_C2M_N",
+            "DP2_C2M_P",
+            "DP2_M2C_N",
+            "DP2_M2C_P",
+            "LA09_N",
+            "LA09_P",
+            "LA10_N",
+            "LA10_P",
+            "LA15_N",
+            "LA15_P",
+            "LA16_N",
+            "LA16_P"
+          ]
+        },
+        {
+          "name": "Port 3",
+          "signals": [
+            "DP3_C2M_N",
+            "DP3_C2M_P",
+            "DP3_M2C_N",
+            "DP3_M2C_P",
+            "LA13_N",
+            "LA13_P",
+            "LA14_N",
+            "LA14_P",
+            "LA17_CC_N",
+            "LA17_CC_P",
+            "LA18_CC_N",
+            "LA18_CC_P"
+          ]
+        }
       ]
     }
   ]
