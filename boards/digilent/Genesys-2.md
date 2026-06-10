@@ -39,7 +39,7 @@ device: { part: XC7K325T-2FFG900C, vendor: amd-xilinx }
 - Micro-B UART
 
 ## Expansion
-- FMC HPC "HPC"
+- FMC HPC "HPC" VADJ 1.2-3.3V
 - Pmod x5
 - XADC Header x1
 
@@ -50,3 +50,7 @@ device: { part: XC7K325T-2FFG900C, vendor: amd-xilinx }
 - LEDs x8
 - Pushbuttons x5
 - DIP switches x8
+
+## Notes
+
+VADJ supports 1.2 V / 1.8 V / 2.5 V / 3.3 V, selected by jumper JP6 on the regulator's feedback divider (change only with power off); with JP6 unset the rail defaults to 1.2 V, and the provided master XDC/UCF files assume 1.2 V. The board does not read the FMC IPMI EEPROM — the rail also powers the user push-buttons, switches, XADC Pmod, and FPGA banks 15-17.
