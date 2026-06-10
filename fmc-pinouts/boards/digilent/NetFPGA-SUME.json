@@ -1,0 +1,483 @@
+{
+  "mpn": "NetFPGA-SUME",
+  "side": "host",
+  "device": "XC7VX690T-3FFG1761C",
+  "source": "schematic",
+  "source_ref": "NetFPGA-SUME board schematic (J40 FMC sheets 2-3, FPGA bank/GTH sheets 7 and 12); clock pins cross-checked against Digilent NetFPGA-SUME Reference Manual clock table (FMC_GBT_CLK0/1, FMC_CLK0/1). HA/HB not routed (FFG1761 package limits, per reference manual). PRSNT_M2C_L reaches FPGA pin AR30 via always-populated level translator (net FMC_PRSNT_LS). SCL/SDA route to PCA9548 I2C mux, not FPGA pins (excluded).",
+  "slots": [
+    {
+      "slot": "HPC",
+      "type": "hpc",
+      "signals": [
+        {
+          "signal": "LA00_CC_P",
+          "pin": "AU28"
+        },
+        {
+          "signal": "LA00_CC_N",
+          "pin": "AV28"
+        },
+        {
+          "signal": "LA01_CC_P",
+          "pin": "AP27"
+        },
+        {
+          "signal": "LA01_CC_N",
+          "pin": "AR28"
+        },
+        {
+          "signal": "LA02_P",
+          "pin": "AR29"
+        },
+        {
+          "signal": "LA02_N",
+          "pin": "AT29"
+        },
+        {
+          "signal": "LA03_P",
+          "pin": "BB26"
+        },
+        {
+          "signal": "LA03_N",
+          "pin": "BB27"
+        },
+        {
+          "signal": "LA04_P",
+          "pin": "BB28"
+        },
+        {
+          "signal": "LA04_N",
+          "pin": "BB29"
+        },
+        {
+          "signal": "LA05_P",
+          "pin": "AV25"
+        },
+        {
+          "signal": "LA05_N",
+          "pin": "AV26"
+        },
+        {
+          "signal": "LA06_P",
+          "pin": "BA26"
+        },
+        {
+          "signal": "LA06_N",
+          "pin": "BA27"
+        },
+        {
+          "signal": "LA07_P",
+          "pin": "AY27"
+        },
+        {
+          "signal": "LA07_N",
+          "pin": "AY28"
+        },
+        {
+          "signal": "LA08_P",
+          "pin": "AN28"
+        },
+        {
+          "signal": "LA08_N",
+          "pin": "AP28"
+        },
+        {
+          "signal": "LA09_P",
+          "pin": "AP25"
+        },
+        {
+          "signal": "LA09_N",
+          "pin": "AR25"
+        },
+        {
+          "signal": "LA10_P",
+          "pin": "AW25"
+        },
+        {
+          "signal": "LA10_N",
+          "pin": "AW26"
+        },
+        {
+          "signal": "LA11_P",
+          "pin": "AT25"
+        },
+        {
+          "signal": "LA11_N",
+          "pin": "AT26"
+        },
+        {
+          "signal": "LA12_P",
+          "pin": "AU29"
+        },
+        {
+          "signal": "LA12_N",
+          "pin": "AV29"
+        },
+        {
+          "signal": "LA13_P",
+          "pin": "AW27"
+        },
+        {
+          "signal": "LA13_N",
+          "pin": "AW28"
+        },
+        {
+          "signal": "LA14_P",
+          "pin": "AN25"
+        },
+        {
+          "signal": "LA14_N",
+          "pin": "AN26"
+        },
+        {
+          "signal": "LA15_P",
+          "pin": "AM26"
+        },
+        {
+          "signal": "LA15_N",
+          "pin": "AM27"
+        },
+        {
+          "signal": "LA16_P",
+          "pin": "AK27"
+        },
+        {
+          "signal": "LA16_N",
+          "pin": "AL27"
+        },
+        {
+          "signal": "LA17_CC_P",
+          "pin": "AY32"
+        },
+        {
+          "signal": "LA17_CC_N",
+          "pin": "AY33"
+        },
+        {
+          "signal": "LA18_CC_P",
+          "pin": "AU32"
+        },
+        {
+          "signal": "LA18_CC_N",
+          "pin": "AV33"
+        },
+        {
+          "signal": "LA19_P",
+          "pin": "AV30"
+        },
+        {
+          "signal": "LA19_N",
+          "pin": "AW31"
+        },
+        {
+          "signal": "LA20_P",
+          "pin": "AW30"
+        },
+        {
+          "signal": "LA20_N",
+          "pin": "AY30"
+        },
+        {
+          "signal": "LA21_P",
+          "pin": "BA30"
+        },
+        {
+          "signal": "LA21_N",
+          "pin": "BB31"
+        },
+        {
+          "signal": "LA22_P",
+          "pin": "BA31"
+        },
+        {
+          "signal": "LA22_N",
+          "pin": "BA32"
+        },
+        {
+          "signal": "LA23_P",
+          "pin": "BA34"
+        },
+        {
+          "signal": "LA23_N",
+          "pin": "BB34"
+        },
+        {
+          "signal": "LA24_P",
+          "pin": "AT34"
+        },
+        {
+          "signal": "LA24_N",
+          "pin": "AU34"
+        },
+        {
+          "signal": "LA25_P",
+          "pin": "AT32"
+        },
+        {
+          "signal": "LA25_N",
+          "pin": "AU33"
+        },
+        {
+          "signal": "LA26_P",
+          "pin": "BB32"
+        },
+        {
+          "signal": "LA26_N",
+          "pin": "BB33"
+        },
+        {
+          "signal": "LA27_P",
+          "pin": "AU31"
+        },
+        {
+          "signal": "LA27_N",
+          "pin": "AV31"
+        },
+        {
+          "signal": "LA28_P",
+          "pin": "AR34"
+        },
+        {
+          "signal": "LA28_N",
+          "pin": "AT35"
+        },
+        {
+          "signal": "LA29_P",
+          "pin": "BA36"
+        },
+        {
+          "signal": "LA29_N",
+          "pin": "BB36"
+        },
+        {
+          "signal": "LA30_P",
+          "pin": "AY34"
+        },
+        {
+          "signal": "LA30_N",
+          "pin": "BA35"
+        },
+        {
+          "signal": "LA31_P",
+          "pin": "AN30"
+        },
+        {
+          "signal": "LA31_N",
+          "pin": "AP30"
+        },
+        {
+          "signal": "LA32_P",
+          "pin": "AV36"
+        },
+        {
+          "signal": "LA32_N",
+          "pin": "AW36"
+        },
+        {
+          "signal": "LA33_P",
+          "pin": "AT36"
+        },
+        {
+          "signal": "LA33_N",
+          "pin": "AU36"
+        },
+        {
+          "signal": "DP0_C2M_P",
+          "pin": "AW2"
+        },
+        {
+          "signal": "DP0_C2M_N",
+          "pin": "AW1"
+        },
+        {
+          "signal": "DP0_M2C_P",
+          "pin": "AW6"
+        },
+        {
+          "signal": "DP0_M2C_N",
+          "pin": "AW5"
+        },
+        {
+          "signal": "DP1_C2M_P",
+          "pin": "AY4"
+        },
+        {
+          "signal": "DP1_C2M_N",
+          "pin": "AY3"
+        },
+        {
+          "signal": "DP1_M2C_P",
+          "pin": "AY8"
+        },
+        {
+          "signal": "DP1_M2C_N",
+          "pin": "AY7"
+        },
+        {
+          "signal": "DP2_C2M_P",
+          "pin": "BA2"
+        },
+        {
+          "signal": "DP2_C2M_N",
+          "pin": "BA1"
+        },
+        {
+          "signal": "DP2_M2C_P",
+          "pin": "BA6"
+        },
+        {
+          "signal": "DP2_M2C_N",
+          "pin": "BA5"
+        },
+        {
+          "signal": "DP3_C2M_P",
+          "pin": "BB4"
+        },
+        {
+          "signal": "DP3_C2M_N",
+          "pin": "BB3"
+        },
+        {
+          "signal": "DP3_M2C_P",
+          "pin": "BB8"
+        },
+        {
+          "signal": "DP3_M2C_N",
+          "pin": "BB7"
+        },
+        {
+          "signal": "DP4_C2M_P",
+          "pin": "AT4"
+        },
+        {
+          "signal": "DP4_C2M_N",
+          "pin": "AT3"
+        },
+        {
+          "signal": "DP4_M2C_P",
+          "pin": "AR6"
+        },
+        {
+          "signal": "DP4_M2C_N",
+          "pin": "AR5"
+        },
+        {
+          "signal": "DP5_C2M_P",
+          "pin": "AV4"
+        },
+        {
+          "signal": "DP5_C2M_N",
+          "pin": "AV3"
+        },
+        {
+          "signal": "DP5_M2C_P",
+          "pin": "AV8"
+        },
+        {
+          "signal": "DP5_M2C_N",
+          "pin": "AV7"
+        },
+        {
+          "signal": "DP6_C2M_P",
+          "pin": "AU2"
+        },
+        {
+          "signal": "DP6_C2M_N",
+          "pin": "AU1"
+        },
+        {
+          "signal": "DP6_M2C_P",
+          "pin": "AU6"
+        },
+        {
+          "signal": "DP6_M2C_N",
+          "pin": "AU5"
+        },
+        {
+          "signal": "DP7_C2M_P",
+          "pin": "AR2"
+        },
+        {
+          "signal": "DP7_C2M_N",
+          "pin": "AR1"
+        },
+        {
+          "signal": "DP7_M2C_P",
+          "pin": "AP8"
+        },
+        {
+          "signal": "DP7_M2C_N",
+          "pin": "AP7"
+        },
+        {
+          "signal": "DP8_C2M_P",
+          "pin": "AP4"
+        },
+        {
+          "signal": "DP8_C2M_N",
+          "pin": "AP3"
+        },
+        {
+          "signal": "DP8_M2C_P",
+          "pin": "AN6"
+        },
+        {
+          "signal": "DP8_M2C_N",
+          "pin": "AN5"
+        },
+        {
+          "signal": "DP9_C2M_P",
+          "pin": "AN2"
+        },
+        {
+          "signal": "DP9_C2M_N",
+          "pin": "AN1"
+        },
+        {
+          "signal": "DP9_M2C_P",
+          "pin": "AM8"
+        },
+        {
+          "signal": "DP9_M2C_N",
+          "pin": "AM7"
+        },
+        {
+          "signal": "GBTCLK0_M2C_P",
+          "pin": "AT8"
+        },
+        {
+          "signal": "GBTCLK0_M2C_N",
+          "pin": "AT7"
+        },
+        {
+          "signal": "GBTCLK1_M2C_P",
+          "pin": "AU10"
+        },
+        {
+          "signal": "GBTCLK1_M2C_N",
+          "pin": "AU9"
+        },
+        {
+          "signal": "CLK0_M2C_P",
+          "pin": "AR27"
+        },
+        {
+          "signal": "CLK0_M2C_N",
+          "pin": "AT27"
+        },
+        {
+          "signal": "CLK1_M2C_P",
+          "pin": "AV34"
+        },
+        {
+          "signal": "CLK1_M2C_N",
+          "pin": "AV35"
+        },
+        {
+          "signal": "PRSNT_M2C_L",
+          "pin": "AR30"
+        }
+      ]
+    }
+  ]
+}

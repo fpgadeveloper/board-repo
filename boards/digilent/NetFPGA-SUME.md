@@ -26,7 +26,7 @@ device: { part: XC7VX690T-3FFG1761C, vendor: amd-xilinx }
 - SFP+ x4
 
 ## Expansion
-- FMC HPC "HPC"
+- FMC HPC "HPC" VADJ 1.8V
 - Pmod x1
 
 ## Storage
@@ -39,3 +39,7 @@ device: { part: XC7VX690T-3FFG1761C, vendor: amd-xilinx }
 ## Extras
 - Samtec QTH-DP high-speed connector exposing 8 serial links (additional GTH transceivers)
 - On-board clock recovery circuit
+
+## Notes
+
+VADJ is fixed at 1.8 V — the FMC VADJ pins are tied directly to the board's VCC1V8 rail, and all FPGA I/O routed to the FMC connector supports 1.8 V logic only. There is no jumper or programmable regulator for VADJ; FMC modules requiring a different VADJ voltage are electrically incompatible.

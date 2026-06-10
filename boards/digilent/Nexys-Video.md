@@ -42,7 +42,7 @@ device: { part: XC7A200T-1SBG484C, vendor: amd-xilinx }
 - Micro-B JTAG/UART
 
 ## Expansion
-- FMC LPC "LPC"
+- FMC LPC "LPC" VADJ 1.2-3.3V
 - Pmod x4
 - XADC Header x1
 
@@ -53,3 +53,10 @@ device: { part: XC7A200T-1SBG484C, vendor: amd-xilinx }
 - LEDs x8
 - Pushbuttons x5
 - DIP switches x8
+
+## Features
+- Programmable VADJ
+
+## Notes
+
+VADJ supports 1.2 V / 1.8 V / 2.5 V / 3.3 V (discrete values; default 1.2 V, set by on-board pull resistors that also enable the regulator at power-on). The FPGA design selects the voltage by driving the ADP2384 regulator's feedback multiplexer via the SET_VADJ(1:0) and VADJ_EN pins — the board does not read the FMC IPMI EEPROM automatically; voltages other than 1.2 V are the user design's responsibility. The same VADJ rail also powers the user pushbuttons, slide switches, XADC Pmod and FPGA banks 15/16.
