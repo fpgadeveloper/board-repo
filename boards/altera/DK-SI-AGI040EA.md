@@ -32,8 +32,12 @@ device: { part: AGIC040R39A1E1VC, vendor: altera }
 - Type-B JTAG
 
 ## Expansion
-- FMC+ "FMCP1"
-- FMC+ "FMCP2"
+- FMC+ "FMCP1" VADJ 1.2V
+- FMC+ "FMCP2" VADJ 1.2V
 
 ## Features
 - Power monitoring
+
+## Notes
+
+VADJ on both FMC+ slots (FMC-A J7, FMC-B J9) is fixed at 1.2 V by a factory-fitted 0 Ω strap to the 1.2 V rail (R1122 / R1180); an unpopulated 0 Ω option (R1123 / R1181) allows re-strapping to 1.8 V by board rework only. There is no jumper and no IPMI-based auto-negotiation — the slots carry 16 FGT transceiver lanes each, with the few connected LA pins level-translated (MAX3378E) between the FPGA's 1.2 V bank and VADJ. A schematic design note next to the strap warns "SUPPORT ONLY FOR SPECIFIC 1.8V IO STANDARD FMC+ CARDS."
