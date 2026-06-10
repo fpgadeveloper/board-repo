@@ -151,23 +151,31 @@
         },
         {
           "signal": "DP4_C2M_N",
-          "pin": "M5",
-          "iostandard": "LVCMOS18"
+          "pin": "H3",
+          "iostandard": "LVCMOS18",
+          "bank": 227,
+          "io_type": "GTH"
         },
         {
           "signal": "DP4_C2M_P",
-          "pin": "M6",
-          "iostandard": "LVCMOS18"
+          "pin": "H4",
+          "iostandard": "LVCMOS18",
+          "bank": 227,
+          "io_type": "GTH"
         },
         {
           "signal": "DP4_M2C_N",
-          "pin": "L3",
-          "iostandard": "LVCMOS18"
+          "pin": "G1",
+          "iostandard": "LVCMOS18",
+          "bank": 227,
+          "io_type": "GTH"
         },
         {
           "signal": "DP4_M2C_P",
-          "pin": "L4",
-          "iostandard": "LVCMOS18"
+          "pin": "G2",
+          "iostandard": "LVCMOS18",
+          "bank": 227,
+          "io_type": "GTH"
         },
         {
           "signal": "DP5_C2M_N",
@@ -269,8 +277,10 @@
         },
         {
           "signal": "GBTCLK1_M2C_N",
-          "pin": "77",
-          "iostandard": "LVCMOS18"
+          "pin": "T7",
+          "iostandard": "LVCMOS18",
+          "bank": 227,
+          "io_type": "GTH"
         },
         {
           "signal": "GBTCLK1_M2C_P",

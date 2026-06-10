@@ -236,6 +236,52 @@
           "net": "PERST_B",
           "function": "Passed through"
         }
+      ],
+      "groups": [
+        {
+          "name": "M.2 Slot 1",
+          "signals": [
+            "DP0_C2M_N",
+            "DP0_C2M_P",
+            "DP0_M2C_N",
+            "DP0_M2C_P",
+            "DP1_C2M_N",
+            "DP1_C2M_P",
+            "DP1_M2C_N",
+            "DP1_M2C_P",
+            "DP2_C2M_N",
+            "DP2_C2M_P",
+            "DP2_M2C_N",
+            "DP2_M2C_P",
+            "DP3_C2M_N",
+            "DP3_C2M_P",
+            "DP3_M2C_N",
+            "DP3_M2C_P"
+          ],
+          "min_lanes": 1
+        },
+        {
+          "name": "M.2 Slot 2",
+          "signals": [
+            "DP4_C2M_N",
+            "DP4_C2M_P",
+            "DP4_M2C_N",
+            "DP4_M2C_P",
+            "DP5_C2M_N",
+            "DP5_C2M_P",
+            "DP5_M2C_N",
+            "DP5_M2C_P",
+            "DP6_C2M_N",
+            "DP6_C2M_P",
+            "DP6_M2C_N",
+            "DP6_M2C_P",
+            "DP7_C2M_N",
+            "DP7_C2M_P",
+            "DP7_M2C_N",
+            "DP7_M2C_P"
+          ],
+          "min_lanes": 1
+        }
       ]
     }
   ]

@@ -1305,14 +1305,14 @@
         },
         {
           "signal": "LA18_CC_N",
-          "pin": "AC9",
+          "pin": "Y7",
           "bank": 66,
           "io_type": "HP",
           "iostandard": "LVCMOS18"
         },
         {
           "signal": "LA18_CC_P",
-          "pin": "AB9",
+          "pin": "Y8",
           "bank": 66,
           "io_type": "HP",
           "iostandard": "LVCMOS18"

@@ -296,9 +296,35 @@
         "signals": {
           "type": "array",
           "title": "Signals",
-          "description": "One entry per routed (host) or used (card) FMC signal. P and N of a differential pair are separate entries. A signal's absence means it is not routed/used at this site.",
+          "description": "One entry per routed (host) or used (card) FMC signal. P and N of a differential pair are separate entries. A signal's absence means it is not routed/used at this site (closed-world: the compatibility engine treats a missing signal as 'not connected', never 'unknown').",
           "items": { "$ref": "#/$defs/fmc_pinout_signal" }
+        },
+        "groups": {
+          "type": "array",
+          "title": "Functional Groups",
+          "description": "Card side only. Independent functional units the card can degrade across — e.g. the four ports of a quad Ethernet FMC. A group is 'satisfied' when every signal it lists is routed on the candidate host slot AND, if same_bank is set, all those signals land in a single host I/O bank (an RGMII port needs its clock and data in one bank). The pair verdict is then compatible (all groups satisfied), partial (some), or incompatible (none). Signals not named in any group are informational and do not affect the verdict. Omit groups entirely for a single-function card — the engine then treats every used signal as one implicit all-or-nothing group (no partial, no same_bank).",
+          "items": { "$ref": "#/$defs/fmc_pinout_group" }
         }
+      }
+    },
+
+    "fmc_pinout_group": {
+      "type": "object",
+      "title": "FMC Functional Group",
+      "description": "A card-side functional unit checked independently by the compatibility engine.",
+      "required": ["name", "signals"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string", "title": "Group Name", "description": "Human label shown in compatibility results, e.g. 'Port 0' or 'RGMII Port 2'." },
+        "signals": {
+          "type": "array",
+          "title": "Signals",
+          "minItems": 1,
+          "items": { "type": "string" },
+          "description": "Canonical VITA 57.1 signal names that must all be routed for this group to function. Every name should also appear in the slot's signals[] list."
+        },
+        "same_bank": { "type": "boolean", "title": "Same Bank Required", "description": "When true, all of this group's signals must route to a single host I/O bank (default false). Used for source-synchronous interfaces such as RGMII where the receive clock must share a bank with its data." },
+        "min_lanes": { "type": "integer", "minimum": 1, "title": "Minimum Lanes", "description": "Set for a multi-lane transceiver slot (PCIe / QSFP). The group's DP signals are treated as serial lanes (4 signals per DP index) that degrade in width; the group is satisfied when at least this many lanes are routed, and the result reports how many of the full lane set the host provides (e.g. 'x1 of x4'). Non-DP signals in the group remain all-required. Mutually exclusive with same_bank." }
       }
     },
 
