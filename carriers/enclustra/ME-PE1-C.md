@@ -2,7 +2,7 @@
 mpn: ME-PE1-C
 name: Mercury+ PE1
 status: active
-url: https://www.enclustra.com/en/products/base-boards/mercury-pe1-200-300-400/
+url: https://www.enclustra.com/en/products/base-boards/mercury-pe1-300-400/
 vendor: enclustra
 price: null
 ---
