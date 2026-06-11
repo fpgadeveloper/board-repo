@@ -1,11 +1,11 @@
 ---
-mpn: Arty-S7
-name: Arty-S7
+mpn: Arty-S7-50
+name: Arty S7-50
 status: active
 url: https://digilent.com/shop/arty-s7-spartan-7-fpga-development-board/
 vendor: digilent
-price: { value: 119, currency: USD }
-device: { part: XC7S25-1CSGA324C, vendor: amd-xilinx }
+price: { value: 199, currency: USD }
+device: { part: XC7S50-1CSGA324C, vendor: amd-xilinx }
 ---
 
 ## Memory
