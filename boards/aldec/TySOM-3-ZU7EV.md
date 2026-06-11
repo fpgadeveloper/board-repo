@@ -43,7 +43,7 @@ device: { part: XCZU7EV-2FFVC1156E, vendor: amd-xilinx }
 
 ## Expansion
 - FMC HPC "FMC2"
-- FMC LPC "FMC1"
+- FMC HPC "FMC1"
 - Pmod x1
 
 ## Wireless
@@ -62,7 +62,7 @@ device: { part: XCZU7EV-2FFVC1156E, vendor: amd-xilinx }
 - Power monitoring
 
 ## Extras
-- FMC LPC connector additionally carries 5 GTH transceiver lanes
+- FMC1 connector carries 5 GTH transceiver lanes
 - Wi-Fi/Bluetooth module is a TI WL1837MOD
 - Gigabit Ethernet PHYs are TI DP83867CR
 - USB-UART bridge is a Silicon Labs CP2103
