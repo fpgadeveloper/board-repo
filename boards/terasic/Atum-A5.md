@@ -35,7 +35,7 @@ device: { part: A5ED065BB32AE4SR0, vendor: altera }
 - Type-C JTAG
 
 ## Expansion
-- FMC+ "FMC+"
+- FMC+ "FMC+" VADJ 1.2V
 - GPIO Header x2
 
 ## Storage
@@ -52,3 +52,7 @@ device: { part: A5ED065BB32AE4SR0, vendor: altera }
 ## Extras
 - USB 3.1 Gen1 Type-C port (HPS)
 - 2x6 TMD header
+
+## Notes
+
+The FMC+ VADJ supply is fixed at 1.2 V (4 A max). Separately, jumper JP1 ("FMC+ HAB VCCIO Select Header") sets the VCCIO of the FPGA bank driving the HA/HB signal pins to 1.2 V (default) or 1.3 V — this changes the I/O standard of those signals only, not the documented VADJ power pin voltage. The board does not read the FMC IPMI EEPROM.

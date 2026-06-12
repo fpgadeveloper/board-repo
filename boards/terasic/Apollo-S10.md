@@ -54,3 +54,7 @@ device: { part: 1SX280HU2F50E1VG, vendor: altera }
 ## Extras
 - PCIe Gen3 x4 over Thunderbolt 3 (USB-C)
 - USB downstream port over Thunderbolt 3 (Type-A)
+
+## Notes
+
+VADJ (FMC_VCCIO / FMCP_VCCIO) supports 1.2 V / 1.5 V / 1.8 V per slot, selected by jumper JP2 for the FMC slot and JP3 for the FMC+ slot; default 1.8 V on both. Set the jumper before power-on — the board does not read the FMC IPMI EEPROM.

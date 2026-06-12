@@ -1,0 +1,542 @@
+{
+  "mpn": "TEIB0006-03-A",
+  "side": "host",
+  "source": "schematic",
+  "source_ref": "Trenz TEIB0006-03 carrier schematic, FMC.SchDoc (p11) + FMC_MISC.SchDoc (p12). Carrier nets are pad-encoded for the TEI0006 micromodule Cyclone 10 GX (B2J/B2K_LVDSn = IO bank 2J/2K LVDS pair, GXBL1C/1D_TXn/RXn = transceiver channels); balls resolved via the 10CX220YF780 FPGA symbol sheets of the Altera DK-DEV-10CX220 schematic (same die/package as the TEI0006-03 10CX220YF780I5G; only temp grade differs). B2B reachability of LA/HA/CLK/DP nets confirmed on J9/J10/J11 sheets (p5-7). HA10-HA23, all HB, and CLK2/CLK3_BIDIR are not connected. GBTCLK0/1 are AC-coupled (100nF C15-C18) onto B2B J11 nets IN2/IN1 toward the module refclk inputs, but the module-side ball is not derivable from carrier docs alone - omitted. Sidebands: PRSNT/PG/JTAG go to B2B or pull resistors (module-side unknown), SCL/SDA tee to the SFP sheet I2C, CLK_DIR has only a 10K pulldown (R27) - all omitted. VREF/GA excluded per repo convention.",
+  "slots": [
+    {
+      "slot": "HPC",
+      "type": "hpc",
+      "signals": [
+        {
+          "signal": "CLK0_M2C_P",
+          "pin": "D15"
+        },
+        {
+          "signal": "CLK0_M2C_N",
+          "pin": "E15"
+        },
+        {
+          "signal": "CLK1_M2C_P",
+          "pin": "A24"
+        },
+        {
+          "signal": "CLK1_M2C_N",
+          "pin": "A23"
+        },
+        {
+          "signal": "LA00_CC_P",
+          "pin": "AC20"
+        },
+        {
+          "signal": "LA00_CC_N",
+          "pin": "AB20"
+        },
+        {
+          "signal": "LA01_CC_P",
+          "pin": "AA18"
+        },
+        {
+          "signal": "LA01_CC_N",
+          "pin": "AA19"
+        },
+        {
+          "signal": "LA02_P",
+          "pin": "AF22"
+        },
+        {
+          "signal": "LA02_N",
+          "pin": "AE22"
+        },
+        {
+          "signal": "LA03_P",
+          "pin": "AD22"
+        },
+        {
+          "signal": "LA03_N",
+          "pin": "AC22"
+        },
+        {
+          "signal": "LA04_P",
+          "pin": "AE23"
+        },
+        {
+          "signal": "LA04_N",
+          "pin": "AD23"
+        },
+        {
+          "signal": "LA05_P",
+          "pin": "AA23"
+        },
+        {
+          "signal": "LA05_N",
+          "pin": "AA22"
+        },
+        {
+          "signal": "LA06_P",
+          "pin": "AC23"
+        },
+        {
+          "signal": "LA06_N",
+          "pin": "AB23"
+        },
+        {
+          "signal": "LA07_P",
+          "pin": "AH22"
+        },
+        {
+          "signal": "LA07_N",
+          "pin": "AG21"
+        },
+        {
+          "signal": "LA08_P",
+          "pin": "AG23"
+        },
+        {
+          "signal": "LA08_N",
+          "pin": "AF23"
+        },
+        {
+          "signal": "LA09_P",
+          "pin": "AF21"
+        },
+        {
+          "signal": "LA09_N",
+          "pin": "AE21"
+        },
+        {
+          "signal": "LA10_P",
+          "pin": "AH21"
+        },
+        {
+          "signal": "LA10_N",
+          "pin": "AH20"
+        },
+        {
+          "signal": "LA11_P",
+          "pin": "AC21"
+        },
+        {
+          "signal": "LA11_N",
+          "pin": "AB21"
+        },
+        {
+          "signal": "LA12_P",
+          "pin": "AG19"
+        },
+        {
+          "signal": "LA12_N",
+          "pin": "AG20"
+        },
+        {
+          "signal": "LA13_P",
+          "pin": "B10"
+        },
+        {
+          "signal": "LA13_N",
+          "pin": "C10"
+        },
+        {
+          "signal": "LA14_P",
+          "pin": "B26"
+        },
+        {
+          "signal": "LA14_N",
+          "pin": "B25"
+        },
+        {
+          "signal": "LA15_P",
+          "pin": "B24"
+        },
+        {
+          "signal": "LA15_N",
+          "pin": "B23"
+        },
+        {
+          "signal": "LA16_P",
+          "pin": "A17"
+        },
+        {
+          "signal": "LA16_N",
+          "pin": "A16"
+        },
+        {
+          "signal": "LA17_CC_P",
+          "pin": "A21"
+        },
+        {
+          "signal": "LA17_CC_N",
+          "pin": "A22"
+        },
+        {
+          "signal": "LA18_CC_P",
+          "pin": "B16"
+        },
+        {
+          "signal": "LA18_CC_N",
+          "pin": "C15"
+        },
+        {
+          "signal": "LA19_P",
+          "pin": "A27"
+        },
+        {
+          "signal": "LA19_N",
+          "pin": "A26"
+        },
+        {
+          "signal": "LA20_P",
+          "pin": "B19"
+        },
+        {
+          "signal": "LA20_N",
+          "pin": "B18"
+        },
+        {
+          "signal": "LA21_P",
+          "pin": "B14"
+        },
+        {
+          "signal": "LA21_N",
+          "pin": "B15"
+        },
+        {
+          "signal": "LA22_P",
+          "pin": "C12"
+        },
+        {
+          "signal": "LA22_N",
+          "pin": "C11"
+        },
+        {
+          "signal": "LA23_P",
+          "pin": "A14"
+        },
+        {
+          "signal": "LA23_N",
+          "pin": "B13"
+        },
+        {
+          "signal": "LA24_P",
+          "pin": "A12"
+        },
+        {
+          "signal": "LA24_N",
+          "pin": "A13"
+        },
+        {
+          "signal": "LA25_P",
+          "pin": "D14"
+        },
+        {
+          "signal": "LA25_N",
+          "pin": "E14"
+        },
+        {
+          "signal": "LA26_P",
+          "pin": "A19"
+        },
+        {
+          "signal": "LA26_N",
+          "pin": "A18"
+        },
+        {
+          "signal": "LA27_P",
+          "pin": "B21"
+        },
+        {
+          "signal": "LA27_N",
+          "pin": "C21"
+        },
+        {
+          "signal": "LA28_P",
+          "pin": "D9"
+        },
+        {
+          "signal": "LA28_N",
+          "pin": "D10"
+        },
+        {
+          "signal": "LA29_P",
+          "pin": "C13"
+        },
+        {
+          "signal": "LA29_N",
+          "pin": "D13"
+        },
+        {
+          "signal": "LA30_P",
+          "pin": "B9"
+        },
+        {
+          "signal": "LA30_N",
+          "pin": "B8"
+        },
+        {
+          "signal": "LA31_P",
+          "pin": "A11"
+        },
+        {
+          "signal": "LA31_N",
+          "pin": "B11"
+        },
+        {
+          "signal": "LA32_P",
+          "pin": "C8"
+        },
+        {
+          "signal": "LA32_N",
+          "pin": "D8"
+        },
+        {
+          "signal": "LA33_P",
+          "pin": "A9"
+        },
+        {
+          "signal": "LA33_N",
+          "pin": "A8"
+        },
+        {
+          "signal": "HA00_CC_P",
+          "pin": "W20"
+        },
+        {
+          "signal": "HA00_CC_N",
+          "pin": "W21"
+        },
+        {
+          "signal": "HA01_CC_P",
+          "pin": "AB18"
+        },
+        {
+          "signal": "HA01_CC_N",
+          "pin": "AB19"
+        },
+        {
+          "signal": "HA02_P",
+          "pin": "AH12"
+        },
+        {
+          "signal": "HA02_N",
+          "pin": "AG11"
+        },
+        {
+          "signal": "HA03_P",
+          "pin": "AH18"
+        },
+        {
+          "signal": "HA03_N",
+          "pin": "AH17"
+        },
+        {
+          "signal": "HA04_P",
+          "pin": "AA21"
+        },
+        {
+          "signal": "HA04_N",
+          "pin": "Y21"
+        },
+        {
+          "signal": "HA05_P",
+          "pin": "AA17"
+        },
+        {
+          "signal": "HA05_N",
+          "pin": "Y17"
+        },
+        {
+          "signal": "HA06_P",
+          "pin": "AG10"
+        },
+        {
+          "signal": "HA06_N",
+          "pin": "AG9"
+        },
+        {
+          "signal": "HA07_P",
+          "pin": "AH11"
+        },
+        {
+          "signal": "HA07_N",
+          "pin": "AH10"
+        },
+        {
+          "signal": "HA08_P",
+          "pin": "AH13"
+        },
+        {
+          "signal": "HA08_N",
+          "pin": "AG13"
+        },
+        {
+          "signal": "HA09_P",
+          "pin": "AH16"
+        },
+        {
+          "signal": "HA09_N",
+          "pin": "AH15"
+        },
+        {
+          "signal": "DP0_C2M_P",
+          "pin": "AC28"
+        },
+        {
+          "signal": "DP0_C2M_N",
+          "pin": "AC27"
+        },
+        {
+          "signal": "DP0_M2C_P",
+          "pin": "AB26"
+        },
+        {
+          "signal": "DP0_M2C_N",
+          "pin": "AB25"
+        },
+        {
+          "signal": "DP1_C2M_P",
+          "pin": "AA28"
+        },
+        {
+          "signal": "DP1_C2M_N",
+          "pin": "AA27"
+        },
+        {
+          "signal": "DP1_M2C_P",
+          "pin": "Y26"
+        },
+        {
+          "signal": "DP1_M2C_N",
+          "pin": "Y25"
+        },
+        {
+          "signal": "DP2_C2M_P",
+          "pin": "W28"
+        },
+        {
+          "signal": "DP2_C2M_N",
+          "pin": "W27"
+        },
+        {
+          "signal": "DP2_M2C_P",
+          "pin": "V26"
+        },
+        {
+          "signal": "DP2_M2C_N",
+          "pin": "V25"
+        },
+        {
+          "signal": "DP3_C2M_P",
+          "pin": "U28"
+        },
+        {
+          "signal": "DP3_C2M_N",
+          "pin": "U27"
+        },
+        {
+          "signal": "DP3_M2C_P",
+          "pin": "T26"
+        },
+        {
+          "signal": "DP3_M2C_N",
+          "pin": "T25"
+        },
+        {
+          "signal": "DP4_C2M_P",
+          "pin": "R28"
+        },
+        {
+          "signal": "DP4_C2M_N",
+          "pin": "R27"
+        },
+        {
+          "signal": "DP4_M2C_P",
+          "pin": "P26"
+        },
+        {
+          "signal": "DP4_M2C_N",
+          "pin": "P25"
+        },
+        {
+          "signal": "DP5_C2M_P",
+          "pin": "N28"
+        },
+        {
+          "signal": "DP5_C2M_N",
+          "pin": "N27"
+        },
+        {
+          "signal": "DP5_M2C_P",
+          "pin": "M26"
+        },
+        {
+          "signal": "DP5_M2C_N",
+          "pin": "M25"
+        },
+        {
+          "signal": "DP6_C2M_P",
+          "pin": "L28"
+        },
+        {
+          "signal": "DP6_C2M_N",
+          "pin": "L27"
+        },
+        {
+          "signal": "DP6_M2C_P",
+          "pin": "K26"
+        },
+        {
+          "signal": "DP6_M2C_N",
+          "pin": "K25"
+        },
+        {
+          "signal": "DP7_C2M_P",
+          "pin": "J28"
+        },
+        {
+          "signal": "DP7_C2M_N",
+          "pin": "J27"
+        },
+        {
+          "signal": "DP7_M2C_P",
+          "pin": "H26"
+        },
+        {
+          "signal": "DP7_M2C_N",
+          "pin": "H25"
+        },
+        {
+          "signal": "DP8_C2M_P",
+          "pin": "G28"
+        },
+        {
+          "signal": "DP8_C2M_N",
+          "pin": "G27"
+        },
+        {
+          "signal": "DP8_M2C_P",
+          "pin": "F26"
+        },
+        {
+          "signal": "DP8_M2C_N",
+          "pin": "F25"
+        },
+        {
+          "signal": "DP9_C2M_P",
+          "pin": "E28"
+        },
+        {
+          "signal": "DP9_C2M_N",
+          "pin": "E27"
+        },
+        {
+          "signal": "DP9_M2C_P",
+          "pin": "D26"
+        },
+        {
+          "signal": "DP9_M2C_N",
+          "pin": "D25"
+        }
+      ]
+    }
+  ]
+}

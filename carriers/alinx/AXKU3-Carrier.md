@@ -23,7 +23,7 @@ price: null
 - Mini-B UART
 
 ## Expansion
-- FMC HPC "HPC"
+- FMC HPC "HPC" VADJ 1.8V
 - GPIO Header x1
 
 ## Storage
@@ -35,3 +35,7 @@ price: null
 
 ## Features
 - Battery-backed RTC
+
+## Notes
+
+The FMC HPC connector is supplied by a dedicated V_ADJ DC/DC rail, 1.8 V by default — matching the 1.8 V level standard of FMC banks 64/65. The user manual documents no jumper or programming mechanism for changing this rail, so treat VADJ as fixed at 1.8 V; the board does not read the FMC IPMI EEPROM.

@@ -33,7 +33,7 @@ price: null
 - Micro-B UART x2
 
 ## Expansion
-- FMC HPC "HPC"
+- FMC HPC "HPC" VADJ 1.8V
 - GPIO Header x1
 
 ## Storage
@@ -45,3 +45,7 @@ price: null
 
 ## Features
 - Battery-backed RTC
+
+## Notes
+
+The FMC user I/O (36 differential pairs) routes to SoM banks 66/67, whose VCCO is supplied by the carrier's fixed +1.8 V rail (shared with Ethernet and USB 2.0; user guide Parts 3.12 and 3.20). No jumper or programmable VADJ selection mechanism is documented, so VADJ is fixed at 1.8 V.

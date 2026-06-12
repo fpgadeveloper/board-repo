@@ -30,8 +30,8 @@ price: null
 - Type-C UART
 
 ## Expansion
-- FMC+ "FMCP0"
-- FMC+ "FMCP1"
+- FMC+ "FMCP0" VADJ 1.8V
+- FMC+ "FMCP1" VADJ 1.8V
 - GPIO Header x1
 
 ## Storage
@@ -40,3 +40,7 @@ price: null
 ## User I/O
 - LEDs x3
 - Pushbuttons x3
+
+## Notes
+
+VADJ is fixed at 1.8 V on both FMC+ sites — the user guide states the FMC I/O level standard is 1.8 V (FMC1+ on banks 69/70/71, FMC2+ on the other HP banks of the VU13P, which only supports up to 1.8 V VCCO). No jumper, programmable regulator, or FMC EEPROM auto-negotiation is documented; the on-board MCU only sequences power for the Jetson AGX site.

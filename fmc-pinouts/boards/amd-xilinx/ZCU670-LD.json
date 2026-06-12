@@ -1,0 +1,111 @@
+{
+  "mpn": "ZCU670-LD",
+  "side": "host",
+  "device": "XCZU57DR-2FSVE1156I",
+  "source": "fmc-pinouts-reference",
+  "source_ref": "ZCU670 reference pinout (ZCU670-LD is the same PCB/J28 with the limited-deployment XCZU57DR fitted, same FSVE1156 package). UG1532 (v1.0) confirms FMCP HSPC J28 topology: DP0-3 on GTY bank 128 (these entries), DP4-6 on PS-GTR bank 505, LA[00:33], GBTCLK0-1, CLK0-1 routed - but publishes no ball-level table (defers to the gated board XDC), so LA/CLK/GBTCLK/DP4-6 ball assignments are not included.",
+  "slots": [
+    {
+      "slot": "FMCP",
+      "type": "fmcp",
+      "signals": [
+        {
+          "signal": "DP0_C2M_N",
+          "pin": "E31",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP0_C2M_P",
+          "pin": "E30",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP0_M2C_N",
+          "pin": "F34",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP0_M2C_P",
+          "pin": "F33",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP1_C2M_N",
+          "pin": "D29",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP1_C2M_P",
+          "pin": "D28",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP1_M2C_N",
+          "pin": "D34",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP1_M2C_P",
+          "pin": "D33",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP2_C2M_N",
+          "pin": "C31",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP2_C2M_P",
+          "pin": "C30",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP2_M2C_N",
+          "pin": "B34",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP2_M2C_P",
+          "pin": "B33",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP3_C2M_N",
+          "pin": "B29",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP3_C2M_P",
+          "pin": "B28",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP3_M2C_N",
+          "pin": "A32",
+          "bank": 128,
+          "io_type": "GTY"
+        },
+        {
+          "signal": "DP3_M2C_P",
+          "pin": "A31",
+          "bank": 128,
+          "io_type": "GTY"
+        }
+      ]
+    }
+  ]
+}

@@ -35,9 +35,9 @@ device: { part: XCKU040-2FFVA1156I, vendor: amd-xilinx }
 - Micro-B UART
 
 ## Expansion
-- FMC HPC "HPC"
-- FMC LPC "LPC0"
-- FMC LPC "LPC1"
+- FMC HPC "HPC" VADJ 1.8V
+- FMC LPC "LPC0" VADJ 1.8V
+- FMC LPC "LPC1" VADJ 1.8V
 
 ## Storage
 - microSD x1
@@ -45,3 +45,7 @@ device: { part: XCKU040-2FFVA1156I, vendor: amd-xilinx }
 ## User I/O
 - LEDs x4
 - Pushbuttons x1
+
+## Notes
+
+All three FMC slots run at a fixed 1.8 V IO level: the user manual states the LPC FMC1 (banks 47/48) and LPC FMC2 (banks 64/65) levels are "1.8V and cannot be modified", and the HPC (banks 66-68) voltage standard is 1.8 V. No jumper or programming mechanism exists.

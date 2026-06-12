@@ -28,7 +28,7 @@ price: { value: 375, currency: USD }
 - Micro-B JTAG/UART
 
 ## Expansion
-- FMC HPC "HPC0"
+- FMC HPC "HPC0" VADJ 1.2-3.3V
 
 ## Storage
 - microSD x1
@@ -36,3 +36,7 @@ price: { value: 375, currency: USD }
 ## Extras
 - 2x Anios 40-pin I/O extension headers
 - 3x 12-pin I/O connectors
+
+## Notes
+
+FMC VADJ (VCC_FMC_ADJ) is fed from the VCC_IO_B rail, selected by the I/O voltage selection jumpers on J1602: 1.2 V (VCC_1V2), 3.3 V (VCC_3V3), or the module-dependent VCC_OUT_A / VCC_OUT_B supplies (supported envelope 1.2-3.3 V). The factory default jumper positions apply no I/O voltage, so the VADJ rail is unpowered until the jumpers are set; the board does not read the FMC IPMI EEPROM.

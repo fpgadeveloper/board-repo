@@ -1,0 +1,35 @@
+{
+  "mpn": "TE0950-03-EGBE21C",
+  "side": "host",
+  "device": "XCVE2302-1LSESFVA784",
+  "source": "schematic",
+  "source_ref": "Trenz TE0950-03 REV03 schematic, sheets FMC.SchDoc (p32) and V_GTYP.SchDoc (p12). Only DP0-3 (GTYP quad 103; lane order reversed: DP0=lane3 .. DP3=lane0) and GBTCLK0/1 (AC-coupled via 10nF C53-C56 to GTYP REFCLK1_103/REFCLK0_103) reach the Versal. All 34 LA pairs, CLK0/1_M2C, CLK2/3_BIDIR, CLK_DIR, SCL/SDA, PRSNT_M2C_L and PG route to the on-board Artix-7 levelshifter/MUX U13 (A_HR sheets p29-30), not the Versal, and are omitted (closed-world; TRM v.11 sec 5.1 confirms this architecture). Trenz GBTCLK net names are swapped vs VITA positions (J3 D4/D5 carry net GBTCLK1_M2C_*, B20/B21 carry net GBTCLK0_M2C_*); canonical names here follow connector position. VREF_A_M2C and GA0/GA1 excluded per repo convention.",
+  "slots": [
+    {
+      "slot": "FMC",
+      "type": "hpc",
+      "signals": [
+        { "signal": "DP0_C2M_P", "pin": "G5", "bank": 103, "io_type": "GTYP" },
+        { "signal": "DP0_C2M_N", "pin": "G4", "bank": 103, "io_type": "GTYP" },
+        { "signal": "DP0_M2C_P", "pin": "H2", "bank": 103, "io_type": "GTYP" },
+        { "signal": "DP0_M2C_N", "pin": "H1", "bank": 103, "io_type": "GTYP" },
+        { "signal": "DP1_C2M_P", "pin": "J5", "bank": 103, "io_type": "GTYP" },
+        { "signal": "DP1_C2M_N", "pin": "J4", "bank": 103, "io_type": "GTYP" },
+        { "signal": "DP1_M2C_P", "pin": "K2", "bank": 103, "io_type": "GTYP" },
+        { "signal": "DP1_M2C_N", "pin": "K1", "bank": 103, "io_type": "GTYP" },
+        { "signal": "DP2_C2M_P", "pin": "L5", "bank": 103, "io_type": "GTYP" },
+        { "signal": "DP2_C2M_N", "pin": "L4", "bank": 103, "io_type": "GTYP" },
+        { "signal": "DP2_M2C_P", "pin": "M2", "bank": 103, "io_type": "GTYP" },
+        { "signal": "DP2_M2C_N", "pin": "M1", "bank": 103, "io_type": "GTYP" },
+        { "signal": "DP3_C2M_P", "pin": "N5", "bank": 103, "io_type": "GTYP" },
+        { "signal": "DP3_C2M_N", "pin": "N4", "bank": 103, "io_type": "GTYP" },
+        { "signal": "DP3_M2C_P", "pin": "P2", "bank": 103, "io_type": "GTYP" },
+        { "signal": "DP3_M2C_N", "pin": "P1", "bank": 103, "io_type": "GTYP" },
+        { "signal": "GBTCLK0_M2C_P", "pin": "K7", "bank": 103, "io_type": "GTYP" },
+        { "signal": "GBTCLK0_M2C_N", "pin": "K6", "bank": 103, "io_type": "GTYP" },
+        { "signal": "GBTCLK1_M2C_P", "pin": "M7", "bank": 103, "io_type": "GTYP" },
+        { "signal": "GBTCLK1_M2C_N", "pin": "M6", "bank": 103, "io_type": "GTYP" }
+      ]
+    }
+  ]
+}

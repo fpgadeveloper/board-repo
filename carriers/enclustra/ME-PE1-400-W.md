@@ -30,8 +30,8 @@ price: { value: 817, currency: USD }
 - microSD x1
 
 ## Expansion
-- FMC LPC "FMC1"
-- FMC LPC "FMC2"
+- FMC LPC "FMC1" VADJ 1.8-3.3V
+- FMC LPC "FMC2" VADJ 1.8-3.3V
 - Pmod x3
 
 ## Extras
@@ -49,3 +49,5 @@ price: { value: 817, currency: USD }
 ## Notes
 
 The available features depend on the equipped Mercury FPGA/SoC module and the selected PE1 board model. The -400 variant fits a low-jitter clock generator, system monitor, power control and current sense, and provides two FMC LPC connectors (where the -300 provides one FMC HPC). The SMA clock / MGT and SIM-card options are populated to order.
+
+Both FMC connectors share a single VADJ rail (VCC_ADJ), which follows the module I/O voltage VCC_IO_B, selected by the I/O voltage selection jumpers on J2000: 3.3 V (VCC_3V3) or the module-dependent VCC_OUT_A / VCC_OUT_B supply outputs (typically 1.8-2.5 V; supported envelope 1.8-3.3 V depending on the mounted Mercury module). The factory default jumper positions (2-4, 8-10) apply no I/O voltage at all, so the VADJ rail is unpowered until the jumpers are set; the board does not read the FMC IPMI EEPROM.

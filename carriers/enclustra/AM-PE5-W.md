@@ -35,11 +35,15 @@ price: null
 - Micro-B JTAG/UART
 
 ## Expansion
-- FMC+ "FMC0"
-- FMC+ "FMC1"
+- FMC+ "FMC0" VADJ 1.2-3.3V
+- FMC+ "FMC1" VADJ 1.2-3.3V
 
 ## Storage
 - microSD x1
 
 ## Features
 - Power monitoring
+
+## Notes
+
+Each FMC+ slot has an independent VADJ rail (V_ADJ_F0 / V_ADJ_F1) selected by DIP switches VSEL0 / VSEL1 (switches 1-3): OFF, 1.2 V, 1.5 V, 1.72 V, 1.8 V, 2.5 V or 3.3 V; factory default 1.8 V. The board's OVP circuit disables a rail set above the module's advertised maximum, but the FMC IPMI EEPROM is not read - the user must set the switches to match the FMC card.
