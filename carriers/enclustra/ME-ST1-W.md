@@ -39,4 +39,4 @@ price: { value: 375, currency: USD }
 
 ## Notes
 
-FMC VADJ (VCC_FMC_ADJ) is fed from the VCC_IO_B rail, selected by the I/O voltage selection jumpers on J1602: 1.2 V (VCC_1V2), 3.3 V (VCC_3V3), or the module-dependent VCC_OUT_A / VCC_OUT_B supplies (supported envelope 1.2-3.3 V). The factory default jumper positions apply no I/O voltage, so the VADJ rail is unpowered until the jumpers are set; the board does not read the FMC IPMI EEPROM.
+FMC VADJ (VCC_FMC_ADJ) is fed from the VCC_IO_B rail, selected by the I/O voltage selection jumpers on J1602: 1.2 V (VCC_1V2), 3.3 V (VCC_3V3), or the module-dependent VCC_OUT_A / VCC_OUT_B supplies (supported envelope 1.2-3.3 V). Enclustra's documents conflict on the factory default: the user manual (D-0000-456-001 V03) states that no I/O voltage is applied as shipped, yet the default jumper positions listed in both the manual and the schematic (R1.0) include 7-8, which sets VCC_IO_B — and hence VADJ — to 3.3 V; verify J1602 before powering an FMC card. The board does not read the FMC IPMI EEPROM.
