@@ -27,8 +27,8 @@ price: null
 - Mini-B UART
 
 ## Expansion
-- FMC HPC "HPC0"
-- FMC HPC "HPC1"
+- FMC HPC "HPC0" VADJ 1.8V
+- FMC HPC "HPC1" VADJ 1.8V
 
 ## Storage
 - microSD x1
@@ -36,3 +36,7 @@ price: null
 ## User I/O
 - LEDs x4
 - Pushbuttons x4
+
+## Notes
+
+Each FMC HPC slot has its own VADJ rail (FMC1_VADJ from an ETA1471, FMC2_VADJ from an SGM61163), both 1.8 V by default — matching the 1.8 V level standard of the FMC banks. The user manual documents no jumper or programming mechanism for changing these rails, so treat VADJ as fixed at 1.8 V; the board does not read the FMC IPMI EEPROM.

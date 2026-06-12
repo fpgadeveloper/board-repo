@@ -1,0 +1,311 @@
+{
+  "mpn": "AX7325",
+  "side": "host",
+  "device": "XC7K325T-2FFG900I",
+  "source": "vendor-userguide",
+  "source_ref": "ALINX AX7325B User Manual (KINTEX-7 FPGA Development Board), Part 13 'FMC connector' pin assignment table, manual pages 36-38. LPC site routes LA00-LA33 + CLK0/CLK1 + I2C only; GBTCLK0/DP0/PRSNT/GA/JTAG not routed to FPGA. Not schematic-verified (no schematic cached).",
+  "slots": [
+    {
+      "slot": "LPC",
+      "type": "lpc",
+      "signals": [
+        {
+          "signal": "CLK0_M2C_P",
+          "pin": "AD23"
+        },
+        {
+          "signal": "CLK0_M2C_N",
+          "pin": "AE24"
+        },
+        {
+          "signal": "CLK1_M2C_P",
+          "pin": "AG29"
+        },
+        {
+          "signal": "CLK1_M2C_N",
+          "pin": "AH29"
+        },
+        {
+          "signal": "LA00_CC_P",
+          "pin": "AF22"
+        },
+        {
+          "signal": "LA00_CC_N",
+          "pin": "AG23"
+        },
+        {
+          "signal": "LA01_CC_P",
+          "pin": "AG24"
+        },
+        {
+          "signal": "LA01_CC_N",
+          "pin": "AH24"
+        },
+        {
+          "signal": "LA02_P",
+          "pin": "AK23"
+        },
+        {
+          "signal": "LA02_N",
+          "pin": "AK24"
+        },
+        {
+          "signal": "LA03_P",
+          "pin": "AJ24"
+        },
+        {
+          "signal": "LA03_N",
+          "pin": "AK25"
+        },
+        {
+          "signal": "LA04_P",
+          "pin": "AG25"
+        },
+        {
+          "signal": "LA04_N",
+          "pin": "AH25"
+        },
+        {
+          "signal": "LA05_P",
+          "pin": "AE23"
+        },
+        {
+          "signal": "LA05_N",
+          "pin": "AF23"
+        },
+        {
+          "signal": "LA06_P",
+          "pin": "AG22"
+        },
+        {
+          "signal": "LA06_N",
+          "pin": "AH22"
+        },
+        {
+          "signal": "LA07_P",
+          "pin": "AC24"
+        },
+        {
+          "signal": "LA07_N",
+          "pin": "AD24"
+        },
+        {
+          "signal": "LA08_P",
+          "pin": "AE25"
+        },
+        {
+          "signal": "LA08_N",
+          "pin": "AF25"
+        },
+        {
+          "signal": "LA09_P",
+          "pin": "AC22"
+        },
+        {
+          "signal": "LA09_N",
+          "pin": "AD22"
+        },
+        {
+          "signal": "LA10_P",
+          "pin": "AD21"
+        },
+        {
+          "signal": "LA10_N",
+          "pin": "AE21"
+        },
+        {
+          "signal": "LA11_P",
+          "pin": "AB22"
+        },
+        {
+          "signal": "LA11_N",
+          "pin": "AB23"
+        },
+        {
+          "signal": "LA12_P",
+          "pin": "AB24"
+        },
+        {
+          "signal": "LA12_N",
+          "pin": "AC25"
+        },
+        {
+          "signal": "LA13_P",
+          "pin": "AC20"
+        },
+        {
+          "signal": "LA13_N",
+          "pin": "AC21"
+        },
+        {
+          "signal": "LA14_P",
+          "pin": "Y21"
+        },
+        {
+          "signal": "LA14_N",
+          "pin": "AA21"
+        },
+        {
+          "signal": "LA15_P",
+          "pin": "Y23"
+        },
+        {
+          "signal": "LA15_N",
+          "pin": "Y24"
+        },
+        {
+          "signal": "LA16_P",
+          "pin": "AA22"
+        },
+        {
+          "signal": "LA16_N",
+          "pin": "AA23"
+        },
+        {
+          "signal": "LA17_CC_P",
+          "pin": "AE28"
+        },
+        {
+          "signal": "LA17_CC_N",
+          "pin": "AF28"
+        },
+        {
+          "signal": "LA18_CC_P",
+          "pin": "AB27"
+        },
+        {
+          "signal": "LA18_CC_N",
+          "pin": "AC27"
+        },
+        {
+          "signal": "LA19_P",
+          "pin": "AK29"
+        },
+        {
+          "signal": "LA19_N",
+          "pin": "AK30"
+        },
+        {
+          "signal": "LA20_P",
+          "pin": "AJ27"
+        },
+        {
+          "signal": "LA20_N",
+          "pin": "AK28"
+        },
+        {
+          "signal": "LA21_P",
+          "pin": "AG30"
+        },
+        {
+          "signal": "LA21_N",
+          "pin": "AH30"
+        },
+        {
+          "signal": "LA22_P",
+          "pin": "AJ28"
+        },
+        {
+          "signal": "LA22_N",
+          "pin": "AJ29"
+        },
+        {
+          "signal": "LA23_P",
+          "pin": "AA27"
+        },
+        {
+          "signal": "LA23_N",
+          "pin": "AB28"
+        },
+        {
+          "signal": "LA24_P",
+          "pin": "AD29"
+        },
+        {
+          "signal": "LA24_N",
+          "pin": "AE29"
+        },
+        {
+          "signal": "LA25_P",
+          "pin": "AE30"
+        },
+        {
+          "signal": "LA25_N",
+          "pin": "AF30"
+        },
+        {
+          "signal": "LA26_P",
+          "pin": "Y28"
+        },
+        {
+          "signal": "LA26_N",
+          "pin": "AA28"
+        },
+        {
+          "signal": "LA27_P",
+          "pin": "Y26"
+        },
+        {
+          "signal": "LA27_N",
+          "pin": "AA26"
+        },
+        {
+          "signal": "LA28_P",
+          "pin": "AC29"
+        },
+        {
+          "signal": "LA28_N",
+          "pin": "AC30"
+        },
+        {
+          "signal": "LA29_P",
+          "pin": "AD27"
+        },
+        {
+          "signal": "LA29_N",
+          "pin": "AD28"
+        },
+        {
+          "signal": "LA30_P",
+          "pin": "Y30"
+        },
+        {
+          "signal": "LA30_N",
+          "pin": "AA30"
+        },
+        {
+          "signal": "LA31_P",
+          "pin": "AB29"
+        },
+        {
+          "signal": "LA31_N",
+          "pin": "AB30"
+        },
+        {
+          "signal": "LA32_P",
+          "pin": "W27"
+        },
+        {
+          "signal": "LA32_N",
+          "pin": "W28"
+        },
+        {
+          "signal": "LA33_P",
+          "pin": "W29"
+        },
+        {
+          "signal": "LA33_N",
+          "pin": "Y29"
+        },
+        {
+          "signal": "SCL",
+          "pin": "A16"
+        },
+        {
+          "signal": "SDA",
+          "pin": "A17"
+        }
+      ]
+    }
+  ]
+}

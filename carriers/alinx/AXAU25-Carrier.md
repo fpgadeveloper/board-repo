@@ -23,7 +23,7 @@ price: null
 - Mini-B UART
 
 ## Expansion
-- FMC HPC "HPC"
+- FMC HPC "HPC" VADJ 1.2-1.8V
 - GPIO Header x2
 
 ## Storage
@@ -32,3 +32,7 @@ price: null
 ## User I/O
 - LEDs x2
 - Pushbuttons x2
+
+## Notes
+
+VADJ for the FMC HPC connector is one of four outputs of the carrier's ETA1471FT2G DC/DC converters and defaults to 1.8 V; a jumper cap selects 1.2 V instead (discrete 1.2 V / 1.8 V — the board does not read the FMC IPMI EEPROM). The FMC LA signals connect to FPGA banks 64/65 on the SoM, which operate at 1.8 V.

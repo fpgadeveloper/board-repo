@@ -1,0 +1,1262 @@
+{
+  "mpn": "TEBF0818-02A",
+  "side": "host",
+  "source": "schematic",
+  "source_ref": "Trenz TEBF0818-02A carrier schematic, FMC.SchDoc (p19) + FMC_MISC.SchDoc (p20), joined to the TE0818 SoM ZU+ FFVC900 package via Trenz B<bank>_<pair> net names (bank maps verified identical across XCZU6EG/9EG/15EG-FFVC900); B2B reachability confirmed on J1/J3/J4 sheets (p4/6/7). GBTCLK0/1 are AC-coupled (10nF C121-C124) to MGTREFCLK0_228/229 with intentional pair polarity inversion (FMC P pin lands on the N refclk ball and vice versa); many LA/HA/HB pairs are likewise polarity-inverted onto the SoM pads (ball recorded per signal reflects actual copper). CLK2/CLK3_BIDIR route to clock generator U35, not the SoM, and are omitted. Sidebands (PRSNT via IO expander U38, SCL/SDA via I2C switches U16/U27, PG/CLK_DIR/JTAG via System Controller CPLDs U17/U39) do not reach the SoM and are omitted. VREF_A/B excluded per repo convention. TEBF0818 wiki TRM corroborates interface counts (10x MGT, 2x MGT CLK, 82 diff IO).",
+  "slots": [
+    {
+      "slot": "HPC",
+      "type": "hpc",
+      "signals": [
+        {
+          "signal": "CLK0_M2C_P",
+          "pin": "AH6",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "CLK0_M2C_N",
+          "pin": "AJ6",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "CLK1_M2C_P",
+          "pin": "E10",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "CLK1_M2C_N",
+          "pin": "D10",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "LA00_CC_P",
+          "pin": "AG8",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA00_CC_N",
+          "pin": "AH8",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA01_CC_P",
+          "pin": "AH7",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA01_CC_N",
+          "pin": "AJ7",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA02_P",
+          "pin": "AF7",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA02_N",
+          "pin": "AF8",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA03_P",
+          "pin": "AF10",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA03_N",
+          "pin": "AG10",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA04_P",
+          "pin": "AG13",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA04_N",
+          "pin": "AH13",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA05_P",
+          "pin": "AH12",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA05_N",
+          "pin": "AJ12",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA06_P",
+          "pin": "AF11",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA06_N",
+          "pin": "AG11",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA07_P",
+          "pin": "AH9",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA07_N",
+          "pin": "AJ9",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA08_P",
+          "pin": "AK12",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA08_N",
+          "pin": "AK13",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA09_P",
+          "pin": "AJ10",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA09_N",
+          "pin": "AK10",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA10_P",
+          "pin": "AK11",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA10_N",
+          "pin": "AJ11",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA11_P",
+          "pin": "AK9",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA11_N",
+          "pin": "AK8",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA12_P",
+          "pin": "AF6",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA12_N",
+          "pin": "AF5",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA13_P",
+          "pin": "AJ4",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA13_N",
+          "pin": "AH4",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA14_P",
+          "pin": "AK5",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA14_N",
+          "pin": "AJ5",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA15_P",
+          "pin": "AK6",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA15_N",
+          "pin": "AK7",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA16_P",
+          "pin": "AK4",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA16_N",
+          "pin": "AK3",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA17_CC_P",
+          "pin": "AB6",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA17_CC_N",
+          "pin": "AB5",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA18_CC_P",
+          "pin": "AB8",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA18_CC_N",
+          "pin": "AC8",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA19_P",
+          "pin": "AE13",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA19_N",
+          "pin": "AF13",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA20_P",
+          "pin": "AD9",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA20_N",
+          "pin": "AE9",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA21_P",
+          "pin": "AC4",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA21_N",
+          "pin": "AB4",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA22_P",
+          "pin": "AA6",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA22_N",
+          "pin": "AA5",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA23_P",
+          "pin": "AB9",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA23_N",
+          "pin": "AC9",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA24_P",
+          "pin": "AD4",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA24_N",
+          "pin": "AE4",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA25_P",
+          "pin": "AD11",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA25_N",
+          "pin": "AC11",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA26_P",
+          "pin": "AB11",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA26_N",
+          "pin": "AB10",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA27_P",
+          "pin": "AA8",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA27_N",
+          "pin": "AA7",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA28_P",
+          "pin": "AC3",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA28_N",
+          "pin": "AB3",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA29_P",
+          "pin": "AD10",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA29_N",
+          "pin": "AE10",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA30_P",
+          "pin": "AE12",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA30_N",
+          "pin": "AD12",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA31_P",
+          "pin": "AD5",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA31_N",
+          "pin": "AE5",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA32_P",
+          "pin": "AA12",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA32_N",
+          "pin": "AA11",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA33_P",
+          "pin": "AB13",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "LA33_N",
+          "pin": "AC13",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA00_CC_P",
+          "pin": "V7",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA00_CC_N",
+          "pin": "V6",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA01_CC_P",
+          "pin": "U8",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA01_CC_N",
+          "pin": "V8",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA02_P",
+          "pin": "U2",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA02_N",
+          "pin": "U3",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA03_P",
+          "pin": "T1",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA03_N",
+          "pin": "U1",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA04_P",
+          "pin": "W5",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA04_N",
+          "pin": "Y5",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA05_P",
+          "pin": "U5",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA05_N",
+          "pin": "U4",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA06_P",
+          "pin": "W1",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA06_N",
+          "pin": "W2",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA07_P",
+          "pin": "V1",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA07_N",
+          "pin": "V2",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA08_P",
+          "pin": "L11",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA08_N",
+          "pin": "L12",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA09_P",
+          "pin": "M12",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA09_N",
+          "pin": "N12",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA10_P",
+          "pin": "U9",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA10_N",
+          "pin": "V9",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA11_P",
+          "pin": "Y1",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA11_N",
+          "pin": "Y2",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA12_P",
+          "pin": "W10",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA12_N",
+          "pin": "W11",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA13_P",
+          "pin": "W7",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA13_N",
+          "pin": "W6",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA14_P",
+          "pin": "M10",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA14_N",
+          "pin": "N10",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA15_P",
+          "pin": "V4",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA15_N",
+          "pin": "W4",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA16_P",
+          "pin": "P10",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA16_N",
+          "pin": "P11",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA17_CC_P",
+          "pin": "Y9",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA17_CC_N",
+          "pin": "Y8",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA18_P",
+          "pin": "T10",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA18_N",
+          "pin": "R10",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA19_P",
+          "pin": "K10",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA19_N",
+          "pin": "L10",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA20_P",
+          "pin": "U11",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA20_N",
+          "pin": "V11",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA21_P",
+          "pin": "T11",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA21_N",
+          "pin": "U10",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA22_P",
+          "pin": "U6",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA22_N",
+          "pin": "U7",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA23_P",
+          "pin": "Y4",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HA23_N",
+          "pin": "Y3",
+          "bank": 66,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB00_CC_P",
+          "pin": "AG6",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB00_CC_N",
+          "pin": "AG5",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB01_P",
+          "pin": "AF3",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB01_N",
+          "pin": "AG3",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB02_P",
+          "pin": "AH1",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB02_N",
+          "pin": "AG1",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB03_P",
+          "pin": "AH3",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB03_N",
+          "pin": "AH2",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB04_P",
+          "pin": "AF2",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB04_N",
+          "pin": "AF1",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB05_P",
+          "pin": "AK2",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB05_N",
+          "pin": "AJ2",
+          "bank": 64,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB06_CC_P",
+          "pin": "AC7",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB06_CC_N",
+          "pin": "AD7",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB07_P",
+          "pin": "AD2",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB07_N",
+          "pin": "AC2",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB08_P",
+          "pin": "AE3",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB08_N",
+          "pin": "AE2",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB09_P",
+          "pin": "AA3",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB09_N",
+          "pin": "AA2",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB10_P",
+          "pin": "AB1",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB10_N",
+          "pin": "AA1",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB11_P",
+          "pin": "AD1",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB11_N",
+          "pin": "AC1",
+          "bank": 65,
+          "io_type": "HP"
+        },
+        {
+          "signal": "HB12_P",
+          "pin": "B11",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "HB12_N",
+          "pin": "C12",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "HB13_P",
+          "pin": "E12",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "HB13_N",
+          "pin": "D12",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "HB14_P",
+          "pin": "A12",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "HB14_N",
+          "pin": "A11",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "HB15_P",
+          "pin": "B10",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "HB15_N",
+          "pin": "A10",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "HB16_P",
+          "pin": "K13",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "HB16_N",
+          "pin": "K12",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "HB17_CC_P",
+          "pin": "G10",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "HB17_CC_N",
+          "pin": "F10",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "HB18_P",
+          "pin": "J12",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "HB18_N",
+          "pin": "H11",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "HB19_P",
+          "pin": "D11",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "HB19_N",
+          "pin": "C11",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "HB20_P",
+          "pin": "J11",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "HB20_N",
+          "pin": "J10",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "HB21_P",
+          "pin": "H12",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "HB21_N",
+          "pin": "G11",
+          "bank": 48,
+          "io_type": "HD"
+        },
+        {
+          "signal": "DP0_C2M_P",
+          "pin": "P6",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP0_C2M_N",
+          "pin": "P5",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP0_M2C_P",
+          "pin": "R4",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP0_M2C_N",
+          "pin": "R3",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP1_C2M_P",
+          "pin": "N4",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP1_C2M_N",
+          "pin": "N3",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP1_M2C_P",
+          "pin": "P2",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP1_M2C_N",
+          "pin": "P1",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP2_C2M_P",
+          "pin": "M6",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP2_C2M_N",
+          "pin": "M5",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP2_M2C_P",
+          "pin": "M2",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP2_M2C_N",
+          "pin": "M1",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP3_C2M_P",
+          "pin": "K6",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP3_C2M_N",
+          "pin": "K5",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP3_M2C_P",
+          "pin": "L4",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP3_M2C_N",
+          "pin": "L3",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP4_C2M_P",
+          "pin": "J4",
+          "bank": 229,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP4_C2M_N",
+          "pin": "J3",
+          "bank": 229,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP4_M2C_P",
+          "pin": "K2",
+          "bank": 229,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP4_M2C_N",
+          "pin": "K1",
+          "bank": 229,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP5_C2M_P",
+          "pin": "H6",
+          "bank": 229,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP5_C2M_N",
+          "pin": "H5",
+          "bank": 229,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP5_M2C_P",
+          "pin": "H2",
+          "bank": 229,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP5_M2C_N",
+          "pin": "H1",
+          "bank": 229,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP6_C2M_P",
+          "pin": "F6",
+          "bank": 229,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP6_C2M_N",
+          "pin": "F5",
+          "bank": 229,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP6_M2C_P",
+          "pin": "G4",
+          "bank": 229,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP6_M2C_N",
+          "pin": "G3",
+          "bank": 229,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP7_C2M_P",
+          "pin": "E4",
+          "bank": 229,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP7_C2M_N",
+          "pin": "E3",
+          "bank": 229,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP7_M2C_P",
+          "pin": "F2",
+          "bank": 229,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP7_M2C_N",
+          "pin": "F1",
+          "bank": 229,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP8_C2M_P",
+          "pin": "D6",
+          "bank": 230,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP8_C2M_N",
+          "pin": "D5",
+          "bank": 230,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP8_M2C_P",
+          "pin": "D2",
+          "bank": 230,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP8_M2C_N",
+          "pin": "D1",
+          "bank": 230,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP9_C2M_P",
+          "pin": "C8",
+          "bank": 230,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP9_C2M_N",
+          "pin": "C7",
+          "bank": 230,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP9_M2C_P",
+          "pin": "C4",
+          "bank": 230,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "DP9_M2C_N",
+          "pin": "C3",
+          "bank": 230,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "GBTCLK0_M2C_P",
+          "pin": "R7",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "GBTCLK0_M2C_N",
+          "pin": "R8",
+          "bank": 228,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "GBTCLK1_M2C_P",
+          "pin": "L7",
+          "bank": 229,
+          "io_type": "GTH"
+        },
+        {
+          "signal": "GBTCLK1_M2C_N",
+          "pin": "L8",
+          "bank": 229,
+          "io_type": "GTH"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "mpn": "MPF300-SPLASH-KIT",
+  "side": "host",
+  "device": "MPF300T-1FCG484E",
+  "source": "vendor-userguide",
+  "source_ref": "Microchip UG0786 Table 10 (J17 FMC Connector Pinout)",
+  "slots": [
+    {
+      "slot": "LPC",
+      "type": "lpc",
+      "signals": [
+        {
+          "signal": "CLK0_M2C_P",
+          "pin": "C16"
+        },
+        {
+          "signal": "CLK0_M2C_N",
+          "pin": "C17"
+        },
+        {
+          "signal": "CLK1_M2C_P",
+          "pin": "A15"
+        },
+        {
+          "signal": "CLK1_M2C_N",
+          "pin": "A16"
+        },
+        {
+          "signal": "DP0_C2M_P",
+          "pin": "B22"
+        },
+        {
+          "signal": "DP0_M2C_P",
+          "pin": "A20"
+        },
+        {
+          "signal": "DP0_C2M_N",
+          "pin": "B21"
+        },
+        {
+          "signal": "DP0_M2C_N",
+          "pin": "A19"
+        },
+        {
+          "signal": "GBTCLK0_M2C_P",
+          "pin": "G19"
+        },
+        {
+          "signal": "GBTCLK0_M2C_N",
+          "pin": "G20"
+        },
+        {
+          "signal": "LA00_CC_P",
+          "pin": "A17"
+        },
+        {
+          "signal": "LA00_CC_N",
+          "pin": "B17"
+        },
+        {
+          "signal": "LA01_CC_P",
+          "pin": "G17"
+        },
+        {
+          "signal": "LA01_CC_N",
+          "pin": "F17"
+        },
+        {
+          "signal": "LA02_P",
+          "pin": "B12"
+        },
+        {
+          "signal": "LA02_N",
+          "pin": "B13"
+        },
+        {
+          "signal": "LA03_P",
+          "pin": "A12"
+        },
+        {
+          "signal": "LA03_N",
+          "pin": "A13"
+        },
+        {
+          "signal": "LA04_P",
+          "pin": "F15"
+        },
+        {
+          "signal": "LA04_N",
+          "pin": "F16"
+        },
+        {
+          "signal": "LA05_P",
+          "pin": "D16"
+        },
+        {
+          "signal": "LA05_N",
+          "pin": "D17"
+        },
+        {
+          "signal": "LA06_P",
+          "pin": "B9"
+        },
+        {
+          "signal": "LA06_N",
+          "pin": "B10"
+        },
+        {
+          "signal": "LA07_P",
+          "pin": "H15"
+        },
+        {
+          "signal": "LA07_N",
+          "pin": "G15"
+        },
+        {
+          "signal": "LA08_P",
+          "pin": "C11"
+        },
+        {
+          "signal": "LA08_N",
+          "pin": "C12"
+        },
+        {
+          "signal": "LA09_P",
+          "pin": "B8"
+        },
+        {
+          "signal": "LA09_N",
+          "pin": "A8"
+        },
+        {
+          "signal": "LA10_P",
+          "pin": "A6"
+        },
+        {
+          "signal": "LA10_N",
+          "pin": "A7"
+        },
+        {
+          "signal": "LA11_P",
+          "pin": "B2"
+        },
+        {
+          "signal": "LA11_N",
+          "pin": "B3"
+        },
+        {
+          "signal": "LA12_P",
+          "pin": "C5"
+        },
+        {
+          "signal": "LA12_N",
+          "pin": "B5"
+        },
+        {
+          "signal": "LA13_P",
+          "pin": "F13"
+        },
+        {
+          "signal": "LA13_N",
+          "pin": "F12"
+        },
+        {
+          "signal": "LA14_P",
+          "pin": "A2"
+        },
+        {
+          "signal": "LA14_N",
+          "pin": "A3"
+        },
+        {
+          "signal": "LA15_P",
+          "pin": "D14"
+        },
+        {
+          "signal": "LA15_N",
+          "pin": "E14"
+        },
+        {
+          "signal": "LA16_P",
+          "pin": "C14"
+        },
+        {
+          "signal": "LA16_N",
+          "pin": "C15"
+        },
+        {
+          "signal": "LA17_CC_P",
+          "pin": "E15"
+        },
+        {
+          "signal": "LA17_CC_N",
+          "pin": "E16"
+        },
+        {
+          "signal": "LA18_CC_P",
+          "pin": "D2"
+        },
+        {
+          "signal": "LA18_CC_N",
+          "pin": "C2"
+        },
+        {
+          "signal": "LA19_P",
+          "pin": "G12"
+        },
+        {
+          "signal": "LA19_N",
+          "pin": "G13"
+        },
+        {
+          "signal": "LA20_P",
+          "pin": "D11"
+        },
+        {
+          "signal": "LA20_N",
+          "pin": "D12"
+        },
+        {
+          "signal": "LA21_P",
+          "pin": "F10"
+        },
+        {
+          "signal": "LA21_N",
+          "pin": "E10"
+        },
+        {
+          "signal": "LA22_P",
+          "pin": "C9"
+        },
+        {
+          "signal": "LA22_N",
+          "pin": "C10"
+        },
+        {
+          "signal": "LA23_P",
+          "pin": "C1"
+        },
+        {
+          "signal": "LA23_N",
+          "pin": "B1"
+        },
+        {
+          "signal": "LA24_P",
+          "pin": "F3"
+        },
+        {
+          "signal": "LA24_N",
+          "pin": "E4"
+        },
+        {
+          "signal": "LA25_P",
+          "pin": "E9"
+        },
+        {
+          "signal": "LA25_N",
+          "pin": "D9"
+        },
+        {
+          "signal": "LA26_P",
+          "pin": "F5"
+        },
+        {
+          "signal": "LA26_N",
+          "pin": "E5"
+        },
+        {
+          "signal": "LA27_P",
+          "pin": "G14"
+        },
+        {
+          "signal": "LA27_N",
+          "pin": "H13"
+        },
+        {
+          "signal": "LA28_P",
+          "pin": "E3"
+        },
+        {
+          "signal": "LA28_N",
+          "pin": "D3"
+        },
+        {
+          "signal": "LA29_P",
+          "pin": "E8"
+        },
+        {
+          "signal": "LA29_N",
+          "pin": "D8"
+        },
+        {
+          "signal": "LA30_P",
+          "pin": "E6"
+        },
+        {
+          "signal": "LA30_N",
+          "pin": "D6"
+        },
+        {
+          "signal": "LA31_P",
+          "pin": "C6"
+        },
+        {
+          "signal": "LA31_N",
+          "pin": "B7"
+        },
+        {
+          "signal": "LA32_P",
+          "pin": "D4"
+        },
+        {
+          "signal": "LA32_N",
+          "pin": "C4"
+        },
+        {
+          "signal": "LA33_P",
+          "pin": "B4"
+        },
+        {
+          "signal": "LA33_N",
+          "pin": "A5"
+        },
+        {
+          "signal": "PRSNT_M2C_L",
+          "pin": "E11"
+        },
+        {
+          "signal": "SCL",
+          "pin": "E1"
+        },
+        {
+          "signal": "SDA",
+          "pin": "D1"
+        }
+      ]
+    }
+  ]
+}

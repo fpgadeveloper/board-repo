@@ -18,7 +18,7 @@ price: null
 - HDMI Out x1
 
 ## Expansion
-- FMC LPC "FMC"
+- FMC LPC "FMC" VADJ 1.8-3.3V
 - Pmod x3
 
 ## Storage
@@ -58,3 +58,5 @@ The four GTX serial transceivers from the mated SoM are allocated as:
 | 4 | General-purpose SMA break-out |
 
 The carrier has no FPGA of its own; all programmable logic is provided by the mated SoM. The Pmod tally (3) covers PMOD0, PMOD1 and PMOD_MIO from the wiki user guide — PMOD_MIO is wired to Zynq PS MIO pins rather than the PL.
+
+FMC VADJ supports 1.8 V / 2.5 V / 3.3 V (discrete values; default 1.8 V), selected before power-on by 3-pin header P8 in the ADP5052 regulator's feedback network: open = 1.8 V (default), short 1-2 = 2.5 V, short 2-3 = 3.3 V. The FMC card's IPMI EEPROM is not consulted. The same VADJ rail also feeds the mated SoM's PL bank that drives the FMC LA signals.

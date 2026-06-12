@@ -42,3 +42,7 @@ device: { part: 5SGXEA7N2F45C2N, vendor: altera }
 - LEDs x4
 - Pushbuttons x4
 - DIP switches x4
+
+## Notes
+
+Each FMC slot's VCCIO (VADJ) is jumper-selectable to 1.2 V / 1.5 V / 1.8 V / 2.5 V / 3.0 V via JP5 (FMC A), JP6 (FMC B), JP7 (FMC C) and JP9 (FMC D); default 2.5 V. Because the FMC connectors cross-connect to shared FPGA banks, 3.0 V only takes effect if all four slots are set to 3.0 V. Set jumpers before power-on — the board does not read the FMC IPMI EEPROM.

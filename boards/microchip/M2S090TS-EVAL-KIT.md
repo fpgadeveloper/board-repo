@@ -27,7 +27,6 @@ device: { part: M2S090TS-FG484, vendor: microchip }
 - Mini-B UART
 
 ## Expansion
-- FMC HPC "HPC"
 - GPIO Header x1
 
 ## Extras

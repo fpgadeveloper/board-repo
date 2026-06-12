@@ -27,7 +27,7 @@ price: null
 - Type-C JTAG/UART
 
 ## Expansion
-- FMC+ "FMCP"
+- FMC+ "FMCP" VADJ 1.8V
 
 ## Storage
 - microSD x1
@@ -38,3 +38,7 @@ price: null
 ## Extras
 - MCX connectors for 16 RF-ADC and 16 RF-DAC channels
 - Onboard GPS module
+
+## Notes
+
+The FMC+ user I/O (69 differential pairs) routes to HP banks 64/65/66, which operate at a fixed 1.8 V supplied by the carrier (user guide sections 2.11 and 3.10). No jumper or programmable VADJ selection mechanism is documented.

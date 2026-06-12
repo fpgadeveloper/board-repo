@@ -1,0 +1,355 @@
+{
+  "mpn": "EMC2-KU040",
+  "side": "host",
+  "device": "XCKU040-1SFVA784I",
+  "source": "schematic",
+  "source_ref": "Two-hop join: Sundance EMC2-DP Design Specification QCF51 Issue 3.3.0 section 8 \"FMC Pin-Out\" (carrier FMC position -> Trenz B2B pins JB1-JB3; coordinate-extracted, byte-identical doc shared by all EMC2 variants) joined to Trenz TE0841 schematic SCH-TE0841-03 (41I31-A variant; B2B-Connectors sheet 5 JM1-JM3 pin -> net, FPGA U1 symbol sheets net -> XCKU040-SFVA784 ball; balls sanity-checked against the AMD xcku040sfva784 package file). The TE0841 module inverts pair polarity on most LA pairs (29 of 31) and on GBTCLK0 (P position lands on MGTREFCLK0N_225 Y5, N on Y6) - intentional routing, actual copper recorded. EXCLUDED: DP0 (QCF51 wires the DP0_C2M positions C2/C3 to the module GTH RX3 P2/P1 and DP0_M2C positions C6/C7 to GTH TX3 R4/R3 - host TX/RX swapped relative to VITA 57.1, so a compliant card cannot use DP0; left absent so the closed-world join reads incompatible). EXCLUDED LA30/LA32/LA33: QCF51 maps them to JB2.90-99, which on the TE0841 are the module JTAG block and GND (91=REF_JTAG 3.3V, 93=TMS, 95=TDI, 97=TDO, 99=TCK, 90=GND) - not FPGA I/O on this module variant; caution: an FMC card driving LA30/32/33 would drive the module JTAG pins. EXCLUDED LA11_P: its B2B pin JB1.39 is tied to the TE0841 PL_1V8 power rail (LA11_N recorded alone at AH12 via module net B64_L5_N; the LA11 pair is unusable differentially). EXCLUDED SCL/SDA: JB1.32 -> module net SC1 (system-controller, no FPGA ball; JB1.34 unconnected). FMC JTAG -> carrier chain, GA0/GA1 not B2B-routed. PRSNT_M2C_L reaches PL ball F8 (B68_L24_P). Carrier-side population not verifiable (no EMC2 carrier schematic cached); module-side routes are direct per schematic.",
+  "slots": [
+    {
+      "slot": "LPC",
+      "type": "lpc",
+      "signals": [
+        {
+          "signal": "LA00_CC_P",
+          "pin": "AH13",
+          "bank": 64
+        },
+        {
+          "signal": "LA00_CC_N",
+          "pin": "AH14",
+          "bank": 64
+        },
+        {
+          "signal": "LA01_CC_P",
+          "pin": "AD13",
+          "bank": 64
+        },
+        {
+          "signal": "LA01_CC_N",
+          "pin": "AD14",
+          "bank": 64
+        },
+        {
+          "signal": "LA02_P",
+          "pin": "AH11",
+          "bank": 64
+        },
+        {
+          "signal": "LA02_N",
+          "pin": "AG11",
+          "bank": 64
+        },
+        {
+          "signal": "LA03_P",
+          "pin": "AA10",
+          "bank": 64
+        },
+        {
+          "signal": "LA03_N",
+          "pin": "Y10",
+          "bank": 64
+        },
+        {
+          "signal": "LA04_P",
+          "pin": "Y11",
+          "bank": 64
+        },
+        {
+          "signal": "LA04_N",
+          "pin": "Y12",
+          "bank": 64
+        },
+        {
+          "signal": "LA05_P",
+          "pin": "AE8",
+          "bank": 64
+        },
+        {
+          "signal": "LA05_N",
+          "pin": "AF8",
+          "bank": 64
+        },
+        {
+          "signal": "LA06_P",
+          "pin": "AF12",
+          "bank": 64
+        },
+        {
+          "signal": "LA06_N",
+          "pin": "AF13",
+          "bank": 64
+        },
+        {
+          "signal": "LA07_P",
+          "pin": "AG9",
+          "bank": 64
+        },
+        {
+          "signal": "LA07_N",
+          "pin": "AG10",
+          "bank": 64
+        },
+        {
+          "signal": "LA08_P",
+          "pin": "AB12",
+          "bank": 64
+        },
+        {
+          "signal": "LA08_N",
+          "pin": "AA12",
+          "bank": 64
+        },
+        {
+          "signal": "LA09_P",
+          "pin": "D10",
+          "bank": 67
+        },
+        {
+          "signal": "LA09_N",
+          "pin": "D11",
+          "bank": 67
+        },
+        {
+          "signal": "LA10_P",
+          "pin": "AF9",
+          "bank": 64
+        },
+        {
+          "signal": "LA10_N",
+          "pin": "AF10",
+          "bank": 64
+        },
+        {
+          "signal": "LA11_N",
+          "pin": "AH12",
+          "bank": 64
+        },
+        {
+          "signal": "LA12_P",
+          "pin": "AB9",
+          "bank": 64
+        },
+        {
+          "signal": "LA12_N",
+          "pin": "AB10",
+          "bank": 64
+        },
+        {
+          "signal": "LA13_P",
+          "pin": "AC11",
+          "bank": 64
+        },
+        {
+          "signal": "LA13_N",
+          "pin": "AB11",
+          "bank": 64
+        },
+        {
+          "signal": "LA14_P",
+          "pin": "AD10",
+          "bank": 64
+        },
+        {
+          "signal": "LA14_N",
+          "pin": "AD11",
+          "bank": 64
+        },
+        {
+          "signal": "LA15_P",
+          "pin": "AC12",
+          "bank": 64
+        },
+        {
+          "signal": "LA15_N",
+          "pin": "AC13",
+          "bank": 64
+        },
+        {
+          "signal": "LA16_P",
+          "pin": "D15",
+          "bank": 67
+        },
+        {
+          "signal": "LA16_N",
+          "pin": "E15",
+          "bank": 67
+        },
+        {
+          "signal": "LA17_CC_P",
+          "pin": "G11",
+          "bank": 67
+        },
+        {
+          "signal": "LA17_CC_N",
+          "pin": "H11",
+          "bank": 67
+        },
+        {
+          "signal": "LA18_CC_P",
+          "pin": "C14",
+          "bank": 67
+        },
+        {
+          "signal": "LA18_CC_N",
+          "pin": "C13",
+          "bank": 67
+        },
+        {
+          "signal": "LA19_P",
+          "pin": "E13",
+          "bank": 67
+        },
+        {
+          "signal": "LA19_N",
+          "pin": "E12",
+          "bank": 67
+        },
+        {
+          "signal": "LA20_P",
+          "pin": "F12",
+          "bank": 67
+        },
+        {
+          "signal": "LA20_N",
+          "pin": "F13",
+          "bank": 67
+        },
+        {
+          "signal": "LA21_P",
+          "pin": "G15",
+          "bank": 67
+        },
+        {
+          "signal": "LA21_N",
+          "pin": "H16",
+          "bank": 67
+        },
+        {
+          "signal": "LA22_P",
+          "pin": "J14",
+          "bank": 67
+        },
+        {
+          "signal": "LA22_N",
+          "pin": "J15",
+          "bank": 67
+        },
+        {
+          "signal": "LA23_P",
+          "pin": "C11",
+          "bank": 67
+        },
+        {
+          "signal": "LA23_N",
+          "pin": "C12",
+          "bank": 67
+        },
+        {
+          "signal": "LA24_P",
+          "pin": "H12",
+          "bank": 67
+        },
+        {
+          "signal": "LA24_N",
+          "pin": "H13",
+          "bank": 67
+        },
+        {
+          "signal": "LA25_P",
+          "pin": "C9",
+          "bank": 67
+        },
+        {
+          "signal": "LA25_N",
+          "pin": "D9",
+          "bank": 67
+        },
+        {
+          "signal": "LA26_P",
+          "pin": "B14",
+          "bank": 67
+        },
+        {
+          "signal": "LA26_N",
+          "pin": "B15",
+          "bank": 67
+        },
+        {
+          "signal": "LA27_P",
+          "pin": "F14",
+          "bank": 67
+        },
+        {
+          "signal": "LA27_N",
+          "pin": "F15",
+          "bank": 67
+        },
+        {
+          "signal": "LA28_P",
+          "pin": "A9",
+          "bank": 67
+        },
+        {
+          "signal": "LA28_N",
+          "pin": "B9",
+          "bank": 67
+        },
+        {
+          "signal": "LA29_P",
+          "pin": "E11",
+          "bank": 67
+        },
+        {
+          "signal": "LA29_N",
+          "pin": "E10",
+          "bank": 67
+        },
+        {
+          "signal": "LA31_P",
+          "pin": "G14",
+          "bank": 67
+        },
+        {
+          "signal": "LA31_N",
+          "pin": "H14",
+          "bank": 67
+        },
+        {
+          "signal": "CLK0_M2C_P",
+          "pin": "AB14",
+          "bank": 64
+        },
+        {
+          "signal": "CLK0_M2C_N",
+          "pin": "AA14",
+          "bank": 64
+        },
+        {
+          "signal": "CLK1_M2C_P",
+          "pin": "AE10",
+          "bank": 64
+        },
+        {
+          "signal": "CLK1_M2C_N",
+          "pin": "AE11",
+          "bank": 64
+        },
+        {
+          "signal": "GBTCLK0_M2C_P",
+          "pin": "Y5",
+          "bank": 225
+        },
+        {
+          "signal": "GBTCLK0_M2C_N",
+          "pin": "Y6",
+          "bank": 225
+        },
+        {
+          "signal": "PRSNT_M2C_L",
+          "pin": "F8",
+          "bank": 68
+        }
+      ]
+    }
+  ]
+}

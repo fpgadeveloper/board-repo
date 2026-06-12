@@ -39,7 +39,7 @@ price: { value: 1149, currency: USD }
 - microSD x1
 
 ## Expansion
-- FMC HPC "FMC1"
+- FMC HPC "FMC1" VADJ 1.2-3.3V
 
 ## Extras
 - Mercury module connectors
@@ -53,3 +53,5 @@ price: { value: 1149, currency: USD }
 ## Notes
 
 The available features depend on the equipped Mercury FPGA/SoC module. The -4S variant populates four SFP+ cages in addition to the QSFP+ cage and FMC HPC connector common to the PE3 family.
+
+FMC VADJ (VCC_FMC_ADJ) follows the VCC_IO_BC rail, selected by the I/O voltage selection jumpers on J2100: 1.2 V (VCC_1V2), 3.3 V (VCC_3V3), or the module-dependent VCC_OUT_A / VCC_OUT_B supplies (supported envelope 1.2-3.3 V). The factory default jumper positions apply no I/O voltage at all, so the VADJ rail is unpowered until the jumpers are set; the board does not read the FMC IPMI EEPROM.

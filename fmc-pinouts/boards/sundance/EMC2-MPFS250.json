@@ -1,0 +1,313 @@
+{
+  "mpn": "EMC2-MPFS250",
+  "side": "host",
+  "device": "MPFS250T-FCVG484E",
+  "source": "schematic",
+  "source_ref": "Two-hop join: Sundance EMC2-DP Design Specification QCF51 Issue 3.3.0 section 8 \"FMC Pin-Out\" (carrier FMC position -> Trenz B2B pins JB1-JB3; coordinate-extracted; byte-identical doc shared by all EMC2 variants) joined to Trenz TEM0007 schematic SCH-TEM0007-01 rev 01 (CHD11-A; B2B_Connector sheet 3 JM1-JM3 pin -> net, FPGA U2 symbol sheets net -> MPFS250T-FCVG484 ball; every joined ball cross-checked against the U2 symbol pad name, e.g. B1_GPIO4_N -> GPIO4NB1 -> C15). NOTE: schematic documents assembly variant CHD11-A; the EMC2-MPFS250 ships TEM0007-01-CHE11-A. The FPGA symbol is the MPFS250T-1FCVG484I and no variant-dependent FMC routing appears on the B2B sheet, so the mapping is taken as variant-independent (CHD/CHE differ in temp/speed assembly). The module inverts pair polarity on 32 of 64 routed signals, incl. GBTCLK0 (P position -> XCVR_0A_REFCLK_N ball L20, N -> L19) - intentional routing, actual copper recorded. EXCLUDED DP0: the carrier wires DP0_C2M positions C2/C3 to module XCVR_RX0 (G20/G19) and DP0_M2C positions C6/C7 to XCVR_TX0 (F21/F22) - host TX/RX swapped relative to VITA 57.1 (and pair-inverted), so a compliant card cannot use DP0; left absent so the closed-world join reads incompatible. EXCLUDED as not FPGA-routed on TEM0007: LA16, LA24, LA27, LA28 (B2B pins JB2.72-88 even side are no-connect, red-X NC markers); LA30/LA32/LA33 (JB2.90-99 = module JTAG block: 91=JTAG VREF 3.3V, 93=TMS, 95=TDI, 97=TDO, 99=TCK, 90=GND - caution: an FMC card driving these LA positions would drive module JTAG); LA11_P (JB1.39 tied to the module +1.8V rail; LA11_N recorded alone, unusable differentially); SCL (JB1.32 -> CPLD net SC_BOOTMODE) and SDA (JB1.34 unconnected). FMC JTAG -> carrier chain, GA0/GA1 not B2B-routed. PRSNT_M2C_L reaches FPGA I/O via B0_HSIO88_P. Carrier-side population not verifiable (no EMC2 carrier schematic cached); module routes are direct (no series muxes) per schematic.",
+  "slots": [
+    {
+      "slot": "LPC",
+      "type": "lpc",
+      "signals": [
+        {
+          "signal": "LA00_CC_P",
+          "pin": "A6",
+          "bank": 1
+        },
+        {
+          "signal": "LA00_CC_N",
+          "pin": "A5",
+          "bank": 1
+        },
+        {
+          "signal": "LA01_CC_P",
+          "pin": "B10",
+          "bank": 1
+        },
+        {
+          "signal": "LA01_CC_N",
+          "pin": "B9",
+          "bank": 1
+        },
+        {
+          "signal": "LA02_P",
+          "pin": "A17",
+          "bank": 1
+        },
+        {
+          "signal": "LA02_N",
+          "pin": "A16",
+          "bank": 1
+        },
+        {
+          "signal": "LA03_P",
+          "pin": "D14",
+          "bank": 1
+        },
+        {
+          "signal": "LA03_N",
+          "pin": "D13",
+          "bank": 1
+        },
+        {
+          "signal": "LA04_P",
+          "pin": "A11",
+          "bank": 1
+        },
+        {
+          "signal": "LA04_N",
+          "pin": "A10",
+          "bank": 1
+        },
+        {
+          "signal": "LA05_P",
+          "pin": "B15",
+          "bank": 1
+        },
+        {
+          "signal": "LA05_N",
+          "pin": "A15",
+          "bank": 1
+        },
+        {
+          "signal": "LA06_P",
+          "pin": "C15",
+          "bank": 1
+        },
+        {
+          "signal": "LA06_N",
+          "pin": "C14",
+          "bank": 1
+        },
+        {
+          "signal": "LA07_P",
+          "pin": "A13",
+          "bank": 1
+        },
+        {
+          "signal": "LA07_N",
+          "pin": "A12",
+          "bank": 1
+        },
+        {
+          "signal": "LA08_P",
+          "pin": "C10",
+          "bank": 1
+        },
+        {
+          "signal": "LA08_N",
+          "pin": "C9",
+          "bank": 1
+        },
+        {
+          "signal": "LA09_P",
+          "pin": "D22",
+          "bank": 9
+        },
+        {
+          "signal": "LA09_N",
+          "pin": "C22",
+          "bank": 9
+        },
+        {
+          "signal": "LA10_P",
+          "pin": "B12",
+          "bank": 1
+        },
+        {
+          "signal": "LA10_N",
+          "pin": "C12",
+          "bank": 1
+        },
+        {
+          "signal": "LA11_N",
+          "pin": "B18",
+          "bank": 1
+        },
+        {
+          "signal": "LA12_P",
+          "pin": "B14",
+          "bank": 1
+        },
+        {
+          "signal": "LA12_N",
+          "pin": "B13",
+          "bank": 1
+        },
+        {
+          "signal": "LA13_P",
+          "pin": "B5",
+          "bank": 1
+        },
+        {
+          "signal": "LA13_N",
+          "pin": "C5",
+          "bank": 1
+        },
+        {
+          "signal": "LA14_P",
+          "pin": "D9",
+          "bank": 1
+        },
+        {
+          "signal": "LA14_N",
+          "pin": "D8",
+          "bank": 1
+        },
+        {
+          "signal": "LA15_P",
+          "pin": "B4",
+          "bank": 1
+        },
+        {
+          "signal": "LA15_N",
+          "pin": "C4",
+          "bank": 1
+        },
+        {
+          "signal": "LA17_CC_P",
+          "pin": "E15",
+          "bank": 1
+        },
+        {
+          "signal": "LA17_CC_N",
+          "pin": "E14",
+          "bank": 1
+        },
+        {
+          "signal": "LA18_CC_P",
+          "pin": "D21",
+          "bank": 9
+        },
+        {
+          "signal": "LA18_CC_N",
+          "pin": "D20",
+          "bank": 9
+        },
+        {
+          "signal": "LA19_P",
+          "pin": "D16",
+          "bank": 1
+        },
+        {
+          "signal": "LA19_N",
+          "pin": "E16",
+          "bank": 1
+        },
+        {
+          "signal": "LA20_P",
+          "pin": "B19",
+          "bank": 9
+        },
+        {
+          "signal": "LA20_N",
+          "pin": "B20",
+          "bank": 9
+        },
+        {
+          "signal": "LA21_P",
+          "pin": "F11",
+          "bank": 1
+        },
+        {
+          "signal": "LA21_N",
+          "pin": "F12",
+          "bank": 1
+        },
+        {
+          "signal": "LA22_P",
+          "pin": "C19",
+          "bank": 9
+        },
+        {
+          "signal": "LA22_N",
+          "pin": "C20",
+          "bank": 9
+        },
+        {
+          "signal": "LA23_P",
+          "pin": "G13",
+          "bank": 1
+        },
+        {
+          "signal": "LA23_N",
+          "pin": "H13",
+          "bank": 1
+        },
+        {
+          "signal": "LA25_P",
+          "pin": "F15",
+          "bank": 1
+        },
+        {
+          "signal": "LA25_N",
+          "pin": "G14",
+          "bank": 1
+        },
+        {
+          "signal": "LA26_P",
+          "pin": "H15",
+          "bank": 1
+        },
+        {
+          "signal": "LA26_N",
+          "pin": "G15",
+          "bank": 1
+        },
+        {
+          "signal": "LA29_P",
+          "pin": "H12",
+          "bank": 1
+        },
+        {
+          "signal": "LA29_N",
+          "pin": "G12",
+          "bank": 1
+        },
+        {
+          "signal": "LA31_P",
+          "pin": "F10",
+          "bank": 1
+        },
+        {
+          "signal": "LA31_N",
+          "pin": "E10",
+          "bank": 1
+        },
+        {
+          "signal": "CLK0_M2C_P",
+          "pin": "A8",
+          "bank": 1
+        },
+        {
+          "signal": "CLK0_M2C_N",
+          "pin": "B8",
+          "bank": 1
+        },
+        {
+          "signal": "CLK1_M2C_P",
+          "pin": "A7",
+          "bank": 1
+        },
+        {
+          "signal": "CLK1_M2C_N",
+          "pin": "B7",
+          "bank": 1
+        },
+        {
+          "signal": "GBTCLK0_M2C_P",
+          "pin": "L20"
+        },
+        {
+          "signal": "GBTCLK0_M2C_N",
+          "pin": "L19"
+        },
+        {
+          "signal": "PRSNT_M2C_L",
+          "pin": "AA12",
+          "bank": 0
+        }
+      ]
+    }
+  ]
+}
