@@ -76,4 +76,4 @@ FMC VADJ/VIOA is set per slot with DIP switches [S3] (FMC1) and [S4] (FMC2):
 | 2.5V | ON  | ON  | ON  | OFF |
 | 3.3V | ON  | ON  | ON  | ON  |
 
-Selecting the wrong FMC voltage can damage the board or the mezzanine card. JTAG routing to each FMC slot can be disconnected via DIP switches [S1]/[S2].
+Aldec does not document a factory-default switch position. Selecting the wrong FMC voltage can damage the board or the mezzanine card. JTAG routing to each FMC slot can be disconnected via DIP switches [S1]/[S2].
