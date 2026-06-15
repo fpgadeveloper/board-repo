@@ -264,6 +264,7 @@ Board and silicon vendors are defined in `vendors.json`. Each entity references 
 | `redpitaya` | RedPitaya |
 | `rhs-research` | RHS Research |
 | `sipeed` | Sipeed |
+| `star-dundee` | STAR-Dundee |
 | `steiert-solutions` | Steiert Solutions |
 | `sundance` | Sundance Multiprocessor Technology Ltd. |
 | `techway` | Techway |
