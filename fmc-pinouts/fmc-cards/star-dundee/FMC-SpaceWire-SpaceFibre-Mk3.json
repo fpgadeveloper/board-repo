@@ -1,0 +1,360 @@
+{
+  "mpn": "FMC-SpaceWire-SpaceFibre-Mk3",
+  "side": "card",
+  "source": "vendor-datasheet",
+  "source_ref": "STAR-Dundee FMC SpaceWire/SpaceFibre Board Mk3 datasheet (Part Number 316, (c)2022 STAR-Dundee Ltd) - 'SpaceWire Pinout' and 'SpaceFibre Pinout' quick-reference tables; not schematic-verified (no schematic published)",
+  "slots": [
+    {
+      "slot": "FMC",
+      "type": "hpc",
+      "signals": [
+        {
+          "signal": "DP0_C2M_P",
+          "fmc_pin": "C2",
+          "net": "SPFI1_TX_P",
+          "function": "SpaceFibre port 1 transmit lane (host FPGA->card, AC-coupled gigabit transceiver)"
+        },
+        {
+          "signal": "DP0_C2M_N",
+          "fmc_pin": "C3",
+          "net": "SPFI1_TX_N",
+          "function": "SpaceFibre port 1 transmit lane (host FPGA->card, AC-coupled gigabit transceiver)"
+        },
+        {
+          "signal": "DP0_M2C_P",
+          "fmc_pin": "C6",
+          "net": "SPFI1_RX_P",
+          "function": "SpaceFibre port 1 receive lane (card->host FPGA, AC-coupled gigabit transceiver)"
+        },
+        {
+          "signal": "DP0_M2C_N",
+          "fmc_pin": "C7",
+          "net": "SPFI1_RX_N",
+          "function": "SpaceFibre port 1 receive lane (card->host FPGA, AC-coupled gigabit transceiver)"
+        },
+        {
+          "signal": "DP1_C2M_P",
+          "fmc_pin": "A22",
+          "net": "SPFI2_TX_P",
+          "function": "SpaceFibre port 2 transmit lane (host FPGA->card, AC-coupled gigabit transceiver)"
+        },
+        {
+          "signal": "DP1_C2M_N",
+          "fmc_pin": "A23",
+          "net": "SPFI2_TX_N",
+          "function": "SpaceFibre port 2 transmit lane (host FPGA->card, AC-coupled gigabit transceiver)"
+        },
+        {
+          "signal": "DP1_M2C_P",
+          "fmc_pin": "A2",
+          "net": "SPFI2_RX_P",
+          "function": "SpaceFibre port 2 receive lane (card->host FPGA, AC-coupled gigabit transceiver)"
+        },
+        {
+          "signal": "DP1_M2C_N",
+          "fmc_pin": "A3",
+          "net": "SPFI2_RX_N",
+          "function": "SpaceFibre port 2 receive lane (card->host FPGA, AC-coupled gigabit transceiver)"
+        },
+        {
+          "signal": "GBTCLK0_M2C_P",
+          "fmc_pin": "D4",
+          "net": "GBTCLK0_P",
+          "function": "GBTCLK0 LVDS reference clock, card->carrier (selectable on-board 125MHz/156.25MHz oscillator or SMA input); SpaceFibre port 1 transceiver reference"
+        },
+        {
+          "signal": "GBTCLK0_M2C_N",
+          "fmc_pin": "D5",
+          "net": "GBTCLK0_N",
+          "function": "GBTCLK0 LVDS reference clock, card->carrier (selectable on-board 125MHz/156.25MHz oscillator or SMA input); SpaceFibre port 1 transceiver reference"
+        },
+        {
+          "signal": "GBTCLK1_M2C_P",
+          "fmc_pin": "B20",
+          "net": "GBTCLK1_P",
+          "function": "GBTCLK1 LVDS reference clock, card->carrier (selectable on-board 125MHz/156.25MHz oscillator or SMA input); SpaceFibre port 2 transceiver reference"
+        },
+        {
+          "signal": "GBTCLK1_M2C_N",
+          "fmc_pin": "B21",
+          "net": "GBTCLK1_N",
+          "function": "GBTCLK1 LVDS reference clock, card->carrier (selectable on-board 125MHz/156.25MHz oscillator or SMA input); SpaceFibre port 2 transceiver reference"
+        },
+        {
+          "signal": "LA00_CC_P",
+          "fmc_pin": "G6",
+          "net": "SPW2_DIN_P",
+          "function": "SpaceWire port 2 receive data (Data-in, card LVDS receiver->FPGA); input pair swappable with port 1 via 4x4 LVDS switch SW1"
+        },
+        {
+          "signal": "LA00_CC_N",
+          "fmc_pin": "G7",
+          "net": "SPW2_DIN_N",
+          "function": "SpaceWire port 2 receive data (Data-in, card LVDS receiver->FPGA); input pair swappable with port 1 via 4x4 LVDS switch SW1"
+        },
+        {
+          "signal": "LA01_CC_P",
+          "fmc_pin": "D8",
+          "net": "SPW1_DIN_P",
+          "function": "SpaceWire port 1 receive data (Data-in, card LVDS receiver->FPGA); input pair swappable with port 2 via 4x4 LVDS switch SW1"
+        },
+        {
+          "signal": "LA01_CC_N",
+          "fmc_pin": "D9",
+          "net": "SPW1_DIN_N",
+          "function": "SpaceWire port 1 receive data (Data-in, card LVDS receiver->FPGA); input pair swappable with port 2 via 4x4 LVDS switch SW1"
+        },
+        {
+          "signal": "LA08_P",
+          "fmc_pin": "G12",
+          "net": "SPW3_DOUT_P",
+          "function": "SpaceWire port 3 transmit data (Data-out, FPGA->card LVDS driver)"
+        },
+        {
+          "signal": "LA08_N",
+          "fmc_pin": "G13",
+          "net": "SPW3_DOUT_N",
+          "function": "SpaceWire port 3 transmit data (Data-out, FPGA->card LVDS driver)"
+        },
+        {
+          "signal": "LA09_P",
+          "fmc_pin": "D14",
+          "net": "SPW1_DOUT_P",
+          "function": "SpaceWire port 1 transmit data (Data-out, FPGA->card LVDS driver)"
+        },
+        {
+          "signal": "LA09_N",
+          "fmc_pin": "D15",
+          "net": "SPW1_DOUT_N",
+          "function": "SpaceWire port 1 transmit data (Data-out, FPGA->card LVDS driver)"
+        },
+        {
+          "signal": "LA10_P",
+          "fmc_pin": "C14",
+          "net": "SPW2_DOUT_P",
+          "function": "SpaceWire port 2 transmit data (Data-out, FPGA->card LVDS driver)"
+        },
+        {
+          "signal": "LA10_N",
+          "fmc_pin": "C15",
+          "net": "SPW2_DOUT_N",
+          "function": "SpaceWire port 2 transmit data (Data-out, FPGA->card LVDS driver)"
+        },
+        {
+          "signal": "LA12_P",
+          "fmc_pin": "G15",
+          "net": "SPW3_SOUT_P",
+          "function": "SpaceWire port 3 transmit strobe (Strobe-out, FPGA->card LVDS driver)"
+        },
+        {
+          "signal": "LA12_N",
+          "fmc_pin": "G16",
+          "net": "SPW3_SOUT_N",
+          "function": "SpaceWire port 3 transmit strobe (Strobe-out, FPGA->card LVDS driver)"
+        },
+        {
+          "signal": "LA13_P",
+          "fmc_pin": "D17",
+          "net": "SPW2_SOUT_P",
+          "function": "SpaceWire port 2 transmit strobe (Strobe-out, FPGA->card LVDS driver)"
+        },
+        {
+          "signal": "LA13_N",
+          "fmc_pin": "D18",
+          "net": "SPW2_SOUT_N",
+          "function": "SpaceWire port 2 transmit strobe (Strobe-out, FPGA->card LVDS driver)"
+        },
+        {
+          "signal": "LA14_P",
+          "fmc_pin": "C18",
+          "net": "SPW1_SOUT_P",
+          "function": "SpaceWire port 1 transmit strobe (Strobe-out, FPGA->card LVDS driver)"
+        },
+        {
+          "signal": "LA14_N",
+          "fmc_pin": "C19",
+          "net": "SPW1_SOUT_N",
+          "function": "SpaceWire port 1 transmit strobe (Strobe-out, FPGA->card LVDS driver)"
+        },
+        {
+          "signal": "LA17_CC_P",
+          "fmc_pin": "D20",
+          "net": "SPW2_SIN_P",
+          "function": "SpaceWire port 2 receive strobe (Strobe-in, card LVDS receiver->FPGA); input pair swappable with port 1 via 4x4 LVDS switch SW1"
+        },
+        {
+          "signal": "LA17_CC_N",
+          "fmc_pin": "D21",
+          "net": "SPW2_SIN_N",
+          "function": "SpaceWire port 2 receive strobe (Strobe-in, card LVDS receiver->FPGA); input pair swappable with port 1 via 4x4 LVDS switch SW1"
+        },
+        {
+          "signal": "LA18_CC_P",
+          "fmc_pin": "C22",
+          "net": "SPW1_SIN_P",
+          "function": "SpaceWire port 1 receive strobe (Strobe-in, card LVDS receiver->FPGA); input pair swappable with port 2 via 4x4 LVDS switch SW1"
+        },
+        {
+          "signal": "LA18_CC_N",
+          "fmc_pin": "C23",
+          "net": "SPW1_SIN_N",
+          "function": "SpaceWire port 1 receive strobe (Strobe-in, card LVDS receiver->FPGA); input pair swappable with port 2 via 4x4 LVDS switch SW1"
+        },
+        {
+          "signal": "LA22_P",
+          "fmc_pin": "G24",
+          "net": "SPW4_DOUT_P",
+          "function": "SpaceWire port 4 transmit data (Data-out, FPGA->card LVDS driver)"
+        },
+        {
+          "signal": "LA22_N",
+          "fmc_pin": "G25",
+          "net": "SPW4_DOUT_N",
+          "function": "SpaceWire port 4 transmit data (Data-out, FPGA->card LVDS driver)"
+        },
+        {
+          "signal": "LA25_P",
+          "fmc_pin": "G27",
+          "net": "SPW4_SOUT_P",
+          "function": "SpaceWire port 4 transmit strobe (Strobe-out, FPGA->card LVDS driver)"
+        },
+        {
+          "signal": "LA25_N",
+          "fmc_pin": "G28",
+          "net": "SPW4_SOUT_N",
+          "function": "SpaceWire port 4 transmit strobe (Strobe-out, FPGA->card LVDS driver)"
+        },
+        {
+          "signal": "HB00_CC_P",
+          "fmc_pin": "K25",
+          "net": "SPW3_DIN_P",
+          "function": "SpaceWire port 3 receive data (Data-in, card LVDS receiver->FPGA); input pair swappable with port 4 via 4x4 LVDS switch SW2"
+        },
+        {
+          "signal": "HB00_CC_N",
+          "fmc_pin": "K26",
+          "net": "SPW3_DIN_N",
+          "function": "SpaceWire port 3 receive data (Data-in, card LVDS receiver->FPGA); input pair swappable with port 4 via 4x4 LVDS switch SW2"
+        },
+        {
+          "signal": "HB04_P",
+          "fmc_pin": "F25",
+          "net": "SPW4_DIN_P",
+          "function": "SpaceWire port 4 receive data (Data-in, card LVDS receiver->FPGA); input pair swappable with port 3 via 4x4 LVDS switch SW2"
+        },
+        {
+          "signal": "HB04_N",
+          "fmc_pin": "F26",
+          "net": "SPW4_DIN_N",
+          "function": "SpaceWire port 4 receive data (Data-in, card LVDS receiver->FPGA); input pair swappable with port 3 via 4x4 LVDS switch SW2"
+        },
+        {
+          "signal": "HB06_CC_P",
+          "fmc_pin": "K28",
+          "net": "SPW3_SIN_P",
+          "function": "SpaceWire port 3 receive strobe (Strobe-in, card LVDS receiver->FPGA); input pair swappable with port 4 via 4x4 LVDS switch SW2"
+        },
+        {
+          "signal": "HB06_CC_N",
+          "fmc_pin": "K29",
+          "net": "SPW3_SIN_N",
+          "function": "SpaceWire port 3 receive strobe (Strobe-in, card LVDS receiver->FPGA); input pair swappable with port 4 via 4x4 LVDS switch SW2"
+        },
+        {
+          "signal": "HB17_CC_P",
+          "fmc_pin": "K37",
+          "net": "SPW4_SIN_P",
+          "function": "SpaceWire port 4 receive strobe (Strobe-in, card LVDS receiver->FPGA); input pair swappable with port 3 via 4x4 LVDS switch SW2"
+        },
+        {
+          "signal": "HB17_CC_N",
+          "fmc_pin": "K38",
+          "net": "SPW4_SIN_N",
+          "function": "SpaceWire port 4 receive strobe (Strobe-in, card LVDS receiver->FPGA); input pair swappable with port 3 via 4x4 LVDS switch SW2"
+        }
+      ],
+      "groups": [
+        {
+          "name": "SpaceWire Port 1",
+          "signals": [
+            "LA09_P",
+            "LA09_N",
+            "LA14_P",
+            "LA14_N",
+            "LA01_CC_P",
+            "LA01_CC_N",
+            "LA18_CC_P",
+            "LA18_CC_N"
+          ],
+          "same_bank": true
+        },
+        {
+          "name": "SpaceWire Port 2",
+          "signals": [
+            "LA10_P",
+            "LA10_N",
+            "LA13_P",
+            "LA13_N",
+            "LA00_CC_P",
+            "LA00_CC_N",
+            "LA17_CC_P",
+            "LA17_CC_N"
+          ],
+          "same_bank": true
+        },
+        {
+          "name": "SpaceWire Port 3",
+          "signals": [
+            "LA08_P",
+            "LA08_N",
+            "LA12_P",
+            "LA12_N",
+            "HB00_CC_P",
+            "HB00_CC_N",
+            "HB06_CC_P",
+            "HB06_CC_N"
+          ],
+          "same_bank": true
+        },
+        {
+          "name": "SpaceWire Port 4",
+          "signals": [
+            "LA22_P",
+            "LA22_N",
+            "LA25_P",
+            "LA25_N",
+            "HB04_P",
+            "HB04_N",
+            "HB17_CC_P",
+            "HB17_CC_N"
+          ],
+          "same_bank": true
+        },
+        {
+          "name": "SpaceFibre Port 1",
+          "signals": [
+            "DP0_C2M_P",
+            "DP0_C2M_N",
+            "DP0_M2C_P",
+            "DP0_M2C_N",
+            "GBTCLK0_M2C_P",
+            "GBTCLK0_M2C_N"
+          ],
+          "min_lanes": 1
+        },
+        {
+          "name": "SpaceFibre Port 2",
+          "signals": [
+            "DP1_C2M_P",
+            "DP1_C2M_N",
+            "DP1_M2C_P",
+            "DP1_M2C_N",
+            "GBTCLK1_M2C_P",
+            "GBTCLK1_M2C_N"
+          ],
+          "min_lanes": 1
+        }
+      ]
+    }
+  ]
+}
