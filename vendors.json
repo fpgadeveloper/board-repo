@@ -203,6 +203,10 @@
     "vlsi-system-design": {
       "name": "VLSI System Design",
       "url": "https://www.vlsisystemdesign.com"
+    },
+    "star-dundee": {
+      "name": "STAR-Dundee",
+      "url": "https://www.star-dundee.com"
     }
   },
   "silicon_vendors": {
