@@ -1,0 +1,476 @@
+{
+  "mpn": "FL9627",
+  "side": "card",
+  "source": "vendor-userguide",
+  "source_ref": "ALINX FL9627 4-Channel High Speed AD Module User Manual, Part 2.6 'FL9627 Module FMC LPC pin assignment'",
+  "slots": [
+    {
+      "slot": "FMC",
+      "type": "lpc",
+      "signals": [
+        {
+          "signal": "LA00_CC_N",
+          "fmc_pin": "G7",
+          "net": "AD1_DCO_N",
+          "function": "AD1 LVDS data clock output (DCO)"
+        },
+        {
+          "signal": "LA00_CC_P",
+          "fmc_pin": "G6",
+          "net": "AD1_DCO_P",
+          "function": "AD1 LVDS data clock output (DCO)"
+        },
+        {
+          "signal": "LA01_CC_N",
+          "fmc_pin": "D9",
+          "net": "AD1_SPI_SCLK",
+          "function": "AD1 SPI configuration clock"
+        },
+        {
+          "signal": "LA01_CC_P",
+          "fmc_pin": "D8",
+          "net": "CLK1_125M",
+          "function": "125 MHz reference/sample clock for AD1"
+        },
+        {
+          "signal": "LA02_N",
+          "fmc_pin": "H8",
+          "net": "AD1_DO_N",
+          "function": "AD1 LVDS data bit 0 (D0), channels A+B interleaved"
+        },
+        {
+          "signal": "LA02_P",
+          "fmc_pin": "H7",
+          "net": "AD1_DO_P",
+          "function": "AD1 LVDS data bit 0 (D0), channels A+B interleaved"
+        },
+        {
+          "signal": "LA03_N",
+          "fmc_pin": "G10",
+          "net": "AD1_SPI_SDIO",
+          "function": "AD1 SPI data (SDIO)"
+        },
+        {
+          "signal": "LA03_P",
+          "fmc_pin": "G9",
+          "net": "AD1_SPI_CS",
+          "function": "AD1 SPI chip select"
+        },
+        {
+          "signal": "LA04_N",
+          "fmc_pin": "H11",
+          "net": "AD1_D3_N",
+          "function": "AD1 LVDS data bit 3, channels A+B interleaved"
+        },
+        {
+          "signal": "LA04_P",
+          "fmc_pin": "H10",
+          "net": "AD1_D3_P",
+          "function": "AD1 LVDS data bit 3, channels A+B interleaved"
+        },
+        {
+          "signal": "LA05_N",
+          "fmc_pin": "D12",
+          "net": "AD1_D2_N",
+          "function": "AD1 LVDS data bit 2, channels A+B interleaved"
+        },
+        {
+          "signal": "LA05_P",
+          "fmc_pin": "D11",
+          "net": "AD1_D2_P",
+          "function": "AD1 LVDS data bit 2, channels A+B interleaved"
+        },
+        {
+          "signal": "LA06_N",
+          "fmc_pin": "C11",
+          "net": "AD1_D1_N",
+          "function": "AD1 LVDS data bit 1, channels A+B interleaved"
+        },
+        {
+          "signal": "LA06_P",
+          "fmc_pin": "C10",
+          "net": "AD1_D1_P",
+          "function": "AD1 LVDS data bit 1, channels A+B interleaved"
+        },
+        {
+          "signal": "LA07_N",
+          "fmc_pin": "H14",
+          "net": "AD1_D6_N",
+          "function": "AD1 LVDS data bit 6, channels A+B interleaved"
+        },
+        {
+          "signal": "LA07_P",
+          "fmc_pin": "H13",
+          "net": "AD1_D6_P",
+          "function": "AD1 LVDS data bit 6, channels A+B interleaved"
+        },
+        {
+          "signal": "LA08_N",
+          "fmc_pin": "G13",
+          "net": "AD1_D5_N",
+          "function": "AD1 LVDS data bit 5, channels A+B interleaved"
+        },
+        {
+          "signal": "LA08_P",
+          "fmc_pin": "G12",
+          "net": "AD1_D5_P",
+          "function": "AD1 LVDS data bit 5, channels A+B interleaved"
+        },
+        {
+          "signal": "LA09_N",
+          "fmc_pin": "D15",
+          "net": "AD1_D7_N",
+          "function": "AD1 LVDS data bit 7, channels A+B interleaved"
+        },
+        {
+          "signal": "LA09_P",
+          "fmc_pin": "D14",
+          "net": "AD1_D7_P",
+          "function": "AD1 LVDS data bit 7, channels A+B interleaved"
+        },
+        {
+          "signal": "LA10_N",
+          "fmc_pin": "C15",
+          "net": "AD1_D4_N",
+          "function": "AD1 LVDS data bit 4, channels A+B interleaved"
+        },
+        {
+          "signal": "LA10_P",
+          "fmc_pin": "C14",
+          "net": "AD1_D4_P",
+          "function": "AD1 LVDS data bit 4, channels A+B interleaved"
+        },
+        {
+          "signal": "LA11_N",
+          "fmc_pin": "H17",
+          "net": "AD1_D9_N",
+          "function": "AD1 LVDS data bit 9, channels A+B interleaved"
+        },
+        {
+          "signal": "LA11_P",
+          "fmc_pin": "H16",
+          "net": "AD1_D9_P",
+          "function": "AD1 LVDS data bit 9, channels A+B interleaved"
+        },
+        {
+          "signal": "LA12_N",
+          "fmc_pin": "G16",
+          "net": "AD1_D8_N",
+          "function": "AD1 LVDS data bit 8, channels A+B interleaved"
+        },
+        {
+          "signal": "LA12_P",
+          "fmc_pin": "G15",
+          "net": "AD1_D8_P",
+          "function": "AD1 LVDS data bit 8, channels A+B interleaved"
+        },
+        {
+          "signal": "LA13_N",
+          "fmc_pin": "D18",
+          "net": "AD1_D10_N",
+          "function": "AD1 LVDS data bit 10, channels A+B interleaved"
+        },
+        {
+          "signal": "LA13_P",
+          "fmc_pin": "D17",
+          "net": "AD1_D10_P",
+          "function": "AD1 LVDS data bit 10, channels A+B interleaved"
+        },
+        {
+          "signal": "LA14_N",
+          "fmc_pin": "C19",
+          "net": "AD1_D11_N",
+          "function": "AD1 LVDS data bit 11, channels A+B interleaved"
+        },
+        {
+          "signal": "LA14_P",
+          "fmc_pin": "C18",
+          "net": "AD1_D11_P",
+          "function": "AD1 LVDS data bit 11, channels A+B interleaved"
+        },
+        {
+          "signal": "LA15_N",
+          "fmc_pin": "H20",
+          "net": "AD_SYNC",
+          "function": "Digital synchronization signal (both ADCs)"
+        },
+        {
+          "signal": "LA16_N",
+          "fmc_pin": "G19",
+          "net": "AD1_SMI_SCLK",
+          "function": "AD1 signal-monitor serial output clock"
+        },
+        {
+          "signal": "LA16_P",
+          "fmc_pin": "G18",
+          "net": "AD1_SMI_SDFS",
+          "function": "AD1 signal-monitor serial frame sync"
+        },
+        {
+          "signal": "LA17_CC_N",
+          "fmc_pin": "D21",
+          "net": "AD2_SPI_CS",
+          "function": "AD2 SPI chip select"
+        },
+        {
+          "signal": "LA17_CC_P",
+          "fmc_pin": "D20",
+          "net": "CLK2_125M",
+          "function": "125 MHz reference/sample clock for AD2"
+        },
+        {
+          "signal": "LA18_CC_N",
+          "fmc_pin": "C23",
+          "net": "AD2_DCO_N",
+          "function": "AD2 LVDS data clock output (DCO)"
+        },
+        {
+          "signal": "LA18_CC_P",
+          "fmc_pin": "C22",
+          "net": "AD2_DCO_P",
+          "function": "AD2 LVDS data clock output (DCO)"
+        },
+        {
+          "signal": "LA19_N",
+          "fmc_pin": "H23",
+          "net": "AD2_D1_N",
+          "function": "AD2 LVDS data bit 1, channels A+B interleaved"
+        },
+        {
+          "signal": "LA19_P",
+          "fmc_pin": "H22",
+          "net": "AD2_D1_P",
+          "function": "AD2 LVDS data bit 1, channels A+B interleaved"
+        },
+        {
+          "signal": "LA20_N",
+          "fmc_pin": "G22",
+          "net": "AD2_DO_N",
+          "function": "AD2 LVDS data bit 0 (D0), channels A+B interleaved"
+        },
+        {
+          "signal": "LA20_P",
+          "fmc_pin": "G21",
+          "net": "AD2_DO_P",
+          "function": "AD2 LVDS data bit 0 (D0), channels A+B interleaved"
+        },
+        {
+          "signal": "LA21_N",
+          "fmc_pin": "H26",
+          "net": "AD2_D4_N",
+          "function": "AD2 LVDS data bit 4, channels A+B interleaved"
+        },
+        {
+          "signal": "LA21_P",
+          "fmc_pin": "H25",
+          "net": "AD2_D4_P",
+          "function": "AD2 LVDS data bit 4, channels A+B interleaved"
+        },
+        {
+          "signal": "LA22_N",
+          "fmc_pin": "G25",
+          "net": "AD2_D3_N",
+          "function": "AD2 LVDS data bit 3, channels A+B interleaved"
+        },
+        {
+          "signal": "LA22_P",
+          "fmc_pin": "G24",
+          "net": "AD2_D3_P",
+          "function": "AD2 LVDS data bit 3, channels A+B interleaved"
+        },
+        {
+          "signal": "LA23_N",
+          "fmc_pin": "D24",
+          "net": "AD2_SPI_SCLK",
+          "function": "AD2 SPI configuration clock"
+        },
+        {
+          "signal": "LA23_P",
+          "fmc_pin": "D23",
+          "net": "AD2_SPI_SDIO",
+          "function": "AD2 SPI data (SDIO)"
+        },
+        {
+          "signal": "LA24_N",
+          "fmc_pin": "H29",
+          "net": "AD2_D7_N",
+          "function": "AD2 LVDS data bit 7, channels A+B interleaved"
+        },
+        {
+          "signal": "LA24_P",
+          "fmc_pin": "H28",
+          "net": "AD2_D7_P",
+          "function": "AD2 LVDS data bit 7, channels A+B interleaved"
+        },
+        {
+          "signal": "LA25_N",
+          "fmc_pin": "G28",
+          "net": "AD2_D6_N",
+          "function": "AD2 LVDS data bit 6, channels A+B interleaved"
+        },
+        {
+          "signal": "LA25_P",
+          "fmc_pin": "G27",
+          "net": "AD2_D6_P",
+          "function": "AD2 LVDS data bit 6, channels A+B interleaved"
+        },
+        {
+          "signal": "LA26_N",
+          "fmc_pin": "D27",
+          "net": "AD2_D5_N",
+          "function": "AD2 LVDS data bit 5, channels A+B interleaved"
+        },
+        {
+          "signal": "LA26_P",
+          "fmc_pin": "D26",
+          "net": "AD2_D5_P",
+          "function": "AD2 LVDS data bit 5, channels A+B interleaved"
+        },
+        {
+          "signal": "LA27_N",
+          "fmc_pin": "C27",
+          "net": "AD2_D2_N",
+          "function": "AD2 LVDS data bit 2, channels A+B interleaved"
+        },
+        {
+          "signal": "LA27_P",
+          "fmc_pin": "C26",
+          "net": "AD2_D2_P",
+          "function": "AD2 LVDS data bit 2, channels A+B interleaved"
+        },
+        {
+          "signal": "LA28_N",
+          "fmc_pin": "H32",
+          "net": "AD2_D9_N",
+          "function": "AD2 LVDS data bit 9, channels A+B interleaved"
+        },
+        {
+          "signal": "LA28_P",
+          "fmc_pin": "H31",
+          "net": "AD2_D9_P",
+          "function": "AD2 LVDS data bit 9, channels A+B interleaved"
+        },
+        {
+          "signal": "LA29_N",
+          "fmc_pin": "G31",
+          "net": "AD2_D8_N",
+          "function": "AD2 LVDS data bit 8, channels A+B interleaved"
+        },
+        {
+          "signal": "LA29_P",
+          "fmc_pin": "G30",
+          "net": "AD2_D8_P",
+          "function": "AD2 LVDS data bit 8, channels A+B interleaved"
+        },
+        {
+          "signal": "LA30_N",
+          "fmc_pin": "H35",
+          "net": "AD2_D11_N",
+          "function": "AD2 LVDS data bit 11, channels A+B interleaved (pair partner of documented D11+; manual omits this row)"
+        },
+        {
+          "signal": "LA30_P",
+          "fmc_pin": "H34",
+          "net": "AD2_D11_P",
+          "function": "AD2 LVDS data bit 11, channels A+B interleaved"
+        },
+        {
+          "signal": "LA31_N",
+          "fmc_pin": "G34",
+          "net": "AD2_D10_N",
+          "function": "AD2 LVDS data bit 10, channels A+B interleaved"
+        },
+        {
+          "signal": "LA31_P",
+          "fmc_pin": "G33",
+          "net": "AD2_D10_P",
+          "function": "AD2 LVDS data bit 10, channels A+B interleaved"
+        },
+        {
+          "signal": "LA32_P",
+          "fmc_pin": "H37",
+          "net": "AD2_SMI_SDO",
+          "function": "AD2 signal-monitor serial output data"
+        },
+        {
+          "signal": "LA33_N",
+          "fmc_pin": "G37",
+          "net": "AD2_SMI_SCLK",
+          "function": "AD2 signal-monitor serial output clock"
+        },
+        {
+          "signal": "LA33_P",
+          "fmc_pin": "G36",
+          "net": "AD2_SMI_SDFS",
+          "function": "AD2 signal-monitor serial frame sync"
+        }
+      ],
+      "groups": [
+        {
+          "name": "AD9627 U1 (channels 1-2)",
+          "same_bank": true,
+          "signals": [
+            "LA00_CC_N",
+            "LA00_CC_P",
+            "LA02_N",
+            "LA02_P",
+            "LA04_N",
+            "LA04_P",
+            "LA05_N",
+            "LA05_P",
+            "LA06_N",
+            "LA06_P",
+            "LA07_N",
+            "LA07_P",
+            "LA08_N",
+            "LA08_P",
+            "LA09_N",
+            "LA09_P",
+            "LA10_N",
+            "LA10_P",
+            "LA11_N",
+            "LA11_P",
+            "LA12_N",
+            "LA12_P",
+            "LA13_N",
+            "LA13_P",
+            "LA14_N",
+            "LA14_P"
+          ]
+        },
+        {
+          "name": "AD9627 U2 (channels 3-4)",
+          "same_bank": true,
+          "signals": [
+            "LA18_CC_N",
+            "LA18_CC_P",
+            "LA19_N",
+            "LA19_P",
+            "LA20_N",
+            "LA20_P",
+            "LA21_N",
+            "LA21_P",
+            "LA22_N",
+            "LA22_P",
+            "LA24_N",
+            "LA24_P",
+            "LA25_N",
+            "LA25_P",
+            "LA26_N",
+            "LA26_P",
+            "LA27_N",
+            "LA27_P",
+            "LA28_N",
+            "LA28_P",
+            "LA29_N",
+            "LA29_P",
+            "LA30_N",
+            "LA30_P",
+            "LA31_N",
+            "LA31_P"
+          ]
+        }
+      ]
+    }
+  ]
+}
