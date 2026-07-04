@@ -87,6 +87,11 @@
           "description": "QFN 72-pad."
         },
         {
+          "value": "MG121",
+          "label": "MG121",
+          "description": "121-ball csfBGA."
+        },
+        {
           "value": "BG256",
           "label": "BG256",
           "description": "caBGA 256-ball."
