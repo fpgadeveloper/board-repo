@@ -235,6 +235,7 @@ Board and silicon vendors are defined in `vendors.json`. Each entity references 
 | `bittware` | BittWare |
 | `brisbanesilicon` | BrisbaneSilicon |
 | `bunnie-studios` | Bunnie Studios |
+| `citrobits` | Citrobits |
 | `cologne-chip` | Cologne Chip |
 | `critical-link` | Critical Link |
 | `digilent` | Digilent |
