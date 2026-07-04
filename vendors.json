@@ -207,6 +207,10 @@
     "star-dundee": {
       "name": "STAR-Dundee",
       "url": "https://www.star-dundee.com"
+    },
+    "citrobits": {
+      "name": "Citrobits",
+      "url": "https://citrobits.com"
     }
   },
   "silicon_vendors": {
