@@ -1,6 +1,6 @@
 {
   "family": "PolarFire SoC",
-  "description": "Microchip PolarFire SoC FPGA with integrated RISC-V processor subsystem. Format: MPFS{density}{variant}-{package}{temp}.",
+  "description": "Microchip PolarFire SoC FPGA with integrated RISC-V processor subsystem. Format: MPFS{density}{variant}-[speed]{package}{temp}.",
   "fields": [
     {
       "id": "prefix",
@@ -75,6 +75,21 @@
       "length": 1,
       "type": "fixed",
       "value": "-"
+    },
+    {
+      "id": "speed",
+      "label": "Speed Grade",
+      "description": "Speed grade designator. Omitted for the standard (STD) speed grade; \"1\" denotes the -1 speed grade with higher performance.",
+      "length": 1,
+      "type": "select",
+      "required": false,
+      "options": [
+        {
+          "value": "1",
+          "label": "-1",
+          "description": "-1 speed grade (higher performance than STD)."
+        }
+      ]
     },
     {
       "id": "package",
