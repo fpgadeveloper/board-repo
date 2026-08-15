@@ -4,7 +4,7 @@ name: PolarFire SoC Discovery Kit
 status: active
 url: https://www.microchip.com/en-us/development-tool/mpfs-disco-kit
 vendor: microchip
-price: null
+price: { value: 132, currency: USD }
 device: { part: MPFS095T-1FCSG325E, vendor: microchip }
 ---
 
