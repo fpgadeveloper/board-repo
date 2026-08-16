@@ -268,6 +268,16 @@
           "description": "FSGA 2577-pin"
         },
         {
+          "value": "FSVA3824",
+          "label": "FSVA3824",
+          "description": "FSVA 3824-pin (VU19P, 48 GTY / 2014 HP I/O)"
+        },
+        {
+          "value": "FSVB3824",
+          "label": "FSVB3824",
+          "description": "FSVB 3824-pin (VU19P, 80 GTY / 1696 HP I/O)"
+        },
+        {
           "value": "FSVH1924",
           "label": "FSVH1924",
           "description": "FSVH 1924-pin"
