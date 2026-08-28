@@ -31,7 +31,7 @@ device: { part: XCVU9P-2FLGB2104E, vendor: amd-xilinx }
 - QSFP28 x2
 
 ## USB UART/JTAG
-- Micro-B JTAG
+- Mini-B JTAG
 
 ## Sensors
 - Temperature SI7055-A20-IM
@@ -51,29 +51,40 @@ device: { part: XCVU9P-2FLGB2104E, vendor: amd-xilinx }
 
 ## Notes
 
-### Memory configurations
+### Memory configuration
 
-Aldec offers the board in two memory builds under the same product name, with no
-separate ordering code:
+This entry documents the standard 432 Mb QDR-II+ build — three 144 Mb QDR-II+
+SRAMs, the configuration described by Aldec's published Vivado board definition
+files ([github.com/Aldecinc/HES](https://github.com/Aldecinc/HES)), which also
+give the 18-bit width of each QDR-II+ interface.
 
-- **432 Mb QDR-II+** — three 144 Mb QDR-II+ SRAMs (the configuration listed above)
-- **144 Mb QDR-II+ with 32 Gb DDR4** — one 144 Mb QDR-II+ SRAM plus two 16 Gb
-  32-bit DDR4 devices
-
-This entry lists the three-QDR-II+ build, which is the configuration described by
-Aldec's published Vivado board definition files
-([github.com/Aldecinc/HES](https://github.com/Aldecinc/HES)); those files also
-give the 18-bit width of each QDR-II+ interface. Check with Aldec which build a
-given board carries.
+Aldec's product page also describes a 144 Mb QDR-II+ plus 32 Gb DDR4 build
+(two 16 Gb devices). Aldec confirms that is a separate product with its own
+ordering code, not a build option of HES-XCVU9P-QDR; it is not covered by this
+entry.
 
 ### FPGA speed grade
 
 The product page names the FPGA as XCVU9P-FLGB2104 without a speed grade. Aldec
 publishes Vivado board definitions for two board revisions — 1.5-2-E and 1.5-3-E
-— carrying `XCVU9P-2FLGB2104E` and `XCVU9P-3FLGB2104E` respectively. This entry
-lists the -2 speed grade; confirm the grade of a specific unit with Aldec.
+— carrying `XCVU9P-2FLGB2104E` and `XCVU9P-3FLGB2104E` respectively, and
+confirms both speed grades are orderable. This entry lists the -2 grade; specify
+the grade you need when ordering.
 
 ### Board naming
 
-The board silkscreen carries Aldec's earlier HES-HPC-HFT name for this hardware.
-HES-XCVU9P-QDR is the current product name.
+**HES-XCVU9P-QDR** is the official product name and orderable part number.
+Boards silkscreened **HES-HPC-HFT** carry Aldec's earlier internal technical
+name for the same hardware, since superseded.
+
+### USB-JTAG
+
+The board carries an on-board JTAG module; programming needs only a USB Mini-B
+cable, with no external programming pod.
+
+### Documentation
+
+Aldec does not publish a user guide or technical specification for this board —
+the documentation portal requires a login and full documentation is under NDA.
+This entry is built from the product page, Aldec's published Vivado board files,
+and details confirmed by Aldec.
