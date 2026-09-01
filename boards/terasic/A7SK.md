@@ -70,7 +70,9 @@ Other default settings worth knowing before first power-on:
 - **PCIe presence detect** — a DIP switch selects x1 / x4 / x8 presence detect; the default is x8 detect enabled, x1 and x4 disabled.
 - **JTAG bypass** — both positions of the JTAG bypass switch default to ON, which keeps the HPS and the FMC+ connector *out* of the board JTAG chain. Switching a position OFF without a JTAG device present on that branch breaks the chain and Quartus will no longer detect the FPGA.
 - **Force external power** — this switch defaults to ON, so the 2x4 12 V auxiliary power connector must be attached even when the card sits in a host PCIe slot, otherwise the board will not power up.
-- **FMC_VCCIO select header** — a 3-pin jumper sets the I/O standard of the FPGA bank serving the FMC+ HA/HB pins to 1.2 V (default) or 1.5 V.
+- **FMC_VCCIO select header (JP1)** — a 3-pin jumper sets `VCCIO_FMCP_HAB`, the VCCIO of the FPGA bank serving the FMC+ HA/HB pins and CLK1_M2C, to 1.2 V (default) or 1.5 V.
+  This is a host-side bank rail only — it does **not** change VADJ: the FMC+ connector's VADJ rail is fixed at 1.2 V (4 A max), and the FMC+ LA-bank I/O is fixed at 1.2 V, so a mezzanine always sees 1.2 V VADJ regardless of the jumper.
+  The user manual calls this header JP1 in one section and JP2 / JP3 in two others; the board silkscreen reads JP1.
 
 The factory SoC boot flow is FPGA-configuration-first: the SDM loads its firmware, the FPGA image and the HPS first-stage boot loader from the QSPI flash, then the second-stage boot loader, kernel and root filesystem come from the microSD card.
 
