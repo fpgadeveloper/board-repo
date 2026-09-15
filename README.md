@@ -262,7 +262,7 @@ Board and silicon vendors are defined in `vendors.json`. Each entity references 
 | `opsero` | Opsero |
 | `proyecto-ciaa` | Proyecto CIAA |
 | `real-digital` | Real Digital |
-| `redpitaya` | RedPitaya |
+| `redpitaya` | Red Pitaya |
 | `rhs-research` | RHS Research |
 | `sipeed` | Sipeed |
 | `star-dundee` | STAR-Dundee |
