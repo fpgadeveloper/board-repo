@@ -105,6 +105,13 @@ Examples:
 - `DDR4 16GB 64-bit SODIMM`
 - `HBM2 8GB`
 
+**Empty sockets.** A SODIMM / DIMM socket that ships without a module has no size. Write it with no size token, a slot form factor (required), and a trailing literal `empty` — it maps to `populated: false` and no `size_mb`:
+
+Grammar: `<type> [<width>-bit] [ECC] <form_factor> empty`
+
+- `DDR4 64-bit SODIMM empty`
+- `DDR4 72-bit ECC DIMM empty`
+
 ### `## SRAM`
 
 Schema: `sram[]` (array of `sram_interface`). Discrete static / non-volatile RAM chips — distinct from the DRAM banks in `## Memory`. HyperRAM and PSRAM are pseudo-static DRAM and belong in `## Memory`, not here.

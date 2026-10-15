@@ -211,10 +211,31 @@ MEMORY_RE = re.compile(
     r"$"
 )
 
+# Empty memory socket (shipped without a module): no size, slot form factor
+# required, literal `empty` at the end. e.g. `DDR4 64-bit SODIMM empty`.
+MEMORY_EMPTY_RE = re.compile(
+    r"^(\S+)"
+    r"(?: (\d+)-bit)?"
+    r"( ECC)?"
+    r" (SODIMM|DIMM|UDIMM|RDIMM|LRDIMM)"
+    r" empty$"
+)
+
 
 def parse_memory(bullets, base_line, warnings):
     items = []
     for text, off in bullets:
+        e = MEMORY_EMPTY_RE.match(text)
+        if e:
+            item = {"type": e.group(1)}
+            if e.group(2):
+                item["width_bits"] = int(e.group(2))
+            if e.group(3):
+                item["ecc"] = True
+            item["form_factor"] = e.group(4).lower()
+            item["populated"] = False
+            items.append(item)
+            continue
         m = MEMORY_RE.match(text)
         if not m:
             warn(warnings, base_line + off, f"Memory: unrecognized {text!r}")
