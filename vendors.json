@@ -211,6 +211,10 @@
     "citrobits": {
       "name": "Citrobits",
       "url": "https://citrobits.com"
+    },
+    "mixed-signal-studio": {
+      "name": "Mixed Signal Studio",
+      "url": "https://www.mixedsignalstudio.com"
     }
   },
   "silicon_vendors": {

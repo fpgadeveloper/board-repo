@@ -255,6 +255,7 @@ Board and silicon vendors are defined in `vendors.json`. Each entity references 
 | `krtkl` | Krtkl |
 | `lattice` | Lattice |
 | `microchip` | Microchip |
+| `mixed-signal-studio` | Mixed Signal Studio |
 | `muselab` | MuseLab |
 | `myir` | MYIR Tech |
 | `numato-lab` | Numato Lab |
