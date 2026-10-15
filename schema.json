@@ -600,8 +600,12 @@
     },
     "memory_interface": {
       "type": "object",
-      "required": ["type", "size_mb"],
+      "required": ["type"],
       "additionalProperties": false,
+      "allOf": [
+        { "if": { "not": { "required": ["populated"], "properties": { "populated": { "const": false } } } }, "then": { "required": ["size_mb"] } },
+        { "if": { "required": ["populated"], "properties": { "populated": { "const": false } } }, "then": { "not": { "required": ["size_mb"] }, "required": ["form_factor"], "properties": { "form_factor": { "not": { "const": "component" } } } } }
+      ],
       "properties": {
         "type": {
           "type": "string",
@@ -611,7 +615,11 @@
         "size_mb": {
           "type": "integer",
           "minimum": 1,
-          "description": "Total capacity of this bank in megabytes. 4 GB → 4096."
+          "description": "Total capacity of this bank in megabytes. 4 GB → 4096. Required unless `populated` is false."
+        },
+        "populated": {
+          "type": "boolean",
+          "description": "False for a memory socket (SODIMM / DIMM) that ships empty — the user supplies the module. Omit when memory is fitted (default true). An empty socket has no size_mb and must have a slot form_factor."
         },
         "form_factor": {
           "type": "string",
