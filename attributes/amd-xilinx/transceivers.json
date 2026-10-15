@@ -2578,12 +2578,6 @@
     "XCAU10PFFVB676-2": [
       "12 (GTH, 16.375 Gb/s max)"
     ],
-    "XCAU10PFFVB676-L2": [
-      "12 (GTH, 16.375 Gb/s max)"
-    ],
-    "XCAU10PFFVB676-3": [
-      "12 (GTH)"
-    ],
     "XCAU10PSBVB484-1": [
       "12 (GTH, 12.5 Gb/s max)"
     ],
@@ -2593,12 +2587,6 @@
     "XCAU10PSBVB484-2": [
       "12 (GTH, 16.375 Gb/s max)"
     ],
-    "XCAU10PSBVB484-L2": [
-      "12 (GTH, 16.375 Gb/s max)"
-    ],
-    "XCAU10PSBVB484-3": [
-      "12 (GTH)"
-    ],
     "XCAU10PUBVA368-1": [
       "8 (GTH, 12.5 Gb/s max)"
     ],
@@ -2606,13 +2594,7 @@
       "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCAU10PUBVA368-2": [
-      "8 (GTH, 16.375 Gb/s max)"
-    ],
-    "XCAU10PUBVA368-L2": [
-      "8 (GTH, 16.375 Gb/s max)"
-    ],
-    "XCAU10PUBVA368-3": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCAU15PFFVB676-1": [
       "12 (GTH, 12.5 Gb/s max)"
@@ -2623,12 +2605,6 @@
     "XCAU15PFFVB676-2": [
       "12 (GTH, 16.375 Gb/s max)"
     ],
-    "XCAU15PFFVB676-L2": [
-      "12 (GTH, 16.375 Gb/s max)"
-    ],
-    "XCAU15PFFVB676-3": [
-      "12 (GTH)"
-    ],
     "XCAU15PSBVB484-1": [
       "12 (GTH, 12.5 Gb/s max)"
     ],
@@ -2638,12 +2614,6 @@
     "XCAU15PSBVB484-2": [
       "12 (GTH, 16.375 Gb/s max)"
     ],
-    "XCAU15PSBVB484-L2": [
-      "12 (GTH, 16.375 Gb/s max)"
-    ],
-    "XCAU15PSBVB484-3": [
-      "12 (GTH)"
-    ],
     "XCAU15PUBVA368-1": [
       "8 (GTH, 12.5 Gb/s max)"
     ],
@@ -2651,13 +2621,7 @@
       "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCAU15PUBVA368-2": [
-      "8 (GTH, 16.375 Gb/s max)"
-    ],
-    "XCAU15PUBVA368-L2": [
-      "8 (GTH, 16.375 Gb/s max)"
-    ],
-    "XCAU15PUBVA368-3": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCAU20PFFVB676-1": [
       "12 (GTY, 16.375 Gb/s max)"
@@ -2668,26 +2632,14 @@
     "XCAU20PFFVB676-2": [
       "12 (GTY, 16.375 Gb/s max)"
     ],
-    "XCAU20PFFVB676-L2": [
-      "12 (GTY, 16.375 Gb/s max)"
-    ],
-    "XCAU20PFFVB676-3": [
-      "12 (GTY)"
-    ],
     "XCAU20PSFVB784-1": [
-      "12 (GTY, 16.375 Gb/s max)"
+      "12 (GTY, 12.5 Gb/s max)"
     ],
     "XCAU20PSFVB784-L1": [
-      "12 (GTY, 16.375 Gb/s max)"
+      "12 (GTY, 12.5 Gb/s max)"
     ],
     "XCAU20PSFVB784-2": [
-      "12 (GTY, 16.375 Gb/s max)"
-    ],
-    "XCAU20PSFVB784-L2": [
-      "12 (GTY, 16.375 Gb/s max)"
-    ],
-    "XCAU20PSFVB784-3": [
-      "12 (GTY)"
+      "12 (GTY, 12.5 Gb/s max)"
     ],
     "XCAU25PFFVB676-1": [
       "12 (GTY, 16.375 Gb/s max)"
@@ -2698,26 +2650,14 @@
     "XCAU25PFFVB676-2": [
       "12 (GTY, 16.375 Gb/s max)"
     ],
-    "XCAU25PFFVB676-L2": [
-      "12 (GTY, 16.375 Gb/s max)"
-    ],
-    "XCAU25PFFVB676-3": [
-      "12 (GTY)"
-    ],
     "XCAU25PSFVB784-1": [
-      "12 (GTY, 16.375 Gb/s max)"
+      "12 (GTY, 12.5 Gb/s max)"
     ],
     "XCAU25PSFVB784-L1": [
-      "12 (GTY, 16.375 Gb/s max)"
+      "12 (GTY, 12.5 Gb/s max)"
     ],
     "XCAU25PSFVB784-2": [
-      "12 (GTY, 16.375 Gb/s max)"
-    ],
-    "XCAU25PSFVB784-L2": [
-      "12 (GTY, 16.375 Gb/s max)"
-    ],
-    "XCAU25PSFVB784-3": [
-      "12 (GTY)"
+      "12 (GTY, 12.5 Gb/s max)"
     ],
     "XCAU7PFCVA289-1": [
       "4 (GTH, 12.5 Gb/s max)"
@@ -2726,13 +2666,7 @@
       "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCAU7PFCVA289-2": [
-      "4 (GTH, 16.375 Gb/s max)"
-    ],
-    "XCAU7PFCVA289-L2": [
-      "4 (GTH, 16.375 Gb/s max)"
-    ],
-    "XCAU7PFCVA289-3": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCAU7PSBVC484-1": [
       "4 (GTH, 12.5 Gb/s max)"
@@ -2741,25 +2675,13 @@
       "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCAU7PSBVC484-2": [
-      "4 (GTH, 16.375 Gb/s max)"
-    ],
-    "XCAU7PSBVC484-L2": [
-      "4 (GTH, 16.375 Gb/s max)"
-    ],
-    "XCAU7PSBVC484-3": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCKU025FFVA1156-1": [
       "12 (GTH, 12.5 Gb/s max)"
     ],
-    "XCKU025FFVA1156-L1": [
-      "12 (GTH, 12.5 Gb/s max)"
-    ],
     "XCKU025FFVA1156-2": [
       "12 (GTH, 16.375 Gb/s max)"
-    ],
-    "XCKU025FFVA1156-3": [
-      "12 (GTH, 12.5 Gb/s max)"
     ],
     "XCKU035FBVA676-1": [
       "16 (GTH, 12.5 Gb/s max)"
@@ -2768,7 +2690,7 @@
       "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCKU035FBVA676-2": [
-      "16 (GTH, 16.375 Gb/s max)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCKU035FBVA676-3": [
       "16 (GTH, 12.5 Gb/s max)"
@@ -2780,7 +2702,7 @@
       "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCKU035FBVA900-2": [
-      "16 (GTH, 16.375 Gb/s max)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCKU035FBVA900-3": [
       "16 (GTH, 12.5 Gb/s max)"
@@ -2795,7 +2717,7 @@
       "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU035FFVA1156-3": [
-      "16 (GTH, 12.5 Gb/s max)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU035SFVA784-1": [
       "8 (GTH, 12.5 Gb/s max)"
@@ -2804,7 +2726,7 @@
       "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCKU035SFVA784-2": [
-      "8 (GTH, 16.375 Gb/s max)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCKU035SFVA784-3": [
       "8 (GTH, 12.5 Gb/s max)"
@@ -2816,7 +2738,7 @@
       "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCKU040FBVA676-2": [
-      "16 (GTH, 16.375 Gb/s max)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCKU040FBVA676-3": [
       "16 (GTH, 12.5 Gb/s max)"
@@ -2828,7 +2750,7 @@
       "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCKU040FBVA900-2": [
-      "16 (GTH, 16.375 Gb/s max)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCKU040FBVA900-3": [
       "16 (GTH, 12.5 Gb/s max)"
@@ -2843,7 +2765,7 @@
       "20 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU040FFVA1156-3": [
-      "20 (GTH, 12.5 Gb/s max)"
+      "20 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU040SFVA784-1": [
       "8 (GTH, 12.5 Gb/s max)"
@@ -2852,7 +2774,7 @@
       "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCKU040SFVA784-2": [
-      "8 (GTH, 16.375 Gb/s max)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCKU040SFVA784-3": [
       "8 (GTH, 12.5 Gb/s max)"
@@ -2867,7 +2789,7 @@
       "28 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU060FFVA1156-3": [
-      "28 (GTH, 12.5 Gb/s max)"
+      "28 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU060FFVA1517-1": [
       "32 (GTH, 12.5 Gb/s max)"
@@ -2879,7 +2801,7 @@
       "32 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU060FFVA1517-3": [
-      "32 (GTH, 12.5 Gb/s max)"
+      "32 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU085FLVA1517-1": [
       "48 (GTH, 12.5 Gb/s max)"
@@ -2891,7 +2813,7 @@
       "48 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU085FLVA1517-3": [
-      "48 (GTH, 12.5 Gb/s max)"
+      "48 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU085FLVB1760-1": [
       "44 (GTH, 12.5 Gb/s max)"
@@ -2903,7 +2825,7 @@
       "44 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU085FLVB1760-3": [
-      "44 (GTH, 12.5 Gb/s max)"
+      "44 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU085FLVF1924-1": [
       "56 (GTH, 12.5 Gb/s max)"
@@ -2915,13 +2837,9 @@
       "56 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU085FLVF1924-3": [
-      "56 (GTH, 12.5 Gb/s max)"
+      "56 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU095FFVA1156-1": [
-      "20 (GTH, 12.5 Gb/s max)",
-      "8 (GTY, 12.5 Gb/s max)"
-    ],
-    "XCKU095FFVA1156-L1": [
       "20 (GTH, 12.5 Gb/s max)",
       "8 (GTY, 12.5 Gb/s max)"
     ],
@@ -2929,15 +2847,7 @@
       "20 (GTH, 16.375 Gb/s max)",
       "8 (GTY, 16.375 Gb/s max)"
     ],
-    "XCKU095FFVA1156-3": [
-      "20 (GTH, 12.5 Gb/s max)",
-      "8 (GTY)"
-    ],
     "XCKU095FFVB1760-1": [
-      "32 (GTH, 12.5 Gb/s max)",
-      "16 (GTY, 12.5 Gb/s max)"
-    ],
-    "XCKU095FFVB1760-L1": [
       "32 (GTH, 12.5 Gb/s max)",
       "16 (GTY, 12.5 Gb/s max)"
     ],
@@ -2945,15 +2855,7 @@
       "32 (GTH, 16.375 Gb/s max)",
       "16 (GTY, 16.375 Gb/s max)"
     ],
-    "XCKU095FFVB1760-3": [
-      "32 (GTH, 12.5 Gb/s max)",
-      "16 (GTY)"
-    ],
     "XCKU095FFVB2104-1": [
-      "32 (GTH, 12.5 Gb/s max)",
-      "32 (GTY, 12.5 Gb/s max)"
-    ],
-    "XCKU095FFVB2104-L1": [
       "32 (GTH, 12.5 Gb/s max)",
       "32 (GTY, 12.5 Gb/s max)"
     ],
@@ -2961,25 +2863,13 @@
       "32 (GTH, 16.375 Gb/s max)",
       "32 (GTY, 16.375 Gb/s max)"
     ],
-    "XCKU095FFVB2104-3": [
-      "32 (GTH, 12.5 Gb/s max)",
-      "32 (GTY)"
-    ],
     "XCKU095FFVC1517-1": [
-      "20 (GTH, 12.5 Gb/s max)",
-      "20 (GTY, 12.5 Gb/s max)"
-    ],
-    "XCKU095FFVC1517-L1": [
       "20 (GTH, 12.5 Gb/s max)",
       "20 (GTY, 12.5 Gb/s max)"
     ],
     "XCKU095FFVC1517-2": [
       "20 (GTH, 16.375 Gb/s max)",
       "20 (GTY, 16.375 Gb/s max)"
-    ],
-    "XCKU095FFVC1517-3": [
-      "20 (GTH, 12.5 Gb/s max)",
-      "20 (GTY)"
     ],
     "XCKU115FLVA1517-1": [
       "48 (GTH, 12.5 Gb/s max)"
@@ -2991,7 +2881,7 @@
       "48 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU115FLVA1517-3": [
-      "48 (GTH, 12.5 Gb/s max)"
+      "48 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU115FLVA2104-1": [
       "52 (GTH, 12.5 Gb/s max)"
@@ -3003,7 +2893,7 @@
       "52 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU115FLVA2104-3": [
-      "52 (GTH, 12.5 Gb/s max)"
+      "52 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU115FLVB1760-1": [
       "52 (GTH, 12.5 Gb/s max)"
@@ -3015,7 +2905,7 @@
       "52 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU115FLVB1760-3": [
-      "52 (GTH, 12.5 Gb/s max)"
+      "52 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU115FLVB2104-1": [
       "64 (GTH, 12.5 Gb/s max)"
@@ -3027,7 +2917,7 @@
       "64 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU115FLVB2104-3": [
-      "64 (GTH, 12.5 Gb/s max)"
+      "64 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU115FLVD1517-1": [
       "64 (GTH, 12.5 Gb/s max)"
@@ -3039,7 +2929,7 @@
       "64 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU115FLVD1517-3": [
-      "64 (GTH, 12.5 Gb/s max)"
+      "64 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU115FLVD1924-1": [
       "52 (GTH, 12.5 Gb/s max)"
@@ -3051,7 +2941,7 @@
       "52 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU115FLVD1924-3": [
-      "52 (GTH, 12.5 Gb/s max)"
+      "52 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU115FLVF1924-1": [
       "64 (GTH, 12.5 Gb/s max)"
@@ -3063,7 +2953,7 @@
       "64 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU115FLVF1924-3": [
-      "64 (GTH, 12.5 Gb/s max)"
+      "64 (GTH, 16.375 Gb/s max)"
     ],
     "XCKU11PFFVA1156-1": [
       "20 (GTH, 12.5 Gb/s max)",
@@ -5217,427 +5107,427 @@
       "76 (GTY, 32.75 Gb/s max)"
     ],
     "XCZU11EGFFVB1517-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU11EGFFVB1517-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU11EGFFVB1517-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU11EGFFVB1517-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU11EGFFVB1517-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU11EGFFVB1517-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU11EGFFVB1517-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU11EGFFVB1517-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU11EGFFVB1517-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU11EGFFVC1156-1": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU11EGFFVC1156-1L": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU11EGFFVC1156-1LV": [
-      "20 (GTH)"
+      "20 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU11EGFFVC1156-2": [
-      "20 (GTH)"
+      "20 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU11EGFFVC1156-2L": [
-      "20 (GTH)"
+      "20 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU11EGFFVC1156-2LV": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU11EGFFVC1156-3": [
-      "20 (GTH)"
+      "20 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU11EGFFVC1156-1Q": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU11EGFFVC1156-1M": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU11EGFFVC1760-1": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU11EGFFVC1760-1L": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU11EGFFVC1760-1LV": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 10.3125 Gb/s max)",
+      "16 (GTY, 12.5 Gb/s max)"
     ],
     "XCZU11EGFFVC1760-2": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 16.375 Gb/s max)",
+      "16 (GTY, 28.21 Gb/s max)"
     ],
     "XCZU11EGFFVC1760-2L": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 16.375 Gb/s max)",
+      "16 (GTY, 28.21 Gb/s max)"
     ],
     "XCZU11EGFFVC1760-2LV": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 28.21 Gb/s max)"
     ],
     "XCZU11EGFFVC1760-3": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 16.375 Gb/s max)",
+      "16 (GTY, 32.75 Gb/s max)"
     ],
     "XCZU11EGFFVC1760-1Q": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU11EGFFVC1760-1M": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU11EGFFVF1517-1": [
-      "32 (GTH)"
+      "32 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU11EGFFVF1517-1L": [
-      "32 (GTH)"
+      "32 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU11EGFFVF1517-1LV": [
-      "32 (GTH)"
+      "32 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU11EGFFVF1517-2": [
-      "32 (GTH)"
+      "32 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU11EGFFVF1517-2L": [
-      "32 (GTH)"
+      "32 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU11EGFFVF1517-2LV": [
-      "32 (GTH)"
+      "32 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU11EGFFVF1517-3": [
-      "32 (GTH)"
+      "32 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU11EGFFVF1517-1Q": [
-      "32 (GTH)"
+      "32 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU11EGFFVF1517-1M": [
-      "32 (GTH)"
+      "32 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU15EGFFVB1156-1": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU15EGFFVB1156-1L": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU15EGFFVB1156-1LV": [
-      "24 (GTH)"
+      "24 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU15EGFFVB1156-2": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU15EGFFVB1156-2L": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU15EGFFVB1156-2LV": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU15EGFFVB1156-3": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU15EGFFVB1156-1Q": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU15EGFFVB1156-1M": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU15EGFFVC900-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU15EGFFVC900-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU15EGFFVC900-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU15EGFFVC900-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU15EGFFVC900-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU15EGFFVC900-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU15EGFFVC900-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU15EGFFVC900-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU15EGFFVC900-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU17EGFFVB1517-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU17EGFFVB1517-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU17EGFFVB1517-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU17EGFFVB1517-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU17EGFFVB1517-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU17EGFFVB1517-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU17EGFFVB1517-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU17EGFFVB1517-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU17EGFFVB1517-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU17EGFFVC1760-1": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU17EGFFVC1760-1L": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU17EGFFVC1760-1LV": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 10.3125 Gb/s max)",
+      "16 (GTY, 12.5 Gb/s max)"
     ],
     "XCZU17EGFFVC1760-2": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 16.375 Gb/s max)",
+      "16 (GTY, 28.21 Gb/s max)"
     ],
     "XCZU17EGFFVC1760-2L": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 16.375 Gb/s max)",
+      "16 (GTY, 28.21 Gb/s max)"
     ],
     "XCZU17EGFFVC1760-2LV": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 28.21 Gb/s max)"
     ],
     "XCZU17EGFFVC1760-3": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 16.375 Gb/s max)",
+      "16 (GTY, 32.75 Gb/s max)"
     ],
     "XCZU17EGFFVC1760-1Q": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU17EGFFVC1760-1M": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU17EGFFVD1760-1": [
-      "44 (GTH)",
-      "28 (GTY)"
+      "44 (GTH, 12.5 Gb/s max)",
+      "28 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU17EGFFVD1760-1L": [
-      "44 (GTH)",
-      "28 (GTY)"
+      "44 (GTH, 12.5 Gb/s max)",
+      "28 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU17EGFFVD1760-1LV": [
-      "44 (GTH)",
-      "28 (GTY)"
+      "44 (GTH, 10.3125 Gb/s max)",
+      "28 (GTY, 12.5 Gb/s max)"
     ],
     "XCZU17EGFFVD1760-2": [
-      "44 (GTH)",
-      "28 (GTY)"
+      "44 (GTH, 16.375 Gb/s max)",
+      "28 (GTY, 28.21 Gb/s max)"
     ],
     "XCZU17EGFFVD1760-2L": [
-      "44 (GTH)",
-      "28 (GTY)"
+      "44 (GTH, 16.375 Gb/s max)",
+      "28 (GTY, 28.21 Gb/s max)"
     ],
     "XCZU17EGFFVD1760-2LV": [
-      "44 (GTH)",
-      "28 (GTY)"
+      "44 (GTH, 12.5 Gb/s max)",
+      "28 (GTY, 28.21 Gb/s max)"
     ],
     "XCZU17EGFFVD1760-3": [
-      "44 (GTH)",
-      "28 (GTY)"
+      "44 (GTH, 16.375 Gb/s max)",
+      "28 (GTY, 32.75 Gb/s max)"
     ],
     "XCZU17EGFFVD1760-1Q": [
-      "44 (GTH)",
-      "28 (GTY)"
+      "44 (GTH, 12.5 Gb/s max)",
+      "28 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU17EGFFVD1760-1M": [
-      "44 (GTH)",
-      "28 (GTY)"
+      "44 (GTH, 12.5 Gb/s max)",
+      "28 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU17EGFFVE1924-1": [
-      "44 (GTH)"
+      "44 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU17EGFFVE1924-1L": [
-      "44 (GTH)"
+      "44 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU17EGFFVE1924-1LV": [
-      "44 (GTH)"
+      "44 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU17EGFFVE1924-2": [
-      "44 (GTH)"
+      "44 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU17EGFFVE1924-2L": [
-      "44 (GTH)"
+      "44 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU17EGFFVE1924-2LV": [
-      "44 (GTH)"
+      "44 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU17EGFFVE1924-3": [
-      "44 (GTH)"
+      "44 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU17EGFFVE1924-1Q": [
-      "44 (GTH)"
+      "44 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU17EGFFVE1924-1M": [
-      "44 (GTH)"
+      "44 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU19EGFFVB1517-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU19EGFFVB1517-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU19EGFFVB1517-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU19EGFFVB1517-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU19EGFFVB1517-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU19EGFFVB1517-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU19EGFFVB1517-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU19EGFFVB1517-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU19EGFFVB1517-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU19EGFFVC1760-1": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU19EGFFVC1760-1L": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU19EGFFVC1760-1LV": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 10.3125 Gb/s max)",
+      "16 (GTY, 12.5 Gb/s max)"
     ],
     "XCZU19EGFFVC1760-2": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 16.375 Gb/s max)",
+      "16 (GTY, 28.21 Gb/s max)"
     ],
     "XCZU19EGFFVC1760-2L": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 16.375 Gb/s max)",
+      "16 (GTY, 28.21 Gb/s max)"
     ],
     "XCZU19EGFFVC1760-2LV": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 28.21 Gb/s max)"
     ],
     "XCZU19EGFFVC1760-3": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 16.375 Gb/s max)",
+      "16 (GTY, 32.75 Gb/s max)"
     ],
     "XCZU19EGFFVC1760-1Q": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU19EGFFVC1760-1M": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU19EGFFVD1760-1": [
-      "44 (GTH)",
-      "28 (GTY)"
+      "44 (GTH, 12.5 Gb/s max)",
+      "28 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU19EGFFVD1760-1L": [
-      "44 (GTH)",
-      "28 (GTY)"
+      "44 (GTH, 12.5 Gb/s max)",
+      "28 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU19EGFFVD1760-1LV": [
-      "44 (GTH)",
-      "28 (GTY)"
+      "44 (GTH, 10.3125 Gb/s max)",
+      "28 (GTY, 12.5 Gb/s max)"
     ],
     "XCZU19EGFFVD1760-2": [
-      "44 (GTH)",
-      "28 (GTY)"
+      "44 (GTH, 16.375 Gb/s max)",
+      "28 (GTY, 28.21 Gb/s max)"
     ],
     "XCZU19EGFFVD1760-2L": [
-      "44 (GTH)",
-      "28 (GTY)"
+      "44 (GTH, 16.375 Gb/s max)",
+      "28 (GTY, 28.21 Gb/s max)"
     ],
     "XCZU19EGFFVD1760-2LV": [
-      "44 (GTH)",
-      "28 (GTY)"
+      "44 (GTH, 12.5 Gb/s max)",
+      "28 (GTY, 28.21 Gb/s max)"
     ],
     "XCZU19EGFFVD1760-3": [
-      "44 (GTH)",
-      "28 (GTY)"
+      "44 (GTH, 16.375 Gb/s max)",
+      "28 (GTY, 32.75 Gb/s max)"
     ],
     "XCZU19EGFFVD1760-1Q": [
-      "44 (GTH)",
-      "28 (GTY)"
+      "44 (GTH, 12.5 Gb/s max)",
+      "28 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU19EGFFVD1760-1M": [
-      "44 (GTH)",
-      "28 (GTY)"
+      "44 (GTH, 12.5 Gb/s max)",
+      "28 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU19EGFFVE1924-1": [
-      "44 (GTH)"
+      "44 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU19EGFFVE1924-1L": [
-      "44 (GTH)"
+      "44 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU19EGFFVE1924-1LV": [
-      "44 (GTH)"
+      "44 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU19EGFFVE1924-2": [
-      "44 (GTH)"
+      "44 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU19EGFFVE1924-2L": [
-      "44 (GTH)"
+      "44 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU19EGFFVE1924-2LV": [
-      "44 (GTH)"
+      "44 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU19EGFFVE1924-3": [
-      "44 (GTH)"
+      "44 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU19EGFFVE1924-1Q": [
-      "44 (GTH)"
+      "44 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU19EGFFVE1924-1M": [
-      "44 (GTH)"
+      "44 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU21DRFFVD1156-1": [
       "16 (GTY, 25.785 Gb/s max)"
@@ -6072,112 +5962,112 @@
       "16 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU3TCGSFVC784-1": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU3TCGSFVC784-1L": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU3TCGSFVC784-1LV": [
-      "4 (GTH)"
+      "4 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU3TCGSFVC784-2": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU3TCGSFVC784-2L": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU3TCGSFVC784-2LV": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU3TCGSFVC784-3": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU3TCGSFVC784-1Q": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU3TCGSFVC784-1M": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU3TCGSFVD784-1": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU3TCGSFVD784-1L": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU3TCGSFVD784-1LV": [
-      "8 (GTH)"
+      "8 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU3TCGSFVD784-2": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU3TCGSFVD784-2L": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU3TCGSFVD784-2LV": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU3TCGSFVD784-3": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU3TCGSFVD784-1Q": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU3TCGSFVD784-1M": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU3TEGSFVC784-1": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU3TEGSFVC784-1L": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU3TEGSFVC784-1LV": [
-      "4 (GTH)"
+      "4 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU3TEGSFVC784-2": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU3TEGSFVC784-2L": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU3TEGSFVC784-2LV": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU3TEGSFVC784-3": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU3TEGSFVC784-1Q": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU3TEGSFVC784-1M": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU3TEGSFVD784-1": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU3TEGSFVD784-1L": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU3TEGSFVD784-1LV": [
-      "8 (GTH)"
+      "8 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU3TEGSFVD784-2": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU3TEGSFVD784-2L": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU3TEGSFVD784-2LV": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU3TEGSFVD784-3": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU3TEGSFVD784-1Q": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU3TEGSFVD784-1M": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU42DRFFVE1156-1": [
       "8 (GTY, 25.785 Gb/s max)"
@@ -6612,490 +6502,490 @@
       "16 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU4CGFBVB900-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4CGFBVB900-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4CGFBVB900-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU4CGFBVB900-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4CGFBVB900-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4CGFBVB900-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4CGFBVB900-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4CGFBVB900-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4CGFBVB900-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4CGSFVC784-1": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4CGSFVC784-1L": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4CGSFVC784-1LV": [
-      "4 (GTH)"
+      "4 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU4CGSFVC784-2": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4CGSFVC784-2L": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4CGSFVC784-2LV": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4CGSFVC784-3": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4CGSFVC784-1Q": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4CGSFVC784-1M": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4CGSFVE784-1": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4CGSFVE784-1L": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4CGSFVE784-1LV": [
-      "8 (GTH)"
+      "8 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU4CGSFVE784-2": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4CGSFVE784-2L": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4CGSFVE784-2LV": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4CGSFVE784-3": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4CGSFVE784-1Q": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4CGSFVE784-1M": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EGFBVB900-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EGFBVB900-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EGFBVB900-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU4EGFBVB900-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4EGFBVB900-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4EGFBVB900-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EGFBVB900-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4EGFBVB900-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EGFBVB900-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EGSFVC784-1": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EGSFVC784-1L": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EGSFVC784-1LV": [
-      "4 (GTH)"
+      "4 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU4EGSFVC784-2": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4EGSFVC784-2L": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4EGSFVC784-2LV": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EGSFVC784-3": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4EGSFVC784-1Q": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EGSFVC784-1M": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EGSFVE784-1": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EGSFVE784-1L": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EGSFVE784-1LV": [
-      "8 (GTH)"
+      "8 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU4EGSFVE784-2": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4EGSFVE784-2L": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4EGSFVE784-2LV": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EGSFVE784-3": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4EGSFVE784-1Q": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EGSFVE784-1M": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EVFBVB900-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EVFBVB900-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EVFBVB900-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU4EVFBVB900-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4EVFBVB900-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4EVFBVB900-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EVFBVB900-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4EVFBVB900-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EVFBVB900-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EVSFVC784-1": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EVSFVC784-1L": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EVSFVC784-1LV": [
-      "4 (GTH)"
+      "4 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU4EVSFVC784-2": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4EVSFVC784-2L": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4EVSFVC784-2LV": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EVSFVC784-3": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4EVSFVC784-1Q": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EVSFVC784-1M": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EVSFVE784-1": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EVSFVE784-1L": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EVSFVE784-1LV": [
-      "8 (GTH)"
+      "8 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU4EVSFVE784-2": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4EVSFVE784-2L": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4EVSFVE784-2LV": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EVSFVE784-3": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU4EVSFVE784-1Q": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU4EVSFVE784-1M": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5CGFBVB900-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5CGFBVB900-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5CGFBVB900-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU5CGFBVB900-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5CGFBVB900-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5CGFBVB900-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5CGFBVB900-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5CGFBVB900-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5CGFBVB900-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5CGSFVC784-1": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5CGSFVC784-1L": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5CGSFVC784-1LV": [
-      "4 (GTH)"
+      "4 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU5CGSFVC784-2": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5CGSFVC784-2L": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5CGSFVC784-2LV": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5CGSFVC784-3": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5CGSFVC784-1Q": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5CGSFVC784-1M": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5CGSFVE784-1": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5CGSFVE784-1L": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5CGSFVE784-1LV": [
-      "8 (GTH)"
+      "8 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU5CGSFVE784-2": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5CGSFVE784-2L": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5CGSFVE784-2LV": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5CGSFVE784-3": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5CGSFVE784-1Q": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5CGSFVE784-1M": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EGFBVB900-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EGFBVB900-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EGFBVB900-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU5EGFBVB900-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5EGFBVB900-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5EGFBVB900-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EGFBVB900-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5EGFBVB900-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EGFBVB900-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EGSFVC784-1": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EGSFVC784-1L": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EGSFVC784-1LV": [
-      "4 (GTH)"
+      "4 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU5EGSFVC784-2": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5EGSFVC784-2L": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5EGSFVC784-2LV": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EGSFVC784-3": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5EGSFVC784-1Q": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EGSFVC784-1M": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EGSFVE784-1": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EGSFVE784-1L": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EGSFVE784-1LV": [
-      "8 (GTH)"
+      "8 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU5EGSFVE784-2": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5EGSFVE784-2L": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5EGSFVE784-2LV": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EGSFVE784-3": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5EGSFVE784-1Q": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EGSFVE784-1M": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EVFBVB900-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EVFBVB900-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EVFBVB900-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU5EVFBVB900-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5EVFBVB900-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5EVFBVB900-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EVFBVB900-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5EVFBVB900-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EVFBVB900-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EVSFVC784-1": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EVSFVC784-1L": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EVSFVC784-1LV": [
-      "4 (GTH)"
+      "4 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU5EVSFVC784-2": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5EVSFVC784-2L": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5EVSFVC784-2LV": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EVSFVC784-3": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5EVSFVC784-1Q": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EVSFVC784-1M": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EVSFVE784-1": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EVSFVE784-1L": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EVSFVE784-1LV": [
-      "8 (GTH)"
+      "8 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU5EVSFVE784-2": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5EVSFVE784-2L": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5EVSFVE784-2LV": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EVSFVE784-3": [
-      "8 (GTH)"
+      "8 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU5EVSFVE784-1Q": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU5EVSFVE784-1M": [
-      "8 (GTH)"
+      "8 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU65DRFFVE1156-1": [
       "8 (GTY, 25.785 Gb/s max)"
@@ -7194,463 +7084,463 @@
       "8 (GTY, 25.785 Gb/s max)"
     ],
     "XCZU6CGFFVB1156-1": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU6CGFFVB1156-1L": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU6CGFFVB1156-1LV": [
-      "24 (GTH)"
+      "24 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU6CGFFVB1156-2": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU6CGFFVB1156-2L": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU6CGFFVB1156-2LV": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU6CGFFVB1156-3": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU6CGFFVB1156-1Q": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU6CGFFVB1156-1M": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU6CGFFVC900-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU6CGFFVC900-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU6CGFFVC900-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU6CGFFVC900-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU6CGFFVC900-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU6CGFFVC900-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU6CGFFVC900-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU6CGFFVC900-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU6CGFFVC900-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU6EGFFVB1156-1": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU6EGFFVB1156-1L": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU6EGFFVB1156-1LV": [
-      "24 (GTH)"
+      "24 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU6EGFFVB1156-2": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU6EGFFVB1156-2L": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU6EGFFVB1156-2LV": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU6EGFFVB1156-3": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU6EGFFVB1156-1Q": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU6EGFFVB1156-1M": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU6EGFFVC900-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU6EGFFVC900-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU6EGFFVC900-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU6EGFFVC900-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU6EGFFVC900-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU6EGFFVC900-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU6EGFFVC900-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU6EGFFVC900-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU6EGFFVC900-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7CGFBVB900-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7CGFBVB900-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7CGFBVB900-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU7CGFBVB900-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7CGFBVB900-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7CGFBVB900-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7CGFBVB900-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7CGFBVB900-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7CGFBVB900-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7CGFFVC1156-1": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7CGFFVC1156-1L": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7CGFFVC1156-1LV": [
-      "20 (GTH)"
+      "20 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU7CGFFVC1156-2": [
-      "20 (GTH)"
+      "20 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7CGFFVC1156-2L": [
-      "20 (GTH)"
+      "20 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7CGFFVC1156-2LV": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7CGFFVC1156-3": [
-      "20 (GTH)"
+      "20 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7CGFFVC1156-1Q": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7CGFFVC1156-1M": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7CGFFVF1517-1": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7CGFFVF1517-1L": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7CGFFVF1517-1LV": [
-      "24 (GTH)"
+      "24 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU7CGFFVF1517-2": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7CGFFVF1517-2L": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7CGFFVF1517-2LV": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7CGFFVF1517-3": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7CGFFVF1517-1Q": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7CGFFVF1517-1M": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EGFBVB900-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EGFBVB900-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EGFBVB900-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU7EGFBVB900-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7EGFBVB900-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7EGFBVB900-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EGFBVB900-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7EGFBVB900-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EGFBVB900-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EGFFVC1156-1": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EGFFVC1156-1L": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EGFFVC1156-1LV": [
-      "20 (GTH)"
+      "20 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU7EGFFVC1156-2": [
-      "20 (GTH)"
+      "20 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7EGFFVC1156-2L": [
-      "20 (GTH)"
+      "20 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7EGFFVC1156-2LV": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EGFFVC1156-3": [
-      "20 (GTH)"
+      "20 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7EGFFVC1156-1Q": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EGFFVC1156-1M": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EGFFVF1517-1": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EGFFVF1517-1L": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EGFFVF1517-1LV": [
-      "24 (GTH)"
+      "24 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU7EGFFVF1517-2": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7EGFFVF1517-2L": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7EGFFVF1517-2LV": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EGFFVF1517-3": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7EGFFVF1517-1Q": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EGFFVF1517-1M": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EVFBVB900-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EVFBVB900-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EVFBVB900-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU7EVFBVB900-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7EVFBVB900-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7EVFBVB900-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EVFBVB900-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7EVFBVB900-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EVFBVB900-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EVFFVC1156-1": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EVFFVC1156-1L": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EVFFVC1156-1LV": [
-      "20 (GTH)"
+      "20 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU7EVFFVC1156-2": [
-      "20 (GTH)"
+      "20 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7EVFFVC1156-2L": [
-      "20 (GTH)"
+      "20 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7EVFFVC1156-2LV": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EVFFVC1156-3": [
-      "20 (GTH)"
+      "20 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7EVFFVC1156-1Q": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EVFFVC1156-1M": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EVFFVF1517-1": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EVFFVF1517-1L": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EVFFVF1517-1LV": [
-      "24 (GTH)"
+      "24 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU7EVFFVF1517-2": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7EVFFVF1517-2L": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7EVFFVF1517-2LV": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EVFFVF1517-3": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU7EVFFVF1517-1Q": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU7EVFFVF1517-1M": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU9CGFFVB1156-1": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU9CGFFVB1156-1L": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU9CGFFVB1156-1LV": [
-      "24 (GTH)"
+      "24 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU9CGFFVB1156-2": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU9CGFFVB1156-2L": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU9CGFFVB1156-2LV": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU9CGFFVB1156-3": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU9CGFFVB1156-1Q": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU9CGFFVB1156-1M": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU9CGFFVC900-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU9CGFFVC900-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU9CGFFVC900-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU9CGFFVC900-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU9CGFFVC900-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU9CGFFVC900-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU9CGFFVC900-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU9CGFFVC900-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU9CGFFVC900-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU9EGFFVB1156-1": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU9EGFFVB1156-1L": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU9EGFFVB1156-1LV": [
-      "24 (GTH)"
+      "24 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU9EGFFVB1156-2": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU9EGFFVB1156-2L": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU9EGFFVB1156-2LV": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU9EGFFVB1156-3": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU9EGFFVB1156-1Q": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU9EGFFVB1156-1M": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU9EGFFVC900-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU9EGFFVC900-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU9EGFFVC900-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XCZU9EGFFVC900-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU9EGFFVC900-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU9EGFFVC900-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU9EGFFVC900-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XCZU9EGFFVC900-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XCZU9EGFFVC900-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQKU15PFFRA1156-1": [
       "20 (GTH, 12.5 Gb/s max)",
@@ -7948,184 +7838,184 @@
       "76 (GTY, 32.75 Gb/s max)"
     ],
     "XQZU11EGFFRC1156-1": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU11EGFFRC1156-1L": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU11EGFFRC1156-1LV": [
-      "20 (GTH)"
+      "20 (GTH, 10.3125 Gb/s max)"
     ],
     "XQZU11EGFFRC1156-2": [
-      "20 (GTH)"
+      "20 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU11EGFFRC1156-2L": [
-      "20 (GTH)"
+      "20 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU11EGFFRC1156-2LV": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU11EGFFRC1156-3": [
-      "20 (GTH)"
+      "20 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU11EGFFRC1156-1Q": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU11EGFFRC1156-1M": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU11EGFFRC1760-1": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 25.785 Gb/s max)"
     ],
     "XQZU11EGFFRC1760-1L": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 25.785 Gb/s max)"
     ],
     "XQZU11EGFFRC1760-1LV": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 10.3125 Gb/s max)",
+      "16 (GTY, 12.5 Gb/s max)"
     ],
     "XQZU11EGFFRC1760-2": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 16.375 Gb/s max)",
+      "16 (GTY, 28.21 Gb/s max)"
     ],
     "XQZU11EGFFRC1760-2L": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 16.375 Gb/s max)",
+      "16 (GTY, 28.21 Gb/s max)"
     ],
     "XQZU11EGFFRC1760-2LV": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 28.21 Gb/s max)"
     ],
     "XQZU11EGFFRC1760-3": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 16.375 Gb/s max)",
+      "16 (GTY, 32.75 Gb/s max)"
     ],
     "XQZU11EGFFRC1760-1Q": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 25.785 Gb/s max)"
     ],
     "XQZU11EGFFRC1760-1M": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 25.785 Gb/s max)"
     ],
     "XQZU15EGFFRB1156-1": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU15EGFFRB1156-1L": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU15EGFFRB1156-1LV": [
-      "24 (GTH)"
+      "24 (GTH, 10.3125 Gb/s max)"
     ],
     "XQZU15EGFFRB1156-2": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU15EGFFRB1156-2L": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU15EGFFRB1156-2LV": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU15EGFFRB1156-3": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU15EGFFRB1156-1Q": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU15EGFFRB1156-1M": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU15EGFFRC900-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU15EGFFRC900-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU15EGFFRC900-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XQZU15EGFFRC900-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU15EGFFRC900-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU15EGFFRC900-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU15EGFFRC900-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU15EGFFRC900-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU15EGFFRC900-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU19EGFFRB1517-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU19EGFFRB1517-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU19EGFFRB1517-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XQZU19EGFFRB1517-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU19EGFFRB1517-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU19EGFFRB1517-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU19EGFFRB1517-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU19EGFFRB1517-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU19EGFFRB1517-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU19EGFFRC1760-1": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 25.785 Gb/s max)"
     ],
     "XQZU19EGFFRC1760-1L": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 25.785 Gb/s max)"
     ],
     "XQZU19EGFFRC1760-1LV": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 10.3125 Gb/s max)",
+      "16 (GTY, 12.5 Gb/s max)"
     ],
     "XQZU19EGFFRC1760-2": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 16.375 Gb/s max)",
+      "16 (GTY, 28.21 Gb/s max)"
     ],
     "XQZU19EGFFRC1760-2L": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 16.375 Gb/s max)",
+      "16 (GTY, 28.21 Gb/s max)"
     ],
     "XQZU19EGFFRC1760-2LV": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 28.21 Gb/s max)"
     ],
     "XQZU19EGFFRC1760-3": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 16.375 Gb/s max)",
+      "16 (GTY, 32.75 Gb/s max)"
     ],
     "XQZU19EGFFRC1760-1Q": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 25.785 Gb/s max)"
     ],
     "XQZU19EGFFRC1760-1M": [
-      "32 (GTH)",
-      "16 (GTY)"
+      "32 (GTH, 12.5 Gb/s max)",
+      "16 (GTY, 25.785 Gb/s max)"
     ],
     "XQZU21DRFFRD1156-1": [
       "16 (GTY, 25.785 Gb/s max)"
@@ -8320,58 +8210,58 @@
       "16 (GTY, 25.785 Gb/s max)"
     ],
     "XQZU5EVFFRB900-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU5EVFFRB900-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU5EVFFRB900-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XQZU5EVFFRB900-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU5EVFFRB900-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU5EVFFRB900-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU5EVFFRB900-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU5EVFFRB900-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU5EVFFRB900-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU5EVSFRC784-1": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU5EVSFRC784-1L": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU5EVSFRC784-1LV": [
-      "4 (GTH)"
+      "4 (GTH, 10.3125 Gb/s max)"
     ],
     "XQZU5EVSFRC784-2": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU5EVSFRC784-2L": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU5EVSFRC784-2LV": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU5EVSFRC784-3": [
-      "4 (GTH)"
+      "4 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU5EVSFRC784-1Q": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU5EVSFRC784-1M": [
-      "4 (GTH)"
+      "4 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU65DRFFRE1156-1": [
       "8 (GTY, 25.785 Gb/s max)"
@@ -8422,112 +8312,112 @@
       "8 (GTY, 25.785 Gb/s max)"
     ],
     "XQZU7EVFFRB900-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU7EVFFRB900-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU7EVFFRB900-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XQZU7EVFFRB900-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU7EVFFRB900-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU7EVFFRB900-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU7EVFFRB900-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU7EVFFRB900-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU7EVFFRB900-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU7EVFFRC1156-1": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU7EVFFRC1156-1L": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU7EVFFRC1156-1LV": [
-      "20 (GTH)"
+      "20 (GTH, 10.3125 Gb/s max)"
     ],
     "XQZU7EVFFRC1156-2": [
-      "20 (GTH)"
+      "20 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU7EVFFRC1156-2L": [
-      "20 (GTH)"
+      "20 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU7EVFFRC1156-2LV": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU7EVFFRC1156-3": [
-      "20 (GTH)"
+      "20 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU7EVFFRC1156-1Q": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU7EVFFRC1156-1M": [
-      "20 (GTH)"
+      "20 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU9EGFFRB1156-1": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU9EGFFRB1156-1L": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU9EGFFRB1156-1LV": [
-      "24 (GTH)"
+      "24 (GTH, 10.3125 Gb/s max)"
     ],
     "XQZU9EGFFRB1156-2": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU9EGFFRB1156-2L": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU9EGFFRB1156-2LV": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU9EGFFRB1156-3": [
-      "24 (GTH)"
+      "24 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU9EGFFRB1156-1Q": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU9EGFFRB1156-1M": [
-      "24 (GTH)"
+      "24 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU9EGFFRC900-1": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU9EGFFRC900-1L": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU9EGFFRC900-1LV": [
-      "16 (GTH)"
+      "16 (GTH, 10.3125 Gb/s max)"
     ],
     "XQZU9EGFFRC900-2": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU9EGFFRC900-2L": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU9EGFFRC900-2LV": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU9EGFFRC900-3": [
-      "16 (GTH)"
+      "16 (GTH, 16.375 Gb/s max)"
     ],
     "XQZU9EGFFRC900-1Q": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ],
     "XQZU9EGFFRC900-1M": [
-      "16 (GTH)"
+      "16 (GTH, 12.5 Gb/s max)"
     ]
   }
 }
