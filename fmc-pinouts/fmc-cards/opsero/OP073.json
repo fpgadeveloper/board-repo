@@ -223,18 +223,6 @@
           "fmc_pin": "B20",
           "net": "REFCLKB_FPGA_P",
           "function": "100MHz PCIe reference clock for the FPGA"
-        },
-        {
-          "signal": "LA04_N",
-          "fmc_pin": "H11",
-          "net": "PEDET_B",
-          "function": "Passed through"
-        },
-        {
-          "signal": "LA04_P",
-          "fmc_pin": "H10",
-          "net": "PERST_B",
-          "function": "Passed through"
         }
       ],
       "groups": [
