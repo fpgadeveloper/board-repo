@@ -201,6 +201,18 @@
           "function": "Port 1 SFP User bicolor LED Green"
         },
         {
+          "signal": "LA06_N",
+          "fmc_pin": "C11",
+          "net": "I2C_SW_RST_N_T",
+          "function": "I2C switch (PCA9548) reset, active low (FPGA to card)"
+        },
+        {
+          "signal": "LA06_P",
+          "fmc_pin": "C10",
+          "net": "CLK_LOS_ALARM_T",
+          "function": "Si5328 clock loss alarm (card to FPGA)"
+        },
+        {
           "signal": "LA07_N",
           "fmc_pin": "H14",
           "net": "SFP1_MOD_ABS_T",
