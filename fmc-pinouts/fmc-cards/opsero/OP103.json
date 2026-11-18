@@ -239,13 +239,13 @@
         {
           "signal": "LA04_N",
           "fmc_pin": "H11",
-          "net": "CPRSNTA_N_T",
+          "net": "CPRSNTB_N_T",
           "function": "PCIe detect for MCIOB"
         },
         {
           "signal": "LA04_P",
           "fmc_pin": "H10",
-          "net": "PERSTA_N_T",
+          "net": "PERSTB_N_T",
           "function": "PCIe reset for MCIOB (active LOW)"
         },
         {
