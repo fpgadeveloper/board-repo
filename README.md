@@ -223,6 +223,7 @@ Board and silicon vendors are defined in `vendors.json`. Each entity references 
 | Key | Name |
 |-----|------|
 | `1bitsquared` | 1BitSquared |
+| `adaptive-design` | Adaptive Design |
 | `adiuvo` | Adiuvo |
 | `aldec` | Aldec |
 | `alinx` | Alinx |

@@ -215,6 +215,10 @@
     "mixed-signal-studio": {
       "name": "Mixed Signal Studio",
       "url": "https://www.mixedsignalstudio.com"
+    },
+    "adaptive-design": {
+      "name": "Adaptive Design",
+      "url": "https://www.adaptivedesign.ie"
     }
   },
   "silicon_vendors": {
