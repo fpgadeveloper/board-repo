@@ -203,7 +203,7 @@
         {
           "signal": "GBTCLK0_M2C_N",
           "fmc_pin": "D5",
-          "net": "REFCLKA_FPGA_P",
+          "net": "REFCLKA_FPGA_N",
           "function": "100MHz PCIe reference clock for the FPGA"
         },
         {
