@@ -38,7 +38,7 @@ device: { part: XC7Z020-1CLG484C, vendor: amd-xilinx }
 - Micro-B JTAG/UART
 
 ## Expansion
-- FMC LPC "LPC"
+- FMC LPC "LPC" VADJ 1.8-3.3V
 - Pmod x5
 - XADC Header x1
 
@@ -69,3 +69,7 @@ Notes:
 * 1 = install jumper between middle pin and 3V3
 * X = don't care
 * MIO6 determines PLL used (0) or bypassed (1)
+
+### FMC VADJ
+
+VADJ is selected by jumper J18 (change only with power off): 1.8 V or 2.5 V, plus a 3.3 V position whose header pins are not populated by default. The board does not read the FMC IPMI EEPROM — the jumper must be set to suit the mezzanine card. VADJ supplies PL banks 34 and 35, which carry all of the FMC LA pairs and CLK0/CLK1_M2C.
